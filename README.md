@@ -29,6 +29,40 @@ a claim ("Updates every 5 minutes", though no such cadence exists in the data) w
 disqualified outright, however good it looked. The full worked example, including its
 data and every render, lives in [examples/harborline](examples/harborline/README.md).
 
+## Getting started
+
+**Prerequisites:** Claude Code to use PixelHelm as a plugin (the full design loop runs
+inside Claude Code, not from the Python package). Node 18+ and a browser (Playwright
+Chromium) for the real-browser rendering step, the part that screenshots each candidate.
+Python 3.x for the `pixelhelm` evidence engine on PyPI, which is the standalone
+evidence-brief slice. The offline demo used in "Check it works" below needs only Python
+(no Node, no browser, no network).
+
+**Install:** two labeled paths, pick the one you need.
+
+- In Claude Code (one command): run `/plugin marketplace add https://gitlab.com/krahul02004/PixelHelm`
+  and then `/plugin install pixelhelm-lite` (the default) or `/plugin install pixelhelm-full`.
+  This is a self-hosted marketplace served from this repository (the root-level
+  `.claude-plugin/marketplace.json`), not published to any external or third-party registry.
+- Python engine: `pip install pixelhelm`. This installs the standalone evidence-brief
+  engine only. It does not install the plugins, and the design loop still runs inside
+  Claude Code.
+
+**Check it works:** run the offline evidence-engine demo (Python only, no installs, no
+network) and confirm the final line it prints.
+
+```powershell
+python -B plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/demo_offline.py
+```
+
+```text
+RESULT: PASS - design adapter drives the engine end to end.
+```
+
+For the full picture, [Try it in 30 seconds](#try-it-in-30-seconds) below walks through the
+demo's complete output, and [Install](#install) covers loading the plugin editions and the
+PyPI package in detail.
+
 ## Try it in 30 seconds
 
 The repository includes an offline demo of the evidence engine: the part that writes
