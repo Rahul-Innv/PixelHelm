@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pixelhelm"
+version = "0.1.0"
+description = "Offline-first verified evidence-brief engine for frontend design: the portable research engine plus PixelHelm's design adapter."
+readme = { file = "docs/public/PYPI.md", content-type = "text/markdown" }
+requires-python = ">=3.12"
+license = "MIT"
+license-files = ["LICENSE"]
+authors = [{ name = "Rahul Krishna" }]
+keywords = [
+  "design",
+  "frontend",
+  "evidence",
+  "research",
+  "claim-verification",
+  "accessibility",
+]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Software Development :: Quality Assurance",
+]
+
+[project.optional-dependencies]
+live = ["anthropic"]
+
+[tool.setuptools]
+packages = ["pixelhelm", "storm_engine", "design_adapter"]
+
+[tool.setuptools.package-dir]
+pixelhelm = "packaging/pixelhelm"
+storm_engine = "plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/storm_engine"
+design_adapter = "plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/design_adapter"

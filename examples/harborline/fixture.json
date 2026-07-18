@@ -1,0 +1,41 @@
+{
+  "_label": "SAMPLE FIXTURE — synthetic data for demo purposes. Every rendered value must come from this file and carry the sample-data label on the page. Anything shown that is not in this file is a fabrication.",
+  "network": {
+    "name": "Harborline Bike Share",
+    "asOf": "2026-07-01T18:05:00Z",
+    "stationsTotal": 12,
+    "stationsReporting": 9,
+    "bikesAvailable": 130,
+    "docksFree": 104,
+    "_totalsNote": "bikesAvailable/docksFree cover REPORTING stations only — the 3 no-telemetry stations are excluded (unknown, not zero)",
+    "bikesInMaintenance": 17,
+    "ridesToday": { "value": 1284, "quality": "estimated", "note": "gate counters at 3 stations offline; value extrapolated" }
+  },
+  "stations": [
+    { "id": "S01", "name": "Harbor Plaza", "status": "ok", "bikes": 18, "docks": 6, "lastTelemetry": "2026-07-01T18:04:00Z" },
+    { "id": "S02", "name": "Old Mill Crossing", "status": "ok", "bikes": 11, "docks": 13, "lastTelemetry": "2026-07-01T18:05:00Z" },
+    { "id": "S03", "name": "University North Gate at the Botanical Research Annex", "status": "low-bikes", "bikes": 2, "docks": 22, "lastTelemetry": "2026-07-01T18:03:00Z" },
+    { "id": "S04", "name": "Ferry Terminal", "status": "ok", "bikes": 24, "docks": 8, "lastTelemetry": "2026-07-01T18:05:00Z" },
+    { "id": "S05", "name": "Cannery Row", "status": "no-telemetry", "bikes": null, "docks": null, "lastTelemetry": "2026-06-28T07:41:00Z" },
+    { "id": "S06", "name": "Civic Center", "status": "ok", "bikes": 15, "docks": 9, "lastTelemetry": "2026-07-01T18:02:00Z" },
+    { "id": "S07", "name": "Eastbank Library", "status": "low-docks", "bikes": 21, "docks": 1, "lastTelemetry": "2026-07-01T18:04:00Z" },
+    { "id": "S08", "name": "Rail Yard South", "status": "no-telemetry", "bikes": null, "docks": null, "lastTelemetry": "2026-06-29T22:10:00Z" },
+    { "id": "S09", "name": "Greenway Trailhead", "status": "ok", "bikes": 13, "docks": 11, "lastTelemetry": "2026-07-01T18:05:00Z" },
+    { "id": "S10", "name": "Market Square", "status": "ok", "bikes": 26, "docks": 4, "lastTelemetry": "2026-07-01T18:05:00Z" },
+    { "id": "S11", "name": "Pier 9", "status": "maintenance", "bikes": 0, "docks": 30, "lastTelemetry": "2026-07-01T17:50:00Z", "note": "station closed for dock repair until 07-03" },
+    { "id": "S12", "name": "Northgate Depot", "status": "no-telemetry", "bikes": null, "docks": null, "lastTelemetry": "2026-06-28T19:12:00Z" }
+  ],
+  "ridershipLast7Days": [
+    { "date": "2026-06-25", "rides": 1391 },
+    { "date": "2026-06-26", "rides": 1476 },
+    { "date": "2026-06-27", "rides": 1822 },
+    { "date": "2026-06-28", "rides": null, "note": "logging outage 09:00-23:59 — day total unrecoverable" },
+    { "date": "2026-06-29", "rides": 1204 },
+    { "date": "2026-06-30", "rides": 1315 },
+    { "date": "2026-07-01", "rides": 1284, "quality": "estimated" }
+  ],
+  "alerts": [
+    { "severity": "notice", "text": "Pier 9 closed for dock repair; nearest alternatives are Market Square and Ferry Terminal.", "since": "2026-07-01" },
+    { "severity": "warning", "text": "Three stations have not reported telemetry for over 24 hours; their bike counts are UNKNOWN, not zero.", "since": "2026-06-29" }
+  ]
+}

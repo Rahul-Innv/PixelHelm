@@ -1,0 +1,30 @@
+{
+  "_note": "Canonical atomic PixelHelm registry: exact 25 Rigwright-authorized IDs.",
+  "skills": [
+    {"id":"pixelhelm","type":"router","objective":true,"role":"Classify a frontend-design request and route it without performing leaf work.","invokes":["pixelhelm-choicegate","pixelhelm-loop","pixelhelm-ground"]},
+    {"id":"pixelhelm-choicegate","type":"boundary","objective":true,"role":"Verify and consume one complete accepted ChoiceGate continuation for PixelHelm.","invokes":[]},
+    {"id":"pixelhelm-loop","type":"orchestrator","objective":true,"role":"Sequence grounding, generation, rendering, evaluation, judgment, repair, and closeout.","invokes":["pixelhelm-ground","pixelhelm-baseline","pixelhelm-generate","pixelhelm-render","pixelhelm-evaluate","pixelhelm-judge","pixelhelm-repair"]},
+    {"id":"pixelhelm-ground","type":"reference","objective":true,"role":"Resolve project profile, register, token contract, current guidance, and lessons before design work.","invokes":["pixelhelm-tokens","pixelhelm-refresh-guidance","pixelhelm-curate-fingerprints"]},
+    {"id":"pixelhelm-baseline","type":"baseline","objective":true,"role":"Capture the current surface and measurable incumbent before changes.","invokes":["pixelhelm-render","pixelhelm-evaluate"]},
+    {"id":"pixelhelm-generate","type":"generate","objective":false,"role":"Generate competing grounded UI directions without judging them.","invokes":["pixelhelm-tokens"]},
+    {"id":"pixelhelm-render","type":"render","objective":true,"role":"Render a target UI in a real browser at the required viewport and theme matrix.","invokes":[]},
+    {"id":"pixelhelm-evaluate","type":"evaluate","objective":true,"role":"Run machine-certain design gates and emit confidence-labeled findings.","invokes":[]},
+    {"id":"pixelhelm-judge","type":"judge","objective":false,"role":"Compare rendered candidates through named expert lenses and synthesize a verdict.","invokes":[]},
+    {"id":"pixelhelm-repair","type":"repair","objective":true,"role":"Apply the smallest bounded change for a specific validated finding.","invokes":["pixelhelm-render","pixelhelm-evaluate"]},
+    {"id":"pixelhelm-tokens","type":"foundation","objective":true,"role":"Maintain the single token source of truth and verify conformance.","invokes":[]},
+    {"id":"pixelhelm-promote-design","type":"promotion","objective":true,"role":"Promote only an owner-approved, gate-passing candidate into the target surface.","invokes":[]},
+    {"id":"pixelhelm-record-lesson","type":"learning","objective":true,"role":"Record one versioned lesson from an owner correction or rejection.","invokes":[]},
+    {"id":"pixelhelm-refresh-guidance","type":"learning","objective":true,"role":"Refresh time-sensitive local guidance while preserving source and age evidence.","invokes":[]},
+    {"id":"pixelhelm-curate-fingerprints","type":"learning","objective":true,"role":"Curate anti-cliche fingerprints from validated recurring design patterns.","invokes":[]},
+    {"id":"pixelhelm-reference","type":"reference","objective":false,"role":"Retrieve relevant product and aspect references for a bounded design brief.","invokes":[]},
+    {"id":"pixelhelm-directions","type":"direction","objective":false,"role":"Produce named throwaway direction mockups for owner selection.","invokes":["pixelhelm-render"]},
+    {"id":"pixelhelm-evidence-brief","type":"evidence","objective":false,"role":"Produce a cited design evidence brief with confidence and abstentions, never UI.","invokes":[]},
+    {"id":"pixelhelm-color","type":"craft","objective":false,"role":"Author accessible color roles into the token contract.","invokes":["pixelhelm-tokens"]},
+    {"id":"pixelhelm-typography","type":"craft","objective":false,"role":"Specify responsive typography, font loading, and numeric behavior.","invokes":[]},
+    {"id":"pixelhelm-motion","type":"craft","objective":false,"role":"Specify performant motion tokens and reduced-motion behavior.","invokes":[]},
+    {"id":"pixelhelm-dataviz","type":"craft","objective":false,"role":"Design honest charts and dense data interfaces.","invokes":[]},
+    {"id":"pixelhelm-content","type":"content","objective":false,"role":"Write interface copy, errors, labels, and empty states in the active register.","invokes":[]},
+    {"id":"pixelhelm-email","type":"email","objective":true,"role":"Design robust HTML email within client constraints.","invokes":[]},
+    {"id":"pixelhelm-video-placement","type":"video","objective":false,"role":"Choose and specify appropriate video or avatar placement with safety and fallback constraints.","invokes":[]}
+  ]
+}

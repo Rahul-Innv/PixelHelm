@@ -1,0 +1,27 @@
+# Private candidate checks. No deploy, publish, marketplace, or remote-write job.
+build-check:
+  image: node:22-alpine
+  script:
+    - node build/build.mjs --check
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+atomic-contract:
+  image: python:3.12-alpine
+  script:
+    - python -B evals/pixelhelm/run_tests.py
+  rules:
+    - if: $CI_PIPELINE_SOURCE == "push"
+    - if: $CI_PIPELINE_SOURCE == "merge_request_event"
+
+# The full boundary replay needs two accepted local authority checkouts. It is
+# skipped on ordinary hosted runners rather than discovering or downloading them.
+authority-contract:
+  image: python:3.12-alpine
+  script:
+    - test -n "$CHOICEGATE_ROOT" && test -n "$INVENTORY_ROOT"
+    - python -B evals/pixelhelm/run_tests.py --require-choicegate-boundary --choicegate-root "$CHOICEGATE_ROOT" --inventory-root "$INVENTORY_ROOT"
+  rules:
+    - if: '$CI_PIPELINE_SOURCE == "push" && $CHOICEGATE_ROOT && $INVENTORY_ROOT'
+    - when: never

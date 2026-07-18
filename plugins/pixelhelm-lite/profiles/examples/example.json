@@ -1,0 +1,39 @@
+{
+  "project": "example",
+  "root": ".",
+  "_rootNote": "absolute or repo-relative path to YOUR project. Copy this file to <your-project>/.pixelhelm/profile.json (preferred, commits with the repo) or <durable-data-dir>/profiles/<project>.json. The bundled copy is a TEMPLATE — never edit it in place; the plugin directory is replaced on update.",
+  "sourceDirs": ["src"],
+  "sourceExts": [".ts", ".tsx", ".css", ".html"],
+  "ignore": ["node_modules", ".next", "dist", "build", "coverage", "tests"],
+  "allowRawColorIn": ["src/tokens.css"],
+  "tokenModule": null,
+  "_tokenNote": "point at an ESM module exporting evaluateGatedPairs() (or TOKENS + GATED_PAIRS) and the contrast gate reuses YOUR real AA contract. No module? Inline `tokens` + `gatedPairs` below and the gate computes contrast from those. TypeScript modules can't be imported — inline instead.",
+  "tokens": {
+    "light": { "canvas": "#ffffff", "surface": "#f6f8fa", "foreground": "#111827", "muted": "#4b5563", "primary": "#0f766e", "on-primary": "#ffffff", "border": "#d1d5db", "border-strong": "#6b7280" },
+    "dark":  { "canvas": "#0b1220", "surface": "#141d2e", "foreground": "#e5e7eb", "muted": "#9ca3af", "primary": "#5eead4", "on-primary": "#042f2e", "border": "#334155", "border-strong": "#94a3b8" }
+  },
+  "_gatedPairsNote": "plain `border` is DECORATIVE (hairlines) and deliberately ungated; `border-strong` is the essential-control border and IS gated at 3:1 (WCAG 1.4.11). Gate what carries meaning; don't gate hairlines you'd then have to darken into heaviness.",
+  "gatedPairs": [
+    { "fg": "foreground", "on": ["canvas", "surface"], "kind": "text" },
+    { "fg": "muted", "on": ["canvas", "surface"], "kind": "text" },
+    { "fg": "primary", "on": ["canvas", "surface"], "kind": "text" },
+    { "fg": "on-primary", "on": ["primary"], "kind": "text" },
+    { "fg": "border-strong", "on": ["canvas", "surface"], "kind": "graphic" }
+  ],
+  "bannedClusters": [
+    { "id": "ai-cyan", "any": ["#16d5e6", "#00d4ff", "#0ff "], "note": "generative-AI cyan/neon-teal fingerprint" },
+    { "id": "ai-purple-grad", "any": ["from-purple-500 to-pink-500", "from-violet-600 to-fuchsia"], "note": "default AI purple->pink gradient" }
+  ],
+  "ownerInvolvement": "autonomous",
+  "_ownerInvolvementNote": "\"hands-on\" | \"autonomous\". hands-on = the router adds CHEAP early owner checkpoints BEFORE the expensive stages (confirm register+references after grounding; pick a direction on throwaway mockups before any production tournament; a does-ANY-of-these-reach-your-bar check after the council verdict, before the fix loop). autonomous = the classic loop with exactly ONE final approval gate (the unchanged default). Unset -> the router asks ONE question at run start and offers to record the answer here.",
+  "surfaceType": "app",
+  "_surfaceTypeNote": "\"marketing\" | \"app\" | \"data\" | \"email\" (optional; default app-like). ONLY \"marketing\" activates the scope-B surface-triggered lenses in pixelhelm-evaluate — SEO/share-meta + Performance/CWV budget (references/scope-b-marketing-lenses.md). Never fires perf/SEO budgets on an app/data/email surface.",
+  "_register": "REPLACE ME — the product's intended feeling, in the owner's own words. This literal string is what the register-fit gate judges against; the council ABSTAIN-BLOCKS without it. Be specific: name the temperature (warm/calm/serious), the density, the tone, what is BANNED (e.g. 'no red except true errors'), and 2-3 comparable products.",
+  "_northStars": "2-4 reference products whose craft this project aspires to, with the specific aspect (e.g. 'Linear — restraint and type discipline; Stripe — numeric craft').",
+  "_taste": {
+    "approvedExemplars": [],
+    "rejectedDirections": [],
+    "registerClarifications": []
+  },
+  "_notes": "Anything the next design pass should know that the code can't say."
+}

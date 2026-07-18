@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Harborline Status Board</title>
+  <style>
+    /* Token block — verbatim from tokens.css */
+    :root {
+      --canvas: #ffffff;
+      --surface: #f6f8fa;
+      --foreground: #111827;
+      --muted: #4b5563;
+      --primary: #0f766e;
+      --on-primary: #ffffff;
+      --border: #d1d5db;
+      --border-strong: #6b7280;
+      --status-ok: #15803d;
+      --status-warn: #92400e;
+      --status-unknown: #4b5563;
+    }
+    [data-theme="dark"], .dark {
+      --canvas: #0b1220;
+      --surface: #141d2e;
+      --foreground: #e5e7eb;
+      --muted: #9ca3af;
+      --primary: #5eead4;
+      --on-primary: #042f2e;
+      --border: #334155;
+      --border-strong: #94a3b8;
+      --status-ok: #4ade80;
+      --status-warn: #fbbf24;
+      --status-unknown: #9ca3af;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, system-ui, sans-serif;
+      font-size: 16px;
+      color: var(--foreground);
+      background-color: var(--canvas);
+    }
+    body {
+      line-height: 1.5;
+      background-color: var(--canvas);
+      color: var(--foreground);
+    }
+
+    .page { max-width: 1200px; margin: 0 auto; }
+
+    /* Header / title bar */
+    .header {
+      padding: 1.5rem;
+      border-bottom: 2px solid var(--border-strong);
+      background-color: var(--canvas);
+    }
+    .header h1 {
+      font-size: 1.875rem;
+      font-weight: 700;
+      margin-bottom: 0.25rem;
+      color: var(--foreground);
+    }
+    .header-meta {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Verdict line — compact, transit-board style */
+    .metrics-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      padding: 1rem 1.5rem;
+      background-color: var(--surface);
+      border-bottom: 1px solid var(--border);
+      font-size: 0.9375rem;
+      align-items: baseline;
+    }
+    .metric {
+      display: flex;
+      gap: 0.5rem;
+      align-items: baseline;
+    }
+    .metric-label {
+      color: var(--muted);
+      font-size: 0.8125rem;
+      font-weight: 500;
+    }
+    .metric-value {
+      color: var(--foreground);
+      font-weight: 700;
+      font-variant-numeric: tabular-nums;
+    }
+    .metric-note {
+      color: var(--muted);
+      font-size: 0.75rem;
+      font-style: italic;
+    }
+
+    /* Alerts */
+    .alerts {
+      padding: 1rem 1.5rem;
+      background-color: var(--canvas);
+      border-bottom: 1px solid var(--border);
+    }
+    .alert {
+      padding: 0.75rem 1rem;
+      margin-bottom: 0.5rem;
+      border-left: 3px solid var(--border-strong);
+      font-size: 0.9375rem;
+      line-height: 1.4;
+    }
+    .alert:last-child { margin-bottom: 0; }
+    .alert-notice { border-left-color: var(--primary); }
+    .alert-warning { border-left-color: var(--status-warn); }
+    .alert-label {
+      display: block;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.25rem;
+    }
+
+    /* Stations table — compact */
+    .stations-container {
+      padding: 1.5rem;
+      background-color: var(--canvas);
+      border-bottom: 1px solid var(--border);
+    }
+    .section-title {
+      font-size: 0.8125rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 1rem;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.875rem;
+    }
+    thead {
+      background-color: var(--surface);
+      border-top: 1px solid var(--border-strong);
+      border-bottom: 2px solid var(--border-strong);
+    }
+    th {
+      padding: 0.75rem 0.5rem;
+      text-align: left;
+      font-weight: 600;
+      font-size: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--foreground);
+    }
+    tbody tr {
+      border-bottom: 1px solid var(--border);
+    }
+    tbody tr:last-child {
+      border-bottom: 2px solid var(--border-strong);
+    }
+    td {
+      padding: 0.5rem;
+      font-variant-numeric: tabular-nums;
+    }
+    .name-cell {
+      font-weight: 500;
+      color: var(--foreground);
+      max-width: 200px;
+      word-break: break-word;
+    }
+    .status-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-size: 0.75rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      white-space: nowrap;
+    }
+    .status-ok {
+      background-color: var(--status-ok);
+      color: var(--on-primary);
+    }
+    .status-warn {
+      background-color: var(--status-warn);
+      color: var(--on-primary);
+    }
+    .status-unknown {
+      background-color: var(--surface);
+      color: var(--muted);
+      border: 1px solid var(--border-strong);
+    }
+    .status-maintenance {
+      background-color: var(--surface);
+      color: var(--muted);
+      border: 1px solid var(--border-strong);
+    }
+    .telemetry-time {
+      font-size: 0.8125rem;
+      color: var(--muted);
+    }
+
+    /* Ridership chart — CSS bars */
+    .ridership-container {
+      padding: 1.5rem;
+      background-color: var(--canvas);
+      border-bottom: 1px solid var(--border);
+    }
+    .chart-bars {
+      display: grid;
+      grid-template-columns: repeat(7, 1fr);
+      gap: 0.5rem;
+      padding: 1rem;
+      background-color: var(--surface);
+      border: 1px solid var(--border);
+      min-height: 140px;
+    }
+    .bar-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.25rem;
+    }
+    .bar {
+      width: 100%;
+      background-color: var(--primary);
+      border-radius: 2px 2px 0 0;
+      min-height: 2px;
+    }
+    .bar.gap {
+      background-color: transparent;
+      border: 1px dashed var(--border-strong);
+    }
+    .bar-value {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--foreground);
+      font-variant-numeric: tabular-nums;
+      order: -1;
+    }
+    .bar-note {
+      font-size: 0.65rem;
+      color: var(--status-warn);
+      font-style: italic;
+    }
+    .bar-date {
+      font-size: 0.7rem;
+      color: var(--muted);
+      text-align: center;
+      margin-top: 0.25rem;
+    }
+    .bar.gap ~ .bar-value { color: transparent; }
+    .gap-label {
+      font-size: 0.7rem;
+      color: var(--border-strong);
+      font-weight: 500;
+      margin-top: 0.5rem;
+    }
+
+    .ridership-note {
+      margin-top: 1rem;
+      padding: 0.75rem;
+      background-color: var(--surface);
+      border-left: 3px solid var(--primary);
+      font-size: 0.875rem;
+    }
+    .ridership-label {
+      font-weight: 600;
+      color: var(--foreground);
+      font-variant-numeric: tabular-nums;
+    }
+    .ridership-detail {
+      font-size: 0.8125rem;
+      color: var(--muted);
+      margin-top: 0.25rem;
+    }
+
+    /* Footer */
+    .footer {
+      padding: 1rem 1.5rem;
+      border-top: 1px solid var(--border);
+      font-size: 0.8125rem;
+      color: var(--muted);
+      text-align: center;
+    }
+    .sample-badge {
+      display: inline-block;
+      padding: 0.25rem 0.5rem;
+      border: 1px solid var(--border-strong);
+      border-radius: 0.25rem;
+      background-color: var(--surface);
+      font-weight: 500;
+      margin-left: 0.5rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .header { padding: 1rem; }
+      .header h1 { font-size: 1.5rem; }
+      .metrics-row { gap: 1rem; padding: 0.75rem 1rem; font-size: 0.8125rem; }
+      table { font-size: 0.8125rem; }
+      th { padding: 0.5rem 0.25rem; font-size: 0.7rem; }
+      td { padding: 0.375rem 0.25rem; }
+      .name-cell { max-width: 100px; font-size: 0.8rem; }
+      .chart-bars { gap: 0.25rem; min-height: 100px; }
+    }
+
+    @media (max-width: 375px) {
+      .header { padding: 0.75rem; }
+      .header h1 { font-size: 1.25rem; }
+      .metrics-row { flex-direction: column; gap: 0.5rem; padding: 0.75rem; font-size: 0.75rem; }
+      table { font-size: 0.75rem; }
+      th { padding: 0.375rem 0.15rem; font-size: 0.65rem; }
+      td { padding: 0.25rem 0.15rem; }
+      .name-cell { max-width: 80px; font-size: 0.75rem; }
+      .chart-bars { grid-template-columns: repeat(7, 1fr); gap: 0.15rem; padding: 0.5rem; min-height: 80px; }
+      .bar-value { font-size: 0.65rem; }
+      .bar-date { font-size: 0.6rem; }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      * { animation: none !important; transition: none !important; }
+    }
+  </style>
+</head>
+<body data-theme="light">
+
+<div class="page">
+  <div class="header">
+    <h1>Harborline Bike Share</h1>
+    <div class="header-meta">Status as of 2026-07-01 18:05 UTC</div>
+  </div>
+
+  <div class="metrics-row">
+    <div class="metric">
+      <span class="metric-label">Reporting:</span>
+      <span class="metric-value">9 of 12</span>
+      <span class="metric-note">stations</span>
+    </div>
+    <div class="metric">
+      <span class="metric-label">Available:</span>
+      <span class="metric-value">130</span>
+      <span class="metric-note">bikes (reporting only)</span>
+    </div>
+    <div class="metric">
+      <span class="metric-label">Free:</span>
+      <span class="metric-value">104</span>
+      <span class="metric-note">docks (reporting only)</span>
+    </div>
+    <div class="metric">
+      <span class="metric-label">Maintenance:</span>
+      <span class="metric-value">17</span>
+    </div>
+  </div>
+
+  <div class="alerts">
+    <div class="alert alert-notice">
+      <span class="alert-label">Notice</span>
+      <div>Pier 9 closed for dock repair; nearest alternatives are Market Square and Ferry Terminal.</div>
+    </div>
+    <div class="alert alert-warning">
+      <span class="alert-label">Warning</span>
+      <div>Three stations have not reported telemetry for over 24 hours; their bike counts are UNKNOWN, not zero.</div>
+    </div>
+  </div>
+
+  <div class="stations-container">
+    <div class="section-title">All Stations (12)</div>
+    <table>
+      <thead>
+        <tr>
+          <th>Station Name</th>
+          <th>Status</th>
+          <th>Bikes</th>
+          <th>Docks</th>
+          <th>Last Telemetry</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="name-cell">Harbor Plaza</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>18</td>
+          <td>6</td>
+          <td class="telemetry-time">18:04</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Old Mill Crossing</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>11</td>
+          <td>13</td>
+          <td class="telemetry-time">18:05</td>
+        </tr>
+        <tr>
+          <td class="name-cell">University North Gate at the Botanical Research Annex</td>
+          <td><span class="status-badge status-warn">Low Bikes</span></td>
+          <td>2</td>
+          <td>22</td>
+          <td class="telemetry-time">18:03</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Ferry Terminal</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>24</td>
+          <td>8</td>
+          <td class="telemetry-time">18:05</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Cannery Row</td>
+          <td><span class="status-badge status-unknown">Unknown</span></td>
+          <td>—</td>
+          <td>—</td>
+          <td class="telemetry-time">06-28 07:41</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Civic Center</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>15</td>
+          <td>9</td>
+          <td class="telemetry-time">18:02</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Eastbank Library</td>
+          <td><span class="status-badge status-warn">Low Docks</span></td>
+          <td>21</td>
+          <td>1</td>
+          <td class="telemetry-time">18:04</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Rail Yard South</td>
+          <td><span class="status-badge status-unknown">Unknown</span></td>
+          <td>—</td>
+          <td>—</td>
+          <td class="telemetry-time">06-29 22:10</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Greenway Trailhead</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>13</td>
+          <td>11</td>
+          <td class="telemetry-time">18:05</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Market Square</td>
+          <td><span class="status-badge status-ok">OK</span></td>
+          <td>26</td>
+          <td>4</td>
+          <td class="telemetry-time">18:05</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Pier 9</td>
+          <td><span class="status-badge status-maintenance">Closed for repair</span></td>
+          <td>0</td>
+          <td>30</td>
+          <td class="telemetry-time">17:50</td>
+        </tr>
+        <tr>
+          <td class="name-cell">Northgate Depot</td>
+          <td><span class="status-badge status-unknown">Unknown</span></td>
+          <td>—</td>
+          <td>—</td>
+          <td class="telemetry-time">06-28 19:12</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <div class="ridership-container">
+    <div class="section-title">Ridership — Last 7 Days</div>
+    <div class="chart-bars">
+      <div class="bar-group">
+        <div class="bar-value">1,391</div>
+        <div class="bar" style="height: 76%;"></div>
+        <div class="bar-date">06-25</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-value">1,476</div>
+        <div class="bar" style="height: 81%;"></div>
+        <div class="bar-date">06-26</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-value">1,822</div>
+        <div class="bar" style="height: 100%;"></div>
+        <div class="bar-date">06-27</div>
+      </div>
+      <div class="bar-group">
+        <div class="gap-label">No Data</div>
+        <div class="bar gap" style="height: 20%;"></div>
+        <div class="bar-date">06-28</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-value">1,204</div>
+        <div class="bar" style="height: 66%;"></div>
+        <div class="bar-date">06-29</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-value">1,315</div>
+        <div class="bar" style="height: 72%;"></div>
+        <div class="bar-date">06-30</div>
+      </div>
+      <div class="bar-group">
+        <div class="bar-value">1,284</div>
+        <div class="bar" style="height: 70%;"></div>
+        <div class="bar-note">est.</div>
+        <div class="bar-date">07-01</div>
+      </div>
+    </div>
+
+    <div class="ridership-note">
+      <div class="ridership-label">Today's estimate: 1,284 rides</div>
+      <div class="ridership-detail">Gate counters at 3 stations offline; value extrapolated from reporting stations.</div>
+      <div class="ridership-detail" style="margin-top: 0.5rem;"><strong>06-28 gap:</strong> Logging outage 09:00–23:59; day total unrecoverable.</div>
+    </div>
+  </div>
+
+  <div class="footer">
+    Data as of 2026-07-01 18:05 UTC
+    <span class="sample-badge">Sample Data</span>
+  </div>
+</div>
+
+</body>
+</html>

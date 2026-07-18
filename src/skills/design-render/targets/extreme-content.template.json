@@ -1,0 +1,19 @@
+{
+  "_purpose": "P56 Content-Robustness machine arm — copy this next to your surface, fill in the REAL-extreme substitutions (longest real string / max item count / biggest number the data can hold — never lorem), then run: node render.mjs <this-file>. Hand the resulting PNGs to the council/evaluator alongside the normal renders so P56 can JUDGE instead of abstain.",
+  "outDir": "renders/SURFACE-extreme",
+  "viewports": [
+    { "name": "1440w", "width": 1440, "height": 900 },
+    { "name": "820w", "width": 820, "height": 900 }
+  ],
+  "modes": ["light", "dark"],
+  "items": [
+    {
+      "name": "SURFACE-extreme",
+      "file": "RELATIVE/PATH/TO/surface.html",
+      "substitutions": [
+        { "find": "SHORT-DEMO-NAME", "replace": "A Fifty-Three Character Organization Name For Wrap" },
+        { "find": "$1.2M", "replace": "$1,234,567,890.00" }
+      ]
+    }
+  ]
+}

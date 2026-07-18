@@ -1,0 +1,66 @@
+{
+  "schema": "pixelhelm.family/v1",
+  "display_name": "PixelHelm",
+  "repository_url": null,
+  "repository_url_status": "owner-confirmation-required",
+  "canonical_owner": "pixelhelm-family",
+  "capability_owner": "frontend-design",
+  "surface": "claude-code",
+  "choicegate": {
+    "commit": "bad38b9f359d6594c7443d666dcc505eb95c99a3",
+    "tree": "0bcd97a2c7c550b6542f9aec9549c44475d05ece"
+  },
+  "inventory": {
+    "commit": "354046f9627c4a83a2a912e09a656d1871ed6cc4",
+    "tree": "786171bc52fe6efeefb860f01bb71d4c09ed3504",
+    "inventory_fingerprint": "6ef1493691332e372106b652c991a4e9477c869d1a22e10af319845ae533198b"
+  },
+  "edition_policy": {
+    "default": "pixelhelm-lite",
+    "alternative": "pixelhelm-full",
+    "maximum_eligible": 1,
+    "simultaneous_eligibility": "forbidden"
+  },
+  "editions": {
+    "pixelhelm-lite": [
+      "pixelhelm", "pixelhelm-choicegate", "pixelhelm-loop", "pixelhelm-ground",
+      "pixelhelm-baseline", "pixelhelm-generate", "pixelhelm-render",
+      "pixelhelm-evaluate", "pixelhelm-judge", "pixelhelm-repair", "pixelhelm-tokens",
+      "pixelhelm-promote-design", "pixelhelm-record-lesson",
+      "pixelhelm-refresh-guidance", "pixelhelm-curate-fingerprints"
+    ],
+    "pixelhelm-full": [
+      "pixelhelm", "pixelhelm-choicegate", "pixelhelm-loop", "pixelhelm-ground",
+      "pixelhelm-baseline", "pixelhelm-generate", "pixelhelm-render",
+      "pixelhelm-evaluate", "pixelhelm-judge", "pixelhelm-repair", "pixelhelm-tokens",
+      "pixelhelm-promote-design", "pixelhelm-record-lesson",
+      "pixelhelm-refresh-guidance", "pixelhelm-curate-fingerprints",
+      "pixelhelm-reference", "pixelhelm-directions", "pixelhelm-evidence-brief",
+      "pixelhelm-color", "pixelhelm-typography", "pixelhelm-motion",
+      "pixelhelm-dataviz", "pixelhelm-content", "pixelhelm-email",
+      "pixelhelm-video-placement"
+    ]
+  },
+  "legacy_aliases": {
+    "design": "pixelhelm",
+    "design-ground": "pixelhelm-ground",
+    "design-storm": "pixelhelm-evidence-brief",
+    "design-reference": "pixelhelm-reference",
+    "design-direction": "pixelhelm-directions",
+    "design-generate": "pixelhelm-generate",
+    "design-render": "pixelhelm-render",
+    "design-evaluate": "pixelhelm-evaluate",
+    "design-council": "pixelhelm-judge",
+    "design-fix": "pixelhelm-repair",
+    "design-tokens": "pixelhelm-tokens",
+    "design-color": "pixelhelm-color",
+    "design-typography": "pixelhelm-typography",
+    "design-motion": "pixelhelm-motion",
+    "design-dataviz": "pixelhelm-dataviz",
+    "design-content": "pixelhelm-content",
+    "design-email": "pixelhelm-email",
+    "design-video": "pixelhelm-video-placement",
+    "design-learn": "pixelhelm-record-lesson"
+  },
+  "legacy_alias_policy": "compatibility-only-no-natural-language-coeligibility"
+}

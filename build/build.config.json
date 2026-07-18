@@ -1,0 +1,187 @@
+{
+  "devCopy": "src",
+  "_devCopyNote": "src/ is the source of truth. Canonical pixelhelm-* SKILL.md files are overlaid on the qualified legacy resource trees named by skillSources; plugins/ is generated.",
+  "version": "2.0.0",
+  "marketplace": {
+    "name": "pixelhelm",
+    "owner": "Rahul Krishna",
+    "description": "PixelHelm packages the atomic frontend-design capability family as mutually exclusive Lite and Full editions.",
+    "repoUrl": null
+  },
+  "excludeAlways": [
+    "_backups",
+    "node_modules",
+    "__pycache__",
+    ".claude-plugin",
+    "live-brief-",
+    ".design-baseline.json",
+    "skills.json",
+    "package-lock.json"
+  ],
+  "retiredGeneratedEditions": [
+    "design-pixelhelm",
+    "design-pixelhelm-lite"
+  ],
+  "skillSources": {
+    "pixelhelm": { "from": "design", "include": ["references/routing.md"] },
+    "pixelhelm-choicegate": null,
+    "pixelhelm-loop": { "from": "design", "include": ["references/gates-and-loop.md", "references/decisions-and-orchestration.md", "references/close-the-loop.md"] },
+    "pixelhelm-ground": "design-ground",
+    "pixelhelm-baseline": null,
+    "pixelhelm-generate": "design-generate",
+    "pixelhelm-render": "design-render",
+    "pixelhelm-evaluate": "design-evaluate",
+    "pixelhelm-judge": "design-council",
+    "pixelhelm-repair": "design-fix",
+    "pixelhelm-tokens": "design-tokens",
+    "pixelhelm-promote-design": null,
+    "pixelhelm-record-lesson": { "from": "design-learn", "include": ["references/capture-and-versioning.md"] },
+    "pixelhelm-refresh-guidance": { "from": "design-learn", "include": ["references/currency-feeds.md"] },
+    "pixelhelm-curate-fingerprints": { "from": "design-learn", "include": ["references/fingerprint-registry.md"] },
+    "pixelhelm-reference": "design-reference",
+    "pixelhelm-directions": "design-direction",
+    "pixelhelm-evidence-brief": "design-storm",
+    "pixelhelm-color": "design-color",
+    "pixelhelm-typography": "design-typography",
+    "pixelhelm-motion": "design-motion",
+    "pixelhelm-dataviz": "design-dataviz",
+    "pixelhelm-content": "design-content",
+    "pixelhelm-email": "design-email",
+    "pixelhelm-video-placement": "design-video"
+  },
+  "canonicalTextReplacements": [
+    ["~/.claude/design/frontend-design-skill/", "~/.claude/pixelhelm/"],
+    ["~/.claude/design-pixelhelm/", "~/.claude/pixelhelm/"],
+    ["~/.claude/design-pixelhelm", "~/.claude/pixelhelm"],
+    ["~/.claude/design/", "~/.claude/pixelhelm/"],
+    [".design-baseline.json", ".pixelhelm/baseline.json"],
+    ["design/LESSONS.md", "pixelhelm/LESSONS.md"],
+    ["design/<topic>.md", "pixelhelm/<topic>.md"],
+    ["skills: design,", "skills: pixelhelm,"],
+    ["skills: design\n", "skills: pixelhelm\n"],
+    ["`design`", "`pixelhelm`"],
+    ["design-council/verdict@1", "pixelhelm/judge-verdict@1"],
+    ["design/signoff@1", "pixelhelm/signoff@1"],
+    ["design/run@1", "pixelhelm/run@1"],
+    ["design-video", "pixelhelm-video-placement"],
+    ["design-typography", "pixelhelm-typography"],
+    ["design-reference", "pixelhelm-reference"],
+    ["design-direction", "pixelhelm-directions"],
+    ["design-council", "pixelhelm-judge"],
+    ["design-evaluate", "pixelhelm-evaluate"],
+    ["design-generate", "pixelhelm-generate"],
+    ["design-render", "pixelhelm-render"],
+    ["design-ground", "pixelhelm-ground"],
+    ["design-tokens", "pixelhelm-tokens"],
+    ["design-motion", "pixelhelm-motion"],
+    ["design-dataviz", "pixelhelm-dataviz"],
+    ["design-content", "pixelhelm-content"],
+    ["design-email", "pixelhelm-email"],
+    ["design-color", "pixelhelm-color"],
+    ["design-storm", "pixelhelm-evidence-brief"],
+    ["design-fix", "pixelhelm-repair"],
+    ["design-learn", "pixelhelm-record-lesson"],
+    [".design/", ".pixelhelm/"],
+    ["design-pixelhelm-lite", "pixelhelm-lite"],
+    ["design-pixelhelm", "pixelhelm-full"],
+    ["$CLAUDE_PLUGIN_DATA`, else `~/.claude/pixelhelm/` if it exists, else `~/.claude/pixelhelm/`", "$CLAUDE_PLUGIN_DATA`, else `~/.claude/pixelhelm/`"]
+  ],
+  "editions": {
+    "pixelhelm-full": {
+      "displayName": "PixelHelm Full",
+      "description": "The full PixelHelm honesty and register floor for AI-generated UI: bounded grounding, generation, rendering, evaluation, judgment, repair, promotion, learning, evidence briefs, and the specialized craft leaves.",
+      "stripFullOnly": false,
+      "skills": [
+        "pixelhelm",
+        "pixelhelm-choicegate",
+        "pixelhelm-loop",
+        "pixelhelm-ground",
+        "pixelhelm-baseline",
+        "pixelhelm-generate",
+        "pixelhelm-render",
+        "pixelhelm-evaluate",
+        "pixelhelm-judge",
+        "pixelhelm-repair",
+        "pixelhelm-tokens",
+        "pixelhelm-promote-design",
+        "pixelhelm-record-lesson",
+        "pixelhelm-refresh-guidance",
+        "pixelhelm-curate-fingerprints",
+        "pixelhelm-reference",
+        "pixelhelm-directions",
+        "pixelhelm-evidence-brief",
+        "pixelhelm-color",
+        "pixelhelm-typography",
+        "pixelhelm-motion",
+        "pixelhelm-dataviz",
+        "pixelhelm-content",
+        "pixelhelm-email",
+        "pixelhelm-video-placement"
+      ]
+    },
+    "pixelhelm-lite": {
+      "displayName": "PixelHelm Lite",
+      "description": "The default PixelHelm edition: the complete core honesty and register floor with bounded routing, grounding, baseline, generation, rendering, evaluation, judgment, repair, promotion, and learning outcomes.",
+      "stripFullOnly": true,
+      "skills": [
+        "pixelhelm",
+        "pixelhelm-choicegate",
+        "pixelhelm-loop",
+        "pixelhelm-ground",
+        "pixelhelm-baseline",
+        "pixelhelm-generate",
+        "pixelhelm-render",
+        "pixelhelm-evaluate",
+        "pixelhelm-judge",
+        "pixelhelm-repair",
+        "pixelhelm-tokens",
+        "pixelhelm-promote-design",
+        "pixelhelm-record-lesson",
+        "pixelhelm-refresh-guidance",
+        "pixelhelm-curate-fingerprints"
+      ],
+      "dropFiles": [
+        "skills/pixelhelm-judge/references/deep-pass-composites.md",
+        "skills/pixelhelm-judge/references/dataviz-canon.md",
+        "skills/pixelhelm-judge/references/persona-bench.md",
+        "skills/pixelhelm-evaluate/references/layer-2-deep-pass-composites.md",
+        "skills/pixelhelm-evaluate/references/scope-b-marketing-lenses.md",
+        "skills/pixelhelm-evaluate/scripts/seo-meta.mjs",
+        "skills/pixelhelm-render/scripts/perf-budget.mjs",
+        "skills/pixelhelm-generate/references/external-engines.md"
+      ],
+      "literalReplacements": [
+        {
+          "file": "skills/pixelhelm-judge/references/recipe.md",
+          "find": "(the 7 seats + any triggered composites)",
+          "replace": "(the 7 seats)"
+        },
+        {
+          "file": "skills/pixelhelm-render/scripts/render.mjs",
+          "find": "P56 extreme-content re-render:",
+          "replace": "extreme-content re-render:"
+        },
+        {
+          "file": "skills/pixelhelm-render/scripts/render.mjs",
+          "find": "the machine arm of the P56 Content-Robustness composite",
+          "replace": "the machine arm of the Content-Robustness check"
+        },
+        {
+          "file": "skills/pixelhelm-render/scripts/render.mjs",
+          "find": "P56 extreme-content arm:",
+          "replace": "extreme-content arm:"
+        },
+        {
+          "file": "skills/pixelhelm-render/targets/extreme-content.template.json",
+          "find": "P56 Content-Robustness machine arm",
+          "replace": "Content-Robustness machine arm"
+        },
+        {
+          "file": "skills/pixelhelm-render/targets/extreme-content.template.json",
+          "find": "so P56 can JUDGE",
+          "replace": "so the content-robustness check can JUDGE"
+        }
+      ]
+    }
+  }
+}

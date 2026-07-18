@@ -1,0 +1,29 @@
+/* Harborline demo — token block (the ONLY file allowed to carry raw color).
+   Mirrors profile.json tokens+gatedPairs; the AA contract is enforced by
+   design-evaluate's static-gates against the profile. */
+:root {
+  --canvas: #ffffff;
+  --surface: #f6f8fa;
+  --foreground: #111827;
+  --muted: #4b5563;
+  --primary: #0f766e;
+  --on-primary: #ffffff;
+  --border: #d1d5db;
+  --border-strong: #6b7280;
+  --status-ok: #15803d;
+  --status-warn: #92400e;
+  --status-unknown: #4b5563;
+}
+[data-theme="dark"], .dark {
+  --canvas: #0b1220;
+  --surface: #141d2e;
+  --foreground: #e5e7eb;
+  --muted: #9ca3af;
+  --primary: #5eead4;
+  --on-primary: #042f2e;
+  --border: #334155;
+  --border-strong: #94a3b8;
+  --status-ok: #4ade80;
+  --status-warn: #fbbf24;
+  --status-unknown: #9ca3af;
+}

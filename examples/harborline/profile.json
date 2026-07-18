@@ -1,0 +1,140 @@
+{
+  "project": "harborline-demo",
+  "root": ".",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html",
+    ".css"
+  ],
+  "ignore": [
+    "node_modules",
+    "renders",
+    "runs"
+  ],
+  "allowRawColorIn": [
+    "tokens.css"
+  ],
+  "tokenModule": null,
+  "tokens": {
+    "light": {
+      "canvas": "#ffffff",
+      "surface": "#f6f8fa",
+      "foreground": "#111827",
+      "muted": "#4b5563",
+      "primary": "#0f766e",
+      "on-primary": "#ffffff",
+      "border": "#d1d5db",
+      "status-ok": "#15803d",
+      "status-warn": "#92400e",
+      "status-unknown": "#4b5563",
+      "border-strong": "#6b7280"
+    },
+    "dark": {
+      "canvas": "#0b1220",
+      "surface": "#141d2e",
+      "foreground": "#e5e7eb",
+      "muted": "#9ca3af",
+      "primary": "#5eead4",
+      "on-primary": "#042f2e",
+      "border": "#334155",
+      "status-ok": "#4ade80",
+      "status-warn": "#fbbf24",
+      "status-unknown": "#9ca3af",
+      "border-strong": "#94a3b8"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "foreground",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "primary",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-primary",
+      "on": [
+        "primary"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "status-ok",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "status-warn",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "status-unknown",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "border-strong",
+      "on": [
+        "canvas",
+        "surface"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#0ff "
+      ],
+      "note": "generative-AI cyan/neon-teal fingerprint"
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia"
+      ],
+      "note": "default AI purple->pink gradient"
+    }
+  ],
+  "_register": "civic-utility calm: a municipal service status board. Trustworthy and legible at a glance, like good transit signage — quiet, high-contrast, zero marketing gloss. Color is spent ONLY on status semantics (ok / warn / unknown) and one teal accent; everything else is ink on paper. Data gaps are stated plainly (unknown is unknown, never zero, never hidden). System-adjacent type (Inter or the system stack), tabular numerals on counts, hairline structure over shadows. Works equally in light and dark; dark is a night-service mode, not a brand statement.",
+  "_northStars": "Government service status pages (gov.uk plainness) · transit departure boards (legibility discipline) · Mercury's calm no-drama data presentation.",
+  "_taste": {
+    "approvedExemplars": [],
+    "rejectedDirections": [],
+    "registerClarifications": []
+  },
+  "_notes": "The plugin's shipped demo project. All data from fixture.json (synthetic, labeled). Honesty invariants in content-model.md."
+}

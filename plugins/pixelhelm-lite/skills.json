@@ -1,0 +1,134 @@
+{
+  "_note": "Canonical atomic PixelHelm registry. 15 skills (pixelhelm-lite).",
+  "skills": [
+    {
+      "id": "pixelhelm",
+      "type": "router",
+      "objective": true,
+      "role": "Classify a frontend-design request and route it without performing leaf work.",
+      "invokes": [
+        "pixelhelm-choicegate",
+        "pixelhelm-loop",
+        "pixelhelm-ground"
+      ]
+    },
+    {
+      "id": "pixelhelm-choicegate",
+      "type": "boundary",
+      "objective": true,
+      "role": "Verify and consume one complete accepted ChoiceGate continuation for PixelHelm.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-loop",
+      "type": "orchestrator",
+      "objective": true,
+      "role": "Sequence grounding, generation, rendering, evaluation, judgment, repair, and closeout.",
+      "invokes": [
+        "pixelhelm-ground",
+        "pixelhelm-baseline",
+        "pixelhelm-generate",
+        "pixelhelm-render",
+        "pixelhelm-evaluate",
+        "pixelhelm-judge",
+        "pixelhelm-repair"
+      ]
+    },
+    {
+      "id": "pixelhelm-ground",
+      "type": "reference",
+      "objective": true,
+      "role": "Resolve project profile, register, token contract, current guidance, and lessons before design work.",
+      "invokes": [
+        "pixelhelm-tokens",
+        "pixelhelm-refresh-guidance",
+        "pixelhelm-curate-fingerprints"
+      ]
+    },
+    {
+      "id": "pixelhelm-baseline",
+      "type": "baseline",
+      "objective": true,
+      "role": "Capture the current surface and measurable incumbent before changes.",
+      "invokes": [
+        "pixelhelm-render",
+        "pixelhelm-evaluate"
+      ]
+    },
+    {
+      "id": "pixelhelm-generate",
+      "type": "generate",
+      "objective": false,
+      "role": "Generate competing grounded UI directions without judging them.",
+      "invokes": [
+        "pixelhelm-tokens"
+      ]
+    },
+    {
+      "id": "pixelhelm-render",
+      "type": "render",
+      "objective": true,
+      "role": "Render a target UI in a real browser at the required viewport and theme matrix.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-evaluate",
+      "type": "evaluate",
+      "objective": true,
+      "role": "Run machine-certain design gates and emit confidence-labeled findings.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-judge",
+      "type": "judge",
+      "objective": false,
+      "role": "Compare rendered candidates through named expert lenses and synthesize a verdict.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-repair",
+      "type": "repair",
+      "objective": true,
+      "role": "Apply the smallest bounded change for a specific validated finding.",
+      "invokes": [
+        "pixelhelm-render",
+        "pixelhelm-evaluate"
+      ]
+    },
+    {
+      "id": "pixelhelm-tokens",
+      "type": "foundation",
+      "objective": true,
+      "role": "Maintain the single token source of truth and verify conformance.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-promote-design",
+      "type": "promotion",
+      "objective": true,
+      "role": "Promote only an owner-approved, gate-passing candidate into the target surface.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-record-lesson",
+      "type": "learning",
+      "objective": true,
+      "role": "Record one versioned lesson from an owner correction or rejection.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-refresh-guidance",
+      "type": "learning",
+      "objective": true,
+      "role": "Refresh time-sensitive local guidance while preserving source and age evidence.",
+      "invokes": []
+    },
+    {
+      "id": "pixelhelm-curate-fingerprints",
+      "type": "learning",
+      "objective": true,
+      "role": "Curate anti-cliche fingerprints from validated recurring design patterns.",
+      "invokes": []
+    }
+  ]
+}

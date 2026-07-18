@@ -1,0 +1,206 @@
+# Changelog
+
+## [Unreleased]
+
+No changes yet.
+
+## [2.0.0] — 2026-07-16
+
+Private pre-public release candidate for the PixelHelm family migration.
+
+- Replaced the former product and skill IDs with the atomic `pixelhelm-*` family while
+  retaining 19 explicit, non-coeligible compatibility aliases.
+- Added the thin, fail-closed ChoiceGate admission boundary and pinned the accepted
+  ChoiceGate and capability inventory authorities used by the candidate.
+- Split the product into mutually exclusive Lite (default) and Full editions with 15
+  and 25 atomic skills respectively.
+- Moved new durable writes to `.pixelhelm/` and retained legacy state only as a
+  read-only fallback that fails closed on byte conflicts.
+- Added private-pre-public governance, proof-led documentation, release preparation,
+  and offline validation without creating a tag or performing an outward action.
+- Selected `2.0.0` because the canonical plugin and skill identities changed. The
+  canonical GitLab URL remains owner-required, so compare links are intentionally
+  omitted until that identity is confirmed.
+
+Honesty-gate promotion — two battle-tested project-local gates generalized into
+`design-evaluate` as edition-agnostic, config-driven honesty machinery (no version cut).
+
+- **Derived-claims gate (Gate A, both editions):** `design-evaluate/scripts/derived-claims-gate.mjs`
+  — a config-driven port of the proven derived-claims diff for data-bearing UI. Renders the target in
+  a real browser BOTH modes and diffs every numeric claim in the rendered `innerText` against the
+  project's data + injected constants: catches fabrication (invented numbers), derivation drift (a
+  hand-rounded constant), association (a real figure under the wrong block), and a false verdict (an
+  un-negated `BUY` in a non-buy block). Config declares `dataFiles[]`, optional `derivedFile`,
+  `modelBlockAttr`, `perBlockMoneyScopes`, `globalAllow[]`, `verdictWord` + `negationWindow`, and
+  `extraNumericContexts`. Hard-gate (exit 1).
+- **Content-manifest gate (Gate B, both editions):** `design-evaluate/scripts/content-manifest-gate.mjs`
+  — the anti-deletion floor. A page must not pass Gate A by DELETING the failing element; every required
+  manifest item (id/description/scope/type/match/minCount) must be present in BOTH modes. Hard-gate (exit 1).
+- **Reference (both editions):** `design-evaluate/references/honesty-gates.md` — the four failure classes
+  + deletion, the injector pattern (script computes, build injects, no model arithmetic, never
+  clock-derived), the full config + manifest schemas, the non-vacuity mutant ritual (a gate that cannot
+  fire is rejected), the live dogfood record, and the gate lifecycle rule (project-local dogfood before
+  shared-infra promotion — retro-corpus proves recall, live-dogfood proves precision).
+- **Render feel hygiene:** `design-render/scripts/render.mjs` gains `--feel` (drive the page with
+  motion ON and capture scroll-depth frames, deleting every stale `feel-*.png` first so a fixed bug
+  can never resurface from an old frame) and an `--outdir` alias for `--out`.
+- Both honesty gates run standalone with `node` and resolve Playwright via a multi-path `createRequire`
+  fallback (env override → sibling `design-render` install → plain resolution), so no absolute path is
+  embedded. Wired into `design-evaluate` SKILL.md as surface-triggered (data-bearing UI) Layer-1 gates.
+
+## 1.3.0 — 2026-07-06
+
+External-design absorption (scope A) + the scope-B marketing lenses, un-parked and
+first-proven on a real marketing site (CohortWatch), plus the L-045 Tailwind-collision
+baking. The reusable substance from Jack Roberts' "Every Level of Claude Websites" video
+(a 7-levels grounding method) + his `power-design` skill (numeric thresholds), reconciled
+without diluting the moat (honesty gate, register-fit + incumbent guard, blind median
+tournament, learn-loop).
+
+- **Design-extraction method (both editions):** a new first-class `design-ground`
+  method (`design-ground/references/design-extraction.md`) — point at a reference
+  site, READ it (rendered page or owner-supplied screenshot, never an image-blind
+  fetch), extract its full design DNA as SYSTEM QUALITIES only (ramp shape / scale
+  ratio / space rhythm / composition / motion / a11y — never hex, pixels, shots, or
+  copy), and ground exactly ONE tournament arm to match its altitude and BEAT it. It
+  is L-037 (external best-in-class altitude) made repeatable; the ground context emits
+  `extractionBrief`, consumed by design-generate's E3 north-star arm. Grounds ONE arm
+  only (L-040 anti-homogenization); register-fit stays the gate.
+- **Grounding-completeness self-check (both editions):** design-ground's emit step now
+  reports `groundingCompleteness` — which grounding legs a pass used (profile+register ·
+  token contract · reference sources · real data · extraction/brief) and an
+  UNDER-GROUNDED flag when an altitude-mandate redesign reaches for an absolute bar with
+  none of them — a cheap gate that catches a Level-1 ungrounded run before it wastes a
+  tournament.
+- **Galleries reconciled into a human-supplied-screenshot tier:** Godly/Awwwards/
+  Land-book/Mobbin/Magic-UI are NOT dead — they fail AGENT fetch (so are correctly not
+  ground-time fetch entries) but are valid VISUAL references when a human supplies the
+  screenshot (or the real page is rendered / extracted). Updated the reference-sources
+  seam, the local registry note, and the L-042 lesson (a dated refinement).
+- **Web-craft rulebook (both editions):** `design-evaluate/references/web-craft-rulebook.md`
+  — the universal numeric craft floor (measure ≤75ch, line-height/tracking, tap-target
+  ≥44×44, 5-states + focus-ring, one-`<h1>`, no-justified, OKLCH consideration), each
+  threshold tagged machine-checked / axe-covered / Layer-2 lens-Q. Marketing-page
+  concerns (performance budget/CWV, SEO/share-meta, asset generation) are PARKED as
+  surface-triggered lenses (scope B, not built).
+- **New `webCraft` Layer-1 machine gate:** `static-gates.mjs` now soft-reports the two
+  statically-decidable rulebook thresholds — a TEXT color at reduced opacity (which
+  ESCAPES a full-opacity token-contrast lockstep and can ship sub-AA invisibly) and
+  justified body text. SOFT (never changes the exit code); a false positive can't block
+  a build. Proven on the Lentova `est.` caption (`text-…/70` → 3.99:1); captured as
+  lesson L-048.
+- **Scope-B marketing lenses (full edition; un-parked):** two surface-triggered,
+  machine-certain, advisory lenses that fire ONLY when `profile.surfaceType ===
+  "marketing"` and NEVER touch the contrast hard-gate. **SEO / share-meta**
+  (`design-evaluate/scripts/seo-meta.mjs`, dependency-free) — title ≤60, description
+  ≤155, canonical, OG + 1200×630 dims, twitter:card, JSON-LD parse, one-`<h1>`.
+  **Performance / CWV budget** (`design-render/scripts/perf-budget.mjs`, Playwright lab
+  load, co-located with the browser) — LCP<2.5s, CLS<0.1, JS≤300KB WIRE bytes,
+  hero≤200KB, ≤2 font families, 0 undimensioned images; measures encoded transfer
+  (`request().sizes()`) against a PRODUCTION build, excludes `next/font` fallback +
+  dev-overlay faces, and honestly omits INP (not measurable on a cold load). Spec +
+  citations: `design-evaluate/references/scope-b-marketing-lenses.md`. New profile
+  field `surfaceType` (`marketing`|`app`|`data`|`email`). LITE drops both scripts +
+  the reference (scope-B is a full-edition capability). First-proven on the CohortWatch
+  marketing site (9 real SEO FAILs caught → 0; all CWV budgets pass on the prod build);
+  captured as lesson L-049.
+- **L-045 Tailwind-collision baked (both editions):** `design-generate/references/
+  token-law.md` now carries the utility-name-collision rule — never name a hand-written
+  semantic hook with a bare utility shape (`m-*`, `p-*`, `text-*`…); the framework mints
+  that exact utility and its declaration stacks onto your rule, shipping past AA/axe/
+  token gates because none parse layout. Prevent by prefixing every hook; diagnose via
+  the `getBoundingClientRect` vs `getComputedStyle` mismatch heuristic. Lesson L-045
+  now verified AND baked. Also: L-037 (external-best-in-class altitude / design-
+  extraction) flipped `proposed → verified` on the CohortWatch Phase-1 win.
+
+## 1.2.0 — 2026-07-05
+
+Wave-2: the reference-source registry, owner-involvement modes, and the round-2
+flagship harness lessons baked in.
+
+- **Reference-source registry seam (both editions):** design-ground gains a
+  structured FETCH RITUAL over a curated registry of external design sources
+  (`design-ground/references/reference-sources.md`) — every entry carries a
+  VERIFIED fetch entry-point + date, type, what-to-take / what-never-to-take,
+  licensing tier (code-liftable / system-qualities-only / paraphrase-only),
+  version pin, and staleness window. The ground context now emits
+  `referenceSources`; the registry itself is owner data (project `.design/` or
+  the durable data dir), never shipped in the plugin.
+- **Per-arm divergence axes (both editions):** design-generate's tournament arms
+  each get a DIFFERENT registry subset appended to their persona (taste-engines
+  §divergence-axes) — a shared brief with persona-only variation is a proven
+  homogenization attractor. The a11y canon (W3C ARIA APG) is every arm's FLOOR,
+  never an axis. Plus: per-arm register-adjective emphasis, an optional
+  serialized motif-ban chain, and a pre-render convergence check by the chair.
+  The E5 external-engine adapter prompt may carry an axis too (full).
+- **Council citations (both editions):** lens/craft seats may cite CONSULTED
+  registry canon (APG for interaction contracts, design-system canons for system
+  claims, judging-principle sources paraphrase-only) — a citation grounds a
+  finding, never raises its rank; the register-fit gate is untouched.
+- **Owner-involvement modes (both editions):** new profile field
+  `ownerInvolvement: "hands-on" | "autonomous"`. Autonomous stays the unchanged
+  default (ONE final approval gate). Hands-on adds cheap early checkpoints
+  before the expensive stages: ground-confirm, a direction pick on throwaway
+  mockups (full edition; mandatory pre-tournament), and a post-council
+  "does ANY reach your bar?" check. Unset → the router asks once and offers to
+  record the answer.
+- **Harness bakes from the round-2 flagship:** render.mjs injects a FIXED
+  transitions/animations-off style tag before the luminance probe (kills the
+  mode-fidelity false-warn on theme-transition pages; shots read end-states);
+  the extreme-content substitution contract now REQUIRES swapping derived
+  strings (totals, after-tax, %-offs) so extreme renders are never
+  self-contradictory; NEW-PALETTE tournament candidates embed a machine-checked
+  `#token-contract` block, gated by the promoted
+  `design-evaluate/scripts/check-token-contracts.mjs` (AA recomputed per
+  candidate palette, both modes; meaning-bearing pairs only).
+
+## 1.1.0 — 2026-07-02
+
+Wave-1 hardening: the practiced-but-unbaked methods move into the loop, and the
+install experience gets a preflight.
+
+- **External-generator seam (full):** a generator-agnostic adapter contract
+  (`design-generate/references/external-engines.md`) — grounded prompt + design
+  system in → standalone HTML out → MANDATORY fabrication re-verify + token-conform
+  → competes as a labeled `E5-external:<engine>` tournament arm. Engines ship as
+  adapters: **Stitch** (reference implementation, MCP) and **Claude Design**
+  (official MCP, probe-then-adopt); v0 documented, flagged off. Fail-soft: no
+  engine attached ⇒ the internal E1–E4 engines run, nothing breaks.
+- **Persona bench (full):** C8 — two diverse think-aloud persona subagents on
+  consumer-facing surfaces; convergence = constraint-grade finding
+  (`design-council/references/persona-bench.md`; also pre-build on direction
+  mockups). Register-subordinate by construction.
+- **Craft numeric rubric (both editions):** the Craft seat now grades proportion
+  against a numeric contract — 4px grid, radius ladder, type-scale adherence,
+  icon size-set, key:value rails (`design-council/references/craft-rubric.md`).
+- **`--axe` render arm (both editions):** design-render vendors axe-core and can
+  run it per rendered cell, both modes; per-cell serious/critical land in
+  `render.json` and design-evaluate Layer-1 hard-gates on them when run.
+- **`scripts/doctor.mjs` (both editions):** one-shot preflight — node, per-version
+  render deps, browser, profile + `_register`, token contract, data dir,
+  python-for-STORM — one fix line per failure.
+- **`design/run@1` run record:** the router's Close-the-loop step now archives
+  per-run instrumentation (edition, skills, engines, council shape, iterations,
+  MEASURED tokens, wall clock, outcome) so cost comparisons accrue from real runs.
+- render.mjs missing-dependency error now prints the exact per-OS fix; README
+  gained a PowerShell setup variant, a required-vs-optional table, and a
+  zero-config first run on the shipped example.
+
+## 1.0.0 — 2026-07-02
+
+Initial public release: two editions of the honesty + register floor for
+AI-generated UI.
+
+- **design-pixelhelm** (full): 19 skills — the ground → generate → render →
+  judge → fix → learn loop, two-tier council (fast 7-seat pass + surface-
+  triggered deep composite bench), the STORM verified-brief research engine,
+  and the craft suite (color, typography, motion, dataviz, content, email,
+  video).
+- **design-pixelhelm-lite**: the 9-skill core loop with the FAST 7-seat
+  council (register-fit 5-juror median gate + honesty lens included). No
+  python, no deep bench.
+- Durable learn loop: lessons/verdicts/sign-offs live outside the plugin
+  (survive updates); one shared reader with per-skill tags.
+- Worked example: the Harborline status-page demo (labeled-synthetic fixture
+  with honesty bait) + the model-dependence experiment that validated the
+  floor.

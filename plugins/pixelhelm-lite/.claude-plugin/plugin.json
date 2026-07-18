@@ -1,0 +1,21 @@
+{
+  "name": "pixelhelm-lite",
+  "description": "The default PixelHelm edition: the complete core honesty and register floor with bounded routing, grounding, baseline, generation, rendering, evaluation, judgment, repair, promotion, and learning outcomes.",
+  "version": "2.0.0",
+  "author": {
+    "name": "Rahul Krishna"
+  },
+  "license": "MIT",
+  "keywords": [
+    "pixelhelm",
+    "frontend-design",
+    "ui",
+    "ux",
+    "honesty",
+    "register",
+    "accessibility",
+    "a11y",
+    "design-tokens",
+    "evaluation"
+  ]
+}

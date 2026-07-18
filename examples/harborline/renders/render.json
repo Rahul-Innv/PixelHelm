@@ -1,0 +1,54 @@
+{
+  "generated": "2026-07-02T13:42:30.943Z",
+  "viewports": [
+    {
+      "name": "1440w",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "375w",
+      "width": 375,
+      "height": 900
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "shots": [
+    {
+      "file": "status-page__1440w__light.png",
+      "item": "status-page",
+      "viewport": "1440w",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false
+    },
+    {
+      "file": "status-page__375w__light.png",
+      "item": "status-page",
+      "viewport": "375w",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false
+    },
+    {
+      "file": "status-page__1440w__dark.png",
+      "item": "status-page",
+      "viewport": "1440w",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false
+    },
+    {
+      "file": "status-page__375w__dark.png",
+      "item": "status-page",
+      "viewport": "375w",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false
+    }
+  ]
+}

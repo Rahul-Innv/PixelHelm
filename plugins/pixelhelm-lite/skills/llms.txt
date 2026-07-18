@@ -1,0 +1,17 @@
+# PixelHelm atomic skills
+
+- **pixelhelm** - route one admitted frontend-design task.
+- **pixelhelm-choicegate** - verify a complete ChoiceGate continuation.
+- **pixelhelm-loop** - sequence the core design loop.
+- **pixelhelm-ground** - resolve register, tokens, guidance, and lessons.
+- **pixelhelm-baseline** - capture the measurable incumbent.
+- **pixelhelm-generate** - produce grounded alternatives.
+- **pixelhelm-render** - render the browser matrix.
+- **pixelhelm-evaluate** - run machine-certain gates.
+- **pixelhelm-judge** - synthesize named-lens judgment.
+- **pixelhelm-repair** - fix one validated finding.
+- **pixelhelm-tokens** - own the token contract.
+- **pixelhelm-promote-design** - promote an approved passing candidate.
+- **pixelhelm-record-lesson** - record one owner-derived lesson.
+- **pixelhelm-refresh-guidance** - refresh time-sensitive guidance.
+- **pixelhelm-curate-fingerprints** - curate recurring anti-cliche fingerprints.

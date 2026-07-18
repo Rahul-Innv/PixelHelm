@@ -1,0 +1,30 @@
+{
+  "name": "pixelhelm",
+  "owner": {
+    "name": "Rahul Krishna"
+  },
+  "description": "PixelHelm packages the atomic frontend-design capability family as mutually exclusive Lite and Full editions.",
+  "metadata": {
+    "pluginRoot": "./plugins"
+  },
+  "plugins": [
+    {
+      "name": "pixelhelm-full",
+      "source": "./plugins/pixelhelm-full",
+      "displayName": "PixelHelm Full",
+      "description": "The full PixelHelm honesty and register floor for AI-generated UI: bounded grounding, generation, rendering, evaluation, judgment, repair, promotion, learning, evidence briefs, and the specialized craft leaves.",
+      "version": "2.0.0",
+      "license": "MIT",
+      "category": "design"
+    },
+    {
+      "name": "pixelhelm-lite",
+      "source": "./plugins/pixelhelm-lite",
+      "displayName": "PixelHelm Lite",
+      "description": "The default PixelHelm edition: the complete core honesty and register floor with bounded routing, grounding, baseline, generation, rendering, evaluation, judgment, repair, promotion, and learning outcomes.",
+      "version": "2.0.0",
+      "license": "MIT",
+      "category": "design"
+    }
+  ]
+}
