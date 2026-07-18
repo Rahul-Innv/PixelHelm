@@ -10,7 +10,7 @@
 
 ## Before any public launch
 
-- Complete independent criticism of the exact private-readiness candidate.
+- Complete independent criticism of the exact readiness-gate candidate.
 - Have the owner confirm the exact GitLab project URL and private security contact.
 - Run hosted CI and remote asset checks only after separately authorized outward reads.
 - Review the final public copy, license attribution, release notes, and visibility.

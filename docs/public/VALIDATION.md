@@ -12,7 +12,7 @@ private receipts are reproducible from the public history alone.
 
 ## Frozen release-audit authority
 
-The frozen ReleaseBench audit used during private readiness is likewise pinned only
+The frozen ReleaseBench audit from the readiness-gate pass is likewise pinned only
 in private migration evidence. Target: `PRIVATE_LAUNCH_READY_STOP_BEFORE_OUTWARD_ACTIONS`.
 
 ## Candidate gates
