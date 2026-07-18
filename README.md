@@ -160,7 +160,7 @@ Then, fully offline (the bundled stubs stand in for a live model):
 
 ```python
 from pixelhelm import DesignFramework, DesignGate, StormDesignProvider
-from design_adapter import stubs
+from pixelhelm.design_adapter import stubs
 
 provider = StormDesignProvider(
     framework=DesignFramework(),
@@ -199,16 +199,17 @@ abstained lenses: ['performance']
 
 To use a live model instead of the stubs, install `pip install "pixelhelm[live]"`.
 
-**Known packaging issue (`0.1.0`).** Installing currently places three top-level
-packages: `pixelhelm`, `storm_engine`, and `design_adapter`. The last two are generic
-names that can collide with other packages in your environment. Moving them under the
-`pixelhelm.` namespace is scheduled for `0.1.1`.
+**Packaging note.** `0.1.0` installed three top-level packages — `pixelhelm` plus the
+generic names `storm_engine` and `design_adapter`, which could collide with other
+packages in your environment. Fixed in `0.1.1`: the wheel installs exactly one
+top-level package, with the engine and adapter namespaced as
+`pixelhelm.storm_engine` and `pixelhelm.design_adapter`.
 
 ## Status
 
 **Status:** `2.0.0` release candidate — public at
 [gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm), the
-Python slice on PyPI as `pixelhelm` `0.1.0` (with the packaging issue noted above),
+Python slice on PyPI as `pixelhelm` `0.1.1`,
 and the plugin editions loading from this repository only, with no marketplace
 activation; full detail in [STATUS.md](STATUS.md).
 

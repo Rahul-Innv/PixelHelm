@@ -4,6 +4,26 @@
 
 No changes yet.
 
+## pixelhelm (PyPI) 0.1.1 — 2026-07-18
+
+Patch release of the standalone Python distribution only; the plugin family stays at
+`2.0.0`.
+
+- Fixed the `0.1.0` packaging issue: the wheel installed three top-level packages
+  (`pixelhelm`, `storm_engine`, `design_adapter`), the latter two generic names that
+  could shadow or collide with other distributions. The wheel now installs exactly one
+  top-level package: the engine ships as `pixelhelm.storm_engine` (still byte-verbatim
+  from the generated Full edition) and the adapter as `pixelhelm.design_adapter` (a
+  packaging mirror with only its engine imports relativized).
+- Breaking for direct importers of the old top-level names: `import storm_engine` /
+  `import design_adapter` become `from pixelhelm import storm_engine` /
+  `from pixelhelm import design_adapter`. The `pixelhelm` top-level re-exports are
+  unchanged. No compatibility shims are installed — reintroducing the generic names
+  would defeat the fix.
+- The standalone storm trees in the repository (`src/skills/design-storm/storm/`,
+  `plugins/*/skills/pixelhelm-evidence-brief/storm/`) are untouched and still run
+  from their own directories with local top-level imports.
+
 ## [2.0.0] — 2026-07-16
 
 Private pre-public release candidate for the PixelHelm family migration.

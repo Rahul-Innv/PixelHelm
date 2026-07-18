@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "pixelhelm"
-version = "0.1.0"
+version = "0.1.1"
 description = "Offline-first verified evidence-brief engine for frontend design: the portable research engine plus PixelHelm's design adapter."
 readme = { file = "docs/public/PYPI.md", content-type = "text/markdown" }
 requires-python = ">=3.12"
@@ -32,9 +32,11 @@ classifiers = [
 live = ["anthropic"]
 
 [tool.setuptools]
-packages = ["pixelhelm", "storm_engine", "design_adapter"]
+# Exactly one top-level package. The engine is mapped verbatim from the
+# generated Full edition (its internal imports are already relative); the
+# adapter is the packaging mirror with engine imports relativized.
+packages = ["pixelhelm", "pixelhelm.design_adapter", "pixelhelm.storm_engine"]
 
 [tool.setuptools.package-dir]
 pixelhelm = "packaging/pixelhelm"
-storm_engine = "plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/storm_engine"
-design_adapter = "plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/design_adapter"
+"pixelhelm.storm_engine" = "plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/storm_engine"
