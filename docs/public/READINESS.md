@@ -1,16 +1,21 @@
-# PixelHelm private-readiness status
+# PixelHelm readiness gates
 
-Target: `PRIVATE_LAUNCH_READY_STOP_BEFORE_OUTWARD_ACTIONS`
+This is a process document: it records the phase-by-phase readiness gates this
+repository was taken through before publication, the local candidate evidence each
+phase produced, and what each phase deliberately left gated on a later decision or
+independent review. It is not a live status dashboard, and a producing lane cannot
+independently accept its own work.
 
-This file describes local candidate evidence only. A producing lane cannot independently
-accept its own work.
+The gate target for the pass recorded here was
+`PRIVATE_LAUNCH_READY_STOP_BEFORE_OUTWARD_ACTIONS`: prepare every surface locally
+and stop before any outward action until an explicit owner decision.
 
-| Phase | Local candidate | Still gated |
+| Phase | Local candidate evidence | Left gated |
 |---|---|---|
-| Ground | Accepted atomic/ChoiceGate parent pins are held in private migration evidence. | Later authority or product changes require new evidence. |
+| Ground | Accepted atomic/ChoiceGate parent pins are held in migration evidence kept outside this repository. | Later authority or product changes require new evidence. |
 | Prepare | Governance, README, identity, release, CI, dependency, and handoff surfaces are prepared locally. | Fresh critic and any resulting bounded repair. |
 | Health | Redacted scan must remain at zero critical/high; ignore coverage is hardened. | Deep-history and provider-backed scans are not performed. |
-| Config | No single forker-owned runtime config applies; repository URL remains explicit `null`. | Profile schema is a separate future product decision. |
+| Config | No single forker-owned runtime config applies; repository URL remains explicit `null` in the candidate. | Profile schema is a separate future product decision. |
 | Showcase | Real synthetic Harborline render, architecture, limitations, attribution, and local proof are present. | Remote image rendering and reachability are unverified. |
 | Host | Host leaf stops at an owner handoff with URL unresolved. | Project URL, visibility, metadata, avatar, push, and API checks. |
 | Release | `2.0.0` is selected for the canonical identity migration. | Local tag, tag push, and host Release. |
@@ -25,10 +30,11 @@ Marketplace validation is clean. Edition validation passes with the expected adv
 that root `CLAUDE.md` is documentation rather than auto-loaded plugin context; the
 actual runtime instructions remain in the 15/25 independently validated skills.
 
-## Candidate verdict
+## Recorded candidate verdict
 
 `PENDING_FROZEN_PRODUCER_EVIDENCE_AND_FRESH_INDEPENDENT_CRITIC`
 
-The verdict may change to a conditional local acceptance only after every command in
+This is the verdict as recorded by the gate pass above. Under the process it may
+change to a conditional local acceptance only after every command in
 [VALIDATION.md](VALIDATION.md) passes against the exact staged tree and a different
 fresh critic verifies the frozen bytes.
