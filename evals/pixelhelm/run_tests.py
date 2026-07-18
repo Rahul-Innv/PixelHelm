@@ -331,8 +331,10 @@ class FamilyTests(unittest.TestCase):
             (ROOT / path).read_text(encoding="utf-8")
             for path in ("README.md", "src/family.json", "docs/public/OWNER-HANDOFF.md")
         )
-        self.assertNotIn("https://gitlab.com/", joined)
-        self.assertIn("canonical GitLab project URL is intentionally unset", joined)
+        canonical = "https://gitlab.com/krahul02004/PixelHelm"
+        self.assertIn(canonical, joined)
+        self.assertEqual(joined.count("https://gitlab.com/"), joined.count(canonical))
+        self.assertNotIn("intentionally unset", joined)
 
     def test_no_user_specific_absolute_path_in_candidate(self) -> None:
         sensitive_forward = "C:/Users" + "/"
