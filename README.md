@@ -1,4 +1,8 @@
 <p align="center">
+  <img src="docs/assets/logo.png" alt="PixelHelm logo" width="180">
+</p>
+
+<p align="center">
 </p>
 
 # PixelHelm
