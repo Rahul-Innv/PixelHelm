@@ -2,147 +2,214 @@
   <img src="docs/assets/logo.png" alt="PixelHelm logo" width="180">
 </p>
 
-<p align="center">
-</p>
-
 # PixelHelm
 
 [![pipeline status](https://gitlab.com/krahul02004/PixelHelm/badges/main/pipeline.svg)](https://gitlab.com/krahul02004/PixelHelm/-/commits/main)
 [![PyPI version](https://img.shields.io/pypi/v/pixelhelm)](https://pypi.org/project/pixelhelm/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
-PixelHelm is the frontend-design capability family for AI-assisted UI work. It keeps
-honesty, accessibility, product register, and incumbent quality as a measurable floor,
-then routes each independently testable outcome to one atomic skill.
+PixelHelm makes an AI agent design UI the way a team does: ground the brief in the
+project's real data, generate competing candidates, render them in a real browser,
+judge the renders against accessibility and honesty floors, repair, repeat. It ships
+as two Claude Code plugin editions plus a small Python package (`pixelhelm` on PyPI)
+that runs the evidence side of that loop on its own. The page below was designed by
+this loop from checked-in sample data — it is the repository's own output, not a
+mockup.
 
-**Status:** `2.0.0` release candidate, public at
-[gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm). The
-standalone Python slice is published on PyPI as
-[`pixelhelm`](https://pypi.org/project/pixelhelm/) (version `0.1.0`). Marketplace
-activation and live plugin installation remain separate, owner-gated lifecycle decisions
-and are not claimed here.
+![Harborline status page, a dark desktop render produced by the PixelHelm loop](examples/harborline/renders/status-page__1440w__dark.png)
 
-## Install
+**The honesty floor.** Most design tooling stops at "does it look good". PixelHelm
+also enforces that a page tells the truth about its data: missing and estimated
+telemetry must not silently become certainty. In the page above, three bike stations
+report no telemetry, so the design must say "unknown" — a reassuring "0" fails the
+audit. A day lost to a logging outage must stay a visible, labeled gap. A number
+marked as an estimate must keep that label everywhere it appears. The floor has fired
+for real: during the worked example's blind judging, the one candidate that invented
+a claim ("Updates every 5 minutes" — no such cadence exists in the data) was
+disqualified outright, however good it looked. The full worked example, including its
+data and every render, lives in [examples/harborline](examples/harborline/README.md).
 
-The standalone Python slice — the portable verified-evidence-brief engine plus its
-design adapter — installs from PyPI and runs offline with the standard library only:
+## Try it in 30 seconds
+
+The repository includes an offline demo of the evidence engine — the part that writes
+grounded design briefs. It needs Python 3.12 and nothing else: no network, no
+installs.
 
 ```powershell
-pip install pixelhelm
-python -c "import pixelhelm; print(pixelhelm.__version__)"
+python -B plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/demo_offline.py
 ```
 
-The optional live model adapter is `pip install "pixelhelm[live]"`. The two Claude Code
-plugin editions are loaded from this repository, not from PyPI; see the local build and
-validation notes below.
+Real output, trimmed (the full run repeats the brief in a stricter mode and prints
+seven pass/fail assertions):
 
-## What is already proven locally
+```text
+===== DESIGN BRIEF (flag-only) : TestApp Today =====
+[performance] status=insufficient_evidence conf=None
+[accessibility] status=filled conf=0.1 CONTESTED
+   - TestApp body text is 3.9:1 on the surface — below WCAG 2.2 AA (4.5:1).
+   ! risk: TestApp fails WCAG AA contrast - a blocking accessibility defect for its u
+[conversion_ux] status=filled conf=1.0
+   - The primary CTA sits below the fold on mobile.
+   - The signup form has nine required fields, therefore the design has fundamental   [FLAGGED:unsupported]
+   - The signup form has nine required fields.
+ abstained lenses: ['performance']
 
-- deterministic generation of the Lite and Full plugin trees;
-- 25 Full and 15 Lite atomic skills with one canonical owner per outcome;
-- 19 explicit legacy aliases that never become natural-language co-owners;
-- a fail-closed ChoiceGate consumer that admits only an intact, accepted continuation;
-- canonical `.pixelhelm/` state writes with conflict-safe read-only legacy fallback;
-- offline family, trigger, near-miss, collision, syntax, skill, and evidence-engine checks.
+RESULT: PASS - design adapter drives the engine end to end.
+```
 
-The qualification contract and exact evidence boundaries are documented in
-[Validation](docs/public/VALIDATION.md). Local proof is not public traction or hosted
-behavior proof.
+What just happened, in plain words: a perspective with no evidence ("performance")
+abstained instead of guessing; a contested accessibility claim kept its lowered
+confidence instead of being smoothed over; and an unsupported logical leap ("nine
+required fields, therefore poor conversion") was kept but flagged — never silently
+believed, never silently deleted.
 
-## Demo
+## What's inside
 
-![Harborline status page in a dark desktop render](examples/harborline/renders/status-page__1440w__dark.png)
+| Path | What it is |
+|---|---|
+| `plugins/pixelhelm-lite/`, `plugins/pixelhelm-full/` | The two ready-to-load Claude Code plugin editions (generated — see note below). |
+| `src/` + `build/` | The source of truth and the deterministic build that generates both editions. |
+| `examples/harborline/` | The worked example: sample data, the winning page, and its full render matrix. |
+| `evals/pixelhelm/` | The offline test suite that CI runs on every push. |
+| `packaging/` + `pyproject.toml` | The `pixelhelm` Python package published to PyPI. |
 
-Harborline is a checked-in worked example built from labeled synthetic data. Its
-render matrix exercises desktop/mobile and light/dark states, including missing and
-estimated telemetry that the design must not silently turn into certainty. See the
-[fixture and reproduction notes](examples/harborline/README.md).
+`src/` plus `build/overlays/` are the source of truth. The generated
+`plugins/pixelhelm-lite/` and `plugins/pixelhelm-full/` trees are build output and
+must never be hand-edited.
 
-## Choose exactly one edition
+### Choose exactly one edition
 
 | | PixelHelm Lite | PixelHelm Full |
 |---|---:|---:|
-| Role | default | alternative |
-| Atomic skills | 15 | 25 |
-| Ground → baseline → generate → render → evaluate → judge → repair | yes | yes |
-| Tokens, bounded promotion, lessons, guidance refresh, fingerprint curation | yes | yes |
-| Reference, direction, evidence brief, color, typography, motion, dataviz, content, email, video specialists | no | yes |
+| Role | default | bigger alternative |
+| Skills (one per outcome) | 15 | 25 |
+| The full design loop: ground the data → capture the current design → generate → render → evaluate → judge → repair | yes | yes |
+| Design tokens (the single shared file of named colors and styles), promoting a winning design, recording lessons, refreshing guidance, curating overused patterns | yes | yes |
+| Specialists: reference research, competing directions, evidence briefs, color, typography, motion, data visualization, content, email, video placement | no | yes |
 
-Lite and Full are mutually exclusive. A Full-only request returns to ChoiceGate; it
-does not activate Full beside Lite.
+You load exactly one edition. A request that needs Full is answered by switching
+editions, never by running both at once.
 
-## How the boundary works
+## How it works
 
-```mermaid
-flowchart LR
-  A["Task and accepted authority"] --> B["ChoiceGate selects frontend-design"]
-  B --> C["pixelhelm-choicegate verifies the intact continuation"]
-  C --> D{"Exactly one eligible edition?"}
-  D -- "No" --> E["Fail closed with no write"]
-  D -- "Yes" --> F["Route one atomic PixelHelm outcome"]
-  F --> G["Bounded design loop and evidence"]
-```
+One loop, run by whichever edition is loaded:
 
-PixelHelm consumes capability-selection decisions; it does not select its own
-authority. `pixelhelm-choicegate` requires an exact caller-supplied local ChoiceGate
-root and checks the accepted ChoiceGate commit/tree and capability-inventory pins. Bare,
-tampered, stale, bundled, wrong-surface, or simultaneously eligible inputs fail closed.
+1. **Ground.** Read the project's real data, content requirements, and intended
+   tone. Nothing downstream may invent facts that are not here.
+2. **Generate.** Produce several competing versions of the page.
+3. **Render.** Screenshot every candidate in a real browser — desktop and mobile,
+   light and dark.
+4. **Evaluate.** Hard machine checks: WCAG AA contrast on every declared color pair,
+   no raw color values outside the one file allowed to define them, and honesty
+   checks that every number and claim on the rendered page is backed by the data.
+5. **Judge.** A blind panel of model judges scores the surviving renders; the current
+   design stays unless a challenger clearly beats it.
+6. **Repair and repeat.** Fix the specific findings, re-render, re-judge.
 
-## Atomic family
+When PixelHelm runs inside a larger agent setup it does not grant itself permission
+to run — activation is admitted by a separate fail-closed check, documented in
+[docs/authority-boundary.md](docs/authority-boundary.md).
 
-Core: `pixelhelm`, `pixelhelm-choicegate`, `pixelhelm-loop`, `pixelhelm-ground`,
-`pixelhelm-baseline`, `pixelhelm-generate`, `pixelhelm-render`,
-`pixelhelm-evaluate`, `pixelhelm-judge`, `pixelhelm-repair`, `pixelhelm-tokens`,
-`pixelhelm-promote-design`, `pixelhelm-record-lesson`,
-`pixelhelm-refresh-guidance`, and `pixelhelm-curate-fingerprints`.
+## What this repository proves
 
-Full adds `pixelhelm-reference`, `pixelhelm-directions`,
-`pixelhelm-evidence-brief`, `pixelhelm-color`, `pixelhelm-typography`,
-`pixelhelm-motion`, `pixelhelm-dataviz`, `pixelhelm-content`, `pixelhelm-email`, and
-`pixelhelm-video-placement`.
+- **The output is real.** The Harborline status page above was built by this loop
+  from the checked-in synthetic sample data, and its full render matrix
+  (desktop/mobile × light/dark, with per-shot fidelity records) is committed under
+  `examples/harborline/renders/`.
+- **The judging is real.** The winning page scored a median 9/10 for fit with the
+  product's intended tone from a blind five-judge panel — twice — and was authored by
+  the cheapest worker model in the experiment: the quality lives in the loop, not the
+  model.
+- **The honesty floor fires.** One candidate invented an update cadence; the blind
+  audit disqualified it. Three stations with missing telemetry render as "unknown",
+  never as zero.
+- **The engine is checkable offline.** The demo above and a 17-check offline suite
+  (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
+  CI on every push.
 
-## Local build and validation
+## Install
 
-Prerequisites for the core checks are Node.js 22 and Python 3.12. No dependency
-installation or network access is needed for these commands:
+### The plugins (from this repository)
+
+Both editions load directly from a clone of this repository as Claude Code plugins;
+the plugins are not on PyPI. To verify a clone before loading (Node.js 22 and
+Python 3.12, no network needed):
 
 ```powershell
 node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
-python -B plugins/pixelhelm-full/skills/pixelhelm-evidence-brief/storm/demo_offline.py
 ```
 
-The portable test command deliberately skips only the cases that require accepted
-local authority roots. The complete boundary replay is:
+The suite prints `Ran 17 tests ... OK (skipped=1)`; the one skip is the boundary
+replay that needs private roots, explained in
+[docs/authority-boundary.md](docs/authority-boundary.md).
+
+### The Python package (from PyPI)
+
+`pip install pixelhelm` does not install the plugins. It installs the one slice of
+PixelHelm that runs standalone: the verified-evidence-brief engine plus its design
+adapter — the machinery that turns a design subject and source material into a cited,
+confidence-labeled brief that flags unsupported leaps and abstains when evidence is
+thin.
 
 ```powershell
-python -B evals/pixelhelm/run_tests.py `
-  --choicegate-root <accepted-choicegate-root> `
-  --inventory-root <accepted-inventory-root>
+pip install pixelhelm
 ```
 
-`src/` plus `build/overlays/` are the source of truth. The generated
-`plugins/pixelhelm-lite/` and `plugins/pixelhelm-full/` trees must never be hand-edited.
-Optional browser rendering dependencies are installed only inside the exact selected
-local edition after lifecycle approval; they are not needed for the checks above.
+Then, fully offline (the bundled stubs stand in for a live model):
 
-## Distribution and readiness
+```python
+from pixelhelm import DesignFramework, DesignGate, StormDesignProvider
+from design_adapter import stubs
 
-PixelHelm is prepared as two directory-loaded Claude Code plugins plus a Python
-distribution. The `pixelhelm` PyPI package (version `0.1.0`) ships exactly the
-Python-side functionality that runs standalone: the portable verified-evidence-brief
-engine and its design adapter, as published in the generated Full edition. The
-repository-bound Python tooling (the eval suite and the ChoiceGate admission consumer)
-stays in the repository because it requires the repository tree or external accepted
-roots. The applicable offline package dry run is a clean deterministic build,
-plugin-manifest validation, `python -m build`, and `twine check`. The package is
-published on PyPI; marketplace activation and live plugin installation remain closed.
+provider = StormDesignProvider(
+    framework=DesignFramework(),
+    retrieval=stubs.StubRetrieval(),
+    interrogator=stubs.StubInterrogator(),
+    expert=stubs.StubExpert(),
+    surfacer=stubs.StubSurfacer(),
+    gate=DesignGate(stubs.StubVerify()),
+    strict_drop=False,  # keep-and-flag; never silently delete
+)
 
-- [Readiness status](docs/public/READINESS.md)
-- [Dependencies and optional runtime tools](docs/public/DEPENDENCIES.md)
-- [Configuration applicability](docs/public/CONFIGURATION.md)
-- [Release candidate](docs/public/RELEASE-CANDIDATE.md)
-- [Owner-only outward handoff](docs/public/OWNER-HANDOFF.md)
-- [Roadmap](ROADMAP.md)
+brief = provider.brief({"name": "TestApp Today",
+                        "description": "A mobile dashboard; primary job = log an item fast."})
+
+for section in sorted(brief["sections"], key=lambda s: s["lens"]):
+    tag = " CONTESTED" if section["contested"] else ""
+    print(f"[{section['lens']}] status={section['status']} conf={section['confidence']}{tag}")
+    for rec in sorted(section["recommendations"], key=lambda r: r["text"]):
+        flag = f"  [FLAGGED: {rec['verdict']}]" if rec["flagged"] else ""
+        print(f"  - {rec['text'].strip()}{flag}")
+print("abstained lenses:", brief["abstained"])
+```
+
+Real output:
+
+```text
+[accessibility] status=filled conf=0.1 CONTESTED
+  - TestApp body text is 3.9:1 on the surface — below WCAG 2.2 AA (4.5:1).
+[conversion_ux] status=filled conf=1.0
+  - The primary CTA sits below the fold on mobile.
+  - The signup form has nine required fields, therefore the design has fundamentally poor conversion  [FLAGGED: unsupported]
+  - The signup form has nine required fields.
+[performance] status=insufficient_evidence conf=None
+abstained lenses: ['performance']
+```
+
+To use a live model instead of the stubs, install `pip install "pixelhelm[live]"`.
+
+**Known packaging issue (`0.1.0`).** Installing currently places three top-level
+packages: `pixelhelm`, `storm_engine`, and `design_adapter`. The last two are generic
+names that can collide with other packages in your environment. Moving them under the
+`pixelhelm.` namespace is scheduled for `0.1.1`.
+
+## Status
+
+**Status:** `2.0.0` release candidate — public at
+[gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm), the
+Python slice on PyPI as `pixelhelm` `0.1.0` (with the packaging issue noted above),
+and the plugin editions loading from this repository only, with no marketplace
+activation; full detail in [STATUS.md](STATUS.md).
 
 MIT licensed. Built by Rahul Krishna.
