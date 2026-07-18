@@ -7,14 +7,34 @@
 
 # PixelHelm
 
+[![pipeline status](https://gitlab.com/krahul02004/PixelHelm/badges/main/pipeline.svg)](https://gitlab.com/krahul02004/PixelHelm/-/commits/main)
+[![PyPI version](https://img.shields.io/pypi/v/pixelhelm)](https://pypi.org/project/pixelhelm/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 PixelHelm is the frontend-design capability family for AI-assisted UI work. It keeps
 honesty, accessibility, product register, and incumbent quality as a measurable floor,
 then routes each independently testable outcome to one atomic skill.
 
-**Status:** private `2.0.0` pre-public candidate. The display name is **PixelHelm**.
-The canonical GitLab project URL is intentionally unset and still requires an owner
-decision. No remote, hosted-CI, provider, registry, marketplace, installation, or public
-state is claimed here.
+**Status:** `2.0.0` release candidate, public at
+[gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm). The
+standalone Python slice is published on PyPI as
+[`pixelhelm`](https://pypi.org/project/pixelhelm/) (version `0.1.0`). Marketplace
+activation and live plugin installation remain separate, owner-gated lifecycle decisions
+and are not claimed here.
+
+## Install
+
+The standalone Python slice — the verified-evidence-brief engine plus the design
+adapter — installs from PyPI and runs offline with the standard library only:
+
+```powershell
+pip install pixelhelm
+python -c "import pixelhelm; print(pixelhelm.__version__)"
+```
+
+The optional live model adapter is `pip install "pixelhelm[live]"`. The two Claude Code
+plugin editions are loaded from this repository, not from PyPI; see the local build and
+validation notes below.
 
 ## What is already proven locally
 
@@ -115,11 +135,10 @@ engine and its design adapter, as published in the generated Full edition. The
 repository-bound Python tooling (the eval suite and the ChoiceGate admission consumer)
 stays in the repository because it requires the repository tree or external accepted
 roots. The applicable offline package dry run is a clean deterministic build,
-plugin-manifest validation, `python -m build`, and `twine check`. Registry lookup,
-authentication, publication, marketplace activation, and live installation remain
-closed.
+plugin-manifest validation, `python -m build`, and `twine check`. The package is
+published on PyPI; marketplace activation and live plugin installation remain closed.
 
-- [Private readiness status](docs/public/READINESS.md)
+- [Readiness status](docs/public/READINESS.md)
 - [Dependencies and optional runtime tools](docs/public/DEPENDENCIES.md)
 - [Configuration applicability](docs/public/CONFIGURATION.md)
 - [Release candidate](docs/public/RELEASE-CANDIDATE.md)
