@@ -8,7 +8,7 @@ build-check:
     - if: $CI_PIPELINE_SOURCE == "merge_request_event"
 
 atomic-contract:
-  image: python:3.12-alpine
+  image: nikolaik/python-nodejs:python3.12-nodejs22-alpine
   script:
     - python -B evals/pixelhelm/run_tests.py
   rules:

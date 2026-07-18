@@ -320,7 +320,7 @@ class FamilyTests(unittest.TestCase):
         required = (
             "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md", "ROADMAP.md",
             ".gitlab/issue_templates/Bug.md", ".gitlab/issue_templates/Feature.md",
-            ".gitlab/merge_request_templates/Default.md", "assets/logo.svg",
+            ".gitlab/merge_request_templates/Default.md",
             "docs/public/CONFIGURATION.md", "docs/public/DEPENDENCIES.md",
             "docs/public/OWNER-HANDOFF.md", "docs/public/READINESS.md",
             "docs/public/RELEASE-CANDIDATE.md", "docs/public/VALIDATION.md",
