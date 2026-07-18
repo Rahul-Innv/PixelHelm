@@ -64,7 +64,7 @@ class StubExpert:
         if pid == "accessibility":
             claims = [
                 Claim(kind="evaluative",
-                      text="TestApp body text is 3.9:1 on the surface — below WCAG 2.2 AA (4.5:1).",
+                      text="TestApp body text is 3.9:1 on the surface (below WCAG 2.2 AA 4.5:1).",
                       citations=(_cit("body text 3.9:1 fails AA 4.5:1", GOOD, "standard"),),
                       perspective_id=pid, anchor_keys=("accessibility",), stance="constructive",
                       rubric_anchor="wcag"),

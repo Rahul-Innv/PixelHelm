@@ -13,7 +13,7 @@ project's real data, generate competing candidates, render them in a real browse
 judge the renders against accessibility and honesty floors, repair, repeat. It ships
 as two Claude Code plugin editions plus a small Python package (`pixelhelm` on PyPI)
 that runs the evidence side of that loop on its own. The page below was designed by
-this loop from checked-in sample data — it is the repository's own output, not a
+this loop from checked-in sample data: it is the repository's own output, not a
 mockup.
 
 ![Harborline status page, a dark desktop render produced by the PixelHelm loop](examples/harborline/renders/status-page__1440w__dark.png)
@@ -21,17 +21,17 @@ mockup.
 **The honesty floor.** Most design tooling stops at "does it look good". PixelHelm
 also enforces that a page tells the truth about its data: missing and estimated
 telemetry must not silently become certainty. In the page above, three bike stations
-report no telemetry, so the design must say "unknown" — a reassuring "0" fails the
+report no telemetry, so the design must say "unknown": a reassuring "0" fails the
 audit. A day lost to a logging outage must stay a visible, labeled gap. A number
 marked as an estimate must keep that label everywhere it appears. The floor has fired
 for real: during the worked example's blind judging, the one candidate that invented
-a claim ("Updates every 5 minutes" — no such cadence exists in the data) was
+a claim ("Updates every 5 minutes", though no such cadence exists in the data) was
 disqualified outright, however good it looked. The full worked example, including its
 data and every render, lives in [examples/harborline](examples/harborline/README.md).
 
 ## Try it in 30 seconds
 
-The repository includes an offline demo of the evidence engine — the part that writes
+The repository includes an offline demo of the evidence engine: the part that writes
 grounded design briefs. It needs Python 3.12 and nothing else: no network, no
 installs.
 
@@ -46,7 +46,7 @@ seven pass/fail assertions):
 ===== DESIGN BRIEF (flag-only) : TestApp Today =====
 [performance] status=insufficient_evidence conf=None
 [accessibility] status=filled conf=0.1 CONTESTED
-   - TestApp body text is 3.9:1 on the surface — below WCAG 2.2 AA (4.5:1).
+   - TestApp body text is 3.9:1 on the surface (below WCAG 2.2 AA 4.5:1).
    ! risk: TestApp fails WCAG AA contrast - a blocking accessibility defect for its u
 [conversion_ux] status=filled conf=1.0
    - The primary CTA sits below the fold on mobile.
@@ -60,14 +60,14 @@ RESULT: PASS - design adapter drives the engine end to end.
 What just happened, in plain words: a perspective with no evidence ("performance")
 abstained instead of guessing; a contested accessibility claim kept its lowered
 confidence instead of being smoothed over; and an unsupported logical leap ("nine
-required fields, therefore poor conversion") was kept but flagged — never silently
+required fields, therefore poor conversion") was kept but flagged: never silently
 believed, never silently deleted.
 
 ## What's inside
 
 | Path | What it is |
 |---|---|
-| `plugins/pixelhelm-lite/`, `plugins/pixelhelm-full/` | The two ready-to-load Claude Code plugin editions (generated — see note below). |
+| `plugins/pixelhelm-lite/`, `plugins/pixelhelm-full/` | The two ready-to-load Claude Code plugin editions (generated, see note below). |
 | `src/` + `build/` | The source of truth and the deterministic build that generates both editions. |
 | `examples/harborline/` | The worked example: sample data, the winning page, and its full render matrix. |
 | `evals/pixelhelm/` | The offline test suite that CI runs on every push. |
@@ -97,7 +97,7 @@ One loop, run by whichever edition is loaded:
 1. **Ground.** Read the project's real data, content requirements, and intended
    tone. Nothing downstream may invent facts that are not here.
 2. **Generate.** Produce several competing versions of the page.
-3. **Render.** Screenshot every candidate in a real browser — desktop and mobile,
+3. **Render.** Screenshot every candidate in a real browser: desktop and mobile,
    light and dark.
 4. **Evaluate.** Hard machine checks: WCAG AA contrast on every declared color pair,
    no raw color values outside the one file allowed to define them, and honesty
@@ -107,7 +107,7 @@ One loop, run by whichever edition is loaded:
 6. **Repair and repeat.** Fix the specific findings, re-render, re-judge.
 
 When PixelHelm runs inside a larger agent setup it does not grant itself permission
-to run — activation is admitted by a separate fail-closed check, documented in
+to run: activation is admitted by a separate fail-closed check, documented in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 
 ## What this repository proves
@@ -117,7 +117,7 @@ to run — activation is admitted by a separate fail-closed check, documented in
   (desktop/mobile × light/dark, with per-shot fidelity records) is committed under
   `examples/harborline/renders/`.
 - **The judging is real.** The winning page scored a median 9/10 for fit with the
-  product's intended tone from a blind five-judge panel — twice — and was authored by
+  product's intended tone from a blind five-judge panel, twice, and was authored by
   the cheapest worker model in the experiment: the quality lives in the loop, not the
   model.
 - **The honesty floor fires.** One candidate invented an update cadence; the blind
@@ -148,7 +148,7 @@ replay that needs private roots, explained in
 
 `pip install pixelhelm` does not install the plugins. It installs the one slice of
 PixelHelm that runs standalone: the verified-evidence-brief engine plus its design
-adapter — the machinery that turns a design subject and source material into a cited,
+adapter: the machinery that turns a design subject and source material into a cited,
 confidence-labeled brief that flags unsupported leaps and abstains when evidence is
 thin.
 
@@ -184,11 +184,11 @@ for section in sorted(brief["sections"], key=lambda s: s["lens"]):
 print("abstained lenses:", brief["abstained"])
 ```
 
-Real output:
+Real output (one line lightly reformatted):
 
 ```text
 [accessibility] status=filled conf=0.1 CONTESTED
-  - TestApp body text is 3.9:1 on the surface — below WCAG 2.2 AA (4.5:1).
+  - TestApp body text is 3.9:1 on the surface (below WCAG 2.2 AA 4.5:1).
 [conversion_ux] status=filled conf=1.0
   - The primary CTA sits below the fold on mobile.
   - The signup form has nine required fields, therefore the design has fundamentally poor conversion  [FLAGGED: unsupported]
@@ -199,7 +199,7 @@ abstained lenses: ['performance']
 
 To use a live model instead of the stubs, install `pip install "pixelhelm[live]"`.
 
-**Packaging note.** `0.1.0` installed three top-level packages — `pixelhelm` plus the
+**Packaging note.** `0.1.0` installed three top-level packages: `pixelhelm` plus the
 generic names `storm_engine` and `design_adapter`, which could collide with other
 packages in your environment. Fixed in `0.1.1`: the wheel installs exactly one
 top-level package, with the engine and adapter namespaced as
@@ -207,7 +207,7 @@ top-level package, with the engine and adapter namespaced as
 
 ## Status
 
-**Status:** `2.0.0` release candidate — public at
+**Status:** `2.0.0` release candidate: public at
 [gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm), the
 Python slice on PyPI as `pixelhelm` `0.1.1`,
 and the plugin editions loading from this repository only, with no marketplace

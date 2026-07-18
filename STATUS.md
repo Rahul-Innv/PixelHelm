@@ -9,10 +9,10 @@ what is and is not claimed; the README carries only the one-line summary.
   CI runs the deterministic offline checks (the build check plus the 17-test suite)
   on every push.
 - PyPI: the standalone Python slice is published as
-  [`pixelhelm` 0.1.1](https://pypi.org/project/pixelhelm/) — the verified
+  [`pixelhelm` 0.1.1](https://pypi.org/project/pixelhelm/): the verified
   evidence-brief engine plus the design adapter, standard library only,
   offline-capable.
-- The `0.1.0` packaging issue (installation placed three top-level packages —
+- The `0.1.0` packaging issue (installation placed three top-level packages:
   `pixelhelm`, `storm_engine`, and `design_adapter`, the latter two generic
   names that could shadow or collide with other distributions in the same
   environment) is fixed in `0.1.1`: the wheel installs exactly one top-level
