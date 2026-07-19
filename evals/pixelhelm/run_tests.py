@@ -323,6 +323,21 @@ class FamilyTests(unittest.TestCase):
         readme = (ROOT / "README.md").read_text(encoding="utf-8")
         self.assertIn("Python 3.12+ for the `pixelhelm` evidence engine on PyPI", readme)
 
+    def test_python_package_metadata_links_to_public_project(self) -> None:
+        metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        self.assertEqual(
+            {
+                "Repository": "https://gitlab.com/krahul02004/PixelHelm",
+                "Issues": "https://gitlab.com/krahul02004/PixelHelm/-/work_items",
+                "Changelog": "https://gitlab.com/krahul02004/PixelHelm/-/blob/main/CHANGELOG.md",
+            },
+            metadata["project"]["urls"],
+        )
+        self.assertIn(
+            "Ran 19 tests ... OK (skipped=1)",
+            (ROOT / "README.md").read_text(encoding="utf-8"),
+        )
+
     def test_private_readiness_surfaces_are_complete_and_owner_gated(self) -> None:
         required = (
             "CONTRIBUTING.md", "SECURITY.md", "CODE_OF_CONDUCT.md", "ROADMAP.md",

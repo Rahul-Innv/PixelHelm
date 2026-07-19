@@ -28,6 +28,11 @@ classifiers = [
   "Topic :: Software Development :: Quality Assurance",
 ]
 
+[project.urls]
+Repository = "https://gitlab.com/krahul02004/PixelHelm"
+Issues = "https://gitlab.com/krahul02004/PixelHelm/-/work_items"
+Changelog = "https://gitlab.com/krahul02004/PixelHelm/-/blob/main/CHANGELOG.md"
+
 [project.optional-dependencies]
 live = ["anthropic"]
 
