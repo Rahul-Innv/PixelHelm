@@ -14,6 +14,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import tomllib
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -315,6 +316,12 @@ class FamilyTests(unittest.TestCase):
             self.assertEqual("2.0.0", manifest["version"])
             self.assertEqual("Rahul Krishna", manifest["author"]["name"])
             self.assertNotIn("homepage", manifest)
+
+    def test_readme_python_prerequisite_matches_package_metadata(self) -> None:
+        metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        self.assertEqual(">=3.12", metadata["project"]["requires-python"])
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("Python 3.12+ for the `pixelhelm` evidence engine on PyPI", readme)
 
     def test_private_readiness_surfaces_are_complete_and_owner_gated(self) -> None:
         required = (

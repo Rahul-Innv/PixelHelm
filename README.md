@@ -34,7 +34,7 @@ data and every render, lives in [examples/harborline](examples/harborline/README
 **Prerequisites:** Claude Code to use PixelHelm as a plugin (the full design loop runs
 inside Claude Code, not from the Python package). Node 18+ and a browser (Playwright
 Chromium) for the real-browser rendering step, the part that screenshots each candidate.
-Python 3.x for the `pixelhelm` evidence engine on PyPI, which is the standalone
+Python 3.12+ for the `pixelhelm` evidence engine on PyPI, which is the standalone
 evidence-brief slice. The offline demo used in "Check it works" below needs only Python
 (no Node, no browser, no network).
 
