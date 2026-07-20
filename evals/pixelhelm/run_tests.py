@@ -326,6 +326,9 @@ class FamilyTests(unittest.TestCase):
 
     def test_python_package_metadata_links_to_public_project(self) -> None:
         metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        self.assertEqual("0.1.2", metadata["project"]["version"])
+        package_init = (ROOT / "packaging/pixelhelm/__init__.py").read_text(encoding="utf-8")
+        self.assertIn('__version__ = "0.1.2"', package_init)
         self.assertEqual(
             {
                 "Repository": "https://gitlab.com/krahul02004/PixelHelm",
@@ -344,7 +347,8 @@ class FamilyTests(unittest.TestCase):
         )
         self.assertNotIn("17-check", current_surfaces)
         self.assertNotIn("17-test", current_surfaces)
-        self.assertIn("published `pixelhelm` Python distribution source (`0.1.1`)", current_surfaces)
+        self.assertIn("prepared `pixelhelm` Python distribution source (`0.1.2`)", current_surfaces)
+        self.assertIn("current Python slice on PyPI still `pixelhelm` `0.1.1`", current_surfaces)
         self.assertNotIn("No PyPI upload is performed or claimed", current_surfaces)
 
     def test_private_readiness_surfaces_are_complete_and_owner_gated(self) -> None:

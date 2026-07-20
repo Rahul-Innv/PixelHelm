@@ -241,9 +241,9 @@ top-level package, with the engine and adapter namespaced as
 
 ## Status
 
-**Status:** `2.0.0` release candidate: public at
+**Status:** plugin family `2.0.0`; Python `0.1.2` prepared locally: public at
 [gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm), the
-Python slice on PyPI as `pixelhelm` `0.1.1`,
+current Python slice on PyPI still `pixelhelm` `0.1.1`,
 and the plugin editions loading from this repository only, with no marketplace
 activation; full detail in [STATUS.md](STATUS.md).
 
