@@ -1,0 +1,44 @@
+{
+  "receipt_version": "releasebench.release-preparation/v1",
+  "repository": "PixelHelm",
+  "base_commit": "498a48d6e3f9eaa8e62c18f4fa82420df4f1f183",
+  "branch": "release/v0.1.2-prep",
+  "selected_version": "0.1.2",
+  "semver_change": "PATCH",
+  "semver_evidence": [
+    "The Python API and package layout remain compatible with 0.1.1.",
+    "The release adds corrected prerequisites, project URLs, public-state documentation, and regression coverage.",
+    "The separate PixelHelm plugin-family version remains 2.0.0."
+  ],
+  "local_diff": [
+    "CHANGELOG.md",
+    "README.md",
+    "STATUS.md",
+    "docs/public/OWNER-HANDOFF.md",
+    "docs/public/RELEASE-CANDIDATE.md",
+    "docs/public/RELEASE-PREPARATION-0.1.2.json",
+    "evals/pixelhelm/run_tests.py",
+    "packaging/pixelhelm/__init__.py",
+    "pyproject.toml"
+  ],
+  "test_evidence": [
+    "node build/build.mjs --check: PASS",
+    "python -B evals/pixelhelm/run_tests.py: PASS (19 tests, 1 expected authority-boundary skip)",
+    "python -B -m build --no-isolation: PASS (wheel and sdist)",
+    "python -B -m twine check: PASS (wheel and sdist)",
+    "wheel top-level package inspection: PASS (pixelhelm only)",
+    "git diff --check: PASS"
+  ],
+  "compare_link_policy": "No 0.1.1-to-0.1.2 compare link: no matching 0.1.1 source tag exists.",
+  "closed_actions": {
+    "local_tag": "not created",
+    "tag_push": "not performed",
+    "gitlab_release": "not created",
+    "pypi_publication": "not performed"
+  },
+  "owner_only_commands": {
+    "annotated_tag_after_merge_and_artifact_verification": "git tag -a v0.1.2 -m \"PixelHelm 0.1.2 - package metadata and release integrity\"",
+    "tag_push_after_separate_approval": "git push origin v0.1.2",
+    "host_release_after_separate_approval": "Create one GitLab Release for existing tag v0.1.2 from the exact reviewed commit."
+  }
+}

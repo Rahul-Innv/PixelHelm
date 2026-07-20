@@ -1,7 +1,8 @@
 # STATUS
 
-PixelHelm `2.0.0` release candidate. This file is the authoritative statement of
-what is and is not claimed; the README carries only the one-line summary.
+PixelHelm plugin family `2.0.0`; standalone Python source prepared at `0.1.2`.
+This file is the authoritative statement of what is and is not claimed; the README
+carries only the one-line summary.
 
 ## True today
 
@@ -12,6 +13,8 @@ what is and is not claimed; the README carries only the one-line summary.
   [`pixelhelm` 0.1.1](https://pypi.org/project/pixelhelm/): the verified
   evidence-brief engine plus the design adapter, standard library only,
   offline-capable.
+- The reviewed source prepares Python patch 0.1.2 locally. It is not yet tagged,
+  represented by a GitLab Release, or published to PyPI.
 - The `0.1.0` packaging issue (installation placed three top-level packages:
   `pixelhelm`, `storm_engine`, and `design_adapter`, the latter two generic
   names that could shadow or collide with other distributions in the same

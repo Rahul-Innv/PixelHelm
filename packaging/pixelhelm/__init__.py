@@ -12,7 +12,7 @@ consumer live in the PixelHelm repository, not in this distribution, because
 they require the repository tree or externally accepted local roots.
 """
 
-__version__ = "0.1.1"
+__version__ = "0.1.2"
 
 from .design_adapter import (
     DesignExpert,

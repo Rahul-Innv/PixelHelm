@@ -2,10 +2,21 @@
 
 ## [Unreleased]
 
+## [0.1.2] - 2026-07-19
+
+Patch release of the standalone Python distribution only; the plugin family stays at
+`2.0.0`.
+
+- Added Repository, Issues, and Changelog links to the Python package metadata.
+- Corrected the first-use prerequisite to Python 3.12+ and pinned it to package metadata
+  with an offline regression.
+- Reconciled current-facing public-state and test-count surfaces with the public GitLab
+  project, PyPI 0.1.1 baseline, and the 19-test suite without inventing source provenance
+  for the existing artifact.
 - Bound generated family/plugin metadata to the confirmed public GitLab project URL.
-- Reconciled current-facing release docs with the published PyPI 0.1.1 distribution and
-  the 19-test suite while keeping future tags, Releases, activation, and publication
-  owner-gated.
+
+No version compare link is recorded for 0.1.2 because no matching 0.1.1 source tag exists.
+The later tag, tag push, GitLab Release, and PyPI publication remain separate owner actions.
 
 ## pixelhelm (PyPI) 0.1.1 — 2026-07-18
 
