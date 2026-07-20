@@ -14,6 +14,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import tomllib
 import unittest
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -302,9 +303,10 @@ class FamilyTests(unittest.TestCase):
         config = json.loads((ROOT / "build/build.config.json").read_text(encoding="utf-8"))
         self.assertEqual("2.0.0", config["version"])
         self.assertEqual("Rahul Krishna", config["marketplace"]["owner"])
-        self.assertIsNone(config["marketplace"]["repoUrl"])
-        self.assertIsNone(FAMILY["repository_url"])
-        self.assertEqual("owner-confirmation-required", FAMILY["repository_url_status"])
+        canonical = "https://gitlab.com/krahul02004/PixelHelm"
+        self.assertEqual(canonical, config["marketplace"]["repoUrl"])
+        self.assertEqual(canonical, FAMILY["repository_url"])
+        self.assertEqual("confirmed-public", FAMILY["repository_url_status"])
         marketplace = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
         self.assertEqual(config["marketplace"]["description"], marketplace["description"])
         self.assertEqual({"2.0.0"}, {item["version"] for item in marketplace["plugins"]})
@@ -314,7 +316,36 @@ class FamilyTests(unittest.TestCase):
             )
             self.assertEqual("2.0.0", manifest["version"])
             self.assertEqual("Rahul Krishna", manifest["author"]["name"])
-            self.assertNotIn("homepage", manifest)
+            self.assertEqual(canonical, manifest["homepage"])
+
+    def test_readme_python_prerequisite_matches_package_metadata(self) -> None:
+        metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        self.assertEqual(">=3.12", metadata["project"]["requires-python"])
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn("Python 3.12+ for the `pixelhelm` evidence engine on PyPI", readme)
+
+    def test_python_package_metadata_links_to_public_project(self) -> None:
+        metadata = tomllib.loads((ROOT / "pyproject.toml").read_text(encoding="utf-8"))
+        self.assertEqual(
+            {
+                "Repository": "https://gitlab.com/krahul02004/PixelHelm",
+                "Issues": "https://gitlab.com/krahul02004/PixelHelm/-/work_items",
+                "Changelog": "https://gitlab.com/krahul02004/PixelHelm/-/blob/main/CHANGELOG.md",
+            },
+            metadata["project"]["urls"],
+        )
+        self.assertIn(
+            "Ran 19 tests ... OK (skipped=1)",
+            (ROOT / "README.md").read_text(encoding="utf-8"),
+        )
+        current_surfaces = "\n".join(
+            (ROOT / relative).read_text(encoding="utf-8")
+            for relative in ("README.md", "STATUS.md", "docs/public/RELEASE-CANDIDATE.md")
+        )
+        self.assertNotIn("17-check", current_surfaces)
+        self.assertNotIn("17-test", current_surfaces)
+        self.assertIn("published `pixelhelm` Python distribution source (`0.1.1`)", current_surfaces)
+        self.assertNotIn("No PyPI upload is performed or claimed", current_surfaces)
 
     def test_private_readiness_surfaces_are_complete_and_owner_gated(self) -> None:
         required = (

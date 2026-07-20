@@ -6,7 +6,7 @@
     "name": "pixelhelm",
     "owner": "Rahul Krishna",
     "description": "PixelHelm packages the atomic frontend-design capability family as mutually exclusive Lite and Full editions.",
-    "repoUrl": null
+    "repoUrl": "https://gitlab.com/krahul02004/PixelHelm"
   },
   "excludeAlways": [
     "_backups",

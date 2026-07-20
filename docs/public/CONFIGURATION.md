@@ -6,9 +6,11 @@ profiles are task inputs owned by the selected PixelHelm workflow. Adding a publ
 Schema or new validator would therefore expand the product contract and is not part of
 this readiness-gate pass.
 
-The current candidate keeps the canonical repository URL as JSON `null` with
-`repository_url_status: owner-confirmation-required`. Generated plugin manifests omit
-`homepage` until the owner confirms the exact GitLab project URL. No local remote value
-or legacy slug is treated as canonical evidence.
+The canonical public repository is
+`https://gitlab.com/krahul02004/PixelHelm`. `build/build.config.json`, the family
+manifests, generated plugin manifests, and Python package metadata bind that exact URL;
+the family status is `confirmed-public`. This source binding records project identity
+only and grants no authority to mutate GitLab settings, publish a package, or activate a
+plugin.
 
 A versioned profile schema remains a separately reviewed roadmap item.

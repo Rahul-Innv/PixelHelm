@@ -34,7 +34,7 @@ data and every render, lives in [examples/harborline](examples/harborline/README
 **Prerequisites:** Claude Code to use PixelHelm as a plugin (the full design loop runs
 inside Claude Code, not from the Python package). Node 18+ and a browser (Playwright
 Chromium) for the real-browser rendering step, the part that screenshots each candidate.
-Python 3.x for the `pixelhelm` evidence engine on PyPI, which is the standalone
+Python 3.12+ for the `pixelhelm` evidence engine on PyPI, which is the standalone
 evidence-brief slice. The offline demo used in "Check it works" below needs only Python
 (no Node, no browser, no network).
 
@@ -157,7 +157,7 @@ to run: activation is admitted by a separate fail-closed check, documented in
 - **The honesty floor fires.** One candidate invented an update cadence; the blind
   audit disqualified it. Three stations with missing telemetry render as "unknown",
   never as zero.
-- **The engine is checkable offline.** The demo above and a 17-check offline suite
+- **The engine is checkable offline.** The demo above and a 19-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push.
 
@@ -174,7 +174,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 17 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 19 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 
