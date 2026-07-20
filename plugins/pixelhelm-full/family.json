@@ -1,8 +1,8 @@
 {
   "schema": "pixelhelm.family/v1",
   "display_name": "PixelHelm",
-  "repository_url": null,
-  "repository_url_status": "owner-confirmation-required",
+  "repository_url": "https://gitlab.com/krahul02004/PixelHelm",
+  "repository_url_status": "confirmed-public",
   "canonical_owner": "pixelhelm-family",
   "capability_owner": "frontend-design",
   "surface": "claude-code",

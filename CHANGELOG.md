@@ -2,7 +2,10 @@
 
 ## [Unreleased]
 
-No changes yet.
+- Bound generated family/plugin metadata to the confirmed public GitLab project URL.
+- Reconciled current-facing release docs with the published PyPI 0.1.1 distribution and
+  the 19-test suite while keeping future tags, Releases, activation, and publication
+  owner-gated.
 
 ## pixelhelm (PyPI) 0.1.1 — 2026-07-18
 

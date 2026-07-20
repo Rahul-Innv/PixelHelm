@@ -8,11 +8,11 @@
 - Deterministic local build, offline qualification, and compatibility metadata for the
   prior `design-*` identities.
 
-## Before any public launch
+## Before any future plugin release or activation
 
 - Complete independent criticism of the exact readiness-gate candidate.
-- Have the owner confirm the exact GitLab project URL and private security contact.
-- Run hosted CI and remote asset checks only after separately authorized outward reads.
+- Have the owner confirm the private security contact.
+- Re-run hosted CI and remote asset checks for the exact future release head.
 - Review the final public copy, license attribution, release notes, and visibility.
 
 ## Later candidates
@@ -21,7 +21,8 @@
 - Add a versioned profile schema only after the profile contract is stabilized as its
   own product decision.
 - Add more deterministic render fixtures and portability coverage.
-- Evaluate any future marketplace or package channel separately from repository launch.
+- Evaluate any future plugin marketplace or additional package channel separately from
+  the existing public repository and PyPI distribution.
 
 ## Non-goals
 

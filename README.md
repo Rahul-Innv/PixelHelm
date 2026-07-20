@@ -157,7 +157,7 @@ to run: activation is admitted by a separate fail-closed check, documented in
 - **The honesty floor fires.** One candidate invented an update cadence; the blind
   audit disqualified it. Three stations with missing telemetry render as "unknown",
   never as zero.
-- **The engine is checkable offline.** The demo above and a 17-check offline suite
+- **The engine is checkable offline.** The demo above and a 19-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push.
 

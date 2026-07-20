@@ -1,27 +1,28 @@
-# PixelHelm 2.0.0 private release candidate
+# PixelHelm current public source and next-release boundary
 
 ## Version decision
 
-`2.0.0` is the correct next candidate because canonical plugin and skill identities
-moved from `design-*` to the atomic `pixelhelm-*` family and edition names changed to
-`pixelhelm-lite` and `pixelhelm-full`. Explicit compatibility aliases reduce migration
-risk but do not erase the breaking canonical-identity change.
-
-The build config, marketplace inventory, both generated plugin manifests, and changelog
-must agree on `2.0.0`. The canonical GitLab URL remains owner-required, so generated
-plugin manifests omit `homepage` and changelog compare links remain absent.
+The canonical GitLab project is public at
+`https://gitlab.com/krahul02004/PixelHelm`. The plugin family currently declares
+`2.0.0`, while the standalone Python distribution is published on PyPI as `0.1.1`.
+These are separate version lines. No source tag or GitLab Release provenance is claimed
+for the PyPI artifact. Current changes remain Unreleased; a future plugin release must
+choose a version newer than 2.0.0, and a future Python release must choose a version
+newer than 0.1.1, before any tag or publication action.
 
 ## Distribution
 
-The release candidate contains two directory-loaded Claude Code plugins and the
-`pixelhelm` Python distribution (`0.1.0`), which packages the standalone
+The repository contains two directory-loaded Claude Code plugins and the
+published `pixelhelm` Python distribution source (`0.1.1`), which packages the standalone
 evidence-brief engine and design adapter from the generated Full edition. It is not an
 npm, Cargo, or gem publication candidate. Deterministic generation, exact file
 inventory, plugin validation, `python -m build`, `twine check`, and Git-free replay
-are the applicable offline package dry run. No PyPI upload is performed or claimed.
+are the applicable offline package dry run. The existing PyPI publication is recorded
+as public state; no new upload is authorized by this source candidate.
 
 ## Deliberately not performed
 
-No tag exists or is created by this lane. There is no push, host Release, remote/API
-read, registry lookup, authentication, marketplace action, live installation,
-publication, or public verification. Those actions remain separate owner gates.
+This remediation creates no tag, GitLab Release, settings change, marketplace action,
+live installation, or new publication. Read-only GitLab and PyPI checks establish the
+current public state but authorize no mutation. Future tags, Releases, settings changes,
+plugin activation, and package publication remain separate owner gates.
