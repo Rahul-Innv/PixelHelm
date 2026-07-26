@@ -1,0 +1,160 @@
+{
+  "schema": "pixelhelm/judge-verdict@1",
+  "date": "2026-07-26",
+  "project": "e3-foxglove-fern",
+  "surface": "heirloom-seed-shop",
+  "mode": "new-design",
+  "pass": "deep",
+  "candidates": {
+    "seed-annual": {
+      "label": "The printed seed annual (numbered chromeless entries, specimen captions)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png"
+    },
+    "packet-rack": {
+      "label": "The seed rack by the shop door (illustrated packet faces, season shelf rails)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png"
+    },
+    "sowing-almanac": {
+      "label": "The sowing almanac (calendar-first windows, month bands, marginalia)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png"
+    }
+  },
+  "registerFitPanel": {
+    "jurors": 5,
+    "scores": {
+      "seed-annual": [
+        8,
+        9,
+        9,
+        8.5,
+        9
+      ],
+      "packet-rack": [
+        8.5,
+        9,
+        8.5,
+        9,
+        9
+      ],
+      "sowing-almanac": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "medians": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 9
+    },
+    "nonOverlapping": true,
+    "modeFairness": "both-modes"
+  },
+  "lensScores": {
+    "criterion-1": {
+      "seed-annual": 7,
+      "packet-rack": 9,
+      "sowing-almanac": 9
+    },
+    "criterion-2": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 7
+    },
+    "criterion-3": {
+      "seed-annual": 9,
+      "packet-rack": 10,
+      "sowing-almanac": 10
+    },
+    "criterion-4": {
+      "seed-annual": 7,
+      "packet-rack": 9,
+      "sowing-almanac": 8
+    },
+    "criterion-5": {
+      "seed-annual": 9,
+      "packet-rack": 8,
+      "sowing-almanac": 9
+    },
+    "criterion-6": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 9
+    },
+    "criterion-7": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 9
+    },
+    "criterion-8": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 7
+    },
+    "criterion-9": {
+      "seed-annual": 9,
+      "packet-rack": 8,
+      "sowing-almanac": 9
+    },
+    "criterion-10": {
+      "seed-annual": 7,
+      "packet-rack": 8,
+      "sowing-almanac": 9
+    }
+  },
+  "constraints": [
+    {
+      "seat": "panel criteria 2/8 (jurors 1, 3, 5)",
+      "finding": "sowing-almanac product page places the year/calendar section above the price + buy box — read as an undeclared checkout-adjacent placement deviation; it cost the arm stage (a) of the tie-break",
+      "severity": "major"
+    },
+    {
+      "seat": "panel criterion 4 (jurors 2, 4, 5)",
+      "finding": "seed-annual's letterspaced small-caps specimen captions and metadata run small for older readers at default zoom",
+      "severity": "minor"
+    },
+    {
+      "seat": "panel criterion 5 (jurors 2, 4)",
+      "finding": "packet-rack card rhythm wobbles where a three-line variety name (FF-021) makes its packet face taller than its shelf rowmates",
+      "severity": "minor"
+    },
+    {
+      "seat": "juror 5 criterion 1",
+      "finding": "packet-rack shelves FF-021 (Oct-Nov or Feb-Mar) under 'sowings that start Jan-Feb' - faithful to the Feb window but the label framing reads oddly for an autumn-first packet",
+      "severity": "minor"
+    },
+    {
+      "seat": "juror 5 criterion 7",
+      "finding": "packet-rack's stylized packet art is generic (rust-red bell motif for a violet flower)",
+      "severity": "minor"
+    }
+  ],
+  "aggregation": {
+    "contract": "PREREG-RUBRIC-commerce.md (sealed, incl. Amendment C1) + the E1 mechanical tie-break hierarchy reused as precedent (jurors/TIEBREAK.md), 2026-07-26",
+    "weightedScores": {
+      "seed-annual": 9,
+      "packet-rack": 9,
+      "sowing-almanac": 9
+    },
+    "guardOutcome": "no Layer-1 failure, no blocker; three-way 9.0 tie broken at stage (a) by minimum criterion median (packet-rack 8 vs 7/7); every 9+ median recorded as strong-owner-verify per Amendment C1"
+  },
+  "winner": "packet-rack",
+  "registerSafeGrafts": [],
+  "rejectedGrafts": [],
+  "rejectedDirections": [
+    {
+      "direction": "seed-annual",
+      "why": "Tied 9.0 overall but stage-(a) minimum 7: jurors found the flat unsectioned list slower for catalog glance speed and return visits, and its fine specimen typography the least generous to older readers (criteria 1, 4, 10)."
+    },
+    {
+      "direction": "sowing-almanac",
+      "why": "Tied 9.0 overall but stage-(a) minimum 7: three jurors read the product page's buy box below the year section as an undeclared checkout-adjacent placement deviation (criteria 2, 8)."
+    }
+  ],
+  "ownerVerdict": null
+}
