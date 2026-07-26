@@ -36,7 +36,17 @@ merge.
 ## Experiment index
 
 - `e1/` — E1: one full evidenced loop on a utility brief (E2 divergence
-  measurement runs inside it). Pre-registration pack: `PREREG-BRIEF.md`,
-  `PREREG-RUBRIC-utility.md`, `PREREG-METRICS-divergence.md`, sealed ground data
-  in `e1/data/`.
-- E3–E6: not started; E5/E6 owner-gated (human recruitment / provenance).
+  measurement runs inside it). Pre-registration pack: `PREREG-BRIEF.md`
+  (+ Amendment A1: declared convention breaks), `PREREG-RUBRIC-utility.md`,
+  `PREREG-METRICS-divergence.md`, sealed ground data in `e1/data/`.
+- `e3/` — E3: the transfer test — three unfamiliar archetypes, full loop each.
+  Pre-registration pack (drafted while E1 ran; sealed only after owner
+  approval): `PREREG-BRIEF-saas.md` / `PREREG-BRIEF-commerce.md` /
+  `PREREG-BRIEF-editorial.md`, matching `PREREG-RUBRIC-*.md` sheets (RF-8:
+  one rubric per archetype), sealed data in `e3/data/`. Scope honesty: passing
+  covers four archetypes total; portfolio and product-application stay
+  untested and unclaimable.
+- `PREREG-E5-COMPARATOR-RULE.md` — E5's comparator construction rule, required
+  sealed BEFORE E3 begins (critic-2 D9).
+- E4–E6: protocols defined in artifact 14; E5/E6 owner-gated (human
+  recruitment / provenance).
