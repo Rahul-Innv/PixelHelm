@@ -14,12 +14,19 @@ README cites.
 | `tokens.css` | The token block — the only file allowed to carry raw color. |
 | `status-page.html` | The winning candidate. Single file, both modes via `data-theme`. *Attested history, not committed evidence:* per the author's private development runs it was authored by the CHEAPEST worker model in the experiment and scored register-fit median 9/10 from a blind 5-juror panel, twice, beating candidates produced with larger skill sets — but no juror scores, verdict records, or losing candidates are committed in this tree, so treat those numbers as narrative until the loop is re-run with records. |
 | `renders/` | Its render matrix (1440/375 × light/dark) + the `render.json` manifest with per-cell mode-fidelity. |
+| `gates/` | **Committed gate-run artifacts** — every shipped floor validator executed against `status-page.html`, failures included. Two runs FAIL honestly: the structural output floor (the page's three documented gaps, now blocked) and responsive overflow at 280/320px (a new escape the floor caught on its first run). See `gates/README.md`. |
 
 ## Reproduce the loop on this example
 
 ```
 # the machine floor (contrast 30/30 + raw-color walk + anti-cliché grep):
 node <plugin>/skills/design-evaluate/scripts/static-gates.mjs examples/harborline/profile.json
+
+# the structural output floor (landmarks / headings / meta description — FAILS here, see gates/):
+node <plugin>/skills/design-evaluate/scripts/output-floor-gate.mjs examples/harborline/status-page.html
+
+# the browser-arm floor (overflow / state contrast / focus trap / target size — see gates/):
+node <plugin>/skills/design-evaluate/scripts/verify_responsive.mjs examples/harborline/status-page.html
 
 # the render matrix:
 node <plugin>/skills/design-render/scripts/render.mjs \

@@ -52,8 +52,11 @@ picks the winner and the grafts.
    recommended"), names the winning frame + grafts, resolves conflicts
    register-fit-first, writes the unified brief + audit trail.
 5. **Write the verdict record** (Phase 2.5, always): the `design-council/verdict@1`
-   JSON + a ledger line — shapes in the `design` skill's `references/close-the-loop.md`.
-   A run with no record is incomplete.
+   JSON + a ledger line — shapes in the `design` skill's `references/close-the-loop.md`,
+   written THROUGH the loop skill's writer/validator (validate-then-write, append-only):
+   `node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" write judge-verdict --project <dir>`
+   with the record on stdin. **A panel whose record does not validate did not happen** —
+   report the refusal, never report the panel result.
 6. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
 
 The distinctiveness defense lives in generate (competing intentional directions);

@@ -1,0 +1,93 @@
+{
+  "validator": "verify_responsive",
+  "generated": "2026-07-26T19:59:39.941Z",
+  "widths": [
+    280,
+    320,
+    414
+  ],
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "cells": [
+        {
+          "width": 280,
+          "pass": false,
+          "scrollWidth": 348,
+          "clientWidth": 280,
+          "overflowPx": 68,
+          "culprits": [
+            {
+              "selector": "body > div.page > div.stations-container > table",
+              "width": 324,
+              "overshootPx": 68
+            },
+            {
+              "selector": "div.page > div.stations-container > table > thead",
+              "width": 324,
+              "overshootPx": 68
+            },
+            {
+              "selector": "div.stations-container > table > thead > tr",
+              "width": 324,
+              "overshootPx": 68
+            },
+            {
+              "selector": "div.page > div.stations-container > table > tbody",
+              "width": 324,
+              "overshootPx": 68
+            },
+            {
+              "selector": "div.stations-container > table > tbody > tr",
+              "width": 324,
+              "overshootPx": 68
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "pass": false,
+          "scrollWidth": 348,
+          "clientWidth": 320,
+          "overflowPx": 28,
+          "culprits": [
+            {
+              "selector": "body > div.page > div.stations-container > table",
+              "width": 324,
+              "overshootPx": 28
+            },
+            {
+              "selector": "div.page > div.stations-container > table > thead",
+              "width": 324,
+              "overshootPx": 28
+            },
+            {
+              "selector": "div.stations-container > table > thead > tr",
+              "width": 324,
+              "overshootPx": 28
+            },
+            {
+              "selector": "div.page > div.stations-container > table > tbody",
+              "width": 324,
+              "overshootPx": 28
+            },
+            {
+              "selector": "div.stations-container > table > tbody > tr",
+              "width": 324,
+              "overshootPx": 28
+            }
+          ]
+        },
+        {
+          "width": 414,
+          "pass": true,
+          "scrollWidth": 414,
+          "clientWidth": 414,
+          "overflowPx": 0,
+          "culprits": []
+        }
+      ]
+    }
+  ],
+  "pass": false
+}

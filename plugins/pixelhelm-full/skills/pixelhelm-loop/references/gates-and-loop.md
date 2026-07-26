@@ -44,13 +44,19 @@ the evaluator's output and deciding the next gate:
   - **Shipped, HARD (exit 1):** token contrast light + dark (`static-gates.mjs`),
     axe-core a11y fail on serious|critical (when `render.mjs --axe` ran), the two
     honesty gates (`derived-claims-gate.mjs`, `content-manifest-gate.mjs`), candidate
-    token-contract recomputation (`check-token-contracts.mjs`), and motion-lint
-    (Full edition).
+    token-contract recomputation (`check-token-contracts.mjs`), the structural output
+    floor — landmarks / heading hierarchy / meta description
+    (`output-floor-gate.mjs`), and motion-lint (Full edition).
+  - **Shipped, HARD when a browser is available (run them whenever the loop
+    rendered; not run ⇒ say so, never imply they passed):** real-render state
+    contrast in default/hover/focus (`verify_states.mjs`), responsive overflow at
+    280/320/414 (`verify_responsive.mjs`), dialog focus trap
+    (`verify_focustrap.mjs`), and target size WCAG 2.5.8 beyond axe's rule
+    (`verify_targetsize.mjs`).
   - **Shipped, SOFT (reported, never exit 1):** raw-color drift walk, anti-cliche
     registry grep, type-scale ratio, web-craft signals.
-  - **Designed, NOT YET WIRED (no validator ships):** real-render contrast in
-    default/hover/focus, focus-trap, responsive overflow, target size (WCAG 2.5.8
-    beyond axe's rule), states-present, token conformance (computed === resolved
+  - **Designed, NOT YET WIRED (no validator ships):** states-present (distinct
+    hover/focus styles exist at all), token conformance (computed === resolved
     token value). See `pixelhelm-evaluate/references/layer-1-gates.md` for their specs.
   A Layer-1 PASS means every SHIPPED hard gate exited 0 — nothing more. Do not
   describe unwired gates as part of the enforced floor.

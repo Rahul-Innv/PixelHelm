@@ -1,0 +1,42 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-26T19:59:53.482Z",
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "findings": [
+        {
+          "level": "fail",
+          "id": "landmark-main",
+          "msg": "no <main> landmark (or role=\"main\") — page content has no primary landmark"
+        },
+        {
+          "level": "warn",
+          "id": "landmark-aux",
+          "msg": "no header/nav/footer landmark(s) — confirm the page genuinely has no banner/navigation/footer content"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 1 heading(s)"
+        },
+        {
+          "level": "fail",
+          "id": "heading-impostor",
+          "msg": "2 styled-div section title(s) that should be heading markup: <div class=\"section-title\">, <div class=\"section-title\">"
+        },
+        {
+          "level": "fail",
+          "id": "meta-description",
+          "msg": "no <meta name=\"description\"> (or empty content)"
+        }
+      ]
+    }
+  ],
+  "pass": false
+}
