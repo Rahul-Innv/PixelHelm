@@ -144,22 +144,35 @@ When PixelHelm runs inside a larger agent setup it does not grant itself permiss
 to run: activation is admitted by a separate fail-closed check, documented in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 
-## What this repository proves
+## What this repository proves — and what it only attests
 
-- **The output is real.** The Harborline status page above was built by this loop
-  from the checked-in synthetic sample data, and its full render matrix
-  (desktop/mobile × light/dark, with per-shot fidelity records) is committed under
-  `examples/harborline/renders/`.
-- **The judging is real.** The winning page scored a median 9/10 for fit with the
-  product's intended tone from a blind five-judge panel, twice, and was authored by
-  the cheapest worker model in the experiment: the quality lives in the loop, not the
-  model.
-- **The honesty floor fires.** One candidate invented an update cadence; the blind
-  audit disqualified it. Three stations with missing telemetry render as "unknown",
-  never as zero.
+Two evidence grades, kept honest on purpose:
+
+**Committed evidence (verifiable from this tree):**
+
+- **The output is real.** The Harborline status page above was built from the
+  checked-in synthetic sample data, and its full render matrix (desktop/mobile ×
+  light/dark, with per-shot fidelity records) is committed under
+  `examples/harborline/renders/`. Its honest data handling is directly inspectable
+  in the markup: three stations with missing telemetry render as "unknown", never
+  as zero; a null-data day renders as an explicit gap, and estimated data is
+  flagged where it appears.
 - **The engine is checkable offline.** The demo above and a 19-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
-  CI on every push.
+  CI on every push. (Scope honesty: that suite validates packaging, routing-contract,
+  and state hygiene — it does not exercise the design-quality gate scripts.)
+
+**Attested history (from the author's private development runs; no artifacts are
+committed in this tree, so treat these as narrative until re-run with records):**
+
+- The winning page scored a median 9/10 for register fit from a blind five-judge
+  panel, twice, and was authored by the cheapest worker model in the experiment.
+  No juror scores, verdict records, or losing candidates are committed here.
+- One candidate invented an update cadence and the honesty audit disqualified it.
+  The disqualified candidate and audit output are likewise not committed.
+
+Re-running the loop with committed judge/gate artifacts is the top of the public
+roadmap; until then this section deliberately refuses to blur the two grades.
 
 ## Install
 
