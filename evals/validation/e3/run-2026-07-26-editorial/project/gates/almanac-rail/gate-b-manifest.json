@@ -1,6 +1,6 @@
 {
   "gate": "content-manifest",
-  "target": "C:\\Users\\krahu\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\festive-neumann-54fd4f\\evals\\validation\\e3\\run-2026-07-26-editorial\\project\\arms\\almanac-rail\\index.html",
+  "target": "arms/almanac-rail/index.html",
   "pass": true,
   "required": 17,
   "modes": [

@@ -1,0 +1,27 @@
+{
+  "gate": "derived-claims",
+  "target": "<scratch>/mutants/m2/index.html",
+  "pass": false,
+  "allowedNumbers": 158,
+  "blocks": 34,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented money \"$2,387\" (=2387) not in data or derived constants — …g funding lapsed 2005 615 mm ($2,387) 53 mm 2006 647 mm 58 mm 2007…"
+    },
+    {
+      "severity": "HIGH",
+      "kind": "ASSOCIATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "money \"$2,387\" (=2387) inside [data-model=\"2005\"] is not that block's figure — …2005 615 mm ($2,387) 53 mm…"
+    }
+  ]
+}
