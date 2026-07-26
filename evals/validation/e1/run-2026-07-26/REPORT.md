@@ -98,3 +98,41 @@ recorded); the panel produced a validated verdict with recorded per-juror
 scores — **E1's own success criterion is met**. The winner clears the owner
 PASS bar (system-esteem). No user-outcome claim is made or permitted from
 this run. Owner sign-off (and any promotion) remains pending and owner-gated.
+
+---
+
+## Addendum: owner verdict + calibration (2026-07-26, post-panel)
+
+**Owner decision (Rahul): APPROVED-WITH-CHANGES.** Winner stands
+(`trail-ledger` — "I like the design of the first one … especially the
+structure"). Changes named: (1) graft the status-board's explicit status
+structure / color association into the ledger ("the actual structure of,
+like, the open, caution, closed, no report was very useful … a similar thing
+with the first one would have elevated it even further"); (2) design for
+actual in-use usability — "There's a lot of, like, missing UI. Like, how is
+it easy for the user?" Records: `project/.pixelhelm/signoffs/
+2026-07-26--trail-conditions.json` (validated), `ownerVerdict` filled in the
+council record, ledger updated.
+
+**Calibration finding (the load-bearing result).** Owner-esteem vs
+system-esteem on the same artifacts:
+
+| arm | panel overall median | owner's stated band |
+|---|---|---|
+| trail-ledger | 9.0 | ~8 |
+| first-light | 9.0 | ~8 |
+| status-board | 8.0 | ~7 |
+
+The blind panel ran ≈1 point hot against the owner across all three arms —
+consistent ordering, inflated level, concentrated at the top of the scale.
+Recorded as an RF-4-relevant calibration data point: E1 Tier-3 (9+) criterion
+signals should be read with this offset in mind; proper external calibration
+remains E4's job, and user-outcome claims remain E5's.
+
+**Proposed lesson (record-lesson WRITE-BACK; owner saves or discards):**
+"2026-07-26 E1 calibration: a 5-juror blind median panel scored ~1 point
+above the owner on all three arms (9/9/8 vs ~8/8/7). Treat 9+ medians as
+'strong, owner-verify' — not as achieved distinctive excellence. The owner's
+gaps both times were use-oriented (status structure clarity, in-use
+affordances), which the rubric's glance/structure criteria under-weighted
+relative to craft."

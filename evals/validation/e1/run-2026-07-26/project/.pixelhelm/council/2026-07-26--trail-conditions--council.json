@@ -134,5 +134,8 @@
   ],
   "rejectedGrafts": [],
   "rejectedDirections": [],
-  "ownerVerdict": null
+  "ownerVerdict": {
+    "decision": "approved-with-changes",
+    "ownerWords": "I like the design of the first one ... especially the structure. ... I don't think any of them actually hit a nine. ... Most of them maybe eights. ... The last one maybe being, like, a seven. ... There's a lot of, like, missing UI. Like, how is it easy for the user?"
+  }
 }
