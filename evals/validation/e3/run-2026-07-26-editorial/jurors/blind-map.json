@@ -1,0 +1,49 @@
+{
+  "armOrderBase": [
+    "almanac-rail",
+    "weir-plates",
+    "two-inks"
+  ],
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607561,
+      "armOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "two-inks"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607562,
+      "armOrder": [
+        "almanac-rail",
+        "weir-plates",
+        "two-inks"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607563,
+      "armOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "two-inks"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607564,
+      "armOrder": [
+        "almanac-rail",
+        "weir-plates",
+        "two-inks"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607565,
+      "armOrder": [
+        "two-inks",
+        "weir-plates",
+        "almanac-rail"
+      ]
+    }
+  }
+}
