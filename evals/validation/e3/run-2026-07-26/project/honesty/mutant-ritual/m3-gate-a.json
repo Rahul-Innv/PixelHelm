@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local\\Temp\\claude\\WORKTREE-ENC\\2d2c2558-34f6-4880-9843-37d636f7dd50\\scratchpad\\mutants\\arms\\seed-annual\\index-m3.html",
+  "pass": false,
+  "allowedNumbers": 53,
+  "blocks": 8,
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "kind": "VERDICT",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "un-negated \"In stock\" inside non-in-stock block [data-model=\"FF-017\"] — …ation 78% £3.20 Out of stock In stock at the nursery…"
+    }
+  ]
+}

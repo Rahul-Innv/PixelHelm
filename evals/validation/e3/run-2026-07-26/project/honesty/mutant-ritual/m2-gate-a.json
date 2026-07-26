@@ -1,0 +1,27 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local\\Temp\\claude\\WORKTREE-ENC\\2d2c2558-34f6-4880-9843-37d636f7dd50\\scratchpad\\mutants\\arms\\seed-annual\\index-m2.html",
+  "pass": false,
+  "allowedNumbers": 53,
+  "blocks": 8,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented money \"$2,387\" (=2387) not in data or derived constants — …eeds a warm start indoors. Was $2,387 at auction. Sow Feb–AprMode…"
+    },
+    {
+      "severity": "HIGH",
+      "kind": "ASSOCIATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "money \"$2,387\" (=2387) inside [data-model=\"FF-011\"] is not that block's figure — …eeds a warm start indoors. Was $2,387 at auction. Sow Feb–AprMode…"
+    }
+  ]
+}
