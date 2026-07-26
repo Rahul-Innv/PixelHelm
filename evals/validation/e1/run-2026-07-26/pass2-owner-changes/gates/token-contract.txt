@@ -1,0 +1,1 @@
+evals/validation/e1/run-2026-07-26/pass2-owner-changes/arm/trail-ledger/index.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)
