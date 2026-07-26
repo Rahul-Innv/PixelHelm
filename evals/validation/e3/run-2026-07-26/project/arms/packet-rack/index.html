@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxglove &amp; Fern — the seed rack</title>
+<meta name="description" content="Browse the Foxglove & Fern seed rack: eight heirloom varieties as packets on seasonal shelves, with sowing windows, germination, honest stock and prices. UK delivery only.">
+<script type="application/json" id="token-contract">
+{"light":{"ground":"#e9dcc3","packet":"#faf5e9","ink":"#33261a","muted":"#6b5b45","leaf":"#38622f","terra":"#9c4520","rule":"#7f7255","btnbg":"#9c4520","btntext":"#faf5e9"},"dark":{"ground":"#191209","packet":"#241c11","ink":"#f0e6d2","muted":"#baa98d","leaf":"#a9c896","terra":"#e59a72","rule":"#7d6e55","btnbg":"#e59a72","btntext":"#191209"},"gatedPairs":[{"fg":"ink","on":["ground","packet"],"kind":"text"},{"fg":"muted","on":["ground","packet"],"kind":"text"},{"fg":"leaf","on":["packet"],"kind":"text"},{"fg":"terra","on":["packet"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["ground","packet"],"kind":"graphic"}]}
+</script>
+<style>
+/* Packet-rack: the wooden seed rack by the shop door. Each variety is its own
+   illustrated packet (declared break 1) under season shelf rails (declared
+   break 2). Money path stays ruthlessly conventional on every packet. */
+
+:root {
+  color-scheme: light;
+  --ground: #e9dcc3;
+  --packet: #faf5e9;
+  --ink: #33261a;
+  --muted: #6b5b45;
+  --leaf: #38622f;
+  --terra: #9c4520;
+  --rule: #7f7255;
+  --btnbg: #9c4520;
+  --btntext: #faf5e9;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #191209;
+  --packet: #241c11;
+  --ink: #f0e6d2;
+  --muted: #baa98d;
+  --leaf: #a9c896;
+  --terra: #e59a72;
+  --rule: #7d6e55;
+  --btnbg: #e59a72;
+  --btntext: #191209;
+}
+
+:root {
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --type-xl: clamp(1.7rem, 1.2rem + 2.2vw, 2.25rem);
+  --type-lg: 1.2rem;
+  --type-md: 1rem;
+  --type-sm: 0.875rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--type-md);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+header, main, footer {
+  max-width: 68rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+header {
+  padding-top: clamp(1.5rem, 5vw, 2.75rem);
+  padding-bottom: 1.1rem;
+}
+
+.kicker {
+  margin: 0 0 0.3rem;
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0 0 0.4rem;
+  font-family: var(--serif);
+  font-size: var(--type-xl);
+  font-weight: 700;
+}
+
+.standfirst { margin: 0 0 0.6rem; max-width: 40rem; color: var(--muted); }
+
+.shipping {
+  margin: 0;
+  padding: 0.55rem 0.8rem;
+  display: inline-block;
+  font-size: var(--type-sm);
+  font-weight: 600;
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+}
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 0 0.25rem;
+}
+
+.filter select {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+  min-height: 2.75rem;
+  min-width: 11rem;
+}
+
+/* Shelf rails — the rack's shelf-edge labels */
+
+.shelf { margin-top: 1.4rem; }
+
+.shelf > h2 {
+  margin: 0 0 1rem;
+  padding: 0.55rem 0.9rem;
+  font-size: var(--type-md);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  border: 1.5px solid var(--rule);
+  border-bottom-width: 5px;
+  border-radius: 3px;
+  background: var(--packet);
+}
+
+.shelf-note { font-weight: 400; letter-spacing: 0.02em; text-transform: none; color: var(--muted); }
+
+.rack {
+  list-style: none;
+  margin: 0;
+  padding: 0 0 0.6rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  gap: 1.25rem;
+}
+
+/* The packet itself */
+
+.packet-card {
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  display: flex;
+  flex-direction: column;
+}
+
+.face {
+  border-bottom: 1.5px dashed var(--rule);
+  padding: 1.1rem 1.1rem 0.9rem;
+  text-align: center;
+}
+
+.face .frame {
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.9rem 0.75rem 0.8rem;
+}
+
+.sprig { display: block; margin: 0 auto 0.5rem; }
+
+.face h3 {
+  margin: 0 0 0.25rem;
+  font-family: var(--serif);
+  font-size: var(--type-lg);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.pk-type {
+  margin: 0;
+  font-size: var(--type-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.under { padding: 0.9rem 1.1rem 1.1rem; display: flex; flex-direction: column; flex: 1; }
+
+.blurb { margin: 0 0 0.6rem; font-family: var(--serif); }
+
+.facts { margin: 0 0 0.7rem; font-size: var(--type-sm); color: var(--muted); }
+
+.facts span + span::before { content: "·"; padding: 0 0.4rem; color: var(--rule); }
+
+.offer {
+  margin-top: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.3rem 0.8rem;
+}
+
+.price { font-variant-numeric: tabular-nums; font-weight: 700; font-size: var(--type-lg); }
+
+.price-pending { font-weight: 600; font-style: italic; color: var(--muted); }
+
+.stock { font-size: var(--type-sm); font-weight: 700; }
+.stock.in  { color: var(--leaf); }
+.stock.out { color: var(--terra); }
+
+.view-link {
+  display: inline-block;
+  margin-top: 0.7rem;
+  padding: 0.5rem 0.9rem;
+  font-weight: 700;
+  color: var(--btntext);
+  background: var(--btnbg);
+  border-radius: 4px;
+  text-decoration: none;
+  text-align: center;
+}
+
+.view-link:hover { filter: brightness(0.92); }
+
+a:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--packet), 0 0 0 5px var(--terra);
+  border-radius: 4px;
+}
+
+#empty {
+  padding: 2rem 0;
+  text-align: center;
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--muted);
+}
+
+[hidden] { display: none !important; }
+
+footer {
+  padding: 1.6rem 0 2.5rem;
+  text-align: center;
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Heirloom seeds</p>
+  <h1>Foxglove &amp; Fern — the seed rack</h1>
+  <p class="standfirst">The rack by the shop door, shelf by shelf. Two of us keep it stocked; every packet is a variety we grow ourselves.</p>
+  <p class="shipping">Ships to UK addresses only. Flat £1.90 postage; free over £15.</p>
+</header>
+
+<main>
+  <div class="filter">
+    <label for="month">Show what you can sow in</label>
+    <select id="month">
+      <option value="">any month</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+  </div>
+
+  <section class="shelf" id="shelf-winter">
+    <h2>The late-winter shelf <span class="shelf-note">— sowings that start Jan–Feb</span></h2>
+    <ul class="rack">
+      <li class="packet-card" data-model="FF-008" data-months="1,2,3">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V12" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 30c-6-1-9-5-10-10 6 0 9 4 10 10zM22 24c6-1 9-5 10-10-6 0-9 4-10 10z" fill="var(--leaf)"/><circle cx="22" cy="9" r="4" fill="var(--terra)"/></svg>
+          <h3>Winter Windowsill Chili</h3>
+          <p class="pk-type">Compact perennial · 10 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Fruits indoors through winter on a bright sill; estimate from last season's line.</p>
+          <p class="facts"><span>Sow Jan–Mar</span><span>Moderate</span><span>Germination 65% (estimated)</span></p>
+          <p class="offer"><span class="price">£4.10</span><span class="stock in">In stock</span></p>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-011" data-months="2,3,4">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V10" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 32c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><path d="M22 12c0-4 3-7 7-7 0 5-3 8-7 9z" fill="var(--leaf)"/><path d="M17 10a5 6 0 1 1 10 0c0 4-5 7-5 7s-5-3-5-7z" fill="var(--terra)"/></svg>
+          <h3>Cathedral Bells (Cobaea scandens)</h3>
+          <p class="pk-type">Climbing vine · 12 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors.</p>
+          <p class="facts"><span>Sow Feb–Apr</span><span>Moderate</span><span>Germination 72%</span></p>
+          <p class="offer"><span class="price">£3.50</span><span class="stock in">In stock</span></p>
+          <a class="view-link" href="product.html">View this packet</a>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-023" data-months="2,3,4">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V14" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 34c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><path d="M22 16l-5-9h10zM22 16l-8-3 4-7zM22 16l8-3-4-7z" fill="var(--terra)"/></svg>
+          <h3>Dragon's Breath Celosia</h3>
+          <p class="pk-type">Half-hardy annual · 30 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Flame-red plumes; fussy about damp — for the patient gardener.</p>
+          <p class="facts"><span>Sow Feb–Apr</span><span>Hard</span><span>Germination 60%</span></p>
+          <p class="offer"><span class="price">£3.90</span><span class="stock in">In stock — only 9 packets left</span></p>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-021" data-months="10,11,2,3">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40C22 28 16 24 16 14" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 34c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><path d="M16 14c-3-2-3-7 1-8 1 3 0 6-1 8zM16 14c3-2 8-1 8 3-3 1-7-1-8-3z" fill="var(--terra)"/></svg>
+          <h3>Grandmother's Sweet Pea (1928 line)</h3>
+          <p class="pk-type">Climbing annual · 15 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Kept in one family since 1928; intensely scented. Price pending supplier confirmation.</p>
+          <p class="facts"><span>Sow Oct–Nov or Feb–Mar</span><span>Easy</span><span>Germination 85%</span></p>
+          <p class="offer"><span class="price-pending">Price on request</span><span class="stock in">In stock</span></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section class="shelf" id="shelf-spring">
+    <h2>The spring shelf <span class="shelf-note">— sowings that start Mar–Apr</span></h2>
+    <ul class="rack">
+      <li class="packet-card" data-model="FF-017" data-months="3,4,5,6,7">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 12v10" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 12c-2-4-6-5-9-4 1 4 5 5 9 4zM22 12c2-4 6-5 9-4-1 4-5 5-9 4z" fill="var(--leaf)"/><path d="M22 22c4 0 5 6 4 11-1 4-3 7-4 7s-3-3-4-7c-1-5 0-11 4-11z" fill="var(--terra)"/></svg>
+          <h3>Black Nebula Carrot</h3>
+          <p class="pk-type">Root vegetable · 300 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Deep purple heirloom carrot; holds color when roasted.</p>
+          <p class="facts"><span>Sow Mar–Jul</span><span>Easy</span><span>Germination 78%</span></p>
+          <p class="offer"><span class="price">£3.20</span><span class="stock out">Out of stock</span></p>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-019" data-months="3,4,5,9">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V16" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 32c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><path d="M22 16l-3-8 3 2 3-2zM17 17l-7-4 7-1zM27 17l7-4-7-1zM19 19l-6 4 1-6zM25 19l6 4-1-6z" fill="var(--terra)"/></svg>
+          <h3>Blue Boy Cornflower</h3>
+          <p class="pk-type">Hardy annual · 50 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">True cornflower blue; autumn sowing gives earlier flowers.</p>
+          <p class="facts"><span>Sow Mar–May or Sep</span><span>Easy</span><span>Germination 92%</span></p>
+          <p class="offer"><span class="price">£2.40</span><span class="stock in">In stock</span></p>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-002" data-months="4,5,6">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40C20 30 12 28 10 20" stroke="var(--leaf)" stroke-width="2" fill="none"/><circle cx="10" cy="16" r="5" fill="var(--leaf)"/><circle cx="26" cy="14" r="6" fill="var(--terra)"/><circle cx="26" cy="14" r="2" fill="var(--packet)"/></svg>
+          <h3>Moonlight Nasturtium</h3>
+          <p class="pk-type">Trailing annual · 20 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Pale cream flowers; leaves and flowers edible.</p>
+          <p class="facts"><span>Sow Apr–Jun</span><span>Easy</span><span>Germination 90%</span></p>
+          <p class="offer"><span class="price">£2.80</span><span class="stock in">In stock</span></p>
+        </div>
+      </li>
+      <li class="packet-card" data-model="FF-014" data-months="4,5">
+        <div class="face"><div class="frame">
+          <svg class="sprig" width="44" height="44" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V18" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 34c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><circle cx="22" cy="12" r="4" fill="var(--leaf)"/><path d="M22 4l2 4h-4zM22 20l2-4h-4zM14 12l4-2v4zM30 12l-4-2v4zM16 6l3 3-2 2zM28 6l-3 3 2 2zM16 18l3-3-2-2zM28 18l-3-3 2-2z" fill="var(--terra)"/></svg>
+          <h3>Tithonia Torch Sunflower</h3>
+          <p class="pk-type">Tall annual · 25 seeds</p>
+        </div></div>
+        <div class="under">
+          <p class="blurb">Blazing orange, beloved by butterflies; 1.8m tall.</p>
+          <p class="facts"><span>Sow Apr–May</span><span>Easy</span><span>Germination 88%</span></p>
+          <p class="offer"><span class="price">£2.60</span><span class="stock in">In stock</span></p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <p id="empty" hidden>Nothing on the rack sows then. Try the month either side — most windows are generous.</p>
+</main>
+
+<footer>
+  <p>Foxglove &amp; Fern · heirloom seeds · UK addresses only</p>
+</footer>
+
+<script>
+(function () {
+  var sel = document.getElementById("month");
+  var packets = document.querySelectorAll(".packet-card[data-months]");
+  var shelves = document.querySelectorAll(".shelf");
+  var empty = document.getElementById("empty");
+  sel.addEventListener("change", function () {
+    var v = sel.value, shown = 0;
+    packets.forEach(function (el) {
+      var show = !v || el.getAttribute("data-months").split(",").indexOf(v) !== -1;
+      el.hidden = !show;
+      if (show) shown++;
+    });
+    shelves.forEach(function (shelf) {
+      var visible = shelf.querySelectorAll(".packet-card:not([hidden])").length;
+      shelf.hidden = visible === 0;
+    });
+    empty.hidden = shown !== 0;
+  });
+})();
+</script>
+</body>
+</html>
