@@ -1,0 +1,57 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-26T23:37:24.207Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "arms/sowing-almanac/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 4,
+          "checked": 4,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 4,
+          "checked": 4,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    },
+    {
+      "target": "arms/sowing-almanac/product.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 3,
+          "checked": 3,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 3,
+          "checked": 3,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

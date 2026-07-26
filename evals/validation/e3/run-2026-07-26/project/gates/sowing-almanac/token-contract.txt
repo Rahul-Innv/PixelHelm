@@ -1,0 +1,2 @@
+arms/sowing-almanac/index.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)
+arms/sowing-almanac/product.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)

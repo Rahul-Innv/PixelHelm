@@ -1,0 +1,132 @@
+{
+  "project": "e3-arm-seed-annual",
+  "root": "../arms/seed-annual",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html",
+    "product.html"
+  ],
+  "_rawColorNote": "single-file surfaces: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#f6efdd",
+      "ink": "#2a2417",
+      "muted": "#635a41",
+      "accent": "#8f3f14",
+      "stockin": "#2f5631",
+      "stockout": "#7a2d1b",
+      "rule": "#877d5e",
+      "btnbg": "#8f3f14",
+      "btntext": "#f6efdd"
+    },
+    "dark": {
+      "paper": "#1a160e",
+      "ink": "#ece2cb",
+      "muted": "#b6ab8d",
+      "accent": "#e39a68",
+      "stockin": "#a3c79a",
+      "stockout": "#e39684",
+      "rule": "#766b52",
+      "btnbg": "#e39a68",
+      "btntext": "#1a160e"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "accent",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "stockin",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "stockout",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "btntext",
+      "on": [
+        "btnbg"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "commerce",
+  "_register": "warm, unhurried, knowledgeable neighbor; mechanics ruthlessly conventional."
+}

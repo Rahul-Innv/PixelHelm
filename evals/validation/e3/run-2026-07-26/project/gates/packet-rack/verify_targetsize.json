@@ -1,0 +1,24 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T23:37:19.059Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/packet-rack/index.html",
+      "measured": 2,
+      "violations": [],
+      "excepted": []
+    },
+    {
+      "target": "arms/packet-rack/product.html",
+      "measured": 3,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

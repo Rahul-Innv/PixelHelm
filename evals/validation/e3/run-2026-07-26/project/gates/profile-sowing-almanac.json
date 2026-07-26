@@ -1,0 +1,130 @@
+{
+  "project": "e3-arm-sowing-almanac",
+  "root": "../arms/sowing-almanac",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html",
+    "product.html"
+  ],
+  "_rawColorNote": "single-file surfaces: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "linen": "#f3f0e4",
+      "ink": "#262a20",
+      "muted": "#5d604c",
+      "moss": "#43592f",
+      "plum": "#703052",
+      "rule": "#82846c",
+      "btnbg": "#703052",
+      "btntext": "#f3f0e4"
+    },
+    "dark": {
+      "linen": "#16180f",
+      "ink": "#e7e5d4",
+      "muted": "#b0b195",
+      "moss": "#aabf8d",
+      "plum": "#d9a8c5",
+      "rule": "#6c6e57",
+      "btnbg": "#d9a8c5",
+      "btntext": "#16180f"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "linen"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "linen"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "moss",
+      "on": [
+        "linen"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "plum",
+      "on": [
+        "linen"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "btntext",
+      "on": [
+        "btnbg"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "linen"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "moss",
+      "on": [
+        "linen"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "commerce",
+  "_register": "warm, unhurried, knowledgeable neighbor; mechanics ruthlessly conventional."
+}
