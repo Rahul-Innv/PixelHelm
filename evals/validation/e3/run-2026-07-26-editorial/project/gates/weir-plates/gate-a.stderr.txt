@@ -1,0 +1,1 @@
+derived-claims-gate: launch bundled chromium failed: browserType.launch: Executable doesn't exist at %USERPROFILE%\AppData\Local\ms-playwright\chromium_headless_shell-1234\chrome-headless-shell-win64\chrome-headless-shell.exe

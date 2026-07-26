@@ -1,0 +1,24 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T23:41:32.470Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/almanac-rail/index.html",
+      "measured": 1,
+      "violations": [],
+      "excepted": [
+        {
+          "selector": "body > main > p.caveats > a",
+          "size": "71.88x17px",
+          "exception": "inline (in a sentence)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,42 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-26T23:41:10.048Z",
+  "targets": [
+    {
+      "target": "arms/almanac-rail/index.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "warn",
+          "id": "landmark-aux",
+          "msg": "no nav landmark(s) — confirm the page genuinely has no banner/navigation/footer content"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 3 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (180 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
