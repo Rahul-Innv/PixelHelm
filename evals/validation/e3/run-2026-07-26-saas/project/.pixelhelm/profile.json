@@ -1,0 +1,16 @@
+{
+  "project": "e3-ledgerline",
+  "root": ".",
+  "sourceDirs": ["arms"],
+  "sourceExts": [".html"],
+  "ignore": [],
+  "allowRawColorIn": ["arms/worked-invoice/index.html", "arms/driveway-to-paid/index.html", "arms/fair-quote/index.html"],
+  "_rawColorNote": "Single-file arms define their tokens in :root/[data-theme] blocks inside the HTML; raw hexes are legal ONLY inside those token definitions. The soft raw-color walk stays informative; per-arm contrast is HARD-gated from each arm's embedded #token-contract (check-token-contracts.mjs) and per-arm static-gates profiles under gates/.",
+  "tokenModule": null,
+  "ownerInvolvement": "autonomous",
+  "surfaceType": "marketing",
+  "_register": "plain-spoken, tradesperson-respecting, zero startup hype; every claim on the page must trace to the sealed data file. A sole trader who has never used invoicing software and distrusts subscriptions decides, on a phone, within one screenful what this is and who it's for; within the page whether it's worth the price. The trial CTA is unmistakable but never nagging. Credibility engineering: restrained, verifiable, conversion-respecting — restraint reads as confidence.",
+  "_northStars": "A well-typeset paper invoice — the product's own artifact as proof of competence; a good tradesperson's written quote — price and terms unhidden; Which?-style plain product reporting — evidence before adjectives.",
+  "_taste": { "approvedExemplars": [], "rejectedDirections": [], "registerClarifications": [] },
+  "_notes": "E3(saas) validation run project (sealed Ledgerline brief). Content authority: data/ledgerline.json + injected constants in data/derived.json only. Three tournament arms under arms/<name>/index.html, each with its own embedded token contract. E1 calibration lesson binds via rubric Amendment C1: 9+ panel medians read as strong-owner-verify."
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "pixelhelm-validation/saas-product@1",
+  "product": "Ledgerline",
+  "sealedNote": "Synthetic. Sealed before any E3 generation; the only content source for the SaaS brief.",
+  "oneLiner": "Invoicing for trades — send the invoice before you leave the driveway.",
+  "audience": "Sole-trader tradespeople invoicing from a phone between jobs.",
+  "features": [
+    { "name": "60-second invoice", "detail": "Photo of the job sheet becomes a line-itemed invoice; send by text or email." },
+    { "name": "Chase-for-you reminders", "detail": "Polite automatic reminders at 7/14/30 days overdue; tone editable." },
+    { "name": "Materials markup", "detail": "Snap the supplier receipt; markup applied per your default rate." },
+    { "name": "Tax pot", "detail": "Sets aside your tax share from every paid invoice into a visible running total." }
+  ],
+  "integrations": [
+    { "name": "Stripe payouts", "status": "shipped" },
+    { "name": "Open Banking feed", "status": "shipped" },
+    { "name": "QuickBooks export", "status": "beta" }
+  ],
+  "pricing": {
+    "currency": "GBP",
+    "vatNote": "All prices exclude VAT.",
+    "tiers": [
+      { "name": "Solo", "perMonth": 9, "limits": "40 invoices/mo, 1 user" },
+      { "name": "Crew", "perMonth": 19, "limits": "Unlimited invoices, 3 users" }
+    ],
+    "trial": "30 days free, no card required."
+  },
+  "claims": [
+    { "text": "Pilot users invoiced 4 hours per week faster", "basis": "internal estimate, n=11 pilot users", "verified": false },
+    { "text": "Invoices get paid from a text message link", "basis": "product behavior", "verified": true }
+  ],
+  "testimonials": [
+    { "quote": "I invoice from the van now. Money in before I'm home.", "attribution": "D. Okafor, electrician, Leeds (fictional persona)", "verified": true },
+    { "quote": "Cut my unpaid invoices to zero in a month.", "attribution": "anonymous beta user", "verified": false }
+  ],
+  "company": { "founded": 2024, "location": "Manchester, UK (fictional)", "support": "Human support 8am–6pm weekdays." }
+}

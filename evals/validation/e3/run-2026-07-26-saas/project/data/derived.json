@@ -1,0 +1,75 @@
+{
+  "_note": "Injected constants + Gate-A model collection — pure literal arithmetic/mapping on the sealed data (inject.mjs). The only legal numbers beyond the data file itself.",
+  "featureCount": 4,
+  "integrationCount": 3,
+  "shippedIntegrationCount": 2,
+  "betaIntegrationCount": 1,
+  "tierCount": 2,
+  "globalAllow": [
+    4,
+    3,
+    2,
+    1,
+    2
+  ],
+  "models": [
+    {
+      "id": "feat-invoice"
+    },
+    {
+      "id": "feat-reminders"
+    },
+    {
+      "id": "feat-markup"
+    },
+    {
+      "id": "feat-taxpot"
+    },
+    {
+      "id": "int-stripe",
+      "status": "shipped"
+    },
+    {
+      "id": "int-openbanking",
+      "status": "shipped"
+    },
+    {
+      "id": "int-quickbooks",
+      "status": "beta"
+    },
+    {
+      "id": "tier-solo",
+      "moneySet": [
+        9
+      ]
+    },
+    {
+      "id": "tier-crew",
+      "moneySet": [
+        19
+      ]
+    },
+    {
+      "id": "pricing",
+      "moneySet": [
+        9,
+        19
+      ]
+    },
+    {
+      "id": "trial"
+    },
+    {
+      "id": "claim-pilot",
+      "status": "estimate"
+    },
+    {
+      "id": "claim-textlink",
+      "status": "verified"
+    },
+    {
+      "id": "quote-okafor",
+      "status": "verified"
+    }
+  ]
+}
