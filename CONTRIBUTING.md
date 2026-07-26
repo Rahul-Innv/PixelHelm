@@ -36,3 +36,17 @@ positive, near-miss, and collision fixture where applicable.
 
 Report security concerns privately as described in [SECURITY.md](SECURITY.md), not in
 a public issue.
+
+## Evidence and claim discipline (method law)
+
+Two rules, learned the hard way and now mandatory for every contribution:
+
+1. **No artifact may describe a validation, judging, or adversarial pass as
+   complete — in any tense, table, or checklist — before its output artifacts
+   exist.** Anticipated results live in private notes, never in committed docs.
+2. **Docs equal code.** A gate, validator, or mechanism may be described in the
+   present tense only if the executable ships in this tree; designed-but-unwired
+   behavior must be labeled SPEC / "not yet wired" at the point of description,
+   not only in a status section elsewhere. Claims of scores or results carry
+   their artifact paths, or they carry an explicit "attested, not committed"
+   label.

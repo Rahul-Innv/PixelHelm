@@ -38,11 +38,22 @@ iterate.
 `pixelhelm-evaluate` runs two layers in order. The router enforces this seam when reading
 the evaluator's output and deciding the next gate:
 
-- **Layer-1 — machine-certain, HARD gates.** No model in the loop. Runs on the rendered
-  DOM: token contrast (light + dark), real-render contrast in default/hover/focus,
-  axe-core a11y (fail serious|critical), focus-trap, responsive overflow, target size,
-  states-present, motion a11y, token conformance (computed === resolved token value),
-  anti-cliche registry. All-or-nothing: PASS only if every check exits 0.
+- **Layer-1 — machine-certain gates.** No model in the loop. Honest shipping status
+  (keep this list truthful — it is itself gate-checked by the docs-equal-code rule in
+  CONTRIBUTING):
+  - **Shipped, HARD (exit 1):** token contrast light + dark (`static-gates.mjs`),
+    axe-core a11y fail on serious|critical (when `render.mjs --axe` ran), the two
+    honesty gates (`derived-claims-gate.mjs`, `content-manifest-gate.mjs`), candidate
+    token-contract recomputation (`check-token-contracts.mjs`), and motion-lint
+    (Full edition).
+  - **Shipped, SOFT (reported, never exit 1):** raw-color drift walk, anti-cliche
+    registry grep, type-scale ratio, web-craft signals.
+  - **Designed, NOT YET WIRED (no validator ships):** real-render contrast in
+    default/hover/focus, focus-trap, responsive overflow, target size (WCAG 2.5.8
+    beyond axe's rule), states-present, token conformance (computed === resolved
+    token value). See `pixelhelm-evaluate/references/layer-1-gates.md` for their specs.
+  A Layer-1 PASS means every SHIPPED hard gate exited 0 — nothing more. Do not
+  describe unwired gates as part of the enforced floor.
 - **Layer-2 — expert-lens, ADVISORY.** Scored on the screenshots by a cross-model VLM
   judge / the 7-seat council, pairwise, grounded in Layer-1's measured evidence. A
   dimension <=4 is a [High] finding ("describe the problem, not the px").
