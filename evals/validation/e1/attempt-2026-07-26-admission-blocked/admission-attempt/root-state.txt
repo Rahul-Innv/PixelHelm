@@ -1,0 +1,54 @@
+Admission attempt — environment state capture
+Date: 2026-07-26
+Attempted by: Claude (E1 execution session), worktree elated-gould-a419df,
+branch claude/elated-gould-a419df, base f9dbf9f (main).
+
+Command run (from the worktree root):
+
+  python -B plugins/pixelhelm-lite/skills/pixelhelm-choicegate/scripts/admit_choicegate.py \
+    --choicegate-root "C:\Users\krahu\Documents\Workbench\Projects\ChoiceGate" \
+    admission-attempt/request.json
+
+  exit code: 2
+  stdout:  admission-attempt/stdout.json  (admitted:false, CHOICEGATE_COMMIT_MISMATCH)
+  stderr:  admission-attempt/stderr.txt
+
+Verifier identity (all three committed copies byte-identical, sha256):
+  dd0a5c3b294643b8064fedf68bd25789aa810531ed3c0d4757fbdb0ae3af8ace
+    src/skills/pixelhelm-choicegate/scripts/admit_choicegate.py
+    plugins/pixelhelm-lite/skills/pixelhelm-choicegate/scripts/admit_choicegate.py
+    plugins/pixelhelm-full/skills/pixelhelm-choicegate/scripts/admit_choicegate.py
+  admit_choicegate.py was NOT modified in any way.
+
+Pins hard-coded in the verifier (agree with src/family.json and docs/public/VALIDATION.md):
+  CHOICEGATE_COMMIT     = bad38b9f359d6594c7443d666dcc505eb95c99a3
+  CHOICEGATE_TREE       = 0bcd97a2c7c550b6542f9aec9549c44475d05ece
+  INVENTORY_COMMIT      = 354046f9627c4a83a2a912e09a656d1871ed6cc4
+  INVENTORY_TREE        = 786171bc52fe6efeefb860f01bb71d4c09ed3504
+  INVENTORY_FINGERPRINT = 6ef1493691332e372106b652c991a4e9477c869d1a22e10af319845ae533198b
+
+ChoiceGate root supplied (the only ChoiceGate checkout on this machine):
+  path: C:\Users\krahu\Documents\Workbench\Projects\ChoiceGate
+  HEAD:        440448b3edb0ceaec3609242a7d67de21c7ff033   (pin requires bad38b9f...)
+  HEAD^{tree}: 3cb7b088c7f291860964684b24e84cbe4ad7dd29   (pin requires 0bcd97a2...)
+  status --porcelain=v1 --untracked-files=all: clean (0 lines)
+  scripts/route_capabilities.py: present
+  => the ONLY failing condition is the commit pin. The root was otherwise valid,
+     so no request content could change the outcome: verify_choicegate_root()
+     runs before preflight_request() in admit_choicegate.py main().
+
+ChoiceGate remote (origin = https://gitlab.com/krahul02004/ChoiceGate.git):
+  full advertised ref list at attempt time: choicegate-remote-refs.txt (18 refs)
+  all heads, tags and merge-request refs were fetched locally before re-checking;
+  git cat-file -t bad38b9f359d6594c7443d666dcc505eb95c99a3 still fails
+  ("could not get object info") — the object does not exist in the remote history.
+  Root commit of origin/main: 2f7dd944e46b4dcff93f8ac0aee7215844efd0e9
+  ("Initial public release") — the public history is a clean-sheet rewrite that
+  does not contain the accepted commit.
+  Direct fetch by SHA was refused: "remote error: upload-pack: not our ref bad38b9f...".
+
+Capability inventory root (Skills-OS) — INTACT:
+  repo: C:\Users\krahu\Documents\Workbench\System\Skills-OS  (HEAD 289d416..., dirty)
+  git cat-file -t 354046f9627c4a83a2a912e09a656d1871ed6cc4 => commit  (present)
+  git rev-parse 354046f...^{tree} => 786171bc52fe6efeefb860f01bb71d4c09ed3504  (matches pin)
+  A clean worktree at the pinned inventory commit is recoverable at any time.
