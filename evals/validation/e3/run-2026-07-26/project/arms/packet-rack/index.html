@@ -153,7 +153,7 @@ h1 {
   margin: 0;
   padding: 0 0 0.6rem;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 14.5rem), 1fr));
   gap: 1.25rem;
 }
 
@@ -202,6 +202,8 @@ h1 {
 .blurb { margin: 0 0 0.6rem; font-family: var(--serif); }
 
 .facts { margin: 0 0 0.7rem; font-size: var(--type-sm); color: var(--muted); }
+
+.facts span { display: inline-block; }
 
 .facts span + span::before { content: "·"; padding: 0 0.4rem; color: var(--rule); }
 
