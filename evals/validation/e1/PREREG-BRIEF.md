@@ -49,6 +49,19 @@ Full pipeline per artifact 14 E1: ground → directions → tournament (**3 arms
   wow is archetype-gated (RF-7) — for a utility register, second-visit glance
   value outranks spectacle.
 
+## Amendment A1 (2026-07-26, owner-directed, PRE-generation — no candidates exist)
+
+Each direction arm's artifact must carry, alongside its one-sentence intent, a
+**declared-breaks block**: which conventions or fundamentals this direction
+deliberately breaks, and why the break serves the design's thesis. Rationale
+(owner): "sometimes you need to break the fundamentals — knowing where and why
+is what makes it beautiful." Rules of engagement, unchanged from the evidence:
+the machine floor (contrast, honesty, keyboard access, reduced-motion parity)
+is never breakable; convention breaks are a budget (1–2, deliberate, brand
+layer — RF-2), and an UNdeclared break found in a candidate is scored as a
+mistake, not a signature. This block gives rubric criterion 8 its evidence and
+is the first live use of backlog item P1-4.
+
 ## Success / falsification (from artifact 14, restated unchanged)
 
 **Success:** the complete artifact trail exists; gates fire correctly (mutant
