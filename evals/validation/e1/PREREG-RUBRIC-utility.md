@@ -1,6 +1,6 @@
 # E1 pre-registered rubric — utility archetype
 
-**Status: DRAFT — PENDING OWNER APPROVAL. Sealed by commit before any generation.**
+**Status: APPROVED & SEALED (owner, 2026-07-26 — approval recorded in the seal/amendment commit messages; status line flipped 2026-07-26 per Codex critique finding 5). Sealed by commit before any generation.**
 Date drafted: 2026-07-26. Required by artifact 14 (E3 precondition, applied to
 E1's utility brief; RF-8: rubrics are archetype-specific).
 

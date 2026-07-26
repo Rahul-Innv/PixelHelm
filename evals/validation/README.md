@@ -1,7 +1,8 @@
 # Validation program — artifact home
 
-**Status: DRAFT — PENDING OWNER APPROVAL (P2-1). Nothing in this tree licenses
-generation until the owner approves these sheets and they are committed.**
+**Status: ACTIVE PROGRAM. A sheet licenses generation only once it is owner-approved
+AND committed; sheets carry their approval state in their own status lines. (This
+line replaced the original draft banner 2026-07-26 — Codex critique finding 5.)**
 
 This directory is the committed artifact home for the validation and experiment
 program defined in the 2026-07-26 capability research (artifact 14). Ground rules,
@@ -35,12 +36,16 @@ merge.
 
 ## Experiment index
 
-- `e1/` — E1: **COMPLETE 2026-07-26, owner-signed (approved-with-changes).**
+- `e1/` — E1: **RUN COMPLETE + OWNER-SIGNED 2026-07-26; graded by in-tree adversarial
+  critique as: completed, owner-reviewed, arithmetically reproducible — with
+  material pre-registration/provenance defects (run-2026-07-26/CODEX-CRITIQUE-2026-07-26.md
+  + CRITIQUE-RESPONSE.md; per-juror record machinery gap, palette result carries an
+  in-loop-feedback caveat).**
   Pre-registration pack: `PREREG-BRIEF.md` (+ Amendment A1: declared convention
   breaks), `PREREG-RUBRIC-utility.md`, `PREREG-METRICS-divergence.md`, sealed
   ground data in `e1/data/`. Full run trail in `e1/run-2026-07-26/` (read
   `REPORT.md` first): all shipped HARD gates green ×3 arms, 4/4 mutant ritual,
-  **E2 not falsified on any registered threshold**, winner `trail-ledger`
+  **E2 thresholds met as measured (palette: with the critique's in-loop-feedback caveat)**, winner `trail-ledger`
   (overall median 9.0, dead-heat tiebreak recorded in `jurors/TIEBREAK.md`),
   records validated via `records.mjs`. **Calibration finding (RF-4):** the
   blind panel ran ≈1 point hot vs the owner on all three arms (9/9/8 vs

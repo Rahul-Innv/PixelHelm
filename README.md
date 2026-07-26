@@ -182,13 +182,16 @@ committed in this tree, so treat these as narrative until re-run with records):*
 - One candidate invented an update cadence and the honesty audit disqualified it.
   The disqualified candidate and audit output are likewise not committed.
 
-That re-run milestone has now been reached once, on a fresh brief: the first
-complete evidenced loop — every candidate (losers included), per-juror JSONs,
-gate outputs, renders, and validated `run@1`/`judge-verdict@1`/`signoff@1`
-records — is committed under `evals/validation/e1/run-2026-07-26/` (pre-registered
-rubric and thresholds sealed before generation; owner-signed
-approved-with-changes; panel scores labeled system-esteem, with the recorded
-finding that the blind panel ran ≈1 point above the owner). Re-running THIS
+That re-run milestone has now been attempted once, on a fresh brief, and the
+whole trail is committed under `evals/validation/e1/run-2026-07-26/` — every
+candidate (losers included), per-juror score files, gate outputs, renders, and
+validated aggregate records, plus an in-tree independent adversarial critique
+of the run itself (`CODEX-CRITIQUE-2026-07-26.md` / `CRITIQUE-RESPONSE.md`).
+Graded honestly per that critique: a completed, owner-reviewed run with
+arithmetically reproducible results and material pre-registration defects
+recorded alongside (per-juror record machinery gap; palette divergence carries
+an in-loop-feedback caveat). Panel scores are system-esteem, with the recorded
+finding that the blind panel ran ≈1 point above the owner. Re-running THIS
 Harborline page with records remains open, so the attested claims above keep
 their narrative label; this section still refuses to blur the two grades.
 

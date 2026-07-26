@@ -1,6 +1,6 @@
 # E5 comparator construction rule — sealed BEFORE E3 begins (critic-2 D9)
 
-**Status: DRAFT — PENDING OWNER APPROVAL.** Date drafted: 2026-07-26. E5 tests
+**Status: APPROVED & SEALED (owner, 2026-07-26 — approval recorded in the seal/amendment commit messages; status line flipped 2026-07-26 per Codex critique finding 5).** Date drafted: 2026-07-26. E5 tests
 the strongest E3 output against a comparator in a small human probe. To prevent
 choosing a flattering comparator after seeing our output, the comparator's
 construction rule is fixed now, and the concrete template picks are executed and

@@ -1,6 +1,6 @@
 # E6-A brief — "Vireo Fold" motion-storytelling launch page (Lane-A, original work)
 
-**Status: DRAFT — PENDING OWNER APPROVAL. Sealed by commit before any
+**Status: APPROVED & SEALED (owner, 2026-07-26 — approval recorded in the seal/amendment commit messages; status line flipped 2026-07-26 per Codex critique finding 5). Sealed by commit before any
 generation.** Date drafted: 2026-07-26, at the owner's direction ("video
 storytelling and landing page" — the motion experiment, run as a marketing
 launch page, the one archetype where cinematic motion is genre-legitimate,

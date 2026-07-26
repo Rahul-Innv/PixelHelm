@@ -1,6 +1,6 @@
 # E6-A pre-registered rubric — motion-storytelling launch archetype (Vireo Fold)
 
-**Status: DRAFT — PENDING OWNER APPROVAL. Sealed by commit before any
+**Status: APPROVED & SEALED (owner, 2026-07-26 — approval recorded in the seal/amendment commit messages; status line flipped 2026-07-26 per Codex critique finding 5). Sealed by commit before any
 generation.** Date drafted: 2026-07-26. Archetype-specific per RF-8.
 **Evidence label (RF-1/RF-4):** all scores are *system-esteem*.
 

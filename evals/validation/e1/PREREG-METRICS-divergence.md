@@ -1,6 +1,6 @@
 # E2 pre-registered divergence metrics (measured inside E1)
 
-**Status: DRAFT — PENDING OWNER APPROVAL. Sealed by commit before ANY candidate
+**Status: APPROVED & SEALED (owner, 2026-07-26 — approval recorded in the seal/amendment commit messages; status line flipped 2026-07-26 per Codex critique finding 5). Sealed by commit before ANY candidate
 is generated — this experiment's integrity IS the pre-registration (critic-2 D7).**
 Date drafted: 2026-07-26.
 

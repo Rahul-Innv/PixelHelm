@@ -25,7 +25,7 @@ Also tested for the amendment: `topic:scrollytelling` — libraries/platforms
 only (codehike, basementstudio/scrollytelling, pageflow), all INELIGIBLE as
 page templates.
 
-## Amendment A1-E5 (pre-generation; owner approval required)
+## Amendment A1-E5 (pre-generation; OWNER-APPROVED 2026-07-26, sealed in commit 4033148)
 
 The two degenerate queries are replaced — moving strictly toward STRONGER
 comparators, with eligibility rules unchanged:
@@ -33,13 +33,13 @@ comparators, with eligibility rules unchanged:
 - editorial → `blog starter template topic:blog` (blog/article starters are
   where complete long-form article page templates actually live on GitHub).
 
-## Picks (pending owner approval of A1-E5 where marked)
+## Picks (all FINAL as of the 2026-07-26 approval)
 
 | Archetype | Comparator | Stars | License | Head commit (2026-07-26) | Status |
 |---|---|---|---|---|---|
 | SaaS marketing | github.com/Blazity/next-saas-starter | 1682 | MIT | `502d8f519dc1f55486cfe942026cd06d4ae2ad3e` | FINAL (registered query) |
-| Commerce | github.com/reliverse/relivator | 1558 | MIT | `a1871b006ab09df647b99fc71d3c080acd797e24` | pending A1-E5 |
-| Editorial | github.com/arthelokyo/astrowind | 5835 | MIT | `5cea946d2d244ba97b5e84f9509ca9dcdeb9a41b` | pending A1-E5 |
+| Commerce | github.com/reliverse/relivator | 1558 | MIT | `a1871b006ab09df647b99fc71d3c080acd797e24` | FINAL (A1-E5 approved) |
+| Editorial | github.com/arthelokyo/astrowind | 5835 | MIT | `5cea946d2d244ba97b5e84f9509ca9dcdeb9a41b` | FINAL (A1-E5 approved) |
 
 Construction stays as sealed: same data file, slot-filling edits only, every
 edit line-listed, same render matrix as our candidates.

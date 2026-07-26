@@ -4,13 +4,19 @@
 
 Validation program (2026-07-26, from the external capability assessment):
 
-- Ran and committed the program's first complete evidenced loop (E1/E2) on a
-  sealed synthetic utility brief: pre-registered rubric/metrics, three arms,
-  all shipped HARD gates green, 4/4 mutant ritual, validated judge/run/sign-off
-  records, divergence thresholds all met, owner-signed approved-with-changes.
-  Full trail: `evals/validation/e1/run-2026-07-26/`. Recorded calibration
-  finding: the blind panel scored ≈1 point above the owner (9+ medians now read
-  as "strong, owner-verify" — Amendment C1 in the E3 rubric sheets).
+- Ran and committed the program's first full loop run (E1/E2) on a sealed
+  synthetic utility brief: three arms, all shipped HARD gates green, 4/4 mutant
+  ritual, validated aggregate records, divergence thresholds met as measured,
+  owner-signed approved-with-changes. Full trail:
+  `evals/validation/e1/run-2026-07-26/`. Recorded calibration finding: the
+  blind panel scored ≈1 point above the owner (9+ medians now read as "strong,
+  owner-verify" — Amendment C1 in the E3 rubric sheets).
+- Commissioned and committed an independent adversarial critique of that run
+  (two-critic pattern): grade adjusted to *completed and arithmetically
+  reproducible with material pre-registration defects* — per-juror record
+  machinery gap, an in-loop-feedback caveat on the palette divergence result,
+  and approval status lines that had never been flipped from DRAFT (now
+  corrected). Critique + finding-by-finding response live in the run directory.
 - Sealed pre-registrations for the E3 transfer briefs (SaaS / commerce /
   editorial), the E5 comparator rule with pinned template picks, and the E6-A
   motion-launch experiment.
