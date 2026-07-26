@@ -12,11 +12,17 @@ import subprocess
 import sys
 from typing import Any
 
-CHOICEGATE_COMMIT = "bad38b9f359d6594c7443d666dcc505eb95c99a3"
-CHOICEGATE_TREE = "0bcd97a2c7c550b6542f9aec9549c44475d05ece"
+CHOICEGATE_COMMIT = "7d95e9612d011a577d232cf9a51ba0c1bfab7571"
+CHOICEGATE_TREE = "1d35cb708f880b228d9334c85f4b4c356f0f36d4"
 INVENTORY_COMMIT = "354046f9627c4a83a2a912e09a656d1871ed6cc4"
 INVENTORY_TREE = "786171bc52fe6efeefb860f01bb71d4c09ed3504"
 INVENTORY_FINGERPRINT = "6ef1493691332e372106b652c991a4e9477c869d1a22e10af319845ae533198b"
+# The accepted registry snapshot (Skills-OS @ INVENTORY_COMMIT, hard-pinned by the
+# accepted ChoiceGate router itself) predates the family's public rename and records
+# frontend-design under the family's pre-rename owner id. Owner ruling 2026-07-26:
+# plumbline-family and pixelhelm-family are the same family; admission verifies the
+# accepted content verbatim rather than the post-rename id.
+ACCEPTED_REGISTRY_OWNER = "plumbline-family"
 REQUEST_VERSION = "choicegate.route-request/v1"
 RECEIPT_VERSION = "choicegate.decision-receipt/v1"
 OUTPUT_VERSION = "pixelhelm.choicegate-admission/v1"
@@ -102,7 +108,7 @@ def verify_choicegate_root(value: str) -> Path:
 def inventory_component(request: dict[str, Any], path: str) -> dict[str, Any]:
     inventory = request.get("inventory")
     require(isinstance(inventory, dict), "INVENTORY_INVALID", "inventory missing")
-    require(inventory.get("accepted_inventory_commit") == INVENTORY_COMMIT, "INVENTORY_COMMIT_MISMATCH", "capability inventory commit mismatch")
+    require(inventory.get("accepted_registry_commit") == INVENTORY_COMMIT, "INVENTORY_COMMIT_MISMATCH", "capability inventory commit mismatch")
     require(inventory.get("manifest_fingerprint") == INVENTORY_FINGERPRINT, "INVENTORY_FINGERPRINT_MISMATCH", "inventory fingerprint mismatch")
     components = inventory.get("components")
     require(isinstance(components, list), "INVENTORY_INVALID", "inventory components missing")
@@ -132,10 +138,10 @@ def verify_edition(request: dict[str, Any]) -> str:
     records = [item for item in document.get("capabilities", []) if isinstance(item, dict) and item.get("name") == "frontend-design"]
     require(len(records) == 1, "FRONTEND_AUTHORITY_INVALID", "frontend-design authority must be unique")
     record = records[0]
-    require(record.get("owner") == "pixelhelm-family" and record.get("authority_role") == "canonical-family", "FRONTEND_AUTHORITY_INVALID", "wrong frontend-design owner")
-    require(record.get("edition_policy") == {"default_edition": "lite", "maximum_active_per_surface": 1, "selection_authority": "pixelhelm-family", "simultaneous_eligibility": "forbidden"}, "EDITION_POLICY_INVALID", "edition policy mismatch")
+    require(record.get("owner") == ACCEPTED_REGISTRY_OWNER and record.get("authority_role") == "canonical-family", "FRONTEND_AUTHORITY_INVALID", "wrong frontend-design owner")
+    require(record.get("edition_policy") == {"default_edition": "lite", "maximum_active_per_surface": 1, "selection_authority": ACCEPTED_REGISTRY_OWNER, "simultaneous_eligibility": "forbidden"}, "EDITION_POLICY_INVALID", "edition policy mismatch")
     surface = [item for item in record.get("surface_policies", []) if item.get("surface") == "claude-code"]
-    require(surface == [{"surface": "claude-code", "authority": "pixelhelm-family", "route_policy": "edition-adapter", "qualification_state": "qualified-current"}], "SURFACE_POLICY_INVALID", "Claude Code surface policy mismatch")
+    require(surface == [{"surface": "claude-code", "authority": ACCEPTED_REGISTRY_OWNER, "route_policy": "edition-adapter", "qualification_state": "qualified-current"}], "SURFACE_POLICY_INVALID", "Claude Code surface policy mismatch")
     ready = {"install_state": "installed", "enablement_state": "enabled", "exposure_state": "surface-exposed", "authorization_state": "not-required", "activity_state": "available", "promotion_state": "available"}
     eligible = [item.get("id") for item in record.get("editions", []) if item.get("lifecycle") == ready]
     require(eligible == ["lite"], "EDITION_EXCLUSIVITY_VIOLATION", "exactly Lite must be eligible")
@@ -154,7 +160,7 @@ def preflight_request(request: dict[str, Any]) -> None:
     require(task.get("surface") == "claude-code", "SURFACE_MISMATCH", "PixelHelm is qualified only on Claude Code")
     require(task.get("owner_selected_route_id") == "frontend-design" and task.get("selected_path_failed") is False, "SELECTION_INVALID", "frontend-design must be the intact selected path")
     require(prior_task.get("owner_selected_route_id") is None and prior_task.get("selected_path_failed") is False, "PRIOR_RECEIPT_INVALID", "prior receipt is not an original selection receipt")
-    require(decision.get("route_type") == "atomic" and decision.get("route_id") == "frontend-design" and decision.get("owner") == "pixelhelm-family" and decision.get("executable") is True, "ROUTE_INVALID", "prior decision is not executable canonical frontend-design")
+    require(decision.get("route_type") == "atomic" and decision.get("route_id") == "frontend-design" and decision.get("owner") == ACCEPTED_REGISTRY_OWNER and decision.get("executable") is True, "ROUTE_INVALID", "prior decision is not executable canonical frontend-design")
     require(prior.get("bundle_members") == [], "BUNDLE_NOT_ALLOWED", "PixelHelm consumes an atomic route only")
     claimed = prior.get("receipt_sha256")
     body = {key: value for key, value in prior.items() if key != "receipt_sha256"}
@@ -177,7 +183,7 @@ def invoke(root: Path, request: dict[str, Any]) -> dict[str, Any]:
 def verify_handoff(request: dict[str, Any], receipt: dict[str, Any], edition: str) -> dict[str, Any]:
     decision = receipt.get("decision")
     require(receipt.get("receipt_version") == RECEIPT_VERSION and isinstance(decision, dict), "HANDOFF_INVALID", "invalid handoff receipt")
-    require(decision == {"route_type": "handoff", "route_id": "frontend-design", "version": None, "owner": "pixelhelm-family", "executable": True, "reason": "valid-prior-receipt"}, "HANDOFF_INVALID", "handoff decision mismatch")
+    require(decision == {"route_type": "handoff", "route_id": "frontend-design", "version": None, "owner": ACCEPTED_REGISTRY_OWNER, "executable": True, "reason": "valid-prior-receipt"}, "HANDOFF_INVALID", "handoff decision mismatch")
     require(receipt.get("bundle_members") == [] and receipt.get("approvals_required") == [], "HANDOFF_INVALID", "bundle or approvals not allowed")
     require(receipt.get("discovery") == {"status": "suppressed-valid-handoff", "reason": "complete-prior-receipt-validated"}, "HANDOFF_INVALID", "discovery was not suppressed")
     expected_task = dict(request.get("task", {}))
@@ -187,7 +193,7 @@ def verify_handoff(request: dict[str, Any], receipt: dict[str, Any], edition: st
     router = receipt.get("router_binding", {})
     inventory = receipt.get("inventory_binding", {})
     require(router.get("choicegate_commit") == CHOICEGATE_COMMIT, "CHOICEGATE_COMMIT_MISMATCH", "receipt ChoiceGate pin mismatch")
-    require(inventory.get("accepted_inventory_commit") == INVENTORY_COMMIT and inventory.get("manifest_fingerprint") == INVENTORY_FINGERPRINT, "INVENTORY_FINGERPRINT_MISMATCH", "receipt inventory pin mismatch")
+    require(inventory.get("accepted_registry_commit") == INVENTORY_COMMIT and inventory.get("manifest_fingerprint") == INVENTORY_FINGERPRINT, "INVENTORY_FINGERPRINT_MISMATCH", "receipt inventory pin mismatch")
     claimed = receipt.get("receipt_sha256")
     require(isinstance(claimed, str) and claimed == sha256({key: value for key, value in receipt.items() if key != "receipt_sha256"}), "HANDOFF_HASH_MISMATCH", "handoff receipt hash mismatch")
     output = {
@@ -199,7 +205,7 @@ def verify_handoff(request: dict[str, Any], receipt: dict[str, Any], edition: st
         "surface": "claude-code",
         "task": receipt["task"],
         "choicegate": {"commit": CHOICEGATE_COMMIT, "tree": CHOICEGATE_TREE, "receipt_sha256": claimed},
-        "inventory": {"commit": INVENTORY_COMMIT, "tree": INVENTORY_TREE, "inventory_fingerprint": INVENTORY_FINGERPRINT},
+        "inventory": {"commit": INVENTORY_COMMIT, "tree": INVENTORY_TREE, "inventory_fingerprint": INVENTORY_FINGERPRINT, "accepted_registry_owner": ACCEPTED_REGISTRY_OWNER},
     }
     output["admission_sha256"] = sha256(output)
     return output

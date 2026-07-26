@@ -30,10 +30,16 @@ in private migration evidence. Target: `PRIVATE_LAUNCH_READY_STOP_BEFORE_OUTWARD
 11. a different independent critic before any commit.
 
 The full authority replay must use clean, exact local roots at ChoiceGate commit/tree
-`bad38b9f359d6594c7443d666dcc505eb95c99a3` /
-`0bcd97a2c7c550b6542f9aec9549c44475d05ece` and capability inventory commit/tree
+`7d95e9612d011a577d232cf9a51ba0c1bfab7571` /
+`1d35cb708f880b228d9334c85f4b4c356f0f36d4` (the public v0.2.1 release; re-accepted
+2026-07-26 by owner decision after the original private accepted checkout was lost
+to the public-history rewrite) and capability inventory commit/tree
 `354046f9627c4a83a2a912e09a656d1871ed6cc4` /
-`786171bc52fe6efeefb860f01bb71d4c09ed3504`.
+`786171bc52fe6efeefb860f01bb71d4c09ed3504` (unchanged; the accepted router pins this
+same registry snapshot). The accepted registry snapshot predates the family's public
+rename and records `frontend-design` under the pre-rename owner id
+`plumbline-family`; the owner ruled 2026-07-26 that this is the same family as
+`pixelhelm-family`, and the admission verifier checks the accepted content verbatim.
 
 ## Privacy and closed actions
 
