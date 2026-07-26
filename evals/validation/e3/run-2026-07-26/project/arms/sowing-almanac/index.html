@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxglove &amp; Fern — the sowing almanac</title>
+<meta name="description" content="The Foxglove & Fern sowing almanac: eight heirloom varieties shelved under their sowing windows, with month bands, germination, honest stock and prices. UK delivery only.">
+<script type="application/json" id="token-contract">
+{"light":{"linen":"#f3f0e4","ink":"#262a20","muted":"#5d604c","moss":"#43592f","plum":"#703052","rule":"#82846c","btnbg":"#703052","btntext":"#f3f0e4"},"dark":{"linen":"#16180f","ink":"#e7e5d4","muted":"#b0b195","moss":"#aabf8d","plum":"#d9a8c5","rule":"#6c6e57","btnbg":"#d9a8c5","btntext":"#16180f"},"gatedPairs":[{"fg":"ink","on":["linen"],"kind":"text"},{"fg":"muted","on":["linen"],"kind":"text"},{"fg":"moss","on":["linen"],"kind":"text"},{"fg":"plum","on":["linen"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["linen"],"kind":"graphic"},{"fg":"moss","on":["linen"],"kind":"graphic"}]}
+</script>
+<style>
+/* Sowing-almanac: an almanac opened on the potting bench. The catalog's primary
+   organization is the sowing calendar (declared break 1); month-band bars and
+   ruled marginalia are the art direction (declared break 2). Money path
+   conventional in every entry. */
+
+:root {
+  color-scheme: light;
+  --linen: #f3f0e4;
+  --ink: #262a20;
+  --muted: #5d604c;
+  --moss: #43592f;
+  --plum: #703052;
+  --rule: #82846c;
+  --btnbg: #703052;
+  --btntext: #f3f0e4;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --linen: #16180f;
+  --ink: #e7e5d4;
+  --muted: #b0b195;
+  --moss: #aabf8d;
+  --plum: #d9a8c5;
+  --rule: #6c6e57;
+  --btnbg: #d9a8c5;
+  --btntext: #16180f;
+}
+
+:root {
+  --serif: "Charter", "Bitstream Charter", "Palatino Linotype", Georgia, serif;
+  --sans: "Seravek", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --type-xl: clamp(1.7rem, 1.2rem + 2.2vw, 2.25rem);
+  --type-lg: 1.2rem;
+  --type-md: 1.0625rem;
+  --type-sm: 0.875rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--linen);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+.page {
+  max-width: 72rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+header { padding-top: clamp(1.5rem, 5vw, 2.75rem); padding-bottom: 1rem; border-bottom: 2px solid var(--rule); }
+
+.kicker {
+  margin: 0 0 0.35rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 { margin: 0 0 0.4rem; font-size: var(--type-xl); font-weight: 700; }
+
+.standfirst { margin: 0 0 0.7rem; max-width: 40rem; color: var(--muted); font-style: italic; }
+
+.shipping { margin: 0; font-family: var(--sans); font-size: var(--type-sm); font-weight: 600; }
+
+/* Split: window rail | grouped entries */
+
+.layout {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  gap: 2.25rem;
+  padding-top: 1.4rem;
+}
+
+@media (max-width: 860px) {
+  .layout { grid-template-columns: 1fr; gap: 0.5rem; }
+}
+
+.rail { font-family: var(--sans); }
+
+@media (min-width: 861px) {
+  .rail { position: sticky; top: 1rem; align-self: start; }
+}
+
+.rail h2 { margin: 0 0 0.5rem; font-size: var(--type-sm); letter-spacing: 0.16em; text-transform: uppercase; color: var(--muted); }
+
+.rail nav ul { list-style: none; margin: 0 0 1.1rem; padding: 0; }
+
+.rail nav a {
+  display: block;
+  padding: 0.55rem 0.15rem;
+  color: var(--plum);
+  font-weight: 600;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.rail nav a:hover { text-decoration-thickness: 3px; }
+
+.filter { display: flex; flex-direction: column; gap: 0.45rem; padding-bottom: 0.75rem; }
+
+.filter select {
+  font-family: var(--sans);
+  font-size: 1rem;
+  color: var(--ink);
+  background: var(--linen);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+  min-height: 2.75rem;
+}
+
+/* Window groups */
+
+.window { margin-bottom: 1.25rem; }
+
+.window > h2 {
+  margin: 0.6rem 0 0.2rem;
+  font-size: var(--type-lg);
+  font-weight: 700;
+}
+
+.window-note { margin: 0 0 0.4rem; font-family: var(--sans); font-size: var(--type-sm); color: var(--muted); }
+
+.entries { list-style: none; margin: 0; padding: 0; }
+
+.entry {
+  display: grid;
+  grid-template-columns: 1fr 13rem;
+  gap: 0.4rem 1.75rem;
+  padding: 1.3rem 0 1.2rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+@media (max-width: 640px) {
+  .entry { grid-template-columns: 1fr; }
+}
+
+.entry h3 { margin: 0 0 0.1rem; font-size: var(--type-lg); font-weight: 700; }
+
+.entry-type { margin: 0 0 0.5rem; font-family: var(--sans); font-size: var(--type-sm); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+.blurb { margin: 0 0 0.55rem; max-width: 34rem; }
+
+/* Month band — 12 cells, the window filled (adjacent text carries the words) */
+
+.band { display: inline-grid; grid-template-columns: repeat(12, 1.05rem); gap: 2px; margin: 0 0 0.4rem; }
+
+.band i {
+  height: 0.7rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+}
+
+.band i.on { background: var(--moss); border-color: var(--moss); }
+
+.window-text { margin: 0 0 0.45rem; font-family: var(--sans); font-size: var(--type-sm); font-weight: 700; color: var(--moss); }
+
+.facts { margin: 0; font-family: var(--sans); font-size: var(--type-sm); color: var(--muted); }
+
+.facts span + span::before { content: "·"; padding: 0 0.45rem; color: var(--rule); }
+
+.margin-note {
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  border-left: 2px solid var(--rule);
+  padding-left: 0.8rem;
+  font-style: italic;
+  align-self: start;
+}
+
+.offer {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+}
+
+.price { font-variant-numeric: tabular-nums; font-weight: 700; font-size: var(--type-lg); }
+
+.price-pending { font-weight: 600; font-style: italic; color: var(--muted); }
+
+.stock { font-family: var(--sans); font-size: var(--type-sm); font-weight: 700; }
+.stock.in  { color: var(--moss); }
+.stock.out { color: var(--plum); }
+
+.view-link {
+  display: inline-block;
+  padding: 0.35rem 0.15rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--plum);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.view-link:hover { text-decoration-thickness: 3px; }
+
+a:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--linen), 0 0 0 5px var(--plum);
+  border-radius: 3px;
+}
+
+#empty { padding: 2rem 0; text-align: center; font-style: italic; color: var(--muted); }
+
+[hidden] { display: none !important; }
+
+footer {
+  margin-top: 1.5rem;
+  padding: 1.4rem 0 2.5rem;
+  border-top: 2px solid var(--rule);
+  text-align: center;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <p class="kicker">Foxglove &amp; Fern · heirloom seeds</p>
+  <h1>The sowing almanac</h1>
+  <p class="standfirst">Find your month first, then your packet — every variety we keep, shelved under the window it wants.</p>
+  <p class="shipping">Ships to UK addresses only. Flat £1.90 postage; free over £15.</p>
+</header>
+
+<main>
+  <div class="layout">
+    <aside class="rail">
+      <div class="filter">
+        <label for="month">Show what you can sow in</label>
+        <select id="month">
+          <option value="">any month</option>
+          <option value="1">January</option>
+          <option value="2">February</option>
+          <option value="3">March</option>
+          <option value="4">April</option>
+          <option value="5">May</option>
+          <option value="6">June</option>
+          <option value="7">July</option>
+          <option value="8">August</option>
+          <option value="9">September</option>
+          <option value="10">October</option>
+          <option value="11">November</option>
+          <option value="12">December</option>
+        </select>
+      </div>
+      <h2>The windows</h2>
+      <nav aria-label="Sowing windows">
+        <ul>
+          <li><a href="#window-winter">Sowing starts in late winter</a></li>
+          <li><a href="#window-spring">Sowing starts in spring</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <div class="content">
+      <section class="window" id="window-winter">
+        <h2>Sowing starts in late winter</h2>
+        <p class="window-note">Windows that open in January or February.</p>
+        <ul class="entries">
+          <li class="entry" data-model="FF-008" data-months="1,2,3">
+            <div>
+              <h3>Winter Windowsill Chili</h3>
+              <p class="entry-type">Compact perennial · 10 seeds</p>
+              <p class="blurb">Fruits indoors through winter on a bright sill; estimate from last season's line.</p>
+              <p class="band" aria-hidden="true"><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Jan–Mar</p>
+              <p class="facts"><span>Moderate</span><span>Germination 65% (estimated)</span></p>
+            </div>
+            <p class="margin-note">The germination figure is an estimate — from last season's line.</p>
+            <p class="offer"><span class="price">£4.10</span><span class="stock in">In stock</span></p>
+          </li>
+          <li class="entry" data-model="FF-011" data-months="2,3,4">
+            <div>
+              <h3>Cathedral Bells (Cobaea scandens)</h3>
+              <p class="entry-type">Climbing vine · 12 seeds</p>
+              <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors.</p>
+              <p class="band" aria-hidden="true"><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Feb–Apr</p>
+              <p class="facts"><span>Moderate</span><span>Germination 72%</span></p>
+            </div>
+            <p class="margin-note">Wants a warm start indoors — see the packet's own page for the full year.</p>
+            <p class="offer"><span class="price">£3.50</span><span class="stock in">In stock</span><a class="view-link" href="product.html">View this packet</a></p>
+          </li>
+          <li class="entry" data-model="FF-023" data-months="2,3,4">
+            <div>
+              <h3>Dragon's Breath Celosia</h3>
+              <p class="entry-type">Half-hardy annual · 30 seeds</p>
+              <p class="blurb">Flame-red plumes; fussy about damp — for the patient gardener.</p>
+              <p class="band" aria-hidden="true"><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Feb–Apr</p>
+              <p class="facts"><span>Hard</span><span>Germination 60%</span></p>
+            </div>
+            <p class="margin-note">For the patient gardener — fussy about damp.</p>
+            <p class="offer"><span class="price">£3.90</span><span class="stock in">In stock — only 9 packets left</span></p>
+          </li>
+          <li class="entry" data-model="FF-021" data-months="10,11,2,3">
+            <div>
+              <h3>Grandmother's Sweet Pea (1928 line)</h3>
+              <p class="entry-type">Climbing annual · 15 seeds</p>
+              <p class="blurb">Kept in one family since 1928; intensely scented. Price pending supplier confirmation.</p>
+              <p class="band" aria-hidden="true"><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i></p>
+              <p class="window-text">Sow Oct–Nov or Feb–Mar</p>
+              <p class="facts"><span>Easy</span><span>Germination 85%</span></p>
+            </div>
+            <p class="margin-note">Takes an autumn sowing too — Oct–Nov, as the band shows.</p>
+            <p class="offer"><span class="price-pending">Price pending — ask us</span><span class="stock in">In stock</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <section class="window" id="window-spring">
+        <h2>Sowing starts in spring</h2>
+        <p class="window-note">Windows that open in March or April.</p>
+        <ul class="entries">
+          <li class="entry" data-model="FF-017" data-months="3,4,5,6,7">
+            <div>
+              <h3>Black Nebula Carrot</h3>
+              <p class="entry-type">Root vegetable · 300 seeds</p>
+              <p class="blurb">Deep purple heirloom carrot; holds color when roasted.</p>
+              <p class="band" aria-hidden="true"><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Mar–Jul</p>
+              <p class="facts"><span>Easy</span><span>Germination 78%</span></p>
+            </div>
+            <p class="margin-note">The widest window in the almanac — five months of it.</p>
+            <p class="offer"><span class="price">£3.20</span><span class="stock out">Out of stock</span></p>
+          </li>
+          <li class="entry" data-model="FF-019" data-months="3,4,5,9">
+            <div>
+              <h3>Blue Boy Cornflower</h3>
+              <p class="entry-type">Hardy annual · 50 seeds</p>
+              <p class="blurb">True cornflower blue; autumn sowing gives earlier flowers.</p>
+              <p class="band" aria-hidden="true"><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Mar–May or Sep</p>
+              <p class="facts"><span>Easy</span><span>Germination 92%</span></p>
+            </div>
+            <p class="margin-note">Sows in Sep as well — autumn sowing gives earlier flowers.</p>
+            <p class="offer"><span class="price">£2.40</span><span class="stock in">In stock</span></p>
+          </li>
+          <li class="entry" data-model="FF-002" data-months="4,5,6">
+            <div>
+              <h3>Moonlight Nasturtium</h3>
+              <p class="entry-type">Trailing annual · 20 seeds</p>
+              <p class="blurb">Pale cream flowers; leaves and flowers edible.</p>
+              <p class="band" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Apr–Jun</p>
+              <p class="facts"><span>Easy</span><span>Germination 90%</span></p>
+            </div>
+            <p class="margin-note">Leaves and flowers edible — the whole plant earns its bed.</p>
+            <p class="offer"><span class="price">£2.80</span><span class="stock in">In stock</span></p>
+          </li>
+          <li class="entry" data-model="FF-014" data-months="4,5">
+            <div>
+              <h3>Tithonia Torch Sunflower</h3>
+              <p class="entry-type">Tall annual · 25 seeds</p>
+              <p class="blurb">Blazing orange, beloved by butterflies; 1.8m tall.</p>
+              <p class="band" aria-hidden="true"><i></i><i></i><i></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+              <p class="window-text">Sow Apr–May</p>
+              <p class="facts"><span>Easy</span><span>Germination 88%</span></p>
+            </div>
+            <p class="margin-note">Beloved by butterflies; give it room — 1.8m tall.</p>
+            <p class="offer"><span class="price">£2.60</span><span class="stock in">In stock</span></p>
+          </li>
+        </ul>
+      </section>
+
+      <p id="empty" hidden>Nothing in the almanac sows then. Try the month either side — most windows are generous.</p>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Foxglove &amp; Fern · heirloom seeds · UK addresses only</p>
+</footer>
+</div>
+
+<script>
+(function () {
+  var sel = document.getElementById("month");
+  var entries = document.querySelectorAll(".entry[data-months]");
+  var windows = document.querySelectorAll(".window");
+  var empty = document.getElementById("empty");
+  sel.addEventListener("change", function () {
+    var v = sel.value, shown = 0;
+    entries.forEach(function (el) {
+      var show = !v || el.getAttribute("data-months").split(",").indexOf(v) !== -1;
+      el.hidden = !show;
+      if (show) shown++;
+    });
+    windows.forEach(function (w) {
+      var visible = w.querySelectorAll(".entry:not([hidden])").length;
+      w.hidden = visible === 0;
+    });
+    empty.hidden = shown !== 0;
+  });
+})();
+</script>
+</body>
+</html>
