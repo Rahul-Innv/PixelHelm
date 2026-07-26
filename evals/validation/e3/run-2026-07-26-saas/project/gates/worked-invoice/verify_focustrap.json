@@ -1,0 +1,14 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-26T23:28:17.599Z",
+  "target": "evals/validation/e3/run-2026-07-26-saas/project/arms/worked-invoice/index.html",
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no dialog / [role=dialog] / [aria-modal] element on this page — nothing to verify"
+    }
+  ],
+  "pass": true,
+  "applicable": false
+}

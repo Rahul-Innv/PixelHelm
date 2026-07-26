@@ -1,0 +1,27 @@
+{
+  "_note": "L-081 page-identity assertions, taken by explicit file:// URL in fresh contexts before any measurement.",
+  "pass": true,
+  "results": [
+    {
+      "arm": "worked-invoice",
+      "expectedDataArm": "worked-invoice",
+      "seenTitle": "Ledgerline — invoicing for trades. This page is an invoice.",
+      "seenDataArm": "worked-invoice",
+      "pass": true
+    },
+    {
+      "arm": "driveway-to-paid",
+      "expectedDataArm": "driveway-to-paid",
+      "seenTitle": "Ledgerline — invoicing for trades. Six steps from job done to money put aside.",
+      "seenDataArm": "driveway-to-paid",
+      "pass": true
+    },
+    {
+      "arm": "fair-quote",
+      "expectedDataArm": "fair-quote",
+      "seenTitle": "Ledgerline — invoicing for trades. Here's the quote.",
+      "seenDataArm": "fair-quote",
+      "pass": true
+    }
+  ]
+}

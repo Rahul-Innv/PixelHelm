@@ -1,0 +1,41 @@
+{
+  "validator": "verify_responsive",
+  "generated": "2026-07-26T23:27:53.676Z",
+  "widths": [
+    280,
+    320,
+    414
+  ],
+  "targets": [
+    {
+      "target": "evals/validation/e3/run-2026-07-26-saas/project/arms/worked-invoice/index.html",
+      "cells": [
+        {
+          "width": 280,
+          "pass": true,
+          "scrollWidth": 280,
+          "clientWidth": 280,
+          "overflowPx": 0,
+          "culprits": []
+        },
+        {
+          "width": 320,
+          "pass": true,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "overflowPx": 0,
+          "culprits": []
+        },
+        {
+          "width": 414,
+          "pass": true,
+          "scrollWidth": 414,
+          "clientWidth": 414,
+          "overflowPx": 0,
+          "culprits": []
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
