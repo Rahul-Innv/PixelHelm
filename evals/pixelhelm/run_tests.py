@@ -338,7 +338,7 @@ class FamilyTests(unittest.TestCase):
             metadata["project"]["urls"],
         )
         self.assertIn(
-            "Ran 26 tests ... OK (skipped=1)",
+            "Ran 30 tests ... OK (skipped=1)",
             (ROOT / "README.md").read_text(encoding="utf-8"),
         )
         current_surfaces = "\n".join(
@@ -443,6 +443,71 @@ class FamilyTests(unittest.TestCase):
         self.assertTrue(run["pass"])
         self.assertEqual(0, run["targets"][0]["measured"])
 
+    def test_verify_scrollcapture_validator_contract(self) -> None:
+        lite = self._floor_validator_common("verify_scrollcapture.mjs", "usage: node verify_scrollcapture.mjs")
+        bad_positions = command("node", str(lite), "x.html", "--positions", "bogus")
+        self.assertEqual(2, bad_positions.returncode)
+        run = self._committed_gate_artifact("verify_scrollcapture.json")
+        self.assertEqual("verify_scrollcapture", run["validator"])
+        self.assertEqual(2, run["contract"]["passes"])
+        self.assertEqual("killed", run["contract"]["animations"])
+        self.assertTrue(run["pass"])
+        entry = run["targets"][0]
+        self.assertTrue(entry["readiness"]["layoutSettled"])  # the page-readiness contract held
+        self.assertEqual(5, len(entry["captures"]))
+        for capture in entry["captures"]:
+            self.assertLessEqual(capture["deltaPx"], 1)
+            self.assertTrue(capture["reproduced"])
+            self.assertTrue(capture["stable"])
+
+    def test_verify_frametime_validator_contract(self) -> None:
+        lite = self._floor_validator_common("verify_frametime.mjs", "usage: node verify_frametime.mjs")
+        bad_budget = command("node", str(lite), "x.html", "--budget-p95", "bogus")
+        self.assertEqual(2, bad_budget.returncode)
+        desktop = self._committed_gate_artifact("verify_frametime.json")
+        self.assertEqual("verify_frametime", desktop["validator"])
+        self.assertEqual({"p95Ms": 16.7, "jitterAllowanceMs": 1}, desktop["budget"])
+        self.assertEqual("desktop", desktop["profile"]["name"])
+        self.assertTrue(desktop["pass"])
+        mobile = self._committed_gate_artifact("verify_frametime.mobile.json")
+        self.assertEqual({"p95Ms": 33, "jitterAllowanceMs": 1}, mobile["budget"])
+        self.assertEqual("emulated-mobile", mobile["profile"]["name"])
+        self.assertEqual(4, mobile["profile"]["cpuThrottleRate"])
+        self.assertEqual({"width": 375, "height": 812}, mobile["profile"]["viewport"])
+        self.assertFalse(mobile["pass"])  # honest committed FAIL: p95 over the 33 ms budget under 4x throttle
+        frame = mobile["targets"][0]["frameMs"]
+        self.assertGreater(frame["p95"], 33 + 1)
+        self.assertLessEqual(frame["p50"], frame["p95"])
+        self.assertLessEqual(frame["p95"], frame["max"])
+        self.assertGreater(mobile["targets"][0]["samples"], 0)
+
+    def test_verify_cwv_validator_contract(self) -> None:
+        self._floor_validator_common("verify_cwv.mjs", "usage: node verify_cwv.mjs")
+        run = self._committed_gate_artifact("verify_cwv.json")
+        self.assertEqual("verify_cwv", run["validator"])
+        self.assertEqual({"lcpMs": 2500, "cls": 0.1, "inpProxyMs": 200}, run["budgets"])
+        self.assertTrue(run["pass"])
+        self.assertEqual(["desktop", "emulated-mobile"], [p["name"] for p in run["profiles"]])
+        for profile in run["profiles"]:
+            entry = profile["targets"][0]
+            self.assertEqual(0, entry["metrics"]["inpProxy"]["interactiveElements"])
+            checks = {c["id"]: c for c in entry["checks"]}
+            self.assertTrue(checks["INP-proxy"]["na"])  # explicit zero-measure, never implied responsiveness
+            self.assertTrue(checks["LCP"]["ok"])
+            self.assertTrue(checks["CLS"]["ok"])
+        mobile = run["profiles"][1]
+        self.assertEqual(4, mobile["cpuThrottleRate"])
+        self.assertEqual(2, mobile["deviceScaleFactor"])
+
+    def test_verify_keyboard_validator_contract(self) -> None:
+        self._floor_validator_common("verify_keyboard.mjs", "usage: node verify_keyboard.mjs")
+        run = self._committed_gate_artifact("verify_keyboard.json")
+        self.assertEqual("verify_keyboard", run["validator"])
+        self.assertTrue(run["pass"])
+        self.assertEqual(0, run["measured"])  # explicit zero-measure, not a keyboard-support conformance claim
+        self.assertEqual("applicability", run["findings"][0]["id"])
+        self.assertEqual("left-document", run["traversalEnd"])
+
     def test_verify_lib_pure_math_is_exact(self) -> None:
         lib = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "verify_lib.mjs"
         probe = (
@@ -453,7 +518,9 @@ class FamilyTests(unittest.TestCase):
             "compositedGrey:m.contrastRatio('rgba(0, 0, 0, 0.5)',{r:255,g:255,b:255}),"
             "large:[m.isLargeText(24,'400'),m.isLargeText(18.66,'700'),m.isLargeText(18.66,'400')],"
             "clustered:m.spacingExceptionHolds(0,[{x:0,y:0,w:16,h:16},{x:16,y:0,w:16,h:16}],new Set([0,1])),"
-            "isolated:m.spacingExceptionHolds(0,[{x:0,y:0,w:16,h:16},{x:200,y:200,w:16,h:16}],new Set([0,1]))};"
+            "isolated:m.spacingExceptionHolds(0,[{x:0,y:0,w:16,h:16},{x:200,y:200,w:16,h:16}],new Set([0,1])),"
+            "pcts:[m.percentile([5,1,9,3],50),m.percentile([5,1,9,3],95),m.percentile([5,1,9,3],100),m.percentile([],50)],"
+            "diff:m.diffStyles({a:'1',b:'2'},{b:'3',a:'1',c:'x'})};"
             "console.log(JSON.stringify(out));})"
         )
         result = command("node", "-e", probe, str(lib))
@@ -464,6 +531,8 @@ class FamilyTests(unittest.TestCase):
         self.assertEqual([True, True, False], out["large"])
         self.assertFalse(out["clustered"])
         self.assertTrue(out["isolated"])
+        self.assertEqual([3, 9, 9, None], out["pcts"])  # nearest-rank: ceil(p/100 * n), empty input -> null
+        self.assertEqual(["b", "c"], out["diff"])
 
     def test_output_floor_gate_blocks_harborline_gaps(self) -> None:
         gate = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "output-floor-gate.mjs"

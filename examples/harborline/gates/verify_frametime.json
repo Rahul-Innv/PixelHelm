@@ -1,0 +1,46 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-26T20:51:39.148Z",
+  "profile": {
+    "name": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "cpuThrottleRate": 1
+  },
+  "budget": {
+    "p95Ms": 16.7,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x1400",
+        "waitedMs": 45
+      },
+      "scrollable": true,
+      "scrolledPx": 600,
+      "samples": 16,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 16.8
+      },
+      "droppedFramePct": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

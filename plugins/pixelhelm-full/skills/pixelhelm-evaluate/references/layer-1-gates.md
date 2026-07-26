@@ -4,6 +4,8 @@
 > [Contrast: REQUIRED vs ADVISORY](#contrast-required-vs-advisory) · [Real-render state contrast](#real-render-state-aware-contrast)
 > · [axe-core](#axe-core-a11y) · [Focus trap](#focus-trap) · [Responsive overflow](#responsive-overflow)
 > · [Target size](#target-size-wcag-22-258) · [Output floor](#output-floor-landmarks--headings--meta-description)
+> · [Deterministic scroll capture](#deterministic-scroll-capture) · [Frame-time budget](#frame-time-budget)
+> · [Lab CWV capture](#lab-cwv-capture) · [Keyboard traversal capture](#keyboard-traversal-capture)
 > · [Promoted micro-checks](#promoted-interface-quality-micro-checks) · [Conformance](#conformance-the-moat)
 > · [Run profile](#run-profile)
 
@@ -24,7 +26,9 @@ Exit **1** iff a HARD gate fails (contrast); exit **2** on runner error; **0** o
 findings are always REPORTED but never change the exit code.
 
 The BROWSER-ARM floor validators (`verify_responsive.mjs`, `verify_states.mjs`,
-`verify_focustrap.mjs`, `verify_targetsize.mjs`) and the static `output-floor-gate.mjs` are
+`verify_focustrap.mjs`, `verify_targetsize.mjs`), the BEHAVIOR-LEVEL validators
+(`verify_scrollcapture.mjs`, `verify_frametime.mjs`, `verify_cwv.mjs`,
+`verify_keyboard.mjs`), and the static `output-floor-gate.mjs` are
 separate commands with the same exit contract (0 pass · 1 HARD fail · 2 runner error, `--json`
 for machine-readable output); the browser ones resolve Playwright from the sibling
 `pixelhelm-render` skill's per-version install and fail LOUDLY (exit 2) when it is missing —
@@ -51,6 +55,10 @@ never a silent skip. Principles every gate encodes:
 | State-aware contrast (default/hover/focus) | **HARD when run** (browser) | `verify_states.mjs <file.html\|url>` — computed text color vs the ancestor-resolved, alpha-composited background per state, BOTH modes; 4.5:1 (3:1 large text / icon-only); disabled + native toggles exempt; background-image behind a control ⇒ needs-review, never silently passed. |
 | Focus trap (dialogs) | **HARD when run** (browser) | `verify_focustrap.mjs <file.html\|url> --trigger <sel>` — role/aria-modal/accessible name; Tab pressed more times than there are focusables never escapes; Escape closes AND returns focus to the trigger. No dialog on the page ⇒ explicit not-applicable, never a silent pass. |
 | Target size (WCAG 2.2 2.5.8) | **HARD when run** (browser) | `verify_targetsize.mjs <file.html\|url>` — every interactive target ≥ 24×24 CSS px at a mobile viewport, with the inline and MEASURED spacing-circle exceptions implemented (beyond axe's rule, which leaves spacing to "needs review"); equivalent-control exemptions must be DECLARED via `--exempt` and defended in the verdict. |
+| Deterministic scroll capture | **HARD when run** (browser) | `verify_scrollcapture.mjs <file.html\|url>` — every requested scroll position (percent of max scroll, or px) is reached within 1 px, offset-stable across frames, and REPRODUCED across passes, under the page-readiness contract (readyState complete · fonts loaded · layout settled over consecutive rAF frames · animations at a DECLARED state). With `--out`, screenshot bytes must hash-match across passes (same machine/session only — the report says so). |
+| Frame-time budget | **HARD when run** (browser, LAB) | `verify_frametime.mjs <file.html\|url> [--mobile]` — nearest-rank p50/p95/max of rAF frame deltas over a scripted wheel-scroll pass (plus optional `--interact` hovers). PASS iff p95 ≤ budget + 1.0 ms fixed jitter allowance (a source constant, never a flag). Default budgets mirror the pre-registered shapes: p95 ≤ 16.7 ms desktop / ≤ 33 ms emulated mobile (375×812 @ DPR 2, 4× CPU throttle). Single-machine LAB evidence; the verdict binds the run that produced it — never RUM. |
+| Lab CWV capture | **HARD when run** (browser, LAB) | `verify_cwv.mjs <file.html\|url>` — LCP, CLS, and an INP-proxy (worst event-timing duration under a scripted interaction pass with default navigation suppressed) against configurable budgets (defaults: LCP ≤ 2500 ms · CLS ≤ 0.1 · INP-proxy ≤ 200 ms), on desktop AND emulated mid-tier mobile. Zero interactive elements ⇒ explicit zero-measure, never implied responsiveness. Lab, no network throttling; transfer-weight budgets are a different tool's job. |
+| Keyboard traversal capture | **HARD when run** (browser) | `verify_keyboard.mjs <file.html\|url>` — records the REAL Tab path (order, per-stop focus-indicator evidence from a blurred-vs-focused computed-style diff incl. `::before`/`::after`), requires the Shift-Tab path to be the exact reverse, and optionally probes Enter activation (`--enter`). FAILs: no style response to focus (WCAG 2.4.7; caret-only text entry ⇒ warn for judgment), a focused stop invisible/offscreen, focus stuck, reverse mismatch (WCAG 2.4.3). Zero stops ⇒ explicit zero-measure. |
 
 ## Not yet wired (designed, honest status)
 
@@ -190,6 +198,101 @@ order; no heading impostors (a `div`/`span`/`p` whose class names it a `section-
 `<meta name="description">`. Missing header/nav/footer landmarks, extra `<h1>`s, and the broader
 `*-title` class family are REPORTED for judgment (real false-positive surface). Description
 LENGTH rules stay with the `seo-meta.mjs` lens on marketing surfaces; this gate owns presence.
+
+## Deterministic scroll capture
+
+**SHIPPED, hard when run — `scripts/verify_scrollcapture.mjs`:**
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-evaluate/scripts/verify_scrollcapture.mjs" <file.html|url> \
+     [--positions 0,25,50,75,100] [--viewport 1280x800] [--passes 2] \
+     [--animations killed|running] [--out <dir>] [--json]
+```
+
+Scroll-position captures are only evidence if they REPRODUCE. This validator makes the
+readiness contract explicit and embeds its evidence in every report: `readyState`
+complete, `document.fonts.ready` resolved, layout settled (consecutive rAF frames with
+identical document geometry), and animations at a DECLARED state — `killed` (default;
+the resting layout is what is captured) or `running` (deliberate, and the record says
+captures may not reproduce). Each position (bare number = percent of max scroll;
+`NNNpx` = absolute) is visited on every pass with instant scrolls. FAILs: the layout
+never settles while animations are killed; a position is unreachable/clamped; the
+offset keeps moving after an instant scroll (scroll-linked JS = nondeterminism); the
+achieved offsets differ across passes; or — with `--out` — the screenshot bytes differ
+across passes at an identical offset. Screenshot hashes attest same-machine,
+same-session reproduction only; they are NOT comparable across machines or browser
+builds, and the report carries that caveat.
+
+## Frame-time budget
+
+**SHIPPED, hard when run, LAB — `scripts/verify_frametime.mjs`:**
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-evaluate/scripts/verify_frametime.mjs" <file.html|url> \
+     [--mobile] [--budget-p95 <ms>] [--cpu-throttle <rate>] [--duration 8000] \
+     [--interact <css-selector>] [--json]
+```
+
+Records rAF frame deltas while a scripted wheel scroll walks the page top to bottom
+(animations deliberately left RUNNING — their frame cost is the thing measured), then
+computes nearest-rank p50/p95/max node-side. Profiles: desktop (1280×800 @ DPR 1, no
+throttle, budget p95 ≤ 16.7 ms) and `--mobile` (375×812 @ DPR 2, 4× CPU throttle,
+budget p95 ≤ 33 ms) — the pre-registered budget shapes, overridable per run. PASS rule:
+p95 ≤ budget + 1.0 ms fixed jitter allowance; the allowance absorbs vsync scheduler
+noise (an idle 60 Hz page reports ~16.7 ms deltas with sub-ms jitter) and is a SOURCE
+CONSTANT, never a flag — budgets change by changing the budget, never by widening the
+allowance. Evidence reported alongside: a vsync-base estimate from an idle calibration
+window, the dropped-frame share (> 1.5× base), and the sample count. LAB and
+single-machine: the verdict binds the run that produced it; directional across
+machines, never a field claim.
+
+## Lab CWV capture
+
+**SHIPPED, hard when run, LAB — `scripts/verify_cwv.mjs`:**
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-evaluate/scripts/verify_cwv.mjs" <file.html|url> \
+     [--profile desktop|mobile|both] [--budget-lcp 2500] [--budget-cls 0.1] \
+     [--budget-inp 200] [--max-interactions 8] [--json]
+```
+
+One cold load per profile (desktop 1280×800 @ DPR 1; emulated mid-tier mobile 375×812
+@ DPR 2 with 4× CPU throttle), measuring: **LCP** (buffered observer), **CLS**
+(buffered layout-shift sum excluding recent-input shifts), and an **INP-proxy** — the
+worst event-timing duration under a scripted interaction pass (clicks on visible
+interactive elements with default navigation suppressed so the page survives, plus Tab
+presses; input delay reported alongside). The proxy is a LAB stand-in for INP, which is
+a field p98 — the report says so and never calls it INP. No event-timing entry over the
+API's 16 ms delivery floor means every scripted interaction ran under 16 ms — reported
+as `< 16 ms`, never as a missing measurement. A page with zero interactive elements
+gets an explicit zero-measure record; the INP-proxy budget is then not-applicable,
+never an implied conformance. No network throttling is applied (a `file://` target
+pays no network cost); transfer-weight budgets are a different tool's job.
+
+## Keyboard traversal capture
+
+**SHIPPED, hard when run — `scripts/verify_keyboard.mjs`:**
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-evaluate/scripts/verify_keyboard.mjs" <file.html|url> \
+     [--viewport 1280x800] [--max-stops 100] [--enter <css-selector>] [--json]
+```
+
+A committable record of what the keyboard ACTUALLY does, suitable for gate review: real
+Tab presses from the top of the document, each focus stop recorded in order with
+selector, role, accessible-name sketch, geometry, and focus-indicator evidence — a
+computed-style diff of the element and its `::before`/`::after` between blurred and
+focused states (the browser's default focus ring shows up in this diff, so an unstyled
+page passes). Then Shift-Tab is pressed the same number of times and the path must be
+the EXACT reverse. With `--enter`, matching stops are activated by a real Enter press
+and the observable outcome recorded (URL change, dialog opened, `aria-expanded`
+toggle, DOM-mutation count, focus movement); a navigation is recorded and the page
+reloaded to continue. Machine-certain FAILs only: a stop with NO style response
+anywhere (WCAG 2.4.7 — caret-only text-entry stops are a warn for judgment, never a
+silent pass), a focused stop that is invisible or outside the viewport, focus that
+gets stuck, and a forward/reverse order mismatch (WCAG 2.4.3). Positive `tabindex`
+and re-entrant tab order are warns (real false-positive surface). Zero stops ⇒ an
+explicit zero-measure record, never an implied keyboard-support conformance.
 
 ## Promoted interface-quality micro-checks
 

@@ -1,0 +1,143 @@
+{
+  "validator": "verify_scrollcapture",
+  "generated": "2026-07-26T20:51:28.961Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "deviceScaleFactor": 1,
+  "contract": {
+    "positions": [
+      "0",
+      "25",
+      "50",
+      "75",
+      "100"
+    ],
+    "passes": 2,
+    "animations": "killed",
+    "note": "screenshot hashes attest same-machine/same-session reproduction only; they are not comparable across machines or browser builds"
+  },
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "captures": [
+        {
+          "position": "0",
+          "requestedPx": 0,
+          "passes": [
+            {
+              "achievedPx": 0,
+              "stable": true
+            },
+            {
+              "achievedPx": 0,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 0,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "25",
+          "requestedPx": 150,
+          "passes": [
+            {
+              "achievedPx": 150,
+              "stable": true
+            },
+            {
+              "achievedPx": 150,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 150,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "50",
+          "requestedPx": 300,
+          "passes": [
+            {
+              "achievedPx": 300,
+              "stable": true
+            },
+            {
+              "achievedPx": 300,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 300,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "75",
+          "requestedPx": 450,
+          "passes": [
+            {
+              "achievedPx": 450,
+              "stable": true
+            },
+            {
+              "achievedPx": 450,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 450,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "100",
+          "requestedPx": 600,
+          "passes": [
+            {
+              "achievedPx": 600,
+              "stable": true
+            },
+            {
+              "achievedPx": 600,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 600,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        }
+      ],
+      "violations": [],
+      "pass": true,
+      "readiness": {
+        "animations": "killed",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x1400",
+        "waitedMs": 62
+      },
+      "maxScrollPx": 600
+    }
+  ],
+  "pass": true
+}
