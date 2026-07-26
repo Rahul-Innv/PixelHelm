@@ -1,0 +1,21 @@
+{
+  "_note": "Injected constants — pure arithmetic on sealed-data literals (inject.mjs). The only legal numbers beyond the data file itself.",
+  "openCount": 3,
+  "cautionCount": 2,
+  "closedCount": 2,
+  "unreportedCount": 2,
+  "trailCount": 9,
+  "reportedCount": 7,
+  "nullHistoryDays": 1,
+  "historyDayCount": 7,
+  "globalAllow": [
+    3,
+    2,
+    2,
+    2,
+    9,
+    7,
+    1,
+    7
+  ]
+}

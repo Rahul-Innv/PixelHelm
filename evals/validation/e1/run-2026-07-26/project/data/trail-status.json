@@ -1,0 +1,37 @@
+{
+  "schema": "pixelhelm-validation/trail-status@1",
+  "network": "Kestrel Ridge Open Space",
+  "generatedAt": "2026-07-26T18:00:00-04:00",
+  "dataNotes": "Synthetic. Sealed before any generation; the only content source for E1.",
+  "alerts": [
+    {
+      "id": "A-114",
+      "severity": "closure",
+      "title": "Controlled burn — east ridge",
+      "body": "Juniper Loop and Redtail Spur are closed for a scheduled controlled burn.",
+      "effectiveFrom": "2026-07-25T06:00:00-04:00",
+      "effectiveTo": "2026-07-28T20:00:00-04:00"
+    }
+  ],
+  "trails": [
+    { "id": "T-01", "name": "Kestrel Summit Trail", "distanceKm": 7.4, "status": "open", "surface": "dry", "hazard": null, "lastReport": "2026-07-26T07:10:00-04:00" },
+    { "id": "T-02", "name": "Juniper Loop", "distanceKm": 4.1, "status": "closed", "surface": null, "hazard": "Controlled burn area (alert A-114).", "lastReport": "2026-07-25T05:45:00-04:00" },
+    { "id": "T-03", "name": "Redtail Spur", "distanceKm": 1.9, "status": "closed", "surface": null, "hazard": "Controlled burn area (alert A-114).", "lastReport": "2026-07-25T05:45:00-04:00" },
+    { "id": "T-04", "name": "Millbrook Creek Path", "distanceKm": 5.6, "status": "caution", "surface": "muddy", "hazard": "Two footbridges flooded at the crossing; passable with care.", "lastReport": "2026-07-26T06:40:00-04:00" },
+    { "id": "T-05", "name": "Old Quarry Track", "distanceKm": 3.3, "status": "open", "surface": "loose gravel", "hazard": null, "lastReport": "2026-07-26T07:05:00-04:00" },
+    { "id": "T-06", "name": "Larkspur Meadow Loop", "distanceKm": 2.8, "status": "open", "surface": "dry", "hazard": "Ground-nesting birds through August — dogs on leash.", "lastReport": "2026-07-26T06:55:00-04:00" },
+    { "id": "T-07", "name": "Hollow Pine Traverse", "distanceKm": 9.2, "status": "unreported", "surface": null, "hazard": null, "lastReport": null },
+    { "id": "T-08", "name": "Basalt Steps", "distanceKm": 1.2, "status": "caution", "surface": "wet rock", "hazard": "Slick steps after yesterday's rain.", "lastReport": "2026-07-26T06:20:00-04:00" },
+    { "id": "T-09", "name": "North Fence Line", "distanceKm": 6.0, "status": "unreported", "surface": null, "hazard": null, "lastReport": null }
+  ],
+  "snowpack": { "stationName": "Kestrel Ridge upper station", "depthCm": 0, "estimated": true, "note": "Sensor offline since 2026-07-19; value estimated from the valley station." },
+  "history7d": [
+    { "date": "2026-07-20", "summary": "dry", "highC": 29, "precipMm": 0 },
+    { "date": "2026-07-21", "summary": "dry", "highC": 31, "precipMm": 0 },
+    { "date": "2026-07-22", "summary": null, "highC": null, "precipMm": null },
+    { "date": "2026-07-23", "summary": "light rain", "highC": 24, "precipMm": 6 },
+    { "date": "2026-07-24", "summary": "dry", "highC": 26, "precipMm": 0 },
+    { "date": "2026-07-25", "summary": "heavy rain", "highC": 22, "precipMm": 18 },
+    { "date": "2026-07-26", "summary": "clearing", "highC": 25, "precipMm": 1 }
+  ]
+}
