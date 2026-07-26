@@ -47,6 +47,10 @@ merge.
   covers four archetypes total; portfolio and product-application stay
   untested and unclaimable.
 - `PREREG-E5-COMPARATOR-RULE.md` — E5's comparator construction rule, required
-  sealed BEFORE E3 begins (critic-2 D9).
-- E4–E6: protocols defined in artifact 14; E5/E6 owner-gated (human
-  recruitment / provenance).
+  sealed BEFORE E3 begins (critic-2 D9); execution record + Amendment A1-E5 in
+  `PREREG-E5-COMPARATOR-SELECTION-ADDENDUM.md` (two registered queries returned
+  degenerate results; amended pre-generation toward stronger comparators).
+- `e6/` — E6-A: the motion-storytelling launch page (Lane-A, original work —
+  owner-directed 2026-07-26). Blocked on E1 review + P1-5 measurement tooling;
+  human comprehension check owner-gated.
+- E4–E5 human protocols: defined in artifact 14; owner-gated (recruitment).

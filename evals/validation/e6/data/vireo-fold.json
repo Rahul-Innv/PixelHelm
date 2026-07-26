@@ -1,0 +1,23 @@
+{
+  "schema": "pixelhelm-validation/product-launch@1",
+  "product": "Vireo Fold",
+  "sealedNote": "Synthetic. Sealed before any generation; the only content source for the E6-A motion-launch brief.",
+  "oneLiner": "A touring kayak that lives under your bed.",
+  "audience": "City commuters and small-flat dwellers who assumed kayaking wasn't for them.",
+  "story": [
+    { "step": 1, "name": "The bag", "fact": "Folded: 84 x 56 x 24 cm — airline carry-on envelope; 9.8 kg with paddle." },
+    { "step": 2, "name": "The unfold", "fact": "Six creases, one tension lever. Median owner-timed setup: 3 min 40 s (n=14, owner-submitted timings)." },
+    { "step": 3, "name": "The water", "fact": "4.1 m waterline, tracks like a rigid tourer; self-rescue tested in chop." }
+  ],
+  "specs": {
+    "weightKg": 9.8,
+    "foldedCm": [84, 56, 24],
+    "lengthM": 4.1,
+    "packVolumeL": { "value": 118, "estimated": true, "note": "Estimated from CAD; production bag not yet measured." },
+    "loadRatingKg": { "value": 130, "certification": "pending", "note": "Independent certification in progress; may not be presented as certified." },
+    "material": "Double-wall woven polypropylene, UV-stabilized",
+    "setupTime": { "claim": "3 min 40 s median", "basis": "owner-submitted timings, n=14", "verified": false }
+  },
+  "pricing": { "currency": "EUR", "price": 1290, "includes": "Hull, four-part paddle, pack bag, fin.", "shippingNote": "Ships EU-wide; 30-day water-it-and-return trial." },
+  "company": { "name": "Vireo Boats (fictional)", "location": "Rotterdam", "founded": 2023 }
+}
