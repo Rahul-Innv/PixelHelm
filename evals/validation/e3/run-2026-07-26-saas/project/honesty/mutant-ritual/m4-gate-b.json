@@ -1,0 +1,22 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\AppData\\Local/Temp/claude/C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-lucid-khayyam-0ee868/8260afeb-43b9-4328-9a3f-67a43fdc37d9/scratchpad/e3-mutants/m4/index.html",
+  "pass": false,
+  "required": 28,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "MISSING",
+      "id": "vat-note",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "required \"vat-note\" missing in light: The mandatory VAT-exclusive note sits with the prices"
+    }
+  ]
+}
