@@ -1,0 +1,29 @@
+{
+  "metric": "E2(c) motifs - mechanical subset",
+  "results": {
+    "trail-ledger": {
+      "1-sticky-header": false,
+      "5-data-table-ruled": false,
+      "10-tabs": false,
+      "11-accordion": false,
+      "16-gradient-wash": false,
+      "17-glass-blur": false
+    },
+    "status-board": {
+      "1-sticky-header": false,
+      "5-data-table-ruled": false,
+      "10-tabs": false,
+      "11-accordion": false,
+      "16-gradient-wash": false,
+      "17-glass-blur": false
+    },
+    "first-light": {
+      "1-sticky-header": true,
+      "5-data-table-ruled": false,
+      "10-tabs": false,
+      "11-accordion": false,
+      "16-gradient-wash": false,
+      "17-glass-blur": false
+    }
+  }
+}

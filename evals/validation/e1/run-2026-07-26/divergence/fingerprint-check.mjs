@@ -13,7 +13,7 @@ const argv = process.argv.slice(2);
 const flag = (n) => { const i = argv.indexOf(`--${n}`); return i >= 0 ? argv[i + 1] : null; };
 const seedPath = flag("seed");
 const livePath = flag("live");
-const files = argv.filter((a, i) => !a.startsWith("--") && argv[i - 1] !== "--seed" && argv[i - 1] !== "--live");
+const files = argv.filter((a, i) => !a.startsWith("--") && !["--seed", "--live", "--pw"].includes(argv[i - 1]));
 if (!seedPath || files.length === 0) { console.error("usage: node fingerprint-check.mjs --seed <seed.md> [--live <live.md>] <arm.html> [...]"); process.exit(2); }
 
 function parseRegistry(text) {
@@ -54,10 +54,13 @@ let chromium;
 try {
   const req = createRequire(resolve(pwDir ?? ".", "package.json"));
   const { pathToFileURL } = await import("node:url");
-  ({ chromium } = await import(pathToFileURL(req.resolve("playwright")).href));
+  const mod = await import(pathToFileURL(req.resolve("playwright")).href);
+  chromium = mod.chromium ?? mod.default?.chromium;
+  if (!chromium) throw new Error("playwright import missing chromium export");
 } catch (e) { console.error(`fingerprint-check: playwright unavailable (${e.message}) — pass --pw <render-skill-dir>`); process.exit(2); }
 
 async function harvestComputed(file) {
+  let lastErr = null;
   for (const channel of ["msedge", "chrome", undefined]) {
     try {
       const browser = await chromium.launch(channel ? { channel } : {});
@@ -75,9 +78,9 @@ async function harvestComputed(file) {
       });
       await browser.close();
       return styles;
-    } catch { /* next channel */ }
+    } catch (e) { lastErr = e; }
   }
-  throw new Error("no browser could be launched");
+  throw new Error("no browser could be launched: " + (lastErr && lastErr.message));
 }
 
 const results = [];

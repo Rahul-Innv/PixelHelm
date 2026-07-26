@@ -1,0 +1,260 @@
+{
+  "metric": "E2(a) palette distance",
+  "interpretationDeclaredPreMeasurement": "threshold on light-mode token values; dark reported as context",
+  "usageRule": "references = occurrences of var(--<name>; ties alphabetical",
+  "arms": [
+    {
+      "arm": "trail-ledger",
+      "top5": [
+        "rule",
+        "ink",
+        "muted",
+        "paper",
+        "caution"
+      ],
+      "usage": {
+        "rule": 7,
+        "ink": 6,
+        "muted": 6,
+        "paper": 2,
+        "caution": 1
+      }
+    },
+    {
+      "arm": "status-board",
+      "top5": [
+        "ink",
+        "ink-muted",
+        "accent",
+        "field-closed",
+        "line"
+      ],
+      "usage": {
+        "ink": 18,
+        "ink-muted": 17,
+        "accent": 10,
+        "field-closed": 4,
+        "line": 4
+      }
+    },
+    {
+      "arm": "first-light",
+      "top5": [
+        "muted",
+        "ink",
+        "orange",
+        "ground",
+        "dash"
+      ],
+      "usage": {
+        "muted": 11,
+        "ink": 5,
+        "orange": 5,
+        "ground": 3,
+        "dash": 2
+      }
+    }
+  ],
+  "pairs": [
+    {
+      "pair": "trail-ledger vs status-board",
+      "top5": {
+        "trail-ledger": [
+          "rule",
+          "ink",
+          "muted",
+          "paper",
+          "caution"
+        ],
+        "status-board": [
+          "ink",
+          "ink-muted",
+          "accent",
+          "field-closed",
+          "line"
+        ]
+      },
+      "meanMatchedDe00Light": 27.005,
+      "matchingLight": [
+        {
+          "a": 0,
+          "b": 2,
+          "de00": 40.706
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "de00": 18.646
+        },
+        {
+          "a": 2,
+          "b": 1,
+          "de00": 25.718
+        },
+        {
+          "a": 3,
+          "b": 4,
+          "de00": 19.601
+        },
+        {
+          "a": 4,
+          "b": 3,
+          "de00": 30.355
+        }
+      ],
+      "thresholdRegistered": 10,
+      "pass": true,
+      "meanMatchedDe00DarkContext": 24.674,
+      "chromaticOnlySecondary": {
+        "sets": {
+          "trail-ledger": [
+            "rule",
+            "muted",
+            "caution",
+            "closed",
+            "open"
+          ],
+          "status-board": [
+            "ink",
+            "accent",
+            "field-closed",
+            "field-caution",
+            "field-open"
+          ]
+        },
+        "meanMatchedDe00": 20.54
+      }
+    },
+    {
+      "pair": "trail-ledger vs first-light",
+      "top5": {
+        "trail-ledger": [
+          "rule",
+          "ink",
+          "muted",
+          "paper",
+          "caution"
+        ],
+        "first-light": [
+          "muted",
+          "ink",
+          "orange",
+          "ground",
+          "dash"
+        ]
+      },
+      "meanMatchedDe00Light": 18.954,
+      "matchingLight": [
+        {
+          "a": 0,
+          "b": 4,
+          "de00": 26.716
+        },
+        {
+          "a": 1,
+          "b": 1,
+          "de00": 12.177
+        },
+        {
+          "a": 2,
+          "b": 0,
+          "de00": 25.595
+        },
+        {
+          "a": 3,
+          "b": 3,
+          "de00": 12.058
+        },
+        {
+          "a": 4,
+          "b": 2,
+          "de00": 18.225
+        }
+      ],
+      "thresholdRegistered": 10,
+      "pass": true,
+      "meanMatchedDe00DarkContext": 15.462,
+      "chromaticOnlySecondary": {
+        "sets": {
+          "trail-ledger": [
+            "rule",
+            "muted",
+            "caution",
+            "closed",
+            "open"
+          ],
+          "first-light": [
+            "orange"
+          ]
+        },
+        "meanMatchedDe00": 11.454
+      }
+    },
+    {
+      "pair": "status-board vs first-light",
+      "top5": {
+        "status-board": [
+          "ink",
+          "ink-muted",
+          "accent",
+          "field-closed",
+          "line"
+        ],
+        "first-light": [
+          "muted",
+          "ink",
+          "orange",
+          "ground",
+          "dash"
+        ]
+      },
+      "meanMatchedDe00Light": 11.56,
+      "matchingLight": [
+        {
+          "a": 0,
+          "b": 1,
+          "de00": 8.831
+        },
+        {
+          "a": 1,
+          "b": 0,
+          "de00": 0.905
+        },
+        {
+          "a": 2,
+          "b": 4,
+          "de00": 14.741
+        },
+        {
+          "a": 3,
+          "b": 2,
+          "de00": 18.864
+        },
+        {
+          "a": 4,
+          "b": 3,
+          "de00": 14.46
+        }
+      ],
+      "thresholdRegistered": 10,
+      "pass": true,
+      "meanMatchedDe00DarkContext": 12.14,
+      "chromaticOnlySecondary": {
+        "sets": {
+          "status-board": [
+            "ink",
+            "accent",
+            "field-closed",
+            "field-caution",
+            "field-open"
+          ],
+          "first-light": [
+            "orange"
+          ]
+        },
+        "meanMatchedDe00": 18.864
+      }
+    }
+  ],
+  "allPairsPass": true
+}

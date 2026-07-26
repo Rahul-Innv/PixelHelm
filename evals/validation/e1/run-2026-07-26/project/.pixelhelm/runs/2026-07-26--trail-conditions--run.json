@@ -1,0 +1,37 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-26",
+  "project": "e1-kestrel-ridge",
+  "surface": "trail-conditions",
+  "intent": "E1 validation run - one full evidenced loop on the sealed Kestrel Ridge utility brief (E2 divergence measured inside)",
+  "edition": "lite",
+  "workerModel": "claude-fable-5",
+  "skillsFired": [
+    "pixelhelm-choicegate",
+    "pixelhelm-loop",
+    "pixelhelm-ground",
+    "pixelhelm-generate",
+    "pixelhelm-render",
+    "pixelhelm-evaluate",
+    "pixelhelm-judge"
+  ],
+  "engines": [],
+  "council": {
+    "pass": "deep",
+    "seats": 5,
+    "registerJurors": 5
+  },
+  "iterations": 0,
+  "renders": {
+    "items": 3,
+    "cells": 12
+  },
+  "tokens": {
+    "subagentsMeasured": 1215005,
+    "workflowsMeasured": 0,
+    "note": "measured-only; main-context usage is not observable in-session"
+  },
+  "wallClockMinutes": 80,
+  "outcome": "needs-human-review",
+  "notes": "All HARD gates green x3 arms; 4/4 mutant ritual; E2(a-e) all registered thresholds met; panel top tie 9.0/9.0 broken per TIEBREAK.md -> winner trail-ledger, PASS bar met (tie-invariant); repair not triggered (no Layer-1 fail, no blocker); owner sign-off pending."
+}

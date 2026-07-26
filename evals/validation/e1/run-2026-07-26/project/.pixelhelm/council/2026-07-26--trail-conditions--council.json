@@ -1,0 +1,138 @@
+{
+  "schema": "pixelhelm/judge-verdict@1",
+  "date": "2026-07-26",
+  "project": "e1-kestrel-ridge",
+  "surface": "trail-conditions",
+  "mode": "new-design",
+  "pass": "deep",
+  "candidates": {
+    "trail-ledger": {
+      "label": "The ranger's morning logbook (ruled ledger, stamped statuses)",
+      "kind": "challenger",
+      "render": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png"
+    },
+    "status-board": {
+      "label": "Alpine lift-status board (color-field tiles, glyph-first)",
+      "kind": "challenger",
+      "render": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png"
+    },
+    "first-light": {
+      "label": "Verdict-first split opening (two-ink + reserved safety orange)",
+      "kind": "challenger",
+      "render": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png"
+    }
+  },
+  "registerFitPanel": {
+    "jurors": 5,
+    "scores": {
+      "trail-ledger": [
+        9,
+        8,
+        9,
+        9,
+        8.5
+      ],
+      "status-board": [
+        8,
+        8,
+        8,
+        8,
+        8
+      ],
+      "first-light": [
+        9,
+        8,
+        9,
+        8,
+        9
+      ]
+    },
+    "medians": {
+      "trail-ledger": 9,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "nonOverlapping": true,
+    "modeFairness": "both-modes"
+  },
+  "lensScores": {
+    "criterion-1": {
+      "trail-ledger": 8,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "criterion-2": {
+      "trail-ledger": 9,
+      "status-board": 9,
+      "first-light": 8
+    },
+    "criterion-3": {
+      "trail-ledger": 9,
+      "status-board": 9,
+      "first-light": 9
+    },
+    "criterion-4": {
+      "trail-ledger": 8,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "criterion-5": {
+      "trail-ledger": 9,
+      "status-board": 7,
+      "first-light": 8
+    },
+    "criterion-6": {
+      "trail-ledger": 8,
+      "status-board": 8,
+      "first-light": 8
+    },
+    "criterion-7": {
+      "trail-ledger": 9,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "criterion-8": {
+      "trail-ledger": 9,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "criterion-9": {
+      "trail-ledger": 9,
+      "status-board": 6,
+      "first-light": 8
+    },
+    "criterion-10": {
+      "trail-ledger": 8,
+      "status-board": 8,
+      "first-light": 9
+    }
+  },
+  "constraints": [
+    {
+      "seat": "panel-consensus",
+      "finding": "trail-ledger frames 6:00 PM-generated data as 'Morning log / open this morning' - a data-age framing tension several jurors flagged (advisory; honesty gates green)",
+      "severity": "minor"
+    },
+    {
+      "seat": "panel-consensus",
+      "finding": "first-light desktop shows a large blank band between the opening viewport and the trail list (advisory craft finding)",
+      "severity": "minor"
+    }
+  ],
+  "aggregation": {
+    "contract": "PREREG-RUBRIC-utility.md (sealed 2026-07-26): criterion median of 5 blind jurors, overall = median of 10 criterion medians, no means/weights; registerFitPanel here = per-juror overall medians; winner tie-break per jurors/TIEBREAK.md",
+    "weightedScores": {
+      "trail-ledger": 9,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "guardOutcome": "new design, no incumbent; every shipped HARD gate green + 4/4 mutant ritual precondition met; top-2 tie (9.0/9.0) broken by declared mechanical protocol stage (e); PASS bar met by winner and is tie-invariant"
+  },
+  "winner": "trail-ledger",
+  "registerSafeGrafts": [
+    "first-light's display-scale one-sentence verdict as the ledger's summary line (advisory graft idea from panel rationales)"
+  ],
+  "rejectedGrafts": [],
+  "rejectedDirections": [],
+  "ownerVerdict": null
+}
