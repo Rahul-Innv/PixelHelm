@@ -157,10 +157,19 @@ Two evidence grades, kept honest on purpose:
   in the markup: three stations with missing telemetry render as "unknown", never
   as zero; a null-data day renders as an explicit gap, and estimated data is
   flagged where it appears.
-- **The engine is checkable offline.** The demo above and a 19-test offline suite
+- **The floor fires on record.** Every shipped floor validator has a committed run
+  against the Harborline page under `examples/harborline/gates/` — and two of those
+  runs FAIL honestly: the structural output floor (no landmarks, styled-div section
+  titles, no meta description) and horizontal overflow at 280/320 px, an escape the
+  floor caught on its very first recorded run. Committed failures are the point: the
+  gates block real defects, and the failing runs are the example's open to-do list.
+- **The engine is checkable offline.** The demo above and a 26-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
-  CI on every push. (Scope honesty: that suite validates packaging, routing-contract,
-  and state hygiene — it does not exercise the design-quality gate scripts.)
+  CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
+  and state hygiene, and it now exercises the offline design-gate scripts — the
+  output floor and the judge-record writer behaviorally; the browser-arm validators
+  at contract level, with their committed Harborline runs carrying the behavioral
+  evidence, since CI has no browser.)
 
 **Attested history (from the author's private development runs; no artifacts are
 committed in this tree, so treat these as narrative until re-run with records):**
@@ -171,8 +180,10 @@ committed in this tree, so treat these as narrative until re-run with records):*
 - One candidate invented an update cadence and the honesty audit disqualified it.
   The disqualified candidate and audit output are likewise not committed.
 
-Re-running the loop with committed judge/gate artifacts is the top of the public
-roadmap; until then this section deliberately refuses to blur the two grades.
+Re-running the loop with committed JUDGE artifacts is the top of the public roadmap
+(the record writer/validator for those artifacts now ships, so no future panel can
+run without leaving them); until then this section deliberately refuses to blur the
+two grades.
 
 ## Install
 
@@ -187,7 +198,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 19 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 26 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 

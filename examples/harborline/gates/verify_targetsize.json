@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T19:59:51.712Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "measured": 0,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

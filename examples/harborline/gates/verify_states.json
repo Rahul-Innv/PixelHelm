@@ -1,0 +1,36 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-26T19:59:43.937Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "examples/harborline/status-page.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 0,
+          "checked": 0,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 0,
+          "checked": 0,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

@@ -29,6 +29,27 @@ reads; writes go to the layer named below):
   are ONLY ever mutated via a reviewable diff the owner saves (the
   pixelhelm-record-lesson WRITE-BACK ethos). Never write them silently.
 
+## The record machinery (SHIPPED — write through it, never around it)
+
+`records.mjs` (this skill's `scripts/`) is the writer AND validator for all
+three record schemas below. **A panel or run whose record does not validate
+did not happen** — that is the method law (CONTRIBUTING: no pass described as
+complete before its artifacts exist), enforced in code:
+
+```
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" template <judge-verdict|signoff|run>
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" validate <file.json> [...]
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" write <kind> --project <dir>  # record JSON on stdin
+```
+
+`write` validates first and REFUSES an invalid record (exit 1, nothing
+written); it refuses to overwrite an existing archive (append-only, above);
+for a judge verdict it also appends the ledger line. Validation is not shape
+box-ticking: juror count must be odd ≥ 3, each candidate carries one score
+per juror, recorded medians must EQUAL the recomputed median of their scores,
+and the winner must be a real candidate id — a fabricated record fails loudly.
+Exit contract: 0 valid/written · 1 invalid or refused · 2 runner error.
+
 ## Verdict record — `pixelhelm/judge-verdict@1`
 
 Written by pixelhelm-judge immediately after the chair's synthesis (Phase 2.5),
@@ -52,8 +73,8 @@ to `<project>/.pixelhelm/council/<date>--<surface>--council.json`:
 ```
 
 `ownerVerdict` starts null; the router's Close-the-loop step fills it after
-the owner speaks (`"approved" | "rejected" | "approved-with-changes"` + a
-short verbatim quote).
+the owner speaks with
+`{ "decision": "approved" | "rejected" | "approved-with-changes", "ownerWords": "<short verbatim quote>" }`.
 
 ## Ledger line — `<project>/.pixelhelm/council/ledger.md`
 
@@ -101,9 +122,11 @@ token usage the harness reports; never estimate main-context tokens into it.
 
 ## The Close-the-loop step (router, mandatory after the owner gate)
 
-1. Write the sign-off record (archive — direct write). Update the matching
-   verdict's `ownerVerdict` and its ledger line. Write the `pixelhelm/run@1`
-   record (above) for the whole pass.
+1. Write the sign-off record (archive — direct write, THROUGH
+   `records.mjs write signoff`). Update the matching verdict's `ownerVerdict`
+   and its ledger line. Write the `pixelhelm/run@1` record (above) for the whole
+   pass via `records.mjs write run`. A refused write is a blocking finding,
+   not a formality to skip.
 2. Route by content:
    - owner CORRECTED or REJECTED something → dispatch `pixelhelm-record-lesson`
      WRITE-BACK: propose exactly ONE stamped, tagged lesson diff.

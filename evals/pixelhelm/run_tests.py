@@ -338,7 +338,7 @@ class FamilyTests(unittest.TestCase):
             metadata["project"]["urls"],
         )
         self.assertIn(
-            "Ran 19 tests ... OK (skipped=1)",
+            "Ran 26 tests ... OK (skipped=1)",
             (ROOT / "README.md").read_text(encoding="utf-8"),
         )
         current_surfaces = "\n".join(
@@ -382,6 +382,197 @@ class FamilyTests(unittest.TestCase):
             text = path.read_text(encoding="utf-8", errors="replace")
             self.assertNotIn(sensitive_forward, text, str(path))
             self.assertNotIn(sensitive_windows, text, str(path))
+
+    EVALUATE_SCRIPTS = "skills/pixelhelm-evaluate/scripts"
+    LOOP_SCRIPTS = "skills/pixelhelm-loop/scripts"
+
+    def _floor_validator_common(self, script: str, usage_token: str) -> Path:
+        """Presence in both editions + syntax + loud usage exit 2; returns the lite copy."""
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            base = ROOT / "plugins" / edition / self.EVALUATE_SCRIPTS
+            self.assertTrue((base / script).is_file(), f"{edition}/{script}")
+            self.assertTrue((base / "verify_lib.mjs").is_file(), edition)
+        lite = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / script
+        checked = command("node", "--check", str(lite))
+        self.assertEqual(0, checked.returncode, checked.stderr.decode())
+        bare = command("node", str(lite))
+        self.assertEqual(2, bare.returncode)
+        self.assertIn(usage_token.encode(), bare.stderr)
+        return lite
+
+    def _committed_gate_artifact(self, name: str) -> dict:
+        artifact = ROOT / "examples/harborline/gates" / name
+        self.assertTrue(artifact.is_file(), name)
+        return json.loads(artifact.read_text(encoding="utf-8"))
+
+    def test_verify_responsive_validator_contract(self) -> None:
+        self._floor_validator_common("verify_responsive.mjs", "usage: node verify_responsive.mjs")
+        run = self._committed_gate_artifact("verify_responsive.json")
+        self.assertEqual("verify_responsive", run["validator"])
+        self.assertEqual([280, 320, 414], run["widths"])
+        self.assertFalse(run["pass"])  # honest committed FAIL: the stations table overflows
+        cells = {cell["width"]: cell for cell in run["targets"][0]["cells"]}
+        self.assertFalse(cells[280]["pass"])
+        self.assertIn("table", cells[280]["culprits"][0]["selector"])
+        self.assertTrue(cells[414]["pass"])
+
+    def test_verify_states_validator_contract(self) -> None:
+        self._floor_validator_common("verify_states.mjs", "usage: node verify_states.mjs")
+        run = self._committed_gate_artifact("verify_states.json")
+        self.assertEqual("verify_states", run["validator"])
+        self.assertEqual(["light", "dark"], run["modes"])
+        self.assertEqual({"normalText": 4.5, "largeTextOrIcon": 3}, run["thresholds"])
+        self.assertTrue(run["pass"])
+        for mode in run["targets"][0]["modes"]:
+            self.assertEqual(0, mode["controls"])  # explicit zero-measure, not implied conformance
+
+    def test_verify_focustrap_validator_contract(self) -> None:
+        self._floor_validator_common("verify_focustrap.mjs", "usage: node verify_focustrap.mjs")
+        run = self._committed_gate_artifact("verify_focustrap.json")
+        self.assertEqual("verify_focustrap", run["validator"])
+        self.assertFalse(run["applicable"])  # no dialog: explicit not-applicable, never a silent pass
+        self.assertEqual("applicability", run["findings"][0]["id"])
+
+    def test_verify_targetsize_validator_contract(self) -> None:
+        lite = self._floor_validator_common("verify_targetsize.mjs", "usage: node verify_targetsize.mjs")
+        bad_viewport = command("node", str(lite), "x.html", "--viewport", "bogus")
+        self.assertEqual(2, bad_viewport.returncode)
+        run = self._committed_gate_artifact("verify_targetsize.json")
+        self.assertEqual("verify_targetsize", run["validator"])
+        self.assertEqual(24, run["minPx"])
+        self.assertTrue(run["pass"])
+        self.assertEqual(0, run["targets"][0]["measured"])
+
+    def test_verify_lib_pure_math_is_exact(self) -> None:
+        lib = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "verify_lib.mjs"
+        probe = (
+            "const{pathToFileURL}=require('node:url');"
+            "import(pathToFileURL(process.argv[1]).href).then(m=>{"
+            "const out={"
+            "blackOnWhite:m.contrastRatio('#000000',{r:255,g:255,b:255}),"
+            "compositedGrey:m.contrastRatio('rgba(0, 0, 0, 0.5)',{r:255,g:255,b:255}),"
+            "large:[m.isLargeText(24,'400'),m.isLargeText(18.66,'700'),m.isLargeText(18.66,'400')],"
+            "clustered:m.spacingExceptionHolds(0,[{x:0,y:0,w:16,h:16},{x:16,y:0,w:16,h:16}],new Set([0,1])),"
+            "isolated:m.spacingExceptionHolds(0,[{x:0,y:0,w:16,h:16},{x:200,y:200,w:16,h:16}],new Set([0,1]))};"
+            "console.log(JSON.stringify(out));})"
+        )
+        result = command("node", "-e", probe, str(lib))
+        self.assertEqual(0, result.returncode, result.stderr.decode())
+        out = json.loads(result.stdout)
+        self.assertEqual(21, out["blackOnWhite"])
+        self.assertEqual(3.95, out["compositedGrey"])  # 50% black composited over white = rgb(128,128,128)
+        self.assertEqual([True, True, False], out["large"])
+        self.assertFalse(out["clustered"])
+        self.assertTrue(out["isolated"])
+
+    def test_output_floor_gate_blocks_harborline_gaps(self) -> None:
+        gate = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "output-floor-gate.mjs"
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            self.assertTrue((ROOT / "plugins" / edition / self.EVALUATE_SCRIPTS / "output-floor-gate.mjs").is_file())
+        self.assertEqual(2, command("node", str(gate)).returncode)
+
+        def fails_of(raw: bytes) -> set[str]:
+            report = json.loads(raw)
+            return {f["id"] for t in report["targets"] for f in t["findings"] if f["level"] == "fail"}
+
+        with tempfile.TemporaryDirectory() as temporary:
+            good = Path(temporary) / "good.html"
+            good.write_text(
+                "<!DOCTYPE html><html lang='en'><head><meta name=\"description\" content=\"A page.\">"
+                "<title>t</title></head><body><header>h</header><nav>n</nav><main><h1>One</h1>"
+                "<h2>Two</h2></main><footer>f</footer></body></html>", encoding="utf-8")
+            passed = command("node", str(gate), str(good), "--json")
+            self.assertEqual(0, passed.returncode, passed.stdout.decode())
+            bad = Path(temporary) / "bad.html"
+            bad.write_text(
+                "<!DOCTYPE html><html lang='en'><head><title>t</title></head><body>"
+                "<h1>One</h1><h4>Skipped</h4><div class=\"section-title\">Impostor</div></body></html>",
+                encoding="utf-8")
+            failed = command("node", str(gate), str(bad), "--json")
+            self.assertEqual(1, failed.returncode)
+            self.assertEqual(
+                {"landmark-main", "heading-order", "heading-impostor", "meta-description"},
+                fails_of(failed.stdout))
+
+        harborline = command("node", str(gate), "examples/harborline/status-page.html", "--json")
+        self.assertEqual(1, harborline.returncode)
+        live_fails = fails_of(harborline.stdout)
+        self.assertEqual({"landmark-main", "heading-impostor", "meta-description"}, live_fails)
+        committed = self._committed_gate_artifact("output-floor-gate.json")
+        self.assertFalse(committed["pass"])
+        committed_fails = {f["id"] for t in committed["targets"] for f in t["findings"] if f["level"] == "fail"}
+        self.assertEqual(live_fails, committed_fails)
+
+    def test_judge_record_writer_validates_and_archives(self) -> None:
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            self.assertTrue((ROOT / "plugins" / edition / self.LOOP_SCRIPTS / "records.mjs").is_file())
+        self.assertEqual(2, command("node", str(records)).returncode)
+        template = command("node", str(records), "template", "judge-verdict")
+        self.assertEqual(0, template.returncode)
+        self.assertEqual("pixelhelm/judge-verdict@1", json.loads(template.stdout)["schema"])
+
+        verdict = {
+            "schema": "pixelhelm/judge-verdict@1",
+            "date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
+            "mode": "review", "pass": "fast",
+            "candidates": {
+                "incumbent": {"label": "current", "kind": "incumbent", "render": "renders/a.png"},
+                "b": {"label": "challenger", "kind": "challenger", "render": "renders/b.png"},
+            },
+            "registerFitPanel": {
+                "jurors": 5,
+                "scores": {"incumbent": [7, 8, 7, 9, 8], "b": [6, 7, 6, 5, 7]},
+                "medians": {"incumbent": 8, "b": 6},
+                "nonOverlapping": True, "modeFairness": "both-modes",
+            },
+            "lensScores": {"craft": {"incumbent": 8, "b": 7}},
+            "constraints": [{"seat": "honesty", "finding": "none open", "severity": "minor"}],
+            "aggregation": {"contract": "gates-and-loop.md 2026-07-26", "weightedScores": {}, "guardOutcome": "incumbent holds"},
+            "winner": "incumbent",
+            "registerSafeGrafts": [], "rejectedGrafts": [],
+            "rejectedDirections": [{"direction": "neon dashboard", "why": "off register"}],
+            "ownerVerdict": None,
+        }
+        raw = json.dumps(verdict).encode("utf-8")
+        with tempfile.TemporaryDirectory() as temporary:
+            project = Path(temporary) / "proj"
+            written = command("node", str(records), "write", "judge-verdict", "--project", str(project), input_bytes=raw)
+            self.assertEqual(0, written.returncode, written.stderr.decode())
+            archive = project / ".pixelhelm/council/2026-07-26--status-page--council.json"
+            self.assertTrue(archive.is_file())
+            self.assertEqual(0, command("node", str(records), "validate", str(archive)).returncode)
+            ledger = (project / ".pixelhelm/council/ledger.md").read_text(encoding="utf-8")
+            self.assertIn("| 2026-07-26 | Status Page | review/fast | winner: incumbent |", ledger)
+            self.assertEqual(1, command("node", str(records), "write", "judge-verdict", "--project", str(project), input_bytes=raw).returncode)
+
+            tampered = copy.deepcopy(verdict)
+            tampered["registerFitPanel"]["medians"]["incumbent"] = 9
+            tampered["winner"] = "ghost"
+            bad = Path(temporary) / "tampered.json"
+            bad.write_text(json.dumps(tampered), encoding="utf-8")
+            invalid = command("node", str(records), "validate", str(bad))
+            self.assertEqual(1, invalid.returncode)
+            self.assertIn(b"does not equal the median", invalid.stdout)
+
+            signoff = {
+                "schema": "pixelhelm/signoff@1", "date": "2026-07-26", "project": "eval-fixture",
+                "surface": "Status Page", "artifact": "council/2026-07-26--status-page--council.json",
+                "decision": "approved", "ownerWords": "ship it", "clarifies": "none", "followUp": ["none"],
+            }
+            self.assertEqual(0, command("node", str(records), "write", "signoff", "--project", str(project),
+                                        input_bytes=json.dumps(signoff).encode()).returncode)
+            self.assertTrue((project / ".pixelhelm/signoffs/2026-07-26--status-page.json").is_file())
+            signoff["decision"] = "maybe"
+            self.assertEqual(1, command("node", str(records), "write", "signoff", "--project", str(project),
+                                        input_bytes=json.dumps(signoff).encode()).returncode)
+
+            run_record = json.loads(command("node", str(records), "template", "run").stdout)
+            run_record.update({"date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
+                               "intent": "eval fixture", "workerModel": "offline"})
+            self.assertEqual(0, command("node", str(records), "write", "run", "--project", str(project),
+                                        input_bytes=json.dumps(run_record).encode()).returncode)
+            self.assertTrue((project / ".pixelhelm/runs/2026-07-26--status-page--run.json").is_file())
 
     def test_no_obvious_secrets_or_network_calls(self) -> None:
         watched = [ROOT / "src/family.json", ROOT / "src/skills.json", ROOT / "src/scripts",

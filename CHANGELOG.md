@@ -2,6 +2,31 @@
 
 ## [Unreleased]
 
+Deferred P0 floor mechanisms from the 2026-07-26 external capability assessment
+(backlog items P0-4 / P0-5 / P0-6), building on the truth-reconciliation pass:
+
+- Shipped the four browser-arm floor validators that `layer-1-gates.md` previously
+  carried as SPEC: `verify_responsive.mjs` (280/320/414 px overflow, culprit named),
+  `verify_states.mjs` (state-aware contrast in default/hover/focus, both modes),
+  `verify_focustrap.mjs` (dialog keyboard-trap semantics with real key presses), and
+  `verify_targetsize.mjs` (WCAG 2.2 2.5.8 with measured spacing/inline exceptions,
+  beyond axe's rule). Both editions; Playwright resolved from the render skill's
+  install; loud exit 2 when missing, never a silent skip.
+- Shipped `output-floor-gate.mjs`, a static HARD gate for the structural output
+  floor: main landmark, heading presence/order, styled-div heading impostors, meta
+  description (the Harborline gap class, encoded as a gate rather than advice).
+- Shipped `records.mjs` (pixelhelm-loop) — writer + validator for
+  `pixelhelm/judge-verdict@1`, `pixelhelm/signoff@1`, `pixelhelm/run@1`:
+  validate-then-write, append-only archives, ledger append, and integrity checks
+  (odd juror count, per-juror score arity, recomputed medians, real winner ids). No
+  future panel can be reported without leaving a validating artifact.
+- Committed the first gate-run artifacts: `examples/harborline/gates/` holds every
+  floor validator's run against the worked example, including two honest FAILs (the
+  output floor's three documented gaps; a 280/320 px table overflow newly caught).
+- `layer-1-gates.md` / `gates-and-loop.md` SPEC labels flipped to shipped-hard for
+  the landed validators; the offline suite grew from 19 to 26 tests and now
+  exercises the offline gate scripts directly.
+
 ## [0.1.2] - 2026-07-19
 
 Patch release of the standalone Python distribution only; the plugin family stays at
