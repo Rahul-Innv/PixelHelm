@@ -1,0 +1,183 @@
+{
+  "generated": "2026-07-26T23:38:47.705Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 12
+  },
+  "shots": [
+    {
+      "file": "almanac-rail__desktop__light.png",
+      "item": "almanac-rail",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "almanac-rail__mobile__light.png",
+      "item": "almanac-rail",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "almanac-rail__desktop__dark.png",
+      "item": "almanac-rail",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "almanac-rail__mobile__dark.png",
+      "item": "almanac-rail",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "weir-plates__desktop__light.png",
+      "item": "weir-plates",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "weir-plates__mobile__light.png",
+      "item": "weir-plates",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "weir-plates__desktop__dark.png",
+      "item": "weir-plates",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "weir-plates__mobile__dark.png",
+      "item": "weir-plates",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "two-inks__desktop__light.png",
+      "item": "two-inks",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "two-inks__mobile__light.png",
+      "item": "two-inks",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "two-inks__desktop__dark.png",
+      "item": "two-inks",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "two-inks__mobile__dark.png",
+      "item": "two-inks",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}
