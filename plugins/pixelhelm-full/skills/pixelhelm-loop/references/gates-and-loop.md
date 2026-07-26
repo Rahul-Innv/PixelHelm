@@ -51,8 +51,17 @@ the evaluator's output and deciding the next gate:
     rendered; not run ⇒ say so, never imply they passed):** real-render state
     contrast in default/hover/focus (`verify_states.mjs`), responsive overflow at
     280/320/414 (`verify_responsive.mjs`), dialog focus trap
-    (`verify_focustrap.mjs`), and target size WCAG 2.5.8 beyond axe's rule
-    (`verify_targetsize.mjs`).
+    (`verify_focustrap.mjs`), target size WCAG 2.5.8 beyond axe's rule
+    (`verify_targetsize.mjs`), keyboard traversal + focus-visible capture
+    (`verify_keyboard.mjs`), and deterministic scroll-position capture under the
+    page-readiness contract (`verify_scrollcapture.mjs`).
+  - **Shipped, HARD when a browser is available — LAB-budget pair (same rule, plus
+    an honesty caveat the evaluator must relay):** frame-time percentiles against a
+    pre-registered p95 budget (`verify_frametime.mjs`) and lab CWV capture — LCP /
+    CLS / INP-proxy — against configurable budgets, desktop + emulated mobile
+    (`verify_cwv.mjs`). Their verdicts are single-machine LAB evidence that binds
+    the run that produced them; they are directional across machines and never a
+    field/RUM claim.
   - **Shipped, SOFT (reported, never exit 1):** raw-color drift walk, anti-cliche
     registry grep, type-scale ratio, web-craft signals.
   - **Designed, NOT YET WIRED (no validator ships):** states-present (distinct

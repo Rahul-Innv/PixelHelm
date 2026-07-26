@@ -1,9 +1,13 @@
 // verify_lib.mjs — shared plumbing for the browser-arm Layer-1 floor validators
-// (verify_responsive / verify_states / verify_focustrap / verify_targetsize).
+// (verify_responsive / verify_states / verify_focustrap / verify_targetsize) and the
+// behavior-level validators (verify_scrollcapture / verify_frametime / verify_cwv /
+// verify_keyboard).
 //
 // Node-side only. In-page audit functions stay self-contained inside each validator
-// (they are serialized into the page; they may not close over imports). Pure math
-// lives here so the offline eval suite can exercise it without a browser.
+// (they are serialized into the page; they may not close over imports). The one
+// exception is pageReadiness() below: it is shared ORCHESTRATION whose serialized
+// in-page function is fully self-contained inside this file. Pure math lives here so
+// the offline eval suite can exercise it without a browser.
 
 import { resolve, dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
@@ -123,6 +127,72 @@ export function spacingExceptionHolds(i, rects, undersizedIdx, radius = 12) {
     if (undersizedIdx.has(j) && circleIntersectsCircle(c, rectCenter(rects[j]), radius)) return false;
   }
   return true;
+}
+
+// ---- page-readiness contract (behavior-level validators) ----
+// A capture is trustworthy only when the page has DECLARED and REACHED a ready
+// state. The contract, embedded verbatim in every report that uses it:
+//   1. document.readyState === "complete";
+//   2. document.fonts.ready has resolved (no font-swap reflow pending);
+//   3. layout settled: `samples` consecutive rAF frames with identical document
+//      scrollWidth x scrollHeight;
+//   4. animations at a DECLARED state — "killed" (CSS animations/transitions/
+//      smooth-scroll disabled; the settled layout is the resting layout) or
+//      "running" (left alive on purpose, e.g. to measure their frame cost; a
+//      page whose LAYOUT never settles then reports layoutSettled:false and the
+//      caller decides whether that violates its contract).
+// Returns the evidence object. Callers treat layoutSettled:false as a contract
+// violation unless animations are deliberately "running".
+export const KILL_MOTION_CSS =
+  "*, *::before, *::after { transition: none !important; animation: none !important; scroll-behavior: auto !important; }";
+
+export async function pageReadiness(page, { animations = "killed", samples = 3, timeoutMs = 5000 } = {}) {
+  if (animations === "killed") {
+    try { await page.addStyleTag({ content: KILL_MOTION_CSS }); } catch {}
+  }
+  // Self-contained in-page probe (serialized — may not close over anything here).
+  const evidence = await page.evaluate(async ({ samples, timeoutMs }) => {
+    const t0 = performance.now();
+    if (document.fonts && document.fonts.ready) { try { await document.fonts.ready; } catch {} }
+    const raf = () => new Promise((r) => requestAnimationFrame(() => r()));
+    let stable = 0, frames = 0, last = null;
+    while (stable < samples && performance.now() - t0 < timeoutMs) {
+      await raf(); frames++;
+      const d = document.documentElement;
+      const now = `${d.scrollWidth}x${d.scrollHeight}`;
+      stable = now === last ? stable + 1 : 0;
+      last = now;
+    }
+    return {
+      readyState: document.readyState,
+      fontsLoaded: !document.fonts || document.fonts.status === "loaded",
+      layoutSettled: stable >= samples,
+      settleFrames: frames,
+      documentGeometry: last,
+      waitedMs: Math.round(performance.now() - t0),
+    };
+  }, { samples, timeoutMs });
+  return { animations, samples, timeoutMs, ...evidence };
+}
+
+// ---- percentile math (frame-time / latency budgets) ----
+// Nearest-rank percentile, deterministic and interpolation-free: the value at
+// ceil(p/100 * n) of the ascending-sorted samples (p in (0, 100]). p=100 = max.
+export function percentile(values, p) {
+  if (!Array.isArray(values) || values.length === 0) return null;
+  const sorted = [...values].sort((a, b) => a - b);
+  const rank = Math.max(1, Math.min(sorted.length, Math.ceil((p / 100) * sorted.length)));
+  return sorted[rank - 1];
+}
+
+// ---- computed-style diff (focus-indicator evidence) ----
+// Pure diff of two style snapshots (plain string->string objects): the sorted list
+// of keys whose values differ. Empty result = NOTHING visually responded.
+export function diffStyles(before, after) {
+  const keys = new Set([...Object.keys(before || {}), ...Object.keys(after || {})]);
+  const changed = [];
+  for (const k of keys) if ((before?.[k] ?? "") !== (after?.[k] ?? "")) changed.push(k);
+  return changed.sort();
 }
 
 // ---- shared CLI helpers ----

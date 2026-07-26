@@ -158,12 +158,14 @@ Two evidence grades, kept honest on purpose:
   as zero; a null-data day renders as an explicit gap, and estimated data is
   flagged where it appears.
 - **The floor fires on record.** Every shipped floor validator has a committed run
-  against the Harborline page under `examples/harborline/gates/` — and two of those
+  against the Harborline page under `examples/harborline/gates/` — and three of those
   runs FAIL honestly: the structural output floor (no landmarks, styled-div section
-  titles, no meta description) and horizontal overflow at 280/320 px, an escape the
-  floor caught on its very first recorded run. Committed failures are the point: the
+  titles, no meta description), horizontal overflow at 280/320 px, and — from the
+  behavior-level validators — a frame-time p95 of 83 ms against the 33 ms budget
+  under emulated mid-tier mobile, each an escape the floor caught on its first
+  recorded run. Committed failures are the point: the
   gates block real defects, and the failing runs are the example's open to-do list.
-- **The engine is checkable offline.** The demo above and a 26-test offline suite
+- **The engine is checkable offline.** The demo above and a 30-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
@@ -198,7 +200,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 26 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 30 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 

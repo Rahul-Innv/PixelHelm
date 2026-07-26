@@ -27,6 +27,34 @@ Deferred P0 floor mechanisms from the 2026-07-26 external capability assessment
   the landed validators; the offline suite grew from 19 to 26 tests and now
   exercises the offline gate scripts directly.
 
+Behavior-level verification (backlog item P1-5, designed from the requirements —
+no external tool's implementation was consulted or reused):
+
+- Shipped four behavior-level validators in the evaluate script family (both
+  editions, same exit contract, Playwright resolved from the render skill's
+  install, loud exit 2 when missing): `verify_scrollcapture.mjs` (deterministic
+  scroll-position capture under an explicit page-readiness contract — readyState /
+  fonts / layout-settle / declared animation state — with cross-pass offset and
+  screenshot-hash reproduction), `verify_frametime.mjs` (nearest-rank p50/p95/max
+  rAF frame times over a scripted wheel-scroll pass; pre-registered budget shapes
+  p95 ≤ 16.7 ms desktop / ≤ 33 ms emulated mobile at 4× CPU throttle; a 1.0 ms
+  fixed jitter allowance that is a source constant, never a flag),
+  `verify_cwv.mjs` (lab LCP / CLS / INP-proxy under scripted interaction with
+  default navigation suppressed, desktop + emulated mid-tier mobile, configurable
+  budgets, explicit zero-measure when a page has nothing to interact with), and
+  `verify_keyboard.mjs` (a committable record of the real Tab / Shift-Tab / Enter
+  path: order, per-stop focus-indicator evidence from a blurred-vs-focused
+  computed-style diff including pseudo-elements, exact-reverse requirement, and
+  optional Enter activation probes).
+- Committed their Harborline runs under `examples/harborline/gates/`, including a
+  new honest FAIL: frame-time p95 83.2 ms against the 33 ms emulated-mobile budget
+  (the page is untouched — the failing run is the to-do, per the method law). The
+  keyboard and INP-proxy records are explicit zero-measures on this zero-control
+  page, never implied conformance.
+- `verify_lib.mjs` gained the shared page-readiness contract, nearest-rank
+  percentile math, and the style-diff helper; the offline suite grew from 26 to 30
+  tests (validator contracts + committed-artifact shapes + exact pure-math checks).
+
 ## [0.1.2] - 2026-07-19
 
 Patch release of the standalone Python distribution only; the plugin family stays at

@@ -1,0 +1,33 @@
+{
+  "validator": "verify_keyboard",
+  "generated": "2026-07-26T20:52:02.981Z",
+  "target": "examples/harborline/status-page.html",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no focusable elements — nothing to traverse (this is an explicit zero-measure, NOT a keyboard-support conformance claim)"
+    }
+  ],
+  "stops": [],
+  "reverse": null,
+  "enterProbes": [],
+  "measured": 0,
+  "pass": true,
+  "readiness": {
+    "animations": "killed",
+    "samples": 3,
+    "timeoutMs": 5000,
+    "readyState": "complete",
+    "fontsLoaded": true,
+    "layoutSettled": true,
+    "settleFrames": 4,
+    "documentGeometry": "1280x1400",
+    "waitedMs": 36
+  },
+  "traversalEnd": "left-document"
+}

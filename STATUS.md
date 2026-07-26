@@ -7,7 +7,7 @@ carries only the one-line summary.
 ## True today
 
 - Public repository: [gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm).
-  CI runs the deterministic offline checks (the build check plus the 26-test suite)
+  CI runs the deterministic offline checks (the build check plus the 30-test suite)
   on every push.
 - PyPI: the standalone Python slice is published as
   [`pixelhelm` 0.1.1](https://pypi.org/project/pixelhelm/): the verified

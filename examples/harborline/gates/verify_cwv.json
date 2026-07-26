@@ -1,0 +1,137 @@
+{
+  "validator": "verify_cwv",
+  "generated": "2026-07-26T20:51:42.609Z",
+  "budgets": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "inpProxyMs": 200
+  },
+  "note": "LAB, single machine, one cold load per profile, no network throttling — directional, never RUM. INP-proxy is a scripted-interaction lab proxy, not field INP.",
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "deviceScaleFactor": 1,
+      "cpuThrottleRate": 1,
+      "targets": [
+        {
+          "target": "examples/harborline/status-page.html",
+          "readiness": {
+            "animations": "running",
+            "samples": 3,
+            "timeoutMs": 5000,
+            "readyState": "complete",
+            "fontsLoaded": true,
+            "layoutSettled": true,
+            "settleFrames": 4,
+            "documentGeometry": "1280x1400",
+            "waitedMs": 38
+          },
+          "metrics": {
+            "lcpMs": 192,
+            "cls": 0,
+            "inpProxy": {
+              "interactiveElements": 0,
+              "clicks": 0,
+              "tabPresses": 0,
+              "worstMs": null,
+              "firstInputDelayMs": null,
+              "entriesOver16Ms": [],
+              "note": "zero interactive elements on this page — nothing to interact with; this is an explicit zero-measure, not an implied responsiveness conformance"
+            }
+          },
+          "checks": [
+            {
+              "id": "LCP",
+              "val": "192 ms",
+              "budget": "<= 2500 ms",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "CLS",
+              "val": "0",
+              "budget": "<= 0.1",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "INP-proxy",
+              "val": "n/a",
+              "budget": "<= 200 ms",
+              "na": true,
+              "ok": true
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "emulated-mobile",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "deviceScaleFactor": 2,
+      "cpuThrottleRate": 4,
+      "targets": [
+        {
+          "target": "examples/harborline/status-page.html",
+          "readiness": {
+            "animations": "running",
+            "samples": 3,
+            "timeoutMs": 5000,
+            "readyState": "complete",
+            "fontsLoaded": true,
+            "layoutSettled": true,
+            "settleFrames": 4,
+            "documentGeometry": "375x1699",
+            "waitedMs": 56
+          },
+          "metrics": {
+            "lcpMs": 388,
+            "cls": 0,
+            "inpProxy": {
+              "interactiveElements": 0,
+              "clicks": 0,
+              "tabPresses": 0,
+              "worstMs": null,
+              "firstInputDelayMs": null,
+              "entriesOver16Ms": [],
+              "note": "zero interactive elements on this page — nothing to interact with; this is an explicit zero-measure, not an implied responsiveness conformance"
+            }
+          },
+          "checks": [
+            {
+              "id": "LCP",
+              "val": "388 ms",
+              "budget": "<= 2500 ms",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "CLS",
+              "val": "0",
+              "budget": "<= 0.1",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "INP-proxy",
+              "val": "n/a",
+              "budget": "<= 200 ms",
+              "na": true,
+              "ok": true
+            }
+          ],
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
