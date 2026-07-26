@@ -1,6 +1,6 @@
 {
   "gate": "content-manifest",
-  "target": "C:\\Users\\krahu\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\elated-gould-a419df\\evals\\validation\\e1\\run-2026-07-26\\project\\arms\\trail-ledger\\index.html",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\elated-gould-a419df\\evals\\validation\\e1\\run-2026-07-26\\project\\arms\\trail-ledger\\index.html",
   "pass": true,
   "required": 27,
   "modes": [

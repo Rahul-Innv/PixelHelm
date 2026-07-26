@@ -35,10 +35,19 @@ merge.
 
 ## Experiment index
 
-- `e1/` — E1: one full evidenced loop on a utility brief (E2 divergence
-  measurement runs inside it). Pre-registration pack: `PREREG-BRIEF.md`
-  (+ Amendment A1: declared convention breaks), `PREREG-RUBRIC-utility.md`,
-  `PREREG-METRICS-divergence.md`, sealed ground data in `e1/data/`.
+- `e1/` — E1: **COMPLETE 2026-07-26, owner-signed (approved-with-changes).**
+  Pre-registration pack: `PREREG-BRIEF.md` (+ Amendment A1: declared convention
+  breaks), `PREREG-RUBRIC-utility.md`, `PREREG-METRICS-divergence.md`, sealed
+  ground data in `e1/data/`. Full run trail in `e1/run-2026-07-26/` (read
+  `REPORT.md` first): all shipped HARD gates green ×3 arms, 4/4 mutant ritual,
+  **E2 not falsified on any registered threshold**, winner `trail-ledger`
+  (overall median 9.0, dead-heat tiebreak recorded in `jurors/TIEBREAK.md`),
+  records validated via `records.mjs`. **Calibration finding (RF-4):** the
+  blind panel ran ≈1 point hot vs the owner on all three arms (9/9/8 vs
+  ~8/8/7) — 9+ medians read as "strong, owner-verify," never as achieved
+  distinctive excellence. An admission-precondition failure and its
+  owner-authorized ChoiceGate v0.2.1 re-acceptance are recorded in
+  `e1/attempt-2026-07-26-admission-blocked/` and `reacceptance-2026-07-26/`.
 - `e3/` — E3: the transfer test — three unfamiliar archetypes, full loop each.
   Pre-registration pack (drafted while E1 ran; sealed only after owner
   approval): `PREREG-BRIEF-saas.md` / `PREREG-BRIEF-commerce.md` /

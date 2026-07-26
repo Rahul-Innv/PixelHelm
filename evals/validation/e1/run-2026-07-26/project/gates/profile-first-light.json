@@ -1,6 +1,6 @@
 {
   "project": "e1-arm-first-light",
-  "root": "C:/Users/krahu/Documents/Workbench/Projects/PixelHelm/.claude/worktrees/elated-gould-a419df/evals/validation/e1/run-2026-07-26/project/arms/first-light",
+  "root": "evals/validation/e1/run-2026-07-26/project/arms/first-light",
   "sourceDirs": [
     "."
   ],
@@ -114,5 +114,6 @@
     }
   ],
   "surfaceType": "data",
-  "_register": "calm, factual, outdoors-trust; zero marketing voice."
+  "_register": "calm, factual, outdoors-trust; zero marketing voice.",
+  "_rootNote": "Path made repo-relative post-run (privacy hygiene; suite path-leak gate). The run executed in a session worktree; no gate input or verdict changed."
 }
