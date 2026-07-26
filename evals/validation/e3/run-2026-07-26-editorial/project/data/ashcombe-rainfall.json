@@ -1,0 +1,52 @@
+{
+  "schema": "pixelhelm-validation/editorial-dataset@1",
+  "series": "Ashcombe Valley weir — wet-season record",
+  "sealedNote": "Synthetic. Sealed before any E3 generation; the only content source for the editorial brief.",
+  "definitions": {
+    "onsetDayOfYear": "First day of the water year (Sep 1 = day 244) opening the first 10-day window with >= 25mm total rainfall.",
+    "wetSeasonTotalMm": "Total rainfall from onset through the last qualifying 10-day window.",
+    "max24hMm": "Largest 24-hour rainfall inside the wet season."
+  },
+  "methodNote": "1990-1996 readings from the manual gauge (read twice daily); 1997 onward from the automated weir station. Comparisons across 1996/1997 must disclose the method change.",
+  "years": [
+    { "year": 1990, "onsetDayOfYear": 251, "wetSeasonTotalMm": 612, "max24hMm": 44, "method": "manual gauge" },
+    { "year": 1991, "onsetDayOfYear": 248, "wetSeasonTotalMm": 587, "max24hMm": 39, "method": "manual gauge" },
+    { "year": 1992, "onsetDayOfYear": 255, "wetSeasonTotalMm": 634, "max24hMm": 47, "method": "manual gauge" },
+    { "year": 1993, "onsetDayOfYear": 249, "wetSeasonTotalMm": 601, "max24hMm": 42, "method": "manual gauge" },
+    { "year": 1994, "onsetDayOfYear": 257, "wetSeasonTotalMm": 596, "max24hMm": 45, "method": "manual gauge" },
+    { "year": 1995, "onsetDayOfYear": 252, "wetSeasonTotalMm": 578, "max24hMm": 41, "method": "manual gauge" },
+    { "year": 1996, "onsetDayOfYear": 259, "wetSeasonTotalMm": 618, "max24hMm": 48, "method": "manual gauge" },
+    { "year": 1997, "onsetDayOfYear": 254, "wetSeasonTotalMm": 605, "max24hMm": 46, "method": "automated weir" },
+    { "year": 1998, "onsetDayOfYear": null, "wetSeasonTotalMm": null, "max24hMm": null, "method": null, "gapReason": "gauge failure; station offline all season" },
+    { "year": 1999, "onsetDayOfYear": 258, "wetSeasonTotalMm": 622, "max24hMm": 50, "method": "automated weir" },
+    { "year": 2000, "onsetDayOfYear": 261, "wetSeasonTotalMm": 640, "max24hMm": 52, "method": "automated weir" },
+    { "year": 2001, "onsetDayOfYear": 256, "wetSeasonTotalMm": 599, "max24hMm": 44, "method": "automated weir" },
+    { "year": 2002, "onsetDayOfYear": 263, "wetSeasonTotalMm": 628, "max24hMm": 55, "method": "automated weir" },
+    { "year": 2003, "onsetDayOfYear": null, "wetSeasonTotalMm": null, "max24hMm": null, "method": null, "gapReason": "monitoring funding lapsed" },
+    { "year": 2004, "onsetDayOfYear": null, "wetSeasonTotalMm": null, "max24hMm": null, "method": null, "gapReason": "monitoring funding lapsed" },
+    { "year": 2005, "onsetDayOfYear": 262, "wetSeasonTotalMm": 615, "max24hMm": 53, "method": "automated weir" },
+    { "year": 2006, "onsetDayOfYear": 266, "wetSeasonTotalMm": 647, "max24hMm": 58, "method": "automated weir" },
+    { "year": 2007, "onsetDayOfYear": 260, "wetSeasonTotalMm": 633, "max24hMm": 51, "method": "automated weir" },
+    { "year": 2008, "onsetDayOfYear": 268, "wetSeasonTotalMm": 659, "max24hMm": 60, "method": "automated weir" },
+    { "year": 2009, "onsetDayOfYear": 264, "wetSeasonTotalMm": 641, "max24hMm": 56, "method": "automated weir" },
+    { "year": 2010, "onsetDayOfYear": 270, "wetSeasonTotalMm": 668, "max24hMm": 63, "method": "automated weir" },
+    { "year": 2011, "onsetDayOfYear": 265, "wetSeasonTotalMm": 638, "max24hMm": 54, "method": "automated weir" },
+    { "year": 2012, "onsetDayOfYear": 272, "wetSeasonTotalMm": 676, "max24hMm": 65, "method": "automated weir" },
+    { "year": 2013, "onsetDayOfYear": 267, "wetSeasonTotalMm": 652, "max24hMm": 59, "method": "automated weir" },
+    { "year": 2014, "onsetDayOfYear": 274, "wetSeasonTotalMm": 684, "max24hMm": 67, "method": "automated weir" },
+    { "year": 2015, "onsetDayOfYear": 269, "wetSeasonTotalMm": 661, "max24hMm": 61, "method": "automated weir" },
+    { "year": 2016, "onsetDayOfYear": 276, "wetSeasonTotalMm": 693, "max24hMm": 70, "method": "automated weir" },
+    { "year": 2017, "onsetDayOfYear": 271, "wetSeasonTotalMm": 670, "max24hMm": 64, "method": "automated weir" },
+    { "year": 2018, "onsetDayOfYear": 278, "wetSeasonTotalMm": 655, "max24hMm": 68, "method": "automated weir" },
+    { "year": 2019, "onsetDayOfYear": 275, "wetSeasonTotalMm": 702, "max24hMm": 132, "method": "automated weir", "reviewStatus": "unverified outlier", "reviewNote": "Sensor spike during the Oct 12 storm not yet corroborated by neighboring stations." },
+    { "year": 2020, "onsetDayOfYear": 280, "wetSeasonTotalMm": 688, "max24hMm": 71, "method": "automated weir" },
+    { "year": 2021, "onsetDayOfYear": 277, "wetSeasonTotalMm": 696, "max24hMm": 69, "method": "automated weir" },
+    { "year": 2022, "onsetDayOfYear": 283, "wetSeasonTotalMm": 707, "max24hMm": 74, "method": "automated weir" },
+    { "year": 2023, "onsetDayOfYear": 281, "wetSeasonTotalMm": 715, "max24hMm": 76, "method": "automated weir" }
+  ],
+  "humanContext": [
+    { "source": "weir keeper's log, 1994 (fictional)", "note": "Cut the meadow the last week of August; rain never came before the fair." },
+    { "source": "parish flood group minutes, 2022 (fictional)", "note": "Sandbag store moved to the school after the lane flooded twice in one October." }
+  ],
+  "scopeNote": "This record describes one valley's weir. It contains no attribution analysis; the page may describe the shift, not its cause."
+}
