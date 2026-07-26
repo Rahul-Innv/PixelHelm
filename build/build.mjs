@@ -225,7 +225,9 @@ fs.writeFileSync(path.join(mktDir, "marketplace.json"), JSON.stringify(mkt, null
 // legacy dataDir fallback ("~/.claude/design/frontend-design-skill/ if it exists") is a
 // legitimate migration shim and harmless for users who lack the dir. live-brief-* FILES
 // are blocked by excludeAlways; the doc mention of the output filename is legitimate.
-const BANNED_ALL = [/C:\/Users/i, /C:\\Users/i, /\.\.\/\.\.\/design/, /design\/frontend-design-skill\/(storm|profiles|perspective-discovery|baselines|briefs|dogfood)/];
+// The two backslash variants are constructed from parts so this file's own source
+// never contains the banned byte sequences (the repo hygiene test scans this file).
+const BANNED_ALL = [/C:\/Users/i, new RegExp("C:" + "\\\\" + "Users", "i"), new RegExp("C:" + "\\\\\\\\" + "Users", "i"), /\.\.\/\.\.\/design/, /design\/frontend-design-skill\/(storm|profiles|perspective-discovery|baselines|briefs|dogfood)/];
 const BANNED_LITE = [/pixelhelm-evidence-brief/, /stormBrief/, /\bSTORM\b/, /deep-pass/, /deep pass/i, /dataviz-canon/, /\bC1\b[^0-9]/, /\bP56\b/, /\bP45\b/, /\bP25\b/];
 // LITE allowlist: craft-skill soft mentions in retained reference files (documented in the README)
 const LITE_ALLOW = [

@@ -438,14 +438,22 @@ class FamilyTests(unittest.TestCase):
     def test_no_user_specific_absolute_path_in_candidate(self) -> None:
         sensitive_forward = "C:/Users" + "/"
         sensitive_windows = "C:" + "\\" + "Users" + "\\"
+        # JSON-escaped variant (the drive prefix followed by doubled backslashes
+        # before "Users") — leaked through the 2026-07-26 E1 run artifacts unseen
+        # by the two checks above.
+        sensitive_escaped = "C:" + "\\\\" + "Users"
         for path in ROOT.rglob("*"):
-            if not path.is_file() or ".git" in path.parts or ".build-check-" in path.as_posix():
+            # .claude holds other sessions' live worktrees — transient state, not
+            # part of this tree; scanning it makes the suite fail on files this
+            # repo does not ship.
+            if not path.is_file() or ".git" in path.parts or ".claude" in path.parts or ".build-check-" in path.as_posix():
                 continue
             if path.suffix.lower() not in {".md", ".json", ".mjs", ".py", ".txt", ".yml", ".yaml"}:
                 continue
             text = path.read_text(encoding="utf-8", errors="replace")
             self.assertNotIn(sensitive_forward, text, str(path))
             self.assertNotIn(sensitive_windows, text, str(path))
+            self.assertNotIn(sensitive_escaped, text, str(path))
 
     EVALUATE_SCRIPTS = "skills/pixelhelm-evaluate/scripts"
     LOOP_SCRIPTS = "skills/pixelhelm-loop/scripts"
