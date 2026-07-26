@@ -1,0 +1,22 @@
+{
+  "gate": "content-manifest",
+  "target": "C:\\Users\\krahu\\AppData\\Local\\Temp\\claude\\C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-elated-gould-a419df\\e67e8069-830d-498a-a5df-c7b963807170\\scratchpad/mutants/m4/index.html",
+  "pass": false,
+  "required": 27,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "MISSING",
+      "id": "name-T-08",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "required \"name-T-08\" missing in light: Trail name present"
+    }
+  ]
+}

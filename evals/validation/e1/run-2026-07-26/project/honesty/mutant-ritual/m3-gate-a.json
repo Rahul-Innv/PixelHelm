@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "C:\\Users\\krahu\\AppData\\Local\\Temp\\claude\\C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-elated-gould-a419df\\e67e8069-830d-498a-a5df-c7b963807170\\scratchpad/mutants/m3/index.html",
+  "pass": false,
+  "allowedNumbers": 36,
+  "blocks": 9,
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "kind": "VERDICT",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "un-negated \"OPEN\" inside non-open block [data-model=\"T-02\"] — …CLOSED Juniper Loop OPEN 4.1 km Controlled burn area…"
+    }
+  ]
+}

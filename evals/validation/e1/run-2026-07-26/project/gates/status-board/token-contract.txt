@@ -1,0 +1,1 @@
+arms/status-board/index.html: PASS — 42 pass / 0 fail / 0 unresolvable (pairs×modes)

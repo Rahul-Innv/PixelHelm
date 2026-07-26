@@ -1,0 +1,118 @@
+{
+  "project": "e1-arm-first-light",
+  "root": "C:/Users/krahu/Documents/Workbench/Projects/PixelHelm/.claude/worktrees/elated-gould-a419df/evals/validation/e1/run-2026-07-26/project/arms/first-light",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file arm: raw hex is legal only inside the two token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "ground": "#ffffff",
+      "ink": "#10151a",
+      "muted": "#4f6070",
+      "orange": "#a34400",
+      "dash": "#647a8c",
+      "hairline": "#e3e7ea"
+    },
+    "dark": {
+      "ground": "#121619",
+      "ink": "#e9edf1",
+      "muted": "#96a5b1",
+      "orange": "#e08245",
+      "dash": "#7f8f9c",
+      "hairline": "#232a30"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "orange",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "ground",
+      "on": [
+        "orange"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "orange",
+      "on": [
+        "ground"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "dash",
+      "on": [
+        "ground"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "data",
+  "_register": "calm, factual, outdoors-trust; zero marketing voice."
+}

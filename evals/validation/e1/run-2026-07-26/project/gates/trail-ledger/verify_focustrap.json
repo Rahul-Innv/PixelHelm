@@ -1,0 +1,14 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-26T21:59:59.800Z",
+  "target": "arms/trail-ledger/index.html",
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no dialog / [role=dialog] / [aria-modal] element on this page — nothing to verify"
+    }
+  ],
+  "pass": true,
+  "applicable": false
+}
