@@ -50,47 +50,111 @@ def command(
                           env=command_env, check=False)
 
 
+INVENTORY_COMPONENT_PATHS = (
+    "evals/choicegate/inventory-fixtures.json",
+    "evals/choicegate/manifest.json",
+    "evals/choicegate/routing-cases.json",
+    "registry/bundles.json",
+    "registry/capabilities.json",
+    "registry/conflicts.json",
+    "registry/dependencies.json",
+    "registry/preconditions.json",
+    "registry/schemas/bundle.schema.json",
+    "registry/schemas/capability.schema.json",
+    "registry/schemas/conflict.schema.json",
+    "registry/schemas/dependency.schema.json",
+    "registry/schemas/precondition.schema.json",
+    "registry/schemas/supersession.schema.json",
+    "registry/state-axes.json",
+    "registry/supersessions.json",
+)
+
+SCOPE_KEYS = (
+    "local_files_only", "outward_messages", "paid_actions",
+    "provider_configuration", "provider_use", "remote_actions", "write_files",
+)
+
+
+def canonical_json_bytes(value) -> bytes:
+    return json.dumps(value, ensure_ascii=False, sort_keys=True, separators=(",", ":")).encode("utf-8")
+
+
 def frontend_continuation() -> dict:
+    # Builds the boundary request against the accepted public ChoiceGate router
+    # (scripts/route_capabilities.py CLI) — the pre-rewrite private harness the
+    # earlier version imported no longer ships with ChoiceGate.
     assert CHOICEGATE_ROOT and INVENTORY_ROOT
-    os.environ.update({
-        "GIT_CONFIG_COUNT": "2",
-        "GIT_CONFIG_KEY_0": "safe.directory",
-        "GIT_CONFIG_VALUE_0": str(CHOICEGATE_ROOT),
-        "GIT_CONFIG_KEY_1": "safe.directory",
-        "GIT_CONFIG_VALUE_1": str(INVENTORY_ROOT),
-    })
-    sys.path.insert(0, str(CHOICEGATE_ROOT / "evals/choicegate"))
-    try:
-        spec = importlib.util.spec_from_file_location("_pixelhelm_choicegate_harness", CHOICEGATE_ROOT / "evals/choicegate/run_tests.py")
-        assert spec and spec.loader
-        cg = importlib.util.module_from_spec(spec)
-        sys.modules[spec.name] = cg
-        spec.loader.exec_module(cg)
-        context = cg.configure_test_context(cg.HarnessContext(CHOICEGATE_ROOT, INVENTORY_ROOT, FAMILY["choicegate"]["commit"]))
-        request = cg.build_request(context, "CG-ATOMIC-01")
-        request["task"].update({
-            "task_class": "frontend-design", "required_outcomes": ["frontend-design"],
-            "surface": "claude-code", "risk_class": "medium", "fixture_scope": False,
-            "requested_route_ids": ["frontend-design"], "preconditions": {},
-        })
-        request["task"].pop("fixture_id", None)
-        required_scope = {key: False for key in request["task"]["allowed_scope"]}
-        request["candidate_evidence"] = [{
+    components = []
+    for path in INVENTORY_COMPONENT_PATHS:
+        content = (INVENTORY_ROOT / path).read_text(encoding="utf-8")
+        digest = hashlib.sha256(content.encode("utf-8")).hexdigest()
+        components.append({"path": path, "sha256": digest, "content_utf8": content})
+    manifest = "".join(f"{c['path']}\t{c['sha256']}\n" for c in sorted(components, key=lambda c: c["path"]))
+    fingerprint = hashlib.sha256(manifest.encode("utf-8")).hexdigest()
+    if fingerprint != FAMILY["inventory"]["inventory_fingerprint"]:
+        raise AssertionError(f"inventory root does not reproduce the accepted fingerprint: {fingerprint}")
+    policy = {
+        "policy_version": "choicegate-router-policy/v1",
+        "normal_ceiling": 8,
+        "freshness_policy_id": "accepted-snapshot-explicit-v1",
+        "explicit_owner_approved_setup_paths": [],
+    }
+    policy["policy_sha256"] = hashlib.sha256(canonical_json_bytes(policy)).hexdigest()
+    request = {
+        "contract_version": "choicegate.route-request/v1",
+        "request_id": "pixelhelm-frontend-design-boundary",
+        "evaluation_time_utc": "2026-07-26T00:00:00Z",
+        "task": {
+            "task_class": "frontend-design",
+            "required_outcomes": ["frontend-design"],
+            "allowed_scope": {key: key in ("local_files_only", "write_files") for key in SCOPE_KEYS},
+            "surface": "claude-code",
+            "private_data_class": "none",
+            "authorization_required": False,
+            "explicit_browser_choice": False,
+            "intrinsic_visual_testing": False,
+            "risk_class": "medium",
+            "max_discoverable_capabilities": 1,
+            "allow_setup_choice": False,
+            "fixture_scope": False,
+            "requested_route_ids": ["frontend-design"],
+            "preconditions": {},
+            "selected_path_failed": False,
+        },
+        "candidate_evidence": [{
             "route_type": "atomic", "route_id": "frontend-design", "canonical_route_id": "frontend-design",
             "version": None, "task_class_match": True, "covers_required_outcomes": ["frontend-design"],
             "necessary_member_roles": [], "task_fit": 5, "context_cost": 2, "expected_cost": 1,
             "evidence_refs": ["registry/capabilities.json#frontend-design"], "evidence_fresh": True,
-            "risk_flags": [], "required_scope": required_scope, "required_private_data_class": "none",
-        }]
-        router = cg.load_router(context)
-        prior = router.route_request(copy.deepcopy(request), context.choicegate_commit)
-        continuation = copy.deepcopy(request)
-        continuation["prior_receipt"] = prior
-        continuation["task"]["owner_selected_route_id"] = "frontend-design"
-        continuation["task"]["selected_path_failed"] = False
-        return continuation
-    finally:
-        sys.path.pop(0)
+            "risk_flags": [], "required_scope": {key: False for key in SCOPE_KEYS},
+            "required_private_data_class": "none",
+        }],
+        "inventory": {
+            "schema_version": 1,
+            "accepted_registry_commit": FAMILY["inventory"]["commit"],
+            "state_model_id": "orthogonal-seven-axis-v1",
+            "manifest_algorithm": "sha256-path-hash-manifest-v1",
+            "manifest_fingerprint": fingerprint,
+            "components": components,
+        },
+        "policy": policy,
+    }
+    router = command(
+        sys.executable, "-B", str(CHOICEGATE_ROOT / "scripts/route_capabilities.py"),
+        "--choicegate-commit", FAMILY["choicegate"]["commit"], "-",
+        cwd=CHOICEGATE_ROOT, input_bytes=canonical_json_bytes(request) + b"\n",
+    )
+    if router.returncode != 0:
+        raise AssertionError(f"accepted router rejected the original selection: {router.stderr.decode()}")
+    prior = json.loads(router.stdout)
+    decision = prior.get("decision", {})
+    if not (decision.get("route_id") == "frontend-design" and decision.get("route_type") == "atomic" and decision.get("executable") is True):
+        raise AssertionError(f"original selection is not executable atomic frontend-design: {decision}")
+    continuation = copy.deepcopy(request)
+    continuation["prior_receipt"] = prior
+    continuation["task"]["owner_selected_route_id"] = "frontend-design"
+    continuation["task"]["selected_path_failed"] = False
+    return continuation
 
 
 class FamilyTests(unittest.TestCase):

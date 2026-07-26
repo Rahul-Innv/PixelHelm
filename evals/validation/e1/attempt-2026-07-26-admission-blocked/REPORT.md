@@ -31,7 +31,7 @@ either.
 
 ## Search evidence (why "does not exist" is claimed)
 
-1. **Every git repository under `C:\Users\krahu\Documents\Workbench`** was
+1. **Every git repository under `~\Documents\Workbench`** was
    enumerated (`find … -name .git`) and each object store probed with
    `git cat-file -t` for both pinned commits. The ChoiceGate commit is absent
    from all of them — including the public `Projects\ChoiceGate` clone, the
@@ -57,7 +57,7 @@ either.
    working copies outside the paths above, and nothing in OneDrive.
 5. **The capability-inventory side is intact** (contrast case, proving the
    sweep works): Skills-OS at
-   `C:\Users\krahu\Documents\Workbench\System\Skills-OS` contains the pinned
+   `~\Documents\Workbench\System\Skills-OS` contains the pinned
    inventory commit `354046f`, whose tree hash matches the pin
    (`786171bc…`). Only the ChoiceGate half of the accepted authority pair is
    lost.

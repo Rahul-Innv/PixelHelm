@@ -1,0 +1,35 @@
+test_bare_truncated_and_tampered_inputs_fail_closed (__main__.ChoiceGateBoundaryTests.test_bare_truncated_and_tampered_inputs_fail_closed) ... ok
+test_duplicate_keys_and_nonfinite_numbers_fail_before_routing (__main__.ChoiceGateBoundaryTests.test_duplicate_keys_and_nonfinite_numbers_fail_before_routing) ... ok
+test_valid_complete_continuation_is_admitted_without_writes (__main__.ChoiceGateBoundaryTests.test_valid_complete_continuation_is_admitted_without_writes) ... ok
+test_wrong_explicit_root_fails_closed (__main__.ChoiceGateBoundaryTests.test_wrong_explicit_root_fails_closed) ... ok
+test_ci_requires_and_executes_choicegate_boundary (__main__.FamilyTests.test_ci_requires_and_executes_choicegate_boundary) ... ok
+test_declared_semantic_collision_oracle_fails_closed (__main__.FamilyTests.test_declared_semantic_collision_oracle_fails_closed) ... ok
+test_every_pairwise_outcome_collision_fails_closed (__main__.FamilyTests.test_every_pairwise_outcome_collision_fails_closed) ... ok
+test_exact_atomic_family_and_editions (__main__.FamilyTests.test_exact_atomic_family_and_editions) ... ok
+test_exact_legacy_alias_map_is_compatibility_only (__main__.FamilyTests.test_exact_legacy_alias_map_is_compatibility_only) ... ok
+test_forbidden_owned_inputs_are_unchanged (__main__.FamilyTests.test_forbidden_owned_inputs_are_unchanged) ... ok
+test_generated_editions_and_build_are_deterministic (__main__.FamilyTests.test_generated_editions_and_build_are_deterministic) ... ok
+test_judge_record_writer_validates_and_archives (__main__.FamilyTests.test_judge_record_writer_validates_and_archives) ... ok
+test_known_description_boundaries_are_outcome_specific (__main__.FamilyTests.test_known_description_boundaries_are_outcome_specific) ... ok
+test_legacy_state_is_executed_read_only_fallback_with_conflict_rejection (__main__.FamilyTests.test_legacy_state_is_executed_read_only_fallback_with_conflict_rejection) ... ok
+test_new_state_paths_are_canonical_with_explicit_fallback (__main__.FamilyTests.test_new_state_paths_are_canonical_with_explicit_fallback) ... ok
+test_no_obvious_secrets_or_network_calls (__main__.FamilyTests.test_no_obvious_secrets_or_network_calls) ... ok
+test_no_user_specific_absolute_path_in_candidate (__main__.FamilyTests.test_no_user_specific_absolute_path_in_candidate) ... ok
+test_output_floor_gate_blocks_harborline_gaps (__main__.FamilyTests.test_output_floor_gate_blocks_harborline_gaps) ... ok
+test_pairwise_ids_do_not_collide (__main__.FamilyTests.test_pairwise_ids_do_not_collide) ... ok
+test_positive_and_near_miss_coverage_is_exact (__main__.FamilyTests.test_positive_and_near_miss_coverage_is_exact) ... ok
+test_private_readiness_identity_and_version_are_consistent (__main__.FamilyTests.test_private_readiness_identity_and_version_are_consistent) ... ok
+test_private_readiness_surfaces_are_complete_and_owner_gated (__main__.FamilyTests.test_private_readiness_surfaces_are_complete_and_owner_gated) ... ok
+test_python_package_metadata_links_to_public_project (__main__.FamilyTests.test_python_package_metadata_links_to_public_project) ... ok
+test_readme_python_prerequisite_matches_package_metadata (__main__.FamilyTests.test_readme_python_prerequisite_matches_package_metadata) ... ok
+test_skill_sources_are_atomic_and_trigger_bounded (__main__.FamilyTests.test_skill_sources_are_atomic_and_trigger_bounded) ... ok
+test_verify_focustrap_validator_contract (__main__.FamilyTests.test_verify_focustrap_validator_contract) ... ok
+test_verify_lib_pure_math_is_exact (__main__.FamilyTests.test_verify_lib_pure_math_is_exact) ... ok
+test_verify_responsive_validator_contract (__main__.FamilyTests.test_verify_responsive_validator_contract) ... ok
+test_verify_states_validator_contract (__main__.FamilyTests.test_verify_states_validator_contract) ... ok
+test_verify_targetsize_validator_contract (__main__.FamilyTests.test_verify_targetsize_validator_contract) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 15.980s
+
+OK
