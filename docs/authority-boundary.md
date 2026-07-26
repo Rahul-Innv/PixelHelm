@@ -41,3 +41,19 @@ The accepted roots are private local checkouts whose exact commit/tree pins are
 recorded in [docs/public/VALIDATION.md](public/VALIDATION.md). CI runs the same
 replay only when a runner supplies both roots, and otherwise never (see
 `.gitlab-ci.yml`).
+
+## Current admission scope (honest status)
+
+As coded today, `admit_choicegate.py` admits **only the Lite edition**: its
+`verify_edition` requires the capability inventory to mark exactly `["lite"]`
+as lifecycle-ready and returns `pixelhelm-lite` (see the
+`EDITION_EXCLUSIVITY_VIOLATION` check). This matches the family policy that
+exactly one edition may be eligible per surface — but it also means the Full
+edition, although shipped, has **no admission success path**: a request naming
+Full fails closed. That is the current, intended-conservative state, not an
+accident; docs and code agree.
+
+Widening admission to "exactly one of Lite or Full" is an authority-semantics
+change. It requires an explicit owner decision plus a full boundary replay with
+the private accepted roots (above) before landing — do not change the check
+casually.

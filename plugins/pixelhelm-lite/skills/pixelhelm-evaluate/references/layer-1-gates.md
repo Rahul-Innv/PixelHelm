@@ -58,7 +58,9 @@ machine-checked. Do NOT present them as gated:
 
 ## Contrast: REQUIRED vs ADVISORY
 
-From `validate_contrast.py`: split matters because de-emphasized text is a DECISION, not a defect.
+**SPEC — no `validate_contrast.py` ships in this skill** (the shipped contrast gate is
+`static-gates.mjs` on the token contract; this section specifies the fuller split a future
+validator should implement). The split matters because de-emphasized text is a DECISION, not a defect.
 
 - **REQUIRED (fail build):** body text on page/card, secondary text, link, text-on-primary-action
   (all 4.5:1), essential control border (3:1, WCAG 1.4.11). Checked in LIGHT and DARK.
@@ -76,7 +78,8 @@ APCA wins the judgment and WCAG2 is reported.
 
 ## Real-render state-aware contrast
 
-`verify_states.mjs` walks `button, a[href], input, select, textarea, [role=button], [role=switch]`
+**SPEC — `verify_states.mjs` does not ship yet** (listed in "Not yet wired" above; keep this
+section's behavior contract for whoever wires it). The intended validator walks `button, a[href], input, select, textarea, [role=button], [role=switch]`
 and measures computed `color` vs the effective (non-transparent, ancestor-resolved) background in
 default / hover / focus. Catches the failure static lint can't: a secondary button that picks up
 the primary fill on hover via CSS specificity. Thresholds: 3:1 for large text (≥24px, or ≥18.66px
@@ -97,7 +100,8 @@ bucket routes explicitly to Layer-2; never report axe-clean as "accessible." Who
 
 ## Focus trap
 
-`verify_focustrap.mjs` opens the dialog via a trigger selector and proves, with real keyboard
+**SPEC — `verify_focustrap.mjs` does not ship yet** (listed in "Not yet wired" above). The
+intended validator opens the dialog via a trigger selector and proves, with real keyboard
 presses, three things (WCAG 2.1.2 No Keyboard Trap + 2.4.3 Focus Order): (1) `role="dialog"` +
 `aria-modal="true"` + an accessible name; (2) Tab cycles only inside the dialog (Tab more times
 than there are focusables — focus must never escape); (3) Escape closes AND returns focus to the
@@ -105,7 +109,8 @@ trigger. Any leak, missing semantics, or lost focus fails.
 
 ## Responsive overflow
 
-`verify_responsive.mjs` loads each harness at 280/320/414px and fails if
+**SPEC — `verify_responsive.mjs` does not ship yet** (listed in "Not yet wired" above). The
+intended validator loads each harness at 280/320/414px and fails if
 `scrollWidth - clientWidth > 1` (a sideways scrollbar). On fail it names the widest culprit
 element. Common causes caught: fixed px widths, unreset `<ul>/<ol>` padding, non-wrapping flex
 rows, `grid minmax(Npx,1fr)` minimums larger than the viewport.

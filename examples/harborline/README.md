@@ -12,7 +12,7 @@ README cites.
 | `content-model.md` | What a COMPLETE page must contain + the honesty invariants the council audits against. |
 | `profile.json` | The project profile: the `_register` string ("civic-utility calm…"), the inline AA token contract (30 gated pairs, both modes), banned clusters. |
 | `tokens.css` | The token block — the only file allowed to carry raw color. |
-| `status-page.html` | The winning candidate: authored by the CHEAPEST worker model in the experiment, register-fit median 9/10 from a blind 5-juror panel — twice (it also beat candidates produced with larger skill sets). Single file, both modes via `data-theme`. |
+| `status-page.html` | The winning candidate. Single file, both modes via `data-theme`. *Attested history, not committed evidence:* per the author's private development runs it was authored by the CHEAPEST worker model in the experiment and scored register-fit median 9/10 from a blind 5-juror panel, twice, beating candidates produced with larger skill sets — but no juror scores, verdict records, or losing candidates are committed in this tree, so treat those numbers as narrative until the loop is re-run with records. |
 | `renders/` | Its render matrix (1440/375 × light/dark) + the `render.json` manifest with per-cell mode-fidelity. |
 
 ## Reproduce the loop on this example
@@ -35,11 +35,13 @@ this page has survived two blind panels, so expect it to put up a fight.)
 
 ## One honest footnote
 
-During the experiment, the strongest worker model noticed that the fixture's own
-alert ("three stations… over 24 hours") contradicted one station's timestamp (~20h) —
-a bug in OUR fixture, not the design. It responded exactly per the honesty contract:
-rendered the fixture verbatim, asserted no independent claims, and reported the
-inconsistency. The fixture shipped here is corrected. The other honest artifact of
-the experiment: the one candidate that invented a claim ("Updates every 5 minutes" —
-no cadence exists in the fixture) was disqualified by the blind honesty audit. The
-floor works.
+(Both anecdotes below are attested from the author's private experiment runs — their
+artifacts are not committed here.) During the experiment, the strongest worker model
+noticed that the fixture's own alert ("three stations… over 24 hours") contradicted
+one station's timestamp (~20h) — a bug in OUR fixture, not the design. It responded
+exactly per the honesty contract: rendered the fixture verbatim, asserted no
+independent claims, and reported the inconsistency. The fixture shipped here is
+corrected. The other reported artifact of the experiment: the one candidate that
+invented a claim ("Updates every 5 minutes" — no cadence exists in the fixture) was
+disqualified by the honesty audit. What IS verifiable in this tree: the honesty
+invariants hold in the shipped page's markup, and the render matrix is committed.
