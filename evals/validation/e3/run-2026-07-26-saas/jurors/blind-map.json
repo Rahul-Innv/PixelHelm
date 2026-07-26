@@ -1,0 +1,49 @@
+{
+  "armOrderBase": [
+    "worked-invoice",
+    "driveway-to-paid",
+    "fair-quote"
+  ],
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607561,
+      "armOrder": [
+        "worked-invoice",
+        "driveway-to-paid",
+        "fair-quote"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607562,
+      "armOrder": [
+        "driveway-to-paid",
+        "worked-invoice",
+        "fair-quote"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607563,
+      "armOrder": [
+        "worked-invoice",
+        "fair-quote",
+        "driveway-to-paid"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607564,
+      "armOrder": [
+        "fair-quote",
+        "worked-invoice",
+        "driveway-to-paid"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607565,
+      "armOrder": [
+        "driveway-to-paid",
+        "worked-invoice",
+        "fair-quote"
+      ]
+    }
+  }
+}
