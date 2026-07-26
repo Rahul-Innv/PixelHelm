@@ -1,0 +1,28 @@
+{
+  "meta": {
+    "darkAttr": "data-theme",
+    "modelBlockAttr": "data-model",
+    "modes": ["light", "dark"]
+  },
+  "required": [
+    { "id": "shop-name", "description": "The shop is named", "scope": "global", "type": "text", "match": "Foxglove & Fern" },
+    { "id": "shipping-note", "description": "UK-only shipping visible before basket intent", "scope": "global", "type": "text", "match": "UK addresses only" },
+    { "id": "postage", "description": "The flat postage figure is visible", "scope": "global", "type": "text", "match": "£1\\.90" },
+    { "id": "name", "description": "Variety name present", "scope": "model:FF-011", "type": "text", "match": "Cathedral Bells" },
+    { "id": "latin", "description": "Botanical name present", "scope": "model:FF-011", "type": "text", "match": "Cobaea scandens" },
+    { "id": "price", "description": "Own price inside own block", "scope": "model:FF-011", "type": "text", "match": "£3\\.50" },
+    { "id": "instock", "description": "Stock state present", "scope": "model:FF-011", "type": "text", "match": "In stock" },
+    { "id": "packet", "description": "Packet size present", "scope": "model:FF-011", "type": "text", "match": "12 seeds" },
+    { "id": "germination", "description": "Germination rate shown", "scope": "model:FF-011", "type": "text", "match": "72\\s?%" },
+    { "id": "difficulty", "description": "Difficulty shown", "scope": "model:FF-011", "type": "text", "match": "moderate" },
+    { "id": "sow-indoors", "description": "Sowing calendar: indoors window", "scope": "model:FF-011", "type": "text", "match": "Feb–Apr" },
+    { "id": "plant-out", "description": "Sowing calendar: plant-out rule", "scope": "model:FF-011", "type": "text", "match": "after last frost" },
+    { "id": "flowers", "description": "Sowing calendar: flowering window", "scope": "model:FF-011", "type": "text", "match": "Jul–Oct" },
+    { "id": "grower-notes", "description": "Grower notes verbatim", "scope": "model:FF-011", "type": "text", "match": "Soak seeds overnight" },
+    { "id": "trellis", "description": "Grower notes: support advice present", "scope": "model:FF-011", "type": "text", "match": "wire or trellis" },
+    { "id": "blurb", "description": "The packet blurb present", "scope": "model:FF-011", "type": "text", "match": "warm start indoors" },
+    { "id": "companion-1", "description": "Companion FF-002 present", "scope": "model:FF-002", "type": "text", "match": "Moonlight Nasturtium" },
+    { "id": "companion-2", "description": "Companion FF-014 present", "scope": "model:FF-014", "type": "text", "match": "Tithonia Torch Sunflower" },
+    { "id": "block-anchors", "description": "Main + companion blocks exist (anti-deletion)", "scope": "global", "type": "dataModel", "match": ["FF-011", "FF-002", "FF-014"] }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "schema": "pixelhelm-validation/commerce-catalog@1",
+  "shop": "Foxglove & Fern",
+  "sealedNote": "Synthetic. Sealed before any E3 generation; the only content source for the commerce brief.",
+  "shippingNote": "Ships to UK addresses only. Flat £1.90 postage; free over £15.",
+  "currency": "GBP",
+  "products": [
+    { "sku": "FF-011", "name": "Cathedral Bells (Cobaea scandens)", "type": "climbing vine", "season": "sow Feb–Apr", "difficulty": "moderate", "price": 3.5, "stock": 34, "packet": "12 seeds", "germinationRate": { "value": 0.72, "estimated": false }, "blurb": "Violet bell flowers to 6m by late summer; needs a warm start indoors.", "featured": true },
+    { "sku": "FF-002", "name": "Moonlight Nasturtium", "type": "trailing annual", "season": "sow Apr–Jun", "difficulty": "easy", "price": 2.8, "stock": 112, "packet": "20 seeds", "germinationRate": { "value": 0.9, "estimated": false }, "blurb": "Pale cream flowers; leaves and flowers edible." },
+    { "sku": "FF-017", "name": "Black Nebula Carrot", "type": "root vegetable", "season": "sow Mar–Jul", "difficulty": "easy", "price": 3.2, "stock": 0, "packet": "300 seeds", "germinationRate": { "value": 0.78, "estimated": false }, "blurb": "Deep purple heirloom carrot; holds color when roasted." },
+    { "sku": "FF-021", "name": "Grandmother's Sweet Pea (1928 line)", "type": "climbing annual", "season": "sow Oct–Nov or Feb–Mar", "difficulty": "easy", "price": null, "stock": 58, "packet": "15 seeds", "germinationRate": { "value": 0.85, "estimated": false }, "blurb": "Kept in one family since 1928; intensely scented. Price pending supplier confirmation." },
+    { "sku": "FF-008", "name": "Winter Windowsill Chili", "type": "compact perennial", "season": "sow Jan–Mar", "difficulty": "moderate", "price": 4.1, "stock": 21, "packet": "10 seeds", "germinationRate": { "value": 0.65, "estimated": true }, "blurb": "Fruits indoors through winter on a bright sill; estimate from last season's line." },
+    { "sku": "FF-014", "name": "Tithonia Torch Sunflower", "type": "tall annual", "season": "sow Apr–May", "difficulty": "easy", "price": 2.6, "stock": 77, "packet": "25 seeds", "germinationRate": { "value": 0.88, "estimated": false }, "blurb": "Blazing orange, beloved by butterflies; 1.8m tall." },
+    { "sku": "FF-019", "name": "Blue Boy Cornflower", "type": "hardy annual", "season": "sow Mar–May or Sep", "difficulty": "easy", "price": 2.4, "stock": 140, "packet": "50 seeds", "germinationRate": { "value": 0.92, "estimated": false }, "blurb": "True cornflower blue; autumn sowing gives earlier flowers." },
+    { "sku": "FF-023", "name": "Dragon's Breath Celosia", "type": "half-hardy annual", "season": "sow Feb–Apr", "difficulty": "hard", "price": 3.9, "stock": 9, "packet": "30 seeds", "germinationRate": { "value": 0.6, "estimated": false }, "blurb": "Flame-red plumes; fussy about damp — for the patient gardener." }
+  ],
+  "productPageSku": "FF-011",
+  "productPageExtras": {
+    "sowingCalendar": { "indoors": "Feb–Apr", "plantOut": "after last frost", "flowers": "Jul–Oct" },
+    "growerNotes": "Soak seeds overnight; sow on edge in deep pots. Slow to start, then rampant — give it wire or trellis.",
+    "companionSkus": ["FF-002", "FF-014"]
+  }
+}
