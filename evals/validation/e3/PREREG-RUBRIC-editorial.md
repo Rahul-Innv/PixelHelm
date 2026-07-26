@@ -60,3 +60,11 @@ limited inputs, judge-record machinery, medians).
 
 1. precondition above; 2. **no criterion median below 6**; 3. **overall median
 ≥ 8**. No verdicts or anticipated results exist before the panel runs.
+
+**Amendment C1 (2026-07-26, owner-approved, pre-generation — E1 calibration
+carried forward):** in E1 the 5-juror blind panel scored ≈1 point above the
+owner on all three arms (9/9/8 vs ~8/8/7), with the owner's gaps both
+use-oriented (status structure clarity, in-use affordances). Accordingly: a
+criterion or overall median of 9+ under this sheet is recorded as **"strong,
+owner-verify"** — never as achieved distinctive excellence — and the owner's
+verification pass is the binding read at the top of the scale.
