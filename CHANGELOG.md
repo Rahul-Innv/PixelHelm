@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+Validation program (2026-07-26, from the external capability assessment):
+
+- Ran and committed the program's first complete evidenced loop (E1/E2) on a
+  sealed synthetic utility brief: pre-registered rubric/metrics, three arms,
+  all shipped HARD gates green, 4/4 mutant ritual, validated judge/run/sign-off
+  records, divergence thresholds all met, owner-signed approved-with-changes.
+  Full trail: `evals/validation/e1/run-2026-07-26/`. Recorded calibration
+  finding: the blind panel scored ≈1 point above the owner (9+ medians now read
+  as "strong, owner-verify" — Amendment C1 in the E3 rubric sheets).
+- Sealed pre-registrations for the E3 transfer briefs (SaaS / commerce /
+  editorial), the E5 comparator rule with pinned template picks, and the E6-A
+  motion-launch experiment.
+- Owner-authorized ChoiceGate v0.2.1 re-acceptance after the pinned private
+  checkout was lost to a public-history rewrite
+  (`evals/validation/reacceptance-2026-07-26/`).
+- Hygiene: the repo test and packaging lint now also catch JSON-escaped
+  user-path leaks; committed E1 artifacts were redacted accordingly.
+
 Deferred P0 floor mechanisms from the 2026-07-26 external capability assessment
 (backlog items P0-4 / P0-5 / P0-6), building on the truth-reconciliation pass:
 

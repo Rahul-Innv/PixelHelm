@@ -182,10 +182,15 @@ committed in this tree, so treat these as narrative until re-run with records):*
 - One candidate invented an update cadence and the honesty audit disqualified it.
   The disqualified candidate and audit output are likewise not committed.
 
-Re-running the loop with committed JUDGE artifacts is the top of the public roadmap
-(the record writer/validator for those artifacts now ships, so no future panel can
-run without leaving them); until then this section deliberately refuses to blur the
-two grades.
+That re-run milestone has now been reached once, on a fresh brief: the first
+complete evidenced loop — every candidate (losers included), per-juror JSONs,
+gate outputs, renders, and validated `run@1`/`judge-verdict@1`/`signoff@1`
+records — is committed under `evals/validation/e1/run-2026-07-26/` (pre-registered
+rubric and thresholds sealed before generation; owner-signed
+approved-with-changes; panel scores labeled system-esteem, with the recorded
+finding that the blind panel ran ≈1 point above the owner). Re-running THIS
+Harborline page with records remains open, so the attested claims above keep
+their narrative label; this section still refuses to blur the two grades.
 
 ## Install
 
