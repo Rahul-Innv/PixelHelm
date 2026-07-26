@@ -57,9 +57,13 @@ labeled proxy, never substituted for the human check.
 ## Execution preconditions (honest blockers)
 
 1. E1 complete and reviewed (loop machinery proven).
-2. **P1-5 measurement tooling** (frame-time percentiles, lab CWV capture) does
-   not ship yet — budgets in §4 cannot be *measured* until it lands. This
-   experiment does not run on vibes: no measurement, no run.
+2. **P1-5 measurement tooling** (frame-time percentiles, lab CWV capture) —
+   *Amendment A2 (2026-07-26, owner-approved, still pre-generation):* the
+   tooling LANDED (merge of `e01c84f`: verify_frametime / verify_cwv /
+   verify_scrollcapture / verify_keyboard). This precondition is now satisfied;
+   the budgets in §4 are measured by those validators, whose verdicts bind the
+   producing run. E1 review (precondition 1) remains the only blocker. The
+   original principle stands: no measurement, no run.
 
 ## Success / falsification
 
