@@ -1,0 +1,48 @@
+{
+  "browserChannel": "msedge",
+  "outDir": "renders",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": true,
+  "items": [
+    {
+      "name": "seed-annual-catalog",
+      "file": "arms/seed-annual/index.html"
+    },
+    {
+      "name": "seed-annual-product",
+      "file": "arms/seed-annual/product.html"
+    },
+    {
+      "name": "packet-rack-catalog",
+      "file": "arms/packet-rack/index.html"
+    },
+    {
+      "name": "packet-rack-product",
+      "file": "arms/packet-rack/product.html"
+    },
+    {
+      "name": "sowing-almanac-catalog",
+      "file": "arms/sowing-almanac/index.html"
+    },
+    {
+      "name": "sowing-almanac-product",
+      "file": "arms/sowing-almanac/product.html"
+    }
+  ]
+}
