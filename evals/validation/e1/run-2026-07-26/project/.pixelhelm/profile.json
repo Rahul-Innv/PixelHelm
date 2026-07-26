@@ -1,0 +1,16 @@
+{
+  "project": "e1-kestrel-ridge",
+  "root": ".",
+  "sourceDirs": ["arms"],
+  "sourceExts": [".html"],
+  "ignore": [],
+  "allowRawColorIn": ["arms/trail-ledger/index.html", "arms/status-board/index.html", "arms/first-light/index.html"],
+  "_rawColorNote": "Single-file arms define their tokens in :root/[data-theme] blocks inside the HTML; raw hexes are legal ONLY inside those token definitions. The soft raw-color walk stays informative; per-arm contrast is HARD-gated from each arm's embedded #token-contract (check-token-contracts.mjs) and per-arm static-gates profiles under gates/.",
+  "tokenModule": null,
+  "ownerInvolvement": "autonomous",
+  "surfaceType": "data",
+  "_register": "calm, factual, outdoors-trust; zero marketing voice. A hiker at the trailhead parking lot answers 'can I hike today, and where' inside 30 seconds. Statuses keep one stable meaning everywhere; unknown is rendered as unknown, never dressed up; nothing playful is mandatory; no urgency theater, no marketing adjectives.",
+  "_northStars": "NOAA point forecast pages — data plainness that earns trust; Swiss federal railway departure boards — glanceable status discipline; a national park paper trailhead notice — the register made physical.",
+  "_taste": { "approvedExemplars": [], "rejectedDirections": [], "registerClarifications": [] },
+  "_notes": "E1 validation run project (sealed brief). Content authority: data/trail-status.json + injected constants in data/derived.json only. Three tournament arms under arms/<name>/index.html, each with its own embedded token contract."
+}

@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Kestrel Ridge Open Space — Trail conditions</title>
+  <meta name="description" content="Trail conditions status board for Kestrel Ridge Open Space: 9 trails with current status, a controlled-burn closure notice, snowpack, and 7-day precipitation. Board updated 6:00 PM, Jul 26.">
+  <script type="application/json" id="token-contract">
+{"light":{"ground":"#e9f1f6","tile":"#ffffff","ink":"#16293a","ink-muted":"#4c5f6f","line":"#b9c9d4","accent":"#1c5c8c","field-open":"#1c6b46","on-open":"#ffffff","field-caution":"#a87800","on-caution":"#1a1400","field-closed":"#9c3038","on-closed":"#ffffff","field-noreport":"#5a6a76","on-noreport":"#ffffff"},"dark":{"ground":"#0d151d","tile":"#131d27","ink":"#e6eef4","ink-muted":"#9fb2c0","line":"#2e4050","accent":"#7cb5de","field-open":"#2c7c50","on-open":"#ffffff","field-caution":"#d9a514","on-caution":"#0d151d","field-closed":"#bb4750","on-closed":"#ffffff","field-noreport":"#5d7080","on-noreport":"#ffffff"},"gatedPairs":[{"fg":"ink","on":["ground","tile"],"kind":"text"},{"fg":"ink-muted","on":["ground","tile"],"kind":"text"},{"fg":"on-open","on":["field-open"],"kind":"text"},{"fg":"on-caution","on":["field-caution"],"kind":"text"},{"fg":"on-closed","on":["field-closed"],"kind":"text"},{"fg":"on-noreport","on":["field-noreport"],"kind":"text"},{"fg":"on-open","on":["field-open"],"kind":"graphic"},{"fg":"on-caution","on":["field-caution"],"kind":"graphic"},{"fg":"on-closed","on":["field-closed"],"kind":"graphic"},{"fg":"on-noreport","on":["field-noreport"],"kind":"graphic"},{"fg":"field-open","on":["ground","tile"],"kind":"graphic"},{"fg":"field-caution","on":["ground","tile"],"kind":"graphic"},{"fg":"field-closed","on":["ground","tile"],"kind":"graphic"},{"fg":"field-noreport","on":["ground","tile"],"kind":"graphic"},{"fg":"accent","on":["tile"],"kind":"graphic"}]}
+  </script>
+  <style>
+    :root {
+      color-scheme: light;
+      --ground: #e9f1f6;
+      --tile: #ffffff;
+      --ink: #16293a;
+      --ink-muted: #4c5f6f;
+      --line: #b9c9d4;
+      --accent: #1c5c8c;
+      --field-open: #1c6b46;
+      --on-open: #ffffff;
+      --field-caution: #a87800;
+      --on-caution: #1a1400;
+      --field-closed: #9c3038;
+      --on-closed: #ffffff;
+      --field-noreport: #5a6a76;
+      --on-noreport: #ffffff;
+    }
+    html[data-theme="dark"] {
+      color-scheme: dark;
+      --ground: #0d151d;
+      --tile: #131d27;
+      --ink: #e6eef4;
+      --ink-muted: #9fb2c0;
+      --line: #2e4050;
+      --accent: #7cb5de;
+      --field-open: #2c7c50;
+      --on-open: #ffffff;
+      --field-caution: #d9a514;
+      --on-caution: #0d151d;
+      --field-closed: #bb4750;
+      --on-closed: #ffffff;
+      --field-noreport: #5d7080;
+      --on-noreport: #ffffff;
+    }
+
+    * { box-sizing: border-box; }
+    h1, h2, h3, p, ul { margin: 0; }
+
+    body {
+      margin: 0;
+      background: var(--ground);
+      color: var(--ink);
+      font-family: "Segoe UI Variable Display", "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
+      font-size: 15px;
+      line-height: 1.5;
+      border-top: 3px solid var(--accent);
+      padding: 20px 16px 32px;
+    }
+
+    main {
+      max-width: 1060px;
+      margin: 0 auto;
+      display: grid;
+      gap: 22px;
+    }
+
+    /* Board header */
+    .board-head { display: grid; gap: 6px; }
+    .kicker {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.09em;
+      color: var(--ink-muted);
+    }
+    .head-row {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 2px 16px;
+    }
+    h1 { font-size: 20px; font-weight: 800; line-height: 1.2; letter-spacing: 0.01em; }
+    .updated { font-size: 13px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+    .counts { font-size: 15px; font-weight: 600; font-variant-numeric: tabular-nums; }
+    .counts .mini { margin-right: 6px; }
+    .mini { vertical-align: -1px; }
+    .c-open { color: var(--field-open); }
+    .c-caution { color: var(--field-caution); }
+    .c-closed { color: var(--field-closed); }
+    .c-nr { color: var(--field-noreport); }
+
+    /* Board notice */
+    .notice {
+      background: var(--tile);
+      border: 1px solid var(--line);
+      border-left: 6px solid var(--field-closed);
+      border-radius: 8px;
+      padding: 14px 16px;
+      display: grid;
+      gap: 5px;
+    }
+    .notice h2 { font-size: 15px; font-weight: 700; }
+    .notice-kicker {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      color: var(--ink-muted);
+    }
+    .window { font-size: 13px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+
+    /* Legend */
+    .legend {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px 24px;
+    }
+    .legend li {
+      display: inline-flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+    .swatch {
+      width: 26px;
+      height: 26px;
+      border-radius: 4px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      flex: none;
+    }
+    .sw-open { background: var(--field-open); color: var(--on-open); }
+    .sw-caution { background: var(--field-caution); color: var(--on-caution); }
+    .sw-closed { background: var(--field-closed); color: var(--on-closed); }
+    .sw-nr { background: var(--field-noreport); color: var(--on-noreport); }
+
+    /* Tile board */
+    .board { display: grid; gap: 24px; }
+    .zone { display: grid; gap: 10px; }
+    .zone-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--ink-muted);
+      font-variant-numeric: tabular-nums;
+    }
+    .zone-label .mini { margin-right: 8px; }
+    .tiles {
+      display: grid;
+      gap: 12px;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    .tile {
+      background: var(--tile);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+    }
+    .field {
+      min-height: 104px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 16px;
+    }
+    .glyph { flex: none; width: 30px; height: 30px; }
+    .f-open { background: var(--field-open); color: var(--on-open); }
+    .f-caution { background: var(--field-caution); color: var(--on-caution); }
+    .f-closed { background: var(--field-closed); color: var(--on-closed); }
+    .f-nr { background: var(--field-noreport); color: var(--on-noreport); }
+    .status-word {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: 0.07em;
+      line-height: 1.2;
+    }
+    .tile-body {
+      padding: 12px 16px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 5px;
+      flex: 1;
+    }
+    .tile-body h3 { font-size: 15px; font-weight: 700; line-height: 1.35; }
+    .meta {
+      font-size: 13px;
+      color: var(--ink-muted);
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      font-variant-numeric: tabular-nums;
+    }
+    .note { font-size: 13px; }
+    .nr-note { font-size: 13px; color: var(--ink-muted); }
+    .age {
+      font-size: 13px;
+      color: var(--ink-muted);
+      margin-top: auto;
+      padding-top: 4px;
+      font-variant-numeric: tabular-nums;
+    }
+
+    /* Conditions strip */
+    .strip { display: grid; gap: 12px; grid-template-columns: minmax(0, 1fr); }
+    .panel {
+      background: var(--tile);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 14px 16px 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .panel-label {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+      color: var(--ink-muted);
+    }
+    .snow-value {
+      font-size: 20px;
+      font-weight: 800;
+      font-variant-numeric: tabular-nums;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .flag-est {
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+      color: var(--ink-muted);
+      border: 1px dashed var(--ink-muted);
+      border-radius: 4px;
+      padding: 1px 8px;
+    }
+    .snow-note { font-size: 13px; color: var(--ink-muted); }
+    .spark { display: block; height: auto; aspect-ratio: 350 / 88; }
+    .days {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      text-align: center;
+      font-variant-numeric: tabular-nums;
+    }
+    .day { display: grid; gap: 2px; font-size: 13px; }
+    .day .d { color: var(--ink-muted); }
+    .day .v { font-weight: 600; }
+    .gap-day .v { color: var(--ink-muted); font-weight: 400; }
+    .hist-note { font-size: 13px; color: var(--ink-muted); font-variant-numeric: tabular-nums; }
+
+    footer { max-width: 1060px; margin: 26px auto 0; }
+    footer p { font-size: 13px; color: var(--ink-muted); }
+
+    :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+
+    @media (max-width: 979px) {
+      .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    }
+    @media (max-width: 559px) {
+      .tiles { grid-template-columns: minmax(0, 1fr); }
+    }
+    @media (min-width: 860px) {
+      .strip { grid-template-columns: minmax(0, 2fr) minmax(0, 3fr); }
+    }
+    /* Motion: this board is static by design; guard stays for anything a UA injects. */
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <header class="board-head">
+      <p class="kicker">Trail conditions</p>
+      <div class="head-row">
+        <h1>Kestrel Ridge Open Space</h1>
+        <p class="updated">Board updated 6:00 PM, Jul 26</p>
+      </div>
+      <p class="counts"><span><svg class="mini c-open" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg>3 open</span> · <span><svg class="mini c-caution" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.6 20.4H2.4Z" fill="currentColor"/></svg>2 caution</span> · <span><svg class="mini c-closed" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.4 5.4 18.6 18.6M18.6 5.4 5.4 18.6" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"/></svg>2 closed</span> · <span><svg class="mini c-nr" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="3.9 2.38"/></svg>2 no report</span></p>
+    </header>
+
+    <section class="notice">
+      <p class="notice-kicker">Closure notice · A-114</p>
+      <h2>Controlled burn — east ridge</h2>
+      <p>Juniper Loop and Redtail Spur are closed for a scheduled controlled burn.</p>
+      <p class="window">In effect Jul 25, 6:00 AM – Jul 28, 8:00 PM</p>
+    </section>
+
+    <ul class="legend">
+      <li><span class="swatch sw-open"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg></span>OPEN</li>
+      <li><span class="swatch sw-caution"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.6 20.4H2.4Z" fill="currentColor"/></svg></span>CAUTION</li>
+      <li><span class="swatch sw-closed"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.4 5.4 18.6 18.6M18.6 5.4 5.4 18.6" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"/></svg></span>CLOSED</li>
+      <li><span class="swatch sw-nr"><svg width="15" height="15" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="3.9 2.38"/></svg></span>NO REPORT</li>
+    </ul>
+
+    <div class="board">
+      <section class="zone">
+        <h2 class="zone-label"><svg class="mini c-open" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg>Open · 3 trails</h2>
+        <div class="tiles">
+          <article class="tile" data-model="T-01">
+            <div class="field f-open">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg>
+              <span class="status-word">OPEN</span>
+            </div>
+            <div class="tile-body">
+              <h3>Kestrel Summit Trail</h3>
+              <p class="meta"><span>7.4 km · dry</span><span>T-01</span></p>
+              <p class="age">Last report 7:10 AM, Jul 26</p>
+            </div>
+          </article>
+          <article class="tile" data-model="T-05">
+            <div class="field f-open">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg>
+              <span class="status-word">OPEN</span>
+            </div>
+            <div class="tile-body">
+              <h3>Old Quarry Track</h3>
+              <p class="meta"><span>3.3 km · loose gravel</span><span>T-05</span></p>
+              <p class="age">Last report 7:05 AM, Jul 26</p>
+            </div>
+          </article>
+          <article class="tile" data-model="T-06">
+            <div class="field f-open">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5" fill="currentColor"/></svg>
+              <span class="status-word">OPEN</span>
+            </div>
+            <div class="tile-body">
+              <h3>Larkspur Meadow Loop</h3>
+              <p class="meta"><span>2.8 km · dry</span><span>T-06</span></p>
+              <p class="note">Ground-nesting birds through August — dogs on leash.</p>
+              <p class="age">Last report 6:55 AM, Jul 26</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone">
+        <h2 class="zone-label"><svg class="mini c-caution" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.6 20.4H2.4Z" fill="currentColor"/></svg>Caution · 2 trails</h2>
+        <div class="tiles">
+          <article class="tile" data-model="T-04">
+            <div class="field f-caution">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.6 20.4H2.4Z" fill="currentColor"/></svg>
+              <span class="status-word">CAUTION</span>
+            </div>
+            <div class="tile-body">
+              <h3>Millbrook Creek Path</h3>
+              <p class="meta"><span>5.6 km · muddy</span><span>T-04</span></p>
+              <p class="note">Two footbridges flooded at the crossing; passable with care.</p>
+              <p class="age">Last report 6:40 AM, Jul 26</p>
+            </div>
+          </article>
+          <article class="tile" data-model="T-08">
+            <div class="field f-caution">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 21.6 20.4H2.4Z" fill="currentColor"/></svg>
+              <span class="status-word">CAUTION</span>
+            </div>
+            <div class="tile-body">
+              <h3>Basalt Steps</h3>
+              <p class="meta"><span>1.2 km · wet rock</span><span>T-08</span></p>
+              <p class="note">Slick steps after yesterday's rain.</p>
+              <p class="age">Last report 6:20 AM, Jul 26</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone">
+        <h2 class="zone-label"><svg class="mini c-closed" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.4 5.4 18.6 18.6M18.6 5.4 5.4 18.6" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"/></svg>Closed · 2 trails</h2>
+        <div class="tiles">
+          <article class="tile" data-model="T-02">
+            <div class="field f-closed">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.4 5.4 18.6 18.6M18.6 5.4 5.4 18.6" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"/></svg>
+              <span class="status-word">CLOSED</span>
+            </div>
+            <div class="tile-body">
+              <h3>Juniper Loop</h3>
+              <p class="meta"><span>4.1 km</span><span>T-02</span></p>
+              <p class="note">Controlled burn area (alert A-114).</p>
+              <p class="age">Last report 5:45 AM, Jul 25</p>
+            </div>
+          </article>
+          <article class="tile" data-model="T-03">
+            <div class="field f-closed">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M5.4 5.4 18.6 18.6M18.6 5.4 5.4 18.6" fill="none" stroke="currentColor" stroke-width="4.4" stroke-linecap="square"/></svg>
+              <span class="status-word">CLOSED</span>
+            </div>
+            <div class="tile-body">
+              <h3>Redtail Spur</h3>
+              <p class="meta"><span>1.9 km</span><span>T-03</span></p>
+              <p class="note">Controlled burn area (alert A-114).</p>
+              <p class="age">Last report 5:45 AM, Jul 25</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone">
+        <h2 class="zone-label"><svg class="mini c-nr" width="12" height="12" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="3.9 2.38"/></svg>No report · 2 trails</h2>
+        <div class="tiles">
+          <article class="tile" data-model="T-07">
+            <div class="field f-nr">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="3.9 2.38"/></svg>
+              <span class="status-word">NO REPORT</span>
+            </div>
+            <div class="tile-body">
+              <h3>Hollow Pine Traverse</h3>
+              <p class="meta"><span>9.2 km</span><span>T-07</span></p>
+              <p class="nr-note">No report received from this trail.</p>
+            </div>
+          </article>
+          <article class="tile" data-model="T-09">
+            <div class="field f-nr">
+              <svg class="glyph" width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8" fill="none" stroke="currentColor" stroke-width="2.6" stroke-dasharray="3.9 2.38"/></svg>
+              <span class="status-word">NO REPORT</span>
+            </div>
+            <div class="tile-body">
+              <h3>North Fence Line</h3>
+              <p class="meta"><span>6.0 km</span><span>T-09</span></p>
+              <p class="nr-note">No report received from this trail.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+    </div>
+
+    <section class="strip">
+      <div class="panel">
+        <h2 class="panel-label">Snowpack · Kestrel Ridge upper station</h2>
+        <p class="snow-value">0 cm <span class="flag-est">estimated</span></p>
+        <p class="snow-note">Sensor offline since 2026-07-19; value estimated from the valley station.</p>
+      </div>
+      <div class="panel">
+        <h2 class="panel-label">Last 7 days · precipitation, mm</h2>
+        <svg class="spark" viewBox="0 0 350 88" aria-hidden="true">
+          <line x1="25" y1="72" x2="325" y2="72" stroke="var(--line)" stroke-width="1"/>
+          <polyline points="25,72 75,72" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <polyline points="175,52.7 225,72 275,14 325,68.8" fill="none" stroke="var(--accent)" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="25" cy="72" r="3.2" fill="var(--accent)"/>
+          <circle cx="75" cy="72" r="3.2" fill="var(--accent)"/>
+          <circle cx="175" cy="52.7" r="3.2" fill="var(--accent)"/>
+          <circle cx="225" cy="72" r="3.2" fill="var(--accent)"/>
+          <circle cx="275" cy="14" r="3.2" fill="var(--accent)"/>
+          <circle cx="325" cy="68.8" r="3.2" fill="var(--accent)"/>
+          <circle cx="125" cy="72" r="5.5" fill="none" stroke="var(--ink-muted)" stroke-width="2" stroke-dasharray="4 2.91"/>
+        </svg>
+        <div class="days">
+          <div class="day"><span class="d">20</span><span class="v">0</span></div>
+          <div class="day"><span class="d">21</span><span class="v">0</span></div>
+          <div class="day gap-day"><span class="d">22</span><span class="v">no data</span></div>
+          <div class="day"><span class="d">23</span><span class="v">6</span></div>
+          <div class="day"><span class="d">24</span><span class="v">0</span></div>
+          <div class="day"><span class="d">25</span><span class="v">18</span></div>
+          <div class="day"><span class="d">26</span><span class="v">1</span></div>
+        </div>
+        <p class="hist-note">Jul 20 – Jul 26 · Jul 22 not recorded</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Kestrel Ridge Open Space</p>
+  </footer>
+</body>
+</html>

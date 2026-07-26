@@ -1,0 +1,183 @@
+{
+  "generated": "2026-07-26T21:58:48.972Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 12
+  },
+  "shots": [
+    {
+      "file": "trail-ledger__desktop__light.png",
+      "item": "trail-ledger",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger__mobile__light.png",
+      "item": "trail-ledger",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger__desktop__dark.png",
+      "item": "trail-ledger",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger__mobile__dark.png",
+      "item": "trail-ledger",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "status-board__desktop__light.png",
+      "item": "status-board",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "status-board__mobile__light.png",
+      "item": "status-board",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "status-board__desktop__dark.png",
+      "item": "status-board",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "status-board__mobile__dark.png",
+      "item": "status-board",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "first-light__desktop__light.png",
+      "item": "first-light",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "first-light__mobile__light.png",
+      "item": "first-light",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "first-light__desktop__dark.png",
+      "item": "first-light",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "first-light__mobile__dark.png",
+      "item": "first-light",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "C:\\Users\\krahu\\AppData\\Local\\Temp\\claude\\C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-elated-gould-a419df\\e67e8069-830d-498a-a5df-c7b963807170\\scratchpad/mutants/m1/index.html",
+  "pass": false,
+  "allowedNumbers": 36,
+  "blocks": 9,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented km \"99.9 km\" (=99.9) not in data or derived constants — …°C · 1 mm precip Ridge total 99.9 km — End of log — generated 6:00…"
+    }
+  ]
+}

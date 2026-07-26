@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T21:59:50.620Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/first-light/index.html",
+      "measured": 1,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

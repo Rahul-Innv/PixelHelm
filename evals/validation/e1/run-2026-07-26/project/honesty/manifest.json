@@ -1,0 +1,36 @@
+{
+  "meta": {
+    "darkAttr": "data-theme",
+    "modelBlockAttr": "data-model",
+    "modes": ["light", "dark"]
+  },
+  "required": [
+    { "id": "network-name", "description": "The network is named", "scope": "global", "type": "text", "match": "Kestrel Ridge Open Space" },
+    { "id": "alert-title", "description": "The active closure alert is present", "scope": "global", "type": "text", "match": "Controlled burn" },
+    { "id": "estimated-flag", "description": "The snowpack value is visibly flagged estimated", "scope": "global", "type": "text", "match": "estimat" },
+    { "id": "null-day-gap", "description": "The null history day is an explicit gap", "scope": "global", "type": "text", "match": ["no data", "no report", "not recorded"] },
+    { "id": "name-T-01", "description": "Trail name present", "scope": "model:T-01", "type": "text", "match": "Kestrel Summit Trail" },
+    { "id": "name-T-02", "description": "Trail name present", "scope": "model:T-02", "type": "text", "match": "Juniper Loop" },
+    { "id": "name-T-03", "description": "Trail name present", "scope": "model:T-03", "type": "text", "match": "Redtail Spur" },
+    { "id": "name-T-04", "description": "Trail name present", "scope": "model:T-04", "type": "text", "match": "Millbrook Creek Path" },
+    { "id": "name-T-05", "description": "Trail name present", "scope": "model:T-05", "type": "text", "match": "Old Quarry Track" },
+    { "id": "name-T-06", "description": "Trail name present", "scope": "model:T-06", "type": "text", "match": "Larkspur Meadow Loop" },
+    { "id": "name-T-07", "description": "Trail name present", "scope": "model:T-07", "type": "text", "match": "Hollow Pine Traverse" },
+    { "id": "name-T-08", "description": "Trail name present", "scope": "model:T-08", "type": "text", "match": "Basalt Steps" },
+    { "id": "name-T-09", "description": "Trail name present", "scope": "model:T-09", "type": "text", "match": "North Fence Line" },
+    { "id": "status-T-01", "description": "Own status inside own block", "scope": "model:T-01", "type": "text", "match": "\\bOPEN\\b" },
+    { "id": "status-T-02", "description": "Own status inside own block", "scope": "model:T-02", "type": "text", "match": "\\bCLOSED\\b" },
+    { "id": "status-T-03", "description": "Own status inside own block", "scope": "model:T-03", "type": "text", "match": "\\bCLOSED\\b" },
+    { "id": "status-T-04", "description": "Own status inside own block", "scope": "model:T-04", "type": "text", "match": "\\bCAUTION\\b" },
+    { "id": "status-T-05", "description": "Own status inside own block", "scope": "model:T-05", "type": "text", "match": "\\bOPEN\\b" },
+    { "id": "status-T-06", "description": "Own status inside own block", "scope": "model:T-06", "type": "text", "match": "\\bOPEN\\b" },
+    { "id": "status-T-07", "description": "Unreported reads as unknown", "scope": "model:T-07", "type": "text", "match": "NO REPORT" },
+    { "id": "status-T-08", "description": "Own status inside own block", "scope": "model:T-08", "type": "text", "match": "\\bCAUTION\\b" },
+    { "id": "status-T-09", "description": "Unreported reads as unknown", "scope": "model:T-09", "type": "text", "match": "NO REPORT" },
+    { "id": "dist-T-01", "description": "Own distance inside own block", "scope": "model:T-01", "type": "text", "match": "7\\.4" },
+    { "id": "dist-T-04", "description": "Own distance inside own block", "scope": "model:T-04", "type": "text", "match": "5\\.6" },
+    { "id": "dist-T-07", "description": "Own distance inside own block", "scope": "model:T-07", "type": "text", "match": "9\\.2" },
+    { "id": "hazard-T-04", "description": "Flooded footbridges hazard present", "scope": "model:T-04", "type": "text", "match": "footbridge" },
+    { "id": "block-anchors", "description": "Every trail block exists (anti-deletion)", "scope": "global", "type": "dataModel", "match": ["T-01", "T-02", "T-03", "T-04", "T-05", "T-06", "T-07", "T-08", "T-09"] }
+  ]
+}

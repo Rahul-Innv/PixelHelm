@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T21:59:36.541Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/status-board/index.html",
+      "measured": 0,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

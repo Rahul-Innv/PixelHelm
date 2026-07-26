@@ -1,0 +1,203 @@
+{
+  "project": "e1-arm-status-board",
+  "root": "C:/Users/krahu/Documents/Workbench/Projects/PixelHelm/.claude/worktrees/elated-gould-a419df/evals/validation/e1/run-2026-07-26/project/arms/status-board",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file arm: raw hex is legal only inside the two token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "ground": "#e9f1f6",
+      "tile": "#ffffff",
+      "ink": "#16293a",
+      "ink-muted": "#4c5f6f",
+      "line": "#b9c9d4",
+      "accent": "#1c5c8c",
+      "field-open": "#1c6b46",
+      "on-open": "#ffffff",
+      "field-caution": "#a87800",
+      "on-caution": "#1a1400",
+      "field-closed": "#9c3038",
+      "on-closed": "#ffffff",
+      "field-noreport": "#5a6a76",
+      "on-noreport": "#ffffff"
+    },
+    "dark": {
+      "ground": "#0d151d",
+      "tile": "#131d27",
+      "ink": "#e6eef4",
+      "ink-muted": "#9fb2c0",
+      "line": "#2e4050",
+      "accent": "#7cb5de",
+      "field-open": "#2c7c50",
+      "on-open": "#ffffff",
+      "field-caution": "#d9a514",
+      "on-caution": "#0d151d",
+      "field-closed": "#bb4750",
+      "on-closed": "#ffffff",
+      "field-noreport": "#5d7080",
+      "on-noreport": "#ffffff"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "ink-muted",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-open",
+      "on": [
+        "field-open"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-caution",
+      "on": [
+        "field-caution"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-closed",
+      "on": [
+        "field-closed"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-noreport",
+      "on": [
+        "field-noreport"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "on-open",
+      "on": [
+        "field-open"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "on-caution",
+      "on": [
+        "field-caution"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "on-closed",
+      "on": [
+        "field-closed"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "on-noreport",
+      "on": [
+        "field-noreport"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "field-open",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "field-caution",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "field-closed",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "field-noreport",
+      "on": [
+        "ground",
+        "tile"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "accent",
+      "on": [
+        "tile"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "data",
+  "_register": "calm, factual, outdoors-trust; zero marketing voice."
+}

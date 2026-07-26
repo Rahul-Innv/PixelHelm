@@ -1,0 +1,33 @@
+{
+  "_note": "Gate A (derived-claims) config for the E1 Kestrel Ridge arms. Root is the project dir; --target selects the arm HTML.",
+  "root": "..",
+  "target": "arms/trail-ledger/index.html",
+  "dataFiles": ["data/trail-status.json"],
+  "derivedFile": "data/derived.json",
+  "extractNumbersFromStrings": true,
+  "globalAllow": [],
+  "modelBlockAttr": "data-model",
+  "perBlockMoneyScopes": {
+    "modelsPath": "trails",
+    "keyField": "id",
+    "moneyFields": [],
+    "moneyArrayFields": [],
+    "globalAllowPath": "globalAllow"
+  },
+  "verdict": {
+    "word": "OPEN",
+    "negationWindow": 30,
+    "negators": ["never", "not", "false", "no"],
+    "statusField": "status",
+    "positiveStatus": "open"
+  },
+  "numericContexts": { "money": true, "percent": true, "count": true, "days": true },
+  "extraNumericContexts": [
+    { "kind": "km", "pattern": "(\\d+(?:\\.\\d+)?)\\s?km", "group": 1 },
+    { "kind": "celsius", "pattern": "(\\d+(?:\\.\\d+)?)\\s?°", "group": 1 },
+    { "kind": "millimetres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?mm", "group": 1 },
+    { "kind": "centimetres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?cm", "group": 1 }
+  ],
+  "darkAttr": "data-theme",
+  "modes": ["light", "dark"]
+}

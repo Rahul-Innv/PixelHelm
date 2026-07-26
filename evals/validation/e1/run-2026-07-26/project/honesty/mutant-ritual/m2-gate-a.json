@@ -1,0 +1,27 @@
+{
+  "gate": "derived-claims",
+  "target": "C:\\Users\\krahu\\AppData\\Local\\Temp\\claude\\C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-elated-gould-a419df\\e67e8069-830d-498a-a5df-c7b963807170\\scratchpad/mutants/m2/index.html",
+  "pass": false,
+  "allowedNumbers": 36,
+  "blocks": 9,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented money \"$2,387\" (=2387) not in data or derived constants — …CAUTION Millbrook Creek Path $2,387 5.6 km Two footbridges flo…"
+    },
+    {
+      "severity": "HIGH",
+      "kind": "ASSOCIATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "money \"$2,387\" (=2387) inside [data-model=\"T-04\"] is not that block's figure — …CAUTION Millbrook Creek Path $2,387 5.6 km Two footbridges flo…"
+    }
+  ]
+}

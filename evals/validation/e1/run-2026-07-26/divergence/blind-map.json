@@ -1,0 +1,121 @@
+{
+  "armOrderBase": [
+    "trail-ledger",
+    "status-board",
+    "first-light"
+  ],
+  "judges": {
+    "judge-1": {
+      "renderSeed": 202607261,
+      "intentSeed": 202607361,
+      "renderOrder": [
+        "first-light",
+        "status-board",
+        "trail-ledger"
+      ],
+      "intentOrder": [
+        "trail-ledger",
+        "status-board",
+        "first-light"
+      ]
+    },
+    "judge-2": {
+      "renderSeed": 202607262,
+      "intentSeed": 202607362,
+      "renderOrder": [
+        "trail-ledger",
+        "first-light",
+        "status-board"
+      ],
+      "intentOrder": [
+        "status-board",
+        "first-light",
+        "trail-ledger"
+      ]
+    },
+    "judge-3": {
+      "renderSeed": 202607263,
+      "intentSeed": 202607363,
+      "renderOrder": [
+        "first-light",
+        "status-board",
+        "trail-ledger"
+      ],
+      "intentOrder": [
+        "status-board",
+        "first-light",
+        "trail-ledger"
+      ]
+    },
+    "judge-4": {
+      "renderSeed": 202607264,
+      "intentSeed": 202607364,
+      "renderOrder": [
+        "trail-ledger",
+        "status-board",
+        "first-light"
+      ],
+      "intentOrder": [
+        "trail-ledger",
+        "first-light",
+        "status-board"
+      ]
+    },
+    "judge-5": {
+      "renderSeed": 202607265,
+      "intentSeed": 202607365,
+      "renderOrder": [
+        "trail-ledger",
+        "status-board",
+        "first-light"
+      ],
+      "intentOrder": [
+        "trail-ledger",
+        "status-board",
+        "first-light"
+      ]
+    }
+  },
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607461,
+      "armOrder": [
+        "trail-ledger",
+        "status-board",
+        "first-light"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607462,
+      "armOrder": [
+        "status-board",
+        "trail-ledger",
+        "first-light"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607463,
+      "armOrder": [
+        "status-board",
+        "trail-ledger",
+        "first-light"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607464,
+      "armOrder": [
+        "first-light",
+        "trail-ledger",
+        "status-board"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607465,
+      "armOrder": [
+        "status-board",
+        "first-light",
+        "trail-ledger"
+      ]
+    }
+  }
+}

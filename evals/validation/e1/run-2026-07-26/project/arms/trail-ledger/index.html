@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kestrel Ridge Open Space — Trail conditions, Jul 26, 2026</title>
+<meta name="description" content="Morning trail log for Kestrel Ridge Open Space, July 26, 2026: 3 of 9 trails open, 2 with caution, 2 closed for a controlled burn, 2 without a report. Posted 6:00 PM, Jul 26.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f1e6cb","ink":"#241c10","muted":"#6a5a38","rule":"#8a7a55","open":"#2e5d34","caution":"#6e510e","closed":"#8f2f1c","unreported":"#6a5a38"},"dark":{"paper":"#16120c","ink":"#ece4d2","muted":"#b3a88f","rule":"#726751","open":"#93c18c","caution":"#d6a748","closed":"#e2907a","unreported":"#b3a88f"},"gatedPairs":[{"fg":"ink","on":["paper"],"kind":"text"},{"fg":"muted","on":["paper"],"kind":"text"},{"fg":"open","on":["paper"],"kind":"text"},{"fg":"caution","on":["paper"],"kind":"text"},{"fg":"closed","on":["paper"],"kind":"text"},{"fg":"unreported","on":["paper"],"kind":"text"},{"fg":"rule","on":["paper"],"kind":"graphic"}]}
+</script>
+<style>
+/* Trail-ledger: the ranger's morning logbook. One column, ruled lines, stamped statuses. */
+
+:root {
+  color-scheme: light;
+  --paper: #f1e6cb;
+  --ink: #241c10;
+  --muted: #6a5a38;
+  --rule: #8a7a55;
+  --open: #2e5d34;
+  --caution: #6e510e;
+  --closed: #8f2f1c;
+  --unreported: #6a5a38;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #16120c;
+  --ink: #ece4d2;
+  --muted: #b3a88f;
+  --rule: #726751;
+  --open: #93c18c;
+  --caution: #d6a748;
+  --closed: #e2907a;
+  --unreported: #b3a88f;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --type-lg: clamp(1.5rem, 1.15rem + 2vw, 1.875rem);
+  --type-md: 1rem;
+  --type-sm: 0.8125rem;
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 1rem;
+  --sp-4: 1.75rem;
+  --sp-5: 2.75rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+  animation: settle 0.5s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(6px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+header, main, footer {
+  max-width: 42rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+/* Masthead */
+
+header {
+  padding-top: clamp(1.5rem, 6vw, 3rem);
+  padding-bottom: 1.25rem;
+  text-align: center;
+  border-bottom: 4px double var(--ink);
+}
+
+.kicker {
+  margin: 0 0 var(--sp-2);
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0;
+  font-size: var(--type-lg);
+  font-weight: 700;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.logdate {
+  margin: var(--sp-2) 0 0;
+  font-style: italic;
+}
+
+.asof {
+  margin: var(--sp-1) 0 0;
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+/* Summary */
+
+.summary {
+  margin: var(--sp-4) 0 0;
+}
+
+/* Sections */
+
+section { margin-top: var(--sp-5); }
+
+h2 {
+  margin: 0 0 var(--sp-3);
+  padding-bottom: 0.375rem;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h3 {
+  margin: var(--sp-4) 0 var(--sp-1);
+  font-size: var(--type-md);
+  font-weight: 700;
+}
+
+.meta {
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+/* Stamps */
+
+.stamp {
+  display: inline-block;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.16em;
+  padding: 0.32em 0.42em 0.3em 0.58em;
+  border: 1.5px solid currentColor;
+  transform: rotate(-2deg);
+  white-space: nowrap;
+}
+
+.entry:nth-child(even) .stamp { transform: rotate(-1.2deg); }
+
+.is-open       { color: var(--open); }
+.is-caution    { color: var(--caution); }
+.is-closed     { color: var(--closed); }
+.is-unreported { color: var(--unreported); }
+
+/* Notice */
+
+.notice-line { margin: var(--sp-3) 0 var(--sp-1); }
+.notice-line strong { margin-left: var(--sp-2); }
+section p { margin: 0.375rem 0; }
+
+/* The ledger */
+
+.ledger {
+  list-style: none;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.entry {
+  display: grid;
+  grid-template-columns: 7.5rem minmax(0, 1fr);
+  column-gap: var(--sp-3);
+  padding: 0.875rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.entry.group-start {
+  margin-top: 0.625rem;
+  border-top: 1px solid var(--rule);
+}
+
+.stampcell { margin: 0.1rem 0 0; }
+
+.record-top {
+  display: flex;
+  align-items: baseline;
+  align-items: last baseline;
+  gap: var(--sp-2);
+}
+
+.trail {
+  margin: 0;
+  min-width: 0;
+  font-size: var(--type-md);
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.leader {
+  flex: 1 1 1rem;
+  min-width: 1rem;
+  border-bottom: 1px dotted var(--rule);
+  align-self: flex-end;
+  margin-bottom: 0.3em;
+}
+
+.dist {
+  margin: 0;
+  white-space: nowrap;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.hazard { margin: var(--sp-1) 0 0; }
+
+.entry .meta { margin: var(--sp-1) 0 0; }
+
+.unknown { font-style: italic; }
+
+@media (max-width: 480px) {
+  .entry {
+    grid-template-columns: minmax(0, 1fr);
+    row-gap: var(--sp-1);
+    padding: var(--sp-3) 0;
+  }
+}
+
+/* Conditions */
+
+.wx {
+  list-style: none;
+  margin: var(--sp-2) 0 0;
+  padding: 0;
+  border-top: 1px solid var(--rule);
+}
+
+.wx li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.75rem;
+  padding: 0.375rem 0;
+  border-bottom: 1px solid var(--rule);
+  font-size: var(--type-sm);
+}
+
+.wxdate {
+  min-width: 3.4rem;
+  font-family: var(--sans);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+.wxdata {
+  margin-left: auto;
+  white-space: nowrap;
+  color: var(--muted);
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+.gap {
+  font-style: italic;
+  color: var(--muted);
+}
+
+/* Sign-off */
+
+footer {
+  margin-top: var(--sp-5);
+  padding-top: var(--sp-3);
+  padding-bottom: var(--sp-5);
+  text-align: center;
+  border-top: 4px double var(--ink);
+}
+
+footer .meta { margin: 0; }
+
+.sig {
+  margin: var(--sp-1) 0 0;
+  font-style: italic;
+}
+
+/* Skip link + focus */
+
+.skip {
+  position: absolute;
+  left: -99rem;
+  top: 1rem;
+  z-index: 2;
+  padding: 0.625rem 0.875rem;
+  background: var(--paper);
+  color: var(--ink);
+  border: 1px solid var(--ink);
+  font-family: var(--sans);
+  font-size: var(--type-md);
+  text-decoration: none;
+}
+
+.skip:focus { left: 1rem; }
+
+a:focus-visible {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#log">Skip to the trail log</a>
+
+<header>
+  <p class="kicker">Trail conditions — daily log</p>
+  <h1>Kestrel Ridge Open Space</h1>
+  <p class="logdate">Morning log — July 26, 2026</p>
+  <p class="asof">Posted 6:00 PM, Jul 26.</p>
+</header>
+
+<main id="log">
+  <p class="summary"><strong>3 of 9 trails open this morning</strong> — 2 with caution, 2 closed for the burn, 2 without a report.</p>
+
+  <section aria-labelledby="notice-h">
+    <h2 id="notice-h">Ranger's notice</h2>
+    <p class="notice-line"><span class="stamp is-closed">CLOSURE</span> <strong>Controlled burn — east ridge</strong></p>
+    <p>Juniper Loop and Redtail Spur are closed for a scheduled controlled burn.</p>
+    <p class="meta">In effect 6:00 AM, Jul 25 through 8:00 PM, Jul 28 · notice A-114.</p>
+    <p class="meta">Log continues below.</p>
+  </section>
+
+  <section aria-labelledby="trails-h">
+    <h2 id="trails-h">Trail log</h2>
+    <p class="meta">Entered open first, then caution, then closed, then trails without a report.</p>
+    <ul class="ledger">
+      <li class="entry" data-model="T-01">
+        <p class="stampcell"><span class="stamp is-open">OPEN</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Kestrel Summit Trail</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">7.4 km</p>
+          </div>
+          <p class="meta">Surface dry · last report 7:10 AM, Jul 26 · entry T-01.</p>
+        </div>
+      </li>
+      <li class="entry" data-model="T-05">
+        <p class="stampcell"><span class="stamp is-open">OPEN</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Old Quarry Track</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">3.3 km</p>
+          </div>
+          <p class="meta">Surface loose gravel · last report 7:05 AM, Jul 26 · entry T-05.</p>
+        </div>
+      </li>
+      <li class="entry" data-model="T-06">
+        <p class="stampcell"><span class="stamp is-open">OPEN</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Larkspur Meadow Loop</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">2.8 km</p>
+          </div>
+          <p class="hazard">Ground-nesting birds through August — dogs on leash.</p>
+          <p class="meta">Surface dry · last report 6:55 AM, Jul 26 · entry T-06.</p>
+        </div>
+      </li>
+      <li class="entry group-start" data-model="T-04">
+        <p class="stampcell"><span class="stamp is-caution">CAUTION</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Millbrook Creek Path</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">5.6 km</p>
+          </div>
+          <p class="hazard">Two footbridges flooded at the crossing; passable with care.</p>
+          <p class="meta">Surface muddy · last report 6:40 AM, Jul 26 · entry T-04.</p>
+        </div>
+      </li>
+      <li class="entry" data-model="T-08">
+        <p class="stampcell"><span class="stamp is-caution">CAUTION</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Basalt Steps</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">1.2 km</p>
+          </div>
+          <p class="hazard">Slick steps after yesterday's rain.</p>
+          <p class="meta">Surface wet rock · last report 6:20 AM, Jul 26 · entry T-08.</p>
+        </div>
+      </li>
+      <li class="entry group-start" data-model="T-02">
+        <p class="stampcell"><span class="stamp is-closed">CLOSED</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Juniper Loop</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">4.1 km</p>
+          </div>
+          <p class="hazard">Controlled burn area (alert A-114).</p>
+          <p class="meta">Last report 5:45 AM, Jul 25 · entry T-02.</p>
+        </div>
+      </li>
+      <li class="entry" data-model="T-03">
+        <p class="stampcell"><span class="stamp is-closed">CLOSED</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Redtail Spur</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">1.9 km</p>
+          </div>
+          <p class="hazard">Controlled burn area (alert A-114).</p>
+          <p class="meta">Last report 5:45 AM, Jul 25 · entry T-03.</p>
+        </div>
+      </li>
+      <li class="entry group-start" data-model="T-07">
+        <p class="stampcell"><span class="stamp is-unreported">NO REPORT</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">Hollow Pine Traverse</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">9.2 km</p>
+          </div>
+          <p class="meta unknown">No report received — condition unknown · entry T-07.</p>
+        </div>
+      </li>
+      <li class="entry" data-model="T-09">
+        <p class="stampcell"><span class="stamp is-unreported">NO REPORT</span></p>
+        <div>
+          <div class="record-top">
+            <h3 class="trail">North Fence Line</h3>
+            <span class="leader" aria-hidden="true"></span>
+            <p class="dist">6.0 km</p>
+          </div>
+          <p class="meta unknown">No report received — condition unknown · entry T-09.</p>
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="cond-h">
+    <h2 id="cond-h">Conditions</h2>
+
+    <h3>Snowpack</h3>
+    <p>Kestrel Ridge upper station — snow depth 0 cm <span class="stamp is-unreported">ESTIMATED</span></p>
+    <p class="meta">Sensor offline since Jul 19, 2026; value estimated from the valley station.</p>
+
+    <h3>Past seven days</h3>
+    <ul class="wx">
+      <li><span class="wxdate">Jul 20</span> <span>dry</span> <span class="wxdata">high 29°C · 0 mm precip</span></li>
+      <li><span class="wxdate">Jul 21</span> <span>dry</span> <span class="wxdata">high 31°C · 0 mm precip</span></li>
+      <li><span class="wxdate">Jul 22</span> <em class="gap">no report received — not recorded.</em></li>
+      <li><span class="wxdate">Jul 23</span> <span>light rain</span> <span class="wxdata">high 24°C · 6 mm precip</span></li>
+      <li><span class="wxdate">Jul 24</span> <span>dry</span> <span class="wxdata">high 26°C · 0 mm precip</span></li>
+      <li><span class="wxdate">Jul 25</span> <span>heavy rain</span> <span class="wxdata">high 22°C · 18 mm precip</span></li>
+      <li><span class="wxdate">Jul 26</span> <span>clearing</span> <span class="wxdata">high 25°C · 1 mm precip</span></li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p class="meta">End of log — generated 6:00 PM, Jul 26, 2026.</p>
+  <p class="sig">Kestrel Ridge Open Space</p>
+</footer>
+</body>
+</html>

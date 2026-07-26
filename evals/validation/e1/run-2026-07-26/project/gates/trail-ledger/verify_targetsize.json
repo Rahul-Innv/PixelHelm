@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-26T21:59:26.398Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/trail-ledger/index.html",
+      "measured": 1,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

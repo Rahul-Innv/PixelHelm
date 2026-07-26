@@ -1,0 +1,103 @@
+{
+  "metric": "E2 (e)/(b)/(c) blind protocols",
+  "e_blind_intent": {
+    "fullyCorrectJudges": 5,
+    "of": 5,
+    "thresholdRegistered": 3,
+    "pass": true,
+    "perJudge": {
+      "judge-1": true,
+      "judge-2": true,
+      "judge-3": true,
+      "judge-4": true,
+      "judge-5": true
+    }
+  },
+  "b_layout_class": {
+    "votes": {
+      "trail-ledger": {
+        "list-ledger": 5
+      },
+      "status-board": {
+        "grid-first": 5
+      },
+      "first-light": {
+        "split-hero": 5
+      }
+    },
+    "assigned": {
+      "trail-ledger": [
+        "list-ledger"
+      ],
+      "status-board": [
+        "grid-first"
+      ],
+      "first-light": [
+        "split-hero"
+      ]
+    },
+    "thresholdRegistered": "no two arms share a class",
+    "pass": true
+  },
+  "c_motifs": {
+    "visualVotes": {
+      "trail-ledger": {
+        "3-status-pill-badge-chips": 5
+      },
+      "status-board": {
+        "3-status-pill-badge-chips": 4,
+        "4-card-grid": 5,
+        "7-sparkline-mini-chart": 5,
+        "13-legend-block": 5
+      },
+      "first-light": {
+        "3-status-pill-badge-chips": 5,
+        "9-timeline-strip-calendar": 5,
+        "18-oversized-display-typography": 5
+      }
+    },
+    "vectors": {
+      "trail-ledger": [
+        "3-status-pill-badge-chips"
+      ],
+      "status-board": [
+        "13-legend-block",
+        "3-status-pill-badge-chips",
+        "4-card-grid",
+        "7-sparkline-mini-chart"
+      ],
+      "first-light": [
+        "1-sticky-header",
+        "18-oversized-display-typography",
+        "3-status-pill-badge-chips",
+        "9-timeline-strip-calendar"
+      ]
+    },
+    "pairs": {
+      "trail-ledger vs status-board": {
+        "jaccard": 0.25,
+        "shared": [
+          "3-status-pill-badge-chips"
+        ],
+        "pass": true
+      },
+      "trail-ledger vs first-light": {
+        "jaccard": 0.25,
+        "shared": [
+          "3-status-pill-badge-chips"
+        ],
+        "pass": true
+      },
+      "status-board vs first-light": {
+        "jaccard": 0.143,
+        "shared": [
+          "3-status-pill-badge-chips"
+        ],
+        "pass": true
+      }
+    },
+    "thresholdRegistered": 0.4,
+    "pass": true
+  },
+  "allProtocolsPass": true
+}

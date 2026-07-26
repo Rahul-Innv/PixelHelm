@@ -1,0 +1,60 @@
+{
+  "metric": "E2(d) fingerprint test",
+  "registries": [
+    {
+      "role": "shipped-seed",
+      "path": "../../../../plugins/pixelhelm-lite/seeds/fingerprints-seed.md",
+      "sha256": "bc12f90304df4e4c637d529ddfba4435de2d81c652dd664b8b8a5d148397ab34"
+    },
+    {
+      "role": "live",
+      "path": "~/.claude/pixelhelm/fingerprints.md",
+      "sha256": null,
+      "note": "live registry absent at run time - active registry is the seed alone"
+    }
+  ],
+  "activeEntries": [
+    {
+      "id": "ai-cyan",
+      "signatures": 5
+    },
+    {
+      "id": "ai-purple-grad",
+      "signatures": 4
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "signatures": 5
+    },
+    {
+      "id": "glass-everywhere",
+      "signatures": 3
+    },
+    {
+      "id": "centered-hero-blob",
+      "signatures": 0
+    },
+    {
+      "id": "monotone-metric-grid",
+      "signatures": 0
+    }
+  ],
+  "results": [
+    {
+      "arm": "trail-ledger",
+      "matches": [],
+      "clean": true
+    },
+    {
+      "arm": "status-board",
+      "matches": [],
+      "clean": true
+    },
+    {
+      "arm": "first-light",
+      "matches": [],
+      "clean": true
+    }
+  ],
+  "zeroMatchesAllArms": true
+}
