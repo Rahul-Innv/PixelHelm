@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 7,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 6,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "rationales": {
+    "1": "Every fact and all three counts are present in the no-motion render, but the partially filled rings for counts one and two read ambiguously as a stalled progress bar rather than a deliberately finished illustration. That is a real, if modest, equality-of-experience gap next to the other two candidates' fully resolved static drawings.",
+    "2": "The subhead names the product and audience within the first viewport, but the headline itself, \"Three counts: bag, unfold, water,\" is abstract and doesn't say what this is on its own. Clarity arrives a beat later than the other two candidates.",
+    "3": "The three qualified figures carry the same required caveats as the sealed data demands, plus an extra honest line that the dial itself is not timing the visit. This second disclosure is a nice touch not required by the brief.",
+    "4": "Skip and Play controls are equally visible in the header, and the quoted gate evidence for native scroll and second-visit bypass matches the other two candidates.",
+    "5": "The ring-and-numeral system is clean and holds up in both themes, but the page reads sparser than the other two candidates' fuller illustrations, leaning more on typography than drawn content.",
+    "6": "Budgets are met with comfortable margin, but this candidate posts the weakest numbers of the three, a 964ms mobile LCP and the tightest frame times, even though all remain well inside the ceilings.",
+    "7": "The captures show no visual bag, hull, or water transformation anywhere, only text beside abstract progress rings standing in for the product's actual unfold. On the anti-spectacle test this is the weakest of the three from what the stills show, though the motion-is-real gate and declared clock-as-ornament concept mean a full verdict awaits actual choreography.",
+    "8": "Both declared breaks, the elapsed-time ornament and the jump-link specs, are the only deviations visible. The jump-link break lands softer than declared, since a header specs link exists on all three candidates anyway.",
+    "9": "The dial conceit is clever and self-aware, but as a counting-clock device it reads closer to a generic UX pattern than something only this boat's fold could justify.",
+    "10": "This is the shortest page of the three, with specs one jump away and price visible immediately on return, most directly answering the second-visit concern its own direction intent names."
+  },
+  "inputTranscriptSha256": "9d4c278ebce5e717b79186a236b6b70b1a48c15441c9c9bab83b1c6d9a24ac65",
+  "shuffleSeed": 202607274
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 7,
+    "8": 6,
+    "9": 7,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The no-motion render carries all three steps' full qualified copy and a complete spec table, but the resolved plan-sheet drawing sits only beside Step 1, leaving Steps 2 and 3 without their own visual companion in the static layout.",
+    "2": "The hero headline and subhead name the product, its audience, and the folded/unfolded numbers directly, readable before any scroll.",
+    "3": "All three flagged figures (n=14 median setup, estimated pack volume, certification-pending load rating) carry their qualifiers verbatim in the dimensions table, and price/trial terms are plain.",
+    "4": "Skip control is clearly labeled and sized in the header and the gates confirm native scroll with no rewrite; nothing in the captures suggests hunting is required.",
+    "5": "The technical-drawing register, label typography, and rust accent stay coherent across both themes and viewports, giving a restrained, confident system.",
+    "6": "Best-in-set LCP (280/440ms) and interaction latency (32/64ms) in the measured data; desktop frame-time p95 (16.8ms) sits a hair over the 16.7ms line, a trivial but real miss shared with the other candidates.",
+    "7": "The plan sheet literally resolving from a bag outline into hull line-work most directly stages the bag-to-hull transformation the brief asks for, though a static capture can't confirm how the water beat pays off in motion.",
+    "8": "Both declared breaks (no product shot; dimensions as drawing callouts) are visible, but a fully conventional 'Dimensions and materials' spec table also appears later on the page, in tension with the declared 'not as a spec table' break.",
+    "9": "Copy stays plain and boat-specific ('lives under your bed,' 'six creases, one tension lever') without launch-page hype-idiom.",
+    "10": "The second-visit gate confirms an instant static return with price visible, though reaching it still means passing the full three-step narrative section first."
+  },
+  "inputTranscriptSha256": "a53a1d3703a6bb8eb23e4431895d0d64fdedbf9b8d2178680e40c52b9a5853c0",
+  "shuffleSeed": 202607273
+}

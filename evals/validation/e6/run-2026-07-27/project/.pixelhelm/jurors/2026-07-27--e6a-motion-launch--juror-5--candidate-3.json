@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "All facts and caveats are present with nothing hidden, but the progress-ring graphic is frozen at a small, similarly-sized arc for both step 1 and step 2 in the static renders, which reads as ambiguous without the countdown motion to explain it.",
+    "2": "The hero names the product, audience, and the page's three-beat structure clearly, though it leans on structure more than a concrete size claim to establish value.",
+    "3": "All three flagged figures carry their caveats in the specs grid, and the setup-time card adds an extra honesty note clarifying the dial itself isn't timing the visitor.",
+    "4": "Skip is the most visually emphasized button of the three candidates, and separate Specs/Price jump links add further pacing control beyond the skip mechanism.",
+    "5": "The numeral-and-ring system is clean and consistent across both themes, with the accent hue shifting from olive to lime to hold contrast in dark mode. The three count sections carry a lot of empty vertical space that makes the page feel sparser than the other two.",
+    "6": "Payload and JS are tiny and CLS is zero, but this candidate has the highest desktop and mobile frame times of the three and the highest mobile LCP, still well inside budget but with the least headroom.",
+    "7": "Tying the clock motif to the setup-time claim cleverly makes the proof and the pitch the same object, but the bag-to-hull transformation itself is represented abstractly through numbers and a ring rather than a drawing of the boat. A still frame can't confirm how the ring animates, so this is scored on concept fit more than visual evidence.",
+    "8": "The numeral/ring ornament replacing a hero image is executed as declared, but the second break is softened since the specs section is still reachable by ordinary scrolling in the captures, not only by the jump link.",
+    "9": "The copy is specific with a nice self-aware honesty moment about the dial being ornamental, tightly bound to this candidate's clock-as-proof concept.",
+    "10": "This candidate is built explicitly around instant specs/price access — separate jump links for each and only three narrative screens — which most directly answers the second-visit criterion."
+  },
+  "inputTranscriptSha256": "331ab11de1f3d0b8e1f3756bb6551dad78539e63825bbe11dd4cfecc83bd94e9",
+  "shuffleSeed": 202607275
+}

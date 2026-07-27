@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 6,
+    "7": 3,
+    "8": 7,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The no-motion renders carry all three counts, the dial captions, specs and price laid out exactly as they appear in the motion set, so a reduced-motion visitor loses nothing.",
+    "2": "The headline 'Three counts: bag, unfold, water' plus a subhead naming city commuters and small-flat dwellers states what this is and who it's for in the first viewport.",
+    "3": "The n=14 median, CAD-estimated volume, and certification-pending load are all present, plus a self-aware line clarifying 'the dial is an ornament and is not timing your visit.'",
+    "4": "Skip/Play sit as clear header buttons at 124x36px and the runtime gates confirm native scroll with no rewrite, matching the other two candidates.",
+    "5": "The two-column beat-plus-dial layout is disciplined and consistent across light and dark, though the abstract rings are a fairly generic visual device.",
+    "6": "Desktop frame time (17.1ms) is the furthest over the 16.7ms budget and LCP is the slowest of the three (364/964ms), though still comfortably inside the 2500ms ceiling.",
+    "7": "Across all eight renders there is no visual bag or hull at all — the 'motion' is a counting dial rather than a demonstration of the fold, which is a real departure from a bag-to-hull argument even granting that stills can't show choreography.",
+    "8": "Only the two declared breaks (ornament-as-hero, jump-link specs) are visible; the buy/read mechanics stay conventional throughout.",
+    "9": "Lines like 'the clock runs beside them' are specific to this exact device and avoid hype-idiom, though the voice leans toward describing its own structure rather than the boat.",
+    "10": "The page is deliberately three screens with persistent Specs/Price jump links, the most explicitly built-for-return-visit structure of the three."
+  },
+  "inputTranscriptSha256": "5977235846f7183e0d100d11612e052af9af06c2b7daae5e0f4ede7d8e2a4fe1",
+  "shuffleSeed": 202607272
+}

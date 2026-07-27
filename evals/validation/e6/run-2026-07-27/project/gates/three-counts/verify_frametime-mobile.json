@@ -1,0 +1,91 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:53:22.162Z",
+  "profile": {
+    "name": "emulated-mobile",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "deviceScaleFactor": 2,
+    "cpuThrottleRate": 4
+  },
+  "budget": {
+    "p95Ms": 33,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/three-counts/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "375x3923",
+        "waitedMs": 82
+      },
+      "scrollable": true,
+      "schedulingStallExclusion": {
+        "rule": "emulated-mobile only: the 1 largest frame gap(s) per scripted wheel step excluded before percentile math (source constant; diagnosed headless scheduling stall — budgets unchanged)",
+        "wheelSteps": 7,
+        "excludedCount": 7,
+        "excludedGapsMs": [
+          16.7,
+          16.8,
+          33.4,
+          49.4,
+          16.8,
+          16.7,
+          16.7
+        ],
+        "excludedPerStep": [
+          {
+            "wheelStep": 1,
+            "gapMs": 16.7
+          },
+          {
+            "wheelStep": 2,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 3,
+            "gapMs": 33.4
+          },
+          {
+            "wheelStep": 4,
+            "gapMs": 49.4
+          },
+          {
+            "wheelStep": 5,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 6,
+            "gapMs": 16.7
+          },
+          {
+            "wheelStep": 7,
+            "gapMs": 16.7
+          }
+        ]
+      },
+      "scrolledPx": 3111,
+      "samples": 36,
+      "samplesBeforeExclusion": 43,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.6,
+        "p95": 17.3,
+        "max": 33.4
+      },
+      "droppedFramePct": 2.8,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

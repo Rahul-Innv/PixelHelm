@@ -1,0 +1,164 @@
+{
+  "tool": "mutant-ritual",
+  "generated": "2026-07-27T16:01:07.696Z",
+  "scratchInsideRepo": false,
+  "runs": [
+    {
+      "arm": "crease-line",
+      "mutant": "M1-FABRICATION",
+      "gate": "Gate A",
+      "lie": "pack volume restated as 140 L, a number that appears nowhere in the sealed file",
+      "expected": "FABRICATION",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "FABRICATION"
+      ],
+      "firstFinding": "invented litres \"140 L\" (=140) not in data or derived constants — …ndently verified. PACK VOLUME 140 L Estimated from CAD. The produ…"
+    },
+    {
+      "arm": "crease-line",
+      "mutant": "M2-VERDICT",
+      "gate": "Gate A",
+      "lie": "the load rating presented as certified: the negation is removed from the pending-certification block",
+      "expected": "VERDICT (un-negated verdict word in a non-positive block)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "un-negated \"certified\" inside non-certified block [data-model=\"loadRatingKg\"] — …n progress, so this figure is certified.…"
+    },
+    {
+      "arm": "crease-line",
+      "mutant": "M3-PROVISIONAL-MARKER",
+      "gate": "Gate A",
+      "lie": "the whole qualifier stripped from the load-rating block, leaving a bare 130 kg with no pending-certification marker and no negation",
+      "expected": "VERDICT (provisional block missing its marker AND its never/not-certified phrase)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "provisional block [data-model=\"loadRatingKg\"] is missing a provisional/unverified marker"
+    },
+    {
+      "arm": "crease-line",
+      "mutant": "M4-MISSING",
+      "gate": "Gate B",
+      "lie": "the n=14 owner-timed basis deleted from the setup-time claim (the anti-deletion floor)",
+      "expected": "MISSING (required content absent)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "MISSING"
+      ],
+      "firstFinding": "required \"step-2-basis\" missing in light: Step 2's time claim carries its n=14 basis"
+    },
+    {
+      "arm": "under-the-bed",
+      "mutant": "M1-FABRICATION",
+      "gate": "Gate A",
+      "lie": "pack volume restated as 140 L, a number that appears nowhere in the sealed file",
+      "expected": "FABRICATION",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "FABRICATION"
+      ],
+      "firstFinding": "invented litres \"140 L\" (=140) not in data or derived constants — …four-part paddle. PACK VOLUME 140 L Estimated from CAD. The produ…"
+    },
+    {
+      "arm": "under-the-bed",
+      "mutant": "M2-VERDICT",
+      "gate": "Gate A",
+      "lie": "the load rating presented as certified: the negation is removed from the pending-certification block",
+      "expected": "VERDICT (un-negated verdict word in a non-positive block)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "un-negated \"certified\" inside non-certified block [data-model=\"loadRatingKg\"] — …n progress, so this figure is certified.…"
+    },
+    {
+      "arm": "under-the-bed",
+      "mutant": "M3-PROVISIONAL-MARKER",
+      "gate": "Gate A",
+      "lie": "the whole qualifier stripped from the load-rating block, leaving a bare 130 kg with no pending-certification marker and no negation",
+      "expected": "VERDICT (provisional block missing its marker AND its never/not-certified phrase)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "provisional block [data-model=\"loadRatingKg\"] is missing a provisional/unverified marker"
+    },
+    {
+      "arm": "under-the-bed",
+      "mutant": "M4-MISSING",
+      "gate": "Gate B",
+      "lie": "the n=14 owner-timed basis deleted from the setup-time claim (the anti-deletion floor)",
+      "expected": "MISSING (required content absent)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "MISSING"
+      ],
+      "firstFinding": "required \"step-2-basis\" missing in light: Step 2's time claim carries its n=14 basis"
+    },
+    {
+      "arm": "three-counts",
+      "mutant": "M1-FABRICATION",
+      "gate": "Gate A",
+      "lie": "pack volume restated as 140 L, a number that appears nowhere in the sealed file",
+      "expected": "FABRICATION",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "FABRICATION"
+      ],
+      "firstFinding": "invented litres \"140 L\" (=140) not in data or derived constants — …4.1 m Waterline. PACK VOLUME 140 L Estimated from CAD. The produ…"
+    },
+    {
+      "arm": "three-counts",
+      "mutant": "M2-VERDICT",
+      "gate": "Gate A",
+      "lie": "the load rating presented as certified: the negation is removed from the pending-certification block",
+      "expected": "VERDICT (un-negated verdict word in a non-positive block)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "un-negated \"certified\" inside non-certified block [data-model=\"loadRatingKg\"] — …n progress, so this figure is certified.…"
+    },
+    {
+      "arm": "three-counts",
+      "mutant": "M3-PROVISIONAL-MARKER",
+      "gate": "Gate A",
+      "lie": "the whole qualifier stripped from the load-rating block, leaving a bare 130 kg with no pending-certification marker and no negation",
+      "expected": "VERDICT (provisional block missing its marker AND its never/not-certified phrase)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "VERDICT"
+      ],
+      "firstFinding": "provisional block [data-model=\"loadRatingKg\"] is missing a provisional/unverified marker"
+    },
+    {
+      "arm": "three-counts",
+      "mutant": "M4-MISSING",
+      "gate": "Gate B",
+      "lie": "the n=14 owner-timed basis deleted from the setup-time claim (the anti-deletion floor)",
+      "expected": "MISSING (required content absent)",
+      "exit": 1,
+      "fired": true,
+      "findingKinds": [
+        "MISSING"
+      ],
+      "firstFinding": "required \"step-2-basis\" missing in light: Step 2's time claim carries its n=14 basis"
+    }
+  ],
+  "allFired": true
+}

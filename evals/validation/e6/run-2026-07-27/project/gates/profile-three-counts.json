@@ -1,0 +1,103 @@
+{
+  "project": "e6a-arm-three-counts",
+  "root": "../arms/three-counts",
+  "_rootRepoRelative": "evals/validation/e6/run-2026-07-27/project/arms/three-counts",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file arm: raw hex is legal only inside the two token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#EFEDE4",
+      "ink": "#131313",
+      "muted": "#4F4F4C",
+      "rule": "#868680",
+      "accent": "#4A5A0B"
+    },
+    "dark": {
+      "paper": "#0E0F0C",
+      "ink": "#EFEFE7",
+      "muted": "#A8A89E",
+      "rule": "#60615A",
+      "accent": "#C6E24A"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "accent",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "campaign",
+  "_register": "marketing launch page; the story IS the unfold, demonstration as pitch (W-02). Motion is archetype-legitimate here (RF-7) but only where it demonstrates the product."
+}

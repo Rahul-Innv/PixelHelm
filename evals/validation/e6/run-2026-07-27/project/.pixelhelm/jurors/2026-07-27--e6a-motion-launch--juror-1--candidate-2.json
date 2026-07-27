@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 9,
+    "6": 8,
+    "7": 8,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion renders carry all three acts with full prose, diagrams, and side-column data plus a closing 'every figure in one place' recap, so the reduced-motion read is arguably the most redundant and complete of the three.",
+    "2": "'A touring kayak that lives under your bed' states the product plainly in the H1, and the subhead lands the audience and their real blocker (storage, not paddling) within the same viewport.",
+    "3": "Every caveat sits in its own labeled aside directly beside the relevant figure, though the side-column placement is a touch more separated from the main copy than an inline treatment.",
+    "4": "Skip is the solid-filled pill against Play's outline, giving pacing control clear visual priority in the persistent header.",
+    "5": "The warm parchment/near-black palette, serif-and-caps pairing, and the recurring door-frame line drawing hold together as one coherent system across both themes and both step counts.",
+    "6": "Mobile frame time has the widest safety margin of the three and LCP is comfortably fast in both viewports. Desktop frame time is only 0.2ms over the 16.7ms budget, a negligible miss.",
+    "7": "Withholding water for two acts and keeping a door/bed reference on screen the whole way down is a literal, well-targeted demonstration of the actual claim — pack small, unfold big, fits your home — and removing the product leaves no reason for the device to exist.",
+    "8": "Both declared breaks (no water until act three, constant domestic scale reference) are exactly what's visible, and the long-scroll narrative structure itself stays a conventional marketing-page shape rather than adding a third, undeclared break.",
+    "9": "Lines like 'the boat was never the problem, where to put it was' and 'the whole trick and also the whole objection you are about to raise' read as written for this specific insight, not recycled category copy.",
+    "10": "A single 'Specs and price' jump link plus the gated second-visit bypass gets a returning visitor to the numbers in one action."
+  },
+  "inputTranscriptSha256": "ea83f02311d57a71772f1d2b6d3c24cc534c9d68420245d206756f6319dc6ea2",
+  "shuffleSeed": 202607271
+}

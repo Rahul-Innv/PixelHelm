@@ -1,0 +1,147 @@
+{
+ "note": "Continuation request summary; full inventory component contents omitted from the committed record (private machine metadata) - bound by sha256 below and by the receipt/admission hashes.",
+ "request_sha256_canonical": "d261c968bb371e2e7f70af1a8c0ad790fdb142a1583694a254b3115c4f6eb87c",
+ "request_id": "pixelhelm-e6a-vireo-fold-motion-launch",
+ "task": {
+  "task_class": "frontend-design",
+  "required_outcomes": [
+   "frontend-design"
+  ],
+  "allowed_scope": {
+   "local_files_only": true,
+   "outward_messages": false,
+   "paid_actions": false,
+   "provider_configuration": false,
+   "provider_use": false,
+   "remote_actions": false,
+   "write_files": true
+  },
+  "surface": "claude-code",
+  "private_data_class": "none",
+  "authorization_required": false,
+  "explicit_browser_choice": false,
+  "intrinsic_visual_testing": false,
+  "risk_class": "medium",
+  "max_discoverable_capabilities": 1,
+  "allow_setup_choice": false,
+  "fixture_scope": false,
+  "requested_route_ids": [
+   "frontend-design"
+  ],
+  "preconditions": {},
+  "selected_path_failed": false,
+  "owner_selected_route_id": "frontend-design"
+ },
+ "candidate_evidence": [
+  {
+   "route_type": "atomic",
+   "route_id": "frontend-design",
+   "canonical_route_id": "frontend-design",
+   "version": null,
+   "task_class_match": true,
+   "covers_required_outcomes": [
+    "frontend-design"
+   ],
+   "necessary_member_roles": [],
+   "task_fit": 5,
+   "context_cost": 2,
+   "expected_cost": 1,
+   "evidence_refs": [
+    "registry/capabilities.json#frontend-design"
+   ],
+   "evidence_fresh": true,
+   "risk_flags": [],
+   "required_scope": {
+    "local_files_only": false,
+    "outward_messages": false,
+    "paid_actions": false,
+    "provider_configuration": false,
+    "provider_use": false,
+    "remote_actions": false,
+    "write_files": false
+   },
+   "required_private_data_class": "none"
+  }
+ ],
+ "inventory": {
+  "schema_version": 1,
+  "accepted_registry_commit": "354046f9627c4a83a2a912e09a656d1871ed6cc4",
+  "state_model_id": "orthogonal-seven-axis-v1",
+  "manifest_algorithm": "sha256-path-hash-manifest-v1",
+  "manifest_fingerprint": "6ef1493691332e372106b652c991a4e9477c869d1a22e10af319845ae533198b"
+ },
+ "inventory_component_hashes": [
+  {
+   "path": "evals/choicegate/inventory-fixtures.json",
+   "sha256": "ceb003f49e389b033655490e0588baf056c2b93683a7007957be8f1a5875ae4a"
+  },
+  {
+   "path": "evals/choicegate/manifest.json",
+   "sha256": "d795d9e4d12ef373fd9c2d0fd9bf3575cd96a9f50f1239c357754229aced54c1"
+  },
+  {
+   "path": "evals/choicegate/routing-cases.json",
+   "sha256": "a22b0a9ef68e9faa67e57f30f5182b44456350c2aa88c12fc3675e5a867b8e6c"
+  },
+  {
+   "path": "registry/bundles.json",
+   "sha256": "62927a2888b50b8194430d089c0ceb99168e31850ad3d31e42d214c327ed2d2b"
+  },
+  {
+   "path": "registry/capabilities.json",
+   "sha256": "f8d34754e68dd9d23686998741b423d4ab297b9c2c407ba31ff027e1d855e144"
+  },
+  {
+   "path": "registry/conflicts.json",
+   "sha256": "15a5198a4e0dee1f4e36c0f0c8d945e7fac782f372e23cb76e41acbd06199e18"
+  },
+  {
+   "path": "registry/dependencies.json",
+   "sha256": "44b4a99854bca406b313ddb64bee2cabbbea637a2cb6b31764f01f1f1f95d4ad"
+  },
+  {
+   "path": "registry/preconditions.json",
+   "sha256": "e93e9e0be91e426b4dc83d4587e82f7e083c06dff1b0e805cb83d8d1dd5f410d"
+  },
+  {
+   "path": "registry/schemas/bundle.schema.json",
+   "sha256": "481ddc3d9a3316faf713e0982fea9fc794a22fe3dfb00da70fa72afaf1126f65"
+  },
+  {
+   "path": "registry/schemas/capability.schema.json",
+   "sha256": "883330c7e58132f6e96b9210f171d074d47d33ff9f961db1a72b3b6c970adbaf"
+  },
+  {
+   "path": "registry/schemas/conflict.schema.json",
+   "sha256": "fded3ff0a65961f1d5d60c2ca187bc26f5af665633e6381253f8da9d260226ca"
+  },
+  {
+   "path": "registry/schemas/dependency.schema.json",
+   "sha256": "cc8c32114b87f4e2d7a687d35c864d216993739de7e2a300c53ac6898e8704c9"
+  },
+  {
+   "path": "registry/schemas/precondition.schema.json",
+   "sha256": "50953c3e6f0ff5cbdf2ee14eaedbb232d12232d74f5db014e4ddf23ca4edaff2"
+  },
+  {
+   "path": "registry/schemas/supersession.schema.json",
+   "sha256": "4edeffaf980b79a77073d510706a09ce88dd30726528686f3d1f9b3d1ba01ebf"
+  },
+  {
+   "path": "registry/state-axes.json",
+   "sha256": "666465eeed8ed37d1d294a23af44a4ffb5e9d11b314406d6e46ca8587bbefbfd"
+  },
+  {
+   "path": "registry/supersessions.json",
+   "sha256": "e79495bea3a7998fc6f120ce476bd99c0e99c72a78266dd96c2d80fb7f0e6d41"
+  }
+ ],
+ "policy": {
+  "policy_version": "choicegate-router-policy/v1",
+  "normal_ceiling": 8,
+  "freshness_policy_id": "accepted-snapshot-explicit-v1",
+  "explicit_owner_approved_setup_paths": [],
+  "policy_sha256": "4260fb0e4a20cf9a5c32365236a0c38f1e0cc13ca924d656c97823d62f81f326"
+ },
+ "prior_receipt_sha256": "d1a442089e73909583e9a909e4590e4dd7ff04691630c735ac88325abd875df1"
+}

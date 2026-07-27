@@ -1,0 +1,47 @@
+{
+  "candidate-1": {
+    "scores": {"1": 9, "2": 9, "3": 9, "4": 8, "5": 7, "6": 9, "7": 9, "8": 9, "9": 9, "10": 8},
+    "rationales": {
+      "1": "The no-motion renders lay out all three steps with complete facts, honesty caveats, and a fully-inked plan-sheet drawing immediately visible. Both viewports and both themes show the identical, complete structure.",
+      "2": "The hero states it's a touring kayak, names the audience, and gives concrete folded/unfolded dimensions in the first paragraph, all readable before any drawing has inked in.",
+      "3": "All three flagged figures carry their required caveats verbatim in the spec grid (n=14 median, CAD-estimated volume, certification-pending load), each sitting directly beneath its number.",
+      "4": "Skip and Play sit side by side in the header at a legible size, and the gate data confirms native scroll is untouched. The mechanics are sound but unremarkable.",
+      "5": "The plan-sheet register is disciplined and consistent across both themes and viewports. A faint duplicate of the header nav text floats unexplained beside the price CTA in both no-motion desktop captures, reading as an artifact rather than a choice.",
+      "6": "Payload and LCP are the best of the three candidates and CLS is zero. Desktop frame time sits a hair over its 16.7ms budget line, but mobile is comfortably clear.",
+      "7": "The motion and no-motion captures show two different fidelities of the same drawing — bare outline versus fully creased hull — consistent with an inking sequence that literally is the fold mechanism. A still frame can't confirm the full choreography, but this is about as tight a coupling of motion to product truth as the format allows.",
+      "8": "Both declared breaks are executed faithfully, and a conventional spec table still exists lower on the page for scanning. Novelty stays contained to the story register without touching the purchase mechanics.",
+      "9": "The copy is plain, factual, and specific to the fold mechanism ('six creases, one tension lever'), reading like a technical explainer rather than marketing copy.",
+      "10": "A header jump link gets returning visitors to specs/price without scrolling the narrative, and the bypass gate confirms the price block is instantly visible on return. The page is still one continuous document to scan past otherwise."
+    }
+  },
+  "candidate-2": {
+    "scores": {"1": 9, "2": 8, "3": 9, "4": 8, "5": 9, "6": 9, "7": 8, "8": 9, "9": 9, "10": 7},
+    "rationales": {
+      "1": "The no-motion renders are the most complete of the three, giving each act its own facts in a side column plus a consolidated recap table. Nothing here depends on animation to be understood.",
+      "2": "The hero names the audience and the storage premise clearly, but leans on an aphoristic line rather than a concrete dimension, so it takes slightly longer to land than a spec-forward hero.",
+      "3": "Every flagged figure appears with its caveat in the act where it's relevant, tying the honesty language to the story instead of quarantining it in a table.",
+      "4": "Skip and Play are both clearly labeled pill buttons in the header, and the gate data confirms native scroll and second-visit bypass work identically to the other candidates.",
+      "5": "The domestic drawings recur at consistent scale across all three acts and both themes, and the teal accent against warm neutrals is handled coherently in light and dark. This is the most visually rich and unified of the three.",
+      "6": "JS payload is the smallest of the three and LCP is comfortably within budget on both viewports. Desktop frame time is marginally over its budget line like the other candidates, not a meaningful gap.",
+      "7": "The declared concept — unfold at hallway scale, door frame as a constant reference — is a strong basis for demonstrating the product's real promise, but the motion and no-motion captures look nearly identical in content, so the stills don't visually confirm a progressive build the way another candidate's do. The runtime motion-is-real gate is the only hard evidence available here.",
+      "8": "Both declared breaks are followed through to Act Three exactly as written, and the CTA/nav/price mechanics remain completely conventional.",
+      "9": "The copy is the most literary and specific of the three ('the whole trick and also the whole objection you are about to raise'), tightly bound to this candidate's storage-not-paddling premise.",
+      "10": "This is also the longest page of the three, so although the header jump link and second-visit bypass gate both work, a returning visitor who skips the link has more narrative to scroll past than on the other two."
+    }
+  },
+  "candidate-3": {
+    "scores": {"1": 8, "2": 8, "3": 9, "4": 9, "5": 8, "6": 8, "7": 7, "8": 8, "9": 8, "10": 9},
+    "rationales": {
+      "1": "All facts and caveats are present with nothing hidden, but the progress-ring graphic is frozen at a small, similarly-sized arc for both step 1 and step 2 in the static renders, which reads as ambiguous without the countdown motion to explain it.",
+      "2": "The hero names the product, audience, and the page's three-beat structure clearly, though it leans on structure more than a concrete size claim to establish value.",
+      "3": "All three flagged figures carry their caveats in the specs grid, and the setup-time card adds an extra honesty note clarifying the dial itself isn't timing the visitor.",
+      "4": "Skip is the most visually emphasized button of the three candidates, and separate Specs/Price jump links add further pacing control beyond the skip mechanism.",
+      "5": "The numeral-and-ring system is clean and consistent across both themes, with the accent hue shifting from olive to lime to hold contrast in dark mode. The three count sections carry a lot of empty vertical space that makes the page feel sparser than the other two.",
+      "6": "Payload and JS are tiny and CLS is zero, but this candidate has the highest desktop and mobile frame times of the three and the highest mobile LCP, still well inside budget but with the least headroom.",
+      "7": "Tying the clock motif to the setup-time claim cleverly makes the proof and the pitch the same object, but the bag-to-hull transformation itself is represented abstractly through numbers and a ring rather than a drawing of the boat. A still frame can't confirm how the ring animates, so this is scored on concept fit more than visual evidence.",
+      "8": "The numeral/ring ornament replacing a hero image is executed as declared, but the second break is softened since the specs section is still reachable by ordinary scrolling in the captures, not only by the jump link.",
+      "9": "The copy is specific with a nice self-aware honesty moment about the dial being ornamental, tightly bound to this candidate's clock-as-proof concept.",
+      "10": "This candidate is built explicitly around instant specs/price access — separate jump links for each and only three narrative screens — which most directly answers the second-visit criterion."
+    }
+  }
+}

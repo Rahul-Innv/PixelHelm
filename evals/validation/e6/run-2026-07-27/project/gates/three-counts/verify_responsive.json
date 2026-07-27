@@ -1,0 +1,41 @@
+{
+  "validator": "verify_responsive",
+  "generated": "2026-07-27T15:50:57.287Z",
+  "widths": [
+    280,
+    320,
+    414
+  ],
+  "targets": [
+    {
+      "target": "arms/three-counts/index.html",
+      "cells": [
+        {
+          "width": 280,
+          "pass": true,
+          "scrollWidth": 280,
+          "clientWidth": 280,
+          "overflowPx": 0,
+          "culprits": []
+        },
+        {
+          "width": 320,
+          "pass": true,
+          "scrollWidth": 320,
+          "clientWidth": 320,
+          "overflowPx": 0,
+          "culprits": []
+        },
+        {
+          "width": 414,
+          "pass": true,
+          "scrollWidth": 414,
+          "clientWidth": 414,
+          "overflowPx": 0,
+          "culprits": []
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 6,
+    "7": 5,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "rationales": {
+    "1": "All three counts carry full qualified copy and a complete specs table with all three flagged figures present; the visual companion is a simple ornament rather than an explanatory diagram, but nothing is missing or degenerate.",
+    "2": "The H1 ('Three counts: bag, unfold, water') names the page's structure rather than the product itself, deferring the product/audience statement to the subhead a line down.",
+    "3": "All three flagged figures carry their qualifiers, and the page goes further by explicitly disclaiming that 'the dial is an ornament and is not timing your visit,' pre-empting confusion its own device risked creating.",
+    "4": "Skip control is present as the prominent filled header button, and the page's short length itself further reduces any need to hunt for pacing control.",
+    "5": "Clean and bold, but leans on a heavier slab-style face for numerals and price against a plainer sans headline, a higher-risk pairing that reads slightly more poster-like than product literature.",
+    "6": "The slowest mobile LCP of the three (964ms, still comfortably under the 2500ms budget) and the largest desktop frame-time overage (17.1ms vs. the 16.7ms line), though the margin is trivial and the reduced-motion fallback is equally graceful.",
+    "7": "The elapsed-time ring is an honest device but visualizes a time metric rather than the physical bag-to-hull-to-water transformation the brief's anti-spectacle test asks the motion to demonstrate; static evidence doesn't fully settle how this reads once running.",
+    "8": "Both declared breaks (elapsed-time ornament in place of a hero image; jump-link specs instead of scrolling) are cleanly executed with no undeclared breaks visible, and purchase mechanics stay conventional.",
+    "9": "Specific and conceptually tight copy ('the pitch and the proof are the same object'), though the counting conceit occasionally reads more like a formal device than boat-specific voice.",
+    "10": "The page is explicitly built short with separate 'Specs' and 'Price' jump links so a returning visitor need not scroll a narrative at all, most directly answering the corpus concern about visit-two friction."
+  },
+  "inputTranscriptSha256": "a53a1d3703a6bb8eb23e4431895d0d64fdedbf9b8d2178680e40c52b9a5853c0",
+  "shuffleSeed": 202607273
+}

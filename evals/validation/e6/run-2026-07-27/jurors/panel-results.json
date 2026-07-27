@@ -1,0 +1,448 @@
+{
+  "aggregation": "per-criterion median of the 5 jurors; overall = median of the 10 criterion medians (registered rule, no means, no weights)",
+  "evidenceLabel": "system-esteem (RF-1/RF-4)",
+  "standingDemotion": "ADVISORY-ONLY. The model judging seat is demoted per evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md and the demotion is not lifted by this run. No quality claim here rests on these scores alone.",
+  "repairDecisionApplied": {
+    "R1": "floor-clean is a precondition for scoring; a non-clean arm is UNSCORED, never scored low",
+    "R2": "gate outputs travelled with the renders in every juror transcript; inputTranscriptSha256 covers them"
+  },
+  "floorStatus": {
+    "crease-line": {
+      "floorClean": true,
+      "missing": [],
+      "failed": []
+    },
+    "under-the-bed": {
+      "floorClean": true,
+      "missing": [],
+      "failed": []
+    },
+    "three-counts": {
+      "floorClean": true,
+      "missing": [],
+      "failed": []
+    }
+  },
+  "arms": {
+    "crease-line": {
+      "status": "SCORED",
+      "criterionScores": {
+        "1": [
+          7,
+          7,
+          8,
+          9,
+          9
+        ],
+        "2": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "6": [
+          7,
+          8,
+          8,
+          9,
+          9
+        ],
+        "7": [
+          7,
+          7,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          6,
+          7,
+          7,
+          7,
+          9
+        ],
+        "9": [
+          7,
+          7,
+          8,
+          9,
+          9
+        ],
+        "10": [
+          7,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 9,
+        "8": 7,
+        "9": 8,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 7,
+      "tier3Signals": [
+        "2",
+        "3",
+        "7"
+      ]
+    },
+    "under-the-bed": {
+      "status": "SCORED",
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "2": [
+          7,
+          8,
+          8,
+          9,
+          9
+        ],
+        "3": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "6": [
+          7,
+          7,
+          8,
+          8,
+          9
+        ],
+        "7": [
+          6,
+          8,
+          8,
+          8,
+          8
+        ],
+        "8": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "9": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          7,
+          7,
+          8,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 8,
+        "7": 8,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8,
+      "tier3Signals": [
+        "1",
+        "3",
+        "5",
+        "8",
+        "9"
+      ]
+    },
+    "three-counts": {
+      "status": "SCORED",
+      "criterionScores": {
+        "1": [
+          7,
+          8,
+          8,
+          8,
+          9
+        ],
+        "2": [
+          6,
+          7,
+          7,
+          8,
+          8
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          9,
+          9
+        ],
+        "5": [
+          7,
+          7,
+          8,
+          8,
+          9
+        ],
+        "6": [
+          6,
+          6,
+          7,
+          7,
+          8
+        ],
+        "7": [
+          3,
+          5,
+          6,
+          6,
+          7
+        ],
+        "8": [
+          7,
+          8,
+          8,
+          8,
+          9
+        ],
+        "9": [
+          7,
+          7,
+          8,
+          8,
+          8
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 6,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 6,
+      "tier3Signals": [
+        "3",
+        "10"
+      ]
+    }
+  },
+  "recordsWritten": [
+    {
+      "juror": "juror-1",
+      "blindLabel": "candidate-1",
+      "arm": "three-counts",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-1",
+      "blindLabel": "candidate-2",
+      "arm": "under-the-bed",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-1",
+      "blindLabel": "candidate-3",
+      "arm": "crease-line",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-2",
+      "blindLabel": "candidate-1",
+      "arm": "three-counts",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-2",
+      "blindLabel": "candidate-2",
+      "arm": "under-the-bed",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-2",
+      "blindLabel": "candidate-3",
+      "arm": "crease-line",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-3",
+      "blindLabel": "candidate-1",
+      "arm": "crease-line",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-3",
+      "blindLabel": "candidate-2",
+      "arm": "under-the-bed",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-3",
+      "blindLabel": "candidate-3",
+      "arm": "three-counts",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-4",
+      "blindLabel": "candidate-1",
+      "arm": "under-the-bed",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-4",
+      "blindLabel": "candidate-2",
+      "arm": "three-counts",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-4",
+      "blindLabel": "candidate-3",
+      "arm": "crease-line",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-5",
+      "blindLabel": "candidate-1",
+      "arm": "crease-line",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-5",
+      "blindLabel": "candidate-2",
+      "arm": "under-the-bed",
+      "exit": 0,
+      "stderr": ""
+    },
+    {
+      "juror": "juror-5",
+      "blindLabel": "candidate-3",
+      "arm": "three-counts",
+      "exit": 0,
+      "stderr": ""
+    }
+  ],
+  "ranking": [
+    {
+      "arm": "under-the-bed",
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8
+    },
+    {
+      "arm": "crease-line",
+      "overallMedian": 8,
+      "minCriterionMedian": 7
+    },
+    {
+      "arm": "three-counts",
+      "overallMedian": 8,
+      "minCriterionMedian": 6
+    }
+  ],
+  "winner": "under-the-bed",
+  "tieInvariant": null,
+  "passBar": {
+    "clause1_gates": "every shipped HARD gate exited 0 on every arm + 12/12 mutant ritual recorded (project/gates, honesty/mutant-ritual/RITUAL.md)",
+    "clause1_met": true,
+    "clause2_noCriterionMedianBelow6": true,
+    "clause3_overallMedianAtLeast8": true,
+    "appliedTo": [
+      "under-the-bed"
+    ],
+    "PASS": true
+  },
+  "passBarReading": "C1 reading per the sealed sheet: a 9+ median is a strong-owner-verify signal, not achieved distinctive excellence. Advisory-only under the standing demotion."
+}

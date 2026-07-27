@@ -1,0 +1,174 @@
+{
+  "validator": "verify_keyboard",
+  "generated": "2026-07-27T15:50:24.831Z",
+  "target": "arms/crease-line/index.html",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "findings": [
+    {
+      "level": "pass",
+      "id": "reverse-order",
+      "msg": "Shift-Tab retraced all 5 stop(s) in exact reverse"
+    }
+  ],
+  "stops": [
+    {
+      "index": 0,
+      "selector": "header.bar > div.wrap > nav.controls > a.jump",
+      "tag": "a",
+      "role": null,
+      "tabindex": null,
+      "name": "Specs and price",
+      "rect": {
+        "x": 795,
+        "y": 12,
+        "w": 105,
+        "h": 36
+      },
+      "visible": true,
+      "inViewport": true,
+      "indicator": {
+        "present": true,
+        "changedProps": [
+          "outlineColor",
+          "outlineOffset",
+          "outlineStyle"
+        ],
+        "caretOnly": false
+      },
+      "refocusOk": true
+    },
+    {
+      "index": 1,
+      "selector": "a#play-ctrl",
+      "tag": "a",
+      "role": null,
+      "tabindex": null,
+      "name": "Play the unfold",
+      "rect": {
+        "x": 913,
+        "y": 12,
+        "w": 123,
+        "h": 36
+      },
+      "visible": true,
+      "inViewport": true,
+      "indicator": {
+        "present": true,
+        "changedProps": [
+          "outlineColor",
+          "outlineOffset",
+          "outlineStyle"
+        ],
+        "caretOnly": false
+      },
+      "refocusOk": true
+    },
+    {
+      "index": 2,
+      "selector": "a#skip-ctrl",
+      "tag": "a",
+      "role": null,
+      "tabindex": null,
+      "name": "Skip the unfold",
+      "rect": {
+        "x": 1036,
+        "y": 12,
+        "w": 124,
+        "h": 36
+      },
+      "visible": true,
+      "inViewport": true,
+      "indicator": {
+        "present": true,
+        "changedProps": [
+          "outlineColor",
+          "outlineOffset",
+          "outlineStyle"
+        ],
+        "caretOnly": false
+      },
+      "refocusOk": true
+    },
+    {
+      "index": 3,
+      "selector": "section.hero > div.wrap.hero-settle > div.hero-actions > a.buy",
+      "tag": "a",
+      "role": null,
+      "tabindex": null,
+      "name": "Order, 1290 EUR",
+      "rect": {
+        "x": 120,
+        "y": 440,
+        "w": 165,
+        "h": 50
+      },
+      "visible": true,
+      "inViewport": true,
+      "indicator": {
+        "present": true,
+        "changedProps": [
+          "outlineColor",
+          "outlineOffset",
+          "outlineStyle"
+        ],
+        "caretOnly": false
+      },
+      "refocusOk": true
+    },
+    {
+      "index": 4,
+      "selector": "section#price > div.wrap > p > a.buy",
+      "tag": "a",
+      "role": null,
+      "tabindex": null,
+      "name": "Order the Vireo Fold",
+      "rect": {
+        "x": 120,
+        "y": 597,
+        "w": 196,
+        "h": 50
+      },
+      "visible": true,
+      "inViewport": true,
+      "indicator": {
+        "present": true,
+        "changedProps": [
+          "outlineColor",
+          "outlineOffset",
+          "outlineStyle"
+        ],
+        "caretOnly": false
+      },
+      "refocusOk": true
+    }
+  ],
+  "reverse": {
+    "match": true,
+    "path": [
+      "a.buy",
+      "a.buy",
+      "a#skip-ctrl",
+      "a#play-ctrl",
+      "a.jump"
+    ],
+    "mismatchAt": null
+  },
+  "enterProbes": [],
+  "measured": 5,
+  "pass": true,
+  "readiness": {
+    "animations": "killed",
+    "samples": 3,
+    "timeoutMs": 5000,
+    "readyState": "complete",
+    "fontsLoaded": true,
+    "layoutSettled": true,
+    "settleFrames": 4,
+    "documentGeometry": "1280x2223",
+    "waitedMs": 47
+  },
+  "traversalEnd": "left-document"
+}

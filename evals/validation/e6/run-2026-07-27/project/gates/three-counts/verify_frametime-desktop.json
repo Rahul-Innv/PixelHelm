@@ -1,0 +1,46 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:53:16.346Z",
+  "profile": {
+    "name": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "cpuThrottleRate": 1
+  },
+  "budget": {
+    "p95Ms": 16.7,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/three-counts/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x3438",
+        "waitedMs": 64
+      },
+      "scrollable": true,
+      "scrolledPx": 2638,
+      "samples": 34,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.7,
+        "p95": 17.1,
+        "max": 33.4
+      },
+      "droppedFramePct": 2.9,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

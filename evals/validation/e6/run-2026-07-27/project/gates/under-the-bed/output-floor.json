@@ -1,0 +1,42 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-27T15:44:31.526Z",
+  "targets": [
+    {
+      "target": "arms/under-the-bed/index.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "pass",
+          "id": "landmark-aux",
+          "msg": "header/nav/footer landmarks present"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 6 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (159 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

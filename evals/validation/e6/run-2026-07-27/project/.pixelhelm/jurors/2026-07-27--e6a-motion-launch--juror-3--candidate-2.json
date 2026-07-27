@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 8,
+    "4": 8,
+    "5": 9,
+    "6": 7,
+    "7": 6,
+    "8": 8,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "Each of the three acts carries its own fully-resolved diagram alongside complete qualified copy, plus a consolidated figures section, so the static page reads as a complete illustrated equivalent rather than a stripped fallback.",
+    "2": "The value proposition is present in the first viewport, but its more literary sentence structure takes slightly longer to parse than a plainer statement would.",
+    "3": "All three flagged figures carry their qualifiers, integrated contextually into each act's own narrative and sidebar rather than clustered only in a footer.",
+    "4": "Skip control is present and, notably, rendered as the more visually prominent filled button in the header, making it easy to find without hunting.",
+    "5": "Three distinct, well-drafted comparison diagrams sharing one persistent scale reference, plus a considered type pairing, stay coherent across both themes and viewports.",
+    "6": "Solid LCP (384/700ms) and frame times (16.9/16.8ms); the same trivial desktop frame-time overage over the 16.7ms budget appears here as in the other candidates.",
+    "7": "The door-frame held at one scale across all three acts is an honest, on-message demonstration of the storage claim, though the diagrams read more as scale comparisons than as the boat itself unfolding.",
+    "8": "Both declared breaks (water withheld to act three; the human-scale reference persisting throughout) are cleanly and consistently executed with no undeclared breaks visible, and purchase mechanics stay conventional.",
+    "9": "Sharp, argumentative copy ('the boat was never the problem. Where to put it was') that could not run on a competitor's page unchanged.",
+    "10": "The same instant-static return guarantee applies, but this is the longest of the three pages and a returning visitor depends on the 'Specs and price' anchor rather than a naturally short scroll."
+  },
+  "inputTranscriptSha256": "a53a1d3703a6bb8eb23e4431895d0d64fdedbf9b8d2178680e40c52b9a5853c0",
+  "shuffleSeed": 202607273
+}

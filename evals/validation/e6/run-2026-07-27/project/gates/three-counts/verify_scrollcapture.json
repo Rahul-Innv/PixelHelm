@@ -1,0 +1,143 @@
+{
+  "validator": "verify_scrollcapture",
+  "generated": "2026-07-27T15:52:41.351Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "deviceScaleFactor": 1,
+  "contract": {
+    "positions": [
+      "0",
+      "25",
+      "50",
+      "75",
+      "100"
+    ],
+    "passes": 2,
+    "animations": "killed",
+    "note": "screenshot hashes attest same-machine/same-session reproduction only; they are not comparable across machines or browser builds"
+  },
+  "targets": [
+    {
+      "target": "arms/three-counts/index.html",
+      "captures": [
+        {
+          "position": "0",
+          "requestedPx": 0,
+          "passes": [
+            {
+              "achievedPx": 0,
+              "stable": true
+            },
+            {
+              "achievedPx": 0,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 0,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "25",
+          "requestedPx": 659.5,
+          "passes": [
+            {
+              "achievedPx": 660,
+              "stable": true
+            },
+            {
+              "achievedPx": 660,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 660,
+          "deltaPx": 0.5,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "50",
+          "requestedPx": 1319,
+          "passes": [
+            {
+              "achievedPx": 1319,
+              "stable": true
+            },
+            {
+              "achievedPx": 1319,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 1319,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "75",
+          "requestedPx": 1978.5,
+          "passes": [
+            {
+              "achievedPx": 1979,
+              "stable": true
+            },
+            {
+              "achievedPx": 1979,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 1979,
+          "deltaPx": 0.5,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "100",
+          "requestedPx": 2638,
+          "passes": [
+            {
+              "achievedPx": 2638,
+              "stable": true
+            },
+            {
+              "achievedPx": 2638,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 2638,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        }
+      ],
+      "violations": [],
+      "pass": true,
+      "readiness": {
+        "animations": "killed",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x3438",
+        "waitedMs": 44
+      },
+      "maxScrollPx": 2638
+    }
+  ],
+  "pass": true
+}

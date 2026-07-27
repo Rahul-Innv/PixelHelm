@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "evals\\validation\\e6\\run-2026-07-27\\project\\parity\\no-js\\three-counts\\index.html",
+  "pass": true,
+  "required": 28,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}
