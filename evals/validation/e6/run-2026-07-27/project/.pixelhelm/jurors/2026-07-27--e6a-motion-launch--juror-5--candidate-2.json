@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 9,
+    "6": 9,
+    "7": 8,
+    "8": 9,
+    "9": 9,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The no-motion renders are the most complete of the three, giving each act its own facts in a side column plus a consolidated recap table. Nothing here depends on animation to be understood.",
+    "2": "The hero names the audience and the storage premise clearly, but leans on an aphoristic line rather than a concrete dimension, so it takes slightly longer to land than a spec-forward hero.",
+    "3": "Every flagged figure appears with its caveat in the act where it's relevant, tying the honesty language to the story instead of quarantining it in a table.",
+    "4": "Skip and Play are both clearly labeled pill buttons in the header, and the gate data confirms native scroll and second-visit bypass work identically to the other candidates.",
+    "5": "The domestic drawings recur at consistent scale across all three acts and both themes, and the teal accent against warm neutrals is handled coherently in light and dark. This is the most visually rich and unified of the three.",
+    "6": "JS payload is the smallest of the three and LCP is comfortably within budget on both viewports. Desktop frame time is marginally over its budget line like the other candidates, not a meaningful gap.",
+    "7": "The declared concept — unfold at hallway scale, door frame as a constant reference — is a strong basis for demonstrating the product's real promise, but the motion and no-motion captures look nearly identical in content, so the stills don't visually confirm a progressive build the way another candidate's do. The runtime motion-is-real gate is the only hard evidence available here.",
+    "8": "Both declared breaks are followed through to Act Three exactly as written, and the CTA/nav/price mechanics remain completely conventional.",
+    "9": "The copy is the most literary and specific of the three ('the whole trick and also the whole objection you are about to raise'), tightly bound to this candidate's storage-not-paddling premise.",
+    "10": "This is also the longest page of the three, so although the header jump link and second-visit bypass gate both work, a returning visitor who skips the link has more narrative to scroll past than on the other two."
+  },
+  "inputTranscriptSha256": "331ab11de1f3d0b8e1f3756bb6551dad78539e63825bbe11dd4cfecc83bd94e9",
+  "shuffleSeed": 202607275
+}

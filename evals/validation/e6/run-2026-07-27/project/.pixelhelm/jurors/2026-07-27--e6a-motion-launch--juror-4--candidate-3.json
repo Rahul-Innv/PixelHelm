@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 7,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion render shows all three steps' text plus one fully inked final plan-sheet drawing and a complete spec grid; nothing reads as partial or degenerate. Equality of experience with the motion set is essentially total.",
+    "2": "The headline states what this is and where it lives, and the fact-dense subhead adds audience and both key dimensions before any motion plays. Clarity is immediate and complete in the first viewport.",
+    "3": "All three qualified figures carry their required caveats in the spec grid, worded to the same substance the sealed data demands. Price and trial terms are stated plainly alongside.",
+    "4": "Skip and Play controls are visible in the header, with Play given the highlighted treatment here rather than Skip, and gate evidence matches the other two candidates for native scroll and bypass.",
+    "5": "The blueprint line-work, leader-line labeling, and single accent color hold together cleanly across both themes, with the dark capture particularly suited to the plan-sheet register.",
+    "6": "This candidate posts the best measured numbers of the three, fastest LCP on both viewports and the lowest interaction latency, while staying inside every stated budget.",
+    "7": "The captures show an actual to-scale line drawing of the folded bag resolving into the hull with crease marks and dimension callouts, the most literal visual demonstration of the fold among the three. Remove the product and there is no plan sheet left to draw, which is the strongest match to the anti-spectacle test the stills can support.",
+    "8": "The no-photo, pure line-work break is fully honored throughout. But a conventional label-value spec table also appears lower on the page despite the declared break stating dimensions would run as drawing callouts \"not as a spec table,\" a minor tension between the stated and observed break.",
+    "9": "\"You watch the boat be explained rather than advertised\" is carried through in genuinely technical, plan-sheet-register copy. No beauty-shot competitor could run this voice unchanged.",
+    "10": "A header specs link and a passing second-visit-bypass gate give instant access to the full spec table and price on return, on par with the other narrative-length candidate."
+  },
+  "inputTranscriptSha256": "9d4c278ebce5e717b79186a236b6b70b1a48c15441c9c9bab83b1c6d9a24ac65",
+  "shuffleSeed": 202607274
+}

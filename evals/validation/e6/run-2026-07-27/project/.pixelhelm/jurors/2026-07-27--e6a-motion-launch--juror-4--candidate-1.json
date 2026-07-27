@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 9,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion parity renders lay out all three acts with every diagram fully drawn and every disclosed figure present, in a layout indistinguishable from the motion set. Equality of experience is essentially total here.",
+    "2": "The first-viewport headline names the product and its living context, and the subhead immediately names the audience and the real problem. Nothing about that clarity depends on motion completing.",
+    "3": "All three qualified figures (n=14 median setup, CAD-estimated volume, certification-pending load) carry their caveats inline and bolded. Price and trial terms sit next to the hero, stated plainly.",
+    "4": "Play and Skip controls sit together in the header across every render, and the quoted gate evidence confirms native scroll, no wheel capture, and a working skip/second-visit bypass.",
+    "5": "A single door-and-bed scale motif recurs across all three acts and holds its line weight and spacing in both light and dark captures. Cinematic and static registers read as one system.",
+    "6": "Budgets are met with wide margin on payload and LCP, though desktop frame time sits essentially at the stated ceiling rather than comfortably under it. No slow-device-specific design beyond the shared reduced-motion floor is described.",
+    "7": "The captures show a literal domestic-scale progression, bag against a door, unfold on the floor, water withheld until act three, that ties directly to the product's carry-and-storage promise. Full choreography can't be confirmed from stills, but what's shown and what's declared both point the same direction.",
+    "8": "Only the two declared breaks are visible: no water in the first two viewports, and a domestic reference object staying on screen throughout. Ordering and navigation mechanics stay conventional around them.",
+    "9": "Lines like \"which is the whole trick and also the whole objection you are about to raise\" are specific to this boat's storage argument. No competitor selling a different fold could run this copy unchanged.",
+    "10": "A header \"Specs and price\" link plus a passing second-visit-bypass gate give a returning visitor the static view with price fully visible immediately, without replaying the narrative."
+  },
+  "inputTranscriptSha256": "9d4c278ebce5e717b79186a236b6b70b1a48c15441c9c9bab83b1c6d9a24ac65",
+  "shuffleSeed": 202607274
+}

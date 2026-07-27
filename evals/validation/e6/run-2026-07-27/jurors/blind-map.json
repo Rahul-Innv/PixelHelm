@@ -1,0 +1,86 @@
+{
+  "armOrderBase": [
+    "crease-line",
+    "under-the-bed",
+    "three-counts"
+  ],
+  "baseSeed": 20260727,
+  "note": "Deterministic LCG shuffle per juror; the seed alone reproduces the order.",
+  "jurors": {
+    "juror-1": {
+      "shuffleSeed": 202607271,
+      "order": [
+        "three-counts",
+        "under-the-bed",
+        "crease-line"
+      ],
+      "labels": {
+        "candidate-1": "three-counts",
+        "candidate-2": "under-the-bed",
+        "candidate-3": "crease-line"
+      },
+      "inputTranscriptSha256": "ea83f02311d57a71772f1d2b6d3c24cc534c9d68420245d206756f6319dc6ea2",
+      "blindedRenderDir": "<scratch>/juror-1"
+    },
+    "juror-2": {
+      "shuffleSeed": 202607272,
+      "order": [
+        "three-counts",
+        "under-the-bed",
+        "crease-line"
+      ],
+      "labels": {
+        "candidate-1": "three-counts",
+        "candidate-2": "under-the-bed",
+        "candidate-3": "crease-line"
+      },
+      "inputTranscriptSha256": "5977235846f7183e0d100d11612e052af9af06c2b7daae5e0f4ede7d8e2a4fe1",
+      "blindedRenderDir": "<scratch>/juror-2"
+    },
+    "juror-3": {
+      "shuffleSeed": 202607273,
+      "order": [
+        "crease-line",
+        "under-the-bed",
+        "three-counts"
+      ],
+      "labels": {
+        "candidate-1": "crease-line",
+        "candidate-2": "under-the-bed",
+        "candidate-3": "three-counts"
+      },
+      "inputTranscriptSha256": "a53a1d3703a6bb8eb23e4431895d0d64fdedbf9b8d2178680e40c52b9a5853c0",
+      "blindedRenderDir": "<scratch>/juror-3"
+    },
+    "juror-4": {
+      "shuffleSeed": 202607274,
+      "order": [
+        "under-the-bed",
+        "three-counts",
+        "crease-line"
+      ],
+      "labels": {
+        "candidate-1": "under-the-bed",
+        "candidate-2": "three-counts",
+        "candidate-3": "crease-line"
+      },
+      "inputTranscriptSha256": "9d4c278ebce5e717b79186a236b6b70b1a48c15441c9c9bab83b1c6d9a24ac65",
+      "blindedRenderDir": "<scratch>/juror-4"
+    },
+    "juror-5": {
+      "shuffleSeed": 202607275,
+      "order": [
+        "crease-line",
+        "under-the-bed",
+        "three-counts"
+      ],
+      "labels": {
+        "candidate-1": "crease-line",
+        "candidate-2": "under-the-bed",
+        "candidate-3": "three-counts"
+      },
+      "inputTranscriptSha256": "331ab11de1f3d0b8e1f3756bb6551dad78539e63825bbe11dd4cfecc83bd94e9",
+      "blindedRenderDir": "<scratch>/juror-5"
+    }
+  }
+}

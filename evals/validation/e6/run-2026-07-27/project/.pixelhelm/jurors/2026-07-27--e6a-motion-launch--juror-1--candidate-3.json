@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 9,
+    "7": 9,
+    "8": 7,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion renders carry every step, every caveated figure, and a full dimensions/price block with nothing missing, though the three steps share one diagram rather than each getting its own illustrated answer.",
+    "2": "The subhead is the most front-loaded of the three, naming the audience and already giving folded and unfolded numbers in the very first paragraph beneath a plain 'touring kayak' headline.",
+    "3": "All three caveats sit directly under their labeled stat in the dimensions grid, reading as tightly and legibly as candidate-1's inline treatment.",
+    "4": "Skip is styled as the plain outlined button while Play carries the solid accent color, making this the one candidate where the pacing-control button is visually secondary, though it still sits in the same fixed header slot and meets the size gate.",
+    "5": "The plan-sheet concept holds up well in the diagram and type system, but a stray strip of nav-sized text ('Specs and price / Play the unfold / Skip the unfold') sits just above the footer in every desktop capture, motion and no-motion, light and dark, reading as an unresolved layout artifact.",
+    "6": "LCP is the fastest of the three in both viewports and desktop frame time has the smallest overage (16.8ms against 16.7ms), at the cost of the largest JS payload — still trivial against the 300KB budget.",
+    "7": "This is the one candidate where the captures themselves show the difference: the motion frame catches the plan-sheet mid-draw with only step one's crease-lines resolved, while the no-motion frame shows the completed hull. That's direct visual evidence the animation is the mechanical explanation of the fold itself, not decoration.",
+    "8": "The no-photography rule is honored strictly throughout, but the declared break claiming dimensions run as 'leader-line callouts, not a spec table' sits oddly next to a very conventional four-column spec table in the Dimensions and Materials section, so the execution doesn't fully commit to its own declared break.",
+    "9": "The clipped, caption-like register ('Plan sheet. Six creases, one tension lever.') is a distinct technical voice that fits the naval-architect framing, if less characterful than candidate-2's prose.",
+    "10": "A 'Specs and price' jump link plus the gated second-visit bypass gets a returning visitor to the numbers quickly, on par with candidate-2."
+  },
+  "inputTranscriptSha256": "ea83f02311d57a71772f1d2b6d3c24cc534c9d68420245d206756f6319dc6ea2",
+  "shuffleSeed": 202607271
+}

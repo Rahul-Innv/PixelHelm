@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Facts are all present per gate, but only one shared plan-sheet diagram sits near step 1 while steps 2 and 3 are text-only with visibly empty space beside them. That is a less-matched visual parity than the per-act diagrams shown by the other candidate that also uses illustration.",
+    "2": "The first viewport states the headline, the intended buyer, and the folded/unfolded key numbers together, the densest and quickest value statement of the three.",
+    "3": "The n=14 median caveat, CAD-estimated volume note, and certification-pending load language all appear together in the dimensions table exactly as required.",
+    "4": "Play/Skip form a clear filled/outlined button pair in the header at a comparable footprint to the other two, and gates confirm the same scroll-control behavior.",
+    "5": "The rust-on-cream/ink blueprint identity is distinctive and carries consistently through both themes, though the single shared diagram leaves a visible whitespace imbalance once the page moves past step 1.",
+    "6": "This candidate has the best measured numbers of the three — fastest LCP (280/440ms) and the smallest desktop frame-time overage (16.8 vs the 16.7ms budget).",
+    "7": "The plan sheet already shows the hull fully resolved even at the step-1-only capture, so it's genuinely unclear from stills whether the creases ink in progressively as the direction intent claims, but what's visible is at least a real bag/hull representation, unlike a page with no product imagery at all.",
+    "8": "The no-photography and leader-line-callout breaks are both honored in the diagram itself; a separate reference table later duplicates the dimensions for lookup, which doesn't contradict the break but softens its 'no spec table' framing.",
+    "9": "The clipped, technical register ('PLAN SHEET. SIX CREASES, ONE TENSION LEVER') fits the naval-architect concept and avoids hype, but reads more like a caption than a fully developed narrative voice.",
+    "10": "A 'Specs and price' link and a full dimensions table give returning visitors fast access, on par with the reference-table approach of the field."
+  },
+  "inputTranscriptSha256": "5977235846f7183e0d100d11612e052af9af06c2b7daae5e0f4ede7d8e2a4fe1",
+  "shuffleSeed": 202607272
+}

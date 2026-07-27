@@ -1,0 +1,47 @@
+{
+  "candidate-1": {
+    "scores": {"1": 9, "2": 7, "3": 9, "4": 9, "5": 9, "6": 7, "7": 6, "8": 9, "9": 8, "10": 9},
+    "rationales": {
+      "1": "The no-motion renders carry the full three-step story, every caveated figure, and the complete specs/price blocks with nothing hidden or truncated. The static rings even encode step-progress on their own, so a reduced-motion visit reads as a complete object, not a stripped fallback.",
+      "2": "The subhead names the product and audience within the same first viewport, but the giant headline 'Three counts: bag, unfold, water' is abstract enough that it takes the second line to know this is a kayak at all.",
+      "3": "The setup-time, pack-volume, and load-rating caveats appear twice — inline in the hero copy and again beside each figure in specs — so the honesty framing is unmissable rather than merely present.",
+      "4": "The skip control is styled as the bolder, solid-color button next to the outlined 'Play' button, which puts pacing control in the visitor's hand before they've committed to anything.",
+      "5": "Spacing and the olive/lime accent are held consistently across light and dark, and the three-step grid reads as one calm system rather than an assembled page.",
+      "6": "Payload and JS are the smallest of the three and LCP is comfortably fast, though desktop frame time (17.1ms) is the furthest of the three past the 16.7ms budget, a small but real miss.",
+      "7": "The declared device — a running numeric readout instead of a hero image — is honest and clever, but as captured it reads closer to an abstract progress dial than a literal bag-to-hull-to-water demonstration. The scroll-linked motion is confirmed real at runtime; the captures just don't visually settle what it depicts.",
+      "8": "Both declared breaks (clock-as-ornament, jump-link specs) are exactly what's on screen, and the surrounding chrome — nav, buttons, CTA — stays completely conventional.",
+      "9": "The clock/count framing and lines like 'the clock runs beside them' are specific to this claim and this boat, with no stock launch-page hype language.",
+      "10": "Explicit 'Specs' and 'Price' jump links in the nav, on top of the gated second-visit price bypass, make this the most direct return path of the three."
+    }
+  },
+  "candidate-2": {
+    "scores": {"1": 9, "2": 9, "3": 8, "4": 9, "5": 9, "6": 8, "7": 8, "8": 9, "9": 9, "10": 8},
+    "rationales": {
+      "1": "The no-motion renders carry all three acts with full prose, diagrams, and side-column data plus a closing 'every figure in one place' recap, so the reduced-motion read is arguably the most redundant and complete of the three.",
+      "2": "'A touring kayak that lives under your bed' states the product plainly in the H1, and the subhead lands the audience and their real blocker (storage, not paddling) within the same viewport.",
+      "3": "Every caveat sits in its own labeled aside directly beside the relevant figure, though the side-column placement is a touch more separated from the main copy than an inline treatment.",
+      "4": "Skip is the solid-filled pill against Play's outline, giving pacing control clear visual priority in the persistent header.",
+      "5": "The warm parchment/near-black palette, serif-and-caps pairing, and the recurring door-frame line drawing hold together as one coherent system across both themes and both step counts.",
+      "6": "Mobile frame time has the widest safety margin of the three and LCP is comfortably fast in both viewports. Desktop frame time is only 0.2ms over the 16.7ms budget, a negligible miss.",
+      "7": "Withholding water for two acts and keeping a door/bed reference on screen the whole way down is a literal, well-targeted demonstration of the actual claim — pack small, unfold big, fits your home — and removing the product leaves no reason for the device to exist.",
+      "8": "Both declared breaks (no water until act three, constant domestic scale reference) are exactly what's visible, and the long-scroll narrative structure itself stays a conventional marketing-page shape rather than adding a third, undeclared break.",
+      "9": "Lines like 'the boat was never the problem, where to put it was' and 'the whole trick and also the whole objection you are about to raise' read as written for this specific insight, not recycled category copy.",
+      "10": "A single 'Specs and price' jump link plus the gated second-visit bypass gets a returning visitor to the numbers in one action."
+    }
+  },
+  "candidate-3": {
+    "scores": {"1": 8, "2": 9, "3": 9, "4": 8, "5": 7, "6": 9, "7": 9, "8": 7, "9": 8, "10": 8},
+    "rationales": {
+      "1": "The no-motion renders carry every step, every caveated figure, and a full dimensions/price block with nothing missing, though the three steps share one diagram rather than each getting its own illustrated answer.",
+      "2": "The subhead is the most front-loaded of the three, naming the audience and already giving folded and unfolded numbers in the very first paragraph beneath a plain 'touring kayak' headline.",
+      "3": "All three caveats sit directly under their labeled stat in the dimensions grid, reading as tightly and legibly as candidate-1's inline treatment.",
+      "4": "Skip is styled as the plain outlined button while Play carries the solid accent color, making this the one candidate where the pacing-control button is visually secondary, though it still sits in the same fixed header slot and meets the size gate.",
+      "5": "The plan-sheet concept holds up well in the diagram and type system, but a stray strip of nav-sized text ('Specs and price / Play the unfold / Skip the unfold') sits just above the footer in every desktop capture, motion and no-motion, light and dark, reading as an unresolved layout artifact.",
+      "6": "LCP is the fastest of the three in both viewports and desktop frame time has the smallest overage (16.8ms against 16.7ms), at the cost of the largest JS payload — still trivial against the 300KB budget.",
+      "7": "This is the one candidate where the captures themselves show the difference: the motion frame catches the plan-sheet mid-draw with only step one's crease-lines resolved, while the no-motion frame shows the completed hull. That's direct visual evidence the animation is the mechanical explanation of the fold itself, not decoration.",
+      "8": "The no-photography rule is honored strictly throughout, but the declared break claiming dimensions run as 'leader-line callouts, not a spec table' sits oddly next to a very conventional four-column spec table in the Dimensions and Materials section, so the execution doesn't fully commit to its own declared break.",
+      "9": "The clipped, caption-like register ('Plan sheet. Six creases, one tension lever.') is a distinct technical voice that fits the naval-architect framing, if less characterful than candidate-2's prose.",
+      "10": "A 'Specs and price' jump link plus the gated second-visit bypass gets a returning visitor to the numbers quickly, on par with candidate-2."
+    }
+  }
+}

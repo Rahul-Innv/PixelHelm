@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion renders lay out all three steps with complete facts, honesty caveats, and a fully-inked plan-sheet drawing immediately visible. Both viewports and both themes show the identical, complete structure.",
+    "2": "The hero states it's a touring kayak, names the audience, and gives concrete folded/unfolded dimensions in the first paragraph, all readable before any drawing has inked in.",
+    "3": "All three flagged figures carry their required caveats verbatim in the spec grid (n=14 median, CAD-estimated volume, certification-pending load), each sitting directly beneath its number.",
+    "4": "Skip and Play sit side by side in the header at a legible size, and the gate data confirms native scroll is untouched. The mechanics are sound but unremarkable.",
+    "5": "The plan-sheet register is disciplined and consistent across both themes and viewports. A faint duplicate of the header nav text floats unexplained beside the price CTA in both no-motion desktop captures, reading as an artifact rather than a choice.",
+    "6": "Payload and LCP are the best of the three candidates and CLS is zero. Desktop frame time sits a hair over its 16.7ms budget line, but mobile is comfortably clear.",
+    "7": "The motion and no-motion captures show two different fidelities of the same drawing — bare outline versus fully creased hull — consistent with an inking sequence that literally is the fold mechanism. A still frame can't confirm the full choreography, but this is about as tight a coupling of motion to product truth as the format allows.",
+    "8": "Both declared breaks are executed faithfully, and a conventional spec table still exists lower on the page for scanning. Novelty stays contained to the story register without touching the purchase mechanics.",
+    "9": "The copy is plain, factual, and specific to the fold mechanism ('six creases, one tension lever'), reading like a technical explainer rather than marketing copy.",
+    "10": "A header jump link gets returning visitors to specs/price without scrolling the narrative, and the bypass gate confirms the price block is instantly visible on return. The page is still one continuous document to scan past otherwise."
+  },
+  "inputTranscriptSha256": "331ab11de1f3d0b8e1f3756bb6551dad78539e63825bbe11dd4cfecc83bd94e9",
+  "shuffleSeed": 202607275
+}

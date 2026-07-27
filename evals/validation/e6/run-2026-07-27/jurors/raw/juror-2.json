@@ -1,0 +1,47 @@
+{
+  "candidate-1": {
+    "scores": {"1": 8, "2": 8, "3": 9, "4": 8, "5": 8, "6": 6, "7": 3, "8": 7, "9": 8, "10": 9},
+    "rationales": {
+      "1": "The no-motion renders carry all three counts, the dial captions, specs and price laid out exactly as they appear in the motion set, so a reduced-motion visitor loses nothing.",
+      "2": "The headline 'Three counts: bag, unfold, water' plus a subhead naming city commuters and small-flat dwellers states what this is and who it's for in the first viewport.",
+      "3": "The n=14 median, CAD-estimated volume, and certification-pending load are all present, plus a self-aware line clarifying 'the dial is an ornament and is not timing your visit.'",
+      "4": "Skip/Play sit as clear header buttons at 124x36px and the runtime gates confirm native scroll with no rewrite, matching the other two candidates.",
+      "5": "The two-column beat-plus-dial layout is disciplined and consistent across light and dark, though the abstract rings are a fairly generic visual device.",
+      "6": "Desktop frame time (17.1ms) is the furthest over the 16.7ms budget and LCP is the slowest of the three (364/964ms), though still comfortably inside the 2500ms ceiling.",
+      "7": "Across all eight renders there is no visual bag or hull at all — the 'motion' is a counting dial rather than a demonstration of the fold, which is a real departure from a bag-to-hull argument even granting that stills can't show choreography.",
+      "8": "Only the two declared breaks (ornament-as-hero, jump-link specs) are visible; the buy/read mechanics stay conventional throughout.",
+      "9": "Lines like 'the clock runs beside them' are specific to this exact device and avoid hype-idiom, though the voice leans toward describing its own structure rather than the boat.",
+      "10": "The page is deliberately three screens with persistent Specs/Price jump links, the most explicitly built-for-return-visit structure of the three."
+    }
+  },
+  "candidate-2": {
+    "scores": {"1": 9, "2": 8, "3": 9, "4": 8, "5": 8, "6": 7, "7": 8, "8": 8, "9": 9, "10": 8},
+    "rationales": {
+      "1": "The no-motion renders carry the full three-act narrative, side-column specs, and a complete recap table with nothing thinned out or hidden.",
+      "2": "The headline 'A touring kayak that lives under your bed' plus a subhead naming the storage-not-paddling objection communicates what and who immediately.",
+      "3": "Every disclosure (n=14 median, CAD-estimated volume, certification-pending load) appears beside its act in a consistent side column.",
+      "4": "Skip/Play sit as clear pill buttons in the header, and the gates confirm the same native-scroll and rewrite-prevention behavior as the other candidates.",
+      "5": "The serif headline, warm neutral palette, and consistent architectural line drawings hold together cleanly across both themes and viewports.",
+      "6": "Desktop frame time (16.9ms) and LCP (384/700ms) sit mid-pack, still well inside budget though not the leader on either measure.",
+      "7": "The line drawings visibly progress from a folded rectangle beside a door frame to an emerging hull to a full waterline diagram at one consistent human scale, so the diagrams alone carry a real bag-to-hull argument independent of animation.",
+      "8": "Only the two declared breaks (water withheld, human-scale reference held constant) are visible; nav, CTA, and reading order stay conventional.",
+      "9": "'The boat was never the problem. Where to put it was' is a sharp, ownable reframing of the buyer's actual objection that no generic competitor page would run unchanged.",
+      "10": "A 'Specs and price' nav link plus a full recap table before price gives returning visitors a fast route back to the numbers."
+    }
+  },
+  "candidate-3": {
+    "scores": {"1": 7, "2": 9, "3": 9, "4": 8, "5": 7, "6": 8, "7": 7, "8": 7, "9": 7, "10": 8},
+    "rationales": {
+      "1": "Facts are all present per gate, but only one shared plan-sheet diagram sits near step 1 while steps 2 and 3 are text-only with visibly empty space beside them. That is a less-matched visual parity than the per-act diagrams shown by the other candidate that also uses illustration.",
+      "2": "The first viewport states the headline, the intended buyer, and the folded/unfolded key numbers together, the densest and quickest value statement of the three.",
+      "3": "The n=14 median caveat, CAD-estimated volume note, and certification-pending load language all appear together in the dimensions table exactly as required.",
+      "4": "Play/Skip form a clear filled/outlined button pair in the header at a comparable footprint to the other two, and gates confirm the same scroll-control behavior.",
+      "5": "The rust-on-cream/ink blueprint identity is distinctive and carries consistently through both themes, though the single shared diagram leaves a visible whitespace imbalance once the page moves past step 1.",
+      "6": "This candidate has the best measured numbers of the three — fastest LCP (280/440ms) and the smallest desktop frame-time overage (16.8 vs the 16.7ms budget).",
+      "7": "The plan sheet already shows the hull fully resolved even at the step-1-only capture, so it's genuinely unclear from stills whether the creases ink in progressively as the direction intent claims, but what's visible is at least a real bag/hull representation, unlike a page with no product imagery at all.",
+      "8": "The no-photography and leader-line-callout breaks are both honored in the diagram itself; a separate reference table later duplicates the dimensions for lookup, which doesn't contradict the break but softens its 'no spec table' framing.",
+      "9": "The clipped, technical register ('PLAN SHEET. SIX CREASES, ONE TENSION LEVER') fits the naval-architect concept and avoids hype, but reads more like a caption than a fully developed narrative voice.",
+      "10": "A 'Specs and price' link and a full dimensions table give returning visitors fast access, on par with the reference-table approach of the field."
+    }
+  }
+}

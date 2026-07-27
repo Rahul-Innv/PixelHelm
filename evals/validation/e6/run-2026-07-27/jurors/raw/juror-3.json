@@ -1,0 +1,47 @@
+{
+  "candidate-1": {
+    "scores": {"1": 7, "2": 8, "3": 8, "4": 8, "5": 8, "6": 7, "7": 7, "8": 6, "9": 7, "10": 7},
+    "rationales": {
+      "1": "The no-motion render carries all three steps' full qualified copy and a complete spec table, but the resolved plan-sheet drawing sits only beside Step 1, leaving Steps 2 and 3 without their own visual companion in the static layout.",
+      "2": "The hero headline and subhead name the product, its audience, and the folded/unfolded numbers directly, readable before any scroll.",
+      "3": "All three flagged figures (n=14 median setup, estimated pack volume, certification-pending load rating) carry their qualifiers verbatim in the dimensions table, and price/trial terms are plain.",
+      "4": "Skip control is clearly labeled and sized in the header and the gates confirm native scroll with no rewrite; nothing in the captures suggests hunting is required.",
+      "5": "The technical-drawing register, label typography, and rust accent stay coherent across both themes and viewports, giving a restrained, confident system.",
+      "6": "Best-in-set LCP (280/440ms) and interaction latency (32/64ms) in the measured data; desktop frame-time p95 (16.8ms) sits a hair over the 16.7ms line, a trivial but real miss shared with the other candidates.",
+      "7": "The plan sheet literally resolving from a bag outline into hull line-work most directly stages the bag-to-hull transformation the brief asks for, though a static capture can't confirm how the water beat pays off in motion.",
+      "8": "Both declared breaks (no product shot; dimensions as drawing callouts) are visible, but a fully conventional 'Dimensions and materials' spec table also appears later on the page, in tension with the declared 'not as a spec table' break.",
+      "9": "Copy stays plain and boat-specific ('lives under your bed,' 'six creases, one tension lever') without launch-page hype-idiom.",
+      "10": "The second-visit gate confirms an instant static return with price visible, though reaching it still means passing the full three-step narrative section first."
+    }
+  },
+  "candidate-2": {
+    "scores": {"1": 9, "2": 7, "3": 8, "4": 8, "5": 9, "6": 7, "7": 6, "8": 8, "9": 8, "10": 7},
+    "rationales": {
+      "1": "Each of the three acts carries its own fully-resolved diagram alongside complete qualified copy, plus a consolidated figures section, so the static page reads as a complete illustrated equivalent rather than a stripped fallback.",
+      "2": "The value proposition is present in the first viewport, but its more literary sentence structure takes slightly longer to parse than a plainer statement would.",
+      "3": "All three flagged figures carry their qualifiers, integrated contextually into each act's own narrative and sidebar rather than clustered only in a footer.",
+      "4": "Skip control is present and, notably, rendered as the more visually prominent filled button in the header, making it easy to find without hunting.",
+      "5": "Three distinct, well-drafted comparison diagrams sharing one persistent scale reference, plus a considered type pairing, stay coherent across both themes and viewports.",
+      "6": "Solid LCP (384/700ms) and frame times (16.9/16.8ms); the same trivial desktop frame-time overage over the 16.7ms budget appears here as in the other candidates.",
+      "7": "The door-frame held at one scale across all three acts is an honest, on-message demonstration of the storage claim, though the diagrams read more as scale comparisons than as the boat itself unfolding.",
+      "8": "Both declared breaks (water withheld to act three; the human-scale reference persisting throughout) are cleanly and consistently executed with no undeclared breaks visible, and purchase mechanics stay conventional.",
+      "9": "Sharp, argumentative copy ('the boat was never the problem. Where to put it was') that could not run on a competitor's page unchanged.",
+      "10": "The same instant-static return guarantee applies, but this is the longest of the three pages and a returning visitor depends on the 'Specs and price' anchor rather than a naturally short scroll."
+    }
+  },
+  "candidate-3": {
+    "scores": {"1": 8, "2": 6, "3": 9, "4": 8, "5": 7, "6": 6, "7": 5, "8": 8, "9": 7, "10": 9},
+    "rationales": {
+      "1": "All three counts carry full qualified copy and a complete specs table with all three flagged figures present; the visual companion is a simple ornament rather than an explanatory diagram, but nothing is missing or degenerate.",
+      "2": "The H1 ('Three counts: bag, unfold, water') names the page's structure rather than the product itself, deferring the product/audience statement to the subhead a line down.",
+      "3": "All three flagged figures carry their qualifiers, and the page goes further by explicitly disclaiming that 'the dial is an ornament and is not timing your visit,' pre-empting confusion its own device risked creating.",
+      "4": "Skip control is present as the prominent filled header button, and the page's short length itself further reduces any need to hunt for pacing control.",
+      "5": "Clean and bold, but leans on a heavier slab-style face for numerals and price against a plainer sans headline, a higher-risk pairing that reads slightly more poster-like than product literature.",
+      "6": "The slowest mobile LCP of the three (964ms, still comfortably under the 2500ms budget) and the largest desktop frame-time overage (17.1ms vs. the 16.7ms line), though the margin is trivial and the reduced-motion fallback is equally graceful.",
+      "7": "The elapsed-time ring is an honest device but visualizes a time metric rather than the physical bag-to-hull-to-water transformation the brief's anti-spectacle test asks the motion to demonstrate; static evidence doesn't fully settle how this reads once running.",
+      "8": "Both declared breaks (elapsed-time ornament in place of a hero image; jump-link specs instead of scrolling) are cleanly executed with no undeclared breaks visible, and purchase mechanics stay conventional.",
+      "9": "Specific and conceptually tight copy ('the pitch and the proof are the same object'), though the counting conceit occasionally reads more like a formal device than boat-specific voice.",
+      "10": "The page is explicitly built short with separate 'Specs' and 'Price' jump links so a returning visitor need not scroll a narrative at all, most directly answering the corpus concern about visit-two friction."
+    }
+  }
+}

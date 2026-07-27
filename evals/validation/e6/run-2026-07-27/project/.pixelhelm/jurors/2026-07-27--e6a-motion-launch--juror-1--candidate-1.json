@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 7,
+    "7": 6,
+    "8": 9,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The no-motion renders carry the full three-step story, every caveated figure, and the complete specs/price blocks with nothing hidden or truncated. The static rings even encode step-progress on their own, so a reduced-motion visit reads as a complete object, not a stripped fallback.",
+    "2": "The subhead names the product and audience within the same first viewport, but the giant headline 'Three counts: bag, unfold, water' is abstract enough that it takes the second line to know this is a kayak at all.",
+    "3": "The setup-time, pack-volume, and load-rating caveats appear twice — inline in the hero copy and again beside each figure in specs — so the honesty framing is unmissable rather than merely present.",
+    "4": "The skip control is styled as the bolder, solid-color button next to the outlined 'Play' button, which puts pacing control in the visitor's hand before they've committed to anything.",
+    "5": "Spacing and the olive/lime accent are held consistently across light and dark, and the three-step grid reads as one calm system rather than an assembled page.",
+    "6": "Payload and JS are the smallest of the three and LCP is comfortably fast, though desktop frame time (17.1ms) is the furthest of the three past the 16.7ms budget, a small but real miss.",
+    "7": "The declared device — a running numeric readout instead of a hero image — is honest and clever, but as captured it reads closer to an abstract progress dial than a literal bag-to-hull-to-water demonstration. The scroll-linked motion is confirmed real at runtime; the captures just don't visually settle what it depicts.",
+    "8": "Both declared breaks (clock-as-ornament, jump-link specs) are exactly what's on screen, and the surrounding chrome — nav, buttons, CTA — stays completely conventional.",
+    "9": "The clock/count framing and lines like 'the clock runs beside them' are specific to this claim and this boat, with no stock launch-page hype language.",
+    "10": "Explicit 'Specs' and 'Price' jump links in the nav, on top of the gated second-visit price bypass, make this the most direct return path of the three."
+  },
+  "inputTranscriptSha256": "ea83f02311d57a71772f1d2b6d3c24cc534c9d68420245d206756f6319dc6ea2",
+  "shuffleSeed": 202607271
+}

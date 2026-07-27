@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e6/PREREG-RUBRIC-motion-launch.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The no-motion renders carry the full three-act narrative, side-column specs, and a complete recap table with nothing thinned out or hidden.",
+    "2": "The headline 'A touring kayak that lives under your bed' plus a subhead naming the storage-not-paddling objection communicates what and who immediately.",
+    "3": "Every disclosure (n=14 median, CAD-estimated volume, certification-pending load) appears beside its act in a consistent side column.",
+    "4": "Skip/Play sit as clear pill buttons in the header, and the gates confirm the same native-scroll and rewrite-prevention behavior as the other candidates.",
+    "5": "The serif headline, warm neutral palette, and consistent architectural line drawings hold together cleanly across both themes and viewports.",
+    "6": "Desktop frame time (16.9ms) and LCP (384/700ms) sit mid-pack, still well inside budget though not the leader on either measure.",
+    "7": "The line drawings visibly progress from a folded rectangle beside a door frame to an emerging hull to a full waterline diagram at one consistent human scale, so the diagrams alone carry a real bag-to-hull argument independent of animation.",
+    "8": "Only the two declared breaks (water withheld, human-scale reference held constant) are visible; nav, CTA, and reading order stay conventional.",
+    "9": "'The boat was never the problem. Where to put it was' is a sharp, ownable reframing of the buyer's actual objection that no generic competitor page would run unchanged.",
+    "10": "A 'Specs and price' nav link plus a full recap table before price gives returning visitors a fast route back to the numbers."
+  },
+  "inputTranscriptSha256": "5977235846f7183e0d100d11612e052af9af06c2b7daae5e0f4ede7d8e2a4fe1",
+  "shuffleSeed": 202607272
+}
