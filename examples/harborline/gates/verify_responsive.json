@@ -1,6 +1,6 @@
 {
   "validator": "verify_responsive",
-  "generated": "2026-07-26T19:59:39.941Z",
+  "generated": "2026-07-27T00:33:59.778Z",
   "widths": [
     280,
     320,
@@ -12,71 +12,19 @@
       "cells": [
         {
           "width": 280,
-          "pass": false,
-          "scrollWidth": 348,
+          "pass": true,
+          "scrollWidth": 280,
           "clientWidth": 280,
-          "overflowPx": 68,
-          "culprits": [
-            {
-              "selector": "body > div.page > div.stations-container > table",
-              "width": 324,
-              "overshootPx": 68
-            },
-            {
-              "selector": "div.page > div.stations-container > table > thead",
-              "width": 324,
-              "overshootPx": 68
-            },
-            {
-              "selector": "div.stations-container > table > thead > tr",
-              "width": 324,
-              "overshootPx": 68
-            },
-            {
-              "selector": "div.page > div.stations-container > table > tbody",
-              "width": 324,
-              "overshootPx": 68
-            },
-            {
-              "selector": "div.stations-container > table > tbody > tr",
-              "width": 324,
-              "overshootPx": 68
-            }
-          ]
+          "overflowPx": 0,
+          "culprits": []
         },
         {
           "width": 320,
-          "pass": false,
-          "scrollWidth": 348,
+          "pass": true,
+          "scrollWidth": 320,
           "clientWidth": 320,
-          "overflowPx": 28,
-          "culprits": [
-            {
-              "selector": "body > div.page > div.stations-container > table",
-              "width": 324,
-              "overshootPx": 28
-            },
-            {
-              "selector": "div.page > div.stations-container > table > thead",
-              "width": 324,
-              "overshootPx": 28
-            },
-            {
-              "selector": "div.stations-container > table > thead > tr",
-              "width": 324,
-              "overshootPx": 28
-            },
-            {
-              "selector": "div.page > div.stations-container > table > tbody",
-              "width": 324,
-              "overshootPx": 28
-            },
-            {
-              "selector": "div.stations-container > table > tbody > tr",
-              "width": 324,
-              "overshootPx": 28
-            }
-          ]
+          "overflowPx": 0,
+          "culprits": []
         },
         {
           "width": 414,
@@ -89,5 +37,5 @@
       ]
     }
   ],
-  "pass": false
+  "pass": true
 }

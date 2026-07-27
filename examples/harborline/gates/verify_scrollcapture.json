@@ -1,6 +1,6 @@
 {
   "validator": "verify_scrollcapture",
-  "generated": "2026-07-26T20:51:28.961Z",
+  "generated": "2026-07-27T00:34:19.084Z",
   "viewport": {
     "width": 1280,
     "height": 800
@@ -134,7 +134,7 @@
         "layoutSettled": true,
         "settleFrames": 4,
         "documentGeometry": "1280x1400",
-        "waitedMs": 62
+        "waitedMs": 58
       },
       "maxScrollPx": 600
     }

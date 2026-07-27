@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Harborline bike-share status board (sample data): station availability, service alerts, and seven-day ridership.">
   <title>Harborline Status Board</title>
   <style>
     /* Token block — verbatim from tokens.css */
@@ -137,6 +138,7 @@
       font-weight: 600;
       margin-bottom: 1rem;
     }
+    .table-scroll { overflow-x: auto; }
     table {
       width: 100%;
       border-collapse: collapse;
@@ -331,10 +333,12 @@
 <body data-theme="light">
 
 <div class="page">
-  <div class="header">
+  <header class="header">
     <h1>Harborline Bike Share</h1>
     <div class="header-meta">Status as of 2026-07-01 18:05 UTC</div>
-  </div>
+  </header>
+
+  <main>
 
   <div class="metrics-row">
     <div class="metric">
@@ -370,7 +374,8 @@
   </div>
 
   <div class="stations-container">
-    <div class="section-title">All Stations (12)</div>
+    <h2 class="section-title">All Stations (12)</h2>
+    <div class="table-scroll">
     <table>
       <thead>
         <tr>
@@ -468,10 +473,11 @@
         </tr>
       </tbody>
     </table>
+    </div>
   </div>
 
   <div class="ridership-container">
-    <div class="section-title">Ridership — Last 7 Days</div>
+    <h2 class="section-title">Ridership — Last 7 Days</h2>
     <div class="chart-bars">
       <div class="bar-group">
         <div class="bar-value">1,391</div>
@@ -518,10 +524,12 @@
     </div>
   </div>
 
-  <div class="footer">
+  </main>
+
+  <footer class="footer">
     Data as of 2026-07-01 18:05 UTC
     <span class="sample-badge">Sample Data</span>
-  </div>
+  </footer>
 </div>
 
 </body>

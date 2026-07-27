@@ -1,6 +1,6 @@
 {
   "validator": "verify_cwv",
-  "generated": "2026-07-26T20:51:42.609Z",
+  "generated": "2026-07-27T00:34:23.052Z",
   "budgets": {
     "lcpMs": 2500,
     "cls": 0.1,
@@ -28,10 +28,10 @@
             "layoutSettled": true,
             "settleFrames": 4,
             "documentGeometry": "1280x1400",
-            "waitedMs": 38
+            "waitedMs": 43
           },
           "metrics": {
-            "lcpMs": 192,
+            "lcpMs": 328,
             "cls": 0,
             "inpProxy": {
               "interactiveElements": 0,
@@ -46,7 +46,7 @@
           "checks": [
             {
               "id": "LCP",
-              "val": "192 ms",
+              "val": "328 ms",
               "budget": "<= 2500 ms",
               "na": false,
               "ok": true
@@ -90,10 +90,10 @@
             "layoutSettled": true,
             "settleFrames": 4,
             "documentGeometry": "375x1699",
-            "waitedMs": 56
+            "waitedMs": 68
           },
           "metrics": {
-            "lcpMs": 388,
+            "lcpMs": 880,
             "cls": 0,
             "inpProxy": {
               "interactiveElements": 0,
@@ -108,7 +108,7 @@
           "checks": [
             {
               "id": "LCP",
-              "val": "388 ms",
+              "val": "880 ms",
               "budget": "<= 2500 ms",
               "na": false,
               "ok": true
