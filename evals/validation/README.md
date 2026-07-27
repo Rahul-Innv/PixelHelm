@@ -65,8 +65,22 @@ merge.
   `PREREG-E5-COMPARATOR-SELECTION-ADDENDUM.md` (two registered queries returned
   degenerate results; amended pre-generation toward stronger comparators).
 - `e6/` — E6-A: the motion-storytelling launch page (Lane-A, original work —
-  owner-directed 2026-07-26). Blocked on E1 review + P1-5 measurement tooling;
-  human comprehension check owner-gated.
+  owner-directed 2026-07-26). **RUN 2026-07-27 — NOT FALSIFIED on every measured
+  limb** (`e6/run-2026-07-27/REPORT.md`): three arms, every shipped HARD gate
+  green on all three, 12/12 mutant ritual, and the complete sealed motion floor
+  (14/14 items) plus every pre-registered budget MEASURED and met in both motion
+  and no-motion modes. One line is carried without reframing: desktop frame-time
+  p95 measured 16.8/16.9/17.1 ms against the registered 16.7 ms budget and passes
+  only via `verify_frametime`'s fixed +1.0 ms jitter allowance. The P1-5
+  precondition was satisfied by Amendment A2. Panel scores are ADVISORY-ONLY
+  under the standing E4 demotion and no claim rests on them; the run also records
+  TWO juror observations verified FALSE against the artifacts (a reported nav
+  strip that is not in the DOM or the captures, and a "empty space" penalty that
+  is a full-page-screenshot artifact of `position: sticky`). Still open: the
+  human comprehension check (n=6) is owner-gated and was NOT run and no
+  model-proxy substitute was run, so the sealed success condition's comprehension
+  clause is untested rather than satisfied; `signoff@1` deliberately unwritten
+  pending owner review.
 - `e4-run-2026-07-26/` — E4: **RUN 2026-07-26/27 — FALSIFIED per its sealed
   criteria** (tau-b 0.632 PASS, inflation +0.625 PASS, plant criterion FAIL:
   a planted real contrast failure won its external set unnoticed by all five
