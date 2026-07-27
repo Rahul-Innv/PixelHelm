@@ -1,6 +1,6 @@
 {
   "validator": "verify_keyboard",
-  "generated": "2026-07-26T20:52:02.981Z",
+  "generated": "2026-07-27T00:34:37.959Z",
   "target": "examples/harborline/status-page.html",
   "viewport": {
     "width": 1280,
@@ -27,7 +27,7 @@
     "layoutSettled": true,
     "settleFrames": 4,
     "documentGeometry": "1280x1400",
-    "waitedMs": 36
+    "waitedMs": 47
   },
   "traversalEnd": "left-document"
 }

@@ -1,6 +1,6 @@
 {
   "validator": "verify_focustrap",
-  "generated": "2026-07-26T19:59:48.452Z",
+  "generated": "2026-07-27T00:34:07.705Z",
   "target": "examples/harborline/status-page.html",
   "findings": [
     {

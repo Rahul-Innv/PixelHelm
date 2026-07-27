@@ -1,0 +1,51 @@
+{
+ "admission_sha256": "56c8354dface02bf2d072e696d5eae6498e39fe99ff5116e25048dc34786b361",
+ "admitted": true,
+ "capability": "frontend-design",
+ "choicegate": {
+  "commit": "7d95e9612d011a577d232cf9a51ba0c1bfab7571",
+  "receipt_sha256": "303210d479e87375700b7f92419bed442239fe2ac01c4f24a0af3d99d494d9cb",
+  "tree": "1d35cb708f880b228d9334c85f4b4c356f0f36d4"
+ },
+ "contract_version": "pixelhelm.choicegate-admission/v1",
+ "edition": "pixelhelm-lite",
+ "family": "pixelhelm-family",
+ "inventory": {
+  "accepted_registry_owner": "plumbline-family",
+  "commit": "354046f9627c4a83a2a912e09a656d1871ed6cc4",
+  "inventory_fingerprint": "6ef1493691332e372106b652c991a4e9477c869d1a22e10af319845ae533198b",
+  "tree": "786171bc52fe6efeefb860f01bb71d4c09ed3504"
+ },
+ "surface": "claude-code",
+ "task": {
+  "allow_setup_choice": false,
+  "allowed_scope": {
+   "local_files_only": true,
+   "outward_messages": false,
+   "paid_actions": false,
+   "provider_configuration": false,
+   "provider_use": false,
+   "remote_actions": false,
+   "write_files": true
+  },
+  "authorization_required": false,
+  "explicit_browser_choice": false,
+  "fixture_id": null,
+  "fixture_scope": false,
+  "intrinsic_visual_testing": false,
+  "max_discoverable_capabilities": 1,
+  "owner_selected_route_id": "frontend-design",
+  "preconditions": {},
+  "private_data_class": "none",
+  "requested_route_ids": [
+   "frontend-design"
+  ],
+  "required_outcomes": [
+   "frontend-design"
+  ],
+  "risk_class": "medium",
+  "selected_path_failed": false,
+  "surface": "claude-code",
+  "task_class": "frontend-design"
+ }
+}

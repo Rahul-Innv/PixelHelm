@@ -482,11 +482,14 @@ class FamilyTests(unittest.TestCase):
         run = self._committed_gate_artifact("verify_responsive.json")
         self.assertEqual("verify_responsive", run["validator"])
         self.assertEqual([280, 320, 414], run["widths"])
-        self.assertFalse(run["pass"])  # honest committed FAIL: the stations table overflows
-        cells = {cell["width"]: cell for cell in run["targets"][0]["cells"]}
-        self.assertFalse(cells[280]["pass"])
-        self.assertIn("table", cells[280]["culprits"][0]["selector"])
-        self.assertTrue(cells[414]["pass"])
+        # The original committed FAIL (stations table overflow at 280/320) was cleared
+        # by the 2026-07-26 repair pass (the table got its own overflow-x container);
+        # the committed record must now show zero page-level overflow at every width.
+        self.assertTrue(run["pass"])
+        for cell in run["targets"][0]["cells"]:
+            self.assertTrue(cell["pass"], cell)
+            self.assertEqual(0, cell["overflowPx"])
+            self.assertEqual([], cell["culprits"])
 
     def test_verify_states_validator_contract(self) -> None:
         self._floor_validator_common("verify_states.mjs", "usage: node verify_states.mjs")
@@ -606,7 +609,7 @@ class FamilyTests(unittest.TestCase):
         self.assertEqual([3, 9, 9, None], out["pcts"])  # nearest-rank: ceil(p/100 * n), empty input -> null
         self.assertEqual(["b", "c"], out["diff"])
 
-    def test_output_floor_gate_blocks_harborline_gaps(self) -> None:
+    def test_output_floor_gate_fires_and_harborline_clears(self) -> None:
         gate = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "output-floor-gate.mjs"
         for edition in ("pixelhelm-full", "pixelhelm-lite"):
             self.assertTrue((ROOT / "plugins" / edition / self.EVALUATE_SCRIPTS / "output-floor-gate.mjs").is_file())
@@ -635,14 +638,16 @@ class FamilyTests(unittest.TestCase):
                 {"landmark-main", "heading-order", "heading-impostor", "meta-description"},
                 fails_of(failed.stdout))
 
+        # The worked example cleared its three original gaps in the 2026-07-26 repair
+        # pass (examples/harborline/repairs/2026-07-26/REPAIR.md); live run and
+        # committed artifact must agree that the floor is now met.
         harborline = command("node", str(gate), "examples/harborline/status-page.html", "--json")
-        self.assertEqual(1, harborline.returncode)
-        live_fails = fails_of(harborline.stdout)
-        self.assertEqual({"landmark-main", "heading-impostor", "meta-description"}, live_fails)
+        self.assertEqual(0, harborline.returncode, harborline.stdout.decode())
+        self.assertEqual(set(), fails_of(harborline.stdout))
         committed = self._committed_gate_artifact("output-floor-gate.json")
-        self.assertFalse(committed["pass"])
+        self.assertTrue(committed["pass"])
         committed_fails = {f["id"] for t in committed["targets"] for f in t["findings"] if f["level"] == "fail"}
-        self.assertEqual(live_fails, committed_fails)
+        self.assertEqual(set(), committed_fails)
 
     def test_judge_record_writer_validates_and_archives(self) -> None:
         records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"

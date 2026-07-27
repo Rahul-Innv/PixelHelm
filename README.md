@@ -157,14 +157,19 @@ Two evidence grades, kept honest on purpose:
   in the markup: three stations with missing telemetry render as "unknown", never
   as zero; a null-data day renders as an explicit gap, and estimated data is
   flagged where it appears.
-- **The floor fires on record.** Every shipped floor validator has a committed run
-  against the Harborline page under `examples/harborline/gates/` — and three of those
-  runs FAIL honestly: the structural output floor (no landmarks, styled-div section
-  titles, no meta description), horizontal overflow at 280/320 px, and — from the
-  behavior-level validators — a frame-time p95 of 83 ms against the 33 ms budget
-  under emulated mid-tier mobile, each an escape the floor caught on its first
-  recorded run. Committed failures are the point: the
-  gates block real defects, and the failing runs are the example's open to-do list.
+- **The floor fires on record — and the loop clears what it catches.** Every
+  shipped floor validator has a committed run against the Harborline page under
+  `examples/harborline/gates/`. Three of those runs originally FAILED honestly
+  (each an escape the floor caught on its first recorded run); a documented repair
+  pass (`examples/harborline/repairs/2026-07-26/`, ChoiceGate-admitted, surgical
+  edits only) then cleared two through the loop — the structural output floor and
+  the 280/320 px overflow — and regenerated every record. The third stays a
+  committed FAIL: emulated-mobile frame-time p95 49.9 ms against the 33 ms budget,
+  with its cause now diagnosed (a throttle-invariant headless frame-scheduling
+  stall — harness/environment, not page cost; the page ships no JS or animations)
+  rather than papered over. Committed failures remain the point: the gates block
+  real defects, and a record is only ever cleared by fixing the page, never by
+  editing the record.
 - **The engine is checkable offline.** The demo above and a 30-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,

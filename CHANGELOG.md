@@ -2,6 +2,24 @@
 
 ## [Unreleased]
 
+Harborline repair pass (2026-07-26):
+
+- Cleared two of the worked example's three honestly-committed gate FAILs through
+  the documented repair loop (ChoiceGate-admitted `pixelhelm-repair` pass, surgical
+  edits only — `examples/harborline/repairs/2026-07-26/REPAIR.md`): the structural
+  output floor (real `header/main/footer` landmarks, real `<h2>` section headings,
+  honest meta description) and the 280/320 px overflow (the stations table got its
+  own `overflow-x` container). All ten committed gate records and the render matrix
+  regenerated against the repaired page; the offline suite's Harborline assertions
+  updated to the new truth (the output-floor gate must now pass live and committed).
+- The third FAIL stands honestly with its cause now diagnosed under a
+  pre-registered protocol: the emulated-mobile frame-time p95 (49.9 ms vs the 33 ms
+  budget) is a throttle-invariant headless frame-scheduling stall — one multi-vsync
+  gap per scripted wheel step, absent at DPR 1 and absent for a plain-text control
+  page, with tracing showing all processes idle during the stall. Harness/
+  environment characteristic, not page-authored cost; the page was deliberately not
+  edited to game the budget.
+
 Validation program (2026-07-26, from the external capability assessment):
 
 - Ran and committed the program's first complete evidenced loop (E1/E2) on a
