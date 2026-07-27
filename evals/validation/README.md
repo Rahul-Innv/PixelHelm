@@ -78,6 +78,22 @@ merge.
   scoring, and panels receive the floor outputs) — see
   `E4-JUDGING-SEAT-REPAIR-DECISION.md`. The demotion stays in force until
   **E4-R** re-runs the sealed protocol with the repair applied and fresh plants.
+- `e4r-run-2026-07-27/` — E4-R: repair (R1+R2) implemented and re-validated;
+  **FALSIFIED on the agreement criterion** (tau-b 0.378 vs >= 0.5 FAIL;
+  inflation +0.875 PASS; plants 4/4 caught PASS), so **the advisory-only
+  demotion STANDS**. The agreement failure had ZERO discordant pairs: the
+  internal panels scored nearly everything at overall median 9.0, tying 8 of
+  12 pairs before the external panel spoke, so the registered statistic had
+  almost nothing left to measure. That score compression is itself the
+  finding — a seat that rates everything 9 is not discriminating — and it
+  matches the owner-calibration result (panel runs 2 to 3 points hot on
+  unfamiliar archetypes). **Any further re-validation must first seal an
+  instrument fix** (e.g. forced strict rankings with no ties on both sides);
+  changing a sealed statistic is an owner decision, never a run-time one.
+  Repair effectiveness is separately evidenced: 4/4 fresh plants in new defect
+  classes were eliminated mechanically before any esteem score existed, and
+  20/20 jurors marked the floor-failing candidate UNSCORED and named the
+  correct gate.
 - `PREREG-E4R-ADDENDUM.md` — E4-R's addendum to the sealed E4 sheet: statistics
   and thresholds carried verbatim and UNCHANGED, plus the four fresh defect
   classes (each distinct from E4's four), the R2 input-set change, and the R1
