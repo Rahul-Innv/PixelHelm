@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\quizzical-borg-aba355\\evals\\validation\\e1\\run-2026-07-26\\pass2-owner-changes\\arm\\trail-ledger\\index.html",
+  "pass": true,
+  "required": 27,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}

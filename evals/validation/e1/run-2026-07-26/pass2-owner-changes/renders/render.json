@@ -1,0 +1,79 @@
+{
+  "generated": "2026-07-27T00:10:00.786Z",
+  "viewports": [
+    {
+      "name": "1440w",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "375w",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 4
+  },
+  "shots": [
+    {
+      "file": "trail-ledger-r2__1440w__light.png",
+      "item": "trail-ledger-r2",
+      "viewport": "1440w",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger-r2__375w__light.png",
+      "item": "trail-ledger-r2",
+      "viewport": "375w",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger-r2__1440w__dark.png",
+      "item": "trail-ledger-r2",
+      "viewport": "1440w",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "trail-ledger-r2__375w__dark.png",
+      "item": "trail-ledger-r2",
+      "viewport": "375w",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

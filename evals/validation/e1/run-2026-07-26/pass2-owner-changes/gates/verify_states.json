@@ -1,0 +1,36 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T00:10:17.391Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "evals/validation/e1/run-2026-07-26/pass2-owner-changes/arm/trail-ledger/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 8,
+          "checked": 8,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 8,
+          "checked": 8,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
