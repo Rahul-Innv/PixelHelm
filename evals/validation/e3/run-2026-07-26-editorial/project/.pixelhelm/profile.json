@@ -1,0 +1,16 @@
+{
+  "project": "e3-editorial-ashcombe",
+  "root": ".",
+  "sourceDirs": ["arms"],
+  "sourceExts": [".html"],
+  "ignore": [],
+  "allowRawColorIn": ["arms/almanac-rail/index.html", "arms/weir-plates/index.html", "arms/two-inks/index.html"],
+  "_rawColorNote": "Single-file arms define their tokens in :root/[data-theme] blocks inside the HTML; raw hexes are legal ONLY inside those token definitions. The soft raw-color walk stays informative; per-arm contrast is HARD-gated from each arm's embedded #token-contract (check-token-contracts.mjs) and per-arm static-gates profiles under gates/.",
+  "tokenModule": null,
+  "ownerInvolvement": "autonomous",
+  "surfaceType": "editorial",
+  "_register": "patient local-paper journalism — concrete, unsensational, place-loving; the data is the story, never decoration. A general reader with no chart literacy, scrolling naturally, understands that the wet season starts later and lands harder; a reader who will not engage charts gets the SAME story from text. The record's own caveats (three missing years, the 1996/1997 instrument change, the unverified 2019 reading, no cause attribution) stay in view wherever the record is used.",
+  "_northStars": "the anti-Snow-Fall test — every device traces to something this dataset actually shows; scroll effects detached from the reporting are the documented failure mode.",
+  "_taste": { "approvedExemplars": [], "rejectedDirections": [], "registerClarifications": [] },
+  "_notes": "E3 editorial validation run project (sealed brief 'The Season That Moved'). Content authority: data/ashcombe-rainfall.json + injected constants in data/derived.json only. Three tournament arms under arms/<name>/index.html, each with its own embedded token contract; chart geometry generated deterministically by scripts/make-charts.mjs."
+}

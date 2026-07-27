@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "arms/weir-plates/index.html",
+  "pass": true,
+  "required": 17,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}

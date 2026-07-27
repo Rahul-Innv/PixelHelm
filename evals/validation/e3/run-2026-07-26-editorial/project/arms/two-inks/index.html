@@ -1,0 +1,519 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Season That Moved — Ashcombe Valley Observer</title>
+<meta name="description" content="The Ashcombe Valley weir's record printed in two inks — umber for the manual-gauge years, blue for the weir years — showing a wet season that now starts about four weeks later and lands harder.">
+<script type="application/json" id="token-contract">
+{"light":{"ground":"#faf6ef","ink":"#29231d","muted":"#655c50","rule":"#877d6e","umber":"#7d4512","blue":"#235a80","gapfill":"#efe8da"},"dark":{"ground":"#171310","ink":"#ece4d8","muted":"#aaa091","rule":"#7b7061","umber":"#d69a5c","blue":"#82b6da","gapfill":"#231d17"},"gatedPairs":[{"fg":"ink","on":["ground","gapfill"],"kind":"text"},{"fg":"muted","on":["ground","gapfill"],"kind":"text"},{"fg":"umber","on":["ground"],"kind":"text"},{"fg":"blue","on":["ground"],"kind":"text"},{"fg":"rule","on":["ground","gapfill"],"kind":"graphic"},{"fg":"umber","on":["ground","gapfill"],"kind":"graphic"},{"fg":"blue","on":["ground","gapfill"],"kind":"graphic"}]}
+</script>
+<style>
+/* Two-inks: umber for the manual-gauge years, blue for the weir years.
+   The method-change disclosure is the page's color system. */
+
+:root {
+  color-scheme: light;
+  --ground: #faf6ef;
+  --ink: #29231d;
+  --muted: #655c50;
+  --rule: #877d6e;
+  --umber: #7d4512;
+  --blue: #235a80;
+  --gapfill: #efe8da;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #171310;
+  --ink: #ece4d8;
+  --muted: #aaa091;
+  --rule: #7b7061;
+  --umber: #d69a5c;
+  --blue: #82b6da;
+  --gapfill: #231d17;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --type-xl: clamp(1.85rem, 1.1rem + 3.4vw, 2.9rem);
+  --type-lg: 1.1875rem;
+  --type-md: 1rem;
+  --type-sm: 0.8125rem;
+  --type-xs: 0.75rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.62;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle { from { opacity: 0; } to { opacity: 1; } }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+header, main, footer {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
+}
+
+a { color: var(--blue); text-decoration: underline; text-underline-offset: 2px; }
+a:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+.g { color: var(--umber); }
+.w { color: var(--blue); }
+
+.inkchip {
+  display: inline-block;
+  width: 0.62em;
+  height: 0.62em;
+  border-radius: 1px;
+  vertical-align: baseline;
+}
+.inkchip.g { background: var(--umber); }
+.inkchip.w { background: var(--blue); }
+
+/* Masthead */
+
+header { padding-top: clamp(1.25rem, 5vw, 2.75rem); text-align: center; }
+
+.kicker {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0.45rem 0 0;
+  font-size: var(--type-xl);
+  font-weight: 700;
+  line-height: 1.12;
+}
+
+.dek {
+  margin: 0.6rem auto 0;
+  max-width: 36rem;
+  font-style: italic;
+  font-size: var(--type-lg);
+  color: var(--muted);
+}
+
+.inkkey {
+  margin: 0.9rem auto 0;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+.inkkey strong { font-weight: 600; }
+
+.rule-double {
+  margin: 1.1rem 0 0;
+  border: 0;
+  border-top: 4px double var(--rule);
+}
+
+.standfirst { margin: 1.1rem 0 0; font-size: 1.0625rem; text-align: left; }
+.standfirst strong { font-weight: 700; }
+
+.caveats {
+  margin: 0.6rem 0 0;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  text-align: left;
+}
+
+main { text-align: left; }
+
+h2 {
+  margin: 2.4rem 0 0.5rem;
+  font-size: 1.1875rem;
+  font-weight: 700;
+}
+
+p { margin: 0.7rem 0 0; }
+
+/* The diptych */
+
+.diptych {
+  margin-top: 1.1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0 2.2rem;
+  position: relative;
+}
+
+.panel { padding-top: 0.2rem; }
+
+.panel h3 {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.panel.then h3 { color: var(--umber); }
+.panel.now h3 { color: var(--blue); }
+
+.panel .era {
+  margin: 0.1rem 0 0;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--muted);
+}
+
+.panel dl { margin: 0.7rem 0 0; }
+
+.panel dt {
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 0.65rem;
+}
+
+.panel dd {
+  margin: 0.1rem 0 0;
+  font-size: 1.0625rem;
+}
+
+.panel.then dd strong { color: var(--umber); }
+.panel.now dd strong { color: var(--blue); }
+
+.panel .instrument {
+  margin-top: 0.8rem;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--muted);
+}
+
+.diptych::before {
+  content: "";
+  position: absolute;
+  inset: 0.2rem auto 0.2rem 50%;
+  border-left: 1px dashed var(--rule);
+}
+
+.seamnote {
+  margin: 1rem 0 0;
+  padding: 0.55rem 0.8rem;
+  border-block: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+.deltas {
+  margin: 0.9rem 0 0;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--ink);
+}
+
+.deltas strong { font-weight: 700; }
+
+@media (max-width: 620px) {
+  .diptych { grid-template-columns: 1fr; gap: 1.2rem; }
+  .diptych::before { display: none; }
+  .panel.now { border-top: 1px dashed var(--rule); padding-top: 1rem; }
+}
+
+/* Drift chart */
+
+figure { margin: 1rem 0 0; }
+
+.chartbox {
+  max-width: 42rem;
+  border: 1px solid var(--rule);
+  border-radius: 2px;
+  padding: 0.9rem 0.9rem 0.5rem;
+}
+
+.chartbox svg { display: block; width: 100%; height: auto; }
+
+figcaption {
+  margin: 0 0 0.7rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+figcaption .chart-name { color: var(--ink); font-weight: 700; }
+
+.axis, .tickline { stroke: var(--rule); stroke-width: 1; }
+.ticklabel, .axislabel { fill: var(--muted); font-family: var(--sans); font-size: 10px; }
+.axislabel { font-style: italic; }
+.meanlabel { fill: var(--ink); font-family: var(--sans); font-size: 10.5px; font-weight: 600; }
+.meanline.g { stroke: var(--umber); stroke-width: 1.7; }
+.meanline.w { stroke: var(--blue); stroke-width: 1.7; }
+.seam { stroke: var(--rule); stroke-width: 1.2; stroke-dasharray: 4 3; }
+.gaprect { fill: var(--gapfill); stroke: var(--rule); stroke-width: 0.8; stroke-dasharray: 3 3; }
+.dot.g { fill: var(--umber); }
+.dot.w { fill: var(--blue); }
+.dot.hollow { fill: none; stroke: var(--blue); stroke-width: 2; }
+.keychip circle { fill: var(--ground); stroke: var(--muted); stroke-width: 1; }
+.keychip text { fill: var(--ink); font-family: var(--sans); font-size: 9px; font-weight: 700; }
+
+.chartnotes {
+  margin: 0.7rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  max-width: 42rem;
+}
+
+.chartnotes li { position: relative; padding-left: 1.7rem; margin-top: 0.45rem; }
+
+.chartnotes .key {
+  position: absolute;
+  left: 0;
+  top: 0.1rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.15rem;
+  height: 1.15rem;
+  border: 1px solid var(--muted);
+  border-radius: 50%;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.chartnotes strong { color: var(--ink); }
+
+/* Quotes */
+
+blockquote {
+  margin: 1.2rem 0 0 0;
+  padding: 0.15rem 0 0.15rem 1rem;
+  font-style: italic;
+  max-width: 36rem;
+}
+
+blockquote.then { border-left: 3px solid var(--umber); }
+blockquote.now { border-left: 3px solid var(--blue); }
+
+blockquote .src {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: var(--type-xs);
+  color: var(--muted);
+}
+
+/* The full record */
+
+.table-scroll { overflow-x: auto; margin-top: 0.9rem; }
+
+.table-scroll:focus-visible { outline: 2px solid var(--blue); outline-offset: 2px; }
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 34rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+caption {
+  text-align: left;
+  font-size: var(--type-sm);
+  color: var(--muted);
+  padding-bottom: 0.5rem;
+}
+
+th, td {
+  text-align: left;
+  padding: 0.32rem 0.75rem 0.32rem 0;
+  border-bottom: 1px solid var(--gapfill);
+  vertical-align: top;
+}
+
+th {
+  font-weight: 600;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+}
+
+tbody th[scope="row"] { font-weight: 700; }
+tbody tr.erag th[scope="row"] { color: var(--umber); }
+tbody tr.eraw th[scope="row"] { color: var(--blue); }
+
+td.num, th.num { text-align: right; white-space: nowrap; }
+.gaprow td { color: var(--muted); }
+.gaprow .gapword { font-weight: 700; letter-spacing: 0.08em; color: var(--ink); }
+.flagcell { color: var(--ink); font-weight: 600; }
+
+.about p { font-size: 0.9375rem; }
+
+footer {
+  margin-top: 2.6rem;
+  padding-block: 1.1rem 2.2rem;
+  border-top: 4px double var(--rule);
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--muted);
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Ashcombe Valley Observer · The weir record</p>
+  <h1>The Season That Moved</h1>
+  <p class="dek">The town weir’s ledger, printed in two inks: what the manual gauge saw, and what the automated weir sees now.</p>
+  <p class="inkkey"><span class="inkchip g" aria-hidden="true"></span> <strong class="g">umber</strong> — the manual-gauge years, 1990–1996 &nbsp;·&nbsp; <span class="inkchip w" aria-hidden="true"></span> <strong class="w">blue</strong> — the weir years, 1997–2023. The ink changes with the instrument, so every comparison carries its caveat with it.</p>
+  <hr class="rule-double">
+</header>
+
+<main>
+  <p class="standfirst"><strong>The valley’s wet season now begins about four weeks later than in the early 1990s, and it lands harder.</strong> In the <span class="g">gauge years</span> 1990–1994 the first sustained rain arrived around September 9 (day 252); across the verified <span class="w">weir years</span> 2018 and 2020–2023 it arrived around October 7 (day 280) — 28 days later. A season that once brought about 606&nbsp;mm now brings about 692&nbsp;mm (up 86&nbsp;mm, or 14%), and the heaviest single day rose from about 43&nbsp;mm to about 72&nbsp;mm.</p>
+  <p class="caveats">Those two figures print in two inks on purpose: the instrument changed after 1996, so every then-and-now comparison on this page crosses from the manual gauge to the automated weir. Three years are missing, one 2019 reading is unverified, and the page describes the shift in this one valley’s record, <a href="#about">not its cause</a>.</p>
+
+  <h2 id="diptych-h2">Then and now</h2>
+  <div class="diptych">
+    <section class="panel then" aria-labelledby="then-h3">
+      <h3 id="then-h3">Then — the gauge years</h3>
+      <p class="era">Average of 1990–1994 · manual gauge, read twice daily</p>
+      <dl>
+        <dt>First sustained rain</dt>
+        <dd><strong>around September 9</strong> — day 252 of the year</dd>
+        <dt>A season’s rain</dt>
+        <dd><strong>about 606&nbsp;mm</strong></dd>
+        <dt>The worst day</dt>
+        <dd><strong>about 43&nbsp;mm</strong></dd>
+      </dl>
+      <p class="instrument">Every umber figure comes from the manual gauge.</p>
+    </section>
+    <section class="panel now" aria-labelledby="now-h3">
+      <h3 id="now-h3">Now — the weir years</h3>
+      <p class="era">Average of 2018 and 2020–2023 · automated weir station</p>
+      <dl>
+        <dt>First sustained rain</dt>
+        <dd><strong>around October 7</strong> — day 280 of the year</dd>
+        <dt>A season’s rain</dt>
+        <dd><strong>about 692&nbsp;mm</strong></dd>
+        <dt>The worst day</dt>
+        <dd><strong>about 72&nbsp;mm</strong></dd>
+      </dl>
+      <p class="instrument">Every blue figure comes from the automated weir; 2019 is excluded — its reading is unverified.</p>
+    </section>
+  </div>
+  <p class="seamnote">The dashed seam between the columns is the same seam that runs through every chart below: readings through 1996 were made by hand at the gauge; from 1997 the weir station recorded itself. The comparison is honest only with that change in view.</p>
+  <p class="deltas">The difference, ink to ink: <strong>28 days later</strong> · <strong>86&nbsp;mm more a season</strong> · <strong>29&nbsp;mm more on the worst day</strong>.</p>
+
+  <h2 id="drift-h2">The drift, year by year</h2>
+  <figure>
+    <figcaption><span class="chart-name" id="drift-name">When each season began, 1990–2023, in two inks.</span> Umber dots (manual gauge) sit low on the calendar, most opening in mid-September; blue dots (automated weir) climb toward October — the era rules sit 28 days apart, around September 9 then and around October 7 now. The shaded bands are the three missing years; the hollow dot is 2019, whose record is unverified.</figcaption>
+    <div class="chartbox">
+      <svg viewBox="0 0 400 240" role="img" aria-labelledby="drift-name" preserveAspectRatio="xMidYMid meet"><rect class="gaprect" x="123.5" y="14" width="10.7" height="200"/><rect class="gaprect" x="176.6" y="14" width="21.2" height="200"/><line class="seam" x1="112.9" y1="14" x2="112.9" y2="214"/><line class="axis" x1="44" y1="14" x2="44" y2="214"/><line class="axis" x1="44" y1="214" x2="394" y2="214"/><line class="tickline" x1="41" y1="214" x2="44" y2="214"/><text class="ticklabel" x="39" y="217" text-anchor="end">Sep 1</text><line class="tickline" x1="41" y1="150.4" x2="44" y2="150.4"/><text class="ticklabel" x="39" y="153.4" text-anchor="end">Sep 15</text><line class="tickline" x1="41" y1="77.6" x2="44" y2="77.6"/><text class="ticklabel" x="39" y="80.6" text-anchor="end">Oct 1</text><line class="tickline" x1="41" y1="14" x2="44" y2="14"/><text class="ticklabel" x="39" y="17" text-anchor="end">Oct 15</text><line class="tickline" x1="44" y1="214" x2="44" y2="217"/><text class="ticklabel" x="44" y="228" text-anchor="middle">1990</text><line class="tickline" x1="150.1" y1="214" x2="150.1" y2="217"/><text class="ticklabel" x="150.1" y="228" text-anchor="middle">2000</text><line class="tickline" x1="256.1" y1="214" x2="256.1" y2="217"/><text class="ticklabel" x="256.1" y="228" text-anchor="middle">2010</text><line class="tickline" x1="362.2" y1="214" x2="362.2" y2="217"/><text class="ticklabel" x="362.2" y="228" text-anchor="middle">2020</text><text class="axislabel" x="50" y="10" text-anchor="start">first sustained rain</text><line class="meanline g" x1="44" y1="177.6" x2="86.4" y2="177.6"/><line class="meanline w" x1="341" y1="50.4" x2="394" y2="50.4"/><circle class="dot g" cx="44" cy="182.2" r="3.2"/><circle class="dot g" cx="54.6" cy="195.8" r="3.2"/><circle class="dot g" cx="65.2" cy="164" r="3.2"/><circle class="dot g" cx="75.8" cy="191.3" r="3.2"/><circle class="dot g" cx="86.4" cy="154.9" r="3.2"/><circle class="dot g" cx="97" cy="177.6" r="3.2"/><circle class="dot g" cx="107.6" cy="145.8" r="3.2"/><circle class="dot w" cx="118.2" cy="168.5" r="3.2"/><circle class="dot w" cx="139.5" cy="150.4" r="3.2"/><circle class="dot w" cx="150.1" cy="136.7" r="3.2"/><circle class="dot w" cx="160.7" cy="159.5" r="3.2"/><circle class="dot w" cx="171.3" cy="127.6" r="3.2"/><circle class="dot w" cx="203.1" cy="132.2" r="3.2"/><circle class="dot w" cx="213.7" cy="114" r="3.2"/><circle class="dot w" cx="224.3" cy="141.3" r="3.2"/><circle class="dot w" cx="234.9" cy="104.9" r="3.2"/><circle class="dot w" cx="245.5" cy="123.1" r="3.2"/><circle class="dot w" cx="256.1" cy="95.8" r="3.2"/><circle class="dot w" cx="266.7" cy="118.5" r="3.2"/><circle class="dot w" cx="277.3" cy="86.7" r="3.2"/><circle class="dot w" cx="287.9" cy="109.5" r="3.2"/><circle class="dot w" cx="298.5" cy="77.6" r="3.2"/><circle class="dot w" cx="309.2" cy="100.4" r="3.2"/><circle class="dot w" cx="319.8" cy="68.5" r="3.2"/><circle class="dot w" cx="330.4" cy="91.3" r="3.2"/><circle class="dot w" cx="341" cy="59.5" r="3.2"/><circle class="dot hollow" cx="351.6" cy="73.1" r="3.2"/><circle class="dot w" cx="362.2" cy="50.4" r="3.2"/><circle class="dot w" cx="372.8" cy="64" r="3.2"/><circle class="dot w" cx="383.4" cy="36.7" r="3.2"/><circle class="dot w" cx="394" cy="45.8" r="3.2"/><g class="keychip"><circle cx="112.9" cy="22" r="7"/><text x="112.9" y="25.2" text-anchor="middle">a</text></g><g class="keychip"><circle cx="187.2" cy="22" r="7"/><text x="187.2" y="25.2" text-anchor="middle">b</text></g><g class="keychip"><circle cx="319.8" cy="22" r="7"/><text x="319.8" y="25.2" text-anchor="middle">c</text></g><g class="keychip"><circle cx="351.6" cy="22" r="7"/><text x="351.6" y="25.2" text-anchor="middle">d</text></g></svg>
+    </div>
+    <ul class="chartnotes">
+      <li><span class="key" aria-hidden="true">a</span><strong>The seam.</strong> The ink changes here: manual gauge through 1996, automated weir from 1997. Every early-vs-recent comparison crosses it.</li>
+      <li><span class="key" aria-hidden="true">b</span><strong>The gaps.</strong> No record for 1998 (gauge failure; station offline all season) or 2003–2004 (monitoring funding lapsed). The bands stay open; no average reaches across them.</li>
+      <li><span class="key" aria-hidden="true">c</span><strong>The era rules.</strong> Around day 252 (September 9) across 1990–1994, in umber; around day 280 (October 7) across 2018 and 2020–2023, in blue — 28 days apart.</li>
+      <li><span class="key" aria-hidden="true">d</span><strong>2019, hollow.</strong> The year carries an unverified heaviest-day reading (132&nbsp;mm, a sensor spike during the Oct 12 storm, not yet corroborated by neighboring stations) and is excluded from the era averages.</li>
+    </ul>
+  </figure>
+
+  <h2 id="words-h2">In the valley’s own words</h2>
+  <p>The record keeps human time as well as rain. One entry from each ink:</p>
+  <blockquote class="then">
+    “Cut the meadow the last week of August; rain never came before the fair.”
+    <span class="src">— weir keeper’s log, 1994 (fictional) · a gauge year</span>
+  </blockquote>
+  <blockquote class="now">
+    “Sandbag store moved to the school after the lane flooded twice in one October.”
+    <span class="src">— parish flood group minutes, 2022 (fictional) · a weir year</span>
+  </blockquote>
+
+  <section aria-labelledby="record-h2">
+    <h2 id="record-h2">The full record</h2>
+    <div class="table-scroll" role="region" aria-labelledby="record-h2" tabindex="0">
+      <table>
+        <caption>Every year the weir has kept, 1990–2023, year numbers printed in their instrument’s ink. Onset is the day of the year the season opened (September 1 is day 244); totals and heaviest days are in millimetres.</caption>
+        <thead>
+          <tr><th scope="col">Year</th><th scope="col" class="num">First rain</th><th scope="col" class="num">Season total</th><th scope="col" class="num">Heaviest day</th><th scope="col">Instrument</th><th scope="col">Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr class="erag" data-model="1990"><th scope="row">1990</th><td class="num">day 251</td><td class="num">612 mm</td><td class="num">44 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1991"><th scope="row">1991</th><td class="num">day 248</td><td class="num">587 mm</td><td class="num">39 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1992"><th scope="row">1992</th><td class="num">day 255</td><td class="num">634 mm</td><td class="num">47 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1993"><th scope="row">1993</th><td class="num">day 249</td><td class="num">601 mm</td><td class="num">42 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1994"><th scope="row">1994</th><td class="num">day 257</td><td class="num">596 mm</td><td class="num">45 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1995"><th scope="row">1995</th><td class="num">day 252</td><td class="num">578 mm</td><td class="num">41 mm</td><td>manual gauge</td><td></td></tr>
+          <tr class="erag" data-model="1996"><th scope="row">1996</th><td class="num">day 259</td><td class="num">618 mm</td><td class="num">48 mm</td><td>manual gauge</td><td>last manual-gauge year</td></tr>
+          <tr class="eraw" data-model="1997"><th scope="row">1997</th><td class="num">day 254</td><td class="num">605 mm</td><td class="num">46 mm</td><td>automated weir</td><td>first automated-weir year</td></tr>
+          <tr class="gaprow" data-model="1998"><th scope="row">1998</th><td class="num">—</td><td class="num">—</td><td class="num">—</td><td>—</td><td><span class="gapword">NO RECORD</span> — gauge failure; station offline all season</td></tr>
+          <tr class="eraw" data-model="1999"><th scope="row">1999</th><td class="num">day 258</td><td class="num">622 mm</td><td class="num">50 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2000"><th scope="row">2000</th><td class="num">day 261</td><td class="num">640 mm</td><td class="num">52 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2001"><th scope="row">2001</th><td class="num">day 256</td><td class="num">599 mm</td><td class="num">44 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2002"><th scope="row">2002</th><td class="num">day 263</td><td class="num">628 mm</td><td class="num">55 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="gaprow" data-model="2003"><th scope="row">2003</th><td class="num">—</td><td class="num">—</td><td class="num">—</td><td>—</td><td><span class="gapword">NO RECORD</span> — monitoring funding lapsed</td></tr>
+          <tr class="gaprow" data-model="2004"><th scope="row">2004</th><td class="num">—</td><td class="num">—</td><td class="num">—</td><td>—</td><td><span class="gapword">NO RECORD</span> — monitoring funding lapsed</td></tr>
+          <tr class="eraw" data-model="2005"><th scope="row">2005</th><td class="num">day 262</td><td class="num">615 mm</td><td class="num">53 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2006"><th scope="row">2006</th><td class="num">day 266</td><td class="num">647 mm</td><td class="num">58 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2007"><th scope="row">2007</th><td class="num">day 260</td><td class="num">633 mm</td><td class="num">51 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2008"><th scope="row">2008</th><td class="num">day 268</td><td class="num">659 mm</td><td class="num">60 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2009"><th scope="row">2009</th><td class="num">day 264</td><td class="num">641 mm</td><td class="num">56 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2010"><th scope="row">2010</th><td class="num">day 270</td><td class="num">668 mm</td><td class="num">63 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2011"><th scope="row">2011</th><td class="num">day 265</td><td class="num">638 mm</td><td class="num">54 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2012"><th scope="row">2012</th><td class="num">day 272</td><td class="num">676 mm</td><td class="num">65 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2013"><th scope="row">2013</th><td class="num">day 267</td><td class="num">652 mm</td><td class="num">59 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2014"><th scope="row">2014</th><td class="num">day 274</td><td class="num">684 mm</td><td class="num">67 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2015"><th scope="row">2015</th><td class="num">day 269</td><td class="num">661 mm</td><td class="num">61 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2016"><th scope="row">2016</th><td class="num">day 276</td><td class="num">693 mm</td><td class="num">70 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2017"><th scope="row">2017</th><td class="num">day 271</td><td class="num">670 mm</td><td class="num">64 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2018"><th scope="row">2018</th><td class="num">day 278</td><td class="num">655 mm</td><td class="num">68 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2019"><th scope="row">2019</th><td class="num">day 275</td><td class="num">702 mm</td><td class="num flagcell">132 mm</td><td>automated weir</td><td class="flagcell">UNVERIFIED — sensor spike during the Oct 12 storm, not yet corroborated by neighboring stations; excluded from era averages</td></tr>
+          <tr class="eraw" data-model="2020"><th scope="row">2020</th><td class="num">day 280</td><td class="num">688 mm</td><td class="num">71 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2021"><th scope="row">2021</th><td class="num">day 277</td><td class="num">696 mm</td><td class="num">69 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2022"><th scope="row">2022</th><td class="num">day 283</td><td class="num">707 mm</td><td class="num">74 mm</td><td>automated weir</td><td></td></tr>
+          <tr class="eraw" data-model="2023"><th scope="row">2023</th><td class="num">day 281</td><td class="num">715 mm</td><td class="num">76 mm</td><td>automated weir</td><td></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="about" id="about" aria-labelledby="about-h2">
+    <h2 id="about-h2">About this record</h2>
+    <p><strong>What counts as the season’s start.</strong> The weir’s working definition: the first day of the water year (September 1 is day 244) that opens the first 10-day window with at least 25&nbsp;mm of rain in total. The season’s total runs from that onset through the last qualifying 10-day window; the heaviest day is the largest 24-hour rainfall inside the season.</p>
+    <p><strong>Why two inks.</strong> From 1990 through 1996 the readings came from a manual gauge, read twice daily; from 1997 the automated weir station took over. Rather than bury that in a footnote, this page prints each era in its own ink, so the caveat travels with every figure.</p>
+    <p><strong>Three years are missing; one reading is unverified.</strong> 1998 (gauge failure) and 2003–2004 (funding lapsed) are drawn as open gaps and excluded from every average. 2019’s heaviest-day reading of 132&nbsp;mm is unverified and 2019 is left out of the recent-era averages.</p>
+    <p><strong>What this page can and cannot say.</strong> This record describes one valley’s weir. It contains no attribution analysis: the page describes the shift, not its cause.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Ashcombe Valley Observer — a fictional local paper; the weir record on this page is a sealed synthetic dataset, printed in full.</p>
+</footer>
+</body>
+</html>

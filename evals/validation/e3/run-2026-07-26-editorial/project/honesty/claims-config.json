@@ -1,0 +1,33 @@
+{
+  "_note": "Gate A (derived-claims) config for the E3 editorial arms. Root is the project dir; --target selects the arm HTML. Verdict binding: no year carries reviewStatus 'verified', so an un-negated standalone uppercase VERIFIED inside any year block is a violation by construction ('UNVERIFIED' does not match — word boundary).",
+  "root": "..",
+  "target": "arms/almanac-rail/index.html",
+  "dataFiles": ["data/ashcombe-rainfall.json"],
+  "derivedFile": "data/derived.json",
+  "extractNumbersFromStrings": true,
+  "globalAllow": [],
+  "modelBlockAttr": "data-model",
+  "perBlockMoneyScopes": {
+    "modelsPath": "years",
+    "keyField": "year",
+    "moneyFields": [],
+    "moneyArrayFields": [],
+    "globalAllowPath": "globalAllow"
+  },
+  "verdict": {
+    "word": "VERIFIED",
+    "negationWindow": 30,
+    "negators": ["never", "not", "false", "no"],
+    "statusField": "reviewStatus",
+    "positiveStatus": "verified"
+  },
+  "numericContexts": { "money": true, "percent": true, "count": true, "days": true },
+  "extraNumericContexts": [
+    { "kind": "millimetres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?mm", "group": 1 },
+    { "kind": "day-of-year", "pattern": "day\\s+(\\d+)", "flags": "i", "group": 1 },
+    { "kind": "year", "pattern": "\\b(19\\d\\d|20\\d\\d)\\b", "group": 1 },
+    { "kind": "years-count", "pattern": "(\\d+)\\s?years?", "group": 1 }
+  ],
+  "darkAttr": "data-theme",
+  "modes": ["light", "dark"]
+}

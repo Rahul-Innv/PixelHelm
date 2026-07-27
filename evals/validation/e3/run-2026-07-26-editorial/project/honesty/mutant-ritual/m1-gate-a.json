@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "<scratch>/mutants/m1/index.html",
+  "pass": false,
+  "allowedNumbers": 158,
+  "blocks": 34,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented millimetres \"999.9 mm\" (=999.9) not in data or derived constants — …o keep. The valley has taken 999.9 mm this generation. The valley’s…"
+    }
+  ]
+}

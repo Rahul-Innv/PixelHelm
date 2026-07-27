@@ -1,0 +1,22 @@
+{
+  "gate": "content-manifest",
+  "target": "<scratch>/mutants/m4/index.html",
+  "pass": false,
+  "required": 17,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "MISSING",
+      "id": "gap-1998-reason",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "required \"gap-1998-reason\" missing in light: 1998 gap reason present"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "project": "e3-arm-almanac-rail",
+  "root": "../arms/almanac-rail",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file arm: raw hex is legal only inside the two token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#edefe2",
+      "ink": "#1c241c",
+      "muted": "#4c5a4c",
+      "rule": "#6b7a6b",
+      "fern": "#2f6136",
+      "madder": "#8c2f28",
+      "shelfband": "#e0e4d0"
+    },
+    "dark": {
+      "paper": "#12160f",
+      "ink": "#e7ead8",
+      "muted": "#a8b39f",
+      "rule": "#66735f",
+      "fern": "#8cc48e",
+      "madder": "#e5988d",
+      "shelfband": "#1a2015"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper",
+        "shelfband"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper",
+        "shelfband"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "fern",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "madder",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper",
+        "shelfband"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "fern",
+      "on": [
+        "shelfband"
+      ],
+      "kind": "graphic"
+    },
+    {
+      "fg": "madder",
+      "on": [
+        "shelfband"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "editorial",
+  "_register": "patient local-paper journalism — concrete, unsensational, place-loving; the data is the story, never decoration."
+}

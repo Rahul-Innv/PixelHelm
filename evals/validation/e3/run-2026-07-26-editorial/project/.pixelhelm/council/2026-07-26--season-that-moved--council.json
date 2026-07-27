@@ -1,0 +1,131 @@
+{
+  "schema": "pixelhelm/judge-verdict@1",
+  "date": "2026-07-26",
+  "project": "e3-editorial-ashcombe",
+  "surface": "season-that-moved",
+  "mode": "new-design",
+  "pass": "deep",
+  "candidates": {
+    "almanac-rail": {
+      "label": "Parish almanac rail (the year-list IS the chart; in-record interjections)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png"
+    },
+    "weir-plates": {
+      "label": "Three broadsheet plates, reporter-annotated, story-pointed grid",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png"
+    },
+    "two-inks": {
+      "label": "Two inks for two instruments (era-inked duotone; finding-first diptych)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png"
+    }
+  },
+  "registerFitPanel": {
+    "jurors": 5,
+    "scores": {
+      "almanac-rail": [
+        9,
+        9,
+        9,
+        9,
+        8.5
+      ],
+      "weir-plates": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ],
+      "two-inks": [
+        9,
+        8,
+        9,
+        8.5,
+        9
+      ]
+    },
+    "medians": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 9
+    },
+    "nonOverlapping": true,
+    "modeFairness": "both-modes"
+  },
+  "lensScores": {
+    "criterion-1": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 9
+    },
+    "criterion-2": {
+      "almanac-rail": 7,
+      "weir-plates": 9,
+      "two-inks": 9
+    },
+    "criterion-3": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 10
+    },
+    "criterion-4": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 8
+    },
+    "criterion-5": {
+      "almanac-rail": 8,
+      "weir-plates": 8,
+      "two-inks": 8
+    },
+    "criterion-6": {
+      "almanac-rail": 8,
+      "weir-plates": 8,
+      "two-inks": 8
+    },
+    "criterion-7": {
+      "almanac-rail": 9,
+      "weir-plates": 8,
+      "two-inks": 9
+    },
+    "criterion-8": {
+      "almanac-rail": 7,
+      "weir-plates": 9,
+      "two-inks": 9
+    },
+    "criterion-9": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 8
+    },
+    "criterion-10": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 9
+    }
+  },
+  "constraints": [
+    {
+      "seat": "panel-consensus",
+      "finding": "almanac-rail: season-total bars are LENGTH-encoded from a 550 mm baseline - 4 of 5 jurors independently flagged that a real 14% rise reads as several-fold longer bars, and 3 scored it as an undeclared break of the zero-baseline convention for length encodings (criterion-2 median 7, criterion-8 median 7). Advisory: the scale is disclosed in the legend and honesty gates are green; weir-plates' position-encoded dots on the same disclosed scale drew no such finding.",
+      "severity": "minor"
+    }
+  ],
+  "aggregation": {
+    "contract": "PREREG-RUBRIC-editorial.md incl. Amendment C1 (sealed 2026-07-26): criterion median of 5 blind jurors, overall = median of 10 criterion medians, no means/weights; registerFitPanel here = per-juror overall medians; 9+ medians recorded as strong-owner-verify, never achieved distinctive excellence; winner tie-break per jurors/TIEBREAK.md (E1 hierarchy verbatim)",
+    "weightedScores": {
+      "almanac-rail": 9,
+      "weir-plates": 9,
+      "two-inks": 9
+    },
+    "guardOutcome": "new design, no incumbent; every shipped HARD gate green + 4/4 mutant ritual + accessibility-bar precondition met; three-way top tie (9.0 x3) broken by the declared mechanical protocol at stage (b) (7 vs 6 criteria at median >= 9); PASS bar met by winner and is tie-invariant (all three arms clear it)"
+  },
+  "winner": "weir-plates",
+  "registerSafeGrafts": [],
+  "rejectedGrafts": [],
+  "rejectedDirections": [],
+  "ownerVerdict": null
+}

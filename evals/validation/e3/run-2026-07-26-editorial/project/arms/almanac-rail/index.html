@@ -1,0 +1,461 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Season That Moved — Ashcombe Valley Observer</title>
+<meta name="description" content="Thirty-four years of records from the Ashcombe Valley weir, read as a parish almanac: the wet season now begins about four weeks later than in the early 1990s, and it lands harder.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#edefe2","ink":"#1c241c","muted":"#4c5a4c","rule":"#6b7a6b","fern":"#2f6136","madder":"#8c2f28","shelfband":"#e0e4d0"},"dark":{"paper":"#12160f","ink":"#e7ead8","muted":"#a8b39f","rule":"#66735f","fern":"#8cc48e","madder":"#e5988d","shelfband":"#1a2015"},"gatedPairs":[{"fg":"ink","on":["paper","shelfband"],"kind":"text"},{"fg":"muted","on":["paper","shelfband"],"kind":"text"},{"fg":"fern","on":["paper"],"kind":"text"},{"fg":"madder","on":["paper"],"kind":"text"},{"fg":"rule","on":["paper","shelfband"],"kind":"graphic"},{"fg":"fern","on":["shelfband"],"kind":"graphic"},{"fg":"madder","on":["shelfband"],"kind":"graphic"}]}
+</script>
+<style>
+/* Almanac-rail: a parish almanac read top to bottom. The year-list IS the chart. */
+
+:root {
+  color-scheme: light;
+  --paper: #edefe2;
+  --ink: #1c241c;
+  --muted: #4c5a4c;
+  --rule: #6b7a6b;
+  --fern: #2f6136;
+  --madder: #8c2f28;
+  --shelfband: #e0e4d0;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #12160f;
+  --ink: #e7ead8;
+  --muted: #a8b39f;
+  --rule: #66735f;
+  --fern: #8cc48e;
+  --madder: #e5988d;
+  --shelfband: #1a2015;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --type-xl: clamp(1.75rem, 1.1rem + 3.2vw, 2.75rem);
+  --type-lg: 1.25rem;
+  --type-md: 1rem;
+  --type-sm: 0.8125rem;
+  --type-xs: 0.75rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+  html { scroll-behavior: auto; }
+}
+
+html { scroll-behavior: smooth; }
+
+header, main, footer {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
+}
+
+a {
+  color: var(--fern);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+a:focus-visible {
+  outline: 2px solid var(--fern);
+  outline-offset: 2px;
+}
+
+/* Masthead */
+
+header {
+  padding-top: clamp(1.25rem, 5vw, 2.75rem);
+  text-align: center;
+}
+
+.kicker {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0.4rem 0 0;
+  font-size: var(--type-xl);
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: 0.005em;
+}
+
+.dek {
+  margin: 0.5rem auto 0;
+  max-width: 38rem;
+  font-style: italic;
+  font-size: var(--type-lg);
+  line-height: 1.45;
+  color: var(--muted);
+}
+
+.rule-double {
+  margin: 1.1rem 0 0;
+  border: 0;
+  border-top: 4px double var(--rule);
+}
+
+/* Standfirst — the no-scroll conclusion */
+
+.standfirst {
+  margin: 1.1rem 0 0;
+  font-size: 1.0625rem;
+}
+
+.standfirst strong { font-weight: 700; }
+
+.caveats {
+  margin: 0.6rem 0 0;
+  font-size: var(--type-sm);
+  font-family: var(--sans);
+  color: var(--muted);
+}
+
+/* Sections */
+
+h2 {
+  margin: 2.2rem 0 0.6rem;
+  font-size: 1.1875rem;
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+p { margin: 0.7rem 0 0; }
+
+/* How to read */
+
+.howto {
+  margin: 0.9rem 0 0;
+  padding: 0.7rem 0.9rem;
+  border-block: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+.howto .dot-key {
+  display: inline-block;
+  width: 0.55em;
+  height: 0.55em;
+  border-radius: 50%;
+  background: var(--fern);
+  vertical-align: baseline;
+}
+
+.howto .bar-key {
+  display: inline-block;
+  width: 2.2em;
+  height: 0.42em;
+  background: var(--fern);
+  vertical-align: baseline;
+}
+
+/* The rail */
+
+figure { margin: 1.2rem 0 0; }
+
+figcaption {
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+.rail {
+  list-style: none;
+  margin: 0.8rem 0 0;
+  padding: 0;
+}
+
+.era-divider {
+  margin: 1.1rem 0 0.35rem;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: 0.25rem;
+}
+
+.yr {
+  display: grid;
+  grid-template-columns: 3.4rem minmax(0, 1fr) minmax(7.5rem, 34%);
+  grid-template-areas: "year shelf figs";
+  align-items: center;
+  gap: 0.6rem;
+  padding: 0.28rem 0;
+  border-bottom: 1px solid var(--shelfband);
+}
+
+.yr .year {
+  grid-area: year;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+.shelf {
+  grid-area: shelf;
+  position: relative;
+  height: 1.05rem;
+  background: var(--shelfband);
+  border-radius: 2px;
+}
+
+.shelf .dot {
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 0.62rem;
+  height: 0.62rem;
+  border-radius: 50%;
+  background: var(--fern);
+}
+
+.shelf .dot.hollow {
+  background: transparent;
+  border: 2px solid var(--fern);
+}
+
+.figs {
+  grid-area: figs;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto auto;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-variant-numeric: tabular-nums;
+}
+
+.bar-track {
+  position: relative;
+  height: 0.42rem;
+  background: var(--shelfband);
+  border-radius: 2px;
+  min-width: 2.5rem;
+}
+
+.bar {
+  position: absolute;
+  inset: 0 auto 0 0;
+  background: var(--fern);
+  border-radius: 2px;
+}
+
+.total { color: var(--ink); white-space: nowrap; }
+.heavy { color: var(--madder); white-space: nowrap; }
+
+.yr.gap {
+  grid-template-columns: 3.4rem minmax(0, 1fr);
+  grid-template-areas: "year band";
+}
+
+.gapband {
+  grid-area: band;
+  padding: 0.3rem 0.6rem;
+  background: repeating-linear-gradient(-45deg, var(--shelfband), var(--shelfband) 5px, var(--paper) 5px, var(--paper) 9px);
+  border: 1px dashed var(--rule);
+  border-radius: 2px;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--muted);
+  letter-spacing: 0.03em;
+}
+
+.gapband strong { color: var(--ink); letter-spacing: 0.09em; }
+
+.flagnote {
+  grid-column: 1 / -1;
+  margin: 0.1rem 0 0.2rem 4rem;
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--madder);
+}
+
+/* Interjections */
+
+.aside {
+  margin: 1.2rem 0 1.2rem;
+  padding: 0.15rem 0 0.15rem 1rem;
+  border-left: 3px solid var(--rule);
+  font-style: italic;
+  color: var(--ink);
+  max-width: 36rem;
+}
+
+.aside .src {
+  display: block;
+  margin-top: 0.25rem;
+  font-family: var(--sans);
+  font-style: normal;
+  font-size: var(--type-xs);
+  color: var(--muted);
+}
+
+/* About the record */
+
+.about p { font-size: 0.9375rem; }
+
+footer {
+  margin-top: 2.5rem;
+  padding-block: 1.1rem 2.2rem;
+  border-top: 4px double var(--rule);
+  font-family: var(--sans);
+  font-size: var(--type-xs);
+  color: var(--muted);
+  text-align: center;
+}
+
+/* Narrow viewports: the shelf gets its own line; figures stay with the year */
+
+@media (max-width: 560px) {
+  .yr {
+    grid-template-columns: 3.2rem minmax(0, 1fr);
+    grid-template-areas:
+      "year figs"
+      "shelf shelf";
+    gap: 0.25rem 0.6rem;
+    padding: 0.42rem 0;
+  }
+  .figs { justify-content: start; }
+  .flagnote { margin-left: 0; }
+  .yr.gap { grid-template-columns: 3.2rem minmax(0, 1fr); }
+}
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Ashcombe Valley Observer · From the town weir’s record</p>
+  <h1>The Season That Moved</h1>
+  <p class="dek">Thirty-four years at the weir, read line by line, like the almanac the valley used to keep.</p>
+  <hr class="rule-double">
+</header>
+
+<main>
+  <p class="standfirst"><strong>The valley’s rainy season now begins about four weeks later than it did in the early 1990s, and when it comes, it lands harder.</strong> In the first five recorded years, 1990–1994, the first sustained rain reached the weir around September 9 (day 252 of the year); across the last five verified years — 2018 and 2020–2023 — it held off until around October 7 (day 280), a shift of 28 days. The seasons themselves grew heavier: about 606&nbsp;mm then, about 692&nbsp;mm now — a rise of 86&nbsp;mm, or 14% — and the wettest single day of a season climbed from about 43&nbsp;mm to about 72&nbsp;mm.</p>
+  <p class="caveats">Read with care: the instrument changed after 1996 — a manual gauge until then, the automated weir station from 1997 — so comparisons across that line carry the change with them. Three years are missing outright, one 2019 reading remains unverified, and this page describes the shift in one valley’s record, <a href="#about">not its cause</a>.</p>
+
+  <h2 id="record-h2">The record, year by year</h2>
+
+  <div class="howto">
+    How to read each line: the <span class="dot-key" aria-hidden="true"></span> dot places the year’s first sustained rain on a fixed September–October shelf (the shelf runs from Sep&nbsp;1, day 244, to Oct&nbsp;15, day 288 — marks at Sep&nbsp;15 and Oct&nbsp;1 fall at days 258 and 274). The <span class="bar-key" aria-hidden="true"></span> bar draws the season’s total rainfall on a fixed scale from 550&nbsp;mm to 750&nbsp;mm, and the red figure is the season’s heaviest single day. Missing years stay on the page as hatched gaps.
+  </div>
+
+  <figure role="group" aria-labelledby="rail-name" aria-describedby="rail-desc">
+    <figcaption>
+      <span id="rail-name"><strong>The almanac rail: onset, season total, and heaviest day for every year, 1990–2023.</strong></span>
+      <span id="rail-desc">What it shows: reading down the page, the onset dots drift rightward from mid-September toward mid-October — 28 days later on average between the first five recorded years and the last five verified ones — while the season-total bars lengthen from about 606&nbsp;mm toward about 692&nbsp;mm and the heaviest-day figures climb from about 43&nbsp;mm to about 72&nbsp;mm. The three hatched lines are years with no usable record, and 2019’s heaviest day is marked unverified.</span>
+    </figcaption>
+
+    <p class="era-divider">1990–1996 · manual gauge, read twice daily</p>
+    <ol class="rail">
+      <li class="yr" data-model="1990"><span class="year">1990</span><span class="shelf"><span class="dot" style="left:15.9%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:31%"></span></span><span class="total">612&nbsp;mm</span><span class="heavy">44&nbsp;mm</span></span></li>
+      <li class="yr" data-model="1991"><span class="year">1991</span><span class="shelf"><span class="dot" style="left:9.1%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:18.5%"></span></span><span class="total">587&nbsp;mm</span><span class="heavy">39&nbsp;mm</span></span></li>
+      <li class="yr" data-model="1992"><span class="year">1992</span><span class="shelf"><span class="dot" style="left:25%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:42%"></span></span><span class="total">634&nbsp;mm</span><span class="heavy">47&nbsp;mm</span></span></li>
+      <li class="yr" data-model="1993"><span class="year">1993</span><span class="shelf"><span class="dot" style="left:11.4%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:25.5%"></span></span><span class="total">601&nbsp;mm</span><span class="heavy">42&nbsp;mm</span></span></li>
+      <li class="yr" data-model="1994"><span class="year">1994</span><span class="shelf"><span class="dot" style="left:29.5%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:23%"></span></span><span class="total">596&nbsp;mm</span><span class="heavy">45&nbsp;mm</span></span></li>
+    </ol>
+
+    <aside class="aside">
+      “Cut the meadow the last week of August; rain never came before the fair.”
+      <span class="src">— weir keeper’s log, 1994 (fictional)</span>
+    </aside>
+
+    <ol class="rail">
+      <li class="yr" data-model="1995"><span class="year">1995</span><span class="shelf"><span class="dot" style="left:18.2%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:14%"></span></span><span class="total">578&nbsp;mm</span><span class="heavy">41&nbsp;mm</span></span></li>
+      <li class="yr" data-model="1996"><span class="year">1996</span><span class="shelf"><span class="dot" style="left:34.1%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:34%"></span></span><span class="total">618&nbsp;mm</span><span class="heavy">48&nbsp;mm</span></span></li>
+    </ol>
+
+    <p class="era-divider">1997 onward · automated weir station — the instrument changes here</p>
+    <ol class="rail">
+      <li class="yr" data-model="1997"><span class="year">1997</span><span class="shelf"><span class="dot" style="left:22.7%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:27.5%"></span></span><span class="total">605&nbsp;mm</span><span class="heavy">46&nbsp;mm</span></span></li>
+      <li class="yr gap" data-model="1998"><span class="year">1998</span><span class="gapband"><strong>NO RECORD</strong> — gauge failure; station offline all season</span></li>
+      <li class="yr" data-model="1999"><span class="year">1999</span><span class="shelf"><span class="dot" style="left:31.8%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:36%"></span></span><span class="total">622&nbsp;mm</span><span class="heavy">50&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2000"><span class="year">2000</span><span class="shelf"><span class="dot" style="left:38.6%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:45%"></span></span><span class="total">640&nbsp;mm</span><span class="heavy">52&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2001"><span class="year">2001</span><span class="shelf"><span class="dot" style="left:27.3%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:24.5%"></span></span><span class="total">599&nbsp;mm</span><span class="heavy">44&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2002"><span class="year">2002</span><span class="shelf"><span class="dot" style="left:43.2%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:39%"></span></span><span class="total">628&nbsp;mm</span><span class="heavy">55&nbsp;mm</span></span></li>
+      <li class="yr gap" data-model="2003"><span class="year">2003</span><span class="gapband"><strong>NO RECORD</strong> — monitoring funding lapsed</span></li>
+      <li class="yr gap" data-model="2004"><span class="year">2004</span><span class="gapband"><strong>NO RECORD</strong> — monitoring funding lapsed</span></li>
+      <li class="yr" data-model="2005"><span class="year">2005</span><span class="shelf"><span class="dot" style="left:40.9%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:32.5%"></span></span><span class="total">615&nbsp;mm</span><span class="heavy">53&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2006"><span class="year">2006</span><span class="shelf"><span class="dot" style="left:50%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:48.5%"></span></span><span class="total">647&nbsp;mm</span><span class="heavy">58&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2007"><span class="year">2007</span><span class="shelf"><span class="dot" style="left:36.4%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:41.5%"></span></span><span class="total">633&nbsp;mm</span><span class="heavy">51&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2008"><span class="year">2008</span><span class="shelf"><span class="dot" style="left:54.5%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:54.5%"></span></span><span class="total">659&nbsp;mm</span><span class="heavy">60&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2009"><span class="year">2009</span><span class="shelf"><span class="dot" style="left:45.5%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:45.5%"></span></span><span class="total">641&nbsp;mm</span><span class="heavy">56&nbsp;mm</span></span></li>
+    </ol>
+
+    <aside class="aside">
+      By the end of the 2000s the pattern was already visible to anyone laying the lines side by side: the dots edging rightward, the bars a shade longer each wet year than the valley had been used to.
+    </aside>
+
+    <ol class="rail">
+      <li class="yr" data-model="2010"><span class="year">2010</span><span class="shelf"><span class="dot" style="left:59.1%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:59%"></span></span><span class="total">668&nbsp;mm</span><span class="heavy">63&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2011"><span class="year">2011</span><span class="shelf"><span class="dot" style="left:47.7%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:44%"></span></span><span class="total">638&nbsp;mm</span><span class="heavy">54&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2012"><span class="year">2012</span><span class="shelf"><span class="dot" style="left:63.6%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:63%"></span></span><span class="total">676&nbsp;mm</span><span class="heavy">65&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2013"><span class="year">2013</span><span class="shelf"><span class="dot" style="left:52.3%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:51%"></span></span><span class="total">652&nbsp;mm</span><span class="heavy">59&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2014"><span class="year">2014</span><span class="shelf"><span class="dot" style="left:68.2%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:67%"></span></span><span class="total">684&nbsp;mm</span><span class="heavy">67&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2015"><span class="year">2015</span><span class="shelf"><span class="dot" style="left:56.8%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:55.5%"></span></span><span class="total">661&nbsp;mm</span><span class="heavy">61&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2016"><span class="year">2016</span><span class="shelf"><span class="dot" style="left:72.7%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:71.5%"></span></span><span class="total">693&nbsp;mm</span><span class="heavy">70&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2017"><span class="year">2017</span><span class="shelf"><span class="dot" style="left:61.4%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:60%"></span></span><span class="total">670&nbsp;mm</span><span class="heavy">64&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2018"><span class="year">2018</span><span class="shelf"><span class="dot" style="left:77.3%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:52.5%"></span></span><span class="total">655&nbsp;mm</span><span class="heavy">68&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2019"><span class="year">2019</span><span class="shelf"><span class="dot hollow" style="left:70.5%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:76%"></span></span><span class="total">702&nbsp;mm</span><span class="heavy">132&nbsp;mm</span></span><span class="flagnote">UNVERIFIED — sensor spike during the Oct 12 storm, not yet corroborated by neighboring stations</span></li>
+      <li class="yr" data-model="2020"><span class="year">2020</span><span class="shelf"><span class="dot" style="left:81.8%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:69%"></span></span><span class="total">688&nbsp;mm</span><span class="heavy">71&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2021"><span class="year">2021</span><span class="shelf"><span class="dot" style="left:75%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:73%"></span></span><span class="total">696&nbsp;mm</span><span class="heavy">69&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2022"><span class="year">2022</span><span class="shelf"><span class="dot" style="left:88.6%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:78.5%"></span></span><span class="total">707&nbsp;mm</span><span class="heavy">74&nbsp;mm</span></span></li>
+      <li class="yr" data-model="2023"><span class="year">2023</span><span class="shelf"><span class="dot" style="left:84.1%"></span></span><span class="figs"><span class="bar-track"><span class="bar" style="width:82.5%"></span></span><span class="total">715&nbsp;mm</span><span class="heavy">76&nbsp;mm</span></span></li>
+    </ol>
+
+    <aside class="aside">
+      “Sandbag store moved to the school after the lane flooded twice in one October.”
+      <span class="src">— parish flood group minutes, 2022 (fictional)</span>
+    </aside>
+  </figure>
+
+  <section class="about" id="about" aria-labelledby="about-h2">
+    <h2 id="about-h2">About this record</h2>
+    <p><strong>What counts as the season’s start.</strong> The weir’s working definition: the first day of the water year (September 1 is day 244) that opens the first 10-day window with at least 25&nbsp;mm of rain in total. The season’s total runs from that onset through the last qualifying 10-day window, and the heaviest day is the largest 24-hour rainfall inside the season.</p>
+    <p><strong>The instrument changed.</strong> From 1990 through 1996 the readings came from a manual gauge, read twice daily. From 1997 the automated weir station took over. Every comparison this page makes between the early years and the recent ones crosses that boundary, and should be read with it in mind.</p>
+    <p><strong>Three years are missing.</strong> 1998 was lost to a gauge failure that kept the station offline all season; 2003 and 2004 went unrecorded when monitoring funding lapsed. They are drawn as gaps, and no average on this page reaches across them as if they were there.</p>
+    <p><strong>One reading is unverified.</strong> The 132&nbsp;mm heaviest-day figure of 2019 came from a sensor spike during the Oct 12 storm and has not been corroborated by neighboring stations. It appears in the record with that label, and 2019 is left out of the recent-era averages above.</p>
+    <p><strong>What this page can and cannot say.</strong> This record describes one valley’s weir. It contains no attribution analysis: the page describes the shift, not its cause.</p>
+  </section>
+</main>
+
+<footer>
+  <p>Ashcombe Valley Observer — a fictional local paper; the weir record on this page is a sealed synthetic dataset, printed in full.</p>
+</footer>
+</body>
+</html>

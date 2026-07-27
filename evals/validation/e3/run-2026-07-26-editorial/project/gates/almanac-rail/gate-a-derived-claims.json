@@ -1,0 +1,8 @@
+{
+  "gate": "derived-claims",
+  "target": "arms/almanac-rail/index.html",
+  "pass": true,
+  "allowedNumbers": 158,
+  "blocks": 34,
+  "findings": []
+}

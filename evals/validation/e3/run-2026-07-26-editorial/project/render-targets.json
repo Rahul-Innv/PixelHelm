@@ -1,0 +1,36 @@
+{
+  "browserChannel": "msedge",
+  "outDir": "renders",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "items": [
+    {
+      "name": "almanac-rail",
+      "file": "arms/almanac-rail/index.html"
+    },
+    {
+      "name": "weir-plates",
+      "file": "arms/weir-plates/index.html"
+    },
+    {
+      "name": "two-inks",
+      "file": "arms/two-inks/index.html"
+    }
+  ],
+  "axe": true
+}

@@ -1,0 +1,121 @@
+{
+  "_note": "Injected constants — pure arithmetic on sealed-data literals (inject.mjs). The only legal numbers beyond the data file itself.",
+  "eras": {
+    "firstEraYears": [
+      1990,
+      1991,
+      1992,
+      1993,
+      1994
+    ],
+    "lastEraYears": [
+      2018,
+      2020,
+      2021,
+      2022,
+      2023
+    ],
+    "firstEraLabel": "1990-1994 (manual gauge)",
+    "lastEraLabel": "2018 and 2020-2023 (automated weir; 2019 excluded as an unverified outlier)"
+  },
+  "onsetMeanFirst": 252,
+  "onsetMeanLast": 280,
+  "onsetShiftDays": 28,
+  "onsetShiftWeeksApprox": 4,
+  "onsetFirstDate": {
+    "month": "September",
+    "day": 9
+  },
+  "onsetLastDate": {
+    "month": "October",
+    "day": 7
+  },
+  "totalMeanFirst": 606,
+  "totalMeanLast": 692,
+  "totalRiseMm": 86,
+  "totalRisePct": 14,
+  "max24hMeanFirst": 43,
+  "max24hMeanLast": 72,
+  "max24hRiseMm": 29,
+  "yearFirst": 1990,
+  "yearLast": 2023,
+  "yearsSpan": 34,
+  "recordedCount": 31,
+  "missingCount": 3,
+  "onsetShelf": {
+    "minDay": 244,
+    "maxDay": 288,
+    "ticks": [
+      244,
+      258,
+      274,
+      288
+    ],
+    "tickLabels": [
+      "Sep 1",
+      "Sep 15",
+      "Oct 1",
+      "Oct 15"
+    ]
+  },
+  "totalAxis": {
+    "min": 550,
+    "max": 750,
+    "ticks": [
+      550,
+      600,
+      650,
+      700,
+      750
+    ]
+  },
+  "max24hAxis": {
+    "min": 0,
+    "max": 150,
+    "ticks": [
+      0,
+      25,
+      50,
+      75,
+      100,
+      125,
+      150
+    ]
+  },
+  "globalAllow": [
+    252,
+    280,
+    28,
+    4,
+    9,
+    7,
+    606,
+    692,
+    86,
+    14,
+    43,
+    72,
+    29,
+    1990,
+    2023,
+    34,
+    31,
+    3,
+    244,
+    258,
+    274,
+    288,
+    550,
+    600,
+    650,
+    700,
+    750,
+    0,
+    25,
+    50,
+    75,
+    100,
+    125,
+    150
+  ]
+}
