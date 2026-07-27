@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 6,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 6,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Invoicing for trades priced like a day rate, plus a subhead describing the photo-to-invoice flow and a line naming sole traders, answers what and for whom entirely inside the first screenful.",
+    "2": "The four-hour figure is carefully downgraded to an early signal from eleven pilot users, though the ninety-eight percent claim stands as a bare fact with no stated basis.",
+    "3": "Pricing is transparent with the VAT note and an honest no-card promise, but the only button on the page is see-the-rate-card and the trial itself never gets an unmistakable CTA, only a bold text line.",
+    "4": "Day-rate pricing, no subscription games, and a when-it-goes-wrong section speak directly to a subscription-skeptic tradesperson in plain language on a clean phone layout.",
+    "5": "Competent conventional craft with a limited palette and steady rhythm, though the dark mode drifts between peach labels and mint accents and the desktop leaves large unused right-hand space.",
+    "6": "The beta is labeled still-in-testing, the estimate is explicitly not a promise, and this is the only candidate that labels the testimonial as a fictional persona rather than presenting it as real.",
+    "7": "Priced-like-a-day-rate is a good sentence, but the page asserts it inside an otherwise generic marketing structure rather than demonstrating it through form.",
+    "8": "Mechanics are entirely conventional with no real break attempted, which respects the budget while spending none of it.",
+    "9": "No enterprise tier hiding behind a sales call and the evening quote not waiting on a chatbot are distinctive, though the overall frame reads closer to standard candid-SaaS register.",
+    "10": "The page scans quickly and stays unperformative, but the price a skeptic came for sits five sections deep behind stats and features."
+  },
+  "inputTranscriptSha256": "8ec7c9c5ec22f50fcbfeb7520655783bc51c4073a17aef352371d03ae44351bb",
+  "shuffleSeed": 202607622
+}

@@ -1,0 +1,116 @@
+{
+  "juror": "juror-2",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "Price, stock state, and sow window sit in a consistent position within each numbered entry and the single month dropdown is predictable, but the stacked editorial list forces reading through description text to compare items, so glance speed is only moderate.",
+        "2": "The money path is entirely conventional: price then stock label on the list, and a quantity field with a clearly labelled Add to basket button on the product page, with no cleverness anywhere near it.",
+        "3": "Out of stock keeps its visible price, the null-price sweet pea shows Price pending rather than an invented number, the estimated germination is flagged inline, and UK-only shipping heads both surfaces before any purchase intent forms.",
+        "4": "Large serif body text, high contrast in both modes, generous spacing, a full-size buy button, and no hover-dependent information serve older tablet readers well.",
+        "5": "Cream, ink, green, and brick are held consistently across both surfaces with steady rules and rhythm; the centered masthead over a left-set list reads as one deliberate system in light and dark.",
+        "6": "The sowing table, difficulty line, potting-shed note, and companions with price and stock let a first-time gardener decide on the page, though the arrangement is plain rather than purpose-built.",
+        "7": "The hand-kept numbered seed list, with its read-slowly motto, is a credible two-person signature, but it is quieter and less structurally load-bearing than the stronger metaphors in this set.",
+        "8": "Novelty stays in the editorial brand layer, with numbering and voice, while navigation, filtering, and the buy path remain fully conventional.",
+        "9": "Lines like Read slowly, choose well and Good company for it sound like a knowledgeable neighbor, and the descriptions are warm and specific rather than promotional.",
+        "10": "A returning shopper gets visible stock states and a month filter, but there is no season grouping to answer what is sowable now at a glance; the two surfaces do cohere tightly as one shop."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 7,
+        "2": 7,
+        "3": 9,
+        "4": 5,
+        "5": 5,
+        "6": 8,
+        "7": 8,
+        "8": 7,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "Right-aligned prices, seasonal drawers, and filter chips make the desktop list fast to scan, but on mobile two entries collapse into one-word-per-line columns that badly slow reading.",
+        "2": "Inline steppers and Add buttons follow ordinary commerce convention, yet the controls are very small and the price-pending note collides with the price column on the sweet pea row, which slightly muddies the money path.",
+        "3": "This is the most explicit honesty in the set: out-of-stock lines stay listed with a restock explanation, germination sources are declared in a footer, the null price says ask us and we will write when it is set, and UK-only shipping leads both pages.",
+        "4": "The tiny minus, plus, and Add targets on both surfaces and the squeezed mobile text columns are exactly wrong for older readers on tablets, despite otherwise legible body type.",
+        "5": "The mobile catalog's broken one-word columns and the awkward sweet pea and carrot column widths on desktop are visible craft failures inside an otherwise disciplined system.",
+        "6": "The at-a-glance stat row, sowing table, and companions with planting reasons give strong decision support, and the growing notes anticipate the beginner's doubt about the quiet first month.",
+        "7": "The potting bench with seasonal drawers is a true two-person signature that reaches all the way into product copy, where the packet sits in the winter drawer of the bench.",
+        "8": "The metaphor stays in the brand layer and mechanics remain conventional, though the design-study disclaimer in the footer is an odd frame break a real shop would never print.",
+        "9": "Phrases like the easiest drawer on the bench and if it is listed, we can vouch for it are unmistakably this shop's voice, warm and specific throughout.",
+        "10": "Season sections and chips answer the what-can-I-sow-now visit well and both surfaces share the bench frame, but the mobile layout defects tax exactly the quick repeat check this criterion rewards."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "Window sections, the month filter, sidebar links, and the twelve-cell sowing band make season fit glanceable, with price and stock in a steady position per entry.",
+        "2": "The boxed buy panel with price, counted stock, quantity field, and a large Add to basket button is textbook convention, and the catalog keeps all cleverness away from the money path.",
+        "3": "The estimated germination rate gets its own margin note explaining it is from last season's line, the sweet pea shows Price pending rather than a number, out of stock is plain, and UK-only shipping tops both surfaces.",
+        "4": "Serif body text is generous, the buy button is large, nothing depends on hover, and the unlabeled month band is safely redundant with the written sowing months beside it.",
+        "5": "The two-column page with italic margin notes, dotted rules, and a restrained plum and green palette holds together as one editorial system on both surfaces and in both modes.",
+        "6": "The year band, sowing table, difficulty line, margin note, and companions are arranged so the first-time gardener's questions are answered in reading order without leaving the page.",
+        "7": "Find your month first, then your packet is a one-sentence signature that structure, visualization, marginalia, and copy all genuinely enforce, and it is service culture true of a two-person seed shop.",
+        "8": "The almanac novelty lives entirely in the brand and information layer while filtering, links, and the buy box stay strictly conventional.",
+        "9": "Margin notes like takes an autumn sowing too, as the band shows, and the whole plant earns its bed are specific, unhurried, and unpublishable by a generic competitor.",
+        "10": "A repeat visitor checking what is sowable now is served by the month-first structure, the bands, and visible stock states immediately, and the two surfaces cohere as one almanac."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 7,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The four-up packet grid with shelf headers puts price and stock in the same bottom position on every card, making cross-item comparison the fastest in the set on desktop.",
+        "2": "Price placement, stock language, and the product page's boxed quantity plus Add to basket flow are all conventional, with the only oddity being a lone View this packet button on a single card.",
+        "3": "Estimated germination is flagged, the sweet pea card explains the pending price and shows Price on request instead of a number, out of stock is plainly marked, and the UK-only notice sits in a box before any browsing.",
+        "4": "Body text and buttons are comfortably sized, the botanical icons are decorative rather than information-bearing, and nothing requires hover, though the small-caps card metadata runs small.",
+        "5": "The packet cards with dashed perforation rules, matching illustration frames, and a warm consistent palette are carried cleanly into the product page and both color modes.",
+        "6": "The sowing table, difficulty strip, potting-shed note, and companion cards support a confident first purchase, with the packet illustration adding recognition rather than new decision data.",
+        "7": "The seed rack by the shop door, shelf by shelf, is an archetype-true physical signature for a two-person shop, expressed through shelves, packet frames, and hand-drawn botanical marks.",
+        "8": "Illustration and the rack metaphor stay in the brand layer per the botanical art direction allowance, while every commerce mechanic remains conventional.",
+        "9": "The rack framing and shelf labels are warm, but beyond the introduction the copy leans on the shared base text with fewer lines only this shop could have written.",
+        "10": "Shelves ordered by sowing start plus the month filter and the fastest stock scan in the set serve the repeat visitor well, and the packet motif ties the two surfaces into one shop."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-4",
+    "candidate-1",
+    "candidate-2"
+  ]
+}

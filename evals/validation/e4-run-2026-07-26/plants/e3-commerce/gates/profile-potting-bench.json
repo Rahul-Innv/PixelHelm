@@ -1,0 +1,122 @@
+{
+  "project": "e4-plant-potting-bench",
+  "root": "../arms/potting-bench",
+  "_rootNote": "relative to this profile's directory (repo-portable; no user-absolute path)",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html",
+    "product.html"
+  ],
+  "_rawColorNote": "single-file plant: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#f7f6ef",
+      "ink": "#26291f",
+      "muted": "#5c6152",
+      "leaf": "#33612f",
+      "stock": "#2f6238",
+      "oos": "#8a3a2e",
+      "rule": "#84887a"
+    },
+    "dark": {
+      "paper": "#151711",
+      "ink": "#e9e8dc",
+      "muted": "#b0b2a2",
+      "leaf": "#a4cb92",
+      "stock": "#95c99e",
+      "oos": "#e39a86",
+      "rule": "#6c7062"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "leaf",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "stock",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "oos",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "commerce",
+  "_register": "warm, unhurried, knowledgeable neighbor; mechanics ruthlessly conventional."
+}

@@ -1,0 +1,14 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-27T03:59:24.074Z",
+  "target": "arms/potting-bench/index.html",
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no dialog / [role=dialog] / [aria-modal] element on this page — nothing to verify"
+    }
+  ],
+  "pass": true,
+  "applicable": false
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Seasonal shelves, a month filter, and cards that keep sow window, difficulty, price, and stock in fixed corners make per-product reading quick and predictable.",
+    "2": "Price and stock occupy consistent card positions, stock language is plain, and the product page runs a fully conventional quantity-plus-basket path; the catalog itself stops at view-this-packet.",
+    "3": "The estimated rate is flagged, out-of-stock is shown without hiding the card, the sweet pea says price on request rather than inventing a number, and the UK-only rule sits in a bordered notice at the top of both surfaces.",
+    "4": "Single-column cards at phone width, large buttons, and no hover-dependent content serve tablet readers well, though card metadata runs a size smaller than the almanac arm's body text.",
+    "5": "The packet-card system with its botanical icons, dashed inner rules, and shelf headers is consistent across surfaces and modes, with only minor internal card-height variance.",
+    "6": "The year table, difficulty line, potting-shed note, and companion cards support a confident decision, and the packet illustration adds identity without displacing information.",
+    "7": "The rack by the shop door, restocked shelf by shelf by the two owners, is a physical, archetype-true signature that the shelf sections, packet cards, and icon art direction all reinforce.",
+    "8": "The rack metaphor and icon illustrations are brand-layer novelty while every checkout-adjacent mechanic stays conventional, exactly inside budget.",
+    "9": "Shelf by shelf, two of us keep it stocked carries the neighborly register, though the voice is concentrated in the masthead rather than pervading the entries.",
+    "10": "A returning shopper reads season shelves and card-corner stock states at a glance and both surfaces feel like one shop, with no dedicated newly-in surface."
+  },
+  "inputTranscriptSha256": "49cbf07abd405334f1987306716c892ec26466139bf44acdcf6f0d79b689388c",
+  "shuffleSeed": 202607631
+}

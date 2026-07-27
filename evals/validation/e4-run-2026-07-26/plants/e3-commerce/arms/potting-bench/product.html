@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="en" data-arm="potting-bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cathedral Bells (Cobaea scandens) seed. Foxglove &amp; Fern.</title>
+<meta name="description" content="Cathedral Bells (Cobaea scandens) heirloom seed from Foxglove &amp; Fern: violet bell flowers to 6m, sow indoors Feb to Apr, plant out after last frost, flowers Jul to Oct. 12 seeds, &pound;3.50. Ships to UK addresses only.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f7f6ef","ink":"#26291f","muted":"#5c6152","leaf":"#33612f","stock":"#2f6238","oos":"#8a3a2e","rule":"#84887a"},"dark":{"paper":"#151711","ink":"#e9e8dc","muted":"#b0b2a2","leaf":"#a4cb92","stock":"#95c99e","oos":"#e39a86","rule":"#6c7062"},"gatedPairs":[{"fg":"ink","on":["paper"],"kind":"text"},{"fg":"muted","on":["paper"],"kind":"text"},{"fg":"leaf","on":["paper"],"kind":"text"},{"fg":"stock","on":["paper"],"kind":"text"},{"fg":"oos","on":["paper"],"kind":"text"},{"fg":"rule","on":["paper"],"kind":"graphic"}]}
+</script>
+<style>
+/* potting-bench, growing page: one packet given the full bench. Same paper,
+   same pencil-margin basket controls as the catalog. */
+
+:root {
+  color-scheme: light;
+  --paper: #f7f6ef;
+  --ink: #26291f;
+  --muted: #5c6152;
+  --leaf: #33612f;
+  --stock: #2f6238;
+  --oos: #8a3a2e;
+  --rule: #84887a;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #151711;
+  --ink: #e9e8dc;
+  --muted: #b0b2a2;
+  --leaf: #a4cb92;
+  --stock: #95c99e;
+  --oos: #e39a86;
+  --rule: #6c7062;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --t-xl: clamp(1.9rem, 1.3rem + 2.4vw, 2.7rem);
+  --t-md: 1.0625rem;
+  --t-sm: 0.8125rem;
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 1.75rem;
+  --s5: 3rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--t-md);
+  line-height: 1.55;
+  padding: var(--s4) var(--s3) var(--s5);
+}
+
+.bench { max-width: 44rem; margin: 0 auto; }
+
+a { color: var(--leaf); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--leaf); outline-offset: 2px; }
+
+.crumbs { font-family: var(--sans); font-size: var(--t-sm); }
+.crumbs a { display: inline-block; padding: 0.45rem 0; }
+
+.mast { border-bottom: 3px double var(--rule); padding-bottom: var(--s3); margin-top: var(--s2); }
+.mast .kicker {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--leaf);
+  margin-bottom: var(--s2);
+}
+.mast h1 { font-size: var(--t-xl); line-height: 1.12; }
+.mast .latin { font-style: italic; color: var(--muted); margin-top: var(--s1); }
+
+.buyrow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s2) var(--s3);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+}
+.buyrow .price { font-size: 1.6rem; font-weight: 700; font-variant-numeric: tabular-nums; }
+.buyrow .packet { color: var(--muted); font-size: var(--t-sm); }
+.buyrow .instock { color: var(--stock); font-weight: 700; font-size: var(--t-sm); }
+.shipnote { font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); margin-top: var(--s2); }
+
+.margin-controls {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  margin-left: auto;
+  font-family: var(--sans);
+}
+.margin-controls button {
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  line-height: 1;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+.margin-controls .qty { width: 22px; text-align: center; font-size: 11px; font-variant-numeric: tabular-nums; }
+.margin-controls .add { width: auto; padding: 0 6px; font-weight: 700; letter-spacing: 0.04em; }
+.margin-controls button:hover { box-shadow: inset 0 0 0 1px var(--ink); }
+
+section { margin-top: var(--s4); }
+section > h2 {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--leaf);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s2);
+  margin-bottom: var(--s3);
+}
+
+.calendar { list-style: none; display: grid; gap: var(--s2); max-width: 30rem; font-variant-numeric: tabular-nums; }
+.calendar li { display: flex; justify-content: space-between; gap: var(--s3); border-bottom: 1px solid var(--rule); padding-bottom: var(--s2); }
+.calendar .when { font-family: var(--sans); font-weight: 700; }
+
+.factgrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s3); font-family: var(--sans); font-size: var(--t-sm); max-width: 34rem; }
+.factgrid b { display: block; font-size: 1.15rem; font-family: var(--serif); }
+
+.prose p { max-width: 38rem; }
+.prose p + p { margin-top: var(--s2); }
+
+.companions ul { list-style: none; display: grid; gap: var(--s2); max-width: 34rem; }
+.companions li { border-bottom: 1px solid var(--rule); padding-bottom: var(--s2); }
+.companions .why { color: var(--muted); font-size: var(--t-sm); font-family: var(--sans); }
+
+footer.fine { margin-top: var(--s5); border-top: 3px double var(--rule); padding-top: var(--s3); font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); }
+
+@media (max-width: 520px) {
+  .factgrid { grid-template-columns: 1fr 1fr; }
+}
+</style>
+</head>
+<body>
+<div class="bench">
+
+<nav class="crumbs" aria-label="You are here">
+  <a href="index.html">&larr; Back to the potting bench</a>
+</nav>
+
+<main>
+
+<div data-model="FF-011">
+
+<header class="mast">
+  <p class="kicker">Foxglove &amp; Fern &middot; climbing vine</p>
+  <h1>Cathedral Bells</h1>
+  <p class="latin">Cobaea scandens</p>
+</header>
+
+<div class="buyrow">
+  <span class="price">&pound;3.50</span>
+  <span class="packet">12 seeds to the packet</span>
+  <span class="instock">In stock</span>
+  <div class="margin-controls">
+    <button type="button" aria-label="One fewer packet of Cathedral Bells">&minus;</button>
+    <span class="qty" aria-hidden="true">1</span>
+    <button type="button" aria-label="One more packet of Cathedral Bells">+</button>
+    <button type="button" class="add" aria-label="Add Cathedral Bells to basket">Add</button>
+  </div>
+</div>
+<p class="shipnote">Ships to UK addresses only. Flat &pound;1.90 postage; free over &pound;15.</p>
+
+<section aria-labelledby="year-h">
+  <h2 id="year-h">Its year</h2>
+  <ul class="calendar">
+    <li><span class="when">Sow indoors</span> <span>Feb&ndash;Apr</span></li>
+    <li><span class="when">Plant out</span> <span>after last frost</span></li>
+    <li><span class="when">Flowers</span> <span>Jul&ndash;Oct</span></li>
+  </ul>
+</section>
+
+<section aria-labelledby="glance-h">
+  <h2 id="glance-h">At a glance</h2>
+  <div class="factgrid">
+    <p><b>moderate</b> difficulty; slow to start, then rampant</p>
+    <p><b>72%</b> germination in our test trays</p>
+    <p><b>6m</b> of growth by late summer</p>
+  </div>
+</section>
+
+<section class="prose" aria-labelledby="grow-h">
+  <h2 id="grow-h">How we grow it</h2>
+  <p>Soak seeds overnight; sow on edge in deep pots. Slow to start, then rampant. Give it wire or trellis and it will do the rest.</p>
+  <p>Violet bell flowers to 6m by late summer; it needs a warm start indoors, which is why the packet sits in the winter drawer of the bench. Do not be discouraged by the quiet first month.</p>
+</section>
+
+</div>
+
+<section class="companions" aria-labelledby="with-h">
+  <h2 id="with-h">Grows well alongside</h2>
+  <ul>
+    <li data-model="FF-002">
+      <a href="index.html#spring">Moonlight Nasturtium</a>
+      <p class="why">Pale cream at the vine's feet; edible leaves and flowers.</p>
+    </li>
+    <li data-model="FF-014">
+      <a href="index.html#spring">Tithonia Torch Sunflower</a>
+      <p class="why">Blazing orange against the violet bells; butterflies take both.</p>
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="fine">
+  <p>Foxglove &amp; Fern is a fictional shop; this page is a design study. Germination rates are from our own test trays. Ships to UK addresses only.</p>
+</footer>
+
+</div>
+</body>
+</html>

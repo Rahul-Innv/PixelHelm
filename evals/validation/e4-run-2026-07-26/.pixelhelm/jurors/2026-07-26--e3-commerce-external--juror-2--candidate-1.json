@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "Price, stock state, and sow window sit in a consistent position within each numbered entry and the single month dropdown is predictable, but the stacked editorial list forces reading through description text to compare items, so glance speed is only moderate.",
+    "2": "The money path is entirely conventional: price then stock label on the list, and a quantity field with a clearly labelled Add to basket button on the product page, with no cleverness anywhere near it.",
+    "3": "Out of stock keeps its visible price, the null-price sweet pea shows Price pending rather than an invented number, the estimated germination is flagged inline, and UK-only shipping heads both surfaces before any purchase intent forms.",
+    "4": "Large serif body text, high contrast in both modes, generous spacing, a full-size buy button, and no hover-dependent information serve older tablet readers well.",
+    "5": "Cream, ink, green, and brick are held consistently across both surfaces with steady rules and rhythm; the centered masthead over a left-set list reads as one deliberate system in light and dark.",
+    "6": "The sowing table, difficulty line, potting-shed note, and companions with price and stock let a first-time gardener decide on the page, though the arrangement is plain rather than purpose-built.",
+    "7": "The hand-kept numbered seed list, with its read-slowly motto, is a credible two-person signature, but it is quieter and less structurally load-bearing than the stronger metaphors in this set.",
+    "8": "Novelty stays in the editorial brand layer, with numbering and voice, while navigation, filtering, and the buy path remain fully conventional.",
+    "9": "Lines like Read slowly, choose well and Good company for it sound like a knowledgeable neighbor, and the descriptions are warm and specific rather than promotional.",
+    "10": "A returning shopper gets visible stock states and a month filter, but there is no season grouping to answer what is sowable now at a glance; the two surfaces do cohere tightly as one shop."
+  },
+  "inputTranscriptSha256": "3085bffcb96d3c31373530f7cf10e56a1b8d54d4145cd2cbc95b5700f327e9f2",
+  "shuffleSeed": 202607632
+}

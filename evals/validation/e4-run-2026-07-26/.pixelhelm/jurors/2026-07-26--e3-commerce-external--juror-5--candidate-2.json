@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The twelve-month band gives season fit at a literal glance with the text window as backup, and window groupings plus the sidebar make filtering predictable. Prices are present on every row though set less prominently than the best here.",
+    "2": "The list-to-page model and the conventional buy box keep the money path free of cleverness, with the almanac novelty confined to presentation around it.",
+    "3": "Out of stock, the price-pending line, and the estimated germination are all stated, and the marginal notes actively reinforce the honesty rather than hiding it.",
+    "4": "Nothing depends on hover and the product page is generous, but the small italic marginalia and compact meta lines will strain older readers on tablets at default zoom.",
+    "5": "Hairline rules, a disciplined serif system, and the repeated month band bind both surfaces into one refined editorial object.",
+    "6": "The year table with its band, the at-hand difficulty line, the margin note, and companions give full decision material, though companions are plainer than elsewhere.",
+    "7": "Find your month first then your packet is a genuinely distinctive signature that reorganizes the whole catalog around the gardener's calendar, and content, visuals, and voice all execute it.",
+    "8": "The band visualization, marginalia, and time-first architecture are all brand and content layer breaks while checkout-adjacent mechanics stay untouched.",
+    "9": "Marginal notes like takes an autumn sowing too as the band shows and the whole plant earns its bed read as one knowledgeable neighbor no competitor could publish unchanged.",
+    "10": "A repeat visitor checking what is sowable now is served by the almanac structure itself plus the month filter, and the product page continues the same almanac faithfully."
+  },
+  "inputTranscriptSha256": "d5cc66dc63ed6458827100c917891fba3a968ec648a6a1d7a315cbac7034c637",
+  "shuffleSeed": 202607635
+}

@@ -1,0 +1,116 @@
+{
+  "juror": "juror-5",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Each card shows price, stock state, sow window, and difficulty in fixed positions, and the shelf sections plus month dropdown make season filtering simple and predictable.",
+        "2": "Price and stock sit where convention expects them and the product buy box is a textbook quantity-plus-add pattern with the delivery note beside it. The only oddity is that a visible view button appears on just one card.",
+        "3": "Out of stock is plainly marked, the null-price packet honestly says price on request, the estimated germination is flagged inline, and the UK-only banner appears before any purchase intent forms.",
+        "4": "Generous card type, a large add-to-basket target, and no hover-dependent information hold up at both widths, and mobile keeps full content in a single readable column.",
+        "5": "The packet-illustration cards, limited cream-rust-green palette, and consistent spacing carry across catalog and product page as one system, with only minor busyness inside the cards.",
+        "6": "The sowing table, difficulty line, potting-shed note, and companion cards with price and stock let a first-time gardener decide entirely on the page.",
+        "7": "The seed rack by the shop door is a one-sentence idea a two-person shop could truthfully own, and the shelf sections, packet art, and copy all reinforce it.",
+        "8": "The novelty lives in the shelf metaphor and botanical packet art while every money-path mechanic stays strictly conventional.",
+        "9": "Lines like fruits indoors through winter on a bright sill and kept in one family since 1928 are warm and specific, though the voice thins outside the descriptions.",
+        "10": "Season shelves plus the month filter answer what can I sow now immediately, low-stock counts are surfaced, and the two surfaces share one visual language."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 7,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The twelve-month band gives season fit at a literal glance with the text window as backup, and window groupings plus the sidebar make filtering predictable. Prices are present on every row though set less prominently than the best here.",
+        "2": "The list-to-page model and the conventional buy box keep the money path free of cleverness, with the almanac novelty confined to presentation around it.",
+        "3": "Out of stock, the price-pending line, and the estimated germination are all stated, and the marginal notes actively reinforce the honesty rather than hiding it.",
+        "4": "Nothing depends on hover and the product page is generous, but the small italic marginalia and compact meta lines will strain older readers on tablets at default zoom.",
+        "5": "Hairline rules, a disciplined serif system, and the repeated month band bind both surfaces into one refined editorial object.",
+        "6": "The year table with its band, the at-hand difficulty line, the margin note, and companions give full decision material, though companions are plainer than elsewhere.",
+        "7": "Find your month first then your packet is a genuinely distinctive signature that reorganizes the whole catalog around the gardener's calendar, and content, visuals, and voice all execute it.",
+        "8": "The band visualization, marginalia, and time-first architecture are all brand and content layer breaks while checkout-adjacent mechanics stay untouched.",
+        "9": "Marginal notes like takes an autumn sowing too as the band shows and the whole plant earns its bed read as one knowledgeable neighbor no competitor could publish unchanged.",
+        "10": "A repeat visitor checking what is sowable now is served by the almanac structure itself plus the month filter, and the product page continues the same almanac faithfully."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 7,
+        "2": 7,
+        "3": 9,
+        "4": 4,
+        "5": 5,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The dense bench list with right-aligned prices, inline stock, season drawers, and filter chips scans fast on desktop, but two rows collapse into narrow broken columns that slow exactly this task.",
+        "2": "The buy path is conventional in shape, yet the compressed stepper-and-add controls are small enough to feel fiddly and sit unusually inside the catalog rows.",
+        "3": "This is the most honest surface of the four, with a restock explanation on the out-of-stock line, a written price-pending promise, and a footer disclosing how germination rates were measured.",
+        "4": "The tiny stepper targets fail the generous-target test for older readers, and the mobile catalog breaks into one-word-per-line text on two entries, which is below professional for this audience.",
+        "5": "Palette and hierarchy are disciplined and the product page is clean, but the misaligned narrow columns on desktop and the severe mobile wrapping fault break the system on half the renders.",
+        "6": "The at-a-glance stats with plain-language explanations, the reassuring growing notes, and companions with reasons make this the most confidence-building product page here.",
+        "7": "The catalog is short on purpose because we vouch for every line is a true service-culture signature for a two-person shop, though the visual layer expresses it less than the words do.",
+        "8": "Novelty is almost entirely in voice and drawer language while mechanics stay conventional, keeping the breaks inside the brand layer.",
+        "9": "Lines like the easiest drawer on the bench and do not be discouraged by the quiet first month are exactly the knowledgeable neighbor, unhurried and uncopyable.",
+        "10": "Keeping out-of-stock lines visible so shoppers can come back for them, with a stated relisting promise, directly serves the returning visitor and both surfaces speak with one voice."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 7,
+        "9": 7,
+        "10": 6
+      },
+      "rationales": {
+        "1": "Price and stock are legible per entry, but the flat numbered list has no seasonal grouping, so season fit means reading each sow line or relying solely on the month dropdown.",
+        "2": "The list-to-page model and the product buy box follow convention exactly, with nothing clever anywhere near the money path.",
+        "3": "Out of stock, the price-pending line, the estimated germination flag, and the UK-only note are all present, just stated more quietly than the strongest candidates.",
+        "4": "Type is generous, nothing hides behind hover, and mobile reads cleanly, though the small-caps meta lines run small for older readers.",
+        "5": "The centered masthead, numbered entries, and hairline rules are consistent across both surfaces, but the flat list reads more restrained than composed.",
+        "6": "The year table, difficulty line, potting-shed note, and companion listings with price and stock cover the first-time gardener's decision on the page.",
+        "7": "Two of us keep this list plus the numbered annual conceit is a real but modest signature, and the flat structure does not let the other layers reinforce it strongly.",
+        "8": "Breaks stay in the brand layer, though the numbered-list conceit trades away seasonal navigation structure, spending its budget on presentation rather than service.",
+        "9": "Read slowly choose well is a lovely line, but beyond it the copy is largely the shared catalog prose without much added personality.",
+        "10": "A repeat visitor must scan the whole numbered list or use the month filter to find what is in season, and there is no newly-in-stock or seasonal signal to serve them immediately."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-1",
+    "candidate-3",
+    "candidate-4"
+  ]
+}

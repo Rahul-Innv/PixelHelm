@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 7,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The headline states what it is and how it is priced, the subhead explains the core action, and the named trades identify the audience within the first screenful.",
+    "2": "Most claims carry their basis, but the ninety-eight percent figure is presented bare with no visible source or qualifier beside the otherwise careful labeling.",
+    "3": "Pricing is transparent with the VAT note and a no-enterprise-tier line, but the primary button sells viewing the rate card and the trial itself never gets an unmistakable button of its own.",
+    "4": "Day-rate framing, named trades, and direct answers to subscription skepticism fit the audience, and the mobile stack stays plain and readable.",
+    "5": "Clean alignment, a limited palette, and consistent section labels keep it tidy, though it is visually the most generic of the set.",
+    "6": "The beta is marked still in testing, the estimate stays an estimate, and the testimonial is explicitly labeled a fictional persona; only the unqualified ninety-eight percent figure keeps this from full marks.",
+    "7": "Priced like a day rate is a genuine sentence-length idea, but beyond the rate-card section the page is a conventional layout that asserts rather than demonstrates.",
+    "8": "Mechanics and layout are almost entirely conventional with the rate-card framing as the lone restrained break.",
+    "9": "Lines about no subscription games and the evening quote not waiting on a chatbot are distinctive, though several passages read as standard plain-spoken marketing.",
+    "10": "What it is, what it costs, and how to leave are all reachable in seconds, which keeps the time-is-valuable promise."
+  },
+  "inputTranscriptSha256": "ef687d75ba2aa6c2096d86ab555e5c05249919b4867ce210c2f204ea98f2162a",
+  "shuffleSeed": 202607625
+}

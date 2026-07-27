@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Each card shows price, stock state, sow window, and difficulty in fixed positions, and the shelf sections plus month dropdown make season filtering simple and predictable.",
+    "2": "Price and stock sit where convention expects them and the product buy box is a textbook quantity-plus-add pattern with the delivery note beside it. The only oddity is that a visible view button appears on just one card.",
+    "3": "Out of stock is plainly marked, the null-price packet honestly says price on request, the estimated germination is flagged inline, and the UK-only banner appears before any purchase intent forms.",
+    "4": "Generous card type, a large add-to-basket target, and no hover-dependent information hold up at both widths, and mobile keeps full content in a single readable column.",
+    "5": "The packet-illustration cards, limited cream-rust-green palette, and consistent spacing carry across catalog and product page as one system, with only minor busyness inside the cards.",
+    "6": "The sowing table, difficulty line, potting-shed note, and companion cards with price and stock let a first-time gardener decide entirely on the page.",
+    "7": "The seed rack by the shop door is a one-sentence idea a two-person shop could truthfully own, and the shelf sections, packet art, and copy all reinforce it.",
+    "8": "The novelty lives in the shelf metaphor and botanical packet art while every money-path mechanic stays strictly conventional.",
+    "9": "Lines like fruits indoors through winter on a bright sill and kept in one family since 1928 are warm and specific, though the voice thins outside the descriptions.",
+    "10": "Season shelves plus the month filter answer what can I sow now immediately, low-stock counts are surfaced, and the two surfaces share one visual language."
+  },
+  "inputTranscriptSha256": "d5cc66dc63ed6458827100c917891fba3a968ec648a6a1d7a315cbac7034c637",
+  "shuffleSeed": 202607635
+}

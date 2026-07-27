@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Shelf sections map directly to sowing seasons, the month filter is prominent, and each card carries price, stock, and sow months in a fixed position. The four-column grid slows a pure price scan slightly versus a list.",
+    "2": "Cards, the boxed shipping notice, the stock wording, and the product-page quantity plus basket flow are all textbook mechanics with zero cleverness in the money path.",
+    "3": "Out of stock is red and unambiguous, the sweet pea shows price on request rather than a fabricated number, the estimated germination is flagged, and the UK-only rule sits in a boxed banner near the top of both surfaces.",
+    "4": "Generous card padding, a large add-to-basket button, readable type at default size, and no hover-dependent content suit older tablet readers well.",
+    "5": "The stamped seed-packet frame motif repeats from catalog card to product page hero, with consistent rules, palette, and spacing in both light and dark modes, reading as one crafted system.",
+    "6": "Price box with packet count, the year table, difficulty line, potting shed note, and companion cards showing price and stock give everything a first-time gardener needs on one page.",
+    "7": "The rack by the shop door, shelf by shelf, is a true small-shop idea, and the shelf sections plus hand-stamped packet illustrations carry it through every layer of both surfaces.",
+    "8": "The illustration and rack conceit stay in the brand layer while every commerce mechanic remains conventional, exactly the confined break budget the archetype wants.",
+    "9": "Two of us keep it stocked is warm and fitting, but much of the running copy is functional description that a careful competitor could publish with light edits.",
+    "10": "Shelves, the month filter, and consistent card stock labels let a repeat visitor check the season in seconds, and the packet motif ties the two surfaces into one shop."
+  },
+  "inputTranscriptSha256": "b1456c6f177733d9871acff5b040fa391a5e24876b96fd4db6f57a2702d2d29c",
+  "shuffleSeed": 202607633
+}

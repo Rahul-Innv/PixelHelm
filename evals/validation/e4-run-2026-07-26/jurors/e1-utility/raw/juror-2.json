@@ -1,0 +1,116 @@
+{
+  "juror": "juror-2",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 6,
+        "8": 7,
+        "9": 5,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The mobile first viewport shows the count strip and the burn closure notice, and the grouped color banners let a visitor answer the go or no-go question by scrolling alone.",
+        "2": "Every status pairs a distinct icon and word with its color in the legend, the section headers, and the card banners, and each keeps one stable rendering throughout.",
+        "3": "Unreported trails carry an explicit no-report treatment, the missing Jul 22 point is drawn as a labeled gap in the chart, the snowpack value wears an estimated badge with its sensor explanation, and every card shows its last-report time.",
+        "4": "Grouping runs open to caution to closed to no report, matching the hiker's decision order, with plain factual copy throughout.",
+        "5": "The card system and palette are consistent, but the very tall repeated status banners are heavy-handed emphasis and the desktop grid reads clunky.",
+        "6": "Long names, the burn pair, and both unreported rows all fit and both modes are resolved, but the desktop rows leave ragged holes and the snowpack card is mostly empty space.",
+        "7": "Status-colored card banners are competent but generic dashboard language; no one-sentence idea specific to a trail-conditions service emerges.",
+        "8": "Mechanics are fully conventional with no real convention breaks, which respects the budget but leaves almost no brand layer at all.",
+        "9": "Microcopy such as the no-report line is plain boilerplate any competitor could publish unchanged.",
+        "10": "The count strip rewards a daily glance and nothing playful blocks a return visit, though the oversized banners make repeat scanning slower than it needs to be."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The summary sentence stating 3 of 9 trails open sits with the ranger's notice inside the mobile first viewport, and the ordered log answers where by scrolling alone.",
+        "2": "Stamp-style labeled chips give each status a worded, consistently colored rendering that repeats identically down the log.",
+        "3": "No-report entries say condition unknown, Jul 22 is written as not recorded in the seven-day table, the snowpack carries an estimated stamp, and each entry lists its last-report time; only the morning-log framing beside the 6:00 PM posted time slightly blurs data age.",
+        "4": "The log runs open, caution, closed, then no report, states that order up front, and keeps calm plain language throughout.",
+        "5": "The letterpress system with dot leaders, aligned distances, and a disciplined serif hierarchy is consistent and nothing feels arbitrary.",
+        "6": "Long names, the burn pair, and both unreported entries sit cleanly in the ruled rows, and the parchment and dark-brown modes are both fully resolved.",
+        "7": "The one-sentence idea of the page as a ranger's daily log is reinforced by the stamps, the entry numbers, the ledger typography, and the end-of-log closing, and it is true of how a trail service actually works.",
+        "8": "Mechanics stay a conventional single-column list while the letterpress log styling is the one deliberate brand-layer break.",
+        "9": "Phrases like the ranger's notice, the entry numbers, and end of log give copy no competitor could publish unchanged while staying factual.",
+        "10": "A dated daily log invites the habitual glance, the opening summary delivers it in one line, and nothing mandatory or playful stands in the way."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The count row and closure alert fill the mobile first viewport, and the go, go-with-care, and do-not-go sections answer the hiker's exact question in scan order.",
+        "2": "Statuses are carried by worded labels, matching color rails, and decision-named sections, with one stable color and rendering per status throughout.",
+        "3": "Unknown trails warn that unknown is not the same as fine, the Jul 22 gap is announced and shown unsmoothed, the estimate is flagged as not measured on the ridge, each trail carries its own report time, and the footer states the never-assumed-open policy outright.",
+        "4": "Sections named for the decision rather than the status match the hiker's mental model exactly, and the language stays plain and directive.",
+        "5": "Rails, hairlines, serif headings, and metadata lines follow one consistent system with a restrained palette and clear hierarchy.",
+        "6": "All the awkward data, including both unknown rows and the burn pair, sits cleanly in the row system, and light and dark are both fully resolved.",
+        "7": "The signature idea that the board says only what was reported today is stated in the footer and enacted by the per-trail report times, the unknown warnings, and the unsmoothed gap.",
+        "8": "Mechanics remain a conventional sectioned list; the decision-language section names are the single deliberate break, kept in the brand layer.",
+        "9": "Lines like unknown is not the same as fine and shown as the gap it is are calm, factual, and unmistakable, and no competitor could publish them unchanged.",
+        "10": "The counts and go list give the daily glance immediately, and the explanatory prose sits low on the page where a returning user can simply skip it."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 9,
+        "2": 6,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline stating 3 of 9 trails open this morning answers the core question instantly, and it shares the mobile first viewport with the closure alert.",
+        "2": "Words keep the four statuses distinguishable, but caution and closed share the same orange hue differing only by fill, open gets no marker beyond plain text, and the dashed no-report underline reads like a link.",
+        "3": "No-report rows, the never-assumed-open footer note, the flagged estimated snowpack, the marked no-data day, and per-trail report times are all present, though the morning headline against the 6:00 PM as-of stamp slightly muddies data age.",
+        "4": "Open, caution, closed, then no report ordering is stated and followed, the worth-knowing sidebar fronts what changed, and the copy is plain.",
+        "5": "The serif headline, single accent color, and aligned list rows form a restrained, disciplined system.",
+        "6": "The rows absorb the awkward data and both modes are resolved, but the desktop hero leaves a large empty band before the trail list that reads as imbalance.",
+        "7": "The day's conditions delivered as a front-page headline is a clear signature that the dek, the sidebar, and the almanac-style week all reinforce, and it suits a daily conditions service.",
+        "8": "Mechanics stay a plain list while the newspaper hero and the minimal chip system are the one or two deliberate brand-layer breaks.",
+        "9": "The headline, the worth-knowing label, and no report on file give a dry editorial voice a competitor could not publish unchanged.",
+        "10": "The headline makes the repeat glance nearly instant and nothing playful or blocking appears, though the long empty scroll on desktop adds mild friction."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-2",
+    "candidate-4",
+    "candidate-1"
+  ]
+}

@@ -1,0 +1,116 @@
+{
+  "juror": "juror-4",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The eyebrow line names the product and audience, but the first screen leads with a scenario headline, so the value proposition assembles over several numbered steps rather than immediately.",
+        "2": "The pilot claim is labeled as an internal estimate from eleven users and the payment claim carries a product-behavior footnote, so restraint is consistent.",
+        "3": "Trial buttons open and close the page, the no-card promise sits beside pricing, and the VAT note appears exactly where prices do.",
+        "4": "Single-column numbered steps in plain trade language suit a phone-holding sole trader, with touches like the ladder still being warm.",
+        "5": "The numbered rhythm and spacing are disciplined, but the alternation of yellow and green numerals reads as arbitrary color without an evident meaning.",
+        "6": "The QuickBooks beta is labeled with an honest caveat and the pilot figure is flagged as a signal, but the customer quote appears with no verification or persona label.",
+        "7": "The page tells one afternoon as six steps from job done to tax sorted, and content and visuals reinforce that single narrative idea.",
+        "8": "Mechanics stay conventional and the single deliberate break is replacing the hero with a stepwise story.",
+        "9": "Lines like staying the reasonable one without writing a word could not be published unchanged by a generic competitor.",
+        "10": "The steps scan quickly, but a reader must walk the whole story before reaching the price and the decision material."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 6,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The full price list, VAT note, and trial terms sit in the first screenful under a headline that says exactly what is happening, with the eyebrow naming the category.",
+        "2": "An evidence section titled evidence not adjectives labels the pilot figure and types the payment claim as product behavior, and the copy contains no marketese.",
+        "3": "Pricing leads the page with the VAT note adjacent and an honest no-card line, though the single trial button near the top is never repeated after the case is made.",
+        "4": "Opening with the quote and setting the small print large speaks directly to a subscription-skeptic who gives quotes for a living, and the single column reads cleanly on the phone.",
+        "5": "Accent-ruled cards, aligned tables, and roughly three type sizes hold together, with only a slightly unbalanced card grid as a quibble.",
+        "6": "The beta is labeled twice and the pilot estimate is flagged, but the customer quote carries no verification or persona label.",
+        "7": "Price and small print first, decide the way your own customers do, is one sentence that the structure, the copy, and the quotation card all enact.",
+        "8": "The one deliberate break is inverting the funnel to lead with price while every mechanic stays conventional.",
+        "9": "No asterisk because there is not one to hide, and people in Manchester rather than a chat widget pretending to be, are lines a competitor could not lift.",
+        "10": "Everything needed to decide is in the first screen, which is the product's time-respect promise enacted as form."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 6,
+        "8": 7,
+        "9": 7,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline names the category and pricing stance and the subhead explains the mechanism, so comprehension lands within seconds on every viewport.",
+        "2": "The four-hour figure is carefully labeled as an early signal, but the ninety-eight percent statistic is presented flat with no stated basis beside it.",
+        "3": "The rate card is transparent with the VAT note and a no-enterprise-tier line, though the only button is the top call to action and the closing trial offer is plain text.",
+        "4": "Priced like a day rate is the audience's own idiom, and the plain sections match how a skeptical sole trader would interrogate the product.",
+        "5": "Execution is clean and consistently professional, but the layout is a stock pattern and nothing in the craft rises above baseline.",
+        "6": "The testimonial is explicitly labeled a fictional persona and the beta is marked still in testing, leaving only the unlabeled ninety-eight percent as a wobble.",
+        "7": "The day-rate line is a positioning sentence the page asserts rather than a signature the layout and interaction demonstrably enact.",
+        "8": "There are effectively zero convention breaks, which respects the budget but spends none of it on distinction.",
+        "9": "A few lines, like the evening quote not waiting on a chatbot, are distinctive, but much of the copy could survive unchanged on a competitor's site.",
+        "10": "The conventional structure scans and decides quickly, though the page proves its speed claim by assertion more than by form."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 6,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The conceit headline plus the for, from, and terms rows identify audience, maker, and offer within the first screen, at the cost of one beat to get the joke.",
+        "2": "The pilot estimate is labeled with its size and the payment claim is explained as simply how the product works, with no promotional inflation anywhere.",
+        "3": "Trial terms appear in the header rows, the stamp and no-card line are unmissable, the VAT note sits under the totals, and the call to action repeats at the decision point.",
+        "4": "Reading the pitch as paperwork is native behavior for a tradesperson, and the line items speak plain trade language throughout.",
+        "5": "The invoice typography of ruled tables, monospace labels, and the stamp is coherent and deliberate, though the saturated blue button adds a second accent the paper palette does not quite own.",
+        "6": "The beta carries an honest caveat and the estimate is never rounded into fact, but the customer quote has no verification or persona label.",
+        "7": "An invoicing product pitched as an invoice is the ideal form: the page is the artifact the product sells, demonstrated rather than asserted.",
+        "8": "One structural conceit carries all the novelty while navigation, buttons, and tables remain conventional.",
+        "9": "Walk away owing nothing and January stops being a surprise are specific, unhyped lines a competitor could not publish unchanged.",
+        "10": "Line items, a total, and terms are exactly how this reader already processes paperwork, so scanning and deciding are fast by construction."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-4",
+    "candidate-2",
+    "candidate-1",
+    "candidate-3"
+  ]
+}

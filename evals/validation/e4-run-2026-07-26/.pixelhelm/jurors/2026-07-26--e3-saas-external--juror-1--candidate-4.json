@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 9,
+    "6": 6,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The quotation card puts both prices, the VAT note and the trial terms in the very first screenful, and the kicker names the category. Who it is for arrives implicitly through the you-would-never-take-a-job framing rather than a direct statement.",
+    "2": "Setting the small print large is credibility engineering made structural, and the evidence section labels the pilot estimate and the product-behavior claim exactly as the honest reading requires. Restraint reads as confidence throughout.",
+    "3": "The trial button sits beside the prices with no card required stated plainly, and every caveat a buyer could want is promoted, not buried. The only deduction is that a reader who finishes the page finds no closing CTA and must scroll back.",
+    "4": "A quotation is the document this audience writes daily, and price-and-small-print-first answers the subscription-skeptic's first question before anything else. The mobile stack keeps the quote card on top where it belongs.",
+    "5": "The serif display, rust accent bars and ruled tables form an elegant, coherent system with a disciplined hierarchy and nothing arbitrary. Both modes hold the same character.",
+    "6": "The beta is named in the terms, cross-referenced again at the integration row, and the estimate is labeled and not rounded into fact. The italic testimonial carries no label, the single honest-surface miss.",
+    "7": "Here is the quote is a one-sentence signature the page proves by conduct, giving the buyer exactly the transparency the product promises its users' customers. The small-print inversion makes the thesis visible rather than claimed.",
+    "8": "Price-first ordering and enlarged small print are two deliberate breaks confined to the brand layer while every mechanic stays conventional. That is precisely the permitted budget, spent well.",
+    "9": "You would never take a job without giving one and there is not an asterisk to hide are lines only this product could publish. The voice trusts the reader's professionalism without flattery.",
+    "10": "The full price, terms and caveats are decidable within seconds of arrival, which is the product's promise enacted as form. Nothing on the page performs; everything informs."
+  },
+  "inputTranscriptSha256": "2af9e44ea2007a82a781c5fd42380b5504b637c682f9a11d1b49d67ab1dbee9a",
+  "shuffleSeed": 202607621
+}

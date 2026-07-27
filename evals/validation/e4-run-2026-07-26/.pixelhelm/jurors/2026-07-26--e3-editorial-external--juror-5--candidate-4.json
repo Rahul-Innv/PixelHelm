@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede gives the entire finding in numbers, every plate opens with a bold prose sentence stating what it shows, and the lettered notes plus full table make the story complete without decoding a single mark.",
+    "2": "All three plates are named by their findings, the nonzero start on Plate II is declared in the title while Plate III states it is drawn from zero, gaps stay open, and 2019 is hollow and flagged in each view.",
+    "3": "The seam, the three gaps, the unverified 2019 spike, and the shift-not-cause scope note are restated as marginal notes on every plate, so no view of the data ever appears without its caveats.",
+    "4": "The autumn-fair line and the lane under water in October are concrete, place-loving journalism, and the two archival fragments sit exactly where they explain the numbers.",
+    "5": "Assured editorial typography with comfortable measure, a disciplined plate system, and clean rendering across both modes and both viewports including full-legibility mobile charts.",
+    "6": "A plain linear document with no scrolljack apparatus and a fully readable base; motion parity is not observable from static renders.",
+    "7": "Reporter's notes written on the record itself is a one-sentence signature that the plate-and-marginalia apparatus, the table, and the prose all enact, and the annotation system is itself the honesty argument.",
+    "8": "The plate apparatus is the single deliberate break and every reading mechanic around it remains conventional.",
+    "9": "Unsensational, specific, and unmistakably local; no competitor could publish the parish and fair references unchanged.",
+    "10": "Each lettered note and highlighted mark traces to a verifiable feature of the ledger, with the one dramatic reading consistently de-emphasized rather than exploited."
+  },
+  "inputTranscriptSha256": "2071a5a25f0804d239e8bab4b0cac8bad4835668a9ff8ca74ddf00a90bdc6237",
+  "shuffleSeed": 202607645
+}

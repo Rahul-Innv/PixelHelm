@@ -1,0 +1,132 @@
+{
+  "project": "e4-plant-day-rate",
+  "root": "../arms/day-rate",
+  "_rootNote": "relative to this profile's directory (repo-portable; no user-absolute path)",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file plant: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#f8f7f3",
+      "ink": "#1d2126",
+      "muted": "#575d54",
+      "teal": "#145c54",
+      "copper": "#8f4517",
+      "beta": "#7c5a10",
+      "cta-bg": "#145c54",
+      "cta-ink": "#f8f7f3",
+      "rule": "#878c84"
+    },
+    "dark": {
+      "paper": "#14171a",
+      "ink": "#e9e8e2",
+      "muted": "#b3b2a6",
+      "teal": "#86ccc2",
+      "copper": "#e0a37b",
+      "beta": "#d8b562",
+      "cta-bg": "#86ccc2",
+      "cta-ink": "#14171a",
+      "rule": "#70766e"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "teal",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "copper",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "beta",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "cta-ink",
+      "on": [
+        "cta-bg"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "marketing",
+  "_register": "plain-spoken, tradesperson-respecting, zero startup hype; every claim traces to the sealed data file."
+}

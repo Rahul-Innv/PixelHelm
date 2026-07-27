@@ -1,0 +1,91 @@
+{
+  "candidateOrderBase": [
+    "seed-annual",
+    "packet-rack",
+    "sowing-almanac",
+    "potting-bench"
+  ],
+  "plant": "potting-bench",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607631,
+      "candidateOrder": [
+        "sowing-almanac",
+        "potting-bench",
+        "seed-annual",
+        "packet-rack"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "sowing-almanac",
+        "candidate-2": "potting-bench",
+        "candidate-3": "seed-annual",
+        "candidate-4": "packet-rack"
+      },
+      "transcriptSha256": "49cbf07abd405334f1987306716c892ec26466139bf44acdcf6f0d79b689388c"
+    },
+    "juror-2": {
+      "jurorSeed": 202607632,
+      "candidateOrder": [
+        "seed-annual",
+        "potting-bench",
+        "sowing-almanac",
+        "packet-rack"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "seed-annual",
+        "candidate-2": "potting-bench",
+        "candidate-3": "sowing-almanac",
+        "candidate-4": "packet-rack"
+      },
+      "transcriptSha256": "3085bffcb96d3c31373530f7cf10e56a1b8d54d4145cd2cbc95b5700f327e9f2"
+    },
+    "juror-3": {
+      "jurorSeed": 202607633,
+      "candidateOrder": [
+        "sowing-almanac",
+        "potting-bench",
+        "packet-rack",
+        "seed-annual"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "sowing-almanac",
+        "candidate-2": "potting-bench",
+        "candidate-3": "packet-rack",
+        "candidate-4": "seed-annual"
+      },
+      "transcriptSha256": "b1456c6f177733d9871acff5b040fa391a5e24876b96fd4db6f57a2702d2d29c"
+    },
+    "juror-4": {
+      "jurorSeed": 202607634,
+      "candidateOrder": [
+        "packet-rack",
+        "seed-annual",
+        "potting-bench",
+        "sowing-almanac"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "packet-rack",
+        "candidate-2": "seed-annual",
+        "candidate-3": "potting-bench",
+        "candidate-4": "sowing-almanac"
+      },
+      "transcriptSha256": "1326f55a5156fe7637d252908f4c34eeb21515b3b60fcf3501f4d0867d41853c"
+    },
+    "juror-5": {
+      "jurorSeed": 202607635,
+      "candidateOrder": [
+        "packet-rack",
+        "sowing-almanac",
+        "potting-bench",
+        "seed-annual"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "packet-rack",
+        "candidate-2": "sowing-almanac",
+        "candidate-3": "potting-bench",
+        "candidate-4": "seed-annual"
+      },
+      "transcriptSha256": "d5cc66dc63ed6458827100c917891fba3a968ec648a6a1d7a315cbac7034c637"
+    }
+  }
+}

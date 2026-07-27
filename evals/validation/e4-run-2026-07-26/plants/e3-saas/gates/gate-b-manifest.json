@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\great-newton-7cce89\\evals\\validation\\e4-run-2026-07-26\\plants\\e3-saas\\arms\\day-rate\\index.html",
+  "pass": true,
+  "required": 28,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}

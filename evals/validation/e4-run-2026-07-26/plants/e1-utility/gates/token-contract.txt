@@ -1,0 +1,2 @@
+arms/switchback/index.html: FAIL — 13 pass / 1 fail / 0 unresolvable (pairs×modes)
+    light muted on paper: 3.12 < 4.5

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede plus the what-it-shows paragraph deliver the entire finding in prose, though per-year onset lands only as a dot position rather than a printed day figure.",
+    "2": "The rail is honestly specified in the how-to-read box, including the fixed 550 to 750 bar scale, and missing years are hatched rather than bridged.",
+    "3": "The instrument change is a subhead inside the record, the three no-record years are hatched with their reasons, and 2019 is a hollow dot carrying its unverified note in place.",
+    "4": "The archival quotes sit inside the rail at their own years and the mid-record reflection lands exactly where the pattern becomes visible, which is human context serving the data's story.",
+    "5": "The row grid is disciplined in both palettes and both widths, with era breaks and quotes pacing an otherwise repetitive thirty-four-row read.",
+    "6": "A plain top-to-bottom read with no visible scrolljack or motion dependence; the base is the story.",
+    "7": "One line per year, read down the page like the valley's almanac, makes the rightward drift physically felt as you read — the form is the journalism.",
+    "8": "One deliberate break, the almanac rail replacing conventional chart panels, while every reading mechanic stays ordinary.",
+    "9": "The almanac framing and the era-placed entries give prose no other paper could run unchanged.",
+    "10": "Every device is the ledger itself; the hatching, the hollow dot, and the era subheads all trace to real properties of the record."
+  },
+  "inputTranscriptSha256": "5eef273592bcfcca0a89a315578243ec1cf567a7b4d81057b0a0628af66e8ebc",
+  "shuffleSeed": 202607642
+}

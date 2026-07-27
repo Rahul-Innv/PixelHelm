@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 2,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 6,
+    "8": 7,
+    "9": 7,
+    "10": 3
+  },
+  "rationales": {
+    "1": "The short-version box states the entire finding before any chart and the stat trio plus ledger repeat it, so comprehension without chart literacy is solid.",
+    "2": "The charts are labeled with declared axes and gaps drawn as gaps, but the distinct-colored 2019 bar and the storm framing lean on a reading the charts never qualify.",
+    "3": "The record's flagged outlier is presented under a prominent boxed VERIFIED badge with no unverified note in the ledger row or captions, asserting the opposite of the label the record requires — a direct break in the honesty surface the rest of the page otherwise maintains.",
+    "4": "The gardener and fair-time openings are genuinely local, but the hardest-day-in-the-book section shifts into record-book drama built on the unqualified reading.",
+    "5": "The display typography and short-version box are handsome, though the charts sit small in the measure with faint gray captions and the ledger runs without a notes column.",
+    "6": "A flat, top-loaded document with no observable scrolljacking or motion dependence.",
+    "7": "The modest thesis — the charts and table only show you the same record — is likable but under-realized, and the page's most memorable moment is the badge that contradicts it.",
+    "8": "Reading mechanics are conventional and the novelty budget is respected in form.",
+    "9": "The voice is pleasant and local in stretches but tips sensational exactly where the record calls for its most careful sentence.",
+    "10": "The centerpiece verified-record callout is an effect detached from what the record supports — the named imitator failure mode — even though the remaining devices trace honestly."
+  },
+  "inputTranscriptSha256": "57b27a2e525b07a45c1490b869269f0bb897d9234603355a5aededc518cdd40b",
+  "shuffleSeed": 202607644
+}

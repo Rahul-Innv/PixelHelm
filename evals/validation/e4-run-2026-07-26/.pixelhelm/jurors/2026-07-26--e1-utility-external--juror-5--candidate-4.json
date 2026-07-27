@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 5,
+    "8": 7,
+    "9": 5,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The count line and closure notice sit in the first mobile viewport, though the oversized status banners stretch the full scan far longer than the peers.",
+    "2": "Icon plus word plus color, restated in a legend, keeps every status unmistakable without color alone and stable in both modes.",
+    "3": "No-report cards and the charted no-data day with its dashed marker are honest and timestamped, but the unknown copy stops short of saying how to treat it and is the thinnest of the four.",
+    "4": "Status-grouped sections in decision order are sound, but the redundant legend and the repeated banner words add noise to what should be a simple scan.",
+    "5": "Execution is consistent, yet the huge solid banners give every card drama rather than proportionate hierarchy and the palette reads as stock dashboard rather than considered.",
+    "6": "Cards absorb long names and uneven cluster sizes cleanly, and both modes, including the chart, are fully resolved.",
+    "7": "There is no signature idea; the traffic-light card dashboard could belong to any status page and says nothing specific to this service.",
+    "8": "Mechanics are wholly conventional with no deliberate break, which is compliant but leaves the brand layer unused.",
+    "9": "The microcopy is generic boilerplate a competitor could publish unchanged.",
+    "10": "It supports a daily glance without friction, though the banner-heavy mobile scroll makes the repeat scan slower than it needs to be."
+  },
+  "inputTranscriptSha256": "917ce935cc0a9e8fc3898714d7e0550a03e7373e4ba547cfd9de7fef076ba322",
+  "shuffleSeed": 202607615
+}

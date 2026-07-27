@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The headline literally is the answer, 3 of 9 trails open this morning, with the closure alert beside it on desktop and directly beneath it on mobile, all inside the first viewport.",
+    "2": "Statuses are worded and each keeps a stable rendering, but caution and closed share the same orange hue distinguished only by outline versus fill, and open is bare text with no mark, which thins the system under quick or impaired viewing.",
+    "3": "Estimated snowpack is flagged inline with its sensor story, July 22 reads no data, every trail shows its last report time, and the footer states trails without a report are never assumed open or closed; the morning framing over a 6:00 PM stamp is the one small tension.",
+    "4": "Answer first, alert, worth-knowing context, then all nine trails in decision order is a sound hiker-shaped architecture in plain calm language, with the history table placed last where it belongs.",
+    "5": "The editorial typography, restrained two-hue palette, and consistent chip and meta styling show real discipline, though the single accent doing both warning and closure duty reads as economy over clarity.",
+    "6": "The trail list absorbs the data cleanly in both modes, but desktop leaves a large dead band of empty space between the hero and the list, and the mobile two-column history grid orders the days awkwardly.",
+    "7": "The signature, a daily bulletin whose headline is the condition, is true of a utility service and reinforced by copy and typography, though it rests almost entirely on the hero rather than on every layer.",
+    "8": "Mechanics remain a conventional list and table while the oversized editorial headline is the single deliberate brand-layer break, within budget.",
+    "9": "The headline sentence and the worth-knowing section carry a distinct calm editorial voice a competitor would not publish unchanged, though below the fold the microcopy goes generic.",
+    "10": "For a returning daily visitor the instant headline answer is the best second-visit payoff in the set, with nothing mandatory to bypass."
+  },
+  "inputTranscriptSha256": "9a11ba434b1fc1c871053017b91f6e7d971426097fe38e3ac45e589e18a5ad81",
+  "shuffleSeed": 202607613
+}

@@ -1,0 +1,112 @@
+{
+  "project": "e4-plant-high-water",
+  "root": "../arms/high-water",
+  "_rootNote": "relative to this profile's directory (repo-portable; no user-absolute path)",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file plant: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#f9f7f2",
+      "ink": "#212020",
+      "muted": "#5a5852",
+      "river": "#274f6e",
+      "flood": "#963b2b",
+      "rule": "#8e8c84"
+    },
+    "dark": {
+      "paper": "#161616",
+      "ink": "#eae8e2",
+      "muted": "#aeaca4",
+      "river": "#8fb8d8",
+      "flood": "#dd9b85",
+      "rule": "#6a6860"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "river",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "flood",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "editorial",
+  "_register": "patient local-paper journalism — concrete, unsensational, place-loving; the data is the story, never decoration."
+}

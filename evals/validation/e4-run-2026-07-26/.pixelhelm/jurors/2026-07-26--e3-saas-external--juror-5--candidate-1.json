@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 6,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The eyebrow names the product and the quotation panel puts price and terms in the first screenful, though the headline itself leans on the conceit rather than stating what the product does.",
+    "2": "The pilot figure is labeled as an internal estimate from a small pilot, the text-link claim is framed as product behavior, and the copy stays free of marketese.",
+    "3": "Trial terms are stated plainly beside an unmistakable button and the VAT note sits directly under the prices, but there is no closing call to action after the evidence section.",
+    "4": "Price-first structure and plain trade phrasing fit a subscription-skeptic sole trader, and the mobile layout keeps the quotation near the top.",
+    "5": "Consistent rules, a restrained cream-and-brick palette, and a clear serif and sans hierarchy; the small-print grid leaves one empty cell but nothing reads arbitrary.",
+    "6": "The QuickBooks beta is labeled twice and the estimate stays an estimate, but the customer quote carries no unverified or fictional label.",
+    "7": "The page as the quote you would give a customer is a one-sentence idea that the layout, the small print set large, and the copy all enact.",
+    "8": "Mechanics stay conventional and the single deliberate break, price and small print before the pitch, lives in the brand layer.",
+    "9": "Lines such as the promise that there is no hidden asterisk and support being people in Manchester rather than a chat widget could not be published unchanged by a competitor.",
+    "10": "Price, terms, and the case are all readable in one fast pass with nothing performative slowing the decision."
+  },
+  "inputTranscriptSha256": "ef687d75ba2aa6c2096d86ab555e5c05249919b4867ce210c2f204ea98f2162a",
+  "shuffleSeed": 202607625
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The answer is the headline: three of nine trails open lands instantly in the first mobile viewport with the closure alert directly beneath it.",
+    "2": "Every status carries its word and one stable rendering, but caution and closed share the same orange and differ only by outline versus fill, which slows the most safety-critical distinction at a glance.",
+    "3": "No-report-on-file rows, the dotted no-data day, the flagged estimated snowpack with its offline sensor note, and the never-assumed-open footer make every gap explicit.",
+    "4": "Answer, alert, worth-knowing, then all nine trails in decision order is sound, though the conditions digest sits ahead of the trail list and pushes it a viewport down on mobile.",
+    "5": "The editorial typography is disciplined and quiet, but the desktop composition leaves a large empty band between the hero and the trail list.",
+    "6": "Long names, the burn pair, and the unreported rows sit evenly, and both modes plus the reflowed two-column weather strip hold up without breakage.",
+    "7": "Stating the day's answer as a newspaper-style headline is a one-sentence signature that the typography, the calm list, and the footer all reinforce, and it is true of a daily conditions service.",
+    "8": "Mechanics stay a conventional scrolling list; the headline hero and the single-accent palette are the one or two deliberate breaks, held in the brand layer.",
+    "9": "Worth knowing, no report on file, and never assumed open or closed read as owned, calm, factual language a competitor would have to rewrite.",
+    "10": "A returning hiker gets the answer in one fixation each morning with nothing mandatory in the way."
+  },
+  "inputTranscriptSha256": "917ce935cc0a9e8fc3898714d7e0550a03e7373e4ba547cfd9de7fef076ba322",
+  "shuffleSeed": 202607615
+}

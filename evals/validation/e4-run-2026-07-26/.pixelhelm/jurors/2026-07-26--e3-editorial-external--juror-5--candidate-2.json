@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede carries the complete finding in prose and a what-it-shows paragraph narrates the rail in words, though a chart-averse reader has no compact then-versus-now stat surface and must lean on those two passages.",
+    "2": "Values are printed on every line and the how-to-read box discloses the fixed 550 to 750 bar scale, but length-encoded bars from a nonzero baseline still visually overstate a fourteen percent rise even when disclosed.",
+    "3": "Hatched no-record rows with reasons, era section headers at the instrument boundary, an inline unverified caption on 2019, and the shift-not-cause closing note cover the full honesty surface.",
+    "4": "The interleaved archival quotes and the mid-record aside about the pattern becoming visible are exactly the patient local register, placed where the data earns them.",
+    "5": "The rail is set with discipline and the typography carries the long read in both modes and viewports, with only minor crowding of the row figures on mobile.",
+    "6": "A linear line-by-line document with no scrolljack apparatus and a fully readable base; animation behavior cannot be judged from stills.",
+    "7": "Reading the record line by line like the valley almanac is a true signature, and the rightward creep of onset dots down the page makes the drift physically felt, though the compressed bar encoding slightly weakens form-as-argument.",
+    "8": "The rail replacing separate charts and table is the single declared-feeling break, and everything else about the reading mechanics stays conventional.",
+    "9": "Local and unsensational, with the almanac framing and valley phrasing specific enough that a competitor could not run it unchanged.",
+    "10": "Every element of the rail corresponds to something the ledger actually contains, and the gaps and unverified year are rendered as themselves rather than smoothed for effect."
+  },
+  "inputTranscriptSha256": "2071a5a25f0804d239e8bab4b0cac8bad4835668a9ff8ca74ddf00a90bdc6237",
+  "shuffleSeed": 202607645
+}

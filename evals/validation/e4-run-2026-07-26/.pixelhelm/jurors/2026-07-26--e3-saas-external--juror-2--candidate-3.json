@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 6,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The for-from-terms block and eyebrow identify the product and audience within the first screenful, but the headline describes the page rather than the product and the actual features sit below the fold.",
+    "2": "The evidence section labels the pilot estimate as small and unverified and separates it from plain product behavior, with zero promotional adjectives anywhere.",
+    "3": "Two identical honest trial buttons, a thirty-days-free stamp with walk-away-owing-nothing copy, and prices under a VAT note make the path unmistakable without nagging.",
+    "4": "Reading the pitch as your own paperwork is exactly the sole trader's mental model, and lines about the merchant's car park and January surprises are native trade speech.",
+    "5": "The invoice typesetting is the tightest craft in the set: aligned line-item columns, monospace ledger labels, double-ruled total, and a restrained stamp, consistent in both modes.",
+    "6": "Beta is chip-labeled and reinforced by we-will-not-sell-it-as-finished and the estimate stays an estimate, but the testimonial runs unlabeled despite another render revealing it as a fictional persona.",
+    "7": "This-page-is-an-invoice is the ideal form the rubric names: the pitch is demonstrated in the product's own artifact, and every section from line items to total enacts it.",
+    "8": "One totalizing conceit spends the whole novelty budget in the brand layer while buttons, sections, and reading order remain perfectly conventional.",
+    "9": "Typeset on the product's own paper and walk away owing nothing are unpublishable by any competitor without sounding like theft.",
+    "10": "An invoice is the fastest-scanning document a tradesperson knows, so the form itself keeps the time-is-valuable promise with no performative moments."
+  },
+  "inputTranscriptSha256": "8ec7c9c5ec22f50fcbfeb7520655783bc51c4073a17aef352371d03ae44351bb",
+  "shuffleSeed": 202607622
+}

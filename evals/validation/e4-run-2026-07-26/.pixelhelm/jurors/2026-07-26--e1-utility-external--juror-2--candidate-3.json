@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 10,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The count row and closure alert fill the mobile first viewport, and the go, go-with-care, and do-not-go sections answer the hiker's exact question in scan order.",
+    "2": "Statuses are carried by worded labels, matching color rails, and decision-named sections, with one stable color and rendering per status throughout.",
+    "3": "Unknown trails warn that unknown is not the same as fine, the Jul 22 gap is announced and shown unsmoothed, the estimate is flagged as not measured on the ridge, each trail carries its own report time, and the footer states the never-assumed-open policy outright.",
+    "4": "Sections named for the decision rather than the status match the hiker's mental model exactly, and the language stays plain and directive.",
+    "5": "Rails, hairlines, serif headings, and metadata lines follow one consistent system with a restrained palette and clear hierarchy.",
+    "6": "All the awkward data, including both unknown rows and the burn pair, sits cleanly in the row system, and light and dark are both fully resolved.",
+    "7": "The signature idea that the board says only what was reported today is stated in the footer and enacted by the per-trail report times, the unknown warnings, and the unsmoothed gap.",
+    "8": "Mechanics remain a conventional sectioned list; the decision-language section names are the single deliberate break, kept in the brand layer.",
+    "9": "Lines like unknown is not the same as fine and shown as the gap it is are calm, factual, and unmistakable, and no competitor could publish them unchanged.",
+    "10": "The counts and go list give the daily glance immediately, and the explanatory prose sits low on the page where a returning user can simply skip it."
+  },
+  "inputTranscriptSha256": "75c1dc0f56f99f2de101576a8d4fa5c51789c1887c23eb9df89490f2ca82f0f2",
+  "shuffleSeed": 202607612
+}

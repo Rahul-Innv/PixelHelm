@@ -1,0 +1,116 @@
+{
+  "juror": "juror-1",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The colored count strip (3 open, 2 caution, 2 closed, 2 no report) and the closure alert both sit in the first mobile viewport, so the go or no-go answer needs nothing but a glance and a scroll for the trail names.",
+        "2": "Every status pairs a text label with a colored edge bar, and each of the four statuses keeps one hue and one rendering from the summary strip through every section.",
+        "3": "Unreported trails get their own UNKNOWN section with the line that unknown is not the same as fine, the July 22 gap is an explicit italic row, snowpack carries a visible ESTIMATED badge with the sensor story, and every trail shows its own report time.",
+        "4": "GO, GO WITH CARE, DO NOT GO, UNKNOWN is exactly the hiker's decision order in plain imperative language, with weather history and snowpack correctly demoted below the decision content.",
+        "5": "Spacing rhythm, aligned label column, restrained palette and roughly three type sizes are held with discipline; only a faint stray rule artifact above the footer keeps this from the top band.",
+        "6": "Long names, the burn cluster, and both unreported rows sit naturally in the row layout, and the dark mode is fully designed rather than inverted.",
+        "7": "The signature reads as a board that reports only what it knows, and the honesty copy, the gap row, and the unknown section all reinforce it in a way that is true of a conditions service.",
+        "8": "Mechanics are entirely conventional; the single deliberate break is the imperative section naming, which lives in the brand layer.",
+        "9": "Lines like unknown is not the same as fine, and showing the gap as the gap it is, are calm, factual, and could not be published unchanged by a competitor.",
+        "10": "The count strip rewards the habitual daily glance instantly, and nothing playful or mandatory stands between a returning user and the answer."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline 3 of 9 trails open is itself the answer and it shares the first mobile viewport with the deck and the closure alert.",
+        "2": "Statuses are text-labeled and each keeps one rendering, but caution and closed share the same orange hue family separated only by outline versus fill, and the dotted underline on no report reads like a link.",
+        "3": "No-report trails are labeled and backed by the footer rule that they are never assumed open, the snowpack estimate and the July 22 no-data day are flagged, and each trail carries its report time; the claim of open this morning beside a 6:00 PM stamp is a small tension.",
+        "4": "Summary, alert, context, then a single list sorted open to caution to closed to no report matches the decision flow in plain language.",
+        "5": "Type and list rhythm are competent, but the desktop leaves a large empty band between the hero and the trail list and the right-aligned status tags sit far from their trail names.",
+        "6": "The flat list absorbs the data without breakage in both modes, but the unresolved dead space at 1440 pixels suggests the desktop layout is not fully worked out.",
+        "7": "A spoken newspaper-style headline as the interface is a real one-sentence signature that suits a daily conditions service and is carried by the editorial type and deck.",
+        "8": "Mechanics stay conventional and the single brand-layer break is the headline-first front page.",
+        "9": "The headline and the worth-knowing sidebar have a distinct calm editorial voice, though the per-trail microcopy underneath is ordinary.",
+        "10": "The headline gives a returning user the answer in one second with no bypass friction, though the morning phrasing will read stale at other hours."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The bold summary sentence and the ranger's notice with the burn closure both land in the first mobile viewport, so today's answer needs only scrolling to reach trail names.",
+        "2": "The stamp-style chips pair text with a stable color per status, green open, amber caution, red closed, neutral no report, rendered identically everywhere they appear.",
+        "3": "No-report entries state condition unknown, July 22 is an explicit not-recorded row, the snowpack value wears an ESTIMATED stamp with the offline-sensor note, and every entry is timestamped.",
+        "4": "Open first, then caution, closed, and no report matches the decision order in plain language, though the entry numbers add a little log-flavored noise a hiker does not need.",
+        "5": "The masthead, dotted leaders, stamps and double rules are executed with nothing arbitrary, and hierarchy holds at roughly three sizes.",
+        "6": "The leader-line rows absorb short and long trail names gracefully, the burn cluster and unreported entries sit cleanly, and both the paper and dark treatments are fully resolved.",
+        "7": "The ranger's daily log published as a page is a crisp signature that content, stamps, leaders and the end-of-log closing all reinforce, and it is native to a trail service rather than a transplanted trend.",
+        "8": "Mechanics are conventional; the log styling with stamps and leaders spends one or two deliberate breaks entirely in the brand layer.",
+        "9": "Phrases like log continues below and end of log, generated 6:00 PM, are calm, factual, and unmistakably this organization's.",
+        "10": "The daily-log framing suits a habitual glance and nothing blocks a returning user, though the prose summary is a touch slower to parse than a count strip."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 5,
+        "8": 7,
+        "9": 5,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The count line and closure notice fit the first mobile viewport, but the oversized status-banner cards make the mobile page the longest of the set, so reaching specific trails takes substantial scrolling.",
+        "2": "Each status combines color, icon, and text label with a legend, and the encoding stays identical from the header counts to every card.",
+        "3": "No-report cards are explicit, the snowpack shows a dashed estimated badge with the sensor explanation, the chart marks July 22 as a no-data gap, and each card carries its report time.",
+        "4": "Open, caution, closed, no report ordering with counts matches the decision flow in plain language, though the legend duplicating the section labels directly below it is redundant.",
+        "5": "Spacing and card construction are consistent, but the full-width shouting banners repeating the same status word are drama rather than information priority, and the palette is stock traffic-light generic.",
+        "6": "The cards absorb the data in both modes, but two-card sections leave a conspicuous empty third column on desktop and the banner repetition amplifies the closed cluster awkwardly.",
+        "7": "There is no one-sentence signature beyond a generic traffic-light status dashboard, which reads as a transplanted pattern rather than something true of this service.",
+        "8": "Mechanics are fully conventional with no breaks attempted, which stays inside the budget but spends none of it on distinction.",
+        "9": "Microcopy such as no report received from this trail is competent but wholly generic, and any competitor could publish this page unchanged.",
+        "10": "The header counts serve a quick glance and nothing is mandatory-playful, but the long banner-heavy scroll is mild friction for a daily habitual check."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-3",
+    "candidate-2",
+    "candidate-4"
+  ]
+}

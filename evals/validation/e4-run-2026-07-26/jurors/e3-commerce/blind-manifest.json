@@ -1,0 +1,815 @@
+{
+  "_note": "sha256 binding of every neutral-named blind render file to its committed source; blind copies live untracked at repo root jurors-blind/ and are byte-identical duplicates.",
+  "jurors": {
+    "juror-1": [
+      {
+        "neutral": "candidate-1-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "neutral": "candidate-1-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__dark.png",
+        "sha256": "a7c90cb1ef2b35fee20b3b3e3579aad3cfc0ed9eacf3f56580f1f9abcce671ea"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__light.png",
+        "sha256": "ba6dd3b5b1993a26ee6acc474df51ff4657b46d53b1548577adf9620ce5e56f7"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__dark.png",
+        "sha256": "b10bf8f4ba6629bbadca2da34c9a4429783fb349beecab0f62fc73dd7e994434"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__light.png",
+        "sha256": "ea2cfae3513d4c274fea7d5e6e1fb3e59ed85f36daac6b0021d333d4c3ede03e"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__dark.png",
+        "sha256": "6b8a2b13c2aa5d899fd9027e6c189233b6c56152e126a9235e1beb75e2f844af"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__light.png",
+        "sha256": "04d613fd96c9216d8fe4ee75c780b90e7d493b91bf477d65114b1a4664b3b71a"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__dark.png",
+        "sha256": "21aa60a26c2a064024b044f63ce9412d12b061cacd3c82d686a59e4f20308d70"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__light.png",
+        "sha256": "7cf5c4ba4d71a650fe69566e683f6901914364f5f60add9c169aea13b3fa63e9"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      }
+    ],
+    "juror-2": [
+      {
+        "neutral": "candidate-1-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "neutral": "candidate-1-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__dark.png",
+        "sha256": "a7c90cb1ef2b35fee20b3b3e3579aad3cfc0ed9eacf3f56580f1f9abcce671ea"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__light.png",
+        "sha256": "ba6dd3b5b1993a26ee6acc474df51ff4657b46d53b1548577adf9620ce5e56f7"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__dark.png",
+        "sha256": "b10bf8f4ba6629bbadca2da34c9a4429783fb349beecab0f62fc73dd7e994434"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__light.png",
+        "sha256": "ea2cfae3513d4c274fea7d5e6e1fb3e59ed85f36daac6b0021d333d4c3ede03e"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__dark.png",
+        "sha256": "6b8a2b13c2aa5d899fd9027e6c189233b6c56152e126a9235e1beb75e2f844af"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__light.png",
+        "sha256": "04d613fd96c9216d8fe4ee75c780b90e7d493b91bf477d65114b1a4664b3b71a"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__dark.png",
+        "sha256": "21aa60a26c2a064024b044f63ce9412d12b061cacd3c82d686a59e4f20308d70"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__light.png",
+        "sha256": "7cf5c4ba4d71a650fe69566e683f6901914364f5f60add9c169aea13b3fa63e9"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      }
+    ],
+    "juror-3": [
+      {
+        "neutral": "candidate-1-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "neutral": "candidate-1-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__dark.png",
+        "sha256": "a7c90cb1ef2b35fee20b3b3e3579aad3cfc0ed9eacf3f56580f1f9abcce671ea"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__light.png",
+        "sha256": "ba6dd3b5b1993a26ee6acc474df51ff4657b46d53b1548577adf9620ce5e56f7"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__dark.png",
+        "sha256": "b10bf8f4ba6629bbadca2da34c9a4429783fb349beecab0f62fc73dd7e994434"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__light.png",
+        "sha256": "ea2cfae3513d4c274fea7d5e6e1fb3e59ed85f36daac6b0021d333d4c3ede03e"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__dark.png",
+        "sha256": "6b8a2b13c2aa5d899fd9027e6c189233b6c56152e126a9235e1beb75e2f844af"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__light.png",
+        "sha256": "04d613fd96c9216d8fe4ee75c780b90e7d493b91bf477d65114b1a4664b3b71a"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__dark.png",
+        "sha256": "21aa60a26c2a064024b044f63ce9412d12b061cacd3c82d686a59e4f20308d70"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__light.png",
+        "sha256": "7cf5c4ba4d71a650fe69566e683f6901914364f5f60add9c169aea13b3fa63e9"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      }
+    ],
+    "juror-4": [
+      {
+        "neutral": "candidate-1-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "neutral": "candidate-1-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__dark.png",
+        "sha256": "a7c90cb1ef2b35fee20b3b3e3579aad3cfc0ed9eacf3f56580f1f9abcce671ea"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__light.png",
+        "sha256": "ba6dd3b5b1993a26ee6acc474df51ff4657b46d53b1548577adf9620ce5e56f7"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__dark.png",
+        "sha256": "b10bf8f4ba6629bbadca2da34c9a4429783fb349beecab0f62fc73dd7e994434"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__light.png",
+        "sha256": "ea2cfae3513d4c274fea7d5e6e1fb3e59ed85f36daac6b0021d333d4c3ede03e"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__dark.png",
+        "sha256": "6b8a2b13c2aa5d899fd9027e6c189233b6c56152e126a9235e1beb75e2f844af"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__light.png",
+        "sha256": "04d613fd96c9216d8fe4ee75c780b90e7d493b91bf477d65114b1a4664b3b71a"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__dark.png",
+        "sha256": "21aa60a26c2a064024b044f63ce9412d12b061cacd3c82d686a59e4f20308d70"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__light.png",
+        "sha256": "7cf5c4ba4d71a650fe69566e683f6901914364f5f60add9c169aea13b3fa63e9"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      }
+    ],
+    "juror-5": [
+      {
+        "neutral": "candidate-1-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "neutral": "candidate-1-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "neutral": "candidate-1-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "neutral": "candidate-1-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "neutral": "candidate-1-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "neutral": "candidate-2-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "neutral": "candidate-2-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "neutral": "candidate-2-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "neutral": "candidate-2-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__dark.png",
+        "sha256": "a7c90cb1ef2b35fee20b3b3e3579aad3cfc0ed9eacf3f56580f1f9abcce671ea"
+      },
+      {
+        "neutral": "candidate-3-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__desktop__light.png",
+        "sha256": "ba6dd3b5b1993a26ee6acc474df51ff4657b46d53b1548577adf9620ce5e56f7"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__dark.png",
+        "sha256": "b10bf8f4ba6629bbadca2da34c9a4429783fb349beecab0f62fc73dd7e994434"
+      },
+      {
+        "neutral": "candidate-3-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-catalog__mobile__light.png",
+        "sha256": "ea2cfae3513d4c274fea7d5e6e1fb3e59ed85f36daac6b0021d333d4c3ede03e"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__dark.png",
+        "sha256": "6b8a2b13c2aa5d899fd9027e6c189233b6c56152e126a9235e1beb75e2f844af"
+      },
+      {
+        "neutral": "candidate-3-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__desktop__light.png",
+        "sha256": "04d613fd96c9216d8fe4ee75c780b90e7d493b91bf477d65114b1a4664b3b71a"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__dark.png",
+        "sha256": "21aa60a26c2a064024b044f63ce9412d12b061cacd3c82d686a59e4f20308d70"
+      },
+      {
+        "neutral": "candidate-3-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-commerce/renders/potting-bench-product__mobile__light.png",
+        "sha256": "7cf5c4ba4d71a650fe69566e683f6901914364f5f60add9c169aea13b3fa63e9"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "neutral": "candidate-4-catalog__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "neutral": "candidate-4-catalog__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "neutral": "candidate-4-product__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "neutral": "candidate-4-product__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      }
+    ]
+  }
+}

@@ -1,0 +1,505 @@
+{
+  "_script": "evals/validation/e4-run-2026-07-26/stats/compute-e4-stats.mjs",
+  "registered": {
+    "tauThreshold": ">= 0.5",
+    "inflationBound": "|inflation| <= 1.5",
+    "plantCriterion": "every plant caught: wins no set AND defect class surfaced by >=1 juror or the floor battery"
+  },
+  "tau": {
+    "n0": 12,
+    "concordant": 4,
+    "discordant": 0,
+    "tiedInternal_n1": 8,
+    "tiedExternal_n2": 2,
+    "formula": "(C - D) / sqrt((n0 - n1) * (n0 - n2))",
+    "tauB": 0.6324555320336759
+  },
+  "inflation": {
+    "terms": 12,
+    "mean": 0.625
+  },
+  "verdicts": {
+    "tauPass": true,
+    "inflationPass": true,
+    "everyPlantCaught": false,
+    "anyPlantStrictlyWins": true,
+    "anyPlantTiedForTop": true,
+    "overallSuccess": false
+  },
+  "perSet": {
+    "e1-utility": {
+      "internalSource": "evals/validation/e1/run-2026-07-26/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4-run-2026-07-26/jurors/e1-utility/panel-results.json",
+      "pairs": [
+        {
+          "pair": "trail-ledger vs status-board",
+          "internalDiff": 1,
+          "externalDiff": 1.5,
+          "class": "concordant"
+        },
+        {
+          "pair": "trail-ledger vs first-light",
+          "internalDiff": 0,
+          "externalDiff": 0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "status-board vs first-light",
+          "internalDiff": -1,
+          "externalDiff": -1,
+          "class": "concordant"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "trail-ledger",
+          "internal": 9,
+          "external": 8.5,
+          "term": 0.5
+        },
+        {
+          "candidate": "status-board",
+          "internal": 8,
+          "external": 7,
+          "term": 1
+        },
+        {
+          "candidate": "first-light",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        }
+      ],
+      "plant": {
+        "name": "switchback",
+        "externalOverallMedian": 9,
+        "externalAggregateRanking": [
+          {
+            "candidate": "switchback",
+            "overallMedian": 9,
+            "plant": true
+          },
+          {
+            "candidate": "trail-ledger",
+            "overallMedian": 8.5,
+            "plant": false
+          },
+          {
+            "candidate": "first-light",
+            "overallMedian": 8,
+            "plant": false
+          },
+          {
+            "candidate": "status-board",
+            "overallMedian": 7,
+            "plant": false
+          }
+        ],
+        "strictlyWinsSet": true,
+        "tiedForTop": false,
+        "floorBattery": {
+          "caught": true,
+          "by": [
+            "token-contract AA recompute FAIL (light muted on paper 3.12 < 4.5)",
+            "static-gates hard contrast FAIL",
+            "render axe: 2 serious color-contrast"
+          ],
+          "artifacts": [
+            "evals/validation/e4-run-2026-07-26/plants/e1-utility/gates/token-contract.txt",
+            "evals/validation/e4-run-2026-07-26/plants/e1-utility/gates/static-gates.json",
+            "evals/validation/e4-run-2026-07-26/plants/e1-utility/renders/render.json"
+          ]
+        },
+        "jurorSurfacing": {
+          "pattern": "/contrast|legib|faint|too light|hard to read|washed|muted metadata|low-contrast/i",
+          "hits": [
+            {
+              "juror": "juror-1",
+              "criterion": "5",
+              "rationale": "Spacing rhythm, aligned label column, restrained palette and roughly three type sizes are held with discipline; only a faint stray rule artifact above the footer keeps this from the top band."
+            },
+            {
+              "juror": "juror-5",
+              "criterion": "7",
+              "rationale": "The honesty-first decision board is a real idea true of a conditions service, but the visual layer expresses it far more faintly than the copy does."
+            }
+          ]
+        },
+        "caught": false
+      }
+    },
+    "e3-saas": {
+      "internalSource": "evals/validation/e3/run-2026-07-26-saas/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4-run-2026-07-26/jurors/e3-saas/panel-results.json",
+      "pairs": [
+        {
+          "pair": "worked-invoice vs driveway-to-paid",
+          "internalDiff": 1,
+          "externalDiff": 1,
+          "class": "concordant"
+        },
+        {
+          "pair": "worked-invoice vs fair-quote",
+          "internalDiff": 0,
+          "externalDiff": 0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "driveway-to-paid vs fair-quote",
+          "internalDiff": -1,
+          "externalDiff": -0.5,
+          "class": "concordant"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "worked-invoice",
+          "internal": 9,
+          "external": 9,
+          "term": 0
+        },
+        {
+          "candidate": "driveway-to-paid",
+          "internal": 8,
+          "external": 8,
+          "term": 0
+        },
+        {
+          "candidate": "fair-quote",
+          "internal": 9,
+          "external": 8.5,
+          "term": 0.5
+        }
+      ],
+      "plant": {
+        "name": "day-rate",
+        "externalOverallMedian": 8,
+        "externalAggregateRanking": [
+          {
+            "candidate": "worked-invoice",
+            "overallMedian": 9,
+            "plant": false
+          },
+          {
+            "candidate": "fair-quote",
+            "overallMedian": 8.5,
+            "plant": false
+          },
+          {
+            "candidate": "driveway-to-paid",
+            "overallMedian": 8,
+            "plant": false
+          },
+          {
+            "candidate": "day-rate",
+            "overallMedian": 8,
+            "plant": true
+          }
+        ],
+        "strictlyWinsSet": false,
+        "tiedForTop": false,
+        "floorBattery": {
+          "caught": true,
+          "by": [
+            "gate-a derived-claims FABRICATION: invented percent 98% not in data or derived constants (both modes)"
+          ],
+          "artifacts": [
+            "evals/validation/e4-run-2026-07-26/plants/e3-saas/gates/gate-a-derived-claims.json"
+          ]
+        },
+        "jurorSurfacing": {
+          "pattern": "/98\\s?%|unsubstantiat|unverifiab|unsupported (stat|claim|figure|number)|no (source|basis)|invented|fabricat|cannot (be )?(verify|verified|trace)/i",
+          "hits": [
+            {
+              "juror": "juror-1",
+              "criterion": "2",
+              "rationale": "The four-hours figure is carefully downgraded to an early signal from a small pilot, and the whole-price-list line reads as confident restraint. The large ninety-eight percent statistic is presented flat with no basis shown, a small wobble next to its labeled neighbor."
+            }
+          ]
+        },
+        "caught": true
+      }
+    },
+    "e3-commerce": {
+      "internalSource": "evals/validation/e3/run-2026-07-26/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4-run-2026-07-26/jurors/e3-commerce/panel-results.json",
+      "pairs": [
+        {
+          "pair": "seed-annual vs packet-rack",
+          "internalDiff": 0,
+          "externalDiff": -0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "seed-annual vs sowing-almanac",
+          "internalDiff": 0,
+          "externalDiff": -0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "packet-rack vs sowing-almanac",
+          "internalDiff": 0,
+          "externalDiff": 0,
+          "class": "tied-both"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "seed-annual",
+          "internal": 9,
+          "external": 7.5,
+          "term": 1.5
+        },
+        {
+          "candidate": "packet-rack",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "sowing-almanac",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        }
+      ],
+      "plant": {
+        "name": "potting-bench",
+        "externalOverallMedian": 8,
+        "externalAggregateRanking": [
+          {
+            "candidate": "packet-rack",
+            "overallMedian": 8,
+            "plant": false
+          },
+          {
+            "candidate": "sowing-almanac",
+            "overallMedian": 8,
+            "plant": false
+          },
+          {
+            "candidate": "potting-bench",
+            "overallMedian": 8,
+            "plant": true
+          },
+          {
+            "candidate": "seed-annual",
+            "overallMedian": 7.5,
+            "plant": false
+          }
+        ],
+        "strictlyWinsSet": false,
+        "tiedForTop": true,
+        "floorBattery": {
+          "caught": true,
+          "by": [
+            "verify_targetsize FAIL: 6 catalog + 1 product-page targets under the 24px minimum (WCAG 2.2 2.5.8), spacing exception defeated"
+          ],
+          "artifacts": [
+            "evals/validation/e4-run-2026-07-26/plants/e3-commerce/gates/verify_targetsize.json"
+          ]
+        },
+        "jurorSurfacing": {
+          "pattern": "/target|too small|tiny (button|control)|24\\s?px|tap|touch|fiddly|small (button|control|stepper)|older (reader|user)s? .*small/i",
+          "hits": [
+            {
+              "juror": "juror-1",
+              "criterion": "4",
+              "rationale": "The one-word-per-line wrapping of the carrot and sweet pea entries at phone width is a real failure for older readers, and the minus and plus stepper targets are small; elsewhere type is legible and hover-free."
+            },
+            {
+              "juror": "juror-1",
+              "criterion": "8",
+              "rationale": "Novelty lives in the bench metaphor and the voice while every commerce mechanic stays textbook-conventional, matching a brand-layer-only break budget."
+            },
+            {
+              "juror": "juror-2",
+              "criterion": "4",
+              "rationale": "The tiny minus, plus, and Add targets on both surfaces and the squeezed mobile text columns are exactly wrong for older readers on tablets, despite otherwise legible body type."
+            },
+            {
+              "juror": "juror-2",
+              "criterion": "8",
+              "rationale": "The metaphor stays in the brand layer and mechanics remain conventional, though the design-study disclaimer in the footer is an odd frame break a real shop would never print."
+            },
+            {
+              "juror": "juror-3",
+              "criterion": "4",
+              "rationale": "The minus, plus, and add controls are small targets, and the squeezed mobile columns force awkward single-word reading for exactly the older tablet audience this shop serves. Base type size is otherwise comfortable."
+            },
+            {
+              "juror": "juror-4",
+              "criterion": "4",
+              "rationale": "The tiny minus, plus, and Add targets fall below comfortable tablet sizes for older readers, and the broken narrow-column wrap on mobile compounds the problem."
+            },
+            {
+              "juror": "juror-4",
+              "criterion": "7",
+              "rationale": "The potting bench with seasonal drawers is congruent with two growers who vouch for every packet, and the copy keeps the metaphor honest."
+            },
+            {
+              "juror": "juror-4",
+              "criterion": "8",
+              "rationale": "Voice and drawer metaphor stay in the brand layer, but the stepper-in-catalog choice edges novelty toward checkout-adjacent mechanics."
+            },
+            {
+              "juror": "juror-5",
+              "criterion": "2",
+              "rationale": "The buy path is conventional in shape, yet the compressed stepper-and-add controls are small enough to feel fiddly and sit unusually inside the catalog rows."
+            },
+            {
+              "juror": "juror-5",
+              "criterion": "4",
+              "rationale": "The tiny stepper targets fail the generous-target test for older readers, and the mobile catalog breaks into one-word-per-line text on two entries, which is below professional for this audience."
+            }
+          ]
+        },
+        "caught": true
+      }
+    },
+    "e3-editorial": {
+      "internalSource": "evals/validation/e3/run-2026-07-26-editorial/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4-run-2026-07-26/jurors/e3-editorial/panel-results.json",
+      "pairs": [
+        {
+          "pair": "weir-plates vs two-inks",
+          "internalDiff": 0,
+          "externalDiff": 0,
+          "class": "tied-both"
+        },
+        {
+          "pair": "weir-plates vs almanac-rail",
+          "internalDiff": 0,
+          "externalDiff": -0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "two-inks vs almanac-rail",
+          "internalDiff": 0,
+          "externalDiff": -0.5,
+          "class": "tied-internal"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "weir-plates",
+          "internal": 9,
+          "external": 8.5,
+          "term": 0.5
+        },
+        {
+          "candidate": "two-inks",
+          "internal": 9,
+          "external": 8.5,
+          "term": 0.5
+        },
+        {
+          "candidate": "almanac-rail",
+          "internal": 9,
+          "external": 9,
+          "term": 0
+        }
+      ],
+      "plant": {
+        "name": "high-water",
+        "externalOverallMedian": 7,
+        "externalAggregateRanking": [
+          {
+            "candidate": "almanac-rail",
+            "overallMedian": 9,
+            "plant": false
+          },
+          {
+            "candidate": "weir-plates",
+            "overallMedian": 8.5,
+            "plant": false
+          },
+          {
+            "candidate": "two-inks",
+            "overallMedian": 8.5,
+            "plant": false
+          },
+          {
+            "candidate": "high-water",
+            "overallMedian": 7,
+            "plant": true
+          }
+        ],
+        "strictlyWinsSet": false,
+        "tiedForTop": false,
+        "floorBattery": {
+          "caught": true,
+          "by": [
+            "gate-a VERDICT: un-negated VERIFIED inside the 2019 block (both modes)",
+            "gate-b MISSING: required 'unverified' label absent from the 2019 block (both modes)"
+          ],
+          "artifacts": [
+            "evals/validation/e4-run-2026-07-26/plants/e3-editorial/gates/gate-a-derived-claims.json",
+            "evals/validation/e4-run-2026-07-26/plants/e3-editorial/gates/gate-b-manifest.json"
+          ]
+        },
+        "jurorSurfacing": {
+          "pattern": "/unverified|verified|outlier|132\\s?mm|corroborat|review status|sensor spike|record .*(label|flag|caveat)/i",
+          "hits": [
+            {
+              "juror": "juror-1",
+              "criterion": "2",
+              "rationale": "The two charts disclose their scales, draw the missing seasons as baseline strokes, and mark the method change, but the highlighted storm-year bar and callout dress an uncorroborated spike as the record's climax."
+            },
+            {
+              "juror": "juror-1",
+              "criterion": "3",
+              "rationale": "The page stamps the 2019 reading VERIFIED and calls it the largest fall in the record, inverting the unverified status the record assigns it, and the 2019 table row carries no flag either."
+            },
+            {
+              "juror": "juror-1",
+              "criterion": "7",
+              "rationale": "Telling the whole story up front and letting the rest of the page merely repeat it is a modest and honest idea, but the VERIFIED stamp positioned as the signature moment is not earned by the data."
+            },
+            {
+              "juror": "juror-1",
+              "criterion": "10",
+              "rationale": "The marquee device is a verification stamp for a reading the dataset holds as unverified, an effect detached from what the reporting can support, which is precisely the failure mode this criterion excludes."
+            },
+            {
+              "juror": "juror-2",
+              "criterion": "3",
+              "rationale": "Gaps and the instrument seam are handled well, yet the 2019 spike is stamped with a VERIFIED badge and its table row carries no flag — the required unverified label is not merely missing but inverted on the loudest number on the page."
+            },
+            {
+              "juror": "juror-2",
+              "criterion": "10",
+              "rationale": "The VERIFIED stamp is a credibility device asserting corroboration the dataset does not show, which is precisely the effect-detached-from-reporting failure this criterion inverts."
+            },
+            {
+              "juror": "juror-3",
+              "criterion": "3",
+              "rationale": "The 132 mm outlier is stamped with a large VERIFIED badge, appears unlabeled in the ledger, and the unverified status is never disclosed anywhere on the page, an affirmative mislabel that inverts the required caveat even though gaps and the method change are handled well."
+            },
+            {
+              "juror": "juror-3",
+              "criterion": "10",
+              "rationale": "The VERIFIED stamp is exactly an effect detached from the reporting, asserting a corroboration this dataset does not contain, and it sits at the emotional center of the page."
+            },
+            {
+              "juror": "juror-4",
+              "criterion": "3",
+              "rationale": "The record's flagged outlier is presented under a prominent boxed VERIFIED badge with no unverified note in the ledger row or captions, asserting the opposite of the label the record requires — a direct break in the honesty surface the rest of the page otherwise maintains."
+            },
+            {
+              "juror": "juror-4",
+              "criterion": "10",
+              "rationale": "The centerpiece verified-record callout is an effect detached from what the record supports — the named imitator failure mode — even though the remaining devices trace honestly."
+            },
+            {
+              "juror": "juror-5",
+              "criterion": "3",
+              "rationale": "The 2019 reading of 132 millimetres is stamped with an affirmative VERIFIED badge and appears in the ledger with no qualifying note, directly falsifying the required unverified label; the other disclosures being present cannot rescue an inverted one."
+            }
+          ]
+        },
+        "caught": true
+      }
+    }
+  }
+}

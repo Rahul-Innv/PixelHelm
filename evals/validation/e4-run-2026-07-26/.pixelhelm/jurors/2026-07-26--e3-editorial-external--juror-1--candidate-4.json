@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 1,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 6,
+    "8": 7,
+    "9": 8,
+    "10": 3
+  },
+  "rationales": {
+    "1": "The short-version box, the stat trio, and the full ledger make the finding reachable without decoding a single mark.",
+    "2": "The two charts disclose their scales, draw the missing seasons as baseline strokes, and mark the method change, but the highlighted storm-year bar and callout dress an uncorroborated spike as the record's climax.",
+    "3": "The page stamps the 2019 reading VERIFIED and calls it the largest fall in the record, inverting the unverified status the record assigns it, and the 2019 table row carries no flag either.",
+    "4": "The gardener opening is warm, concrete, and local, but the hardest-day section plays an unconfirmed spike for drama, which betrays the patient register.",
+    "5": "Type and layout are competent in both modes, while the chart captions run very small on desktop and the onset chart is nearly illegible at the mobile width.",
+    "6": "A static page with no scroll-driven pacing or motion devices visible in any render.",
+    "7": "Telling the whole story up front and letting the rest of the page merely repeat it is a modest and honest idea, but the VERIFIED stamp positioned as the signature moment is not earned by the data.",
+    "8": "Restraint is genuine, with conventional mechanics and a single callout device, so the budget is respected even where the callout misfires.",
+    "9": "Asking an Ashcombe gardener when the rain comes is a voice no wire service would produce.",
+    "10": "The marquee device is a verification stamp for a reading the dataset holds as unverified, an effect detached from what the reporting can support, which is precisely the failure mode this criterion excludes."
+  },
+  "inputTranscriptSha256": "c3c28808871784675bf031bd46c0b306c86c205bc8539bf84288f3ea64a265f6",
+  "shuffleSeed": 202607641
+}

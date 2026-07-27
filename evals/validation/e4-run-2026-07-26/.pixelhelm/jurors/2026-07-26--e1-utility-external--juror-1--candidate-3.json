@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 9,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The bold summary sentence and the ranger's notice with the burn closure both land in the first mobile viewport, so today's answer needs only scrolling to reach trail names.",
+    "2": "The stamp-style chips pair text with a stable color per status, green open, amber caution, red closed, neutral no report, rendered identically everywhere they appear.",
+    "3": "No-report entries state condition unknown, July 22 is an explicit not-recorded row, the snowpack value wears an ESTIMATED stamp with the offline-sensor note, and every entry is timestamped.",
+    "4": "Open first, then caution, closed, and no report matches the decision order in plain language, though the entry numbers add a little log-flavored noise a hiker does not need.",
+    "5": "The masthead, dotted leaders, stamps and double rules are executed with nothing arbitrary, and hierarchy holds at roughly three sizes.",
+    "6": "The leader-line rows absorb short and long trail names gracefully, the burn cluster and unreported entries sit cleanly, and both the paper and dark treatments are fully resolved.",
+    "7": "The ranger's daily log published as a page is a crisp signature that content, stamps, leaders and the end-of-log closing all reinforce, and it is native to a trail service rather than a transplanted trend.",
+    "8": "Mechanics are conventional; the log styling with stamps and leaders spends one or two deliberate breaks entirely in the brand layer.",
+    "9": "Phrases like log continues below and end of log, generated 6:00 PM, are calm, factual, and unmistakably this organization's.",
+    "10": "The daily-log framing suits a habitual glance and nothing blocks a returning user, though the prose summary is a touch slower to parse than a count strip."
+  },
+  "inputTranscriptSha256": "82a61c871272f873fdad70047e0b872e9e242b3ebbfe595091b490776f558c06",
+  "shuffleSeed": 202607611
+}

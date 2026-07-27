@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede carries every number, a prose paragraph states what the rail shows before it begins, and each year row prints its figures in plain text.",
+    "2": "The rail is named by its actual finding, both fixed scales including the 550 mm bar start are disclosed in the how-to-read box, and missing years appear as hatched no-record rows.",
+    "3": "The instrument change is headlined as its own era divider, the three null years are hatched in place with their reasons, and 2019 sits hollow with its unverified note directly beneath the row.",
+    "4": "Interstitial commentary and the two quotes are placed chronologically inside the rail at the moments they belong to, in a patient local register.",
+    "5": "The typographic system is coherent across both modes and the rail survives the mobile width row by row; the red figures on the dark ground are the only slight legibility worry.",
+    "6": "A static rail read by ordinary scrolling, with no pacing imposed on the reader in any render.",
+    "7": "Reading line by line like the almanac the valley kept is a one-sentence idea the form itself enacts, and the drift is felt as the dots creep rightward down the page.",
+    "8": "One break, the chart-as-almanac rail, replaces conventional plates while every reading mechanic stays ordinary.",
+    "9": "Lines such as the bars a shade longer each wet year than the valley had been used to could run in no other paper.",
+    "10": "Every device, the fixed shelf, the hatched rows, and the hollow 2019 dot, exists because the record contains exactly that fact."
+  },
+  "inputTranscriptSha256": "c3c28808871784675bf031bd46c0b306c86c205bc8539bf84288f3ea64a265f6",
+  "shuffleSeed": 202607641
+}

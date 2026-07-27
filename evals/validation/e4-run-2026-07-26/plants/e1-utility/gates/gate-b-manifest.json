@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\great-newton-7cce89\\evals\\validation\\e4-run-2026-07-26\\plants\\e1-utility\\arms\\switchback\\index.html",
+  "pass": true,
+  "required": 27,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 6,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline stating 3 of 9 trails open this morning answers the core question instantly, and it shares the mobile first viewport with the closure alert.",
+    "2": "Words keep the four statuses distinguishable, but caution and closed share the same orange hue differing only by fill, open gets no marker beyond plain text, and the dashed no-report underline reads like a link.",
+    "3": "No-report rows, the never-assumed-open footer note, the flagged estimated snowpack, the marked no-data day, and per-trail report times are all present, though the morning headline against the 6:00 PM as-of stamp slightly muddies data age.",
+    "4": "Open, caution, closed, then no report ordering is stated and followed, the worth-knowing sidebar fronts what changed, and the copy is plain.",
+    "5": "The serif headline, single accent color, and aligned list rows form a restrained, disciplined system.",
+    "6": "The rows absorb the awkward data and both modes are resolved, but the desktop hero leaves a large empty band before the trail list that reads as imbalance.",
+    "7": "The day's conditions delivered as a front-page headline is a clear signature that the dek, the sidebar, and the almanac-style week all reinforce, and it suits a daily conditions service.",
+    "8": "Mechanics stay a plain list while the newspaper hero and the minimal chip system are the one or two deliberate brand-layer breaks.",
+    "9": "The headline, the worth-knowing label, and no report on file give a dry editorial voice a competitor could not publish unchanged.",
+    "10": "The headline makes the repeat glance nearly instant and nothing playful or blocking appears, though the long empty scroll on desktop adds mild friction."
+  },
+  "inputTranscriptSha256": "75c1dc0f56f99f2de101576a8d4fa5c51789c1887c23eb9df89490f2ca82f0f2",
+  "shuffleSeed": 202607612
+}

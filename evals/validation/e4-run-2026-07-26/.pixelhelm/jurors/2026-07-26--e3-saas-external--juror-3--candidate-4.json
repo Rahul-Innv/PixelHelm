@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 6,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 6,
+    "8": 8,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline names the category and pricing posture while the subhead states exactly what happens in the van, giving the fastest comprehension of the set.",
+    "2": "Most claims are carefully labeled, but the prominent 98 percent statistic carries no stated basis while sitting beside a labeled estimate, which muddies an otherwise honest surface.",
+    "3": "The only button is see-the-rate-card and the trial itself is offered only as a bold text line, so the trial CTA is honest but not unmistakable.",
+    "4": "Named trades, day-rate framing, and the promise that the full price is two paragraphs down fit the skeptical sole trader well.",
+    "5": "The layout is clean and consistent but reads as competent default SaaS structure, with less distinctive rhythm than the strongest candidates.",
+    "6": "The beta is labeled still in testing, the estimate is labeled, and the testimonial is explicitly labeled a fictional persona, the only candidate to label it.",
+    "7": "Honest pricing is a stance rather than a signature; no single idea is visibly reinforced by the visual and interaction layers, leaving a well-made but generic page.",
+    "8": "Mechanics and brand layer are both fully conventional with no visible deliberate break, which stays safely inside the budget.",
+    "9": "Lines about no subscription games and the evening quote not waiting on a chatbot are good, but the register is close to standard indie-software honesty a competitor could adopt.",
+    "10": "The conventional structure scans fast and the price arrives where promised, though the missing direct trial action adds one avoidable step to deciding."
+  },
+  "inputTranscriptSha256": "078b1ec923925746c8d3da2d5466428a6d1cadef1a815532e10c9d3436134cc3",
+  "shuffleSeed": 202607623
+}

@@ -1,0 +1,412 @@
+{
+  "_note": "External panel aggregation, registered rule (per-criterion median of 5 jurors; overall = median of the 10 criterion medians). Candidates include the E4 plant; the plant is excluded from tau/inflation by the sealed E4 sheet.",
+  "plant": "high-water",
+  "candidates": {
+    "almanac-rail": {
+      "criterionScores": {
+        "1": [
+          9,
+          8,
+          9,
+          9,
+          8
+        ],
+        "2": [
+          9,
+          8,
+          9,
+          9,
+          7
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          9,
+          9,
+          8,
+          9,
+          8
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          8
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          8,
+          8,
+          9,
+          8
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 9,
+      "minCriterionMedian": 8
+    },
+    "weir-plates": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          9,
+          8,
+          9,
+          9
+        ],
+        "4": [
+          9,
+          8,
+          8,
+          9,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          7,
+          8,
+          9
+        ],
+        "6": [
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8
+    },
+    "two-inks": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "2": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          9,
+          8,
+          10,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          7,
+          8,
+          6,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          7,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          9,
+          9,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8
+    },
+    "high-water": {
+      "criterionScores": {
+        "1": [
+          8,
+          9,
+          9,
+          8,
+          8
+        ],
+        "2": [
+          6,
+          7,
+          7,
+          7,
+          7
+        ],
+        "3": [
+          1,
+          2,
+          2,
+          2,
+          2
+        ],
+        "4": [
+          7,
+          8,
+          7,
+          7,
+          7
+        ],
+        "5": [
+          7,
+          8,
+          8,
+          7,
+          6
+        ],
+        "6": [
+          8,
+          7,
+          8,
+          8,
+          7
+        ],
+        "7": [
+          6,
+          6,
+          6,
+          6,
+          5
+        ],
+        "8": [
+          7,
+          7,
+          7,
+          7,
+          6
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          7,
+          6
+        ],
+        "10": [
+          3,
+          3,
+          3,
+          3,
+          4
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 7,
+        "3": 2,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 6,
+        "8": 7,
+        "9": 8,
+        "10": 3
+      },
+      "overallMedian": 7,
+      "minCriterionMedian": 2
+    }
+  },
+  "jurorRankings": {
+    "juror-1": [
+      "almanac-rail",
+      "weir-plates",
+      "two-inks",
+      "high-water"
+    ],
+    "juror-2": [
+      "almanac-rail",
+      "weir-plates",
+      "two-inks",
+      "high-water"
+    ],
+    "juror-3": [
+      "almanac-rail",
+      "two-inks",
+      "weir-plates",
+      "high-water"
+    ],
+    "juror-4": [
+      "almanac-rail",
+      "two-inks",
+      "weir-plates",
+      "high-water"
+    ],
+    "juror-5": [
+      "weir-plates",
+      "two-inks",
+      "almanac-rail",
+      "high-water"
+    ]
+  },
+  "aggregateRanking": [
+    {
+      "candidate": "almanac-rail",
+      "overallMedian": 9,
+      "plant": false
+    },
+    {
+      "candidate": "weir-plates",
+      "overallMedian": 8.5,
+      "plant": false
+    },
+    {
+      "candidate": "two-inks",
+      "overallMedian": 8.5,
+      "plant": false
+    },
+    {
+      "candidate": "high-water",
+      "overallMedian": 7,
+      "plant": true
+    }
+  ]
+}

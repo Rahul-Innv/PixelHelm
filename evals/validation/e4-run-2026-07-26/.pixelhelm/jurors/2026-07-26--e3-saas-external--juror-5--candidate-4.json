@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 6,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The eyebrow and the FOR line identify product and audience immediately and the invoice conceit is explained in the first paragraph with terms in view, though the headline itself is conceptual.",
+    "2": "The pilot figure is labeled a small internal estimate that is not independently verified, the text-link claim is explained as simply how the product works, and restraint holds throughout.",
+    "3": "Trial buttons open and close the page, the thirty-days stamp with the walk-away-owing-nothing line is honest, and the VAT note sits under the total where the prices appear.",
+    "4": "Casting the pitch as the audience's own paperwork matches how a sole trader actually reads, in plain trade language; the terms table wraps slightly on mobile.",
+    "5": "Monospace labels, double rules, and the stamp execute the invoice conceit consistently, though the blue button sits slightly outside the warm paper palette, most visibly in dark mode.",
+    "6": "The beta is labeled as not sold as finished and the estimate keeps its label, but the customer quote lacks an unverified or fictional label.",
+    "7": "This page is an invoice is the strongest signature in the set: line items, a total, terms, and a stamp make the page demonstrate the product rather than describe it.",
+    "8": "The invoice conceit is one deliberate brand-layer break while scrolling, buttons, and sections behave conventionally.",
+    "9": "Walk away owing nothing and January no longer being a surprise are unhyped, trade-respecting lines no competitor could reuse.",
+    "10": "An invoice is built for fast scanning and the page inherits that structure: items, total, terms, decision, with nothing performative in the way."
+  },
+  "inputTranscriptSha256": "ef687d75ba2aa6c2096d86ab555e5c05249919b4867ce210c2f204ea98f2162a",
+  "shuffleSeed": 202607625
+}

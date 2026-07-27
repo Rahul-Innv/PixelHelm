@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 7,
+    "8": 8,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline states three of nine trails open immediately and the closure alert edges into the first mobile viewport, with everything else reachable by scroll alone.",
+    "2": "Statuses are text labels with distinct treatments, plain, outlined, filled, and dotted underline, but open carries no marking of its own and caution and closed share one hue family, so meaning leans on typography more than a stable color code.",
+    "3": "Estimated snowpack, the no-data day, unreported trails, and the footer rule that unknown is never assumed open or closed are all stated explicitly, with timestamps throughout.",
+    "4": "Ordering follows the hiker's decision and the worth-knowing sidebar is plain and objective, though weather context appears both in the sidebar and again at the foot of the page.",
+    "5": "The typography is refined, but the desktop leaves a large empty band between the hero and the trail list and the list itself runs sparse, which reads as looseness rather than rhythm.",
+    "6": "Content survives long names and the unreported rows in both modes, but the desktop composition strands awkward dead space and the two-column mobile weather grid is an uneasy fit for a seven-day sequence.",
+    "7": "The front-page-headline conceit is coherent and serves glanceability, yet it is borrowed editorial styling more than an idea specific to a trail-conditions service.",
+    "8": "Mechanics stay conventional and the single brand-layer break is the newspaper headline treatment, well within budget.",
+    "9": "The headline and the worth-knowing label have some character, but most of the microcopy is interchangeable with any competent conditions page.",
+    "10": "A returning user gets the answer in the first line with no mandatory friction; the wasted desktop scroll is the only recurring cost."
+  },
+  "inputTranscriptSha256": "aae5be5c3c79ec7e16f7a2d0002fa5d446c989866ff78dd6022d6b0c3d130918",
+  "shuffleSeed": 202607614
+}

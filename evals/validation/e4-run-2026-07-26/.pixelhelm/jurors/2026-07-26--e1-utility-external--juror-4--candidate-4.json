@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 5,
+    "8": 7,
+    "9": 5,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The counts line and the closure card are visible in the first mobile viewport and everything else is reachable by scroll, though the oversized card banners make the where answer a long scroll on a phone.",
+    "2": "Status is triply encoded with icon, word, and color, repeated in a legend, and stays stable across sections and both modes.",
+    "3": "Unreported trails are explicit cards, the estimate is flagged with the offline-sensor reason, the chart marks July 22 with a dashed no-data point, and every card is timestamped.",
+    "4": "Grouping and order follow the decision sequence with plain wording, but statuses remain administrative labels rather than being framed around the hiker's choice.",
+    "5": "Alignment and spacing are consistent, yet the full-width banners repeat one status word at poster scale on every card, the legend duplicates already-labeled banners, and one date appears in a raw numeric format, so drama and small arbitrariness creep in.",
+    "6": "The cards absorb the data in both modes, but the desktop grid strands single-card gaps in three sections and the banner-heavy cards stretch the mobile page to the longest of the set.",
+    "7": "The color-blocked status dashboard is a transplanted generic pattern, and no one-sentence idea specific to this trail service emerges from it.",
+    "8": "Mechanics are conventional and nothing exceeds the break budget, but no deliberate brand-layer move earns distinction either.",
+    "9": "The microcopy is competent boilerplate that any competitor could publish unchanged.",
+    "10": "The top counts help a repeat glance and nothing is mandatory or playful, but the banner-first cards make each daily scroll longer than it needs to be."
+  },
+  "inputTranscriptSha256": "aae5be5c3c79ec7e16f7a2d0002fa5d446c989866ff78dd6022d6b0c3d130918",
+  "shuffleSeed": 202607614
+}

@@ -1,0 +1,116 @@
+{
+  "juror": "juror-2",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 6,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The first screenful delivers the offer, both prices, the VAT note, and the trial terms, but what the product actually does is carried only by the small eyebrow line and deferred to sections far below the fold.",
+        "2": "The pilot figure is labeled as an internal estimate from eleven users under a section literally titled evidence-not-adjectives, and the copy is free of marketese throughout.",
+        "3": "Prices with the VAT note sit in the very first screenful beside a single honest no-card trial button that never repeats or nags.",
+        "4": "The quotation framing is the sole trader's own mental model, the copy speaks plain trade language, and the mobile layout puts price before everything else a skeptic would ask.",
+        "5": "Serif display over a disciplined rule-and-border system holds together in both modes, though the small-print grid leaves an unbalanced empty third column and the type scale runs slightly past three sizes.",
+        "6": "The beta is labeled three times and the estimate is never rounded into a fact, but the Okafor testimonial appears unlabeled while another candidate's render shows the same quote marked as a fictional persona.",
+        "7": "Here-is-the-quote is a one-sentence signature the whole page enacts: price first, small print set large, then the case, exactly as the trade would quote a customer.",
+        "8": "Mechanics stay fully conventional and the single deliberate break, inverting price to the top, lives in the brand and structure layer.",
+        "9": "Lines like the small print set large and no asterisk because there is not one to hide could not be published unchanged by a competitor.",
+        "10": "A product selling time respect opens with the decision-critical facts and can be fully scanned in under a minute with nothing performative in the way."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 6,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 6,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Invoicing for trades priced like a day rate, plus a subhead describing the photo-to-invoice flow and a line naming sole traders, answers what and for whom entirely inside the first screenful.",
+        "2": "The four-hour figure is carefully downgraded to an early signal from eleven pilot users, though the ninety-eight percent claim stands as a bare fact with no stated basis.",
+        "3": "Pricing is transparent with the VAT note and an honest no-card promise, but the only button on the page is see-the-rate-card and the trial itself never gets an unmistakable CTA, only a bold text line.",
+        "4": "Day-rate pricing, no subscription games, and a when-it-goes-wrong section speak directly to a subscription-skeptic tradesperson in plain language on a clean phone layout.",
+        "5": "Competent conventional craft with a limited palette and steady rhythm, though the dark mode drifts between peach labels and mint accents and the desktop leaves large unused right-hand space.",
+        "6": "The beta is labeled still-in-testing, the estimate is explicitly not a promise, and this is the only candidate that labels the testimonial as a fictional persona rather than presenting it as real.",
+        "7": "Priced-like-a-day-rate is a good sentence, but the page asserts it inside an otherwise generic marketing structure rather than demonstrating it through form.",
+        "8": "Mechanics are entirely conventional with no real break attempted, which respects the budget while spending none of it.",
+        "9": "No enterprise tier hiding behind a sales call and the evening quote not waiting on a chatbot are distinctive, though the overall frame reads closer to standard candid-SaaS register.",
+        "10": "The page scans quickly and stays unperformative, but the price a skeptic came for sits five sections deep behind stats and features."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 6,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The for-from-terms block and eyebrow identify the product and audience within the first screenful, but the headline describes the page rather than the product and the actual features sit below the fold.",
+        "2": "The evidence section labels the pilot estimate as small and unverified and separates it from plain product behavior, with zero promotional adjectives anywhere.",
+        "3": "Two identical honest trial buttons, a thirty-days-free stamp with walk-away-owing-nothing copy, and prices under a VAT note make the path unmistakable without nagging.",
+        "4": "Reading the pitch as your own paperwork is exactly the sole trader's mental model, and lines about the merchant's car park and January surprises are native trade speech.",
+        "5": "The invoice typesetting is the tightest craft in the set: aligned line-item columns, monospace ledger labels, double-ruled total, and a restrained stamp, consistent in both modes.",
+        "6": "Beta is chip-labeled and reinforced by we-will-not-sell-it-as-finished and the estimate stays an estimate, but the testimonial runs unlabeled despite another render revealing it as a fictional persona.",
+        "7": "This-page-is-an-invoice is the ideal form the rubric names: the pitch is demonstrated in the product's own artifact, and every section from line items to total enacts it.",
+        "8": "One totalizing conceit spends the whole novelty budget in the brand layer while buttons, sections, and reading order remain perfectly conventional.",
+        "9": "Typeset on the product's own paper and walk away owing nothing are unpublishable by any competitor without sounding like theft.",
+        "10": "An invoice is the fastest-scanning document a tradesperson knows, so the form itself keeps the time-is-valuable promise with no performative moments."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 6,
+        "7": 8,
+        "8": 7,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The page opens mid-story at step one with no value-proposition headline, so what the product is and who it serves must be assembled from the eyebrow and the first step's body text.",
+        "2": "The honesty section labels the pilot figure as a signal rather than a certified fact, and step three is footnoted as product behavior, not a promise.",
+        "3": "Header and closing trial buttons are honest and the VAT note sits with the prices, but the cost answer a skeptic wants is the very last section of a long scroll.",
+        "4": "The six steps mirror a tradesperson's actual afternoon in plain language, though putting price last fits a storyteller's order more than a subscription-skeptic's.",
+        "5": "The numeral column is disciplined with green apparently reserved for money-in steps, and the navy-gold-green palette holds in both modes, though the giant numerals do most of the visual work alone.",
+        "6": "Beta gets a chip plus we-will-not-pretend-it-is-done and the estimate is labeled as one, but the testimonial again appears unlabeled where a sibling render shows it is a fictional persona.",
+        "7": "The-afternoon-you-get-back is a genuine narrative signature enacted by the step structure, though it demonstrates the workflow rather than the product's own artifact.",
+        "8": "The single break, opening with a headline-less numbered narrative, is deliberate but leaks into the mechanics layer by taxing first-screen comprehension.",
+        "9": "The ladder still warm and staying the reasonable one without writing a word are voice lines no competitor could publish unchanged.",
+        "10": "Six large steps scan fast and nothing is performative, but a skeptical reader must ride the whole story before the price lets them decide."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-2",
+    "candidate-4"
+  ]
+}

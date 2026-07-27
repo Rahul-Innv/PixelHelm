@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The counts strip and the closure alert both sit inside the first mobile viewport, so overall network state and the active notice are readable before any scrolling, and the rest needs only scroll.",
+    "2": "Each status pairs a stable color spine with a text label and a plain-language group heading, so meaning survives without color and stays identical across modes and widths.",
+    "3": "Unknown trails get their own section with the explicit warning that unknown is not the same as fine, the July 22 gap is a labeled row, the estimate is flagged with its reason, and the footer states the never-assumed-open policy outright.",
+    "4": "Go, go with care, do not go, and unknown translate statuses directly into the hiker's decision in the hiker's order, in plain calm language.",
+    "5": "The spine motif, aligned columns, and restrained palette are disciplined, though the paired group headings and per-row labels carry some redundancy and the typography is plainer than the strongest competitor.",
+    "6": "Long names, the burn cluster, the unreported pair, and the gap row all sit cleanly, and the dark mode is fully re-resolved with softened status hues.",
+    "7": "The signature, a board that issues decisions rather than statuses, is one sentence, reinforced by content, visuals, and microcopy, and is true of what a conditions service owes a hiker.",
+    "8": "Mechanics are wholly conventional; the lone deliberate break is renaming the groups into decision language, kept in the brand layer.",
+    "9": "Unknown is not the same as fine, and the gap shown rather than smoothed over, are lines no competitor publishes unchanged, though the closing design-study disclaimer briefly steps outside the service's own voice.",
+    "10": "Counts plus decision groups make the habitual daily glance near instant, with nothing mandatory to bypass on a return visit."
+  },
+  "inputTranscriptSha256": "aae5be5c3c79ec7e16f7a2d0002fa5d446c989866ff78dd6022d6b0c3d130918",
+  "shuffleSeed": 202607614
+}

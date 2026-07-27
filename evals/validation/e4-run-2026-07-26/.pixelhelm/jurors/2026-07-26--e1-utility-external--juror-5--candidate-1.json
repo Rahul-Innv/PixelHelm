@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The one-line tally and the ranger's notice both land in the first mobile viewport, so today's answer and the active alert arrive before any scrolling.",
+    "2": "Green, amber, red, and neutral stamp chips always carry the status word, and each status keeps one hue and one rendering everywhere in both modes.",
+    "3": "Unreported trails say condition unknown, the missing history day is written out as not recorded, the snowpack carries an estimated stamp with the offline sensor explained, and every entry shows its report time.",
+    "4": "Open, then caution, then closed, then unreported matches the hiker's decision order, the sorting rule is stated in plain words, and there is no marketese anywhere.",
+    "5": "The ledger typography, letterspaced section heads, dotted leaders, and stamp chips hold one consistent rhythm with nothing arbitrary.",
+    "6": "Long names sit on the dotted leaders without breakage, the burn cluster and both unreported rows read evenly, and the parchment and dark-brown modes are equally finished.",
+    "7": "The page is a ranger's daily log, a one-sentence signature reinforced by the stamps, the entry numbers, the notice, and the end-of-log closing, and it is genuinely true of a trail-conditions service.",
+    "8": "Mechanics stay a plain scrolling document; the single deliberate break is the field-ledger dressing, kept entirely in the brand layer.",
+    "9": "Lines like the entered-open-first note and the end-of-log sign-off could not move to a competitor's page unchanged, yet stay calm and factual.",
+    "10": "A dated morning log rewards the habitual daily glance and contains nothing playful or blocking for a returning reader."
+  },
+  "inputTranscriptSha256": "917ce935cc0a9e8fc3898714d7e0550a03e7373e4ba547cfd9de7fef076ba322",
+  "shuffleSeed": 202607615
+}

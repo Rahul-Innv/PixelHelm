@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 5,
+    "5": 6,
+    "6": 9,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "On desktop this is the fastest catalog of the four, with right-aligned prices, inline stock, season sections, and filter chips. On mobile two rows collapse into one-word-per-line columns, which destroys at-a-glance reading for those products.",
+    "2": "Quantity steppers with an add button on every row plus a conventional product page keep the money path exactly as convention dictates, with prices where shoppers look for them.",
+    "3": "This arm is the most honest of the set: the estimated rate is flagged, out-of-stock carries a restock promise, the price-pending line invites a note instead of showing a number, and the footer explains the test-tray provenance of every figure.",
+    "4": "The one-word-per-line wrapping of the carrot and sweet pea entries at phone width is a real failure for older readers, and the minus and plus stepper targets are small; elsewhere type is legible and hover-free.",
+    "5": "Type hierarchy and section rhythm are handsome, but the narrow-column wraps visible even on desktop for two rows, and the broken mobile columns, are exactly the arbitrary misalignments craft discipline forbids.",
+    "6": "The product page is the strongest for deciding: year table, an at-a-glance strip for difficulty, germination, and height, unhurried growing notes, and companions with reasons and links.",
+    "7": "The potting bench with seasonal drawers and a vouch-for-everything promise is a coherent signature true of a two-person shop, though it shapes the page less totally than the almanac arm.",
+    "8": "Novelty lives in the bench metaphor and the voice while every commerce mechanic stays textbook-conventional, matching a brand-layer-only break budget.",
+    "9": "If it is listed, we can vouch for it, and the easiest drawer on the bench are the best sentences on any arm; the visible design-study disclaimer in the footer is the one line a real shop would never print.",
+    "10": "Filter chips, inline stock, and add controls on the list make a repeat purchase the fastest here, and the restock promise serves the shopper who came back for the carrot."
+  },
+  "inputTranscriptSha256": "49cbf07abd405334f1987306716c892ec26466139bf44acdcf6f0d79b689388c",
+  "shuffleSeed": 202607631
+}

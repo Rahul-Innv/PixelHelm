@@ -1,0 +1,49 @@
+{
+  "project": "e4-plant-switchback",
+  "filesScanned": 1,
+  "gates": {
+    "contrast": {
+      "hard": true,
+      "ran": true,
+      "pass": false,
+      "total": 14,
+      "failures": [
+        {
+          "mode": "light",
+          "fg": "muted",
+          "bg": "paper",
+          "kind": "text",
+          "ratio": 3.12,
+          "threshold": 4.5
+        }
+      ]
+    },
+    "rawColor": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "antiCliche": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "webCraft": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "typeScale": {
+      "hard": false,
+      "ran": false,
+      "ratios": []
+    }
+  },
+  "hardGatesPassed": false
+}

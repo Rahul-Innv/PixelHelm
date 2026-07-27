@@ -1,0 +1,41 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e4-external-calibration",
+  "intent": "E4 (RF-4 closure): re-judge the E1+E3 winners with structurally external 5-juror panels per set, plus one sealed plant per set; compute the pre-registered tau-b, inflation, and plant-catch statistics.",
+  "edition": "lite",
+  "workerModel": "claude-fable-5 (main loop and all 20 fresh-context juror subagents)",
+  "skillsFired": [],
+  "engines": [
+    "records.mjs (pixelhelm/juror-record@1 writer)",
+    "render.mjs",
+    "check-token-contracts.mjs",
+    "static-gates.mjs",
+    "output-floor-gate.mjs",
+    "verify_responsive.mjs",
+    "verify_states.mjs",
+    "verify_targetsize.mjs",
+    "verify_focustrap.mjs",
+    "derived-claims-gate.mjs",
+    "content-manifest-gate.mjs"
+  ],
+  "council": {
+    "pass": "deep",
+    "seats": 0,
+    "registerJurors": 0
+  },
+  "iterations": 0,
+  "renders": {
+    "items": 5,
+    "cells": 20
+  },
+  "tokens": {
+    "subagentsMeasured": 1947198,
+    "workflowsMeasured": 0,
+    "note": "sum of harness-reported output tokens for the 20 external juror subagents; main-context usage is not observable in-session"
+  },
+  "wallClockMinutes": 33,
+  "outcome": "report-only",
+  "notes": "Computation scripts committed and cited by sha256 per the sealed E4 sheet: compute-e4-stats.mjs 15945b4f8834a842506e5abc0520c4be0818159d09c1489958bc787db5f1d51e; aggregate-external.mjs 70bab4d147c18a72b007859e7412202406bba406feeb189fff551e6959494b72; write-juror-records.mjs 71a546267f9a66f09def46dfbdedfce7baa7b864596bcc1875b8382e0d105407; prepare-blind-inputs.mjs 6f3f71d395e47086d9ccd102f08e1a1c5c43394dd4f043fa32c40a998d5feee4. Sealed plant note sha256 19f0bd86471d3a38b68a61837006b2cd26d4e9381cea2b9077834894a63dff28 (hash committed pre-judging at ce88c8d). Registered results: tau-b 0.632 PASS (>=0.5); inflation +0.625 PASS (|x|<=1.5); plant criterion FAIL (e1 plant strictly won its set externally; commerce plant tied for top; all four defects caught by the floor battery). E4 falsified per the sealed falsifier: any planted flaw wins. Panel seats fields are 0 because this run used external per-juror records (.pixelhelm/jurors, 80 files), not the internal council machinery. wallClockMinutes measured from the first committed E4 artifact (plants commit) to this record; grounding and plant authoring before that commit are not in the measured figure. External panels executed in the early hours of 2026-07-27 local; the record carries the run date."
+}

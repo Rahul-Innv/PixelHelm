@@ -1,0 +1,116 @@
+{
+  "juror": "juror-4",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The bold three-of-nine summary and the closure notice both sit in the first mobile viewport, and the full answer needs only scrolling. The ceremonial masthead does spend vertical space before the answer appears.",
+        "2": "Every status is a labeled stamp in a stable color, readable without color alone, and rendered identically in both modes and at both widths.",
+        "3": "Unreported trails carry an explicit condition-unknown stamp, the missing July 22 day is written out as not recorded, the snowpack shows an estimated stamp with the offline-sensor reason, and every entry is timestamped.",
+        "4": "Entries run open, then caution, then closed, then unreported, with that ordering stated in plain words and the ranger notice placed ahead of the log; the language stays calm and jargon-free.",
+        "5": "Spacing rhythm, dotted leaders, stamp geometry, and a tight warm palette are executed with almost nothing arbitrary, and the letterpress system is applied consistently end to end.",
+        "6": "Long names, the closed burn pair, and both unreported rows sit naturally in the ruled-log layout, and the dark mode is a fully resolved warm-on-black rendering rather than an inversion.",
+        "7": "The one-sentence idea, the ranger's daily printed log, is reinforced by the stamps, the entry numbers, and the posted and end-of-log lines, and it is genuinely true of a trail-conditions service.",
+        "8": "Mechanics are a plain scrolling document; the single deliberate break, the letterpress log conceit, lives entirely in the brand layer.",
+        "9": "Lines like the morning log masthead, the ranger's notice, and the end-of-log closure could not be pasted onto a competitor's page unchanged, yet they stay factual and calm.",
+        "10": "The dense ruled log rewards a daily glance and nothing playful or mandatory stands in a returning user's way, though the tall masthead adds a little repeat scrolling."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 8,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 7,
+        "8": 8,
+        "9": 7,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline states three of nine trails open immediately and the closure alert edges into the first mobile viewport, with everything else reachable by scroll alone.",
+        "2": "Statuses are text labels with distinct treatments, plain, outlined, filled, and dotted underline, but open carries no marking of its own and caution and closed share one hue family, so meaning leans on typography more than a stable color code.",
+        "3": "Estimated snowpack, the no-data day, unreported trails, and the footer rule that unknown is never assumed open or closed are all stated explicitly, with timestamps throughout.",
+        "4": "Ordering follows the hiker's decision and the worth-knowing sidebar is plain and objective, though weather context appears both in the sidebar and again at the foot of the page.",
+        "5": "The typography is refined, but the desktop leaves a large empty band between the hero and the trail list and the list itself runs sparse, which reads as looseness rather than rhythm.",
+        "6": "Content survives long names and the unreported rows in both modes, but the desktop composition strands awkward dead space and the two-column mobile weather grid is an uneasy fit for a seven-day sequence.",
+        "7": "The front-page-headline conceit is coherent and serves glanceability, yet it is borrowed editorial styling more than an idea specific to a trail-conditions service.",
+        "8": "Mechanics stay conventional and the single brand-layer break is the newspaper headline treatment, well within budget.",
+        "9": "The headline and the worth-knowing label have some character, but most of the microcopy is interchangeable with any competent conditions page.",
+        "10": "A returning user gets the answer in the first line with no mandatory friction; the wasted desktop scroll is the only recurring cost."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The counts strip and the closure alert both sit inside the first mobile viewport, so overall network state and the active notice are readable before any scrolling, and the rest needs only scroll.",
+        "2": "Each status pairs a stable color spine with a text label and a plain-language group heading, so meaning survives without color and stays identical across modes and widths.",
+        "3": "Unknown trails get their own section with the explicit warning that unknown is not the same as fine, the July 22 gap is a labeled row, the estimate is flagged with its reason, and the footer states the never-assumed-open policy outright.",
+        "4": "Go, go with care, do not go, and unknown translate statuses directly into the hiker's decision in the hiker's order, in plain calm language.",
+        "5": "The spine motif, aligned columns, and restrained palette are disciplined, though the paired group headings and per-row labels carry some redundancy and the typography is plainer than the strongest competitor.",
+        "6": "Long names, the burn cluster, the unreported pair, and the gap row all sit cleanly, and the dark mode is fully re-resolved with softened status hues.",
+        "7": "The signature, a board that issues decisions rather than statuses, is one sentence, reinforced by content, visuals, and microcopy, and is true of what a conditions service owes a hiker.",
+        "8": "Mechanics are wholly conventional; the lone deliberate break is renaming the groups into decision language, kept in the brand layer.",
+        "9": "Unknown is not the same as fine, and the gap shown rather than smoothed over, are lines no competitor publishes unchanged, though the closing design-study disclaimer briefly steps outside the service's own voice.",
+        "10": "Counts plus decision groups make the habitual daily glance near instant, with nothing mandatory to bypass on a return visit."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 5,
+        "8": 7,
+        "9": 5,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The counts line and the closure card are visible in the first mobile viewport and everything else is reachable by scroll, though the oversized card banners make the where answer a long scroll on a phone.",
+        "2": "Status is triply encoded with icon, word, and color, repeated in a legend, and stays stable across sections and both modes.",
+        "3": "Unreported trails are explicit cards, the estimate is flagged with the offline-sensor reason, the chart marks July 22 with a dashed no-data point, and every card is timestamped.",
+        "4": "Grouping and order follow the decision sequence with plain wording, but statuses remain administrative labels rather than being framed around the hiker's choice.",
+        "5": "Alignment and spacing are consistent, yet the full-width banners repeat one status word at poster scale on every card, the legend duplicates already-labeled banners, and one date appears in a raw numeric format, so drama and small arbitrariness creep in.",
+        "6": "The cards absorb the data in both modes, but the desktop grid strands single-card gaps in three sections and the banner-heavy cards stretch the mobile page to the longest of the set.",
+        "7": "The color-blocked status dashboard is a transplanted generic pattern, and no one-sentence idea specific to this trail service emerges from it.",
+        "8": "Mechanics are conventional and nothing exceeds the break budget, but no deliberate brand-layer move earns distinction either.",
+        "9": "The microcopy is competent boilerplate that any competitor could publish unchanged.",
+        "10": "The top counts help a repeat glance and nothing is mandatory or playful, but the banner-first cards make each daily scroll longer than it needs to be."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-2",
+    "candidate-4"
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "candidateOrderBase": [
+    "almanac-rail",
+    "weir-plates",
+    "two-inks",
+    "high-water"
+  ],
+  "plant": "high-water",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607641,
+      "candidateOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "two-inks",
+        "high-water"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "weir-plates",
+        "candidate-2": "almanac-rail",
+        "candidate-3": "two-inks",
+        "candidate-4": "high-water"
+      },
+      "transcriptSha256": "c3c28808871784675bf031bd46c0b306c86c205bc8539bf84288f3ea64a265f6"
+    },
+    "juror-2": {
+      "jurorSeed": 202607642,
+      "candidateOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "two-inks",
+        "high-water"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "weir-plates",
+        "candidate-2": "almanac-rail",
+        "candidate-3": "two-inks",
+        "candidate-4": "high-water"
+      },
+      "transcriptSha256": "5eef273592bcfcca0a89a315578243ec1cf567a7b4d81057b0a0628af66e8ebc"
+    },
+    "juror-3": {
+      "jurorSeed": 202607643,
+      "candidateOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "high-water",
+        "two-inks"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "weir-plates",
+        "candidate-2": "almanac-rail",
+        "candidate-3": "high-water",
+        "candidate-4": "two-inks"
+      },
+      "transcriptSha256": "c9e7b7c003e00e8e194a2156844e36070b46ae64cb6a470f9af413800055c5ea"
+    },
+    "juror-4": {
+      "jurorSeed": 202607644,
+      "candidateOrder": [
+        "weir-plates",
+        "two-inks",
+        "almanac-rail",
+        "high-water"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "weir-plates",
+        "candidate-2": "two-inks",
+        "candidate-3": "almanac-rail",
+        "candidate-4": "high-water"
+      },
+      "transcriptSha256": "57b27a2e525b07a45c1490b869269f0bb897d9234603355a5aededc518cdd40b"
+    },
+    "juror-5": {
+      "jurorSeed": 202607645,
+      "candidateOrder": [
+        "two-inks",
+        "almanac-rail",
+        "high-water",
+        "weir-plates"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "two-inks",
+        "candidate-2": "almanac-rail",
+        "candidate-3": "high-water",
+        "candidate-4": "weir-plates"
+      },
+      "transcriptSha256": "2071a5a25f0804d239e8bab4b0cac8bad4835668a9ff8ca74ddf00a90bdc6237"
+    }
+  }
+}

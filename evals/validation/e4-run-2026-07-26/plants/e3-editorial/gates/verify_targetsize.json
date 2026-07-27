@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-27T04:00:11.217Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/high-water/index.html",
+      "measured": 0,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

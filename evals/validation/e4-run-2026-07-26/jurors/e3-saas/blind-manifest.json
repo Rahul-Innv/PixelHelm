@@ -1,0 +1,415 @@
+{
+  "_note": "sha256 binding of every neutral-named blind render file to its committed source; blind copies live untracked at repo root jurors-blind/ and are byte-identical duplicates.",
+  "jurors": {
+    "juror-1": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__dark.png",
+        "sha256": "4649c7a7026088c185d4f8f428f2c7c16e3e858f7b340c65f496c03b4b58ed2f"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__light.png",
+        "sha256": "41ae1919e43367f02239a7f245d10dee75da78fa4d4152daf3bf2c5a6cad4b1c"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__dark.png",
+        "sha256": "de897f6b382dfd22131530dc64339ed45cd83be9eb19b5d3d85616ff380c993e"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__light.png",
+        "sha256": "3bd0879e2fc9b541ebb75694588acafa4966fc874aab78e1839aca9116606507"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      }
+    ],
+    "juror-2": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__dark.png",
+        "sha256": "4649c7a7026088c185d4f8f428f2c7c16e3e858f7b340c65f496c03b4b58ed2f"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__light.png",
+        "sha256": "41ae1919e43367f02239a7f245d10dee75da78fa4d4152daf3bf2c5a6cad4b1c"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__dark.png",
+        "sha256": "de897f6b382dfd22131530dc64339ed45cd83be9eb19b5d3d85616ff380c993e"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__light.png",
+        "sha256": "3bd0879e2fc9b541ebb75694588acafa4966fc874aab78e1839aca9116606507"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      }
+    ],
+    "juror-3": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__dark.png",
+        "sha256": "4649c7a7026088c185d4f8f428f2c7c16e3e858f7b340c65f496c03b4b58ed2f"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__light.png",
+        "sha256": "41ae1919e43367f02239a7f245d10dee75da78fa4d4152daf3bf2c5a6cad4b1c"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__dark.png",
+        "sha256": "de897f6b382dfd22131530dc64339ed45cd83be9eb19b5d3d85616ff380c993e"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__light.png",
+        "sha256": "3bd0879e2fc9b541ebb75694588acafa4966fc874aab78e1839aca9116606507"
+      }
+    ],
+    "juror-4": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__dark.png",
+        "sha256": "4649c7a7026088c185d4f8f428f2c7c16e3e858f7b340c65f496c03b4b58ed2f"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__light.png",
+        "sha256": "41ae1919e43367f02239a7f245d10dee75da78fa4d4152daf3bf2c5a6cad4b1c"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__dark.png",
+        "sha256": "de897f6b382dfd22131530dc64339ed45cd83be9eb19b5d3d85616ff380c993e"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__light.png",
+        "sha256": "3bd0879e2fc9b541ebb75694588acafa4966fc874aab78e1839aca9116606507"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      }
+    ],
+    "juror-5": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__dark.png",
+        "sha256": "4649c7a7026088c185d4f8f428f2c7c16e3e858f7b340c65f496c03b4b58ed2f"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__desktop__light.png",
+        "sha256": "41ae1919e43367f02239a7f245d10dee75da78fa4d4152daf3bf2c5a6cad4b1c"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__dark.png",
+        "sha256": "de897f6b382dfd22131530dc64339ed45cd83be9eb19b5d3d85616ff380c993e"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-saas/renders/day-rate__mobile__light.png",
+        "sha256": "3bd0879e2fc9b541ebb75694588acafa4966fc874aab78e1839aca9116606507"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      }
+    ]
+  }
+}

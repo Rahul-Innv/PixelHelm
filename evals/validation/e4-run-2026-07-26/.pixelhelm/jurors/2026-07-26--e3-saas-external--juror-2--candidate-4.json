@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 6,
+    "7": 8,
+    "8": 7,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The page opens mid-story at step one with no value-proposition headline, so what the product is and who it serves must be assembled from the eyebrow and the first step's body text.",
+    "2": "The honesty section labels the pilot figure as a signal rather than a certified fact, and step three is footnoted as product behavior, not a promise.",
+    "3": "Header and closing trial buttons are honest and the VAT note sits with the prices, but the cost answer a skeptic wants is the very last section of a long scroll.",
+    "4": "The six steps mirror a tradesperson's actual afternoon in plain language, though putting price last fits a storyteller's order more than a subscription-skeptic's.",
+    "5": "The numeral column is disciplined with green apparently reserved for money-in steps, and the navy-gold-green palette holds in both modes, though the giant numerals do most of the visual work alone.",
+    "6": "Beta gets a chip plus we-will-not-pretend-it-is-done and the estimate is labeled as one, but the testimonial again appears unlabeled where a sibling render shows it is a fictional persona.",
+    "7": "The-afternoon-you-get-back is a genuine narrative signature enacted by the step structure, though it demonstrates the workflow rather than the product's own artifact.",
+    "8": "The single break, opening with a headline-less numbered narrative, is deliberate but leaks into the mechanics layer by taxing first-screen comprehension.",
+    "9": "The ladder still warm and staying the reasonable one without writing a word are voice lines no competitor could publish unchanged.",
+    "10": "Six large steps scan fast and nothing is performative, but a skeptical reader must ride the whole story before the price lets them decide."
+  },
+  "inputTranscriptSha256": "8ec7c9c5ec22f50fcbfeb7520655783bc51c4073a17aef352371d03ae44351bb",
+  "shuffleSeed": 202607622
+}
