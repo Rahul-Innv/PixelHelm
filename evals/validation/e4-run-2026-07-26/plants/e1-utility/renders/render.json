@@ -1,0 +1,93 @@
+{
+  "generated": "2026-07-27T03:52:19.912Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 2,
+    "critical": 0,
+    "cellsRun": 4
+  },
+  "shots": [
+    {
+      "file": "switchback__desktop__light.png",
+      "item": "switchback",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 1,
+        "critical": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 14,
+            "sample": ".updated"
+          }
+        ]
+      }
+    },
+    {
+      "file": "switchback__mobile__light.png",
+      "item": "switchback",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 1,
+        "critical": 0,
+        "violations": [
+          {
+            "id": "color-contrast",
+            "impact": "serious",
+            "nodes": 14,
+            "sample": ".updated"
+          }
+        ]
+      }
+    },
+    {
+      "file": "switchback__desktop__dark.png",
+      "item": "switchback",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "switchback__mobile__dark.png",
+      "item": "switchback",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

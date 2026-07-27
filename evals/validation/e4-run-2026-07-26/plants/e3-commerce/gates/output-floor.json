@@ -1,0 +1,77 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-27T03:58:56.882Z",
+  "targets": [
+    {
+      "target": "arms/potting-bench/index.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "pass",
+          "id": "landmark-aux",
+          "msg": "header/nav/footer landmarks present"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 12 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (231 chars)"
+        }
+      ]
+    },
+    {
+      "target": "arms/potting-bench/product.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "pass",
+          "id": "landmark-aux",
+          "msg": "header/nav/footer landmarks present"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 5 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (223 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

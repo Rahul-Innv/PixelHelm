@@ -1,0 +1,57 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T03:59:02.970Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "arms/potting-bench/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 22,
+          "checked": 22,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 22,
+          "checked": 22,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    },
+    {
+      "target": "arms/potting-bench/product.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 6,
+          "checked": 6,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 6,
+          "checked": 6,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

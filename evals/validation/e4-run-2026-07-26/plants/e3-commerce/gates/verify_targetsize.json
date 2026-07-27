@@ -1,0 +1,136 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-27T03:59:20.663Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "arms/potting-bench/index.html",
+      "measured": 22,
+      "violations": [
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px"
+        }
+      ],
+      "excepted": [
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "ul > li.packet > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        }
+      ]
+    },
+    {
+      "target": "arms/potting-bench/product.html",
+      "measured": 6,
+      "violations": [
+        {
+          "selector": "div > div.buyrow > div.margin-controls > button",
+          "size": "18x18px"
+        }
+      ],
+      "excepted": [
+        {
+          "selector": "div > div.buyrow > div.margin-controls > button",
+          "size": "18x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "div > div.buyrow > div.margin-controls > button.add",
+          "size": "36.7x18px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "section.companions > ul > li > a",
+          "size": "171.67x23px",
+          "exception": "spacing (24px circle clear of other targets)"
+        },
+        {
+          "selector": "section.companions > ul > li > a",
+          "size": "193.22x23px",
+          "exception": "spacing (24px circle clear of other targets)"
+        }
+      ]
+    }
+  ],
+  "pass": false
+}

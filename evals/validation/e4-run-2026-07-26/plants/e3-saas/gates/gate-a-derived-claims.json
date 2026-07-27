@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\great-newton-7cce89\\evals\\validation\\e4-run-2026-07-26\\plants\\e3-saas\\arms\\day-rate\\index.html",
+  "pass": false,
+  "allowedNumbers": 15,
+  "blocks": 14,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented percent \"98%\" (=98) not in data or derived constants — …otal. WHAT ACTUALLY HAPPENS 98% of invoices raised in Ledger…"
+    }
+  ]
+}

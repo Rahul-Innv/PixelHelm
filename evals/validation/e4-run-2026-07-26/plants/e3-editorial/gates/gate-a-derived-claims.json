@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\great-newton-7cce89\\evals\\validation\\e4-run-2026-07-26\\plants\\e3-editorial\\arms\\high-water\\index.html",
+  "pass": false,
+  "allowedNumbers": 158,
+  "blocks": 34,
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "kind": "VERDICT",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "un-negated \"VERIFIED\" inside non-verified block [data-model=\"2019\"] — …VERIFIED 132mm The largest 24-hour f…"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+arms/potting-bench/index.html: PASS — 12 pass / 0 fail / 0 unresolvable (pairs×modes)
+arms/potting-bench/product.html: PASS — 12 pass / 0 fail / 0 unresolvable (pairs×modes)

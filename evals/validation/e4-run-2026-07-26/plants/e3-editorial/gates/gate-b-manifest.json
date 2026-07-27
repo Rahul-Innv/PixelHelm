@@ -1,0 +1,22 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\great-newton-7cce89\\evals\\validation\\e4-run-2026-07-26\\plants\\e3-editorial\\arms\\high-water\\index.html",
+  "pass": false,
+  "required": 17,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "MISSING",
+      "id": "outlier-2019",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "required \"outlier-2019\" missing in light: 2019 carries its unverified label"
+    }
+  ]
+}
