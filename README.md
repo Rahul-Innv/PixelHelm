@@ -163,20 +163,22 @@ Two evidence grades, kept honest on purpose:
   (each an escape the floor caught on its first recorded run); a documented repair
   pass (`examples/harborline/repairs/2026-07-26/`, ChoiceGate-admitted, surgical
   edits only) then cleared two through the loop — the structural output floor and
-  the 280/320 px overflow — and regenerated every record. The third stays a
-  committed FAIL: emulated-mobile frame-time p95 49.9 ms against the 33 ms budget,
-  with its cause now diagnosed (a throttle-invariant headless frame-scheduling
-  stall — harness/environment, not page cost; the page ships no JS or animations)
-  rather than papered over. Committed failures remain the point: the gates block
-  real defects, and a record is only ever cleared by fixing the page, never by
-  editing the record.
-- **The engine is checkable offline.** The demo above and a 30-test offline suite
+  the 280/320 px overflow — and regenerated every record. The third (emulated-mobile
+  frame-time) was cleared NOT by editing the page but by an owner-approved
+  gate-design re-registration: the diagnosed harness defect (a throttle-invariant
+  headless frame-scheduling stall, one multi-vsync gap per scripted wheel step —
+  present even on a plain-text control, all traced processes idle) is now excluded
+  one-gap-per-wheel-step before percentile math, with budgets unchanged and every
+  excluded gap's size on the record. Committed failures remain the point: the gates
+  block real defects, and a record is only ever cleared by fixing the page or by a
+  documented re-registration of the gate itself — never by editing the record.
+- **The engine is checkable offline.** The demo above and a 31-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
-  output floor and the judge-record writer behaviorally; the browser-arm validators
-  at contract level, with their committed Harborline runs carrying the behavioral
-  evidence, since CI has no browser.)
+  output floor and the record writer (judge verdicts and per-juror records)
+  behaviorally; the browser-arm validators at contract level, with their committed
+  Harborline runs carrying the behavioral evidence, since CI has no browser.)
 
 **Attested history (from the author's private development runs; no artifacts are
 committed in this tree, so treat these as narrative until re-run with records):**

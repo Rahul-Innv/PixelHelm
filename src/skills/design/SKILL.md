@@ -308,5 +308,5 @@ Record shapes, the store map, and the archive-vs-diff write policy:
   auto-decide principle list, the Decision Audit Trail, and the single approval gate.
 - `references/close-the-loop.md` — the durable store map (project `.design/` · dataDir ·
   owner-global · shipped seeds), the archive-vs-diff write policy, and the canonical
-  record shapes (`design-council/verdict@1`, `design/signoff@1`, the ledger line, the
-  profile `_taste` block).
+  record shapes (`design-council/verdict@1`, `design/signoff@1`,
+  `pixelhelm/juror-record@1`, the ledger line, the profile `_taste` block).

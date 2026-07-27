@@ -51,12 +51,20 @@ picks the winner and the grafts.
    the incumbent on register-fit; otherwise "current design wins — no change
    recommended"), names the winning frame + grafts, resolves conflicts
    register-fit-first, writes the unified brief + audit trail.
-5. **Write the verdict record** (Phase 2.5, always): the `design-council/verdict@1`
+5. **Write the per-juror records, then the verdict record** (Phase 2.5, always).
+   First, ONE `pixelhelm/juror-record@1` per juror per candidate (juror id, blind
+   label, per-criterion integer scores keyed to the rubric sheet's numbers, max-2-
+   sentence rationales, the sha256 of that juror's verbatim input transcript, and
+   the shuffle seed) via `records.mjs write juror-record` — the aggregate is only
+   as trustworthy as the per-juror evidence under it. Then the `design-council/verdict@1`
    JSON + a ledger line — shapes in the `design` skill's `references/close-the-loop.md`,
    written THROUGH the loop skill's writer/validator (validate-then-write, append-only):
    `node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" write judge-verdict --project <dir>`
-   with the record on stdin. **A panel whose record does not validate did not happen** —
-   report the refusal, never report the panel result.
+   with the record on stdin. The verdict writer WARNS when no matching juror
+   records exist (soft — archives predating the juror-record schema stay valid,
+   but a new panel without them is a defective panel, per the sealed E4 sheet).
+   **A panel whose record does not validate did not happen** — report the
+   refusal, never report the panel result.
 6. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
 
 The distinctiveness defense lives in generate (competing intentional directions);

@@ -14,7 +14,7 @@ reads; writes go to the layer named below):
 
 | Layer | Path | Holds |
 |---|---|---|
-| project | `<project>/.design/` | `profile.json` · `LESSONS.md` · `council/ledger.md` · `council/<YYYY-MM-DD>--<surface>--council.json` · `signoffs/<YYYY-MM-DD>--<surface>.json` · `references.md` |
+| project | `<project>/.design/` | `profile.json` · `LESSONS.md` · `council/ledger.md` · `council/<YYYY-MM-DD>--<surface>--council.json` · `signoffs/<YYYY-MM-DD>--<surface>.json` · `jurors/<YYYY-MM-DD>--<surface>--<juror>--<label>.json` · `references.md` |
 | durable data dir | `$CLAUDE_PLUGIN_DATA`, else `~/.claude/design/frontend-design-skill/` if it exists, else `~/.claude/design-pixelhelm/` | `LESSONS.md` · `fingerprints.md` · `currency-log.md` · `profiles/<project>.json` · `render-targets/` · `baselines/<project>/` |
 | owner-global (optional) | `~/.claude/design/LESSONS.md` | cross-project lessons, if the user keeps one |
 | shipped (read-only) | `<plugin>/seeds/` + `<plugin>/profiles/examples/` | seed lessons · seed fingerprints · the example profile |
@@ -32,12 +32,12 @@ reads; writes go to the layer named below):
 ## The record machinery (SHIPPED — write through it, never around it)
 
 `records.mjs` (this skill's `scripts/`) is the writer AND validator for all
-three record schemas below. **A panel or run whose record does not validate
+four record schemas below. **A panel or run whose record does not validate
 did not happen** — that is the method law (CONTRIBUTING: no pass described as
 complete before its artifacts exist), enforced in code:
 
 ```
-node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" template <judge-verdict|signoff|run>
+node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" template <judge-verdict|signoff|run|juror-record>
 node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" validate <file.json> [...]
 node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" write <kind> --project <dir>  # record JSON on stdin
 ```
@@ -49,6 +49,13 @@ box-ticking: juror count must be odd ≥ 3, each candidate carries one score
 per juror, recorded medians must EQUAL the recomputed median of their scores,
 and the winner must be a real candidate id — a fabricated record fails loudly.
 Exit contract: 0 valid/written · 1 invalid or refused · 2 runner error.
+
+Panel integrity (SOFT, per the sealed E4 sheet): writing a judge verdict
+checks `jurors/` for matching per-juror records (same date + surface) and
+WARNS on stderr (JSON mode: a `warnings` array) when none exist. Absence is
+never a refusal — records that predate the juror-record schema stay valid —
+but a NEW panel without per-juror records is a defective panel
+(`evals/validation/PREREG-E4-CALIBRATION.md`).
 
 ## Verdict record — `design-council/verdict@1`
 
@@ -119,6 +126,34 @@ token usage the harness reports; never estimate main-context tokens into it.
   "outcome": "shipped | current-design-wins | needs-human-review | report-only",
   "notes": "" }
 ```
+
+## Juror record — `pixelhelm/juror-record@1` (per-juror evidence)
+
+ONE record per juror per candidate, written via `records.mjs write juror-record`
+BEFORE the panel's verdict is written (E1 critique finding 1: without a
+per-juror schema the panel's evidence chain stops at the aggregate). Archive
+path: `jurors/<date>--<surface>--<jurorId>--<blindLabel>.json`.
+
+```json
+{ "schema": "pixelhelm/juror-record@1",
+  "date": "YYYY-MM-DD", "project": "", "surface": "",
+  "jurorId": "<stable id within the panel, e.g. juror-3>",
+  "blindLabel": "<the neutral label this candidate was presented under>",
+  "rubric": "<the sealed rubric sheet the criterion numbers key to>",
+  "scores": { "<criterion number>": 0 },
+  "rationales": { "<criterion number>": "<max 2 sentences>" },
+  "inputTranscriptSha256": "<sha256 of the juror's verbatim input transcript>",
+  "shuffleSeed": "<this juror's presentation-order seed>" }
+```
+
+What validation enforces: criterion keys are the rubric sheet's printed
+numbers (positive integers), every score is an integer 0..10 (the rubric
+scale), every scored criterion carries a non-empty rationale of at most two
+sentences, `inputTranscriptSha256` is 64 lowercase hex chars binding the
+record to the committed verbatim transcript (never a summary), and
+`shuffleSeed` records the blind presentation order. The transcript itself is
+committed alongside the run (the hash makes tampering visible); the record
+carries only its hash.
 
 ## The Close-the-loop step (router, mandatory after the owner gate)
 

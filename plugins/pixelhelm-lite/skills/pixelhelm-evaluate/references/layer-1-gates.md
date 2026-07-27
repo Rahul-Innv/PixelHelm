@@ -246,6 +246,24 @@ window, the dropped-frame share (> 1.5× base), and the sample count. LAB and
 single-machine: the verdict binds the run that produced it; directional across
 machines, never a field claim.
 
+**Emulated-mobile scheduling-stall exclusion — a RE-REGISTRATION of the mobile
+profile (owner-approved 2026-07-26, gate-design change).** Diagnosis first, committed
+at `examples/harborline/repairs/2026-07-26/REPAIR.md`: headless emulated-mobile
+capture stalls frame production once per scripted wheel step — one multi-vsync gap,
+quantized to whole frame periods, throttle-invariant, absent at DPR 1, present on a
+plain-text control page under the same profile, with tracing showing every process
+idle during the gap. That is harness scheduling cost, not page-authored cost, and it
+failed ANY page on the mobile profile. The re-registered rule: per scripted wheel
+step, the single largest frame gap inside that step's window is excluded from the
+sample set BEFORE percentile math. The exclusion applies ONLY to the emulated-mobile
+profile, is a SOURCE CONSTANT in the validator (never a flag), leaves the registered
+budgets unchanged, and the JSON report records the wheel-step count plus every
+excluded gap's size — nothing is silently dropped, and the raw distribution stays
+reconstructable from the record. Honest label: the mobile verdict now measures
+page-authored frame cost with the diagnosed harness stall removed, not raw
+wall-clock deltas; a page whose own work produces long frames still fails, because
+only one gap per wheel step is ever excluded.
+
 ## Lab CWV capture
 
 **SHIPPED, hard when run, LAB — `scripts/verify_cwv.mjs`:**
