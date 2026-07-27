@@ -1,0 +1,407 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxglove &amp; Fern — the heirloom seed list</title>
+<meta name="description" content="The Foxglove & Fern seed annual: eight heirloom varieties listed with sowing windows, germination rates, honest stock states and prices. UK delivery only.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f6efdd","ink":"#2a2417","muted":"#635a41","accent":"#8f3f14","stockin":"#2f5631","stockout":"#7a2d1b","rule":"#877d5e","btnbg":"#8f3f14","btntext":"#f6efdd"},"dark":{"paper":"#1a160e","ink":"#ece2cb","muted":"#b6ab8d","accent":"#e39a68","stockin":"#a3c79a","stockout":"#e39684","rule":"#766b52","btnbg":"#e39a68","btntext":"#1a160e"},"gatedPairs":[{"fg":"ink","on":["paper"],"kind":"text"},{"fg":"muted","on":["paper"],"kind":"text"},{"fg":"accent","on":["paper"],"kind":"text"},{"fg":"stockin","on":["paper"],"kind":"text"},{"fg":"stockout","on":["paper"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["paper"],"kind":"graphic"}]}
+</script>
+<style>
+/* Seed-annual: a page from the shop's printed seed annual. Numbered entries,
+   rules, catalogue typography — no card chrome anywhere (declared break 1). */
+
+:root {
+  color-scheme: light;
+  --paper: #f6efdd;
+  --ink: #2a2417;
+  --muted: #635a41;
+  --accent: #8f3f14;
+  --stockin: #2f5631;
+  --stockout: #7a2d1b;
+  --rule: #877d5e;
+  --btnbg: #8f3f14;
+  --btntext: #f6efdd;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #1a160e;
+  --ink: #ece2cb;
+  --muted: #b6ab8d;
+  --accent: #e39a68;
+  --stockin: #a3c79a;
+  --stockout: #e39684;
+  --rule: #766b52;
+  --btnbg: #e39a68;
+  --btntext: #1a160e;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --sans: "Gill Sans", "Gill Sans MT", "Segoe UI", "Trebuchet MS", Arial, sans-serif;
+  --type-xl: clamp(1.75rem, 1.2rem + 2.4vw, 2.375rem);
+  --type-lg: 1.25rem;
+  --type-md: 1.0625rem;
+  --type-sm: 0.875rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(5px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+header, main, footer {
+  max-width: 46rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+/* Masthead — the annual's title page */
+
+header {
+  padding-top: clamp(1.75rem, 6vw, 3.25rem);
+  padding-bottom: 1.5rem;
+  text-align: center;
+  border-bottom: 3px double var(--rule);
+}
+
+.kicker {
+  margin: 0 0 0.5rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 600;
+  letter-spacing: 0.24em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0 0 0.5rem;
+  font-size: var(--type-xl);
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.standfirst {
+  margin: 0 auto 0.75rem;
+  max-width: 34rem;
+  color: var(--muted);
+  font-style: italic;
+}
+
+.shipping {
+  margin: 0;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--ink);
+}
+
+/* Month filter — one conventional labeled control */
+
+.filter {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  padding: 1.1rem 0 0.4rem;
+  font-family: var(--sans);
+}
+
+.filter label { font-size: var(--type-md); }
+
+.filter select {
+  font-family: var(--sans);
+  font-size: 1rem;            /* never under 16px — iOS zoom rule */
+  color: var(--ink);
+  background: var(--paper);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.55rem 0.7rem;
+  min-height: 2.75rem;
+  min-width: 11rem;
+}
+
+/* The catalogue list — numbered entries, ruled, chromeless */
+
+ol.catalogue {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  counter-reset: entry;
+}
+
+ol.catalogue > li {
+  counter-increment: entry;
+  padding: 1.6rem 0 1.5rem;
+  border-bottom: 1px solid var(--rule);
+}
+
+ol.catalogue > li:last-child { border-bottom: 3px double var(--rule); }
+
+.entry-head {
+  display: flex;
+  align-items: baseline;
+  gap: 0.75rem;
+}
+
+.entry-no {
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+  min-width: 2.1rem;
+}
+
+.entry-no::before { content: "No. " counter(entry); }
+
+h2 {
+  margin: 0;
+  font-size: var(--type-lg);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+/* Specimen label — declared break 2: letterspaced small-caps caption */
+
+.specimen {
+  margin: 0.15rem 0 0.6rem;
+  padding-left: 2.85rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.entry-body { padding-left: 2.85rem; }
+
+.blurb { margin: 0 0 0.65rem; max-width: 36rem; }
+
+.facts {
+  margin: 0 0 0.7rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+.facts span { display: inline-block; }
+
+.facts span + span::before {
+  content: "·";
+  padding: 0 0.5rem;
+  color: var(--rule);
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.35rem 1rem;
+}
+
+.price {
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: var(--type-lg);
+}
+
+.price-pending {
+  font-weight: 600;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.stock { font-family: var(--sans); font-size: var(--type-sm); font-weight: 600; }
+.stock.in  { color: var(--stockin); }
+.stock.out { color: var(--stockout); }
+
+.view-link {
+  display: inline-block;
+  margin-top: 0.55rem;
+  padding: 0.35rem 0.1rem;
+  font-family: var(--sans);
+  font-size: var(--type-md);
+  font-weight: 600;
+  color: var(--accent);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.view-link:hover { text-decoration-thickness: 3px; }
+
+a:focus-visible, select:focus-visible, button:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--paper), 0 0 0 5px var(--accent);
+  border-radius: 3px;
+}
+
+#empty {
+  padding: 2rem 0;
+  text-align: center;
+  font-style: italic;
+  color: var(--muted);
+}
+
+[hidden] { display: none !important; }
+
+footer {
+  padding: 1.4rem 0 2.5rem;
+  text-align: center;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+
+@media (max-width: 480px) {
+  .specimen, .entry-body { padding-left: 0; }
+}
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Heirloom seed list</p>
+  <h1>Foxglove &amp; Fern</h1>
+  <p class="standfirst">Two of us keep this list; every variety on it is one we grow ourselves. Read slowly, choose well.</p>
+  <p class="shipping">Ships to UK addresses only. Flat £1.90 postage; free over £15.</p>
+</header>
+
+<main>
+  <div class="filter">
+    <label for="month">Show what you can sow in</label>
+    <select id="month">
+      <option value="">any month</option>
+      <option value="1">January</option>
+      <option value="2">February</option>
+      <option value="3">March</option>
+      <option value="4">April</option>
+      <option value="5">May</option>
+      <option value="6">June</option>
+      <option value="7">July</option>
+      <option value="8">August</option>
+      <option value="9">September</option>
+      <option value="10">October</option>
+      <option value="11">November</option>
+      <option value="12">December</option>
+    </select>
+  </div>
+
+  <ol class="catalogue">
+    <li data-model="FF-011" data-months="2,3,4">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Cathedral Bells (Cobaea scandens)</h2></div>
+      <p class="specimen">Climbing vine · packet of 12 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors.</p>
+        <p class="facts"><span>Sow Feb–Apr</span><span>Moderate</span><span>Germination 72%</span></p>
+        <p class="offer"><span class="price">£3.50</span><span class="stock in">In stock</span></p>
+        <a class="view-link" href="product.html">View this packet</a>
+      </div>
+    </li>
+    <li data-model="FF-002" data-months="4,5,6">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Moonlight Nasturtium</h2></div>
+      <p class="specimen">Trailing annual · packet of 20 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Pale cream flowers; leaves and flowers edible.</p>
+        <p class="facts"><span>Sow Apr–Jun</span><span>Easy</span><span>Germination 90%</span></p>
+        <p class="offer"><span class="price">£2.80</span><span class="stock in">In stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-017" data-months="3,4,5,6,7">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Black Nebula Carrot</h2></div>
+      <p class="specimen">Root vegetable · packet of 300 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Deep purple heirloom carrot; holds color when roasted.</p>
+        <p class="facts"><span>Sow Mar–Jul</span><span>Easy</span><span>Germination 78%</span></p>
+        <p class="offer"><span class="price">£3.20</span><span class="stock out">Out of stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-021" data-months="10,11,2,3">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Grandmother's Sweet Pea (1928 line)</h2></div>
+      <p class="specimen">Climbing annual · packet of 15 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Kept in one family since 1928; intensely scented. Price pending supplier confirmation.</p>
+        <p class="facts"><span>Sow Oct–Nov or Feb–Mar</span><span>Easy</span><span>Germination 85%</span></p>
+        <p class="offer"><span class="price-pending">Price pending — ask us</span><span class="stock in">In stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-008" data-months="1,2,3">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Winter Windowsill Chili</h2></div>
+      <p class="specimen">Compact perennial · packet of 10 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Fruits indoors through winter on a bright sill; estimate from last season's line.</p>
+        <p class="facts"><span>Sow Jan–Mar</span><span>Moderate</span><span>Germination 65% (estimated)</span></p>
+        <p class="offer"><span class="price">£4.10</span><span class="stock in">In stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-014" data-months="4,5">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Tithonia Torch Sunflower</h2></div>
+      <p class="specimen">Tall annual · packet of 25 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Blazing orange, beloved by butterflies; 1.8m tall.</p>
+        <p class="facts"><span>Sow Apr–May</span><span>Easy</span><span>Germination 88%</span></p>
+        <p class="offer"><span class="price">£2.60</span><span class="stock in">In stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-019" data-months="3,4,5,9">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Blue Boy Cornflower</h2></div>
+      <p class="specimen">Hardy annual · packet of 50 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">True cornflower blue; autumn sowing gives earlier flowers.</p>
+        <p class="facts"><span>Sow Mar–May or Sep</span><span>Easy</span><span>Germination 92%</span></p>
+        <p class="offer"><span class="price">£2.40</span><span class="stock in">In stock</span></p>
+      </div>
+    </li>
+    <li data-model="FF-023" data-months="2,3,4">
+      <div class="entry-head"><span class="entry-no" aria-hidden="true"></span><h2>Dragon's Breath Celosia</h2></div>
+      <p class="specimen">Half-hardy annual · packet of 30 seeds</p>
+      <div class="entry-body">
+        <p class="blurb">Flame-red plumes; fussy about damp — for the patient gardener.</p>
+        <p class="facts"><span>Sow Feb–Apr</span><span>Hard</span><span>Germination 60%</span></p>
+        <p class="offer"><span class="price">£3.90</span><span class="stock in">In stock — only 9 packets left</span></p>
+      </div>
+    </li>
+  </ol>
+
+  <p id="empty" hidden>Nothing of ours sows then. Try the month either side — most windows are generous.</p>
+</main>
+
+<footer>
+  <p>Foxglove &amp; Fern · heirloom seeds · UK addresses only</p>
+</footer>
+
+<script>
+(function () {
+  var sel = document.getElementById("month");
+  var entries = document.querySelectorAll("ol.catalogue > li[data-months]");
+  var empty = document.getElementById("empty");
+  sel.addEventListener("change", function () {
+    var v = sel.value, shown = 0;
+    entries.forEach(function (el) {
+      var show = !v || el.getAttribute("data-months").split(",").indexOf(v) !== -1;
+      el.hidden = !show;
+      if (show) shown++;
+    });
+    empty.hidden = shown !== 0;
+  });
+})();
+</script>
+</body>
+</html>

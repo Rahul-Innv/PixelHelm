@@ -1,0 +1,128 @@
+{
+  "project": "e3-arm-packet-rack",
+  "root": "../arms/packet-rack",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html",
+    "product.html"
+  ],
+  "_rawColorNote": "single-file surfaces: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "ground": "#e9dcc3",
+      "packet": "#faf5e9",
+      "ink": "#33261a",
+      "muted": "#6b5b45",
+      "leaf": "#38622f",
+      "terra": "#9c4520",
+      "rule": "#7f7255",
+      "btnbg": "#9c4520",
+      "btntext": "#faf5e9"
+    },
+    "dark": {
+      "ground": "#191209",
+      "packet": "#241c11",
+      "ink": "#f0e6d2",
+      "muted": "#baa98d",
+      "leaf": "#a9c896",
+      "terra": "#e59a72",
+      "rule": "#7d6e55",
+      "btnbg": "#e59a72",
+      "btntext": "#191209"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "ground",
+        "packet"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "ground",
+        "packet"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "leaf",
+      "on": [
+        "packet"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "terra",
+      "on": [
+        "packet"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "btntext",
+      "on": [
+        "btnbg"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "ground",
+        "packet"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "commerce",
+  "_register": "warm, unhurried, knowledgeable neighbor; mechanics ruthlessly conventional."
+}

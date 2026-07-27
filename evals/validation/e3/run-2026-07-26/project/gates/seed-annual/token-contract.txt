@@ -1,0 +1,2 @@
+arms/seed-annual/index.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)
+arms/seed-annual/product.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)

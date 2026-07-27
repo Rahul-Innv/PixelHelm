@@ -1,0 +1,20 @@
+{
+  "project": "e3-foxglove-fern",
+  "root": ".",
+  "sourceDirs": ["arms"],
+  "sourceExts": [".html"],
+  "ignore": [],
+  "allowRawColorIn": [
+    "arms/seed-annual/index.html", "arms/seed-annual/product.html",
+    "arms/packet-rack/index.html", "arms/packet-rack/product.html",
+    "arms/sowing-almanac/index.html", "arms/sowing-almanac/product.html"
+  ],
+  "_rawColorNote": "Single-file arms define their tokens in :root/[data-theme] blocks inside the HTML; raw hexes are legal ONLY inside those token definitions. The soft raw-color walk stays informative; per-arm contrast is HARD-gated from each arm's embedded #token-contract (check-token-contracts.mjs) and per-arm static-gates profiles under gates/.",
+  "tokenModule": null,
+  "ownerInvolvement": "autonomous",
+  "surfaceType": "commerce",
+  "_register": "warm, unhurried, knowledgeable neighbor - but the mechanics stay ruthlessly conventional (commerce is where broken conventions cost money: cart, price, stock state work exactly as expected). Audience: home gardeners, many older, many on tablets. A visitor can tell what's in stock, what suits their season, and what a packet costs; on the product page, decide with confidence. Unknown stays unknown: no invented price, no hidden out-of-stock, estimates flagged, UK-only shipping visible before purchase intent.",
+  "_northStars": "Chiltern Seeds / Real Seeds catalogue plainness - the small-shop register that earns trust; a printed heirloom seed annual - provenance love made physical; Baymard-conventional product-page mechanics - the money path exactly as expected.",
+  "_taste": { "approvedExemplars": [], "rejectedDirections": [], "registerClarifications": [] },
+  "_notes": "E3 validation run project (sealed commerce brief). Content authority: data/foxglove-catalog.json + injected constants in data/derived.json only. Three tournament arms, each with TWO surfaces: arms/<name>/index.html (catalog) + arms/<name>/product.html (FF-011 product page), each pair sharing one embedded token contract."
+}

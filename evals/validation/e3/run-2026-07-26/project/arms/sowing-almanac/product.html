@@ -1,0 +1,282 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cathedral Bells (Cobaea scandens) — Foxglove &amp; Fern</title>
+<meta name="description" content="Cathedral Bells (Cobaea scandens) in the Foxglove & Fern sowing almanac: the packet's whole year on one band, with germination, grower's notes and honest stock. UK delivery only.">
+<script type="application/json" id="token-contract">
+{"light":{"linen":"#f3f0e4","ink":"#262a20","muted":"#5d604c","moss":"#43592f","plum":"#703052","rule":"#82846c","btnbg":"#703052","btntext":"#f3f0e4"},"dark":{"linen":"#16180f","ink":"#e7e5d4","muted":"#b0b195","moss":"#aabf8d","plum":"#d9a8c5","rule":"#6c6e57","btnbg":"#d9a8c5","btntext":"#16180f"},"gatedPairs":[{"fg":"ink","on":["linen"],"kind":"text"},{"fg":"muted","on":["linen"],"kind":"text"},{"fg":"moss","on":["linen"],"kind":"text"},{"fg":"plum","on":["linen"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["linen"],"kind":"graphic"},{"fg":"moss","on":["linen"],"kind":"graphic"}]}
+</script>
+<style>
+/* Sowing-almanac, the packet's own leaf of the almanac: the whole year on one
+   band, marginalia in the grower's voice, mechanics fully conventional. */
+
+:root {
+  color-scheme: light;
+  --linen: #f3f0e4;
+  --ink: #262a20;
+  --muted: #5d604c;
+  --moss: #43592f;
+  --plum: #703052;
+  --rule: #82846c;
+  --btnbg: #703052;
+  --btntext: #f3f0e4;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --linen: #16180f;
+  --ink: #e7e5d4;
+  --muted: #b0b195;
+  --moss: #aabf8d;
+  --plum: #d9a8c5;
+  --rule: #6c6e57;
+  --btnbg: #d9a8c5;
+  --btntext: #16180f;
+}
+
+:root {
+  --serif: "Charter", "Bitstream Charter", "Palatino Linotype", Georgia, serif;
+  --sans: "Seravek", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --type-xl: clamp(1.7rem, 1.2rem + 2.2vw, 2.25rem);
+  --type-lg: 1.2rem;
+  --type-md: 1.0625rem;
+  --type-sm: 0.875rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--linen);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--type-md);
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; transform: translateY(4px); }
+  to   { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+.page { max-width: 56rem; margin-inline: auto; padding-inline: clamp(1.25rem, 4vw, 2.5rem); }
+
+header { padding-top: clamp(1.5rem, 5vw, 2.5rem); padding-bottom: 0.9rem; border-bottom: 2px solid var(--rule); }
+
+.kicker {
+  margin: 0 0 0.4rem;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.back {
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 0.35rem 0.15rem;
+  font-family: var(--sans);
+  font-weight: 700;
+  color: var(--plum);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.back:hover { text-decoration-thickness: 3px; }
+
+.shipping { margin: 0; font-family: var(--sans); font-size: var(--type-sm); font-weight: 600; }
+
+h1 { margin: 1.3rem 0 0.15rem; font-size: var(--type-xl); font-weight: 700; }
+
+.latin { margin: 0 0 0.9rem; font-family: var(--sans); font-size: var(--type-sm); letter-spacing: 0.12em; text-transform: uppercase; color: var(--muted); }
+
+.blurb { margin: 0 0 1.2rem; max-width: 36rem; font-size: var(--type-lg); font-style: italic; }
+
+/* The year band — the almanac's own diagram, at full page width */
+
+.year {
+  border-top: 2px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  padding: 1rem 0 1.1rem;
+  margin-bottom: 1.4rem;
+}
+
+.year h2 { margin: 0 0 0.6rem; font-size: var(--type-lg); font-weight: 700; }
+
+.band { display: grid; grid-template-columns: repeat(12, minmax(0.9rem, 2.2rem)); gap: 3px; margin: 0 0 0.5rem; }
+
+.band i { height: 0.85rem; border: 1px solid var(--rule); border-radius: 2px; }
+
+.band i.on { background: var(--moss); border-color: var(--moss); }
+
+.calendar { list-style: none; margin: 0; padding: 0; font-family: var(--sans); }
+
+.calendar li { display: flex; gap: 0.75rem; padding: 0.45rem 0; border-bottom: 1px dashed var(--rule); }
+
+.calendar li:last-child { border-bottom: none; }
+
+.calendar .when { min-width: 9.5rem; font-weight: 700; }
+
+/* Buy box — conventional */
+
+.buybox {
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.1rem 1.2rem 1.2rem;
+  margin-bottom: 1.5rem;
+}
+
+.offer { display: flex; flex-wrap: wrap; align-items: baseline; gap: 0.4rem 1rem; margin: 0 0 0.3rem; }
+
+.price { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 1.7rem; }
+
+.stock { font-family: var(--sans); font-weight: 700; color: var(--moss); }
+
+.packet-size { margin: 0 0 0.9rem; font-family: var(--sans); font-size: var(--type-sm); color: var(--muted); }
+
+.basket-form { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; font-family: var(--sans); }
+
+.basket-form input {
+  width: 4.6rem;
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  background: var(--linen);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.55rem 0.6rem;
+  min-height: 2.75rem;
+}
+
+.basket-form button {
+  font-family: var(--sans);
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--btntext);
+  background: var(--btnbg);
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.4rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+
+.basket-form button:hover { filter: brightness(0.92); }
+
+.delivery-line { margin: 0.8rem 0 0; font-family: var(--sans); font-size: var(--type-sm); color: var(--muted); }
+
+h2 { font-size: var(--type-lg); }
+
+section > h2 { margin: 1.5rem 0 0.6rem; font-weight: 700; }
+
+.facts { margin: 0 0 1.1rem; font-family: var(--sans); font-size: var(--type-sm); color: var(--muted); }
+
+.facts span { display: inline-block; }
+
+.facts span + span::before { content: "·"; padding: 0 0.45rem; color: var(--rule); }
+
+.notes {
+  max-width: 36rem;
+  border-left: 2px solid var(--rule);
+  padding-left: 1rem;
+  font-style: italic;
+}
+
+.companions { list-style: none; margin: 0; padding: 0; }
+
+.companions li { padding: 0.85rem 0; border-bottom: 1px solid var(--rule); }
+
+.companions h3 { margin: 0 0 0.15rem; font-size: var(--type-md); font-weight: 700; }
+
+.companions .facts { margin: 0; }
+
+a:focus-visible, button:focus-visible, input:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--linen), 0 0 0 5px var(--plum);
+  border-radius: 3px;
+}
+
+footer {
+  margin-top: 1.6rem;
+  padding: 1.4rem 0 2.5rem;
+  border-top: 2px solid var(--rule);
+  text-align: center;
+  font-family: var(--sans);
+  font-size: var(--type-sm);
+  color: var(--muted);
+}
+</style>
+</head>
+<body>
+<div class="page">
+<header>
+  <p class="kicker">Foxglove &amp; Fern · the sowing almanac</p>
+  <a class="back" href="index.html">Back to the almanac</a>
+  <p class="shipping">Ships to UK addresses only. Flat £1.90 postage; free over £15.</p>
+</header>
+
+<main data-model="FF-011">
+  <h1>Cathedral Bells</h1>
+  <p class="latin">Cobaea scandens · climbing vine</p>
+  <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors.</p>
+
+  <section class="year">
+    <h2>The year for this packet</h2>
+    <p class="band" aria-hidden="true"><i></i><i class="on"></i><i class="on"></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></p>
+    <ul class="calendar">
+      <li><span class="when">Sow indoors</span><span>Feb–Apr</span></li>
+      <li><span class="when">Plant out</span><span>after last frost</span></li>
+      <li><span class="when">Flowers</span><span>Jul–Oct</span></li>
+    </ul>
+  </section>
+
+  <section class="buybox" aria-label="Price and basket">
+    <p class="offer"><span class="price">£3.50</span><span class="stock">In stock — 34 packets</span></p>
+    <p class="packet-size">Packet of 12 seeds · germination 72%</p>
+    <form class="basket-form">
+      <label for="qty">Packets</label>
+      <input id="qty" name="qty" type="number" inputmode="numeric" min="1" max="34" value="1">
+      <button type="button">Add to basket</button>
+    </form>
+    <p class="delivery-line">UK delivery only — flat £1.90, free over £15.</p>
+  </section>
+
+  <p class="facts"><span>Difficulty: moderate</span><span>Sow Feb–Apr</span><span>Germination 72%</span></p>
+
+  <section>
+    <h2>From the margin</h2>
+    <p class="notes">Soak seeds overnight; sow on edge in deep pots. Slow to start, then rampant — give it wire or trellis.</p>
+  </section>
+
+  <section>
+    <h2>Good company for it</h2>
+    <ul class="companions">
+      <li data-model="FF-002">
+        <h3>Moonlight Nasturtium</h3>
+        <p class="facts"><span>Trailing annual</span><span>£2.80</span><span>In stock</span></p>
+      </li>
+      <li data-model="FF-014">
+        <h3>Tithonia Torch Sunflower</h3>
+        <p class="facts"><span>Tall annual</span><span>£2.60</span><span>In stock</span></p>
+      </li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <p>Foxglove &amp; Fern · heirloom seeds · UK addresses only</p>
+</footer>
+</div>
+</body>
+</html>

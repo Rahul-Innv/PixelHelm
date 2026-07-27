@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Cathedral Bells (Cobaea scandens) — Foxglove &amp; Fern</title>
+<meta name="description" content="Cathedral Bells (Cobaea scandens) at the Foxglove & Fern seed rack: the packet in hand, with sowing calendar, germination, grower's notes and honest stock. UK delivery only.">
+<script type="application/json" id="token-contract">
+{"light":{"ground":"#e9dcc3","packet":"#faf5e9","ink":"#33261a","muted":"#6b5b45","leaf":"#38622f","terra":"#9c4520","rule":"#7f7255","btnbg":"#9c4520","btntext":"#faf5e9"},"dark":{"ground":"#191209","packet":"#241c11","ink":"#f0e6d2","muted":"#baa98d","leaf":"#a9c896","terra":"#e59a72","rule":"#7d6e55","btnbg":"#e59a72","btntext":"#191209"},"gatedPairs":[{"fg":"ink","on":["ground","packet"],"kind":"text"},{"fg":"muted","on":["ground","packet"],"kind":"text"},{"fg":"leaf","on":["packet"],"kind":"text"},{"fg":"terra","on":["packet"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["ground","packet"],"kind":"graphic"}]}
+</script>
+<style>
+/* Packet-rack, one packet in hand: the illustrated packet face beside a
+   conventional buy column. Mechanics exactly as expected. */
+
+:root {
+  color-scheme: light;
+  --ground: #e9dcc3;
+  --packet: #faf5e9;
+  --ink: #33261a;
+  --muted: #6b5b45;
+  --leaf: #38622f;
+  --terra: #9c4520;
+  --rule: #7f7255;
+  --btnbg: #9c4520;
+  --btntext: #faf5e9;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #191209;
+  --packet: #241c11;
+  --ink: #f0e6d2;
+  --muted: #baa98d;
+  --leaf: #a9c896;
+  --terra: #e59a72;
+  --rule: #7d6e55;
+  --btnbg: #e59a72;
+  --btntext: #191209;
+}
+
+:root {
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Palatino Linotype", Palatino, Georgia, "Times New Roman", serif;
+  --type-xl: clamp(1.7rem, 1.2rem + 2.2vw, 2.25rem);
+  --type-lg: 1.2rem;
+  --type-md: 1rem;
+  --type-sm: 0.875rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--type-md);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+header, main, footer {
+  max-width: 68rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 4vw, 2.5rem);
+}
+
+header { padding-top: clamp(1.5rem, 5vw, 2.5rem); padding-bottom: 0.9rem; }
+
+.kicker {
+  margin: 0 0 0.4rem;
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.back {
+  display: inline-block;
+  margin: 0 0 0.6rem;
+  padding: 0.35rem 0.2rem;
+  font-weight: 700;
+  color: var(--terra);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.back:hover { text-decoration-thickness: 3px; }
+
+.shipping {
+  margin: 0;
+  padding: 0.55rem 0.8rem;
+  display: inline-block;
+  font-size: var(--type-sm);
+  font-weight: 600;
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+}
+
+/* Split: the packet face | the buy column */
+
+.split {
+  display: grid;
+  grid-template-columns: minmax(min(100%, 16rem), 24rem) 1fr;
+  gap: 1.75rem;
+  align-items: start;
+  padding-top: 1.25rem;
+}
+
+@media (max-width: 720px) {
+  .split { grid-template-columns: 1fr; }
+}
+
+.face {
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.4rem 1.2rem;
+  text-align: center;
+}
+
+.face .frame {
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 1.4rem 1rem 1.2rem;
+}
+
+.sprig { display: block; margin: 0 auto 0.75rem; }
+
+.face .pk-name {
+  margin: 0 0 0.3rem;
+  font-family: var(--serif);
+  font-size: var(--type-lg);
+  font-weight: 700;
+}
+
+.pk-type {
+  margin: 0;
+  font-size: var(--type-sm);
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+h1 {
+  margin: 0 0 0.15rem;
+  font-family: var(--serif);
+  font-size: var(--type-xl);
+  font-weight: 700;
+}
+
+.latin { margin: 0 0 0.9rem; font-size: var(--type-sm); letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+
+.blurb { margin: 0 0 1.1rem; font-family: var(--serif); font-size: var(--type-lg); }
+
+.buybox {
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  padding: 1.1rem 1.2rem 1.2rem;
+  margin-bottom: 1.4rem;
+}
+
+.offer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.4rem 1rem;
+  margin: 0 0 0.3rem;
+}
+
+.price { font-variant-numeric: tabular-nums; font-weight: 700; font-size: 1.7rem; }
+
+.stock { font-weight: 700; color: var(--leaf); }
+
+.packet-size { margin: 0 0 0.9rem; font-size: var(--type-sm); color: var(--muted); }
+
+.basket-form { display: flex; flex-wrap: wrap; align-items: center; gap: 0.75rem; }
+
+.basket-form input {
+  width: 4.6rem;
+  font-size: 1rem;
+  font-variant-numeric: tabular-nums;
+  color: var(--ink);
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 4px;
+  padding: 0.55rem 0.6rem;
+  min-height: 2.75rem;
+}
+
+.basket-form button {
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--btntext);
+  background: var(--btnbg);
+  border: none;
+  border-radius: 4px;
+  padding: 0.75rem 1.4rem;
+  min-height: 2.75rem;
+  cursor: pointer;
+}
+
+.basket-form button:hover { filter: brightness(0.92); }
+
+.delivery-line { margin: 0.8rem 0 0; font-size: var(--type-sm); color: var(--muted); }
+
+h2 { margin: 1.5rem 0 0.6rem; font-family: var(--serif); font-size: var(--type-lg); font-weight: 700; }
+
+.calendar { list-style: none; margin: 0 0 1.1rem; padding: 0; }
+
+.calendar li {
+  display: flex;
+  gap: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+
+.calendar .when { min-width: 9.5rem; font-weight: 700; }
+
+.facts { margin: 0 0 1.1rem; font-size: var(--type-sm); color: var(--muted); }
+
+.facts span { display: inline-block; }
+
+.facts span + span::before { content: "·"; padding: 0 0.4rem; color: var(--rule); }
+
+.notes { max-width: 38rem; font-family: var(--serif); }
+
+.companions {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 15rem), 1fr));
+  gap: 1rem;
+}
+
+.companions li {
+  background: var(--packet);
+  border: 1.5px solid var(--rule);
+  border-radius: 6px;
+  padding: 0.9rem 1rem;
+}
+
+.companions h3 { margin: 0 0 0.2rem; font-family: var(--serif); font-size: var(--type-md); font-weight: 700; }
+
+.companions .facts { margin: 0; }
+
+a:focus-visible, button:focus-visible, input:focus-visible, select:focus-visible {
+  outline: 2px solid transparent;
+  box-shadow: 0 0 0 2px var(--packet), 0 0 0 5px var(--terra);
+  border-radius: 4px;
+}
+
+footer { padding: 1.8rem 0 2.5rem; text-align: center; font-size: var(--type-sm); color: var(--muted); }
+</style>
+</head>
+<body>
+<header>
+  <p class="kicker">Foxglove &amp; Fern — the seed rack</p>
+  <a class="back" href="index.html">Back to the rack</a>
+  <p class="shipping">Ships to UK addresses only. Flat £1.90 postage; free over £15.</p>
+</header>
+
+<main data-model="FF-011">
+  <div class="split">
+    <div class="face" aria-hidden="false">
+      <div class="frame">
+        <svg class="sprig" width="88" height="88" viewBox="0 0 44 44" aria-hidden="true" focusable="false"><path d="M22 40V10" stroke="var(--leaf)" stroke-width="2" fill="none"/><path d="M22 32c-6-1-9-5-10-10 6 0 9 4 10 10z" fill="var(--leaf)"/><path d="M22 12c0-4 3-7 7-7 0 5-3 8-7 9z" fill="var(--leaf)"/><path d="M17 10a5 6 0 1 1 10 0c0 4-5 7-5 7s-5-3-5-7z" fill="var(--terra)"/></svg>
+        <p class="pk-name">Cathedral Bells</p>
+        <p class="pk-type">Cobaea scandens · 12 seeds</p>
+      </div>
+    </div>
+
+    <div>
+      <h1>Cathedral Bells</h1>
+      <p class="latin">Cobaea scandens · climbing vine</p>
+      <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors.</p>
+
+      <section class="buybox" aria-label="Price and basket">
+        <p class="offer"><span class="price">£3.50</span><span class="stock">In stock — 34 packets</span></p>
+        <p class="packet-size">Packet of 12 seeds · germination 72%</p>
+        <form class="basket-form">
+          <label for="qty">Packets</label>
+          <input id="qty" name="qty" type="number" inputmode="numeric" min="1" max="34" value="1">
+          <button type="button">Add to basket</button>
+        </form>
+        <p class="delivery-line">UK delivery only — flat £1.90, free over £15.</p>
+      </section>
+
+      <h2>The year for this packet</h2>
+      <ul class="calendar">
+        <li><span class="when">Sow indoors</span><span>Feb–Apr</span></li>
+        <li><span class="when">Plant out</span><span>after last frost</span></li>
+        <li><span class="when">Flowers</span><span>Jul–Oct</span></li>
+      </ul>
+      <p class="facts"><span>Difficulty: moderate</span><span>Sow Feb–Apr</span><span>Germination 72%</span></p>
+
+      <h2>From our potting shed</h2>
+      <p class="notes">Soak seeds overnight; sow on edge in deep pots. Slow to start, then rampant — give it wire or trellis.</p>
+
+      <h2>Good company for it</h2>
+      <ul class="companions">
+        <li data-model="FF-002">
+          <h3>Moonlight Nasturtium</h3>
+          <p class="facts"><span>Trailing annual</span><span>£2.80</span><span>In stock</span></p>
+        </li>
+        <li data-model="FF-014">
+          <h3>Tithonia Torch Sunflower</h3>
+          <p class="facts"><span>Tall annual</span><span>£2.60</span><span>In stock</span></p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</main>
+
+<footer>
+  <p>Foxglove &amp; Fern · heirloom seeds · UK addresses only</p>
+</footer>
+</body>
+</html>

@@ -1,0 +1,33 @@
+{
+  "_note": "Gate A (derived-claims) config for the E3 Foxglove & Fern arms. Root is the project dir; --target selects the arm surface HTML (both surfaces of every arm are gated). The shipped money regex is $-scoped, so GBP amounts are covered against FABRICATION via the gbp extraNumericContexts pattern below; per-block GBP ASSOCIATION is not machine-covered (recorded honestly in GROUND.md) and Gate B compensates by requiring each product's own price inside its own block.",
+  "root": "..",
+  "target": "arms/seed-annual/index.html",
+  "dataFiles": ["data/foxglove-catalog.json"],
+  "derivedFile": "data/derived.json",
+  "extractNumbersFromStrings": true,
+  "globalAllow": [],
+  "modelBlockAttr": "data-model",
+  "perBlockMoneyScopes": {
+    "modelsPath": "products",
+    "keyField": "sku",
+    "moneyFields": ["price"],
+    "moneyArrayFields": [],
+    "globalAllowPath": "globalMoneyAllow"
+  },
+  "verdict": {
+    "word": "In stock",
+    "negationWindow": 30,
+    "negators": ["never", "not", "false", "no"],
+    "statusField": "stockStatus",
+    "positiveStatus": "in-stock"
+  },
+  "numericContexts": { "money": true, "percent": true, "count": true, "days": true },
+  "extraNumericContexts": [
+    { "kind": "gbp", "pattern": "£\\s?(\\d[\\d,]*(?:\\.\\d{1,2})?)", "group": 1 },
+    { "kind": "seeds", "pattern": "(\\d+)\\s?seeds", "group": 1 },
+    { "kind": "packets", "pattern": "(\\d+)\\s?packets?", "group": 1 },
+    { "kind": "metres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?m\\b", "group": 1 }
+  ],
+  "darkAttr": "data-theme",
+  "modes": ["light", "dark"]
+}

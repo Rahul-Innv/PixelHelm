@@ -1,0 +1,22 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\AppData\\Local\\Temp\\claude\\WORKTREE-ENC\\2d2c2558-34f6-4880-9843-37d636f7dd50\\scratchpad\\mutants\\arms\\seed-annual\\index-m4.html",
+  "pass": false,
+  "required": 39,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "MISSING",
+      "id": "name-FF-017",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "required \"name-FF-017\" missing in light: Variety name present"
+    }
+  ]
+}

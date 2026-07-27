@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local\\Temp\\claude\\WORKTREE-ENC\\2d2c2558-34f6-4880-9843-37d636f7dd50\\scratchpad\\mutants\\arms\\seed-annual\\index-m1.html",
+  "pass": false,
+  "allowedNumbers": 53,
+  "blocks": 8,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented gbp \"£9.99\" (=9.99) not in data or derived constants — …Foxglove & Fern Every packet £9.99 while stocks last. Two of us…"
+    }
+  ]
+}

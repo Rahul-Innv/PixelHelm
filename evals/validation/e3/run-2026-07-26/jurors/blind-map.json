@@ -1,0 +1,49 @@
+{
+  "armOrderBase": [
+    "seed-annual",
+    "packet-rack",
+    "sowing-almanac"
+  ],
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607561,
+      "armOrder": [
+        "seed-annual",
+        "packet-rack",
+        "sowing-almanac"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607562,
+      "armOrder": [
+        "packet-rack",
+        "seed-annual",
+        "sowing-almanac"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607563,
+      "armOrder": [
+        "seed-annual",
+        "sowing-almanac",
+        "packet-rack"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607564,
+      "armOrder": [
+        "sowing-almanac",
+        "seed-annual",
+        "packet-rack"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607565,
+      "armOrder": [
+        "packet-rack",
+        "seed-annual",
+        "sowing-almanac"
+      ]
+    }
+  }
+}

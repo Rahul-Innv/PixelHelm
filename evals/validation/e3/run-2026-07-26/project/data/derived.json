@@ -1,0 +1,77 @@
+{
+  "_note": "Injected constants — pure arithmetic on sealed-data literals (inject.mjs). The only legal numbers beyond the data file itself.",
+  "productCount": 8,
+  "inStockCount": 7,
+  "outOfStockCount": 1,
+  "pricedCount": 7,
+  "pricePendingCount": 1,
+  "products": [
+    {
+      "sku": "FF-011",
+      "price": 3.5,
+      "stockStatus": "in-stock",
+      "germinationPct": 72
+    },
+    {
+      "sku": "FF-002",
+      "price": 2.8,
+      "stockStatus": "in-stock",
+      "germinationPct": 90
+    },
+    {
+      "sku": "FF-017",
+      "price": 3.2,
+      "stockStatus": "out-of-stock",
+      "germinationPct": 78
+    },
+    {
+      "sku": "FF-021",
+      "price": null,
+      "stockStatus": "in-stock",
+      "germinationPct": 85
+    },
+    {
+      "sku": "FF-008",
+      "price": 4.1,
+      "stockStatus": "in-stock",
+      "germinationPct": 65
+    },
+    {
+      "sku": "FF-014",
+      "price": 2.6,
+      "stockStatus": "in-stock",
+      "germinationPct": 88
+    },
+    {
+      "sku": "FF-019",
+      "price": 2.4,
+      "stockStatus": "in-stock",
+      "germinationPct": 92
+    },
+    {
+      "sku": "FF-023",
+      "price": 3.9,
+      "stockStatus": "in-stock",
+      "germinationPct": 60
+    }
+  ],
+  "globalMoneyAllow": [
+    1.9,
+    15
+  ],
+  "globalAllow": [
+    8,
+    7,
+    1,
+    72,
+    90,
+    78,
+    85,
+    65,
+    88,
+    92,
+    60,
+    1.9,
+    15
+  ]
+}
