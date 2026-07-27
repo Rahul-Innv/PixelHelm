@@ -1,6 +1,6 @@
 # E4 pre-registered protocol — is the judging worth anything? (RF-4 closure)
 
-**Status: DRAFT — PENDING OWNER APPROVAL. Sealed by commit before E4 runs.**
+**Status: APPROVED & SEALED (owner, 2026-07-26 — "E4 is good enough for now"; sealed by this commit, before E4 runs). Precondition: the pixelhelm/juror-record@1 machinery (queued engineering).**
 Date drafted: 2026-07-26. Runs after the E3 winners exist; re-judges the E1 +
 E3 winners with a structurally external panel. E1's calibration finding (panel
 ≈1 point hot vs owner) is the first data point this experiment exists to
