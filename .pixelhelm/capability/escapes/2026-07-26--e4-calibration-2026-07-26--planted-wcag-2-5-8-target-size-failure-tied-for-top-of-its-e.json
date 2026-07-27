@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "e4-calibration-2026-07-26",
+  "archetype": "cross-archetype",
+  "defect": "planted WCAG 2.5.8 target-size failure tied for top of its external set",
+  "defectClass": "target-size",
+  "escapedPast": "panel",
+  "caughtBy": "verify_targetsize",
+  "whenFound": "in-loop",
+  "cleared": {
+    "date": "2026-07-27",
+    "how": "same R1+R2 repair; in E4-R no plant entered any ranking at all",
+    "artifact": "evals/validation/e4r-run-2026-07-27/REPORT.md"
+  },
+  "artifacts": [
+    "evals/validation/e4-run-2026-07-26/REPORT.md",
+    "evals/validation/e4-run-2026-07-26/plants/e3-commerce/gates/verify_targetsize.json"
+  ],
+  "notes": "The commerce plant: an 18 px stepper cluster, 6 catalog plus 1 product target below the 24 px floor. It did not strictly win but it tied the top median, and jurors praised the enlarged controls. Caught by the gate, missed as a defect by the seat."
+}

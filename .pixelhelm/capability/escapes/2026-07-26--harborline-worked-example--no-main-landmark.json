@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "harborline-worked-example",
+  "archetype": "utility",
+  "defect": "no main landmark",
+  "defectClass": "structure",
+  "escapedPast": "shipped-artifact",
+  "caughtBy": "output-floor-gate",
+  "whenFound": "post-hoc",
+  "cleared": {
+    "date": "2026-07-26",
+    "how": "real header/main/footer landmarks added by the surgical repair pass",
+    "artifact": "examples/harborline/gates/output-floor-gate.json"
+  },
+  "artifacts": [
+    "examples/harborline/gates/README.md",
+    "examples/harborline/repairs/2026-07-26/REPAIR.md"
+  ],
+  "notes": "One of three structural gaps in the same committed output-floor-gate FAIL. It escaped into the shipped worked example because the structural output floor did not exist when the page was authored; it was caught the first time the gate ran on real output, and committed as an honest FAIL before it was cleared."
+}

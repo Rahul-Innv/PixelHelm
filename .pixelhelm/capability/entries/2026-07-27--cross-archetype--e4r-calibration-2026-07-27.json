@@ -1,0 +1,47 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-27",
+  "runId": "e4r-calibration-2026-07-27",
+  "archetype": "cross-archetype",
+  "kind": "calibration-experiment",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R external calibration",
+  "runRecord": "evals/validation/e4r-run-2026-07-27/.pixelhelm/runs/2026-07-27--e4r-external-calibration--run.json",
+  "artifacts": [
+    "evals/validation/e4r-run-2026-07-27/REPORT.md",
+    "evals/validation/PREREG-E4R-ADDENDUM.md",
+    "evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e4r-run-2026-07-27/plants/e1-utility/gates/",
+      "evals/validation/e4r-run-2026-07-27/plants/e3-saas/gates/",
+      "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/gates/",
+      "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/gates/"
+    ]
+  },
+  "panel": {
+    "standing": "advisory-only",
+    "jurors": 5,
+    "medians": "unknown",
+    "winner": "unknown",
+    "winnerMedian": "unknown"
+  },
+  "owner": {
+    "decision": "unknown",
+    "band": "unknown",
+    "bandBasis": "unknown",
+    "ownerWords": "unknown",
+    "record": "unknown"
+  },
+  "ownerVsPanel": "unknown",
+  "plants": {
+    "planted": 4,
+    "caught": 4
+  },
+  "notes": "The R1+R2 repair re-validated, and FALSIFIED on the agreement criterion: tau-b 0.378 against the unchanged tau >= 0.5 floor (inflation +0.875 PASS, plants PASS). Zero discordant pairs - the shortfall is lost resolution, not inversion: the internal panels scored nearly everything at overall median 9.0, tying 8 of 12 pairs before the external panel spoke. That score compression is itself the finding. The advisory-only demotion STANDS. Repair effectiveness is separately evidenced: 4/4 fresh plants in new defect classes were hard-failed by the floor battery on exactly their registered gate and none entered any ranking, and 20/20 jurors marked the floor-failing candidate UNSCORED and named the correct gate. Any further re-validation requires an owner-sealed instrument fix first."
+}

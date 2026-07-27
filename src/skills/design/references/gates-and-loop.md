@@ -139,8 +139,29 @@ LOOP (after design-render + design-evaluate):
 
 The cap exists because past three machine-gated rounds, remaining issues are usually
 taste calls a VLM cannot reliably grade — escalate to the owner rather than thrash.
-Regressions detected against the baseline are auto-top-severity (a Layer-1 PASS that
-regresses is treated as a Blocker).
+
+**Regressions detected against the baseline are auto-top-severity (a Layer-1 PASS
+that regresses is treated as a Blocker), and that rule is EXECUTED, not advised.**
+The comparator is `pixelhelm-baseline/scripts/baseline.mjs` (`compare`), which reads the
+regression memory captured by the same script's `capture` and exits 1 on any of:
+
+- **Regressed** — a gate that was `pass`/`n/a` at the baseline and fails now.
+- **Regressed measurement** — a captured number that moved the wrong way by more
+  than its captured tolerance (the direction is stored WITH the measurement, so the
+  comparison never guesses which way is better).
+- **Lost evidence** — a gate that passed at the baseline and is declared `not-run`
+  now. It is reported under that name, not as "Regressed": an unprovable regression
+  is not a proven one, but a candidate that stopped measuring a gate cannot claim it
+  did not regress there, so it blocks the same way.
+
+Two things the comparator will not do. It never treats **silence** as a pass: a
+baseline gate absent from the run's inputs is reported `not-compared` by name, and
+it costs the run its `provenNoRegression` verdict (this is what keeps §5's targeted
+re-render honest — a one-viewport re-render simply does not prove the whole surface).
+And it never absorbs a change into the memory: `capture` REFUSES to overwrite an
+existing screen or re-key an existing baseline, and `--rebaseline` writes a separate
+reviewable proposal a human accepts. Protocol and file shape:
+`design-evaluate/references/baseline.md`.
 
 ---
 

@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "e4-calibration-2026-07-26",
+  "archetype": "cross-archetype",
+  "defect": "planted 3.12:1 AA contrast failure won its external set, surfaced by no juror",
+  "defectClass": "contrast",
+  "escapedPast": "panel",
+  "caughtBy": "the floor battery (static contrast / token-contract recompute)",
+  "whenFound": "in-loop",
+  "cleared": {
+    "date": "2026-07-27",
+    "how": "R1+R2 repair implemented (floor-clean as a hard precondition for esteem scoring; panels receive the floor outputs) and re-validated in E4-R, where 4/4 plants were eliminated before any esteem score existed and 20/20 jurors marked the floor-failing candidate UNSCORED",
+    "artifact": "evals/validation/e4r-run-2026-07-27/REPORT.md"
+  },
+  "artifacts": [
+    "evals/validation/e4-run-2026-07-26/REPORT.md",
+    "evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md"
+  ],
+  "notes": "This is the escape that falsified E4 and demoted the judging seat. It escaped the PANEL, not the floor: the machine caught it deterministically, and every one of the five external jurors judging renders alone missed it, with three of five ranking the plant FIRST. The repair is evidenced as effective; the demotion itself is NOT lifted, because E4-R failed its agreement criterion for a separate reason (score compression)."
+}

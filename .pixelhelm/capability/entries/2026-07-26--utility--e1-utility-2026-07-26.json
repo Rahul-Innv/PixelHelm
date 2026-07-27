@@ -1,0 +1,47 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e1-utility-2026-07-26",
+  "archetype": "utility",
+  "kind": "design-run",
+  "project": "e1-kestrel-ridge",
+  "surface": "trail-conditions",
+  "runRecord": "evals/validation/e1/run-2026-07-26/project/.pixelhelm/runs/2026-07-26--trail-conditions--run.json",
+  "artifacts": [
+    "evals/validation/e1/run-2026-07-26/REPORT.md",
+    "evals/validation/e1/run-2026-07-26/project/.pixelhelm/council/2026-07-26--trail-conditions--council.json",
+    "evals/validation/e1/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--trail-conditions.json",
+    "evals/validation/e1/run-2026-07-26/CODEX-CRITIQUE-2026-07-26.md"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e1/run-2026-07-26/project/gates/trail-ledger/",
+      "evals/validation/e1/run-2026-07-26/project/honesty/mutant-ritual/RITUAL.md"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": 5,
+    "medians": {
+      "trail-ledger": 9,
+      "status-board": 8,
+      "first-light": 9
+    },
+    "winner": "trail-ledger",
+    "winnerMedian": 9
+  },
+  "owner": {
+    "decision": "approved-with-changes",
+    "band": 8,
+    "bandBasis": "approximate",
+    "ownerWords": "I don't think any of them actually hit a nine. ... Most of them maybe eights.",
+    "record": "evals/validation/e1/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--trail-conditions.json"
+  },
+  "ownerVsPanel": -1,
+  "plants": "unknown",
+  "notes": "Three arms, all committed (winner and losers). Every shipped HARD gate green on all three; 4/4 mutant ritual. panel.standing is unknown on purpose: the run's own report states no standing for the model judging seat, and the advisory-only demotion post-dates it (E4, 2026-07-27) - deriving a standing from the dates would be reconstruction. The E1 report's own calibration finding is this line's delta: the blind panel ran about 1 point hot against the owner on all three arms (9/9/8 vs ~8/8/7). Graded by in-tree adversarial critique as completed, owner-reviewed, arithmetically reproducible, with material pre-registration/provenance defects."
+}

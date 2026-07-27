@@ -1,0 +1,41 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e1-utility-pass2-2026-07-26",
+  "archetype": "utility",
+  "kind": "design-run",
+  "project": "e1-kestrel-ridge-pass2",
+  "surface": "trail-conditions page, owner-directed revision 2",
+  "runRecord": "evals/validation/e1/run-2026-07-26/project/.pixelhelm/runs/2026-07-26--trail-conditions-pass2--run.json",
+  "artifacts": [
+    "evals/validation/e1/run-2026-07-26/project/.pixelhelm/runs/2026-07-26--trail-conditions-pass2--run.json",
+    "evals/validation/e1/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--trail-conditions-page-owner-directed-revision-2.json",
+    "evals/validation/e1/run-2026-07-26/pass2-owner-changes/"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e1/run-2026-07-26/pass2-owner-changes/"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": "unknown",
+    "medians": "unknown",
+    "winner": "unknown",
+    "winnerMedian": "unknown"
+  },
+  "owner": {
+    "decision": "approved-with-changes",
+    "band": 8.5,
+    "bandBasis": "stated",
+    "ownerWords": "I do like that - 8.5, slightly better.",
+    "record": "evals/validation/e1/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--trail-conditions-page-owner-directed-revision-2.json"
+  },
+  "ownerVsPanel": "unknown",
+  "plants": "unknown",
+  "notes": "The owner-directed repair of the E1 winner (status structure graft plus in-use affordances). No panel re-judge ran, deliberately, so every panel field and the owner-vs-panel delta are unknown for this pass: the 8.5 is the owner's own number on the repaired artifact and has no panel score to sit beside. The run record reports all shipped HARD gates re-run green; its own gate evidence is the pass2 directory rather than a separate gates/ tree."
+}

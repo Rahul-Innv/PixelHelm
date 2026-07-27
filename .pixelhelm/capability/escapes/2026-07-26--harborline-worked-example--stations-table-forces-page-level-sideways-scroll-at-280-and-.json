@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "harborline-worked-example",
+  "archetype": "utility",
+  "defect": "stations table forces page-level sideways scroll at 280 and 320 px",
+  "defectClass": "reflow",
+  "escapedPast": "shipped-artifact",
+  "caughtBy": "verify_responsive",
+  "whenFound": "post-hoc",
+  "cleared": {
+    "date": "2026-07-26",
+    "how": "the data table got its own overflow-x container - exactly the fix the original committed record prescribed",
+    "artifact": "examples/harborline/gates/verify_responsive.json"
+  },
+  "artifacts": [
+    "examples/harborline/gates/README.md",
+    "examples/harborline/repairs/2026-07-26/REPAIR.md"
+  ],
+  "notes": "Measured overflow 68 px at 280 and 28 px at 320, with the table named as the culprit in the committed FAIL. Cleared to 0 px page overflow at 280/320/414."
+}

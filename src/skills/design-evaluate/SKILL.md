@@ -30,8 +30,9 @@ already passed; only surface New/Regressed.
    Layer-1.5 reference `references/web-craft-rulebook.md` — mechanical ones machine-checked here,
    judgemental ones stay Layer-2 lens Qs. What ships vs what is designed-but-not-wired:
    `references/layer-1-gates.md`.
-2. **Baseline** (`.design-baseline.json`). Diff this run vs the merge-base baseline; classify each
-   finding New / Persistent / Fixed / **Regressed**. See `references/baseline.md`.
+2. **Baseline** (`pixelhelm-baseline/scripts/baseline.mjs compare`). Diff this run vs the merge-base
+   baseline; classify each gate/measurement/finding New / Persistent / Fixed / **Regressed** /
+   **lost-evidence** / not-compared. Exit 1 = the candidate regressed. See `references/baseline.md`.
 3. **Layer-2 — lens audit** (model judgment, runs only AFTER Layer-1 is green). Live-browser,
    7-phase, problem-framed, severity-triaged, false-positive-filtered. See `references/layer-2-lens-audit.md`.
 <!-- FULL-ONLY-START -->
@@ -80,8 +81,12 @@ Layer-1 PASS is NEVER reported as "design approved." Always print the honest ban
    mutant ritual (`references/honesty-gates.md`) once per project before trusting them. On any
    FAIL: STOP. Report the failures as `[Blocker]`
    with confidence `machine-certain`; do NOT run Layer-2 (a model cannot argue past a proven fail).
-4. **Run the baseline diff** (`references/baseline.md`). A previously-passing gate that now fails
-   is **Regressed → auto-top-severity**. Surface only New/Regressed; suppress Persistent passes.
+4. **Run the baseline diff** — `baseline.mjs compare --project <dir> --key <merge-base> --screen <id>`
+   with the same `--gate-artifact` / `--measure` / `--finding` inputs the incumbent was captured
+   with (`references/baseline.md`). A previously-passing gate that now fails is **Regressed →
+   auto-top-severity**; a previously-passing gate declared `not-run` is **lost evidence** and blocks
+   too. Surface only New/Regressed; suppress Persistent passes. A baseline gate absent from the
+   inputs is reported `not-compared` — never a pass, and it costs the run its no-regression proof.
 5. **Run Layer-2** only when Layer-1 is green. Drive the real browser through the 7 phases, assign
    the 4-rung severity, then apply the MANDATORY false-positive filter before emitting anything.
 6. **Merge + emit** the single JSON verdict (`references/output-contract.md`), print the honest
@@ -182,7 +187,10 @@ The OVERALL verdict is one of `PASS` | `NEEDS_WORK` | `FAIL`, computed determini
   + Performance/CWV budget), thresholds, citations, and the `surfaceType === "marketing"` trigger rule.
   Un-parked from scope A and first proven on the CohortWatch marketing site.
 <!-- FULL-ONLY-END -->
-- `references/baseline.md` — `.design-baseline.json` shape, merge-base keying, New/Regressed classification.
+- `references/baseline.md` — the SHIPPED regression memory: `baseline.mjs` capture/compare, the
+  file shape, merge-base keying, the New / Regressed / lost-evidence / not-compared classification,
+  measurement direction + tolerance, the refuse-then-propose re-baselining rule, and the honest
+  statement that tolerant pixel diffing is not wired.
 - `references/layer-2-lens-audit.md` — the 7-phase live audit, severity matrix, per-lens criteria, false-positive filter.
 <!-- FULL-ONLY-START -->
 - `references/layer-2-deep-pass-composites.md` — the eval-side mirror of the council's deep-pass bench (STORM use-case #2): surface-triggered composites (C1–C8, P56, P45, P25), composite→severity mapping, the audit-mode aggregation analog, the Layer-1 boundary, and the register-fit median gate (H1/H2). References the council's canonical definitions (one source of truth).

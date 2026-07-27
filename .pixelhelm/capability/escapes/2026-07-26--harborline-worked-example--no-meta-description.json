@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "harborline-worked-example",
+  "archetype": "utility",
+  "defect": "no meta description",
+  "defectClass": "structure",
+  "escapedPast": "shipped-artifact",
+  "caughtBy": "output-floor-gate",
+  "whenFound": "post-hoc",
+  "cleared": {
+    "date": "2026-07-26",
+    "how": "an honest meta description naming the sample-data status board",
+    "artifact": "examples/harborline/gates/output-floor-gate.json"
+  },
+  "artifacts": [
+    "examples/harborline/gates/README.md",
+    "examples/harborline/repairs/2026-07-26/REPAIR.md"
+  ],
+  "notes": "Third of the three structural gaps in the same committed FAIL."
+}

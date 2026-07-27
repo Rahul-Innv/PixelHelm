@@ -1,0 +1,47 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e3-editorial-2026-07-26",
+  "archetype": "editorial",
+  "kind": "design-run",
+  "project": "e3-editorial-ashcombe",
+  "surface": "season-that-moved",
+  "runRecord": "evals/validation/e3/run-2026-07-26-editorial/project/.pixelhelm/runs/2026-07-26--season-that-moved--run.json",
+  "artifacts": [
+    "evals/validation/e3/run-2026-07-26-editorial/REPORT.md",
+    "evals/validation/e3/run-2026-07-26-editorial/project/.pixelhelm/council/2026-07-26--season-that-moved--council.json",
+    "evals/validation/e3/run-2026-07-26-editorial/project/.pixelhelm/signoffs/2026-07-26--data-narrative-single-page-three-arms.json"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [
+      "axe-core (scrollable-region-focusable, serious) on the two table-carrying arms"
+    ],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e3/run-2026-07-26-editorial/project/gates/weir-plates/"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": 5,
+    "medians": {
+      "weir-plates": 9,
+      "two-inks": 9,
+      "almanac-rail": 9
+    },
+    "winner": "weir-plates",
+    "winnerMedian": 9
+  },
+  "owner": {
+    "decision": "approved-with-changes",
+    "band": 7,
+    "bandBasis": "approximate",
+    "ownerWords": "Maybe sevens - better; the editorial archetype suits this design language.",
+    "record": "evals/validation/e3/run-2026-07-26-editorial/project/.pixelhelm/signoffs/2026-07-26--data-narrative-single-page-three-arms.json"
+  },
+  "ownerVsPanel": -2,
+  "plants": "unknown",
+  "notes": "The floor fired inside the loop here and the loop spent its one iteration on it: the first render pass surfaced an axe serious finding on the two table-carrying arms, which was fixed and re-verified clean. The panel's sharpest advisory finding was an encoding-honesty one (almanac-rail's length-encoded bars from a 550 mm baseline), independently raised by four of five jurors. Owner defect recorded against all three arms: em dashes present."
+}

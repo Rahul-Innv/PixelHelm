@@ -1,0 +1,47 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e4-calibration-2026-07-26",
+  "archetype": "cross-archetype",
+  "kind": "calibration-experiment",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e4-external-calibration",
+  "runRecord": "evals/validation/e4-run-2026-07-26/.pixelhelm/runs/2026-07-26--e4-external-calibration--run.json",
+  "artifacts": [
+    "evals/validation/e4-run-2026-07-26/REPORT.md",
+    "evals/validation/e4-run-2026-07-26/plants/SEALED-PLANT-NOTE.md",
+    "evals/validation/PREREG-E4-CALIBRATION.md"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e4-run-2026-07-26/plants/e1-utility/gates/",
+      "evals/validation/e4-run-2026-07-26/plants/e3-saas/gates/",
+      "evals/validation/e4-run-2026-07-26/plants/e3-commerce/gates/",
+      "evals/validation/e4-run-2026-07-26/plants/e3-editorial/gates/"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": 5,
+    "medians": "unknown",
+    "winner": "unknown",
+    "winnerMedian": "unknown"
+  },
+  "owner": {
+    "decision": "unknown",
+    "band": "unknown",
+    "bandBasis": "unknown",
+    "ownerWords": "unknown",
+    "record": "unknown"
+  },
+  "ownerVsPanel": "unknown",
+  "plants": {
+    "planted": 4,
+    "caught": 4
+  },
+  "notes": "FALSIFIED per its sealed criteria. tau-b 0.632 PASS and inflation +0.625 PASS, but the plant criterion FAILED: a planted real 3.12:1 AA contrast failure WON its external set unnoticed by all five jurors. The floor battery caught 4 of 4 plants deterministically; jurors additionally surfaced 3 of 4. Standing consequence, still in force: the model judging seat is ADVISORY-ONLY and no Tier-3 claim may rest on internal scores alone. Panel fields other than the juror count are unknown here on purpose: this run judged four separate external sets with per-juror records rather than one candidate set, so a single winner/median for the run does not exist. No owner design verdict applies - this is a calibration experiment, not a design deliverable."
+}
