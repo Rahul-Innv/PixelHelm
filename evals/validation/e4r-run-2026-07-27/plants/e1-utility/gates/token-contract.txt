@@ -1,0 +1,1 @@
+evals/validation/e4r-run-2026-07-27/plants/e1-utility/arms/stone-steps/index.html: PASS — 14 pass / 0 fail / 0 unresolvable (pairs×modes)

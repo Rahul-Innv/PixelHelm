@@ -1,0 +1,56 @@
+{
+  "_note": "E4-R plant floor battery — the committed gates this set's real arms faced, run as-produced. exitCode 0 = pass, 1 = HARD FAIL, 2 = runner error (never a pass).",
+  "set": "e1-utility",
+  "arm": "stone-steps",
+  "generated": "2026-07-27T15:56:51.886Z",
+  "hardFails": [
+    "verify_responsive"
+  ],
+  "results": [
+    {
+      "gate": "static-gates",
+      "artifact": "static-gates.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "check-token-contracts",
+      "artifact": "token-contract.txt",
+      "exitCode": 0
+    },
+    {
+      "gate": "output-floor-gate",
+      "artifact": "output-floor.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "derived-claims-gate",
+      "artifact": "gate-a-derived-claims.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "content-manifest-gate",
+      "artifact": "gate-b-manifest.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_responsive",
+      "artifact": "verify_responsive.json",
+      "exitCode": 1
+    },
+    {
+      "gate": "verify_states",
+      "artifact": "verify_states.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_targetsize",
+      "artifact": "verify_targetsize.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_focustrap",
+      "artifact": "verify_focustrap.json",
+      "exitCode": 0
+    }
+  ]
+}

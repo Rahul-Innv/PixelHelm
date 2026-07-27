@@ -1,0 +1,77 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-27T15:57:50.059Z",
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/index.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "pass",
+          "id": "landmark-aux",
+          "msg": "header/nav/footer landmarks present"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 13 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (183 chars)"
+        }
+      ]
+    },
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/product.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "pass",
+          "id": "landmark-aux",
+          "msg": "header/nav/footer landmarks present"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 5 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (168 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

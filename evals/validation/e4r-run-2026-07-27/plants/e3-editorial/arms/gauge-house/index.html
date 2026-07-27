@@ -1,0 +1,240 @@
+<!doctype html>
+<html lang="en" data-arm="gauge-house">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The gauge house. Ashcombe Valley Observer.</title>
+<meta name="description" content="The Ashcombe Valley weir wet-season record, season by season: totals, peak 24-hour falls, onset days, the seasons with no record at all, and the one peak the reviewers have not yet verified.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f4f1e9","ink":"#232b31","muted":"#505e68","rule":"#77838d","river":"#275d7d","storm":"#4a5764","gapfill":"#e8e4d7"},"dark":{"paper":"#101820","ink":"#e3e7e4","muted":"#a2b0b8","rule":"#68777f","river":"#7cb5d8","storm":"#aab8c2","gapfill":"#1a2530"},"gatedPairs":[{"fg":"ink","on":["paper","gapfill"],"kind":"text"},{"fg":"muted","on":["paper","gapfill"],"kind":"text"},{"fg":"river","on":["paper"],"kind":"text"},{"fg":"storm","on":["paper"],"kind":"text"},{"fg":"rule","on":["paper","gapfill"],"kind":"graphic"},{"fg":"river","on":["paper","gapfill"],"kind":"graphic"},{"fg":"storm","on":["paper","gapfill"],"kind":"graphic"}]}
+</script>
+<style>
+/* gauge-house: the record as the keeper kept it, one line to a season. Missing
+   seasons keep their line and say why they are missing; the one peak the
+   reviewers have not signed off keeps its label everywhere it appears. */
+
+:root {
+  color-scheme: light;
+  --paper: #f4f1e9;
+  --ink: #232b31;
+  --muted: #505e68;
+  --rule: #77838d;
+  --river: #275d7d;
+  --storm: #4a5764;
+  --gapfill: #e8e4d7;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #101820;
+  --ink: #e3e7e4;
+  --muted: #a2b0b8;
+  --rule: #68777f;
+  --river: #7cb5d8;
+  --storm: #aab8c2;
+  --gapfill: #1a2530;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --t-xl: clamp(2.1rem, 1.3rem + 3.2vw, 3.4rem);
+  --t-lg: 1.35rem;
+  --t-md: 1.0625rem;
+  --t-sm: 0.8125rem;
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 1.75rem;
+  --s5: 3rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--t-md);
+  line-height: 1.6;
+  padding: var(--s4) var(--s3) var(--s5);
+}
+
+.page { max-width: 46rem; margin: 0 auto; }
+
+a { color: var(--river); text-underline-offset: 3px; }
+/* the reading-room hover: the link recedes into the paper as the cursor rests
+   on it, so the eye is not pulled off the line it is reading */
+a:hover { color: #9db4c0; }
+a:focus-visible { outline: 3px solid var(--river); outline-offset: 3px; }
+
+.mast { border-bottom: 3px double var(--rule); padding-bottom: var(--s3); }
+.mast .title { font-family: var(--sans); font-size: var(--t-sm); letter-spacing: 0.22em; text-transform: uppercase; color: var(--muted); }
+.mast h1 { font-size: var(--t-xl); line-height: 1.03; margin-top: var(--s2); }
+.mast .stand { margin-top: var(--s3); font-size: var(--t-lg); line-height: 1.45; color: var(--storm); max-width: 40ch; }
+.mast .by { margin-top: var(--s3); font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); }
+
+nav.jump { margin-top: var(--s3); }
+nav.jump ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s2) var(--s4); }
+nav.jump a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.7rem 0;
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+section { margin-top: var(--s5); }
+section > h2 { font-family: var(--sans); font-size: var(--t-sm); letter-spacing: 0.2em; text-transform: uppercase; color: var(--muted); border-bottom: 1px solid var(--rule); padding-bottom: var(--s2); }
+
+.prose p { margin-top: var(--s3); max-width: 60ch; }
+.prose p.first::first-letter { font-size: 3.1rem; line-height: 0.9; float: left; padding: 0.1rem 0.5rem 0 0; color: var(--river); }
+
+.terms { list-style: none; margin-top: var(--s3); display: grid; gap: var(--s2); }
+.terms li { border-left: 3px solid var(--rule); padding-left: var(--s3); max-width: 60ch; }
+.terms b { font-family: var(--sans); font-size: var(--t-sm); letter-spacing: 0.06em; text-transform: uppercase; display: block; color: var(--muted); }
+
+/* the record */
+.record { margin-top: var(--s3); list-style: none; font-family: var(--sans); font-size: var(--t-sm); }
+.record > li {
+  display: grid;
+  grid-template-columns: 3.5rem minmax(0, 1fr);
+  gap: var(--s1) var(--s3);
+  padding: var(--s2) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.record .yr { font-variant-numeric: tabular-nums; font-weight: 700; }
+.record .vals { display: flex; flex-wrap: wrap; gap: var(--s1) var(--s3); font-variant-numeric: tabular-nums; }
+.record .vals .k { color: var(--muted); }
+.record .src { color: var(--muted); }
+.record li.gap { background: var(--gapfill); }
+.record li.gap .none { font-style: italic; }
+.record li.gap .why { color: var(--muted); }
+.record .flag {
+  display: inline-block;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--storm);
+  border: 1px solid var(--storm);
+  padding: 0 0.35rem;
+}
+.record .review { grid-column: 2; color: var(--muted); max-width: 58ch; }
+
+blockquote { border-left: 3px solid var(--river); padding-left: var(--s3); margin-top: var(--s3); max-width: 54ch; }
+blockquote p { font-size: var(--t-lg); line-height: 1.45; }
+blockquote footer { font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); margin-top: var(--s2); }
+
+footer.colophon { margin-top: var(--s5); border-top: 3px double var(--rule); padding-top: var(--s3); font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); }
+footer.colophon p { max-width: 62ch; }
+footer.colophon p + p { margin-top: var(--s2); }
+
+@media (max-width: 430px) {
+  body { padding: var(--s3) var(--s3) var(--s4); }
+  .record > li { grid-template-columns: 1fr; }
+  .record .review { grid-column: 1; }
+}
+</style>
+</head>
+<body>
+<div class="page">
+
+<header class="mast">
+  <p class="title">Ashcombe Valley Observer</p>
+  <h1>The gauge house</h1>
+  <p class="stand">One valley, one weir, and the seasons a keeper wrote down. Including the seasons nobody wrote down at all.</p>
+  <p class="by">The record desk. Figures from the Ashcombe Valley weir wet-season record.</p>
+</header>
+
+<nav class="jump" aria-label="Jump to a part of the record">
+  <ul>
+    <li><a href="#reading">How to read it</a></li>
+    <li><a href="#record">The record</a></li>
+    <li><a href="#shift">What moved</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="reading" class="prose" aria-labelledby="reading-h">
+  <h2 id="reading-h">How to read it</h2>
+  <p class="first">A wet season here is not a date on a calendar. It opens on the first day of a ten-day window that brings at least 25mm of rain, and it closes with the last window that still qualifies. Everything below is counted that way, season after season, so the lines can be set beside one another.</p>
+  <ul class="terms">
+    <li><b>Onset day</b>The first day of the water year, counting Sep 1 as day 244, that opens the first ten-day window with at least 25mm of rainfall.</li>
+    <li><b>Season total</b>Total rainfall from onset through the last qualifying ten-day window.</li>
+    <li><b>Peak fall</b>The largest 24-hour rainfall inside the wet season.</li>
+  </ul>
+  <p>The instrument changed partway through. Readings from 1990 to 1996 come from the manual gauge, read twice daily by the keeper. From 1997 onward they come from the automated weir station. Any comparison that crosses 1996 and 1997 is crossing that change, and this page says so wherever it makes one.</p>
+</section>
+
+<section id="record" aria-labelledby="record-h">
+  <h2 id="record-h">The record, season by season</h2>
+  <ul class="record">
+    <li data-model="1990"><span class="yr">1990</span><span class="vals"><span>612 mm total</span><span class="k">peak 44 mm</span><span class="k">onset day 251</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1991"><span class="yr">1991</span><span class="vals"><span>587 mm total</span><span class="k">peak 39 mm</span><span class="k">onset day 248</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1992"><span class="yr">1992</span><span class="vals"><span>634 mm total</span><span class="k">peak 47 mm</span><span class="k">onset day 255</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1993"><span class="yr">1993</span><span class="vals"><span>601 mm total</span><span class="k">peak 42 mm</span><span class="k">onset day 249</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1994"><span class="yr">1994</span><span class="vals"><span>596 mm total</span><span class="k">peak 45 mm</span><span class="k">onset day 257</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1995"><span class="yr">1995</span><span class="vals"><span>578 mm total</span><span class="k">peak 41 mm</span><span class="k">onset day 252</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1996"><span class="yr">1996</span><span class="vals"><span>618 mm total</span><span class="k">peak 48 mm</span><span class="k">onset day 259</span><span class="src">manual gauge</span></span></li>
+    <li data-model="1997"><span class="yr">1997</span><span class="vals"><span>605 mm total</span><span class="k">peak 46 mm</span><span class="k">onset day 254</span><span class="src">automated weir</span></span></li>
+    <li class="gap" data-model="1998"><span class="yr">1998</span><span class="vals"><span class="none">no record for this season</span><span class="why">gauge failure; station offline all season</span></span></li>
+    <li data-model="1999"><span class="yr">1999</span><span class="vals"><span>622 mm total</span><span class="k">peak 50 mm</span><span class="k">onset day 258</span><span class="src">automated weir</span></span></li>
+    <li data-model="2000"><span class="yr">2000</span><span class="vals"><span>640 mm total</span><span class="k">peak 52 mm</span><span class="k">onset day 261</span><span class="src">automated weir</span></span></li>
+    <li data-model="2001"><span class="yr">2001</span><span class="vals"><span>599 mm total</span><span class="k">peak 44 mm</span><span class="k">onset day 256</span><span class="src">automated weir</span></span></li>
+    <li data-model="2002"><span class="yr">2002</span><span class="vals"><span>628 mm total</span><span class="k">peak 55 mm</span><span class="k">onset day 263</span><span class="src">automated weir</span></span></li>
+    <li class="gap" data-model="2003"><span class="yr">2003</span><span class="vals"><span class="none">no record for this season</span><span class="why">monitoring funding lapsed</span></span></li>
+    <li class="gap" data-model="2004"><span class="yr">2004</span><span class="vals"><span class="none">no record for this season</span><span class="why">monitoring funding lapsed</span></span></li>
+    <li data-model="2005"><span class="yr">2005</span><span class="vals"><span>615 mm total</span><span class="k">peak 53 mm</span><span class="k">onset day 262</span><span class="src">automated weir</span></span></li>
+    <li data-model="2006"><span class="yr">2006</span><span class="vals"><span>647 mm total</span><span class="k">peak 58 mm</span><span class="k">onset day 266</span><span class="src">automated weir</span></span></li>
+    <li data-model="2007"><span class="yr">2007</span><span class="vals"><span>633 mm total</span><span class="k">peak 51 mm</span><span class="k">onset day 260</span><span class="src">automated weir</span></span></li>
+    <li data-model="2008"><span class="yr">2008</span><span class="vals"><span>659 mm total</span><span class="k">peak 60 mm</span><span class="k">onset day 268</span><span class="src">automated weir</span></span></li>
+    <li data-model="2009"><span class="yr">2009</span><span class="vals"><span>641 mm total</span><span class="k">peak 56 mm</span><span class="k">onset day 264</span><span class="src">automated weir</span></span></li>
+    <li data-model="2010"><span class="yr">2010</span><span class="vals"><span>668 mm total</span><span class="k">peak 63 mm</span><span class="k">onset day 270</span><span class="src">automated weir</span></span></li>
+    <li data-model="2011"><span class="yr">2011</span><span class="vals"><span>638 mm total</span><span class="k">peak 54 mm</span><span class="k">onset day 265</span><span class="src">automated weir</span></span></li>
+    <li data-model="2012"><span class="yr">2012</span><span class="vals"><span>676 mm total</span><span class="k">peak 65 mm</span><span class="k">onset day 272</span><span class="src">automated weir</span></span></li>
+    <li data-model="2013"><span class="yr">2013</span><span class="vals"><span>652 mm total</span><span class="k">peak 59 mm</span><span class="k">onset day 267</span><span class="src">automated weir</span></span></li>
+    <li data-model="2014"><span class="yr">2014</span><span class="vals"><span>684 mm total</span><span class="k">peak 67 mm</span><span class="k">onset day 274</span><span class="src">automated weir</span></span></li>
+    <li data-model="2015"><span class="yr">2015</span><span class="vals"><span>661 mm total</span><span class="k">peak 61 mm</span><span class="k">onset day 269</span><span class="src">automated weir</span></span></li>
+    <li data-model="2016"><span class="yr">2016</span><span class="vals"><span>693 mm total</span><span class="k">peak 70 mm</span><span class="k">onset day 276</span><span class="src">automated weir</span></span></li>
+    <li data-model="2017"><span class="yr">2017</span><span class="vals"><span>670 mm total</span><span class="k">peak 64 mm</span><span class="k">onset day 271</span><span class="src">automated weir</span></span></li>
+    <li data-model="2018"><span class="yr">2018</span><span class="vals"><span>655 mm total</span><span class="k">peak 68 mm</span><span class="k">onset day 278</span><span class="src">automated weir</span></span></li>
+    <li data-model="2019"><span class="yr">2019</span><span class="vals"><span>702 mm total</span><span class="k">peak 132 mm <span class="flag">unverified outlier</span></span><span class="k">onset day 275</span><span class="src">automated weir</span></span><p class="review">The 132 mm peak is an unverified outlier: a sensor spike during the Oct 12 storm, not yet corroborated by neighbouring stations. It is printed because it is in the record, and labelled because it has not been signed off.</p></li>
+    <li data-model="2020"><span class="yr">2020</span><span class="vals"><span>688 mm total</span><span class="k">peak 71 mm</span><span class="k">onset day 280</span><span class="src">automated weir</span></span></li>
+    <li data-model="2021"><span class="yr">2021</span><span class="vals"><span>696 mm total</span><span class="k">peak 69 mm</span><span class="k">onset day 277</span><span class="src">automated weir</span></span></li>
+    <li data-model="2022"><span class="yr">2022</span><span class="vals"><span>707 mm total</span><span class="k">peak 74 mm</span><span class="k">onset day 283</span><span class="src">automated weir</span></span></li>
+    <li data-model="2023"><span class="yr">2023</span><span class="vals"><span>715 mm total</span><span class="k">peak 76 mm</span><span class="k">onset day 281</span><span class="src">automated weir</span></span></li>
+  </ul>
+</section>
+
+<section id="shift" class="prose" aria-labelledby="shift-h">
+  <h2 id="shift-h">What moved</h2>
+  <p>Read down the onset column and the season starts later. It opened on day 251 in 1990 and on day 281 in 2023. Read down the totals and they are larger at the end than at the beginning: 612 mm in 1990, 715 mm in 2023. The two readings sit either side of the instrument change, so that comparison crosses the manual gauge and the automated weir, and the change of instrument is part of what it contains.</p>
+  <p>The gaps are part of the shape too. Three seasons have no record here, and they are printed as blank lines rather than skipped, because a record that closes over its own holes reads smoother than it deserves to.</p>
+  <p>This page describes the shift in one valley's weir record and not its cause. There is no attribution analysis in the underlying record, so there is none here either.</p>
+</section>
+
+<section aria-labelledby="voices-h">
+  <h2 id="voices-h">From the valley</h2>
+  <blockquote>
+    <p>Cut the meadow the last week of August; rain never came before the fair.</p>
+    <footer>Weir keeper's log, 1994 (fictional)</footer>
+  </blockquote>
+  <blockquote>
+    <p>Sandbag store moved to the school after the lane flooded twice in one October.</p>
+    <footer>Parish flood group minutes, 2022 (fictional)</footer>
+  </blockquote>
+</section>
+
+</main>
+
+<footer class="colophon">
+  <p>Figures are taken from the Ashcombe Valley weir wet-season record and nothing is derived beyond what that record states. Seasons with no reading keep their line and their reason. A value the reviewers have not verified keeps its label wherever it appears.</p>
+  <p>The Ashcombe Valley Observer, its weir, and the quoted logs are fictional, and this page is a design study.</p>
+</footer>
+
+</div>
+</body>
+</html>

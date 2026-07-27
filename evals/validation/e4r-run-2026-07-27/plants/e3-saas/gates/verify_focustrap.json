@@ -1,0 +1,14 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-27T15:57:24.085Z",
+  "target": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/arms/job-sheet/index.html",
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no dialog / [role=dialog] / [aria-modal] element on this page — nothing to verify"
+    }
+  ],
+  "pass": true,
+  "applicable": false
+}

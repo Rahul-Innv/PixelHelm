@@ -1,0 +1,12 @@
+{
+  "browserChannel": "msedge",
+  "outDir": "renders",
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900 },
+    { "name": "mobile", "width": 375, "height": 812 }
+  ],
+  "modes": ["light", "dark"],
+  "darkAttr": "data-theme",
+  "items": [ { "name": "gauge-house", "file": "arms/gauge-house/index.html" } ],
+  "axe": true
+}

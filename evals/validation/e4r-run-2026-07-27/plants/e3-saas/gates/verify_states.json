@@ -1,0 +1,36 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T15:57:15.387Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/arms/job-sheet/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 1,
+          "checked": 1,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 1,
+          "checked": 1,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

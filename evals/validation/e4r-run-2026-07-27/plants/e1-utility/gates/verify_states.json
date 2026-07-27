@@ -1,0 +1,36 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T15:56:40.778Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/arms/stone-steps/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 0,
+          "checked": 0,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 0,
+          "checked": 0,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

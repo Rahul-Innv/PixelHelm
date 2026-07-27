@@ -1,0 +1,39 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-27T15:58:38.928Z",
+  "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/index.html",
+  "findings": [
+    {
+      "level": "pass",
+      "id": "role",
+      "msg": "role is dialog"
+    },
+    {
+      "level": "pass",
+      "id": "aria-modal",
+      "msg": "aria-modal semantics present"
+    },
+    {
+      "level": "pass",
+      "id": "accessible-name",
+      "msg": "accessible name: \"Sowing guide\""
+    },
+    {
+      "level": "pass",
+      "id": "tab-cycle",
+      "msg": "focus never reached page content outside the dialog through 4 Tab presses (2 focusable(s))"
+    },
+    {
+      "level": "fail",
+      "id": "escape-closes",
+      "msg": "Escape did not close the dialog"
+    },
+    {
+      "level": "fail",
+      "id": "focus-return",
+      "msg": "focus did NOT return to the trigger after Escape"
+    }
+  ],
+  "pass": false,
+  "applicable": true
+}
