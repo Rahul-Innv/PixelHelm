@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local/Temp/claude/C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-lucid-khayyam-0ee868/8260afeb-43b9-4328-9a3f-67a43fdc37d9/scratchpad/e3-mutants/m1/index.html",
+  "pass": false,
+  "allowedNumbers": 15,
+  "blocks": 14,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented gbp \"£250\" (=250) not in data or derived constants — …own paperwork. Customers save £250 a month. FOR Sole traders wh…"
+    }
+  ]
+}

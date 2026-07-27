@@ -1,0 +1,36 @@
+{
+  "browserChannel": "msedge",
+  "outDir": "renders",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "items": [
+    {
+      "name": "worked-invoice",
+      "file": "arms/worked-invoice/index.html"
+    },
+    {
+      "name": "driveway-to-paid",
+      "file": "arms/driveway-to-paid/index.html"
+    },
+    {
+      "name": "fair-quote",
+      "file": "arms/fair-quote/index.html"
+    }
+  ],
+  "axe": true
+}

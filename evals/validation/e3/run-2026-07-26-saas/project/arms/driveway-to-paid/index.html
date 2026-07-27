@@ -1,0 +1,377 @@
+<!doctype html>
+<html lang="en" data-arm="driveway-to-paid">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerline — invoicing for trades. Six steps from job done to money put aside.</title>
+<meta name="description" content="Ledgerline walks a tradesperson's afternoon: photo the job sheet, send the invoice from the van by text or email, get paid off a text message link, tax put aside. Solo £9/month, Crew £19/month — all prices exclude VAT. 30 days free, no card required.">
+<script type="application/json" id="token-contract">
+{"light":{"ground":"#f6f7f4","ink":"#1c2b45","muted":"#4d5c74","amber":"#8a6200","paid":"#2c6e4b","rule":"#71808f","cta-bg":"#1c2b45","cta-ink":"#f6f7f4"},"dark":{"ground":"#131b2a","ink":"#e8ecf3","muted":"#a3b0c5","amber":"#e0b34a","paid":"#8bc9a4","rule":"#66788f","cta-bg":"#e0b34a","cta-ink":"#131b2a"},"gatedPairs":[{"fg":"ink","on":["ground"],"kind":"text"},{"fg":"muted","on":["ground"],"kind":"text"},{"fg":"amber","on":["ground"],"kind":"text"},{"fg":"paid","on":["ground"],"kind":"text"},{"fg":"cta-ink","on":["cta-bg"],"kind":"text"},{"fg":"rule","on":["ground"],"kind":"graphic"}]}
+</script>
+<style>
+/* driveway-to-paid: six plain steps from job done to money put aside.
+   Oversized numerals, method-statement voice, no hero. */
+
+:root {
+  color-scheme: light;
+  --ground: #f6f7f4;
+  --ink: #1c2b45;
+  --muted: #4d5c74;
+  --amber: #8a6200;
+  --paid: #2c6e4b;
+  --rule: #71808f;
+  --cta-bg: #1c2b45;
+  --cta-ink: #f6f7f4;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #131b2a;
+  --ink: #e8ecf3;
+  --muted: #a3b0c5;
+  --amber: #e0b34a;
+  --paid: #8bc9a4;
+  --rule: #66788f;
+  --cta-bg: #e0b34a;
+  --cta-ink: #131b2a;
+}
+
+:root {
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --cond: "Arial Narrow", "Segoe UI", Arial, sans-serif;
+  --type-xl: clamp(1.6rem, 1.1rem + 2.4vw, 2.35rem);
+  --type-lg: clamp(1.2rem, 1rem + 1vw, 1.5rem);
+  --type-md: 1rem;
+  --type-sm: 0.8125rem;
+  --num: clamp(3rem, 2rem + 5vw, 5rem);
+  --sp-1: 0.25rem;
+  --sp-2: 0.5rem;
+  --sp-3: 1rem;
+  --sp-4: 1.75rem;
+  --sp-5: 3.25rem;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--type-md);
+  line-height: 1.55;
+  overflow-wrap: break-word;
+  animation: settle 0.45s ease-out;
+}
+
+@keyframes settle {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body { animation: none; }
+}
+
+header, main, footer {
+  max-width: 44rem;
+  margin-inline: auto;
+  padding-inline: clamp(1.25rem, 5vw, 2.5rem);
+}
+
+a { color: var(--ink); text-decoration-thickness: 1.5px; }
+a:hover { text-decoration-thickness: 2.5px; }
+a:focus-visible { outline: 2px solid var(--amber); outline-offset: 2px; }
+
+/* Masthead: one line, no hero */
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-2) var(--sp-3);
+  padding-top: var(--sp-3);
+  padding-bottom: var(--sp-3);
+  border-bottom: 2px solid var(--ink);
+}
+
+.kicker {
+  margin: 0;
+  flex: 1 1 14rem;
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.cta {
+  display: inline-block;
+  padding: 0.65rem 1.1rem;
+  background: var(--cta-bg);
+  color: var(--cta-ink);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.cta:hover { text-decoration: underline; }
+.cta:focus-visible { outline: 2px solid var(--ink); outline-offset: 3px; }
+
+/* Steps */
+
+.step {
+  display: grid;
+  grid-template-columns: minmax(4.5rem, auto) minmax(0, 1fr);
+  gap: var(--sp-2) var(--sp-3);
+  padding: var(--sp-4) 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: start;
+}
+
+.num {
+  font-family: var(--cond);
+  font-size: var(--num);
+  font-weight: 700;
+  line-height: 0.9;
+  color: var(--amber);
+  letter-spacing: -0.02em;
+}
+
+.num-paid { color: var(--paid); }
+
+.step h1, .step h2 {
+  margin: 0;
+  font-size: var(--type-xl);
+  line-height: 1.15;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+}
+
+.step p { margin: var(--sp-2) 0 0; max-width: 34rem; }
+
+.step .aside { color: var(--muted); font-size: var(--type-sm); }
+
+@media (max-width: 480px) {
+  .step { grid-template-columns: minmax(0, 1fr); }
+  .num { line-height: 1; }
+}
+
+/* Flat sections after the story */
+
+section.flat { padding: var(--sp-4) 0; border-bottom: 1px solid var(--rule); }
+
+section.flat > h2 {
+  margin: 0 0 var(--sp-3);
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.integration {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2) var(--sp-3);
+  align-items: baseline;
+  padding: var(--sp-2) 0;
+}
+
+.int-name { flex: 1 1 12rem; min-width: 0; font-weight: 600; }
+
+.mark {
+  font-size: var(--type-sm);
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  border: 2px solid currentColor;
+  padding: 0.05rem 0.45rem;
+}
+
+.mark-live { color: var(--paid); }
+.mark-beta { color: var(--amber); }
+
+.int-note { flex-basis: 100%; margin: 0; font-size: var(--type-sm); color: var(--muted); }
+
+.claim { margin: 0 0 var(--sp-1); font-size: var(--type-lg); font-weight: 600; }
+.basis { margin: 0 0 var(--sp-3); color: var(--muted); max-width: 36rem; }
+
+blockquote {
+  margin: var(--sp-3) 0 0;
+  padding-left: var(--sp-3);
+  border-left: 3px solid var(--amber);
+  font-style: italic;
+  max-width: 34rem;
+}
+
+blockquote footer { margin-top: var(--sp-2); font-style: normal; color: var(--muted); font-size: var(--type-sm); }
+
+/* Pricing, plain */
+
+.tier {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: var(--sp-1) var(--sp-3);
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--rule);
+  align-items: baseline;
+}
+
+.tier:last-of-type { border-bottom: none; }
+
+.tier-name { font-weight: 700; }
+.tier-limits { grid-column: 1; margin: 0; color: var(--muted); font-size: var(--type-sm); }
+
+.tier-price {
+  grid-row: 1 / span 2;
+  grid-column: 2;
+  font-family: var(--cond);
+  font-size: var(--type-lg);
+  font-weight: 700;
+  align-self: center;
+  white-space: nowrap;
+}
+
+.tier-price small { font-size: var(--type-sm); font-weight: 400; color: var(--muted); }
+
+.vat { margin: var(--sp-2) 0 0; font-weight: 600; font-size: var(--type-sm); }
+
+.trial {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+  margin-top: var(--sp-3);
+}
+
+.trial p { margin: 0; }
+
+footer.site {
+  padding-top: var(--sp-4);
+  padding-bottom: var(--sp-5);
+  color: var(--muted);
+  font-size: var(--type-sm);
+}
+</style>
+</head>
+<body>
+
+<header>
+  <p class="kicker">Ledgerline · Invoicing for trades</p>
+  <a class="cta" href="#pricing">Start the free trial</a>
+</header>
+
+<main>
+  <section class="step" data-model="feat-invoice">
+    <span class="num" aria-hidden="true">1</span>
+    <div>
+      <h1>Job's done. Photo the job sheet.</h1>
+      <p>The photo becomes a line-itemed invoice on its own — the 60-second invoice, not an evening at the kitchen table.</p>
+    </div>
+  </section>
+
+  <section class="step" data-model="feat-invoice">
+    <span class="num" aria-hidden="true">2</span>
+    <div>
+      <h2>Send it before you leave the driveway.</h2>
+      <p>By text or email, straight from the van. The paperwork is finished while the ladder's still warm.</p>
+    </div>
+  </section>
+
+  <section class="step" data-model="claim-textlink">
+    <span class="num num-paid" aria-hidden="true">3</span>
+    <div>
+      <h2>They pay off the text.</h2>
+      <p>Invoices get paid from a text message link — the message you sent carries the link they settle on.</p>
+      <p class="aside">Product behavior, not a promise.</p>
+    </div>
+  </section>
+
+  <section class="step" data-model="feat-reminders">
+    <span class="num" aria-hidden="true">4</span>
+    <div>
+      <h2>The slow ones get chased for you.</h2>
+      <p>Polite automatic reminders at 7, 14 and 30 days overdue. The tone is editable — you stay the reasonable one without writing a word.</p>
+    </div>
+  </section>
+
+  <section class="step" data-model="feat-markup">
+    <span class="num" aria-hidden="true">5</span>
+    <div>
+      <h2>The receipt earns its markup.</h2>
+      <p>Snap the supplier receipt and your markup is applied at your default rate. No arithmetic in the merchant's car park.</p>
+    </div>
+  </section>
+
+  <section class="step" data-model="feat-taxpot">
+    <span class="num num-paid" aria-hidden="true">6</span>
+    <div>
+      <h2>The tax is already put aside.</h2>
+      <p>Your tax share from every paid invoice goes into a running total you can see. That's the whole afternoon: job done, money in, tax sorted.</p>
+    </div>
+  </section>
+
+  <section class="flat" aria-labelledby="int-h">
+    <h2 id="int-h">Plays well with your bank</h2>
+
+    <div class="integration" data-model="int-stripe">
+      <span class="int-name">Stripe payouts</span>
+      <span class="mark mark-live">LIVE</span>
+    </div>
+
+    <div class="integration" data-model="int-openbanking">
+      <span class="int-name">Open Banking feed</span>
+      <span class="mark mark-live">LIVE</span>
+    </div>
+
+    <div class="integration" data-model="int-quickbooks">
+      <span class="int-name">QuickBooks export</span>
+      <span class="mark mark-beta">BETA</span>
+      <p class="int-note">In beta. It's coming along; we won't pretend it's done.</p>
+    </div>
+  </section>
+
+  <section class="flat" aria-labelledby="ev-h">
+    <h2 id="ev-h">What we can honestly tell you</h2>
+
+    <div data-model="claim-pilot">
+      <p class="claim">Pilot users invoiced 4 hours per week faster.</p>
+      <p class="basis">Internal estimate, n=11 pilot users. A small pilot — so that's a signal, not a certified fact, and we label it as one.</p>
+    </div>
+
+    <blockquote data-model="quote-okafor">
+      <p>"I invoice from the van now. Money in before I'm home."</p>
+      <footer>D. Okafor, electrician, Leeds</footer>
+    </blockquote>
+  </section>
+
+  <section class="flat" id="pricing" aria-labelledby="price-h">
+    <h2 id="price-h">What it costs</h2>
+
+    <div data-model="pricing">
+      <div class="tier" data-model="tier-solo">
+        <span class="tier-name">Solo</span>
+        <p class="tier-limits">40 invoices a month, 1 user.</p>
+        <span class="tier-price">£9<small> / month</small></span>
+      </div>
+
+      <div class="tier" data-model="tier-crew">
+        <span class="tier-name">Crew</span>
+        <p class="tier-limits">Unlimited invoices, 3 users.</p>
+        <span class="tier-price">£19<small> / month</small></span>
+      </div>
+
+      <p class="vat">All prices exclude VAT.</p>
+    </div>
+
+    <div class="trial" id="trial" data-model="trial">
+      <p><strong>30 days free, no card required.</strong> Try the whole afternoon on us.</p>
+      <a class="cta" href="#trial">Start the free trial</a>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <p>Human support, 8am–6pm weekdays. Ledgerline, Manchester, UK — going since 2024.</p>
+</footer>
+
+</body>
+</html>

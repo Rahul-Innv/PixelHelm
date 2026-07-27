@@ -1,0 +1,149 @@
+{
+  "schema": "pixelhelm/judge-verdict@1",
+  "date": "2026-07-26",
+  "project": "e3-ledgerline",
+  "surface": "saas-marketing",
+  "mode": "new-design",
+  "pass": "deep",
+  "candidates": {
+    "worked-invoice": {
+      "label": "The pitch typeset as a worked invoice (document artifact, furniture-only persuasion)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png"
+    },
+    "driveway-to-paid": {
+      "label": "Six plain steps from job done to money put aside (story-step opening, display numerals)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png"
+    },
+    "fair-quote": {
+      "label": "The quote a good tradesperson gives (pricing first, small print set large)",
+      "kind": "challenger",
+      "render": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png"
+    }
+  },
+  "registerFitPanel": {
+    "jurors": 5,
+    "scores": {
+      "worked-invoice": [
+        9,
+        9,
+        9,
+        8.5,
+        9
+      ],
+      "driveway-to-paid": [
+        8,
+        8,
+        8.5,
+        8,
+        8
+      ],
+      "fair-quote": [
+        9,
+        9,
+        9,
+        9,
+        9
+      ]
+    },
+    "medians": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 8,
+      "fair-quote": 9
+    },
+    "nonOverlapping": true,
+    "modeFairness": "both-modes"
+  },
+  "lensScores": {
+    "criterion-1": {
+      "worked-invoice": 8,
+      "driveway-to-paid": 8,
+      "fair-quote": 7
+    },
+    "criterion-2": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 9,
+      "fair-quote": 9
+    },
+    "criterion-3": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 8,
+      "fair-quote": 7
+    },
+    "criterion-4": {
+      "worked-invoice": 8,
+      "driveway-to-paid": 8,
+      "fair-quote": 9
+    },
+    "criterion-5": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 8,
+      "fair-quote": 8
+    },
+    "criterion-6": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 9,
+      "fair-quote": 9
+    },
+    "criterion-7": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 8,
+      "fair-quote": 8
+    },
+    "criterion-8": {
+      "worked-invoice": 8,
+      "driveway-to-paid": 9,
+      "fair-quote": 9
+    },
+    "criterion-9": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 9,
+      "fair-quote": 9
+    },
+    "criterion-10": {
+      "worked-invoice": 8,
+      "driveway-to-paid": 8,
+      "fair-quote": 9
+    }
+  },
+  "constraints": [
+    {
+      "seat": "panel-consensus",
+      "finding": "fair-quote offers a single trial CTA (first screenful only) - a reader finishing the evidence path must scroll back to act; criterion-3 median 7 (advisory)",
+      "severity": "minor"
+    },
+    {
+      "seat": "panel-consensus",
+      "finding": "worked-invoice's self-referential conceit framing ('This page is an invoice.' / 'typeset on the product's own paper') costs one beat of interpretation before value lands (advisory)",
+      "severity": "minor"
+    },
+    {
+      "seat": "panel-minority",
+      "finding": "worked-invoice's LIVE/BETA boxed tags and solid blue CTA buttons sit in tension with its declared 'no badges / no marketing chrome' break - read by 3 of 5 jurors as minor undeclared drift (criterion-8 scores 8/8/8/8/7)",
+      "severity": "minor"
+    },
+    {
+      "seat": "panel-consensus",
+      "finding": "driveway-to-paid places price last after the six-step story - the subscription-skeptic's first question is answered at the bottom (advisory)",
+      "severity": "minor"
+    }
+  ],
+  "aggregation": {
+    "contract": "PREREG-RUBRIC-saas-marketing.md (sealed 2026-07-26, incl. Amendment C1): criterion median of 5 blind jurors, overall = median of 10 criterion medians, no means/weights; registerFitPanel here = per-juror overall medians; winner tie-break per jurors/TIEBREAK.md (E1's hierarchy unchanged, resolved at stage (a)); 9+ medians read as strong-owner-verify, never achieved distinctive excellence",
+    "weightedScores": {
+      "worked-invoice": 9,
+      "driveway-to-paid": 8,
+      "fair-quote": 9
+    },
+    "guardOutcome": "new design, no incumbent; every shipped HARD gate green + 4/4 mutant ritual precondition met; top-2 tie (9.0/9.0) broken by E1's declared mechanical protocol at stage (a) min-criterion-median 8 vs 7; PASS bar met by winner and is tie-invariant"
+  },
+  "winner": "worked-invoice",
+  "registerSafeGrafts": [
+    "fair-quote's quotation-card opening - price, limits, VAT note, and trial terms complete in the first screenful - as the worked invoice's document-meta region (advisory graft idea from panel rationales)",
+    "a closing CTA at the end of the evidence path (the panel's conversion-path finding against fair-quote; worked-invoice already carries two but its second sits mid-document)"
+  ],
+  "rejectedGrafts": [],
+  "rejectedDirections": [],
+  "ownerVerdict": null
+}

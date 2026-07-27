@@ -1,0 +1,36 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local/Temp/claude/C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-lucid-khayyam-0ee868/8260afeb-43b9-4328-9a3f-67a43fdc37d9/scratchpad/e3-mutants/m2/index.html",
+  "pass": false,
+  "allowedNumbers": 15,
+  "blocks": 14,
+  "findings": [
+    {
+      "severity": "HIGH",
+      "kind": "FABRICATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "invented money \"$2,387\" (=2387) not in data or derived constants — …1 user. Typical month billed: $2,387. £9 / month Crew Unlimited…"
+    },
+    {
+      "severity": "HIGH",
+      "kind": "ASSOCIATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "money \"$2,387\" (=2387) inside [data-model=\"pricing\"] is not that block's figure — …1 user. Typical month billed: $2,387. £9 / month Crew Unlimited…"
+    },
+    {
+      "severity": "HIGH",
+      "kind": "ASSOCIATION",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "money \"$2,387\" (=2387) inside [data-model=\"tier-solo\"] is not that block's figure — …1 user. Typical month billed: $2,387. £9 / month…"
+    }
+  ]
+}

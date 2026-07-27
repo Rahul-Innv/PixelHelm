@@ -1,0 +1,123 @@
+{
+  "project": "e3-arm-driveway-to-paid",
+  "root": "../arms/driveway-to-paid",
+  "_rootNote": "relative to this profile's directory (repo-portable; no user-absolute path)",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file arm: raw hex is legal only inside the two token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "ground": "#f6f7f4",
+      "ink": "#1c2b45",
+      "muted": "#4d5c74",
+      "amber": "#8a6200",
+      "paid": "#2c6e4b",
+      "rule": "#71808f",
+      "cta-bg": "#1c2b45",
+      "cta-ink": "#f6f7f4"
+    },
+    "dark": {
+      "ground": "#131b2a",
+      "ink": "#e8ecf3",
+      "muted": "#a3b0c5",
+      "amber": "#e0b34a",
+      "paid": "#8bc9a4",
+      "rule": "#66788f",
+      "cta-bg": "#e0b34a",
+      "cta-ink": "#131b2a"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "amber",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "paid",
+      "on": [
+        "ground"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "cta-ink",
+      "on": [
+        "cta-bg"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "ground"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "marketing",
+  "_register": "plain-spoken, tradesperson-respecting, zero startup hype; every claim traces to the sealed data file."
+}

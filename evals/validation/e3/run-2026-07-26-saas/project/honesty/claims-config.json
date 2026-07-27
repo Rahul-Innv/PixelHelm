@@ -1,0 +1,39 @@
+{
+  "_note": "Gate A (derived-claims) config for the E3 Ledgerline arms. Root is the project dir; --target selects the arm HTML. Verdict word LIVE binds the shipped/beta integration-status trap; the provisional binding enforces the pilot-claim basis in both modes.",
+  "root": "..",
+  "target": "arms/worked-invoice/index.html",
+  "dataFiles": ["data/ledgerline.json"],
+  "derivedFile": "data/derived.json",
+  "extractNumbersFromStrings": true,
+  "globalAllow": [],
+  "modelBlockAttr": "data-model",
+  "perBlockMoneyScopes": {
+    "modelsPath": "models",
+    "keyField": "id",
+    "moneySetField": "moneySet",
+    "moneyFields": [],
+    "moneyArrayFields": [],
+    "globalAllowPath": "globalAllow"
+  },
+  "verdict": {
+    "word": "LIVE",
+    "negationWindow": 30,
+    "negators": ["never", "not", "false", "no"],
+    "statusField": "status",
+    "positiveStatus": "shipped",
+    "provisional": {
+      "status": "estimate",
+      "markerPattern": "internal estimate",
+      "negationPattern": "n\\s?=\\s?11|11 pilot users"
+    }
+  },
+  "numericContexts": { "money": true, "percent": true, "count": true, "days": true },
+  "extraNumericContexts": [
+    { "kind": "gbp", "pattern": "£\\s?(\\d[\\d,]*(?:\\.\\d{1,2})?)", "group": 1 },
+    { "kind": "hours", "pattern": "(\\d+(?:\\.\\d+)?)\\s?hours?\\b", "group": 1 },
+    { "kind": "seconds", "pattern": "(\\d+)[-\\s]?seconds?\\b", "group": 1 },
+    { "kind": "clock", "pattern": "(\\d{1,2})\\s?(?:am|pm)\\b", "flags": "i", "group": 1 }
+  ],
+  "darkAttr": "data-theme",
+  "modes": ["light", "dark"]
+}

@@ -1,0 +1,18 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\AppData\\Local/Temp/claude/C--Users-krahu-Documents-Workbench-Projects-PixelHelm--claude-worktrees-lucid-khayyam-0ee868/8260afeb-43b9-4328-9a3f-67a43fdc37d9/scratchpad/e3-mutants/m3/index.html",
+  "pass": false,
+  "allowedNumbers": 15,
+  "blocks": 14,
+  "findings": [
+    {
+      "severity": "CRITICAL",
+      "kind": "VERDICT",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "message": "un-negated \"LIVE\" inside non-shipped block [data-model=\"int-quickbooks\"] — …QuickBooks export LIVE Still in beta — we won't sel…"
+    }
+  ]
+}

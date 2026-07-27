@@ -1,0 +1,311 @@
+{
+  "aggregation": "per-criterion median of 5 jurors; overall = median of the 10 criterion medians (registered); Amendment C1: 9+ medians read as strong-owner-verify",
+  "arms": {
+    "worked-invoice": {
+      "criterionScores": {
+        "1": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "6": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          7,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 9.0,
+      "minCriterionMedian": 8,
+      "strongOwnerVerifySignals_C1": [
+        "2",
+        "3",
+        "5",
+        "6",
+        "7",
+        "9"
+      ]
+    },
+    "driveway-to-paid": {
+      "criterionScores": {
+        "1": [
+          7,
+          8,
+          8,
+          8,
+          8
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "4": [
+          7,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "8": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "9": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          7,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 9,
+        "7": 8,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 8.0,
+      "minCriterionMedian": 8,
+      "strongOwnerVerifySignals_C1": [
+        "2",
+        "6",
+        "8",
+        "9"
+      ]
+    },
+    "fair-quote": {
+      "criterionScores": {
+        "1": [
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          7,
+          7,
+          7,
+          8,
+          8
+        ],
+        "4": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          9,
+          9,
+          9,
+          10,
+          10
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          9,
+          9
+        ],
+        "8": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 7,
+        "2": 9,
+        "3": 7,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 8,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "overallMedian": 9.0,
+      "minCriterionMedian": 7,
+      "strongOwnerVerifySignals_C1": [
+        "2",
+        "4",
+        "6",
+        "8",
+        "9",
+        "10"
+      ]
+    }
+  },
+  "ranking": [
+    {
+      "arm": "worked-invoice",
+      "overallMedian": 9.0
+    },
+    {
+      "arm": "fair-quote",
+      "overallMedian": 9.0
+    },
+    {
+      "arm": "driveway-to-paid",
+      "overallMedian": 8.0
+    }
+  ],
+  "winner": {
+    "tie": [
+      "worked-invoice",
+      "fair-quote"
+    ]
+  }
+}

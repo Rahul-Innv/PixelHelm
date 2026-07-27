@@ -1,0 +1,42 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-26T23:27:43.445Z",
+  "targets": [
+    {
+      "target": "evals/validation/e3/run-2026-07-26-saas/project/arms/fair-quote/index.html",
+      "findings": [
+        {
+          "level": "pass",
+          "id": "landmark-main",
+          "msg": "exactly one main landmark"
+        },
+        {
+          "level": "warn",
+          "id": "landmark-aux",
+          "msg": "no nav landmark(s) — confirm the page genuinely has no banner/navigation/footer content"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "pass",
+          "id": "heading-order",
+          "msg": "no skipped levels across 4 heading(s)"
+        },
+        {
+          "level": "pass",
+          "id": "heading-impostor",
+          "msg": "no self-declared section-title divs"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (222 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

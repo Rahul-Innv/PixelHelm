@@ -1,0 +1,37 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-26",
+  "project": "e3-ledgerline",
+  "surface": "saas-marketing",
+  "intent": "E3 validation run (SaaS/product-marketing archetype) - one full evidenced loop on the sealed Ledgerline brief; transfer test, no E2 divergence measurement (E1-only)",
+  "edition": "lite",
+  "workerModel": "claude-fable-5",
+  "skillsFired": [
+    "pixelhelm-choicegate",
+    "pixelhelm-loop",
+    "pixelhelm-ground",
+    "pixelhelm-generate",
+    "pixelhelm-render",
+    "pixelhelm-evaluate",
+    "pixelhelm-judge"
+  ],
+  "engines": [],
+  "council": {
+    "pass": "deep",
+    "seats": 5,
+    "registerJurors": 5
+  },
+  "iterations": 0,
+  "renders": {
+    "items": 3,
+    "cells": 12
+  },
+  "tokens": {
+    "subagentsMeasured": 371254,
+    "workflowsMeasured": 0,
+    "note": "measured-only; main-context usage is not observable in-session"
+  },
+  "wallClockMinutes": 36,
+  "outcome": "needs-human-review",
+  "notes": "All HARD gates green x3 arms; 4/4 mutant ritual; panel top tie 9.0/9.0 broken per TIEBREAK.md (E1 hierarchy, stage (a)) -> winner worked-invoice, PASS bar met (tie-invariant); Amendment C1 binds: all 9.0 medians read as strong-owner-verify; repair not triggered (no Layer-1 fail, no blocker); owner sign-off pending (signoff@1 deliberately not written)."
+}
