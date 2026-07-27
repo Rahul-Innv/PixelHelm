@@ -46,7 +46,12 @@ docs, or the owner's own site. Nothing here may be upgraded by enthusiasm.
    evidence of excellence; it is the seat's default.
 3. **Owner-verified quality is materially lower than panel-reported quality.**
    On the same artifacts the owner scored 6, 6, 7 and 8.5 where the panel
-   scored 9, 9, 9 and green. Recorded owner findings: outputs did not read as
+   scored 9, 9, 9 and green. The capability ledger records the deltas as -1,
+   -3, -3 and -2 against panel winner medians of 9.0: **every measurable
+   owner-vs-panel delta is negative, on every archetype measured.** Two of the
+   owner's bands were stated as upper bounds ("a maximum 6", "none above 6"),
+   so the -3s are floors on the gap, not measurements of it — the true gap may
+   be larger and is not known. Recorded owner findings: outputs did not read as
    their archetype ("this is not SaaS design"), a house style repeated across
    arms and archetypes despite divergence metrics passing, in-use usability was
    consistently weak, and copy carried AI voice tells.
