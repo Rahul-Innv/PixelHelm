@@ -73,6 +73,9 @@ merge.
   jurors; the floor battery caught 4/4 plants deterministically). Standing
   consequence, in force: **the model judging seat is advisory-only until
   repaired; no Tier-3 claim may rest on internal scores alone; the machine
-  floor's authority is strengthened.** Repair direction is an open owner
-  decision (REPORT.md lists candidates).
+  floor's authority is strengthened.** Repair direction DECIDED by the owner
+  2026-07-27 (both candidates: floor-clean as a hard precondition for esteem
+  scoring, and panels receive the floor outputs) — see
+  `E4-JUDGING-SEAT-REPAIR-DECISION.md`. The demotion stays in force until
+  **E4-R** re-runs the sealed protocol with the repair applied and fresh plants.
 - E5 human protocol: defined in artifact 14; owner-gated (recruitment).
