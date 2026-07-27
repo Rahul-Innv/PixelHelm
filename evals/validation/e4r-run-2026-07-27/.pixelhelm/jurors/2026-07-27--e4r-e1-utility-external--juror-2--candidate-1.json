@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 9,
+    "4": 7,
+    "5": 6,
+    "6": 6,
+    "7": 6,
+    "8": 7,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The count headline, the plain summary sentence, and the closure alert all sit within the first mobile viewport, so the day's answer arrives without interaction.",
+    "2": "Open, caution, closed, and unreported each get a distinct treatment plus a text label, so nothing depends on color alone, but open is left as unstyled text and the dotted underline on no report reads like a link.",
+    "3": "Unreported trails say no report on file and the footer states outright that they are never assumed open or closed; the null day, the estimated snowpack, and per-trail report times are all explicit.",
+    "4": "Order is stated and then followed from open through unreported, and the prose stays plain and calm, but the seven-day weather is presented twice in two different forms.",
+    "5": "Type hierarchy and palette are restrained, yet a large unexplained empty band sits between the hero and the list on desktop and the status labels float far right of the trail names they belong to.",
+    "6": "All the awkward data sits without breakage, but the desktop void, the holed mobile weather grid where the null day has no value row, and a faint duplicated footer band at the top of the dark render leave it less than fully resolved.",
+    "7": "Stating the day's count as a broadsheet lede is a real idea and true of a conditions service, but only the hero carries it and the rest of the page reverts to an ordinary list.",
+    "8": "Mechanics stay conventional and the oversized serif count is a single brand-layer break, though the dotted-underline status creates a false link affordance in the mechanics layer.",
+    "9": "Lines like never assumed open or closed and the Worth Knowing heading are authored and specific while staying factual.",
+    "10": "The day's number is the first thing a returning reader sees and nothing is playful or blocking, but the empty desktop band is scrolled past every visit."
+  },
+  "inputTranscriptSha256": "7857e5d970a131d5f2d224f1ae1d58eb3a87f445ecb4eb6bb0443a37c453436e",
+  "shuffleSeed": 202607712
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 6,
+    "8": 7,
+    "9": 6,
+    "10": 6
+  },
+  "rationales": {
+    "1": "Price and stock are clean and consistent on every row, but the list is not grouped by season and its ordering follows no logic a shopper can see. Season fit survives only as the smallest microtext on each row, leaving the filter to do all the work.",
+    "2": "Every commerce mechanic is conventional, from price and stock placement to the quantity field and add-to-basket button with delivery terms beneath. The money path carries no invention at all.",
+    "3": "Out of stock, the flagged estimate, the request-to-ask treatment of the null price, and the shipping limit are all present and visible before purchase intent. The shipping line is set small and centred, which is the weakest placement of the three.",
+    "4": "A single comfortable column gives a good measure and generous product-page targets, with no hover-dependent information. The numbering markers and the meta line are set small for older readers at default zoom.",
+    "5": "This is the most disciplined system of the three, with consistent rules, restrained palette, and steady rhythm across both surfaces, and the numbered marker carries through to the product page. Only the very narrow centred column at desktop width leaves the layout feeling under-used.",
+    "6": "The year table, difficulty line, potting-shed notes, and companion listings give a first-time gardener a complete basis for deciding without leaving the page. The arrangement is calm and easy to follow.",
+    "7": "Reading slowly and choosing well is a real gesture, but the numbered annual is the only device carrying it and the numbers mean nothing the shopper can act on. Provenance and service culture are stated in one line rather than built into the structure.",
+    "8": "Nothing checkout-adjacent is broken and the restraint is total. The novelty budget is essentially unspent, so there is little in the brand layer to confine.",
+    "9": "The line about two people keeping the list and growing every variety themselves is genuinely warm and specific. The rest of the page is unannotated catalogue copy, so the voice appears once and then goes quiet.",
+    "10": "The month filter answers what can be sown now, and the two surfaces cohere well through the shared numbering. With no seasonal grouping and no recency signal, a repeat visitor checking what is newly in or in season is served least well here."
+  },
+  "inputTranscriptSha256": "9a152c39d272ed6a07e29f63a2f5be58c54ff508a46a20332c086b546e15bec6",
+  "shuffleSeed": 202607724
+}

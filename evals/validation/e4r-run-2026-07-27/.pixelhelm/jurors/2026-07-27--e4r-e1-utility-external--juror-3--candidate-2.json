@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The mobile first viewport carries the full count sentence and the ranger's notice without interaction. The answer sits in body-weight text under a masthead that spends the top of the screen on brand, so it reads a beat slower than a display headline.",
+    "2": "Every entry carries the same bordered chip in the same position, with one hue and one word per status and a distinct grey for no report. The chips are low in visual weight relative to the entry names, but they never change meaning or rendering.",
+    "3": "No report received and condition unknown appear on both unreported entries, the null day is printed as not recorded, and the snowpack carries an estimated badge with its sensor-offline reason. Posting time, per-entry report times and a generated-at line make the data age explicit throughout.",
+    "4": "The order runs status summary, notice, log grouped open through no report, then conditions, matching the decision a hiker makes. Language is plain and objective, with the entry codes framed as log references rather than jargon.",
+    "5": "Dotted leaders, consistent rule weights, a disciplined three-size hierarchy and one paper-and-ink palette with four status hues leave very little arbitrary. The single narrow column leaves most of the desktop width empty, which suits the conceit but wastes the canvas.",
+    "6": "Long names absorb into the leaders, the burn cluster and both unreported entries sit cleanly, and both modes are fully resolved. On mobile the snowpack value splits from its unit across a line break and the estimated badge drops to its own line.",
+    "7": "The signature is that the page is the ranger's log itself, and paper, serif, entry numbers, posting time and the closing end-of-log line all reinforce it. It is congruent with a trail-conditions service, whose source of truth genuinely is a ranger's morning report.",
+    "8": "The mechanics layer is untouched, a plain document with conventional headings and reading order. The two breaks, the log skin and the leader-dotted entry line, sit entirely in the brand layer and both serve the signature.",
+    "9": "Morning log, log continues below, and end of log build a register no competitor page could publish unchanged, while staying entirely calm and factual. The voice never becomes decorative at the expense of the numbers.",
+    "10": "A dated entry posted each morning is precisely the artifact a daily glance returns to, with no playful gate and no motion. The cost is that the answer is a sentence to read rather than a figure to see."
+  },
+  "inputTranscriptSha256": "2308fef005c6835dd73b477bcb7d278bdbf93e3d42acfaa8e36d259495ac7a69",
+  "shuffleSeed": 202607713
+}

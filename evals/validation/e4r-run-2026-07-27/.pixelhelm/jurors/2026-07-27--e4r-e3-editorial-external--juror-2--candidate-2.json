@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lead states the whole finding in plain numbers, a how-to-read key precedes the rail, and every mark on every line is printed alongside as a figure, so the record reads as text without decoding anything.",
+    "2": "The rail is named and described by its finding and missing years hold their place as hatched lines, but season totals are drawn as bars from a 550 baseline, which stretches a 24 percent range across most of the track; the non-zero scale is disclosed twice, yet bar length still overstates the difference.",
+    "3": "The strongest honesty surface of the set: nulls are hatched rows carrying their own reasons, the instrument change is a structural break in the rail so the boundary is crossed on the page itself, and the hollow 2019 dot carries its unverified caption inline in every view including mobile.",
+    "4": "The register is patient and almanac-like and the two logged quotes sit at their own years inside the rail where they serve the data; between rail blocks the reporting thins to short connective passages.",
+    "5": "The calmest setting of the set, with a wide measure, consistent line rhythm, and era headers that break the length; on mobile each year splits into two stacked tracks and keeps everything on screen, though on desktop the onset shelf and the total bar can read as one continuous strip.",
+    "6": "Fully static and readable top to bottom, with the rail rewarding ordinary scrolling rather than pacing the reader through it.",
+    "7": "One sentence carries it, thirty-four years read line by line like the almanac the valley kept, and the form is the journalism, since the drift is felt as the dots migrate rightward and the bars lengthen down the page.",
+    "8": "Exactly one deliberate break, the chart collapsed into the record itself, with reading mechanics left entirely conventional.",
+    "9": "Local, unsensational and particular, with lines about the dots edging rightward and the bars a shade longer each wet year than the valley had been used to that no other paper would run unchanged.",
+    "10": "Nothing is effect: the rail, the hatched gaps, and the hollow dot each exist because the dataset has onsets, missing seasons, and one unverified reading."
+  },
+  "inputTranscriptSha256": "1635e99af13ab9a4dc3420d9581a53da52893453aa5147bce445c655c11fe8ee",
+  "shuffleSeed": 202607727
+}

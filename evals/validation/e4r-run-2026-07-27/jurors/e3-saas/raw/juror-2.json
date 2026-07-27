@@ -1,0 +1,101 @@
+{
+  "juror": "juror-2",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 7,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 7,
+        "9": 9,
+        "10": 6
+      },
+      "rationales": {
+        "1": "The first screenful carries only a small eyebrow line and then drops straight into step one, so what the product is and who it is for must be inferred rather than read. The opening step does eventually say it, but the value proposition is never stated as a proposition.",
+        "2": "Every claim is stated plainly with no promotional adjectives, and the pilot number arrives with its basis attached. Restraint is consistent from top to bottom.",
+        "3": "The trial offer is honest and the pricing is transparent with the VAT note beside it, and nothing nags. Both modes bury the price at the far end of a long scroll, which costs a skeptic time before the decision.",
+        "4": "The six-step afternoon is structured exactly the way the work happens and reads cleanly in a single phone column. Trade language throughout with no startup idiom.",
+        "5": "Spacing rhythm, rule weights and type hierarchy are consistent and the palette is tight. The step numerals alternate gold and green with no discernible rule, which reads arbitrary against the rest of the discipline.",
+        "6": "The beta integration is badged and explained, the pilot figure is labeled an internal estimate and not a certified fact, and one product claim is marked as behavior rather than promise. The customer quote is attributed but never labeled as unverified.",
+        "7": "The signature is the afternoon told in six ordered steps, and content and layout do reinforce it. The page narrates the promise rather than demonstrating it, so the idea stays descriptive.",
+        "8": "Mechanics stay conventional and there is a single deliberate break, the missing hero. That break is paid for in comprehension rather than in the brand layer alone.",
+        "9": "Leaving the driveway, the warm ladder and the merchant's car park are lines no competitor could lift unchanged. Specific, unhyped and written from inside the trade.",
+        "10": "The product sells reclaimed time, but the page asks for six full sections before it will show a price. Form works against the pitch on the phone in particular."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline states the conceit and the FOR line immediately names the audience and the job, so the first screenful resolves what and who without scrolling. The terms line also answers the money question up front.",
+        "2": "Claims are stated as line items with their bases attached and there is no marketese anywhere. The evidence section separates what is measured from what is simply how the product works.",
+        "3": "The trial offer appears in the hero terms and again at the total, the free-trial language is qualified honestly, and the VAT note sits directly under both prices. Nothing pressures the reader.",
+        "4": "Presenting the pitch in the shape of a document this audience reads every week is a genuine mental-model match. Plain trade language throughout.",
+        "5": "The monospaced labels, ruled rows and single accent give a coherent system, and the alignment holds across both widths. The centered narrow column leaves the desktop width underused.",
+        "6": "The beta is badged and explicitly not sold as finished, and the pilot figure carries its sample size and its limits. The customer quote is attributed but not flagged as unverified.",
+        "7": "One sentence, the page is an invoice, and the structure, labels, totals and stamp all enact it rather than assert it. The pitch is delivered on the product's own paper.",
+        "8": "The mechanics are entirely conventional and the single break is the document framing, which lives purely in the brand layer. The stamp is the only other flourish and it earns its place.",
+        "9": "Reading it the way you would read your own paperwork, and walking away owing nothing, are lines with a specific point of view. Slightly less trade-textured than the strongest voice here.",
+        "10": "Terms are answered in the hero and the total sits mid-page, so a decision is available quickly and nothing is performative. The line-item block is a little long before the price arrives."
+      }
+    },
+    "candidate-3": {
+      "unscored": true,
+      "failingGate": "output-floor-gate",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 9,
+        "3": 8,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The first screenful delivers price, plan limits, trial terms and a call to action immediately, which answers the commercial question fast. What the product actually does is carried only by the eyebrow line at this point and arrives properly one section later.",
+        "2": "Leading with the caps, the exclusions and the unfinished integration before any benefit is the strongest possible restraint signal, and every claim traces to a stated basis. No promotional language survives anywhere on the page.",
+        "3": "Pricing is the first thing offered, the VAT note appears both beside the prices and again in the small print, and the trial terms are stated without an asterisk. Only one call to action exists on a fairly long page.",
+        "4": "Framing the page as a quote the reader must judge speaks directly to a subscription-skeptic who writes quotes for a living. Language is trade-native throughout with no startup idiom.",
+        "5": "The two-column hero uses the desktop width well, the serif display against sans body gives a clear three-size hierarchy, and the accent is used sparingly. The small-print grid leaves an uneven gap in its second row.",
+        "6": "The beta is named in the terms, badged in the integration list, cross-referenced between the two, and paired with advice not to sign up for it. The pilot figure is labeled an internal estimate and not independently verified, though the customer quote is not flagged as unverified.",
+        "7": "The signature is that the page gives you a quote the way you would give one, and price-first structure, small print and closing case all reinforce it. The conceit is slightly less complete than the strongest one here because the case section reverts to a conventional feature grid.",
+        "8": "Mechanics are conventional and the deliberate breaks are the price-first inversion and the enlarged small print, both confined to the brand layer. Two breaks is at the stated limit but each is purposeful.",
+        "9": "Never taking a job without giving one, no asterisk because there is not one to hide, and not a chat widget pretending to be human are unmistakably this writer. Specific, unhyped and respectful of the reader.",
+        "10": "The page respects the reader's time by putting the decision in the first screenful and the caveats immediately after, with nothing performative anywhere. Form enacts the pitch more directly than any other candidate here."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-4",
+    "candidate-2",
+    "candidate-1"
+  ]
+}

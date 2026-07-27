@@ -1,0 +1,363 @@
+{
+  "_script": "evals/validation/e4r-run-2026-07-27/stats/compute-e4r-stats.mjs",
+  "_protocol": [
+    "evals/validation/PREREG-E4-CALIBRATION.md (sealed, untouched)",
+    "evals/validation/PREREG-E4R-ADDENDUM.md (sealed before any plant was authored)"
+  ],
+  "registered": {
+    "tauThreshold": ">= 0.5",
+    "inflationBound": "|inflation| <= 1.5",
+    "plantCriterion": "every plant caught: wins no set AND defect class surfaced by >=1 juror or the floor battery"
+  },
+  "tau": {
+    "n0": 12,
+    "concordant": 2,
+    "discordant": 0,
+    "tiedInternal_n1": 8,
+    "tiedExternal_n2": 5,
+    "formula": "(C - D) / sqrt((n0 - n1) * (n0 - n2))",
+    "tauB": 0.3779644730092272
+  },
+  "inflation": {
+    "terms": 12,
+    "mean": 0.875
+  },
+  "verdicts": {
+    "tauPass": false,
+    "inflationPass": true,
+    "everyPlantCaught": true,
+    "anyPlantWins": false,
+    "anyPlantTiedForTop": false,
+    "overallSuccess": false
+  },
+  "perSet": {
+    "e1-utility": {
+      "internalSource": "evals/validation/e1/run-2026-07-26/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/panel-results.json",
+      "pairs": [
+        {
+          "pair": "trail-ledger vs status-board",
+          "internalDiff": 1,
+          "externalDiff": 0,
+          "class": "tied-external"
+        },
+        {
+          "pair": "trail-ledger vs first-light",
+          "internalDiff": 0,
+          "externalDiff": 0,
+          "class": "tied-both"
+        },
+        {
+          "pair": "status-board vs first-light",
+          "internalDiff": -1,
+          "externalDiff": 0,
+          "class": "tied-external"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "trail-ledger",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "status-board",
+          "internal": 8,
+          "external": 8,
+          "term": 0
+        },
+        {
+          "candidate": "first-light",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        }
+      ],
+      "plant": {
+        "name": "stone-steps",
+        "registeredDefectClass": "reflow: page-level horizontal overflow at narrow width (WCAG 2.2 1.4.10)",
+        "floorBattery": {
+          "artifact": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/gates/battery.json",
+          "hardFails": [
+            "verify_responsive"
+          ],
+          "caughtByFloor": true
+        },
+        "r1": {
+          "unscored": true,
+          "gate": "verify_responsive",
+          "inExternalRanking": false,
+          "winsSet": false,
+          "tiedForTop": false
+        },
+        "seatEvidence": {
+          "_note": "R2 evidence about the judging seat: whether each juror, handed the failing gate outputs, independently refused to score the candidate. Reported, never used to decide the criterion.",
+          "jurorsHonoringPrecondition": "5/5",
+          "jurorsNamingTheFailingGate": "5/5"
+        },
+        "caught": true
+      },
+      "externalAggregateRanking": [
+        {
+          "candidate": "first-light",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "status-board",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "trail-ledger",
+          "overallMedian": 8
+        }
+      ]
+    },
+    "e3-saas": {
+      "internalSource": "evals/validation/e3/run-2026-07-26-saas/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/panel-results.json",
+      "pairs": [
+        {
+          "pair": "worked-invoice vs fair-quote",
+          "internalDiff": 0,
+          "externalDiff": -0.5,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "worked-invoice vs driveway-to-paid",
+          "internalDiff": 1,
+          "externalDiff": 1,
+          "class": "concordant"
+        },
+        {
+          "pair": "fair-quote vs driveway-to-paid",
+          "internalDiff": 1,
+          "externalDiff": 1.5,
+          "class": "concordant"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "worked-invoice",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "fair-quote",
+          "internal": 9,
+          "external": 8.5,
+          "term": 0.5
+        },
+        {
+          "candidate": "driveway-to-paid",
+          "internal": 8,
+          "external": 7,
+          "term": 1
+        }
+      ],
+      "plant": {
+        "name": "job-sheet",
+        "registeredDefectClass": "structural output floor: no main landmark, heading-order skip, styled heading impostors",
+        "floorBattery": {
+          "artifact": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/gates/battery.json",
+          "hardFails": [
+            "output-floor-gate"
+          ],
+          "caughtByFloor": true
+        },
+        "r1": {
+          "unscored": true,
+          "gate": "output-floor-gate",
+          "inExternalRanking": false,
+          "winsSet": false,
+          "tiedForTop": false
+        },
+        "seatEvidence": {
+          "_note": "R2 evidence about the judging seat: whether each juror, handed the failing gate outputs, independently refused to score the candidate. Reported, never used to decide the criterion.",
+          "jurorsHonoringPrecondition": "5/5",
+          "jurorsNamingTheFailingGate": "5/5"
+        },
+        "caught": true
+      },
+      "externalAggregateRanking": [
+        {
+          "candidate": "fair-quote",
+          "overallMedian": 8.5
+        },
+        {
+          "candidate": "worked-invoice",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "driveway-to-paid",
+          "overallMedian": 7
+        }
+      ]
+    },
+    "e3-commerce": {
+      "internalSource": "evals/validation/e3/run-2026-07-26/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/panel-results.json",
+      "pairs": [
+        {
+          "pair": "packet-rack vs sowing-almanac",
+          "internalDiff": 0,
+          "externalDiff": 0,
+          "class": "tied-both"
+        },
+        {
+          "pair": "packet-rack vs seed-annual",
+          "internalDiff": 0,
+          "externalDiff": 1,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "sowing-almanac vs seed-annual",
+          "internalDiff": 0,
+          "externalDiff": 1,
+          "class": "tied-internal"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "packet-rack",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "sowing-almanac",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "seed-annual",
+          "internal": 9,
+          "external": 7,
+          "term": 2
+        }
+      ],
+      "plant": {
+        "name": "glass-house",
+        "registeredDefectClass": "keyboard trap: modal dialog that Escape does not close and that never restores focus (WCAG 2.1.2)",
+        "floorBattery": {
+          "artifact": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/gates/battery.json",
+          "hardFails": [
+            "verify_focustrap-catalog"
+          ],
+          "caughtByFloor": true
+        },
+        "r1": {
+          "unscored": true,
+          "gate": "verify_focustrap",
+          "inExternalRanking": false,
+          "winsSet": false,
+          "tiedForTop": false
+        },
+        "seatEvidence": {
+          "_note": "R2 evidence about the judging seat: whether each juror, handed the failing gate outputs, independently refused to score the candidate. Reported, never used to decide the criterion.",
+          "jurorsHonoringPrecondition": "5/5",
+          "jurorsNamingTheFailingGate": "5/5"
+        },
+        "caught": true
+      },
+      "externalAggregateRanking": [
+        {
+          "candidate": "packet-rack",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "sowing-almanac",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "seed-annual",
+          "overallMedian": 7
+        }
+      ]
+    },
+    "e3-editorial": {
+      "internalSource": "evals/validation/e3/run-2026-07-26-editorial/jurors/panel-results.json",
+      "externalSource": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/panel-results.json",
+      "pairs": [
+        {
+          "pair": "almanac-rail vs weir-plates",
+          "internalDiff": 0,
+          "externalDiff": 1,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "almanac-rail vs two-inks",
+          "internalDiff": 0,
+          "externalDiff": 1,
+          "class": "tied-internal"
+        },
+        {
+          "pair": "weir-plates vs two-inks",
+          "internalDiff": 0,
+          "externalDiff": 0,
+          "class": "tied-both"
+        }
+      ],
+      "inflationTerms": [
+        {
+          "candidate": "almanac-rail",
+          "internal": 9,
+          "external": 9,
+          "term": 0
+        },
+        {
+          "candidate": "weir-plates",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        },
+        {
+          "candidate": "two-inks",
+          "internal": 9,
+          "external": 8,
+          "term": 1
+        }
+      ],
+      "plant": {
+        "name": "gauge-house",
+        "registeredDefectClass": "real-render interactive STATE contrast below threshold in hover and focus (WCAG 1.4.3 / 1.4.11)",
+        "floorBattery": {
+          "artifact": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/gates/battery.json",
+          "hardFails": [
+            "verify_states"
+          ],
+          "caughtByFloor": true
+        },
+        "r1": {
+          "unscored": true,
+          "gate": "verify_states",
+          "inExternalRanking": false,
+          "winsSet": false,
+          "tiedForTop": false
+        },
+        "seatEvidence": {
+          "_note": "R2 evidence about the judging seat: whether each juror, handed the failing gate outputs, independently refused to score the candidate. Reported, never used to decide the criterion.",
+          "jurorsHonoringPrecondition": "5/5",
+          "jurorsNamingTheFailingGate": "5/5"
+        },
+        "caught": true
+      },
+      "externalAggregateRanking": [
+        {
+          "candidate": "almanac-rail",
+          "overallMedian": 9
+        },
+        {
+          "candidate": "two-inks",
+          "overallMedian": 8
+        },
+        {
+          "candidate": "weir-plates",
+          "overallMedian": 8
+        }
+      ]
+    }
+  }
+}

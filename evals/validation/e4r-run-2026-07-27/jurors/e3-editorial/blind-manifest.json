@@ -1,0 +1,576 @@
+{
+  "set": "e3-editorial",
+  "_note": "Every neutral-label render copy is byte-identical to its committed source; both sha256 sums are recorded here.",
+  "jurors": {
+    "juror-1": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-1__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6",
+        "copySha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-1__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9",
+        "copySha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-1__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343",
+        "copySha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-1__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3",
+        "copySha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-2__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b",
+        "copySha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-2__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b",
+        "copySha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-2__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab",
+        "copySha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-2__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb",
+        "copySha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-3__desktop__light.png",
+        "sha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114",
+        "copySha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-3__desktop__dark.png",
+        "sha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa",
+        "copySha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-3__mobile__light.png",
+        "sha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871",
+        "copySha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-3__mobile__dark.png",
+        "sha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691",
+        "copySha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-4__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba",
+        "copySha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-4__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158",
+        "copySha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-4__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80",
+        "copySha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-1/candidate-4__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535",
+        "copySha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      }
+    ],
+    "juror-2": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-1__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba",
+        "copySha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-1__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158",
+        "copySha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-1__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80",
+        "copySha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-1__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535",
+        "copySha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-2__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6",
+        "copySha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-2__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9",
+        "copySha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-2__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343",
+        "copySha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-2__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3",
+        "copySha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-3__desktop__light.png",
+        "sha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114",
+        "copySha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-3__desktop__dark.png",
+        "sha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa",
+        "copySha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-3__mobile__light.png",
+        "sha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871",
+        "copySha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-3__mobile__dark.png",
+        "sha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691",
+        "copySha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-4__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b",
+        "copySha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-4__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b",
+        "copySha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-4__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab",
+        "copySha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-2/candidate-4__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb",
+        "copySha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      }
+    ],
+    "juror-3": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-1__desktop__light.png",
+        "sha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114",
+        "copySha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-1__desktop__dark.png",
+        "sha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa",
+        "copySha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-1__mobile__light.png",
+        "sha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871",
+        "copySha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-1__mobile__dark.png",
+        "sha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691",
+        "copySha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-2__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b",
+        "copySha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-2__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b",
+        "copySha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-2__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab",
+        "copySha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-2__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb",
+        "copySha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-3__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba",
+        "copySha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-3__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158",
+        "copySha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-3__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80",
+        "copySha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-3__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535",
+        "copySha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-4__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6",
+        "copySha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-4__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9",
+        "copySha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-4__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343",
+        "copySha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-3/candidate-4__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3",
+        "copySha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      }
+    ],
+    "juror-4": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-1__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6",
+        "copySha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-1__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9",
+        "copySha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-1__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343",
+        "copySha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-1__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3",
+        "copySha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-2__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b",
+        "copySha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-2__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b",
+        "copySha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-2__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab",
+        "copySha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-2__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb",
+        "copySha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-3__desktop__light.png",
+        "sha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114",
+        "copySha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-3__desktop__dark.png",
+        "sha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa",
+        "copySha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-3__mobile__light.png",
+        "sha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871",
+        "copySha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-3__mobile__dark.png",
+        "sha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691",
+        "copySha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-4__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba",
+        "copySha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-4__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158",
+        "copySha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-4__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80",
+        "copySha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-4/candidate-4__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535",
+        "copySha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      }
+    ],
+    "juror-5": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-1__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6",
+        "copySha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-1__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9",
+        "copySha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-1__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343",
+        "copySha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-1__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3",
+        "copySha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-2__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba",
+        "copySha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-2__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158",
+        "copySha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-2__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80",
+        "copySha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-2__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535",
+        "copySha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-3__desktop__light.png",
+        "sha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114",
+        "copySha256": "1118b302dcfc56f8c9a04e5ba99cdf09a1baf74bb61302f8ad7906a7f13c3114"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-3__desktop__dark.png",
+        "sha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa",
+        "copySha256": "e19bed516de54f2d1595a7f445aff9573e8274f01f93298535e86fc965176aaa"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-3__mobile__light.png",
+        "sha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871",
+        "copySha256": "6c3322cf741f5b9a599762ec339af6dee05495177e5fc86da516d9800b711871"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/renders/gauge-house__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-3__mobile__dark.png",
+        "sha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691",
+        "copySha256": "deaa11c58353b15d181cc9f3cbf924725079445b76d81e9d8eec82b14e3c8691"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-4__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b",
+        "copySha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-4__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b",
+        "copySha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-4__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab",
+        "copySha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "copy": "jurors-blind/e3-editorial/juror-5/candidate-4__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb",
+        "copySha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 5,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The counts line, the closure notice, the legend and the first open card all sit in the mobile first viewport without interaction. Colour-blocked cards make which trails answerable as fast as how many.",
+    "2": "Each status has a unique icon, a word, a hue and a legend entry, and that triple repeats identically in the counts line, the group headers and the card bands. Nothing depends on colour and no status ever changes rendering.",
+    "3": "The unreported trails get their own grey status rather than being omitted, the sparkline breaks with a dashed hollow marker at the null day, and the snowpack shows an estimated badge with its offline reason. Grey reads a little closer to inactive than to unknown, and there is no explicit statement that unreported never means open.",
+    "4": "Grouping by status with per-group counts, the notice above the fold and conditions at the end match the hiker's decision order. The copy is plain and objective but generically system-voiced.",
+    "5": "The card system, spacing scale, three-size hierarchy and legend-backed palette are consistently applied. Full-width colour bands spend roughly a hundred pixels of desktop height on a single word, and the caution, closed and no-report rows each leave conspicuous empty grid cells.",
+    "6": "Cards absorb long names and long notes, the burn cluster and both unreported rows sit without breakage, and the dark palette is genuinely retuned rather than reused. The trailing empty cells in three of the four groups are the only awkward emphasis.",
+    "7": "The signature is the trailhead board transposed to the screen, with the legend acting as the contract, and it is congruent with the archetype. It is also the most conventional idea in the set, closer to a well-executed status dashboard than to a distinctive one.",
+    "8": "Mechanics are entirely conventional and nothing is deliberately broken, which satisfies the restraint but spends none of the available brand-layer allowance. The result is safe rather than pointed.",
+    "9": "No report received from this trail, and value estimated from the valley station, are calm and factual but publishable unchanged by any parks dashboard. The raw ISO date in the snowpack note also breaks the date register used everywhere else on the page.",
+    "10": "The counts line and colour bands make the habitual daily glance close to instant, with nothing playful or blocking. The page is the longest of the set on mobile, so any return visit past the summary is a long scroll."
+  },
+  "inputTranscriptSha256": "2308fef005c6835dd73b477bcb7d278bdbf93e3d42acfaa8e36d259495ac7a69",
+  "shuffleSeed": 202607713
+}

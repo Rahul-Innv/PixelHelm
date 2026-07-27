@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 6,
+    "6": 8,
+    "7": 6,
+    "8": 8,
+    "9": 5,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The count line and the closure notice both sit in the first mobile viewport, so the network state and the active alert read immediately, but the tall colored cards mean the nine trails still take several screens to scan.",
+    "2": "Every status carries an icon, a word, and a color, repeated identically in the legend, the group headers, and the card band, so nothing depends on hue alone.",
+    "3": "Unreported trails get their own gray-banded cards rather than being dropped, the missing weather day is drawn as a dashed open marker labeled no data, and the snowpack value carries an estimated chip with the sensor-offline reason. Every card also shows its own last report time.",
+    "4": "Grouping runs open, then caution, then closed, then no report, with per-group counts, matching the order a hiker decides in, and the copy stays plain and factual throughout.",
+    "5": "The card system is consistent, but the large saturated status bands give closed and unreported trails as much visual weight as open ones, and unequal note lengths leave awkward empty gaps inside the open row.",
+    "6": "Long names, the two-trail burn cluster, and both unreported rows sit in the grid without breakage, and light and dark are both fully resolved, though short groups leave the three-column grid visibly half empty.",
+    "7": "The signature, a board where the status badge is the loudest thing on every trail, is coherent and appropriate to the archetype, but it stays close to a stock dashboard card grid rather than something only a trail service could have made.",
+    "8": "Mechanics are entirely conventional with nothing that fights platform expectations, and the novelty budget is essentially left unspent.",
+    "9": "The microcopy is correct but interchangeable; a line such as no report received from this trail could appear unchanged on any competitor's page.",
+    "10": "The counts line and the color bands make the habitual daily glance quick, and nothing playful or mandatory blocks a returning user, though the vertical bulk means scrolling on every visit."
+  },
+  "inputTranscriptSha256": "f735f1eda4e2fcb8a654298a2d94b467e971b1e3460dd0b424fb57d5f4dc16b2",
+  "shuffleSeed": 202607715
+}

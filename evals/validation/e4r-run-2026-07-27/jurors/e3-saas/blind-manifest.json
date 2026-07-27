@@ -1,0 +1,576 @@
+{
+  "set": "e3-saas",
+  "_note": "Every neutral-label render copy is byte-identical to its committed source; both sha256 sums are recorded here.",
+  "jurors": {
+    "juror-1": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-1__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa",
+        "copySha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-1__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a",
+        "copySha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-1__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493",
+        "copySha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-1__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777",
+        "copySha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-2__desktop__light.png",
+        "sha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018",
+        "copySha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-2__desktop__dark.png",
+        "sha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6",
+        "copySha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-2__mobile__light.png",
+        "sha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5",
+        "copySha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-2__mobile__dark.png",
+        "sha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483",
+        "copySha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-3__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f",
+        "copySha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-3__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1",
+        "copySha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-3__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f",
+        "copySha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-3__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a",
+        "copySha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-4__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522",
+        "copySha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-4__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e",
+        "copySha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-4__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914",
+        "copySha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-1/candidate-4__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf",
+        "copySha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      }
+    ],
+    "juror-2": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-1__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f",
+        "copySha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-1__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1",
+        "copySha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-1__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f",
+        "copySha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-1__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a",
+        "copySha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-2__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522",
+        "copySha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-2__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e",
+        "copySha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-2__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914",
+        "copySha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-2__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf",
+        "copySha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-3__desktop__light.png",
+        "sha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018",
+        "copySha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-3__desktop__dark.png",
+        "sha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6",
+        "copySha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-3__mobile__light.png",
+        "sha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5",
+        "copySha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-3__mobile__dark.png",
+        "sha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483",
+        "copySha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-4__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa",
+        "copySha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-4__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a",
+        "copySha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-4__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493",
+        "copySha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-2/candidate-4__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777",
+        "copySha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      }
+    ],
+    "juror-3": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-1__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa",
+        "copySha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-1__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a",
+        "copySha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-1__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493",
+        "copySha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-1__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777",
+        "copySha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-2__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522",
+        "copySha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-2__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e",
+        "copySha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-2__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914",
+        "copySha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-2__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf",
+        "copySha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-3__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f",
+        "copySha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-3__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1",
+        "copySha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-3__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f",
+        "copySha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-3__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a",
+        "copySha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-4__desktop__light.png",
+        "sha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018",
+        "copySha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-4__desktop__dark.png",
+        "sha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6",
+        "copySha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-4__mobile__light.png",
+        "sha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5",
+        "copySha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-3/candidate-4__mobile__dark.png",
+        "sha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483",
+        "copySha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483"
+      }
+    ],
+    "juror-4": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-1__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa",
+        "copySha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-1__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a",
+        "copySha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-1__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493",
+        "copySha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-1__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777",
+        "copySha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-2__desktop__light.png",
+        "sha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018",
+        "copySha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-2__desktop__dark.png",
+        "sha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6",
+        "copySha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-2__mobile__light.png",
+        "sha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5",
+        "copySha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-2__mobile__dark.png",
+        "sha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483",
+        "copySha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-3__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522",
+        "copySha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-3__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e",
+        "copySha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-3__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914",
+        "copySha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-3__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf",
+        "copySha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-4__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f",
+        "copySha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-4__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1",
+        "copySha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-4__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f",
+        "copySha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-4/candidate-4__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a",
+        "copySha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      }
+    ],
+    "juror-5": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-1__desktop__light.png",
+        "sha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f",
+        "copySha256": "364eb1a3cf409fc774092e44765329fc47fea3437a29851e23d610bed22b666f"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-1__desktop__dark.png",
+        "sha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1",
+        "copySha256": "161d8bd5ff698f66403bb94d5a6748502e0f21d941ede15f09353711477588e1"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-1__mobile__light.png",
+        "sha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f",
+        "copySha256": "5a873836e357916ccabf30d7bba9e269ad6305bda01b4fc7fc2a85fca35c6b4f"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/driveway-to-paid__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-1__mobile__dark.png",
+        "sha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a",
+        "copySha256": "054eeedee0e469cf3a9824f624068adcf202f2a3af3b877ad92e62e961dfac8a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-2__desktop__light.png",
+        "sha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018",
+        "copySha256": "a96126fd1849d3d439a12ecc02a0101d83152335c6498688f60cd5af19921018"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-2__desktop__dark.png",
+        "sha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6",
+        "copySha256": "ab459b02d25487c16c58f88ba124e0963cca15e5eddbe860cefaafc55e6cbde6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-2__mobile__light.png",
+        "sha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5",
+        "copySha256": "11c3605b1634a6e807785cbd9d0b695b12b2c770ab0df01ce8bf5a5e7fb346f5"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/renders/job-sheet__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-2__mobile__dark.png",
+        "sha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483",
+        "copySha256": "19dc79e353febd307d4846a5cf3e2de51077be93abb34be2910d5ab26b944483"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-3__desktop__light.png",
+        "sha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa",
+        "copySha256": "b3350ec4851c26fecd826a1c59666cfd1fbac40832fa06ca379990219e9017fa"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-3__desktop__dark.png",
+        "sha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a",
+        "copySha256": "3904ef6f3c63dd667b2d751d4f1354ed8072bd4f431e49e38e28bb8f6df0c86a"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-3__mobile__light.png",
+        "sha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493",
+        "copySha256": "2f139344b0c6b6bf05a6b4e7cfa384c4c408e863a5197153a5e257e699305493"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/fair-quote__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-3__mobile__dark.png",
+        "sha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777",
+        "copySha256": "4593293872a7e7302b1684720d492c067e5b982d3d09bf30d71e8e57f9b40777"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-4__desktop__light.png",
+        "sha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522",
+        "copySha256": "319e2d135be57b44872f323678a4f21e8dd2fa4e1b4a2c19f56938a734cbc522"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__desktop__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-4__desktop__dark.png",
+        "sha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e",
+        "copySha256": "13958b82202d507cc3193292ff4908afc4d98f43e16d1f781e66799766d3f69e"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__light.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-4__mobile__light.png",
+        "sha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914",
+        "copySha256": "847dd74f60797543cdd6e2b9e821ed5bf505f96bb215120a2f73ac0bda8fc914"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26-saas/project/renders/worked-invoice__mobile__dark.png",
+        "copy": "jurors-blind/e3-saas/juror-5/candidate-4__mobile__dark.png",
+        "sha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf",
+        "copySha256": "4aaf2315579a1e8de359f2192c5d8818d290250d37bade72846722a9e87788bf"
+      }
+    ]
+  }
+}

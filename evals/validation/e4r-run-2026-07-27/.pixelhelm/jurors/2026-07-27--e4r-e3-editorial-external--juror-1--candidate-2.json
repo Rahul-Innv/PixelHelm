@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The deck states the finding in prose, the then-and-now block restates it as six plain figures, and the full record table prints onset day, total, heaviest day and instrument for every year. A reader who never looks at the dot plot loses nothing.",
+    "2": "The one chart is untruncated across the full September to October window, missing years are shaded bands rather than bridged, and 2019 is drawn hollow. Encodings are honest and each is keyed to a lettered note directly beneath the plot.",
+    "3": "The two-ink system makes provenance travel with every figure on the page, so the instrument boundary is disclosed at each crossing rather than once in a footnote. Nulls appear as bands, as table rows and in the closing notes, and the scope note refuses attribution.",
+    "4": "The register is right and the connective prose about the seam is genuinely well written. Pooling both human fragments into a separate quotations section leaves them decorative relative to the record rather than placed where the data needs them.",
+    "5": "Desktop typography is handsome, but the record table wraps the instrument value onto two lines while a wide notes column sits mostly empty. On mobile the table's horizontal scroller also swallows its own introductory paragraph and the instrument column, both clipped at the right edge.",
+    "6": "A static, fully readable document with no scrolljacking or pacing device visible at either width. Reduced-motion parity cannot be confirmed from still renders, so this reflects the observable base.",
+    "7": "Printing the ledger in two inks, one per instrument, is a real one-sentence idea carried by legend, prose links, then-and-now columns, chart and table alike. It makes the caveat felt more than it makes the valley's shift felt, which is this criterion's actual target.",
+    "8": "One declared break, the standing colour-as-instrument system, announced in a legend before its first use. Reading mechanics stay conventional throughout.",
+    "9": "Unsensational and local, and the ink-to-ink summary line is a phrase this page earned. A shade more essayistic than a town paper would run, but still specific to this weir.",
+    "10": "The ornament is the caveat: the colour split exists only because the dataset changes instrument, and the bands and hollow dot trace to real gaps and a real flag. No effect is present that the reporting does not require."
+  },
+  "inputTranscriptSha256": "2d63adcec39c934fbff480d67004135a25cf5498d0a794e059e4433e2b9be3c5",
+  "shuffleSeed": 202607726
+}

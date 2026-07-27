@@ -1,0 +1,106 @@
+{
+  "candidateOrderBase": [
+    "almanac-rail",
+    "weir-plates",
+    "two-inks",
+    "gauge-house"
+  ],
+  "plant": "gauge-house",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607726,
+      "candidateOrder": [
+        "almanac-rail",
+        "two-inks",
+        "gauge-house",
+        "weir-plates"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "almanac-rail",
+        "candidate-2": "two-inks",
+        "candidate-3": "gauge-house",
+        "candidate-4": "weir-plates"
+      },
+      "transcriptSha256": "2d63adcec39c934fbff480d67004135a25cf5498d0a794e059e4433e2b9be3c5",
+      "floorFailingCandidates": [
+        "gauge-house"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607727,
+      "candidateOrder": [
+        "weir-plates",
+        "almanac-rail",
+        "gauge-house",
+        "two-inks"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "weir-plates",
+        "candidate-2": "almanac-rail",
+        "candidate-3": "gauge-house",
+        "candidate-4": "two-inks"
+      },
+      "transcriptSha256": "1635e99af13ab9a4dc3420d9581a53da52893453aa5147bce445c655c11fe8ee",
+      "floorFailingCandidates": [
+        "gauge-house"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607728,
+      "candidateOrder": [
+        "gauge-house",
+        "two-inks",
+        "weir-plates",
+        "almanac-rail"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "gauge-house",
+        "candidate-2": "two-inks",
+        "candidate-3": "weir-plates",
+        "candidate-4": "almanac-rail"
+      },
+      "transcriptSha256": "49dc39616ff2def2bdad43a4dfae7b9678b0d65d112d7e5d7d90ac8c3f117db6",
+      "floorFailingCandidates": [
+        "gauge-house"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607729,
+      "candidateOrder": [
+        "almanac-rail",
+        "two-inks",
+        "gauge-house",
+        "weir-plates"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "almanac-rail",
+        "candidate-2": "two-inks",
+        "candidate-3": "gauge-house",
+        "candidate-4": "weir-plates"
+      },
+      "transcriptSha256": "99ddf6a02b67e45efc0850bcd5150145bd650e599395b04f60bf4687519fd26b",
+      "floorFailingCandidates": [
+        "gauge-house"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607730,
+      "candidateOrder": [
+        "almanac-rail",
+        "weir-plates",
+        "gauge-house",
+        "two-inks"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "almanac-rail",
+        "candidate-2": "weir-plates",
+        "candidate-3": "gauge-house",
+        "candidate-4": "two-inks"
+      },
+      "transcriptSha256": "6cff6d5f2adc5952ca8c72f4c1b67d3e4d7db0d8f08c84601db6d3b19d76095a",
+      "floorFailingCandidates": [
+        "gauge-house"
+      ]
+    }
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 9,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The then-and-now block delivers the entire finding as plain paired numbers with no chart involved, followed by an explicit difference line. A reader who never looks at the one chart still has the whole record.",
+    "2": "The single chart is named, annotated with the seam, gaps, era rules and the 2019 hollow, and uses a disclosed fixed onset shelf. The season-total and heaviest-day findings are never charted at all, and that one chart leans on ink colour alone to separate the two instruments.",
+    "3": "The two-ink system makes the method caveat inseparable from every figure, including the year numbers in the table, which is the most systematic disclosure of the set. Null years appear as shaded bands and as explicit table rows, and 2019 is marked unverified and stated as excluded from the era averages.",
+    "4": "The register is right and the place-loving detail is real, but both human fragments are gathered into a separate own-words section rather than set where the data needs them. That placement reads closer to an inserted interlude than to reporting.",
+    "5": "Elegant editorial typography, a stable colour-meaning contract across every element, and a then-and-now comparison that is genuinely well set. The long table tightens considerably at the mobile width, where its columns compress hardest.",
+    "6": "The base is a fully readable static document with no scroll-driven dependency and nothing pacing the reader. Nothing requires motion in either mode.",
+    "7": "One sentence carries it cleanly: the ledger is printed in two inks, so the instrument change becomes the visual system instead of a footnote. Content, colour, table and chart all reinforce that idea.",
+    "8": "One deliberate break, the two-ink convention, declared in a legend directly under the deck before any figure uses it. Navigation, headings and reading mechanics stay conventional.",
+    "9": "The deck line about what the manual gauge saw and what the automated weir sees now is specific and unsensational, and the body holds that register. Slightly less textured than the strongest writing in the set.",
+    "10": "The ink device traces to an actual instrument column in the dataset rather than to an effect, and the hollow marker and shaded bands are equally grounded. Nothing decorative is present."
+  },
+  "inputTranscriptSha256": "6cff6d5f2adc5952ca8c72f4c1b67d3e4d7db0d8f08c84601db6d3b19d76095a",
+  "shuffleSeed": 202607730
+}

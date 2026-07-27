@@ -1,0 +1,145 @@
+{
+  "_note": "E4-R juror panels. Blind render copies live untracked at <repo>/jurors-blind/ and are bound to their committed sources by sha256 in each set's blind-manifest.json.",
+  "panels": [
+    {
+      "set": "e1-utility",
+      "juror": "juror-1",
+      "seed": 202607711,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/juror-1-transcript.md",
+      "sha256": "17cd165ab8b15fe9d6fe30e16f1f0d7e5811df2a4689f0f54df714b8a3b58889"
+    },
+    {
+      "set": "e1-utility",
+      "juror": "juror-2",
+      "seed": 202607712,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/juror-2-transcript.md",
+      "sha256": "7857e5d970a131d5f2d224f1ae1d58eb3a87f445ecb4eb6bb0443a37c453436e"
+    },
+    {
+      "set": "e1-utility",
+      "juror": "juror-3",
+      "seed": 202607713,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/juror-3-transcript.md",
+      "sha256": "2308fef005c6835dd73b477bcb7d278bdbf93e3d42acfaa8e36d259495ac7a69"
+    },
+    {
+      "set": "e1-utility",
+      "juror": "juror-4",
+      "seed": 202607714,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/juror-4-transcript.md",
+      "sha256": "f9b883d8ad2670e6bdd35bdfa19b991e8c68a8ff8b78f1c8a84988f7fd93769f"
+    },
+    {
+      "set": "e1-utility",
+      "juror": "juror-5",
+      "seed": 202607715,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e1-utility/juror-5-transcript.md",
+      "sha256": "f735f1eda4e2fcb8a654298a2d94b467e971b1e3460dd0b424fb57d5f4dc16b2"
+    },
+    {
+      "set": "e3-saas",
+      "juror": "juror-1",
+      "seed": 202607716,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/juror-1-transcript.md",
+      "sha256": "b877622898a5c1670028700d2db2ab524df665a3bb1436cf279cfac56eb1ba04"
+    },
+    {
+      "set": "e3-saas",
+      "juror": "juror-2",
+      "seed": 202607717,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/juror-2-transcript.md",
+      "sha256": "73adab87c923256b66bbeadbcb2e8599362e89fa908100d31a10be3642fa8a17"
+    },
+    {
+      "set": "e3-saas",
+      "juror": "juror-3",
+      "seed": 202607718,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/juror-3-transcript.md",
+      "sha256": "59dbd3010baaee8a540a11a741387ce17d8822cce80ca3261e901824baea9dfc"
+    },
+    {
+      "set": "e3-saas",
+      "juror": "juror-4",
+      "seed": 202607719,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/juror-4-transcript.md",
+      "sha256": "68c5255bf7c7d0bd902ff46ae910f8f7f84f7dad4d9f751dbd78bb5e4c269b5a"
+    },
+    {
+      "set": "e3-saas",
+      "juror": "juror-5",
+      "seed": 202607720,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-saas/juror-5-transcript.md",
+      "sha256": "be752ca3249fe75565ca7042f1e315115b5c0cb8be15a04fe3153c18f3e2b825"
+    },
+    {
+      "set": "e3-commerce",
+      "juror": "juror-1",
+      "seed": 202607721,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/juror-1-transcript.md",
+      "sha256": "7932af2fbd88b0033202590d72927f90ec7aab725bc6616428e52f070bca35f8"
+    },
+    {
+      "set": "e3-commerce",
+      "juror": "juror-2",
+      "seed": 202607722,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/juror-2-transcript.md",
+      "sha256": "b222a990cf28937ce6f16e18f982894a74e3c24773a6926d40ea653da5dd2712"
+    },
+    {
+      "set": "e3-commerce",
+      "juror": "juror-3",
+      "seed": 202607723,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/juror-3-transcript.md",
+      "sha256": "835cc17b5b617c39d67b7bc06b271281312f9dec6e59de6b5d5285312984d539"
+    },
+    {
+      "set": "e3-commerce",
+      "juror": "juror-4",
+      "seed": 202607724,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/juror-4-transcript.md",
+      "sha256": "9a152c39d272ed6a07e29f63a2f5be58c54ff508a46a20332c086b546e15bec6"
+    },
+    {
+      "set": "e3-commerce",
+      "juror": "juror-5",
+      "seed": 202607725,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-commerce/juror-5-transcript.md",
+      "sha256": "43fd6cdf82c2602c93d42942dca7db6627e42ea97321d98cb71e009bed82629c"
+    },
+    {
+      "set": "e3-editorial",
+      "juror": "juror-1",
+      "seed": 202607726,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/juror-1-transcript.md",
+      "sha256": "2d63adcec39c934fbff480d67004135a25cf5498d0a794e059e4433e2b9be3c5"
+    },
+    {
+      "set": "e3-editorial",
+      "juror": "juror-2",
+      "seed": 202607727,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/juror-2-transcript.md",
+      "sha256": "1635e99af13ab9a4dc3420d9581a53da52893453aa5147bce445c655c11fe8ee"
+    },
+    {
+      "set": "e3-editorial",
+      "juror": "juror-3",
+      "seed": 202607728,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/juror-3-transcript.md",
+      "sha256": "49dc39616ff2def2bdad43a4dfae7b9678b0d65d112d7e5d7d90ac8c3f117db6"
+    },
+    {
+      "set": "e3-editorial",
+      "juror": "juror-4",
+      "seed": 202607729,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/juror-4-transcript.md",
+      "sha256": "99ddf6a02b67e45efc0850bcd5150145bd650e599395b04f60bf4687519fd26b"
+    },
+    {
+      "set": "e3-editorial",
+      "juror": "juror-5",
+      "seed": 202607730,
+      "transcript": "evals/validation/e4r-run-2026-07-27/jurors/e3-editorial/juror-5-transcript.md",
+      "sha256": "6cff6d5f2adc5952ca8c72f4c1b67d3e4d7db0d8f08c84601db6d3b19d76095a"
+    }
+  ]
+}

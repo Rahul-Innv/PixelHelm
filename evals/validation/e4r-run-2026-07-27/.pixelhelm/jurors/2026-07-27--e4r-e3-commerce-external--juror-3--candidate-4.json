@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 5,
+    "3": 7,
+    "4": 6,
+    "5": 6,
+    "6": 7,
+    "7": 6,
+    "8": 4,
+    "9": 7,
+    "10": 5
+  },
+  "rationales": {
+    "1": "Price and stock are legible on every row, but the list has no seasonal grouping at all, so season fit rests entirely on the filter. The running numbers impose an order that carries no meaning for a shopper choosing by month.",
+    "2": "The purchase block is conventionally arranged, yet the numeral shapes render the digit one as an upright stroke that reads as a letter, so the quantity field, the packet counts, and the postage figure all invite a misread in the money path.",
+    "3": "All four honesty items are present and none is fudged, with the pending price stated as pending and the germination estimate flagged. The numeral rendering undermines the reliability of those figures at a glance.",
+    "4": "Body type and leading are generous and nothing depends on hover, but the ambiguous digit forms and the small meta line work against exactly the older reader this shop serves.",
+    "5": "Typographic rhythm and the rule system are handsome and consistent, yet a centred masthead sits over a left-biased content column, leaving a large empty right gutter on desktop that reads as unresolved rather than deliberate.",
+    "6": "Sowing window, plant-out and flowering table, difficulty, grower notes, and companions are all there in a clean reading order. There is no year-at-a-glance element, so the seasonal picture is assembled from the table alone.",
+    "7": "The printed annual list kept by two growers is a coherent conceit, but it stays mostly in the masthead and the ordinals, and the numbering is decorative rather than earned by anything the shop does.",
+    "8": "The typographic break does not stay in the brand layer: the numeral treatment reaches into prices, packet counts, and the quantity input, which is precisely the checkout-adjacent territory the budget is meant to protect.",
+    "9": "Two of us keep this list, read slowly and choose well is a genuinely distinctive opening. The voice then stops, and the entries themselves read as neutral catalog data.",
+    "10": "A returning shopper gets only the filter, with no seasonal structure and no freshness cue, so nothing answers what is newly in stock. The masthead and back link do keep the two surfaces recognisably one shop."
+  },
+  "inputTranscriptSha256": "835cc17b5b617c39d67b7bc06b271281312f9dec6e59de6b5d5285312984d539",
+  "shuffleSeed": 202607723
+}

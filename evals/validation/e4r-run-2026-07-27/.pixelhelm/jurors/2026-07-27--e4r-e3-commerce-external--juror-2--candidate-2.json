@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Sowing-window shelves group the rack before you read a single card, and every card parks price and stock on the same bottom line, which makes a season sweep fast and predictable.",
+    "2": "Price, stock language and the bordered buy panel with quantity and Add to basket follow convention exactly on both surfaces.",
+    "3": "The shipping limit is a bordered notice above the rack, out of stock is visibly marked, the germination estimate is labelled, and the unpriced packet reads Price on request.",
+    "4": "Card text is legible and targets are generous, though the meta lines under each description run smaller than the surrounding body text.",
+    "5": "One card and shelf system holds both surfaces, but the first shelf row does not share a baseline because the sweet-pea packet block runs taller, and the product page leaves a large empty field under the packet card.",
+    "6": "The buy panel, year table, potting-shed notes and two companion cards give a first-time gardener everything needed without leaving the page.",
+    "7": "The rack by the shop door, shelf by shelf is a genuine small-shop idea, and the packet-card art direction carries it into the visuals without borrowed boutique gloss.",
+    "8": "The shelf headers and packet illustrations are brand-layer only; nothing near the basket is reinvented.",
+    "9": "Two of us keep it stocked, every packet is a variety we grow ourselves is plain and particular enough that a competitor could not lift it unchanged.",
+    "10": "Shelves keyed to sowing windows plus the month filter and per-card stock let a repeat visitor see what is sowable and what is available immediately, and both surfaces read as the same shop."
+  },
+  "inputTranscriptSha256": "b222a990cf28937ce6f16e18f982894a74e3c24773a6926d40ea653da5dd2712",
+  "shuffleSeed": 202607722
+}

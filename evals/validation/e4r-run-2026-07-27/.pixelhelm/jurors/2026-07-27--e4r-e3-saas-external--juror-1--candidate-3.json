@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 7,
+    "4": 7,
+    "5": 6,
+    "6": 7,
+    "7": 7,
+    "8": 7,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The first screenful gives only the brand line, a trial button and step one of a narrative, so what the product is must be inferred from the eyebrow. The value proposition depends on scrolling into the sequence.",
+    "2": "The pilot number is labeled an internal estimate at n=11 and called a signal rather than a certified fact, the text-link claim is footnoted as product behavior, and the beta is named. The copy is objective with no promotional inflation.",
+    "3": "The CTA is unmistakable and repeated at top and bottom, and the price carries its VAT note honestly. Pricing sits at the very bottom behind six steps, a long walk for a buyer whose first question is cost.",
+    "4": "The six-step afternoon maps closely onto a sole trader's actual day and the language is trade-plain with no startup idiom. The ordering serves the story more than the reader's question order, especially on a phone where the page runs longest in the set.",
+    "5": "Alignment and spacing are clean and the type hierarchy is disciplined. The step numerals alternate between two accent colors with no evident meaning rule, and the narrow centered column leaves a large unused field at desktop width, so not everything reads as chosen.",
+    "6": "The estimate is labeled with its sample size and explicitly not a certified fact, and the beta line refuses to pretend it is done. The testimonial appears with attribution only and no note that it is unverified.",
+    "7": "The signature is the afternoon that ends with job done, money in and tax sorted, and the numbered structure genuinely reinforces it. The page narrates that sequence rather than demonstrating it, so the idea stays asserted.",
+    "8": "Mechanics remain conventional and the single break is replacing the hero with a numbered sequence. That break lands in the comprehension layer rather than purely in the brand layer, which is what makes it cost something.",
+    "9": "Phrases about the ladder still being warm and no arithmetic in the merchant's car park are specific and unhyped. The voice is clearly this product's own rather than a category template.",
+    "10": "The product sells time, yet this page asks for the most reading before it will answer the price question. The narrative is enjoyable and slow, which works against the pitch it is making."
+  },
+  "inputTranscriptSha256": "b877622898a5c1670028700d2db2ab524df665a3bb1436cf279cfac56eb1ba04",
+  "shuffleSeed": 202607716
+}

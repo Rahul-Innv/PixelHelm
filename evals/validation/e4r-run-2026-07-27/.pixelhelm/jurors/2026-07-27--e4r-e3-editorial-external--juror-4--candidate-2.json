@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "A then-and-now block, a one-line ink-to-ink difference summary and a full year-by-year table together give a complete path to the finding with no chart decoding required at all.",
+    "2": "Missing years are drawn as banded gaps that occupy their own place on the timeline, the seam is marked, era averages are drawn as flat rules rather than trends, and the unverified year is hollow. The vertical scale spans the variable's natural September to mid-October range with no truncation drama.",
+    "3": "The instrument caveat is carried by the encoding itself, so every figure travels with its own provenance, alongside explicit null rows, the unverified label and a scope note that declines attribution.",
+    "4": "Patient and place-loving, and the line about the record keeping human time as well as rain gives the two fragments a reason to be on the page.",
+    "5": "Desktop typography and rhythm are excellent, but at 375 pixels the full-record section sits in a horizontally clipped container that cuts its own introductory paragraph mid-word and pushes the Notes column off screen. The long read is therefore not equally comfortable on both viewports.",
+    "6": "The renders show a static document with a fully readable base and no scroll-driven pacing; no motion or scroll capture was among my inputs, so this is scored on what the renders show.",
+    "7": "Printed in two inks because the instrument changed is one sentence, and the form is the caveat rather than a decoration on it, reinforced by the deck, the legend, the chart and the table's instrument column.",
+    "8": "The two-ink colour system is the single break, and it is backed by the instrument column and the seam line rather than resting on colour alone, with reading mechanics left conventional.",
+    "9": "Specific, local and unsensational, and the ledger-in-two-inks framing is prose no other paper could run unchanged.",
+    "10": "The two inks come from a documented method change in this dataset rather than from an effects vocabulary, and no device on the page lacks a warrant in the record."
+  },
+  "inputTranscriptSha256": "99ddf6a02b67e45efc0850bcd5150145bd650e599395b04f60bf4687519fd26b",
+  "shuffleSeed": 202607729
+}

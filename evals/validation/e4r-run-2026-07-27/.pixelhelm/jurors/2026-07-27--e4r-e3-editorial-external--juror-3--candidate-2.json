@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The full finding arrives in the opening lede and again in the then-and-now panels, so the conclusion is reachable by reading alone with no interaction required.",
+    "2": "The single chart is named and described by its actual finding, its calendar axis is untruncated, the missing years are drawn as shaded gaps and 2019 is left hollow.",
+    "3": "Every required disclosure is present, but at 375 px the full-record table is clipped so the no-record reasons and the 2019 label survive only in the chart footnotes and the closing notes.",
+    "4": "The two-ink conceit is written with care, though the two human quotes are parked in a section of their own rather than placed where they would serve the data.",
+    "5": "Desktop typography is composed and the measure is comfortable, but the mobile full-record table is cut mid-word at the right edge and loses its last column.",
+    "6": "The base page is fully readable and static in both modes, with nothing pacing the reader against their will.",
+    "7": "Printed in two inks is one sentence that all four layers carry, though the ink makes the instrument change felt more than the seasonal shift itself.",
+    "8": "One deliberate break, provenance rendered as color, is declared in a legend up front and the reading mechanics stay entirely conventional.",
+    "9": "The local register is competent, though several passages read systemic rather than spoken, as in the difference ink to ink.",
+    "10": "Every device, the ink pairing, the shaded bands and the hollow dot, maps to something the record actually carries."
+  },
+  "inputTranscriptSha256": "49dc39616ff2def2bdad43a4dfae7b9678b0d65d112d7e5d7d90ac8c3f117db6",
+  "shuffleSeed": 202607728
+}

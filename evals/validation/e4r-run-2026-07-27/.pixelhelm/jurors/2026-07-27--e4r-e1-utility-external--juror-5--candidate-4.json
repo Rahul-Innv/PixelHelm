@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 6,
+    "3": 9,
+    "4": 8,
+    "5": 5,
+    "6": 6,
+    "7": 8,
+    "8": 7,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline answers the question outright in the first phone viewport, with the closure alert immediately below it, making this the fastest read in the set.",
+    "2": "The four states are distinguishable without color, but they use four different kinds of treatment, plain text for open, an outline for caution, a filled block for closed, and a dotted underline for no report, which leaves open as the weakest token to scan for.",
+    "3": "The dotted underline is applied consistently as the mark of something not solidly known, on no report, on the missing weather day, and on the estimated snowpack, and the footer states plainly that unreported trails are never assumed open or closed.",
+    "4": "The order runs from the headline answer to the alert, then context, then all nine trails, then the week, which matches the decision sequence, and the language is plain and unpromotional.",
+    "5": "A large empty vertical band separates the hero from the trail list on desktop, the dark desktop render shows a faint duplicate of the footer line at the very top edge, and the mobile seven-day grid pairs unevenly, so the rhythm is not fully controlled.",
+    "6": "The data itself never breaks the layout, but the desktop void, the artifact at the top of the dark render, and the ragged mobile date grid show the layout is not equally resolved across the four renders.",
+    "7": "The signature, that uncertainty is marked rather than hidden, is expressed in the content, in the typography, and in the closing statement, and it is true of a conditions service.",
+    "8": "Mechanics are conventional, and the one deliberate break, dropping the badge for open trails so only exceptions carry weight, stays in the brand layer, though it costs some scannability.",
+    "9": "Lines such as three of nine trails open this morning and never assumed open or closed are specific and calm, and not phrasing a competitor would already have written.",
+    "10": "The headline alone is the whole daily glance and repeats well, with no loader, no motion, and nothing a returning user must dismiss."
+  },
+  "inputTranscriptSha256": "f735f1eda4e2fcb8a654298a2d94b467e971b1e3460dd0b424fb57d5f4dc16b2",
+  "shuffleSeed": 202607715
+}

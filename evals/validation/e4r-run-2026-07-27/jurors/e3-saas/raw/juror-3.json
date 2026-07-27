@@ -1,0 +1,101 @@
+{
+  "juror": "juror-3",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The eyebrow names the category and the quotation block delivers plan definitions, both prices and the trial terms in the first screenful. The headline itself is a device rather than a plain statement of what the product does.",
+        "2": "Every figure carries its basis on the same line, including the pilot estimate with its sample size and an explicit note that it is not an independently verified figure.",
+        "3": "One unmistakable trial button sits beside the honest no-card line and the VAT note travels with the prices. A long page with no second call to action near the end asks a decided reader to scroll back.",
+        "4": "The framing borrows the reader's own trade, that you would never take a job without giving a quote, and the language stays plain with no startup idiom.",
+        "5": "Rules, bars and a single rust accent hold a tight three-size hierarchy. The five small-print cards in a three-column grid leave an orphaned empty cell that reads as unresolved.",
+        "6": "Beta is stated in prose and repeated as a chip in the integration list, and the estimate is never rounded into a fact. The customer quotation carries a name and trade but no label saying it is unverified.",
+        "7": "The page is the quote it argues you should give, with price and terms first and the case afterwards, so the honesty pitch is demonstrated rather than asserted.",
+        "8": "Only the inverted order, full price and small print before any persuasion, breaks convention, and it lives entirely in the brand layer while the mechanics stay ordinary.",
+        "9": "Lines about there being no asterisk to hide, and support being people rather than a chat widget pretending to be, could not be lifted unchanged by a competitor.",
+        "10": "The decision material is all in the first screenful and nothing on the page performs, so the form matches the claim that the reader's time matters."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The headline plus the FOR, FROM and TERMS rows answer what it is, who it is for and on what terms before any scroll. The price is not part of that first answer.",
+        "2": "The pilot figure is given as an internal estimate with its sample size and an explicit refusal to call it verified, and the copy never reaches for superlatives.",
+        "3": "The trial button appears at the top and again directly under the total, with the no-card terms stated as terms and the VAT note on the totals rule. Pricing arrives only after four sections.",
+        "4": "An invoice is the document this audience handles daily, so the structure matches the mental model exactly, though a skeptic on a phone must scroll past the line items to reach cost.",
+        "5": "Monospaced labels, an aligned included column and the double rule above the total are disciplined and consistent. The blue action color sits slightly apart from the cream, green and gold used everywhere else.",
+        "6": "Beta is marked in the integration row and restated in prose, and the estimate keeps its qualifier. The customer quotation is presented without any note on whether it was verified.",
+        "7": "The pitch is typeset as the product's own paperwork, so the page shows the invoice the product would produce instead of describing it.",
+        "8": "The invoice conceit is a single sustained brand-layer break and every mechanic underneath it stays conventional.",
+        "9": "January no longer being a surprise, no mental arithmetic in the merchant's car park, walking away owing nothing: specific and unhyped throughout.",
+        "10": "The page is easy to scan, but the invoice order postpones the number a buyer actually decides on, which costs the reader the time the pitch claims to value."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 9,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The first screenful opens on step one of a story, so what the product is must be inferred from the step rather than read, with only the small eyebrow stating the category.",
+        "2": "Claims are qualified where the data requires it, and calling the payment link product behavior rather than a promise is an unusually careful piece of restraint.",
+        "3": "The trial button is in the header and repeated at the cost section, honest about the card and paired with the VAT note, though cost sits at the very end of the page.",
+        "4": "The six steps track the shape of an actual working afternoon and speak trade language throughout, but a subscription-skeptic reaches price last.",
+        "5": "The numeral and rule system is consistent and the type hierarchy is clean, yet the gold and green numerals alternate with no discernible rule, which reads arbitrary.",
+        "6": "Beta carries both a chip and a plain sentence refusing to pretend it is done, and the estimate is labeled a signal rather than a certified fact. The customer quotation is unlabeled as to verification.",
+        "7": "The whole-afternoon sequence is a clear organizing idea that the visuals reinforce, but the page narrates the promise rather than enacting it.",
+        "8": "Mechanics are entirely conventional and the numbered narrative stays inside the brand layer, comfortably within the budget.",
+        "9": "Finishing while the ladder is still warm, and not spending an evening at the kitchen table, are lines rooted in this reader's life.",
+        "10": "Big numerals make the steps scannable, but six full-width sections stand between arrival and the price, so deciding is slower than the pitch implies."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "output-floor-gate",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-2",
+    "candidate-3"
+  ]
+}

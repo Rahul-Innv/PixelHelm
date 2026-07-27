@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Named seasonal shelves plus a per-card sowing window make season fit structural rather than something to hunt for, and price and stock sit in a fixed place on every card. The lone view-packet button on a single card breaks the row rhythm and implies only that packet is browsable.",
+    "2": "Price, stock language, quantity field and add-to-basket all follow ordinary commerce convention, with delivery terms stated beside the buy control. Nothing clever intrudes on the money path.",
+    "3": "The null-price packet shows an italic price-on-request line with the reason in the body copy, the estimated germination figure is labelled twice, and out of stock is unmissable. The UK-only shipping badge sits high on both surfaces, well before any purchase intent.",
+    "4": "Names, descriptions and prices are set generously and nothing depends on hover. The growing meta line that older gardeners most need is the smallest and palest text on the card.",
+    "5": "The packet frame, dashed label rule and botanical glyph repeat faithfully across both surfaces as one system. Card interiors do not align across a row, so dashed rules and prices land at four different heights, and the product page leaves a large empty left column.",
+    "6": "Buy box first, then the year table, difficulty, potting-shed notes and companion packets with their own prices and stock, so a first-time gardener can decide in one pass. The difficulty and germination line is repeated below the table with no added information.",
+    "7": "The rack by the shop door, shelf by shelf: the shop is a physical seed rack and every product is a packet on it, carried by the section headings, the packet frames and the card structure alike. It reads as two growers stocking their own rack rather than borrowed boutique polish.",
+    "8": "The break is entirely the rack-and-packet conceit and the drawn botanicals, both squarely in the brand layer. Price, stock, quantity and add-to-basket are left completely conventional.",
+    "9": "Two of us keep it stocked; from our potting shed; good company for it; fussy about damp, for the patient gardener — warm, specific and unhurried throughout. No competitor could publish this copy unchanged.",
+    "10": "Stock state is on every card and the shelf sections answer what is sowable now before any filtering is needed. There is no newly-in-stock or freshness cue for someone checking back."
+  },
+  "inputTranscriptSha256": "43fd6cdf82c2602c93d42942dca7db6627e42ea97321d98cb71e009bed82629c",
+  "shuffleSeed": 202607725
+}

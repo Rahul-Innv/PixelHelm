@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 9,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The first screenful opens on step one of a story, so what the product is must be inferred from the step rather than read, with only the small eyebrow stating the category.",
+    "2": "Claims are qualified where the data requires it, and calling the payment link product behavior rather than a promise is an unusually careful piece of restraint.",
+    "3": "The trial button is in the header and repeated at the cost section, honest about the card and paired with the VAT note, though cost sits at the very end of the page.",
+    "4": "The six steps track the shape of an actual working afternoon and speak trade language throughout, but a subscription-skeptic reaches price last.",
+    "5": "The numeral and rule system is consistent and the type hierarchy is clean, yet the gold and green numerals alternate with no discernible rule, which reads arbitrary.",
+    "6": "Beta carries both a chip and a plain sentence refusing to pretend it is done, and the estimate is labeled a signal rather than a certified fact. The customer quotation is unlabeled as to verification.",
+    "7": "The whole-afternoon sequence is a clear organizing idea that the visuals reinforce, but the page narrates the promise rather than enacting it.",
+    "8": "Mechanics are entirely conventional and the numbered narrative stays inside the brand layer, comfortably within the budget.",
+    "9": "Finishing while the ladder is still warm, and not spending an evening at the kitchen table, are lines rooted in this reader's life.",
+    "10": "Big numerals make the steps scannable, but six full-width sections stand between arrival and the price, so deciding is slower than the pitch implies."
+  },
+  "inputTranscriptSha256": "59dbd3010baaee8a540a11a741387ce17d8822cce80ca3261e901824baea9dfc",
+  "shuffleSeed": 202607718
+}

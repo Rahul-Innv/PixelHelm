@@ -1,0 +1,312 @@
+{
+  "aggregation": "per-criterion median of 5 jurors; overall = median of the criterion medians (registered; unchanged from E1/E3/E4)",
+  "set": "e3-editorial",
+  "r1": "floor-clean is a precondition for scoring; UNSCORED candidates are excluded from the medians, the ranking, and every statistic (PREREG-E4R-ADDENDUM.md (d))",
+  "unscored": [
+    {
+      "candidate": "gauge-house",
+      "gate": "verify_states",
+      "why": "committed Layer-1 battery shows a hard gate FAIL; UNSCORED under R1, excluded from every ranking and statistic"
+    }
+  ],
+  "floorEvidence": {
+    "almanac-rail": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-editorial/project/gates/almanac-rail",
+      "hardFails": []
+    },
+    "weir-plates": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-editorial/project/gates/weir-plates",
+      "hardFails": []
+    },
+    "two-inks": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-editorial/project/gates/two-inks",
+      "hardFails": []
+    },
+    "gauge-house": {
+      "gateDir": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/gates",
+      "hardFails": [
+        "verify_states"
+      ]
+    }
+  },
+  "candidates": {
+    "almanac-rail": {
+      "criterionScores": {
+        "1": [
+          8,
+          9,
+          9,
+          8,
+          9
+        ],
+        "2": [
+          8,
+          7,
+          6,
+          6,
+          8
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          9,
+          8,
+          9,
+          8,
+          9
+        ],
+        "5": [
+          9,
+          8,
+          9,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          9,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          8,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          8,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "overallMedian": 9,
+      "minCriterionMedian": 7
+    },
+    "weir-plates": {
+      "criterionScores": {
+        "1": [
+          9,
+          8,
+          8,
+          9,
+          9
+        ],
+        "2": [
+          8,
+          8,
+          9,
+          8,
+          9
+        ],
+        "3": [
+          9,
+          7,
+          9,
+          8,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "6": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "7": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "8": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "10": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 7
+    },
+    "two-inks": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          8,
+          9,
+          9
+        ],
+        "2": [
+          9,
+          9,
+          8,
+          9,
+          7
+        ],
+        "3": [
+          9,
+          8,
+          8,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "5": [
+          7,
+          8,
+          7,
+          7,
+          8
+        ],
+        "6": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "9": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 7
+    }
+  },
+  "aggregateRanking": [
+    {
+      "candidate": "almanac-rail",
+      "overallMedian": 9
+    },
+    {
+      "candidate": "two-inks",
+      "overallMedian": 8
+    },
+    {
+      "candidate": "weir-plates",
+      "overallMedian": 8
+    }
+  ]
+}

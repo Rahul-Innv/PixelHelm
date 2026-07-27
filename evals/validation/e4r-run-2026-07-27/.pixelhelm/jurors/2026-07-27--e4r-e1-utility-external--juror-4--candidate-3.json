@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The mobile first screen carries the summary sentence of how many trails are open, the closure notice and the first open entries, so both the whether and the where are answered before any scrolling. The log is text dense, so scanning the full set is slower than a color-blocked board.",
+    "2": "Outlined chips give open, caution, closed and unreported distinct words and hues, held identically in both modes and everywhere they appear. The chip silhouette is the same for all four, so separation rests on the label rather than on shape.",
+    "3": "Unreported entries read as condition unknown in italics, the missing history day is written out as not recorded, and the snowpack is stamped estimated with the sensor outage dated. Posting time, per-entry report times and a generated-at line at the end give the data a visible age.",
+    "4": "The order runs from the day's summary to the ranger's notice to the log to conditions, and the page states its own ordering rule before the entries begin. Headings are real, the language is plain and factual, and nothing is written to sell.",
+    "5": "Ledger rules, leader dots, a fixed chip column, three type sizes and an ink-on-cream palette with only the status hues added produce an even rhythm with very little left arbitrary. The estimated chip wraps awkwardly on mobile, which is the only visible slip.",
+    "6": "Long names shorten their leader rule rather than break, the burn cluster reads without alarm, and unreported rows are correctly de-emphasized instead of highlighted. Both modes are fully resolved, with only minor mobile wrapping in the snowpack line.",
+    "7": "The signature is a ranger's morning log published as it stands, and the entry framing, the ledger typography, the posting and end-of-log lines and the stated ordering rule all reinforce it. It is drawn from what a trail service actually produces rather than borrowed from a trend.",
+    "8": "Mechanics stay a plain scrolling document with no interaction novelty. The brand-layer breaks are the parchment ledger treatment and the all-serif setting, which is at the top of the budget but still within it.",
+    "9": "The morning log dateline, the note that the log continues below, the unknown-condition entries and the end-of-log sign-off could not be published unchanged by another park. The register stays calm and factual throughout.",
+    "10": "A dated log with a stable daily shape and a one-sentence summary is close to ideal for a habitual glance, and the compact single column shows more per screen than a card board. Nothing is playful, mandatory or gated behind friction."
+  },
+  "inputTranscriptSha256": "f9b883d8ad2670e6bdd35bdfa19b991e8c68a8ff8b78f1c8a84988f7fd93769f",
+  "shuffleSeed": 202607714
+}

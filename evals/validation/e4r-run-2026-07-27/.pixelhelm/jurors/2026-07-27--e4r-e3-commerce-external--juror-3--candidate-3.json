@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "Shelves labelled with their month ranges, plus the month filter, make season fit predictable, and each card puts price and stock state on the same closing line. The small muted meta line is the slowest element to scan.",
+    "2": "Price, stock count, quantity, and add-to-basket sit high on the product page in conventional order, and the catalog cards keep price and stock where a shopper expects them.",
+    "3": "Out of stock is coloured and unmissable, the null-price packet says price on request with the supplier reason in its own copy, the estimate is flagged, and the shipping limit sits in a boxed callout at the top of both surfaces.",
+    "4": "This is the most generous type and the largest touch targets of the set, the select and button are comfortably sized, and no information hides behind hover.",
+    "5": "The packet-card system is consistent and carries cleanly onto the product page, but the price rows sit at four different heights across a single card row and the product page leaves a very large empty left column below the packet art.",
+    "6": "Sowing window, plant-out and flowering table, difficulty, grower notes, and companion cards are all present and clearly sectioned. The absence of any year-at-a-glance view leaves the seasonal picture to the table alone.",
+    "7": "The rack by the shop door, kept by two people who grow what they sell, runs through the shelf headings, the packet-card art, and the enlarged packet on the product page. It is congruent and shop-true rather than imitated.",
+    "8": "The break is entirely art direction in the packet cards and botanical glyphs, with navigation and the purchase path left conventional.",
+    "9": "The rack and potting-shed framing is warm and specific to a two-person grower, though the card bodies themselves fall back to plain description.",
+    "10": "Shelf grouping and the filter serve a repeat visitor checking the season, and the back-to-the-rack link keeps the surfaces coherent, but nothing signals what has newly arrived beyond the stock labels."
+  },
+  "inputTranscriptSha256": "835cc17b5b617c39d67b7bc06b271281312f9dec6e59de6b5d5285312984d539",
+  "shuffleSeed": 202607723
+}

@@ -1,0 +1,101 @@
+{
+  "juror": "juror-4",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The mobile first screen carries the headline count of open trails and the full closure alert without interaction, so the two decisive facts land immediately. The desktop layout leaves a large void between the headline and the trail list, which slows the second question of where.",
+        "2": "Every status carries a word, so open, caution, closed and unreported are separable without color, and each keeps one rendering across the page. Caution and closed share the same rust hue and differ only by outline versus fill, which is the weakest separation among the scored designs.",
+        "3": "Unreported trails are labelled and the footer states they are never assumed open or closed, the null history day reads as no data, and every row carries a last-report time. The estimated snowpack is flagged only by a faint dotted underline on one word, which is easier to miss than the explicit chips used elsewhere.",
+        "4": "Order runs from the day's state to the active closure to the full list to the week's weather, which matches how a hiker decides. Language is plain and objective throughout with no promotional tone.",
+        "5": "Type hierarchy, spacing rhythm and a tight ink and rust palette are disciplined. A large unexplained gap between the hero and the trail list, and a ragged mobile weather grid where the missing day knocks the following cell out of alignment, read as arbitrary.",
+        "6": "Long names, the burn cluster and both unreported rows sit cleanly with no awkward emphasis, and both modes are fully resolved. The mobile seven-day grid loses row alignment around the missing day, and the closed marker shifts hue family between modes.",
+        "7": "The signature is a spoken morning sentence that states the day and lets a quiet ledger follow, reinforced by the display serif, the sentence summary and the calm palette. It is true of a conditions service but sits close to generic editorial minimalism.",
+        "8": "Mechanics are entirely conventional, a plain scrolling document with no interaction tricks. The deliberate breaks stay in the brand layer, being the oversized sentence headline and leaving open unmarked while other statuses take chips.",
+        "9": "Lines such as the one stating that trails without a report are shown as unknown and never assumed open or closed are specific to this service and stay calm and factual. The framing of what is worth knowing is writing a competitor could not lift unchanged.",
+        "10": "A dated headline sentence and per-row report times make the daily delta readable at a glance, with nothing playful or mandatory. The desktop void means a returning user scrolls past dead space to reach the list."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 6,
+        "6": 7,
+        "7": 7,
+        "8": 8,
+        "9": 6,
+        "10": 7
+      },
+      "rationales": {
+        "1": "A single counted line of open, caution, closed and unreported totals with icons sits above the fold with the closure notice directly beneath, on mobile as well as desktop. This is the fastest read of the day's overall state among the scored designs.",
+        "2": "Each status pairs a distinct shape, a word and a color, and a legend fixes the mapping before the cards begin. The same treatment repeats in the summary line, the group headings and the card bands without drift.",
+        "3": "Unreported trails state that no report was received rather than implying openness, the missing history day is a dashed hollow marker with a not-recorded caption, and the snowpack carries an estimated chip with the sensor outage explained. Report times appear on every card and the board's own update time sits in the header.",
+        "4": "Grouping by status with counts, open first, matches the hiker's decision order and the language stays plain. Internal entry codes are exposed on every card, which is operator jargon a visitor does not need.",
+        "5": "The component system is consistent in radius, spacing and type, but the saturated status band occupies roughly the top third of every card and carries only a label it already repeats. The grid leaves ragged empty cells in three of four rows, the snowpack panel is half empty beside the chart, and the palette runs wider than a limited one.",
+        "6": "Names, the burn cluster and both unreported rows fit without breakage, and both modes are fully resolved with adjusted hues. The count line wraps mid-phrase on mobile and the tall cards stretch the phone page far longer than the content requires.",
+        "7": "The signature is a trailhead status board with color placards, and grouping, iconography and color all reinforce it truthfully for a conditions service. It is also the most predictable of the three, close to a stock dashboard pattern rather than an idea earned by this organization.",
+        "8": "Mechanics are conventional throughout, with ordinary cards, headings and a static chart. The single brand-layer break is the oversized placard band, which stays within budget.",
+        "9": "The copy is accurate and calm but almost entirely interchangeable, with lines such as the one reporting that no report was received from this trail. Only the board framing hints at a voice of its own.",
+        "10": "The counted summary line is a genuinely good habitual glance and nothing is playful or mandatory. Beyond that line the board offers no sense of what changed, and the tall cards make the daily scan longer than it needs to be."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The mobile first screen carries the summary sentence of how many trails are open, the closure notice and the first open entries, so both the whether and the where are answered before any scrolling. The log is text dense, so scanning the full set is slower than a color-blocked board.",
+        "2": "Outlined chips give open, caution, closed and unreported distinct words and hues, held identically in both modes and everywhere they appear. The chip silhouette is the same for all four, so separation rests on the label rather than on shape.",
+        "3": "Unreported entries read as condition unknown in italics, the missing history day is written out as not recorded, and the snowpack is stamped estimated with the sensor outage dated. Posting time, per-entry report times and a generated-at line at the end give the data a visible age.",
+        "4": "The order runs from the day's summary to the ranger's notice to the log to conditions, and the page states its own ordering rule before the entries begin. Headings are real, the language is plain and factual, and nothing is written to sell.",
+        "5": "Ledger rules, leader dots, a fixed chip column, three type sizes and an ink-on-cream palette with only the status hues added produce an even rhythm with very little left arbitrary. The estimated chip wraps awkwardly on mobile, which is the only visible slip.",
+        "6": "Long names shorten their leader rule rather than break, the burn cluster reads without alarm, and unreported rows are correctly de-emphasized instead of highlighted. Both modes are fully resolved, with only minor mobile wrapping in the snowpack line.",
+        "7": "The signature is a ranger's morning log published as it stands, and the entry framing, the ledger typography, the posting and end-of-log lines and the stated ordering rule all reinforce it. It is drawn from what a trail service actually produces rather than borrowed from a trend.",
+        "8": "Mechanics stay a plain scrolling document with no interaction novelty. The brand-layer breaks are the parchment ledger treatment and the all-serif setting, which is at the top of the budget but still within it.",
+        "9": "The morning log dateline, the note that the log continues below, the unknown-condition entries and the end-of-log sign-off could not be published unchanged by another park. The register stays calm and factual throughout.",
+        "10": "A dated log with a stable daily shape and a one-sentence summary is close to ideal for a habitual glance, and the compact single column shows more per screen than a card board. Nothing is playful, mandatory or gated behind friction."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "verify_responsive",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-2"
+  ]
+}

@@ -1,0 +1,101 @@
+{
+  "juror": "juror-5",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 9,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Named seasonal shelves plus a per-card sowing window make season fit structural rather than something to hunt for, and price and stock sit in a fixed place on every card. The lone view-packet button on a single card breaks the row rhythm and implies only that packet is browsable.",
+        "2": "Price, stock language, quantity field and add-to-basket all follow ordinary commerce convention, with delivery terms stated beside the buy control. Nothing clever intrudes on the money path.",
+        "3": "The null-price packet shows an italic price-on-request line with the reason in the body copy, the estimated germination figure is labelled twice, and out of stock is unmissable. The UK-only shipping badge sits high on both surfaces, well before any purchase intent.",
+        "4": "Names, descriptions and prices are set generously and nothing depends on hover. The growing meta line that older gardeners most need is the smallest and palest text on the card.",
+        "5": "The packet frame, dashed label rule and botanical glyph repeat faithfully across both surfaces as one system. Card interiors do not align across a row, so dashed rules and prices land at four different heights, and the product page leaves a large empty left column.",
+        "6": "Buy box first, then the year table, difficulty, potting-shed notes and companion packets with their own prices and stock, so a first-time gardener can decide in one pass. The difficulty and germination line is repeated below the table with no added information.",
+        "7": "The rack by the shop door, shelf by shelf: the shop is a physical seed rack and every product is a packet on it, carried by the section headings, the packet frames and the card structure alike. It reads as two growers stocking their own rack rather than borrowed boutique polish.",
+        "8": "The break is entirely the rack-and-packet conceit and the drawn botanicals, both squarely in the brand layer. Price, stock, quantity and add-to-basket are left completely conventional.",
+        "9": "Two of us keep it stocked; from our potting shed; good company for it; fussy about damp, for the patient gardener — warm, specific and unhurried throughout. No competitor could publish this copy unchanged.",
+        "10": "Stock state is on every card and the shelf sections answer what is sowable now before any filtering is needed. There is no newly-in-stock or freshness cue for someone checking back."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 6,
+        "3": 9,
+        "4": 6,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 6,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The twelve-month band lets sowing windows be compared straight down the page, and price and stock hold one consistent position in every row. The band cells carry no month labels and the desktop page is set small and dense, so precise reading still falls to the text beside it.",
+        "2": "Stock language and price placement are conventional and the buy box itself is ordinary. The catalog call to action is an underlined link inside the price line rather than a button, and on the product page the price and add control are pushed below a reference table.",
+        "3": "The estimated germination figure gets both a meta label and a dedicated margin note explaining it, the clearest handling of that item in the set. The null-price packet says price pending and invites you to ask, out of stock is plain, and UK-only shipping sits in the header.",
+        "4": "The layout linearises well on mobile and nothing is hover-dependent. At desktop this is the least generous candidate here: small body type, smaller italic marginalia, tiny band cells, and a text link where a button belongs.",
+        "5": "A genuine editorial system, with a marginalia column, consistent rule weights, dotted and solid rules used with intent, and the band recurring on both surfaces. The product page content column is left-anchored while the rules run full width, leaving an awkward empty right half.",
+        "6": "Everything needed is present, including the band, the year table, the margin note and the companions. The ordering makes deciding harder than it should be, with price and buy behind a reference table and the difficulty line stranded below the buy box.",
+        "7": "Find your month first, then your packet: the shop is reorganised as an almanac, and content, band, marginalia and month filter all carry that one sentence. It leans more printed reference than service culture, but for an heirloom seed keeper that is congruent.",
+        "8": "The almanac inversion and the marginalia are legitimate brand-layer breaks. The cleverness does not stop there — demoting the buy box below the year table and turning the catalog call to action into an inline link are checkout-adjacent, which this budget rules out.",
+        "9": "The widest window in the almanac, five months of it; the whole plant earns its bed; takes an autumn sowing too, as the band shows — the marginalia is the best writing in the set. It is unmistakably one shop annotating its own stock.",
+        "10": "The month filter, the jump links to each window and per-row stock give a returning shopper an in-season answer immediately, helped by the band. Nothing marks what is newly in stock or newly added."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 6,
+        "5": 7,
+        "6": 9,
+        "7": 7,
+        "8": 8,
+        "9": 7,
+        "10": 6
+      },
+      "rationales": {
+        "1": "Price, stock and a sowing window appear consistently on every entry in one clean column. The list has no seasonal grouping and no discernible order, so season fit must be read item by item and the effect of the month filter is hard to anticipate.",
+        "2": "The product page puts price, stock and the add control exactly where convention says, with a proper button and quantity field. Stock language is plain and the money path carries no cleverness at all.",
+        "3": "Price pending is stated in italic with the supplier reason, the estimated germination figure is flagged, and out of stock is clear. The UK-only shipping line is small and centred in the masthead, reading as fine print rather than a stated condition of sale.",
+        "4": "Names, descriptions and the whole product page are comfortably set and nothing hides behind hover. The growing meta and stock labels are the smallest type in the set, and the price is barely larger than body copy.",
+        "5": "Quiet and tidy, with hanging numerals, hairline rules, a restrained palette, and the numbering carried onto the product page. Hierarchy is compressed into several near-identical small sizes, the numeral gutter sits mostly empty, and little of the styling is specific to this shop.",
+        "6": "Description, price, stock and buy come first, then the year table, grower notes and companions with their own prices, which is the cleanest decision path of the three. Tying the packet back to its number in the annual adds useful continuity.",
+        "7": "Two of us keep this list, read slowly and choose well, expressed as a short numbered annual. The idea lives mostly in the masthead and the numerals, while the visual language is generic literary minimalism another shop could wear unchanged.",
+        "8": "Restraint is total: one conceit, the numbered annual, and nothing near the money path is touched. The budget is under-spent rather than misspent.",
+        "9": "The masthead copy is warm and specific. Below it the entries fall back to plain shared descriptions with no shop commentary, so most of the list could be published by any seller.",
+        "10": "The two surfaces cohere through the masthead, the numbering and the rules. With no seasonal grouping, no newly-in-stock cue and no freshness marker, a returning shopper has to re-scan the whole list."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "verify_focustrap",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-2",
+    "candidate-3"
+  ]
+}

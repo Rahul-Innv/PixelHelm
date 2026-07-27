@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 6,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The mobile first viewport carries the park name, the four-way status tally, the controlled-burn closure notice and the status legend before any scrolling. Answering where requires only continued scrolling into the open group that follows immediately.",
+    "2": "Each status pairs a distinct glyph (filled dot, triangle, cross, dashed ring) with an uppercase word and a color, defined once in an explicit legend and repeated identically in group headings and card banners. The four remain separable with color removed and never swap meaning between modes.",
+    "3": "Unreported trails get their own labelled group reading no report received from this trail rather than being folded into open or dropped, the snowpack 0 cm carries a dashed estimated chip plus the sensor-offline explanation, and the missing day appears as a dashed hollow marker labelled no data. Every trail row carries its own last-report time under a board-updated stamp.",
+    "4": "Order runs from overall tally to the active closure to the open, caution, closed and unreported groups, then to snowpack and precipitation detail, matching the hiker decision sequence. Language is plain and objective with no promotional framing.",
+    "5": "One card component, a consistent spacing rhythm, roughly three type sizes and a four-color status palette, with dashed strokes used systematically to mean uncertain. The desktop grid leaves conspicuous holes where a group has two trails instead of three, and the snowpack card sits half empty beside the chart.",
+    "6": "Long names, the two-trail burn cluster and both unreported rows all sit in the grid without truncation or overflow, and light and dark are each fully resolved with adjusted status hues. The trailing empty grid cells and the tall half-filled snowpack card are the only awkward emphasis.",
+    "7": "The signature is the trailhead status board brought to the browser, carried by the legend, the board-updated stamp, the color-banner cards and the dashed-means-unknown language. It is true of a trail-conditions service rather than borrowed from another category.",
+    "8": "Mechanics stay entirely conventional, with real headings, ordinary scrolling and no unusual controls. The single brand-layer move is the oversized color status banner, well inside the budget.",
+    "9": "Microcopy is calm and factual but interchangeable, and most strings are labels a competing conditions board could publish unchanged. One date rendered as 2026-07-19 while every other date reads as Jul 26 is a small slip.",
+    "10": "The tally line and board-updated stamp make the habitual daily glance cheap, with nothing playful or mandatory to dismiss. The tall banner cards do cost a returning reader more scrolling than the content warrants."
+  },
+  "inputTranscriptSha256": "17cd165ab8b15fe9d6fe30e16f1f0d7e5811df2a4689f0f54df714b8a3b58889",
+  "shuffleSeed": 202607711
+}

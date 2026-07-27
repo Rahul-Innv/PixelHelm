@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The mobile first viewport carries the headline answer, the one-sentence summary of why, and the closure alert without interaction. Locating which trails takes a scroll, and desktop leaves a large empty gap between the summary and the list.",
+    "2": "Each status keeps one stable rendering everywhere, and the four are distinguishable by word alone. Caution and closed share a single rust hue separated only by outline against fill, and open carries no chip at all, so the most consequential pair is the least separable at a glance.",
+    "3": "Unreported trails are labelled and the footer note that they are never assumed open or closed, and the null day is printed as no data. The estimated snowpack is flagged with its sensor-offline reason and every row carries its own report time.",
+    "4": "Order runs from the headline answer to what changed to the full register, with plain objective copy and no promotion. The seven-day history sits at the bottom rather than near the change summary it supports.",
+    "5": "One serif for names, one sans for meta, a tight three-size hierarchy and a single accent hue give a consistent rhythm. A large unexplained vertical void between the intro and the trail list, and faint ghost text at the top of the dark render, break the discipline.",
+    "6": "Long names, the burn cluster and both unreported rows sit in the layout without awkward emphasis in either mode. The dark render shows near-invisible duplicate footer text at the top of the page that light does not.",
+    "7": "The signature is the morning report, a dated dispatch whose headline is the answer, and it is carried by the editorial serif, the prose summary and the register beneath. It is true of a conditions service rather than a transplanted trend.",
+    "8": "Mechanics are entirely conventional and the breaks are confined to the brand layer: an editorial headline in place of a status hero, and typographic status marks in place of chips. That is two deliberate breaks, though the second one costs scannability.",
+    "9": "Lines like clearing after yesterday's rain, and trails without a report are shown as unknown and never assumed open or closed, are calm, factual and specific to this service. A competitor could not publish them unchanged.",
+    "10": "The headline delivers the whole answer in one glance, which is exactly what a daily return wants, and the this-morning framing rewards the habit. Nothing is playful, mandatory or unbypassable."
+  },
+  "inputTranscriptSha256": "2308fef005c6835dd73b477bcb7d278bdbf93e3d42acfaa8e36d259495ac7a69",
+  "shuffleSeed": 202607713
+}

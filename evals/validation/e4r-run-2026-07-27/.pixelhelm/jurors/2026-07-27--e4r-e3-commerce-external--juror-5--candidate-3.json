@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 6,
+    "5": 7,
+    "6": 9,
+    "7": 7,
+    "8": 8,
+    "9": 7,
+    "10": 6
+  },
+  "rationales": {
+    "1": "Price, stock and a sowing window appear consistently on every entry in one clean column. The list has no seasonal grouping and no discernible order, so season fit must be read item by item and the effect of the month filter is hard to anticipate.",
+    "2": "The product page puts price, stock and the add control exactly where convention says, with a proper button and quantity field. Stock language is plain and the money path carries no cleverness at all.",
+    "3": "Price pending is stated in italic with the supplier reason, the estimated germination figure is flagged, and out of stock is clear. The UK-only shipping line is small and centred in the masthead, reading as fine print rather than a stated condition of sale.",
+    "4": "Names, descriptions and the whole product page are comfortably set and nothing hides behind hover. The growing meta and stock labels are the smallest type in the set, and the price is barely larger than body copy.",
+    "5": "Quiet and tidy, with hanging numerals, hairline rules, a restrained palette, and the numbering carried onto the product page. Hierarchy is compressed into several near-identical small sizes, the numeral gutter sits mostly empty, and little of the styling is specific to this shop.",
+    "6": "Description, price, stock and buy come first, then the year table, grower notes and companions with their own prices, which is the cleanest decision path of the three. Tying the packet back to its number in the annual adds useful continuity.",
+    "7": "Two of us keep this list, read slowly and choose well, expressed as a short numbered annual. The idea lives mostly in the masthead and the numerals, while the visual language is generic literary minimalism another shop could wear unchanged.",
+    "8": "Restraint is total: one conceit, the numbered annual, and nothing near the money path is touched. The budget is under-spent rather than misspent.",
+    "9": "The masthead copy is warm and specific. Below it the entries fall back to plain shared descriptions with no shop commentary, so most of the list could be published by any seller.",
+    "10": "The two surfaces cohere through the masthead, the numbering and the rules. With no seasonal grouping, no newly-in-stock cue and no freshness marker, a returning shopper has to re-scan the whole list."
+  },
+  "inputTranscriptSha256": "43fd6cdf82c2602c93d42942dca7db6627e42ea97321d98cb71e009bed82629c",
+  "shuffleSeed": 202607725
+}

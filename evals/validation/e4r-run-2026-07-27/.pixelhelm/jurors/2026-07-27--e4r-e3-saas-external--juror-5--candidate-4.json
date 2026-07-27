@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The eyebrow and the FOR line name the product and the audience, but the headline describes the page's conceit, so the reader must reach the line items to learn what the product does.",
+    "2": "The pilot figure carries its n=11 basis and a not-independently-verified caveat, the beta is refused as finished, and the copy stays free of marketese.",
+    "3": "The CTA appears at the top and again beside the total with honest no-card and walk-away-owing-nothing lines, and the VAT note sits directly under the prices.",
+    "4": "An invoice-shaped structure of line items, total, and terms maps onto paperwork a sole trader already reads, in plain trade language.",
+    "5": "Alignment, the included column, the stamp, and the rule weights are tidy and nothing looks arbitrary; the narrow hero column against the wider tables is the one loose join.",
+    "6": "Beta is labeled and refused as finished and the estimate stays an estimate, but the testimonial is presented without anything marking it as unverified.",
+    "7": "The page is typeset as the product's own invoice, and content, layout, and detail all reinforce that single sentence.",
+    "8": "One deliberate brand-layer break, the invoice conceit, with headings, buttons, and links kept conventional.",
+    "9": "Phrasing such as if it doesn't earn its keep, walk away owing nothing, and January stops being a surprise, reads as this company's own.",
+    "10": "Line items and total scan fast and the trial terms are stated up front, though the price arrives only after the feature table."
+  },
+  "inputTranscriptSha256": "be752ca3249fe75565ca7042f1e315115b5c0cb8be15a04fe3153c18f3e2b825",
+  "shuffleSeed": 202607720
+}

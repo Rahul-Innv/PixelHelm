@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 6,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Season is the organizing spine, with items grouped under sowing windows, a month filter, and a per-item year band, and every row carries price and stock together. The band itself carries no month labels, so the first read leans on the written range beneath it.",
+    "2": "Price placement, stock language, quantity field, and add-to-basket all follow ordinary commerce convention on both surfaces, with the brand invention kept clear of the money path.",
+    "3": "Out of stock is visible and coloured distinctly, the null-price packet says only that the price is pending and to ask, the estimated germination is flagged inline, and the shipping limit sits in the header before any purchase intent. A margin note explaining where the estimate comes from goes beyond the minimum honesty ask.",
+    "4": "Targets and the purchase control are generous, and nothing depends on hover, but this is the smallest body and meta type of the set and the twelve-cell band is a very fine graphic for an older reader on a tablet.",
+    "5": "One restrained palette, one rule system, and the same year-band and margin-note components reused across catalog and product page make the two surfaces read as a single object. The wide empty left column on desktop is the one place the grid feels under-used.",
+    "6": "The year band, the sow-plant-flower table, the difficulty and germination line, the grower note, and the companion packets are all on the page and ordered so the decision precedes the basket. A first-time gardener can plan the whole year for this packet without leaving.",
+    "7": "Shelving every variety under the window it wants is one sentence that shows up in the content grouping, the band graphic, the month filter, and the product page heading alike. It reads as a working shop's almanac rather than borrowed boutique gloss.",
+    "8": "The invention is confined to the almanac framing, the band, and the margin notes, with navigation, price, and basket mechanics left entirely conventional.",
+    "9": "Lines like shelved under the window it wants and takes an autumn sowing too, as the band shows, are specific, unhurried, and tied to this shop's own stock. The voice is sustained through the margin notes rather than spent on the header.",
+    "10": "Window groupings plus the month filter answer what can be sown now immediately, and the shared masthead and back link make the two surfaces obviously one shop. Freshness is carried by stock labels rather than any explicit newly-in cue."
+  },
+  "inputTranscriptSha256": "835cc17b5b617c39d67b7bc06b271281312f9dec6e59de6b5d5285312984d539",
+  "shuffleSeed": 202607723
+}

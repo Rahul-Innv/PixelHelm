@@ -1,0 +1,101 @@
+{
+  "juror": "juror-2",
+  "set": "e3-editorial",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 7,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The bold standfirst delivers the whole finding in plain numbers, each plate carries a prose lead stating what it shows, and the full year-by-year table repeats every value as text, so nothing requires decoding a chart or scrolling.",
+        "2": "Each plate is titled by its finding, the missing years are drawn as open shaded bands with no line reaching across, and the heaviest-day plate is explicitly drawn from zero; the season-total plate starts at 550 rather than zero, but says so in its own caption.",
+        "3": "Gaps, the instrument seam, the hollow 2019 marker, and the no-attribution scope note appear on every plate and again in the record table; the table's notes column is cut off at mobile width, where the null rows read as bare dashes without their reasons.",
+        "4": "Patient local-paper register throughout, with lines like the weir keeping the valley's time for a generation, and the two logged quotes sit as breathers rather than ornament.",
+        "5": "Handsome serif setting with consistent plate framing and comfortable measure in both modes and both viewports; the identical four-note key repeated verbatim under all three plates reads as bulk, and the record table clips horizontally on mobile.",
+        "6": "The page is a static read with no scroll-driven dependency and no pacing device imposed on the reader, so the base text stands on its own.",
+        "7": "The stated idea, reporter's notes written on the record itself, is real and consistently executed through the lettered keys; three separate plates still chart the drift more than they make it felt, so the form trails the journalism.",
+        "8": "Reading mechanics are entirely conventional and the only departure is the modest plate-and-key framing, well inside a one-break budget.",
+        "9": "Unsensational and specific to this valley, with concrete local detail such as the autumn fair and the lane that floods, rather than weather-story boilerplate.",
+        "10": "Every device traces to something the record actually contains: shaded gaps for missing seasons, a hollow marker for the unverified reading, era rules for the two verified windows."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lead states the whole finding in plain numbers, a how-to-read key precedes the rail, and every mark on every line is printed alongside as a figure, so the record reads as text without decoding anything.",
+        "2": "The rail is named and described by its finding and missing years hold their place as hatched lines, but season totals are drawn as bars from a 550 baseline, which stretches a 24 percent range across most of the track; the non-zero scale is disclosed twice, yet bar length still overstates the difference.",
+        "3": "The strongest honesty surface of the set: nulls are hatched rows carrying their own reasons, the instrument change is a structural break in the rail so the boundary is crossed on the page itself, and the hollow 2019 dot carries its unverified caption inline in every view including mobile.",
+        "4": "The register is patient and almanac-like and the two logged quotes sit at their own years inside the rail where they serve the data; between rail blocks the reporting thins to short connective passages.",
+        "5": "The calmest setting of the set, with a wide measure, consistent line rhythm, and era headers that break the length; on mobile each year splits into two stacked tracks and keeps everything on screen, though on desktop the onset shelf and the total bar can read as one continuous strip.",
+        "6": "Fully static and readable top to bottom, with the rail rewarding ordinary scrolling rather than pacing the reader through it.",
+        "7": "One sentence carries it, thirty-four years read line by line like the almanac the valley kept, and the form is the journalism, since the drift is felt as the dots migrate rightward and the bars lengthen down the page.",
+        "8": "Exactly one deliberate break, the chart collapsed into the record itself, with reading mechanics left entirely conventional.",
+        "9": "Local, unsensational and particular, with lines about the dots edging rightward and the bars a shade longer each wet year than the valley had been used to that no other paper would run unchanged.",
+        "10": "Nothing is effect: the rail, the hatched gaps, and the hollow dot each exist because the dataset has onsets, missing seasons, and one unverified reading."
+      }
+    },
+    "candidate-3": {
+      "unscored": true,
+      "failingGate": "verify_states",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lead gives the finding in plain numbers, the then-and-now panel restates it in large type on both sides, and the ink-to-ink summary line reduces it to three differences, all reachable without decoding the one chart.",
+        "2": "The single drift chart plots the full September to October window with no truncation, names its finding in the lead, leaves the missing seasons as open shaded bands, and draws 2019 hollow.",
+        "3": "The ink device carries the instrument boundary onto every figure on the page, the most thorough disclosure of the set, and gaps and the unverified reading are stated in the chart notes, the table, and the closing note; the mobile table clips its instrument and notes columns, leaving the null rows without reasons and the seam carried by year colour alone in that view.",
+        "4": "The register is patient and place-loving, and gathering one quote from each instrument era is a purposeful frame; quarantining both quotes in their own section keeps them from serving the data where it moves.",
+        "5": "Clear hierarchy with a real legend, a balanced two-column comparison, and stacking that holds up on mobile; the record table clips mid-word at 375 width, the one visible break in an otherwise disciplined setting.",
+        "6": "A static read with no scroll dependency and no device that paces the reader, so the base content stands alone.",
+        "7": "The signature, a ledger printed in two inks, is one sentence and reaches all layers, but it dramatises the caveat rather than the shift, so the finding in the headline is charted rather than made felt.",
+        "8": "One break, the two-ink system, declared in a legend directly under the deck with mechanics left conventional; the ink meaning leans on colour in the mobile table view where the instrument column is not visible.",
+        "9": "Specific and quiet, with the line about the record keeping human time as well as rain, though a fair share of the prose is spent explaining the ink device itself.",
+        "10": "The central device is derived from a fact of the record rather than applied to it, since the two inks exist only because the instrument changed after 1996."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-4",
+    "candidate-1"
+  ]
+}

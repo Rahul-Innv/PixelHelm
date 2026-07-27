@@ -1,0 +1,101 @@
+{
+  "juror": "juror-3",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 6,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The mobile first viewport carries the headline answer, the one-sentence summary of why, and the closure alert without interaction. Locating which trails takes a scroll, and desktop leaves a large empty gap between the summary and the list.",
+        "2": "Each status keeps one stable rendering everywhere, and the four are distinguishable by word alone. Caution and closed share a single rust hue separated only by outline against fill, and open carries no chip at all, so the most consequential pair is the least separable at a glance.",
+        "3": "Unreported trails are labelled and the footer note that they are never assumed open or closed, and the null day is printed as no data. The estimated snowpack is flagged with its sensor-offline reason and every row carries its own report time.",
+        "4": "Order runs from the headline answer to what changed to the full register, with plain objective copy and no promotion. The seven-day history sits at the bottom rather than near the change summary it supports.",
+        "5": "One serif for names, one sans for meta, a tight three-size hierarchy and a single accent hue give a consistent rhythm. A large unexplained vertical void between the intro and the trail list, and faint ghost text at the top of the dark render, break the discipline.",
+        "6": "Long names, the burn cluster and both unreported rows sit in the layout without awkward emphasis in either mode. The dark render shows near-invisible duplicate footer text at the top of the page that light does not.",
+        "7": "The signature is the morning report, a dated dispatch whose headline is the answer, and it is carried by the editorial serif, the prose summary and the register beneath. It is true of a conditions service rather than a transplanted trend.",
+        "8": "Mechanics are entirely conventional and the breaks are confined to the brand layer: an editorial headline in place of a status hero, and typographic status marks in place of chips. That is two deliberate breaks, though the second one costs scannability.",
+        "9": "Lines like clearing after yesterday's rain, and trails without a report are shown as unknown and never assumed open or closed, are calm, factual and specific to this service. A competitor could not publish them unchanged.",
+        "10": "The headline delivers the whole answer in one glance, which is exactly what a daily return wants, and the this-morning framing rewards the habit. Nothing is playful, mandatory or unbypassable."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The mobile first viewport carries the full count sentence and the ranger's notice without interaction. The answer sits in body-weight text under a masthead that spends the top of the screen on brand, so it reads a beat slower than a display headline.",
+        "2": "Every entry carries the same bordered chip in the same position, with one hue and one word per status and a distinct grey for no report. The chips are low in visual weight relative to the entry names, but they never change meaning or rendering.",
+        "3": "No report received and condition unknown appear on both unreported entries, the null day is printed as not recorded, and the snowpack carries an estimated badge with its sensor-offline reason. Posting time, per-entry report times and a generated-at line make the data age explicit throughout.",
+        "4": "The order runs status summary, notice, log grouped open through no report, then conditions, matching the decision a hiker makes. Language is plain and objective, with the entry codes framed as log references rather than jargon.",
+        "5": "Dotted leaders, consistent rule weights, a disciplined three-size hierarchy and one paper-and-ink palette with four status hues leave very little arbitrary. The single narrow column leaves most of the desktop width empty, which suits the conceit but wastes the canvas.",
+        "6": "Long names absorb into the leaders, the burn cluster and both unreported entries sit cleanly, and both modes are fully resolved. On mobile the snowpack value splits from its unit across a line break and the estimated badge drops to its own line.",
+        "7": "The signature is that the page is the ranger's log itself, and paper, serif, entry numbers, posting time and the closing end-of-log line all reinforce it. It is congruent with a trail-conditions service, whose source of truth genuinely is a ranger's morning report.",
+        "8": "The mechanics layer is untouched, a plain document with conventional headings and reading order. The two breaks, the log skin and the leader-dotted entry line, sit entirely in the brand layer and both serve the signature.",
+        "9": "Morning log, log continues below, and end of log build a register no competitor page could publish unchanged, while staying entirely calm and factual. The voice never becomes decorative at the expense of the numbers.",
+        "10": "A dated entry posted each morning is precisely the artifact a daily glance returns to, with no playful gate and no motion. The cost is that the answer is a sentence to read rather than a figure to see."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 7,
+        "9": 5,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The counts line, the closure notice, the legend and the first open card all sit in the mobile first viewport without interaction. Colour-blocked cards make which trails answerable as fast as how many.",
+        "2": "Each status has a unique icon, a word, a hue and a legend entry, and that triple repeats identically in the counts line, the group headers and the card bands. Nothing depends on colour and no status ever changes rendering.",
+        "3": "The unreported trails get their own grey status rather than being omitted, the sparkline breaks with a dashed hollow marker at the null day, and the snowpack shows an estimated badge with its offline reason. Grey reads a little closer to inactive than to unknown, and there is no explicit statement that unreported never means open.",
+        "4": "Grouping by status with per-group counts, the notice above the fold and conditions at the end match the hiker's decision order. The copy is plain and objective but generically system-voiced.",
+        "5": "The card system, spacing scale, three-size hierarchy and legend-backed palette are consistently applied. Full-width colour bands spend roughly a hundred pixels of desktop height on a single word, and the caution, closed and no-report rows each leave conspicuous empty grid cells.",
+        "6": "Cards absorb long names and long notes, the burn cluster and both unreported rows sit without breakage, and the dark palette is genuinely retuned rather than reused. The trailing empty cells in three of the four groups are the only awkward emphasis.",
+        "7": "The signature is the trailhead board transposed to the screen, with the legend acting as the contract, and it is congruent with the archetype. It is also the most conventional idea in the set, closer to a well-executed status dashboard than to a distinctive one.",
+        "8": "Mechanics are entirely conventional and nothing is deliberately broken, which satisfies the restraint but spends none of the available brand-layer allowance. The result is safe rather than pointed.",
+        "9": "No report received from this trail, and value estimated from the valley station, are calm and factual but publishable unchanged by any parks dashboard. The raw ISO date in the snowpack note also breaks the date register used everywhere else on the page.",
+        "10": "The counts line and colour bands make the habitual daily glance close to instant, with nothing playful or blocking. The page is the longest of the set on mobile, so any return visit past the summary is a long scroll."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "verify_responsive",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-1",
+    "candidate-3"
+  ]
+}

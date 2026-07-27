@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 9,
+    "4": 6,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 6,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The twelve-month band lets sowing windows be compared straight down the page, and price and stock hold one consistent position in every row. The band cells carry no month labels and the desktop page is set small and dense, so precise reading still falls to the text beside it.",
+    "2": "Stock language and price placement are conventional and the buy box itself is ordinary. The catalog call to action is an underlined link inside the price line rather than a button, and on the product page the price and add control are pushed below a reference table.",
+    "3": "The estimated germination figure gets both a meta label and a dedicated margin note explaining it, the clearest handling of that item in the set. The null-price packet says price pending and invites you to ask, out of stock is plain, and UK-only shipping sits in the header.",
+    "4": "The layout linearises well on mobile and nothing is hover-dependent. At desktop this is the least generous candidate here: small body type, smaller italic marginalia, tiny band cells, and a text link where a button belongs.",
+    "5": "A genuine editorial system, with a marginalia column, consistent rule weights, dotted and solid rules used with intent, and the band recurring on both surfaces. The product page content column is left-anchored while the rules run full width, leaving an awkward empty right half.",
+    "6": "Everything needed is present, including the band, the year table, the margin note and the companions. The ordering makes deciding harder than it should be, with price and buy behind a reference table and the difficulty line stranded below the buy box.",
+    "7": "Find your month first, then your packet: the shop is reorganised as an almanac, and content, band, marginalia and month filter all carry that one sentence. It leans more printed reference than service culture, but for an heirloom seed keeper that is congruent.",
+    "8": "The almanac inversion and the marginalia are legitimate brand-layer breaks. The cleverness does not stop there — demoting the buy box below the year table and turning the catalog call to action into an inline link are checkout-adjacent, which this budget rules out.",
+    "9": "The widest window in the almanac, five months of it; the whole plant earns its bed; takes an autumn sowing too, as the band shows — the marginalia is the best writing in the set. It is unmistakably one shop annotating its own stock.",
+    "10": "The month filter, the jump links to each window and per-row stock give a returning shopper an in-season answer immediately, helped by the band. Nothing marks what is newly in stock or newly added."
+  },
+  "inputTranscriptSha256": "43fd6cdf82c2602c93d42942dca7db6627e42ea97321d98cb71e009bed82629c",
+  "shuffleSeed": 202607725
+}

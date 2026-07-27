@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 6,
+    "3": 9,
+    "4": 6,
+    "5": 7,
+    "6": 7,
+    "7": 8,
+    "8": 7,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The twelve-month band above each entry makes season fit readable at a glance and the entries are grouped by sowing window, but price and stock sit in small type at the end of a long text block rather than in a scannable column.",
+    "2": "Price, stock language and the single add-to-basket path are conventional on the product page, though the catalog offers no per-item buy affordance and only one entry carries a visible link to its packet page.",
+    "3": "Out of stock, the low-count warning, the estimated germination flag, the withheld price rendered as 'Price pending — ask us', and UK-only shipping stated in the header are all honest and visible before intent forms.",
+    "4": "Type is legible and nothing depends on hover, but the catalog leans on small metadata text and thin month cells that are demanding for older readers at default zoom.",
+    "5": "One restrained palette, a consistent rule-and-margin rhythm, and the same month band on both surfaces read as a single system, with the margin notes aligned to a real column.",
+    "6": "Sowing window, plant-out, flowering, difficulty, germination, grower notes and companions are all present in a clear order, so a first-time gardener can decide without leaving the page.",
+    "7": "The almanac framing — the year as a band, the shop's own marginalia — is a genuine two-person shop idea carried through content, layout and voice rather than borrowed gloss.",
+    "8": "The novelty sits in the almanac metaphor and the marginal notes while the money path stays plain, though the catalog's near-absent buy affordance pushes the break closer to mechanics than is comfortable.",
+    "9": "Lines like 'shelved under the window it wants' and the margin notes sound like a specific grower talking, unhurried and particular.",
+    "10": "Season-first grouping and the anchor links to each window serve a repeat visitor checking what is sowable now, and both surfaces share the same almanac vocabulary."
+  },
+  "inputTranscriptSha256": "7932af2fbd88b0033202590d72927f90ec7aab725bc6616428e52f070bca35f8",
+  "shuffleSeed": 202607721
+}

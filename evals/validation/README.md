@@ -78,4 +78,20 @@ merge.
   scoring, and panels receive the floor outputs) — see
   `E4-JUDGING-SEAT-REPAIR-DECISION.md`. The demotion stays in force until
   **E4-R** re-runs the sealed protocol with the repair applied and fresh plants.
+- `PREREG-E4R-ADDENDUM.md` — E4-R's addendum to the sealed E4 sheet: statistics
+  and thresholds carried verbatim and UNCHANGED, plus the four fresh defect
+  classes (each distinct from E4's four), the R2 input-set change, and the R1
+  UNSCORED handling. Sealed BEFORE any E4-R plant was authored.
+- `e4r-run-2026-07-27/` — E4-R: **RUN 2026-07-27 — FALSIFIED per its sealed
+  criteria** (tau-b **0.378 FAIL** against the unchanged τ ≥ 0.5 floor;
+  inflation +0.875 PASS; plant criterion PASS — the floor battery hard-failed
+  4/4 plants on exactly their registered gate and none entered any ranking).
+  Zero discordant pairs: the shortfall is lost resolution (8 of 12 pairs tied
+  internally, 5 of 12 externally), not an inversion. **Consequence: the
+  advisory-only demotion of the model judging seat STANDS** — E4-R does not
+  meet the sealed success condition, so nothing about the demotion changes, and
+  any further re-validation is the coordinator's / owner's call. Separately
+  evidenced: the R1+R2 repair is implemented and honored (4/4 plants eliminated
+  before scoring; 20/20 jurors independently refused to score a floor-failing
+  candidate when handed its gate outputs, each naming the correct gate).
 - E5 human protocol: defined in artifact 14; owner-gated (recruitment).

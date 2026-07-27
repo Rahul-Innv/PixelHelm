@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 6,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 7,
+    "7": 6,
+    "8": 7,
+    "9": 6,
+    "10": 5
+  },
+  "rationales": {
+    "1": "Price and stock are consistently placed per entry, but the flat numbered list has no season grouping, so working out what is sowable now means reading every row's sowing line.",
+    "2": "The money path is plain and conventional on the product page, though only the first catalog entry exposes a link to its packet and the rest offer no route forward.",
+    "3": "Out of stock, the low-count line, the estimated germination flag, the pending price and UK-only shipping are all stated plainly, though the shipping note is set in the smallest type on the page.",
+    "4": "Body copy and the buy controls are comfortably sized with no hover dependence, but the metadata rows and shipping line drop to a small size that taxes older eyes.",
+    "5": "A disciplined single-column list with consistent rules and one palette, though the very narrow measure against wide empty margins leaves the desktop catalog looking underfilled.",
+    "6": "Price, stock, sowing table, grower notes and companions are all present in a sensible order, with the buy box placed early enough to decide from.",
+    "7": "The numbered seed list is a coherent quiet idea but reads as a generic catalogue convention rather than something only this two-person shop could claim.",
+    "8": "Novelty is confined to the numbering and the restrained typographic treatment, leaving the checkout-adjacent mechanics untouched.",
+    "9": "'Read slowly, choose well' has some character, but the entry copy is functional description that a competitor could publish largely unchanged.",
+    "10": "The arbitrary numbered order and absence of any season grouping mean a repeat visitor checking what is newly sowable must scan the whole list."
+  },
+  "inputTranscriptSha256": "7932af2fbd88b0033202590d72927f90ec7aab725bc6616428e52f070bca35f8",
+  "shuffleSeed": 202607721
+}

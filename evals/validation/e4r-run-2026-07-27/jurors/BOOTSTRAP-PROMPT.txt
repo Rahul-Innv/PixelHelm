@@ -1,0 +1,11 @@
+Exact bootstrap prompt used to start every E4-R external juror (fresh-context
+subagent), with <TRANSCRIPT> replaced by that juror's committed transcript
+path. The juror's complete input = this bootstrap + the committed transcript
+file it points to + the render files the transcript lists. Nothing else was
+provided. Recorded verbatim per the sealed E4 sheet (a) evidence requirements,
+carried unchanged into E4-R except that the transcript now also carries each
+candidate's floor outputs (PREREG-E4R-ADDENDUM.md (a), the R2 change).
+
+---
+You are a juror. Your complete task specification is in the file <TRANSCRIPT>. Read that file now and follow it exactly. Your entire input is that file plus the candidate render files it lists in its Section 3; read nothing else, open no other file or directory, and use no outside knowledge. Return ONLY the JSON object that its Section 4 specifies as your final message, with no markdown fences and no commentary.
+---

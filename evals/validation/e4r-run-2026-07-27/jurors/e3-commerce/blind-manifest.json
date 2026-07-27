@@ -1,0 +1,1136 @@
+{
+  "set": "e3-commerce",
+  "_note": "Every neutral-label render copy is byte-identical to its committed source; both sha256 sums are recorded here.",
+  "jurors": {
+    "juror-1": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a",
+        "copySha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0",
+        "copySha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63",
+        "copySha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210",
+        "copySha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7",
+        "copySha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed",
+        "copySha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a",
+        "copySha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-1-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801",
+        "copySha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-catalog__desktop__light.png",
+        "sha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360",
+        "copySha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-catalog__desktop__dark.png",
+        "sha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf",
+        "copySha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-catalog__mobile__light.png",
+        "sha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956",
+        "copySha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-catalog__mobile__dark.png",
+        "sha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0",
+        "copySha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-product__desktop__light.png",
+        "sha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b",
+        "copySha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-product__desktop__dark.png",
+        "sha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0",
+        "copySha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-product__mobile__light.png",
+        "sha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7",
+        "copySha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-2-product__mobile__dark.png",
+        "sha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476",
+        "copySha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869",
+        "copySha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028",
+        "copySha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092",
+        "copySha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6",
+        "copySha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a",
+        "copySha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218",
+        "copySha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7",
+        "copySha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-3-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302",
+        "copySha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558",
+        "copySha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281",
+        "copySha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab",
+        "copySha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee",
+        "copySha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c",
+        "copySha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a",
+        "copySha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2",
+        "copySha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-1/candidate-4-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b",
+        "copySha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      }
+    ],
+    "juror-2": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558",
+        "copySha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281",
+        "copySha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab",
+        "copySha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee",
+        "copySha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c",
+        "copySha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a",
+        "copySha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2",
+        "copySha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-1-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b",
+        "copySha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869",
+        "copySha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028",
+        "copySha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092",
+        "copySha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6",
+        "copySha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a",
+        "copySha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218",
+        "copySha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7",
+        "copySha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-2-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302",
+        "copySha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-catalog__desktop__light.png",
+        "sha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360",
+        "copySha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-catalog__desktop__dark.png",
+        "sha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf",
+        "copySha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-catalog__mobile__light.png",
+        "sha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956",
+        "copySha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-catalog__mobile__dark.png",
+        "sha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0",
+        "copySha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-product__desktop__light.png",
+        "sha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b",
+        "copySha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-product__desktop__dark.png",
+        "sha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0",
+        "copySha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-product__mobile__light.png",
+        "sha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7",
+        "copySha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-3-product__mobile__dark.png",
+        "sha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476",
+        "copySha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a",
+        "copySha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0",
+        "copySha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63",
+        "copySha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210",
+        "copySha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7",
+        "copySha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed",
+        "copySha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a",
+        "copySha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-2/candidate-4-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801",
+        "copySha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      }
+    ],
+    "juror-3": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-catalog__desktop__light.png",
+        "sha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360",
+        "copySha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-catalog__desktop__dark.png",
+        "sha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf",
+        "copySha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-catalog__mobile__light.png",
+        "sha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956",
+        "copySha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-catalog__mobile__dark.png",
+        "sha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0",
+        "copySha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-product__desktop__light.png",
+        "sha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b",
+        "copySha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-product__desktop__dark.png",
+        "sha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0",
+        "copySha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-product__mobile__light.png",
+        "sha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7",
+        "copySha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-1-product__mobile__dark.png",
+        "sha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476",
+        "copySha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a",
+        "copySha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0",
+        "copySha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63",
+        "copySha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210",
+        "copySha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7",
+        "copySha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed",
+        "copySha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a",
+        "copySha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-2-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801",
+        "copySha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869",
+        "copySha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028",
+        "copySha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092",
+        "copySha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6",
+        "copySha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a",
+        "copySha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218",
+        "copySha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7",
+        "copySha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-3-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302",
+        "copySha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558",
+        "copySha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281",
+        "copySha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab",
+        "copySha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee",
+        "copySha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c",
+        "copySha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a",
+        "copySha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2",
+        "copySha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-3/candidate-4-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b",
+        "copySha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      }
+    ],
+    "juror-4": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a",
+        "copySha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0",
+        "copySha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63",
+        "copySha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210",
+        "copySha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7",
+        "copySha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed",
+        "copySha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a",
+        "copySha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-1-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801",
+        "copySha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869",
+        "copySha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028",
+        "copySha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092",
+        "copySha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6",
+        "copySha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a",
+        "copySha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218",
+        "copySha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7",
+        "copySha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-2-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302",
+        "copySha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558",
+        "copySha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281",
+        "copySha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab",
+        "copySha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee",
+        "copySha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c",
+        "copySha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a",
+        "copySha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2",
+        "copySha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-3-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b",
+        "copySha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-catalog__desktop__light.png",
+        "sha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360",
+        "copySha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-catalog__desktop__dark.png",
+        "sha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf",
+        "copySha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-catalog__mobile__light.png",
+        "sha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956",
+        "copySha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-catalog__mobile__dark.png",
+        "sha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0",
+        "copySha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-product__desktop__light.png",
+        "sha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b",
+        "copySha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-product__desktop__dark.png",
+        "sha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0",
+        "copySha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-product__mobile__light.png",
+        "sha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7",
+        "copySha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-4/candidate-4-product__mobile__dark.png",
+        "sha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476",
+        "copySha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476"
+      }
+    ],
+    "juror-5": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-catalog__desktop__light.png",
+        "sha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869",
+        "copySha256": "fa7c4b1a96e80106405b17d091bc4831c1f0067547d0fcc3c441b6413105a869"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-catalog__desktop__dark.png",
+        "sha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028",
+        "copySha256": "b9a1f7f04918a4722eb190e148803a95992c069a8b8d90e31a69c8e776a89028"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-catalog__mobile__light.png",
+        "sha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092",
+        "copySha256": "37fd281975b8d8502d1ad045e81a20838c28b5694f2ff848f8c914ecdcdf8092"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-catalog__mobile__dark.png",
+        "sha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6",
+        "copySha256": "2f01068a712e555b52d73bf525444db8446e7376dd3c88646e590d68b5749bd6"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-product__desktop__light.png",
+        "sha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a",
+        "copySha256": "b3f037dc2438a7407291f67df69b483ba2536053473b0376632573d63840992a"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-product__desktop__dark.png",
+        "sha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218",
+        "copySha256": "fc0a9a9551aebf066c010a01322eb4045cecaa381be102807f9b8c12f5285218"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-product__mobile__light.png",
+        "sha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7",
+        "copySha256": "81c82774b02c6fde9d4e886015710ef03108a0ba0cfcf6bc82b60d3b62338fd7"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/packet-rack-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-1-product__mobile__dark.png",
+        "sha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302",
+        "copySha256": "3a3fc24f0cb1a06c1bc072e020701e8c8135f793e3da5aeaabb738f21f7c3302"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-catalog__desktop__light.png",
+        "sha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a",
+        "copySha256": "72e059180101ece221d126c6436db17287ac86dbc34067245213568c5ec74f4a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-catalog__desktop__dark.png",
+        "sha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0",
+        "copySha256": "3dec17f6069555c980ab114c867c3259f1c3b9a502cad478344eadb447aac6d0"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-catalog__mobile__light.png",
+        "sha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63",
+        "copySha256": "05d22bab4699f62d846ea969529f64905c48583bb3b818f1bcaf67cc08fe4b63"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-catalog__mobile__dark.png",
+        "sha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210",
+        "copySha256": "a05bed94f7dec2d8c166aaab364436df1d1481337ce910adda9f4a3a82101210"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-product__desktop__light.png",
+        "sha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7",
+        "copySha256": "040946a1704437aa619eaaefaaf6586af6de1e9e2a2b8490686412f56f2a69e7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-product__desktop__dark.png",
+        "sha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed",
+        "copySha256": "f7b6536b31f9ffee4f2202dc6755fd8888c59b404c7461ae578ec1e736df56ed"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-product__mobile__light.png",
+        "sha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a",
+        "copySha256": "29fe9229a7b66b5ed92d0cf5eb82dbae683546403b276edd98ba494908dd152a"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/sowing-almanac-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-2-product__mobile__dark.png",
+        "sha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801",
+        "copySha256": "0988981022113567e68b8795dcdc8c13719c373f5fc4755f5b69ef4a43d46801"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-catalog__desktop__light.png",
+        "sha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558",
+        "copySha256": "4746e28e8ba6c84c3ad48d7b17066a22f7401ef1aa133cb188616f726bdca558"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-catalog__desktop__dark.png",
+        "sha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281",
+        "copySha256": "d2a853f9746efd41450c513e05954f32abca2886be2ba6d78e1f3fed12a9b281"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-catalog__mobile__light.png",
+        "sha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab",
+        "copySha256": "c560e55d460e50305a58720ebd7236933c7f9334656052ebdcab3e7a15b939ab"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-catalog__mobile__dark.png",
+        "sha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee",
+        "copySha256": "84f5dcdd52d1da9b91441f1169ced65accff110746f0bc3ac07d45c003dd05ee"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-product__desktop__light.png",
+        "sha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c",
+        "copySha256": "e134a298b80ff7ec64b9911b5c8646199a69cb0dbafd2fbeb3545bf65d03986c"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-product__desktop__dark.png",
+        "sha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a",
+        "copySha256": "289a689e6cc9b44073c1883b3125a2d8ac9f8b90b8a6f4a0f56801ee279ace4a"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-product__mobile__light.png",
+        "sha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2",
+        "copySha256": "54a46805e614bab1ef4ef195883748cab8121632c4cd31c9080a87008eea68f2"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e3/run-2026-07-26/project/renders/seed-annual-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-3-product__mobile__dark.png",
+        "sha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b",
+        "copySha256": "a81487c2577c09bc99336a48219fdef2d8f312bcfd00b245b996f0118cf15d2b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-catalog__desktop__light.png",
+        "sha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360",
+        "copySha256": "7f211bb4c3402f9f17a01507218914c5f432a10175c574d351400f0b34cf1360"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-catalog__desktop__dark.png",
+        "sha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf",
+        "copySha256": "b977031946972f3b022a5ea3da467429a36795d867a2bd3b012df1db92ba47bf"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-catalog__mobile__light.png",
+        "sha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956",
+        "copySha256": "73aa93af488c23b6046245f9b771d1edcb9105591b03e0cbf574c7cad7a72956"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-catalog__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-catalog__mobile__dark.png",
+        "sha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0",
+        "copySha256": "02559f715c7862f0b326f1f723fe3b13e07053ed450b9ec13c4dd6fe46b391b0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-product__desktop__light.png",
+        "sha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b",
+        "copySha256": "f002f052a190aa4b4d54b9c1b41abdcd818e9377da18b713e07a631406faba8b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__desktop__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-product__desktop__dark.png",
+        "sha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0",
+        "copySha256": "d277415d2fee6c333b72cd4490e4fcb6231da5eb878ce8bea1321b86501fe7f0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__light.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-product__mobile__light.png",
+        "sha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7",
+        "copySha256": "c832938960fc7b006c4815fe5e53a41892b1c9eb13f003f49fb38df94e8ffea7"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/renders/glass-house-product__mobile__dark.png",
+        "copy": "jurors-blind/e3-commerce/juror-5/candidate-4-product__mobile__dark.png",
+        "sha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476",
+        "copySha256": "94d1d50b9eb35fad86faff56f50fe0fc91a1859f000fe1335ebbe876efb9a476"
+      }
+    ]
+  }
+}

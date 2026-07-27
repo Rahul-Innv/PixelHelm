@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The eyebrow names the category and the first screenful carries the headline, both prices, the VAT note and the trial terms without a scroll. The headline itself spends its words on the quote conceit rather than saying what the product does, so the eyebrow has to carry the category.",
+    "2": "Each number arrives with its basis: the pilot figure is called an internal estimate at n=11 and explicitly not an independently verified figure, and the beta integration is named twice as unfinished. Restraint reads as confidence and there is no marketese anywhere.",
+    "3": "Price, VAT note, thirty-days-free no-card terms and the trial button all sit in the opening panel, which is the most respectful possible order for a skeptical buyer. The single CTA never nags, though nothing is offered again after the case has been made.",
+    "4": "Plain trade language throughout, and on the phone the price panel follows immediately after the hero, which is what a subscription-skeptic reads for first. No startup idiom appears anywhere on the page.",
+    "5": "Consistent rule work, a restrained palette with one accent reserved for emphasis and the beta badge, and a tight three-size hierarchy. The empty left column beneath the intro and the hole in the second small-print row leave the desktop layout slightly unresolved.",
+    "6": "The beta is labeled in two separate places and the pilot figure is labeled as an estimate with its sample size. The testimonial is carried with only a name and trade, with no explicit note that it is unverified, which is the one honesty item left open.",
+    "7": "One sentence, that the page is the quotation you would write for your own customer, and the content order, the quotation panel and the small-print-set-large section all reinforce it. The page enacts the trade's own convention rather than asserting a benefit.",
+    "8": "Mechanics stay conventional and the break is a single brand-layer inversion: price and small print before the pitch. Nothing else in the page fights the reader's expectations.",
+    "9": "Lines about there being no asterisk because there is nothing to hide, and support being people rather than a chat widget pretending to be, could not be lifted unchanged by a competitor. The register respects the reader without flattering them.",
+    "10": "The whole decision is available before the first scroll and everything after it is scannable structure with no device between reader and answer. Form enacts the pitch about time more directly than anything else here."
+  },
+  "inputTranscriptSha256": "b877622898a5c1670028700d2db2ab524df665a3bb1436cf279cfac56eb1ba04",
+  "shuffleSeed": 202607716
+}

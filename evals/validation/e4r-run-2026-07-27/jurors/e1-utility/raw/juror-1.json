@@ -1,0 +1,101 @@
+{
+  "juror": "juror-1",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 6,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The mobile first viewport carries the park name, the four-way status tally, the controlled-burn closure notice and the status legend before any scrolling. Answering where requires only continued scrolling into the open group that follows immediately.",
+        "2": "Each status pairs a distinct glyph (filled dot, triangle, cross, dashed ring) with an uppercase word and a color, defined once in an explicit legend and repeated identically in group headings and card banners. The four remain separable with color removed and never swap meaning between modes.",
+        "3": "Unreported trails get their own labelled group reading no report received from this trail rather than being folded into open or dropped, the snowpack 0 cm carries a dashed estimated chip plus the sensor-offline explanation, and the missing day appears as a dashed hollow marker labelled no data. Every trail row carries its own last-report time under a board-updated stamp.",
+        "4": "Order runs from overall tally to the active closure to the open, caution, closed and unreported groups, then to snowpack and precipitation detail, matching the hiker decision sequence. Language is plain and objective with no promotional framing.",
+        "5": "One card component, a consistent spacing rhythm, roughly three type sizes and a four-color status palette, with dashed strokes used systematically to mean uncertain. The desktop grid leaves conspicuous holes where a group has two trails instead of three, and the snowpack card sits half empty beside the chart.",
+        "6": "Long names, the two-trail burn cluster and both unreported rows all sit in the grid without truncation or overflow, and light and dark are each fully resolved with adjusted status hues. The trailing empty grid cells and the tall half-filled snowpack card are the only awkward emphasis.",
+        "7": "The signature is the trailhead status board brought to the browser, carried by the legend, the board-updated stamp, the color-banner cards and the dashed-means-unknown language. It is true of a trail-conditions service rather than borrowed from another category.",
+        "8": "Mechanics stay entirely conventional, with real headings, ordinary scrolling and no unusual controls. The single brand-layer move is the oversized color status banner, well inside the budget.",
+        "9": "Microcopy is calm and factual but interchangeable, and most strings are labels a competing conditions board could publish unchanged. One date rendered as 2026-07-19 while every other date reads as Jul 26 is a small slip.",
+        "10": "The tally line and board-updated stamp make the habitual daily glance cheap, with nothing playful or mandatory to dismiss. The tall banner cards do cost a returning reader more scrolling than the content warrants."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The first mobile viewport delivers the park name, the dated morning log line, the bold three-of-nine summary and the ranger's closure notice without interaction. Per-trail status is a small outlined badge that must be read rather than seen, so the glance is slower than a color-coded board.",
+        "2": "All four statuses use the same outlined rectangle, differing only by label text and border hue, so they read reliably with color removed and hold one meaning throughout. The shared shape means the reader must parse the word rather than recognize the state at a glance.",
+        "3": "Unreported entries read as no report received with condition unknown, the missing day gets its own dated row saying not recorded rather than vanishing, and the snowpack value carries an estimated badge with the sensor-offline date. Every entry states its own last-report time under a posted timestamp.",
+        "4": "The log runs from summary to ranger's notice to the trail entries to snowpack and the seven-day table, and it states its own ordering rule so the reader knows why entries sit where they do. Language stays plain and objective throughout.",
+        "5": "Double rules, small-caps section labels, dot leaders and a strict badge-plus-entry structure hold a tight rhythm on a two-hue palette. The leader dots add texture that carries no information, and the desktop badge gutter leaves a wide empty channel.",
+        "6": "Long names, the burn cluster and both unreported entries sit cleanly in both modes, with the badge stacking above the name on mobile to absorb the width. The mobile snowpack line breaks between the value and its unit, orphaning the unit onto the next line beside the estimated badge.",
+        "7": "The signature is the ranger's daily log, and content, typography and structure all serve it, from morning log and entry identifiers to log continues below and end of log. It is earned by a service whose conditions genuinely are logged each morning.",
+        "8": "Mechanics are untouched, with real headings, ordinary scrolling and conventional badges. The ledger typography and dot leaders form one coherent brand-layer break rather than two unrelated ones.",
+        "9": "Lines such as three of nine trails open this morning, entered open first then caution then closed, and end of log are specific to this page and could not be lifted unchanged by a competitor. The register stays calm and factual despite the strong voice.",
+        "10": "The dated morning log framing and the single summary sentence reward a habitual daily glance, and nothing is playful or mandatory. Rescanning outlined badges is a little slower on the second visit than reading color blocks."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 8,
+        "8": 7,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The single largest element on the page is the sentence that answers the question, and it sits with the timestamp, the supporting summary and the closure alert inside the first mobile viewport. No other candidate states the verdict as directly.",
+        "2": "Each status keeps one stable rendering everywhere and the four differ in shape as well as hue, so color is never load-bearing. Open is set as plain text with no chip while closed is a solid badge, so the state a hiker scans for carries the least visual weight and there is no legend.",
+        "3": "Unreported trails read as no report on file with a dotted-underline unknown treatment, the estimated snowpack and the missing day share that same treatment, and the footer states outright that trails without a report are never assumed open or closed. Per-trail last-report times sit under a conditions-as-of stamp.",
+        "4": "The page runs verdict, then closure alert and worth knowing, then all nine trails in decision order, then the week, matching how a hiker decides. Language is plain and objective with no jargon.",
+        "5": "Typography is restrained and well set on a two-family, one-accent system with clean alignment. A large dead vertical band opens between the hero and the trail list on desktop, the status column leaves the right third of the content width empty, and the mobile seven-day grid runs ragged.",
+        "6": "Long names, the burn cluster and both unreported rows sit without breakage, and both modes are fully resolved. The seven-day strip reflows into uneven mobile rows and the desktop hero leaves an unresolved gap when the side rail runs short.",
+        "7": "The signature is verdict first with everything else as evidence, and the headline, the supporting sentence and the closing honesty note all serve it. The large-serif headline with a right rail is close enough to a general editorial look that the idea is slightly less owned than it could be.",
+        "8": "Mechanics stay conventional, and the oversized headline plus the dotted-underline unknown affordance are two deliberate brand-layer breaks. Dropping the chip from open pushes a third break into the legibility layer rather than the brand layer.",
+        "9": "The closing line that trails without a report are shown as unknown and never assumed open or closed states a policy in the site's own words, and worth knowing and clearing after yesterday's rain hold the same calm register. A competitor could not lift these unchanged.",
+        "10": "One sentence in the same place every morning is close to ideal for the habitual daily glance, and there is nothing playful, delayed or mandatory. Returning readers get the answer before they scroll."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "verify_responsive",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-2",
+    "candidate-3"
+  ]
+}
