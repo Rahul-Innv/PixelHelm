@@ -1,0 +1,130 @@
+{
+  "project": "e4-plant-stone-steps",
+  "root": "../arms/stone-steps",
+  "_rootNote": "relative to this profile's directory (repo-portable; no user-absolute path)",
+  "sourceDirs": [
+    "."
+  ],
+  "sourceExts": [
+    ".html"
+  ],
+  "ignore": [],
+  "allowRawColorIn": [
+    "index.html"
+  ],
+  "_rawColorNote": "single-file plant: raw hex is legal only inside the token definition blocks; the walk is soft/advisory",
+  "tokens": {
+    "light": {
+      "paper": "#f1e6cb",
+      "ink": "#241c10",
+      "muted": "#6a5a38",
+      "rule": "#8a7a55",
+      "open": "#2e5d34",
+      "caution": "#6e510e",
+      "closed": "#8f2f1c",
+      "unreported": "#6a5a38"
+    },
+    "dark": {
+      "paper": "#16120c",
+      "ink": "#ece4d2",
+      "muted": "#b3a88f",
+      "rule": "#726751",
+      "open": "#93c18c",
+      "caution": "#d6a748",
+      "closed": "#e2907a",
+      "unreported": "#b3a88f"
+    }
+  },
+  "gatedPairs": [
+    {
+      "fg": "ink",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "muted",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "open",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "caution",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "closed",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "unreported",
+      "on": [
+        "paper"
+      ],
+      "kind": "text"
+    },
+    {
+      "fg": "rule",
+      "on": [
+        "paper"
+      ],
+      "kind": "graphic"
+    }
+  ],
+  "bannedClusters": [
+    {
+      "id": "ai-cyan",
+      "any": [
+        "#16d5e6",
+        "#00d4ff",
+        "#22d3ee",
+        "cyan-400",
+        "cyan-500"
+      ]
+    },
+    {
+      "id": "ai-purple-grad",
+      "any": [
+        "from-purple-500 to-pink-500",
+        "from-violet-600 to-fuchsia",
+        "linear-gradient(135deg, #667eea",
+        "#764ba2"
+      ]
+    },
+    {
+      "id": "bootstrap-indigo-default",
+      "any": [
+        "#6366f1",
+        "#4f46e5",
+        "indigo-500",
+        "indigo-600",
+        "#0d6efd"
+      ]
+    },
+    {
+      "id": "glass-everywhere",
+      "any": [
+        "backdrop-blur",
+        "bg-white/10",
+        "bg-white/20"
+      ]
+    }
+  ],
+  "surfaceType": "data",
+  "_register": "calm, factual, outdoors-trust; zero marketing voice."
+}

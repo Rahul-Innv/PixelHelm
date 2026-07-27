@@ -1,0 +1,43 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R external calibration",
+  "intent": "Re-validate the model judging seat after the R1+R2 repair, under the sealed E4 protocol with unchanged statistics and thresholds and a fresh plant set (PREREG-E4R-ADDENDUM.md).",
+  "edition": "lite",
+  "workerModel": "claude-opus-5 (main context and all 20 juror subagents)",
+  "skillsFired": [
+    "pixelhelm-render/scripts/render.mjs",
+    "pixelhelm-evaluate/scripts/static-gates.mjs",
+    "pixelhelm-evaluate/scripts/check-token-contracts.mjs",
+    "pixelhelm-evaluate/scripts/output-floor-gate.mjs",
+    "pixelhelm-evaluate/scripts/derived-claims-gate.mjs",
+    "pixelhelm-evaluate/scripts/content-manifest-gate.mjs",
+    "pixelhelm-evaluate/scripts/verify_responsive.mjs",
+    "pixelhelm-evaluate/scripts/verify_states.mjs",
+    "pixelhelm-evaluate/scripts/verify_targetsize.mjs",
+    "pixelhelm-evaluate/scripts/verify_focustrap.mjs",
+    "pixelhelm-loop/scripts/records.mjs"
+  ],
+  "engines": [
+    "internal-E1..E4"
+  ],
+  "council": {
+    "pass": "fast",
+    "seats": 0,
+    "registerJurors": 20
+  },
+  "iterations": 0,
+  "renders": {
+    "items": 5,
+    "cells": 20
+  },
+  "tokens": {
+    "subagentsMeasured": 1896628,
+    "workflowsMeasured": 0,
+    "note": "measured-only; main-context usage is not observable in-session. Sum of the 20 juror subagents' reported token usage."
+  },
+  "wallClockMinutes": 42,
+  "outcome": "report-only",
+  "notes": "E4-R FALSIFIED on the agreement criterion: tau-b = 0.3779644730092272 against the registered threshold tau >= 0.5 (C=2, D=0, n0=12, n1=8, n2=5). Inflation +0.875 PASSES the |inflation| <= 1.5 bound. Every plant caught (4 of 4 hard-failed the committed floor battery and none entered any external ranking); no plant won or tied for top. Computation scripts cited by sha256: compute-e4r-stats.mjs d2a1db1b3cbb973a760dede428eb3344f6cd552909fc93fe1197751f527177a3 · aggregate-external.mjs 12a78709da8f84c409a80601dfc0b7a06467b0fec12a4afe1aebd1f36decfc20 · build-panels.mjs f6b894e0f8abc3e6a1df877dc50d969f725ba7c22bd288200cbfc823c82ecb85 · write-juror-records.mjs a601fdd4d4875a22c48fd5a2eca4a9e7a44258456fd606c0b03035b8458a3fc9 · run-plant-battery.mjs 1d0accc4c841454e761dd66d673f3d6aa898d549f2dee6e05514d2eb4c0ebb64 · assert-identity.mjs 3e0fdbb5114d62b683a9327bcfdf8d190c17a8a2affec3cc7d3ed41dc3931ad6 · make-plant-profile.mjs 3d08832ba5f84cfd97843672efa52634fa1fd112005239aa7f252cd9aa532790. Wall clock measured from the sealed-addendum commit to this record."
+}

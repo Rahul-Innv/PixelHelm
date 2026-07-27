@@ -1,0 +1,82 @@
+{
+  "e1-utility": {
+    "unscored": [
+      "stone-steps (verify_responsive)"
+    ],
+    "ranking": [
+      {
+        "candidate": "first-light",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "status-board",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "trail-ledger",
+        "overallMedian": 8
+      }
+    ],
+    "jurorsHonoringR1": 5
+  },
+  "e3-saas": {
+    "unscored": [
+      "job-sheet (output-floor-gate)"
+    ],
+    "ranking": [
+      {
+        "candidate": "fair-quote",
+        "overallMedian": 8.5
+      },
+      {
+        "candidate": "worked-invoice",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "driveway-to-paid",
+        "overallMedian": 7
+      }
+    ],
+    "jurorsHonoringR1": 5
+  },
+  "e3-commerce": {
+    "unscored": [
+      "glass-house (verify_focustrap)"
+    ],
+    "ranking": [
+      {
+        "candidate": "packet-rack",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "sowing-almanac",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "seed-annual",
+        "overallMedian": 7
+      }
+    ],
+    "jurorsHonoringR1": 5
+  },
+  "e3-editorial": {
+    "unscored": [
+      "gauge-house (verify_states)"
+    ],
+    "ranking": [
+      {
+        "candidate": "almanac-rail",
+        "overallMedian": 9
+      },
+      {
+        "candidate": "two-inks",
+        "overallMedian": 8
+      },
+      {
+        "candidate": "weir-plates",
+        "overallMedian": 8
+      }
+    ],
+    "jurorsHonoringR1": 5
+  }
+}

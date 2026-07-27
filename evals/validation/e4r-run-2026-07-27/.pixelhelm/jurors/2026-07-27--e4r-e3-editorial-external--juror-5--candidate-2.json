@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 7,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede states the whole finding in prose, each plate opens with a bolded sentence naming its actual finding, and the full record table prints every year. The conclusion is reachable with no chart decoding at all.",
+    "2": "The most rigorous chart handling of the set: the truncated season-total scale is declared inside the plate and again in the prose beside it, the heaviest-day plate is explicitly drawn from zero, and the line breaks at the missing years rather than bridging them. Encodings claim only what the data supports.",
+    "3": "The lettered note set repeats the seam, the gaps, the era rules and the 2019 hollow on every plate, so no relevant view is missing a caveat. The full table and the about section restate all of it, including the no-attribution scope.",
+    "4": "The register is patient and local, though the connective writing is more expository than the material needs. The two human fragments are placed after the plates they relate to, which serves the data reasonably well.",
+    "5": "The plates sit small against a wide canvas with heavy dead margin, and the full record table wraps its instrument column into ragged two-line rows that break the reading rhythm. Typography is competent but the table craft is the weakest here.",
+    "6": "The base is a fully readable static document with no scroll-driven dependency and no pacing imposed on the reader. Nothing requires motion in either mode.",
+    "7": "The idea is annotation written onto the record itself, archetype-true for a ledger, but the plates chart the shift more than they make it felt. The form is a well-annotated conventional chart set rather than a device that carries the argument.",
+    "8": "Almost no convention is broken; the lettered note system is the only device and the reading mechanics are entirely ordinary. Comfortably inside the budget, arguably under-spent.",
+    "9": "The writing is clean and local but leans procedural, closer to a well-run methods note than to a voice another paper could not publish. The plate headings are its most distinctive stretch.",
+    "10": "Every mark on every plate traces to something the dataset shows, and the notes exist to explain the record rather than to dress it. No detached effect anywhere."
+  },
+  "inputTranscriptSha256": "6cff6d5f2adc5952ca8c72f4c1b67d3e4d7db0d8f08c84601db6d3b19d76095a",
+  "shuffleSeed": 202607730
+}

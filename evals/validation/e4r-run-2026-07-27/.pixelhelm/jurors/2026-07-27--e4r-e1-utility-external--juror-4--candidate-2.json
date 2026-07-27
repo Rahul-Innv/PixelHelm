@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 6,
+    "6": 7,
+    "7": 7,
+    "8": 8,
+    "9": 6,
+    "10": 7
+  },
+  "rationales": {
+    "1": "A single counted line of open, caution, closed and unreported totals with icons sits above the fold with the closure notice directly beneath, on mobile as well as desktop. This is the fastest read of the day's overall state among the scored designs.",
+    "2": "Each status pairs a distinct shape, a word and a color, and a legend fixes the mapping before the cards begin. The same treatment repeats in the summary line, the group headings and the card bands without drift.",
+    "3": "Unreported trails state that no report was received rather than implying openness, the missing history day is a dashed hollow marker with a not-recorded caption, and the snowpack carries an estimated chip with the sensor outage explained. Report times appear on every card and the board's own update time sits in the header.",
+    "4": "Grouping by status with counts, open first, matches the hiker's decision order and the language stays plain. Internal entry codes are exposed on every card, which is operator jargon a visitor does not need.",
+    "5": "The component system is consistent in radius, spacing and type, but the saturated status band occupies roughly the top third of every card and carries only a label it already repeats. The grid leaves ragged empty cells in three of four rows, the snowpack panel is half empty beside the chart, and the palette runs wider than a limited one.",
+    "6": "Names, the burn cluster and both unreported rows fit without breakage, and both modes are fully resolved with adjusted hues. The count line wraps mid-phrase on mobile and the tall cards stretch the phone page far longer than the content requires.",
+    "7": "The signature is a trailhead status board with color placards, and grouping, iconography and color all reinforce it truthfully for a conditions service. It is also the most predictable of the three, close to a stock dashboard pattern rather than an idea earned by this organization.",
+    "8": "Mechanics are conventional throughout, with ordinary cards, headings and a static chart. The single brand-layer break is the oversized placard band, which stays within budget.",
+    "9": "The copy is accurate and calm but almost entirely interchangeable, with lines such as the one reporting that no report was received from this trail. Only the board framing hints at a voice of its own.",
+    "10": "The counted summary line is a genuinely good habitual glance and nothing is playful or mandatory. Beyond that line the board offers no sense of what changed, and the tall cards make the daily scan longer than it needs to be."
+  },
+  "inputTranscriptSha256": "f9b883d8ad2670e6bdd35bdfa19b991e8c68a8ff8b78f1c8a84988f7fd93769f",
+  "shuffleSeed": 202607714
+}

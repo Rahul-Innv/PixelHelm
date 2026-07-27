@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lead states the full finding in words, every year's season total and heaviest day are printed as text beside the graphic, and the page is a static read with nothing to trigger. Only the onset day is left to the dot alone, so a reader who never decodes it still gets the era averages from prose but not each year's exact date.",
+    "2": "Missing years occupy full hatched rows rather than being dropped, and 2019 carries a hollow dot with an inline unverified note. The season-total bars run on a fixed 550 to 750 scale with no tick marks on the rail itself, disclosed only in the how-to-read block, though the exact figure printed beside each bar keeps the reader from relying on bar length.",
+    "3": "The three null years, the instrument boundary marked as a labelled section break exactly where it falls, and the 2019 unverified flag are all visible in the single view. The closing note states plainly that the page describes the shift and not its cause.",
+    "4": "Patient local-paper register throughout, and the two human fragments sit at their own year inside the record rather than in a quotes box, so they read as part of the ledger. The italic interlude after the 2000s earns its place by naming what the lines already show.",
+    "5": "Comfortable measure, generous leading and a clear three-level hierarchy carry a long read, and the rail's alignment across year, shelf, bar and figures is exact. The mobile restack into two rows per year keeps every element and clips nothing in either mode.",
+    "6": "The page is a fully readable static document with no scrollytelling, pacing device or auto-motion visible at either width. Reduced-motion parity cannot be confirmed from still renders, so this reflects the observable base being complete.",
+    "7": "One line per year, read down the page like the almanac the valley used to keep: the onset dots slide right and the bars lengthen as the reader descends, so the shift is felt as movement rather than reported as a slope. Title, subhead, era rules, quote placement and closing note all reinforce the same sentence.",
+    "8": "The single deliberate break is replacing a conventional chart with a per-year rail, and it is explained in a how-to-read block before the reader meets it. Scrolling, headings and links stay entirely conventional.",
+    "9": "Specific and place-loving without a raised voice, with lines like the bars being a shade longer each wet year than the valley had been used to. The register is a small paper's almanac and would not transfer unchanged to another town.",
+    "10": "Every device is a datum: dot for onset, bar for total, red figure for the heaviest day, hatched row for a missing year, hollow dot for the unverified reading. Nothing decorative is doing work the record does not support."
+  },
+  "inputTranscriptSha256": "2d63adcec39c934fbff480d67004135a25cf5498d0a794e059e4433e2b9be3c5",
+  "shuffleSeed": 202607726
+}

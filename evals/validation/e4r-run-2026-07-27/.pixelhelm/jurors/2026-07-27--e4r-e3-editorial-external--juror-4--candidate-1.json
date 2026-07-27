@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The opening paragraph delivers the whole finding in plain numbers and every year's total and heaviest day are printed as text beside the rail. No per-year onset date appears as a number anywhere, so that one strand is recoverable only from the dot positions or the prose average.",
+    "2": "Missing years are drawn as full hatched rows carrying their reason and the 2019 dot is hollow and labelled unverified. The season-total bars are filled from a disclosed 550 to 750 millimetre baseline, so a four percent difference between years reads as a large difference in bar length.",
+    "3": "Nulls with their reasons, the instrument-change header, the unverified label and the what-this-page-cannot-say note are all present, and uniquely in this set they all survive at 375 pixels without a horizontally clipped container.",
+    "4": "Patient local register throughout, and the interstitial line about anyone laying the lines side by side earns its place at the point the data turns. The two human fragments serve the record rather than decorate it.",
+    "5": "Even rail rhythm and a comfortable measure in both modes, with a purpose-built mobile reflow that stacks the totals line above the onset track instead of squeezing the desktop layout.",
+    "6": "The renders show a plain static document with a fully readable base and no scroll-driven pacing; no motion or scroll capture was among my inputs, so this is scored on what the renders show.",
+    "7": "One sentence carries it, the record read line by line as the almanac the valley used to keep, and content, form and voice all reinforce it. Missing years staying on the page as lines is that idea actually working.",
+    "8": "A single break, the almanac rail standing in for a conventional chart, while headings, links and scrolling stay entirely conventional.",
+    "9": "Unsensational and rooted in one valley, with phrasing that reads as this paper's own rather than as generic weather copy.",
+    "10": "Every mark maps to a field of the record, dot for onset, bar for total, red figure for the worst day, hatch for absence, so nothing is an effect looking for a story."
+  },
+  "inputTranscriptSha256": "99ddf6a02b67e45efc0850bcd5150145bd650e599395b04f60bf4687519fd26b",
+  "shuffleSeed": 202607729
+}

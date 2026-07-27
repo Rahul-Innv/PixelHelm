@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 7,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The summary sentence and the closure notice both clear the mobile fold, but a masthead sits above them and the quiet chips make scanning which trails slower than the alternatives.",
+    "2": "Labels are stable and fully readable without color across the log and the notice, though all four chips share one outline shape so the statuses read alike at a distance.",
+    "3": "Unreported entries say condition unknown, the null weather day says not recorded, the snowpack carries an estimated chip with its offline note, and both posted and generated times appear.",
+    "4": "The stated order is followed and the language is plain and warm throughout, but there are no group headings to jump between within the log.",
+    "5": "The dotted leaders, the chip rail, the rule system, and the restrained paper palette hold a consistent rhythm with nothing arbitrary in it.",
+    "6": "The closed cluster, both unreported rows, and the long names all sit cleanly in both fully resolved modes; only the inline snowpack chip wraps awkwardly on mobile.",
+    "7": "This is the ranger's daily log published as the page, and the entry numbers, posting stamps, log-continues and end-of-log framing, and typography all reinforce that one sentence.",
+    "8": "Two deliberate breaks, the logbook register and the leader lines, both live in the brand layer while the mechanics stay a plain conventional document.",
+    "9": "Ranger's notice, Log continues below, End of log, and condition unknown form an authored register no competitor could publish unchanged while staying factual.",
+    "10": "The dated lede is the habitual glance and the log register makes it obvious the entry is today's, with no playful gate to bypass."
+  },
+  "inputTranscriptSha256": "7857e5d970a131d5f2d224f1ae1d58eb3a87f445ecb4eb6bb0443a37c453436e",
+  "shuffleSeed": 202607712
+}

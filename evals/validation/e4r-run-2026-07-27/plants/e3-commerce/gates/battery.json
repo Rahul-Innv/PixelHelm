@@ -1,0 +1,71 @@
+{
+  "_note": "E4-R plant floor battery — the committed gates this set's real arms faced, run as-produced. exitCode 0 = pass, 1 = HARD FAIL, 2 = runner error (never a pass).",
+  "set": "e3-commerce",
+  "arm": "glass-house",
+  "generated": "2026-07-27T15:58:43.574Z",
+  "hardFails": [
+    "verify_focustrap-catalog"
+  ],
+  "results": [
+    {
+      "gate": "static-gates",
+      "artifact": "static-gates.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "check-token-contracts",
+      "artifact": "token-contract.txt",
+      "exitCode": 0
+    },
+    {
+      "gate": "output-floor-gate",
+      "artifact": "output-floor.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "derived-claims-gate-catalog",
+      "artifact": "gate-a-catalog.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "derived-claims-gate-product",
+      "artifact": "gate-a-product.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "content-manifest-gate-catalog",
+      "artifact": "gate-b-catalog.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "content-manifest-gate-product",
+      "artifact": "gate-b-product.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_responsive",
+      "artifact": "verify_responsive.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_states",
+      "artifact": "verify_states.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_targetsize",
+      "artifact": "verify_targetsize.json",
+      "exitCode": 0
+    },
+    {
+      "gate": "verify_focustrap-catalog",
+      "artifact": "verify_focustrap-catalog.json",
+      "exitCode": 1
+    },
+    {
+      "gate": "verify_focustrap-product",
+      "artifact": "verify_focustrap-product.json",
+      "exitCode": 0
+    }
+  ]
+}

@@ -1,0 +1,40 @@
+{
+  "project": "e4-plant-glass-house",
+  "filesScanned": 2,
+  "gates": {
+    "contrast": {
+      "hard": true,
+      "ran": true,
+      "pass": true,
+      "total": 18,
+      "failures": []
+    },
+    "rawColor": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "antiCliche": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "webCraft": {
+      "hard": false,
+      "ran": true,
+      "pass": true,
+      "count": 0,
+      "findings": []
+    },
+    "typeScale": {
+      "hard": false,
+      "ran": false,
+      "ratios": []
+    }
+  },
+  "hardGatesPassed": true
+}

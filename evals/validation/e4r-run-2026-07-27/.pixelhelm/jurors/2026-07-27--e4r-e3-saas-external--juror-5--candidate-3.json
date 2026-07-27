@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The eyebrow names the category and the first screenful carries both prices, the VAT note, and the trial terms, though the headline itself describes the page rather than the product.",
+    "2": "Evidence is headed evidence-not-adjectives, the pilot figure carries its n=11 basis and an explicit not-independently-verified caveat, and product behavior is kept separate from estimate.",
+    "3": "Price, VAT note, and the no-card trial line all sit in the first screenful beside one clear CTA, and the small print block volunteers the invoice cap and the beta rather than hiding them.",
+    "4": "Leading with the full price and the small print is the order a subscription-skeptic wants, and the framing borrows the reader's own quoting habit with no startup idiom.",
+    "5": "Spacing rhythm, rule weights, and a limited rust-and-ink palette are disciplined; the small-print grid leaves one ragged empty cell and the serif display sits against sans body copy.",
+    "6": "Beta is labeled twice and tied back to the terms and the estimate is explicitly not a verified figure, but the testimonial carries nothing marking it as unverified.",
+    "7": "The signature is that the page is itself the quote it says you would never withhold, and order, layout, and copy all carry it.",
+    "8": "Two brand-layer breaks, price-first order and small print set large, with links, buttons, and headings left entirely conventional.",
+    "9": "Lines such as no asterisk on that line and people in Manchester, not a chat widget pretending to be, are specific to this product and this trade.",
+    "10": "The page lets you decide in one screenful and never performs, which is the time-is-valuable pitch enacted in form."
+  },
+  "inputTranscriptSha256": "be752ca3249fe75565ca7042f1e315115b5c0cb8be15a04fe3153c18f3e2b825",
+  "shuffleSeed": 202607720
+}

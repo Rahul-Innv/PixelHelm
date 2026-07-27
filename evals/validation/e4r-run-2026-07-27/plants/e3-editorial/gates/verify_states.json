@@ -1,0 +1,85 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T15:57:40.618Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-editorial/arms/gauge-house/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 3,
+          "checked": 3,
+          "failures": [
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "hover",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            },
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "focus",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            },
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "hover",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            },
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "focus",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            },
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "hover",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            },
+            {
+              "selector": "nav.jump > ul > li > a",
+              "state": "focus",
+              "ratio": 1.91,
+              "threshold": 4.5,
+              "color": "rgb(157, 180, 192)",
+              "bg": "rgb(244, 241, 233)"
+            }
+          ],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 3,
+          "checked": 3,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": false
+}

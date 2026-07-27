@@ -1,0 +1,576 @@
+{
+  "set": "e1-utility",
+  "_note": "Every neutral-label render copy is byte-identical to its committed source; both sha256 sums are recorded here.",
+  "jurors": {
+    "juror-1": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-1__desktop__light.png",
+        "sha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7",
+        "copySha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-1__desktop__dark.png",
+        "sha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b",
+        "copySha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-1__mobile__light.png",
+        "sha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950",
+        "copySha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-1__mobile__dark.png",
+        "sha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b",
+        "copySha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-2__desktop__light.png",
+        "sha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34",
+        "copySha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-2__desktop__dark.png",
+        "sha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18",
+        "copySha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-2__mobile__light.png",
+        "sha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65",
+        "copySha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-2__mobile__dark.png",
+        "sha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e",
+        "copySha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-3__desktop__light.png",
+        "sha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce",
+        "copySha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-3__desktop__dark.png",
+        "sha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9",
+        "copySha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-3__mobile__light.png",
+        "sha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26",
+        "copySha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-3__mobile__dark.png",
+        "sha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b",
+        "copySha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-4__desktop__light.png",
+        "sha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8",
+        "copySha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-4__desktop__dark.png",
+        "sha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40",
+        "copySha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-4__mobile__light.png",
+        "sha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0",
+        "copySha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-1/candidate-4__mobile__dark.png",
+        "sha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001",
+        "copySha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001"
+      }
+    ],
+    "juror-2": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-1__desktop__light.png",
+        "sha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce",
+        "copySha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-1__desktop__dark.png",
+        "sha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9",
+        "copySha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-1__mobile__light.png",
+        "sha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26",
+        "copySha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-1__mobile__dark.png",
+        "sha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b",
+        "copySha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-2__desktop__light.png",
+        "sha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8",
+        "copySha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-2__desktop__dark.png",
+        "sha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40",
+        "copySha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-2__mobile__light.png",
+        "sha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0",
+        "copySha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-2__mobile__dark.png",
+        "sha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001",
+        "copySha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-3__desktop__light.png",
+        "sha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7",
+        "copySha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-3__desktop__dark.png",
+        "sha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b",
+        "copySha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-3__mobile__light.png",
+        "sha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950",
+        "copySha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-3__mobile__dark.png",
+        "sha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b",
+        "copySha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-4__desktop__light.png",
+        "sha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34",
+        "copySha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-4__desktop__dark.png",
+        "sha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18",
+        "copySha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-4__mobile__light.png",
+        "sha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65",
+        "copySha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-2/candidate-4__mobile__dark.png",
+        "sha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e",
+        "copySha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e"
+      }
+    ],
+    "juror-3": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-1__desktop__light.png",
+        "sha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce",
+        "copySha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-1__desktop__dark.png",
+        "sha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9",
+        "copySha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-1__mobile__light.png",
+        "sha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26",
+        "copySha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-1__mobile__dark.png",
+        "sha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b",
+        "copySha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-2__desktop__light.png",
+        "sha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34",
+        "copySha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-2__desktop__dark.png",
+        "sha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18",
+        "copySha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-2__mobile__light.png",
+        "sha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65",
+        "copySha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-2__mobile__dark.png",
+        "sha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e",
+        "copySha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-3__desktop__light.png",
+        "sha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7",
+        "copySha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-3__desktop__dark.png",
+        "sha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b",
+        "copySha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-3__mobile__light.png",
+        "sha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950",
+        "copySha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-3__mobile__dark.png",
+        "sha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b",
+        "copySha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-4__desktop__light.png",
+        "sha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8",
+        "copySha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-4__desktop__dark.png",
+        "sha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40",
+        "copySha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-4__mobile__light.png",
+        "sha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0",
+        "copySha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-3/candidate-4__mobile__dark.png",
+        "sha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001",
+        "copySha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001"
+      }
+    ],
+    "juror-4": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-1__desktop__light.png",
+        "sha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce",
+        "copySha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-1__desktop__dark.png",
+        "sha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9",
+        "copySha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-1__mobile__light.png",
+        "sha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26",
+        "copySha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-1__mobile__dark.png",
+        "sha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b",
+        "copySha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-2__desktop__light.png",
+        "sha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7",
+        "copySha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-2__desktop__dark.png",
+        "sha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b",
+        "copySha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-2__mobile__light.png",
+        "sha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950",
+        "copySha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-2__mobile__dark.png",
+        "sha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b",
+        "copySha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-3__desktop__light.png",
+        "sha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34",
+        "copySha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-3__desktop__dark.png",
+        "sha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18",
+        "copySha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-3__mobile__light.png",
+        "sha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65",
+        "copySha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-3__mobile__dark.png",
+        "sha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e",
+        "copySha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-4__desktop__light.png",
+        "sha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8",
+        "copySha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-4__desktop__dark.png",
+        "sha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40",
+        "copySha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-4__mobile__light.png",
+        "sha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0",
+        "copySha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-4/candidate-4__mobile__dark.png",
+        "sha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001",
+        "copySha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001"
+      }
+    ],
+    "juror-5": [
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-1__desktop__light.png",
+        "sha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8",
+        "copySha256": "ae2bcbb658429edfcd0fcb6c8614c497b6c0756df21f0884a264b8daba2e56b8"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-1__desktop__dark.png",
+        "sha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40",
+        "copySha256": "be51de291142515ccc82509138ed04c8ff6fe1d577ce50d1a73ad250c693ff40"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-1__mobile__light.png",
+        "sha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0",
+        "copySha256": "3be43184dd0c2de46f14ea3496cede37af3cfafd38693bbafa147873653794b0"
+      },
+      {
+        "label": "candidate-1",
+        "source": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/renders/stone-steps__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-1__mobile__dark.png",
+        "sha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001",
+        "copySha256": "36acfe79ea6f750419a9810da944011ac5f3c3d6e9c2068de43a32869f312001"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-2__desktop__light.png",
+        "sha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7",
+        "copySha256": "58225b20d51758ddc703d9cbae1971e39d7ec37f06f2ea0147109c94d0dc90f7"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-2__desktop__dark.png",
+        "sha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b",
+        "copySha256": "9249c7a62b3e441ab923b7c8e9e7955ff3e67d32c0999d3eeedef49be276701b"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-2__mobile__light.png",
+        "sha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950",
+        "copySha256": "6bff51cfd5bcd48b0abc50517257e7631f2004a323ee065813ed66c9d620c950"
+      },
+      {
+        "label": "candidate-2",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/status-board__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-2__mobile__dark.png",
+        "sha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b",
+        "copySha256": "89ad70c3e14cfe7975434f60c339e21d672a3aa8eb177a1ec4ddc85c2021964b"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-3__desktop__light.png",
+        "sha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34",
+        "copySha256": "f03cf9d35b84d9c8de8cf08e3929b42b58a061275ef386d15b65dd5ebc3edf34"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-3__desktop__dark.png",
+        "sha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18",
+        "copySha256": "cecd0f0dd26fde8d303dc2cc560934d6d04188e293a41fe4146b20365fb70d18"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-3__mobile__light.png",
+        "sha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65",
+        "copySha256": "0a0122cc303705462327ecf165efe90f3de1142303e8dc291617abedf3ad2b65"
+      },
+      {
+        "label": "candidate-3",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/trail-ledger__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-3__mobile__dark.png",
+        "sha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e",
+        "copySha256": "1cd1335c51ce6e869f38f26ac5610eb3b6d4aa3be769eb446a5225672ba8dc8e"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-4__desktop__light.png",
+        "sha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce",
+        "copySha256": "363cda6e9d851a87710e4e5740329049de87fc4f8c1632a6756b71d88dd19bce"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__desktop__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-4__desktop__dark.png",
+        "sha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9",
+        "copySha256": "525d744e7df6506785b44a048d9a8230774377de0d4ae3493047bc15121c6be9"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__light.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-4__mobile__light.png",
+        "sha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26",
+        "copySha256": "582aa542fe733577e7cf6eb59ddf61740c998e846b46845ef429b36afe733f26"
+      },
+      {
+        "label": "candidate-4",
+        "source": "evals/validation/e1/run-2026-07-26/project/renders/first-light__mobile__dark.png",
+        "copy": "jurors-blind/e1-utility/juror-5/candidate-4__mobile__dark.png",
+        "sha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b",
+        "copySha256": "1d4dd1a9d11cb45e398315de454d0e52a0bf29b820a02c86864f74401a6aa91b"
+      }
+    ]
+  }
+}

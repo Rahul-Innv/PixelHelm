@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 7,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The first mobile viewport delivers the park name, the dated morning log line, the bold three-of-nine summary and the ranger's closure notice without interaction. Per-trail status is a small outlined badge that must be read rather than seen, so the glance is slower than a color-coded board.",
+    "2": "All four statuses use the same outlined rectangle, differing only by label text and border hue, so they read reliably with color removed and hold one meaning throughout. The shared shape means the reader must parse the word rather than recognize the state at a glance.",
+    "3": "Unreported entries read as no report received with condition unknown, the missing day gets its own dated row saying not recorded rather than vanishing, and the snowpack value carries an estimated badge with the sensor-offline date. Every entry states its own last-report time under a posted timestamp.",
+    "4": "The log runs from summary to ranger's notice to the trail entries to snowpack and the seven-day table, and it states its own ordering rule so the reader knows why entries sit where they do. Language stays plain and objective throughout.",
+    "5": "Double rules, small-caps section labels, dot leaders and a strict badge-plus-entry structure hold a tight rhythm on a two-hue palette. The leader dots add texture that carries no information, and the desktop badge gutter leaves a wide empty channel.",
+    "6": "Long names, the burn cluster and both unreported entries sit cleanly in both modes, with the badge stacking above the name on mobile to absorb the width. The mobile snowpack line breaks between the value and its unit, orphaning the unit onto the next line beside the estimated badge.",
+    "7": "The signature is the ranger's daily log, and content, typography and structure all serve it, from morning log and entry identifiers to log continues below and end of log. It is earned by a service whose conditions genuinely are logged each morning.",
+    "8": "Mechanics are untouched, with real headings, ordinary scrolling and conventional badges. The ledger typography and dot leaders form one coherent brand-layer break rather than two unrelated ones.",
+    "9": "Lines such as three of nine trails open this morning, entered open first then caution then closed, and end of log are specific to this page and could not be lifted unchanged by a competitor. The register stays calm and factual despite the strong voice.",
+    "10": "The dated morning log framing and the single summary sentence reward a habitual daily glance, and nothing is playful or mandatory. Rescanning outlined badges is a little slower on the second visit than reading color blocks."
+  },
+  "inputTranscriptSha256": "17cd165ab8b15fe9d6fe30e16f1f0d7e5811df2a4689f0f54df714b8a3b58889",
+  "shuffleSeed": 202607711
+}

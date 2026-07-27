@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 8,
+    "8": 7,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The single largest element on the page is the sentence that answers the question, and it sits with the timestamp, the supporting summary and the closure alert inside the first mobile viewport. No other candidate states the verdict as directly.",
+    "2": "Each status keeps one stable rendering everywhere and the four differ in shape as well as hue, so color is never load-bearing. Open is set as plain text with no chip while closed is a solid badge, so the state a hiker scans for carries the least visual weight and there is no legend.",
+    "3": "Unreported trails read as no report on file with a dotted-underline unknown treatment, the estimated snowpack and the missing day share that same treatment, and the footer states outright that trails without a report are never assumed open or closed. Per-trail last-report times sit under a conditions-as-of stamp.",
+    "4": "The page runs verdict, then closure alert and worth knowing, then all nine trails in decision order, then the week, matching how a hiker decides. Language is plain and objective with no jargon.",
+    "5": "Typography is restrained and well set on a two-family, one-accent system with clean alignment. A large dead vertical band opens between the hero and the trail list on desktop, the status column leaves the right third of the content width empty, and the mobile seven-day grid runs ragged.",
+    "6": "Long names, the burn cluster and both unreported rows sit without breakage, and both modes are fully resolved. The seven-day strip reflows into uneven mobile rows and the desktop hero leaves an unresolved gap when the side rail runs short.",
+    "7": "The signature is verdict first with everything else as evidence, and the headline, the supporting sentence and the closing honesty note all serve it. The large-serif headline with a right rail is close enough to a general editorial look that the idea is slightly less owned than it could be.",
+    "8": "Mechanics stay conventional, and the oversized headline plus the dotted-underline unknown affordance are two deliberate brand-layer breaks. Dropping the chip from open pushes a third break into the legibility layer rather than the brand layer.",
+    "9": "The closing line that trails without a report are shown as unknown and never assumed open or closed states a policy in the site's own words, and worth knowing and clearing after yesterday's rain hold the same calm register. A competitor could not lift these unchanged.",
+    "10": "One sentence in the same place every morning is close to ideal for the habitual daily glance, and there is nothing playful, delayed or mandatory. Returning readers get the answer before they scroll."
+  },
+  "inputTranscriptSha256": "17cd165ab8b15fe9d6fe30e16f1f0d7e5811df2a4689f0f54df714b8a3b58889",
+  "shuffleSeed": 202607711
+}

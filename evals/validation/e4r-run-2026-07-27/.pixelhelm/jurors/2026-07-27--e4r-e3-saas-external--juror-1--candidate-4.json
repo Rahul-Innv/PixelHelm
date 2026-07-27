@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 9,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline, the subhead and a FOR line naming sole traders who invoice from a phone between jobs all sit above the fold alongside the trial button. What it is and who it is for are answered before any scroll.",
+    "2": "The pilot figure is given as an internal estimate from n=11 with its smallness stated, the beta refuses to be sold as finished, and the FROM line gives the real organization and its start year. Nothing is inflated and nothing is asserted without its basis.",
+    "3": "The CTA appears at the top and again beneath the total, prices carry their VAT note on the same rule, and the no-card terms are stated plainly with a fair walk-away line. The price sits mid-page rather than beside the first CTA.",
+    "4": "The invoice document is exactly the mental model of someone who writes them daily, and the FOR line names the reader outright in trade language. On the phone the INCLUDED marker drops below each row where it reads a little like body copy rather than a status.",
+    "5": "The most disciplined craft in the set: one monospaced label register used consistently for the terms block, the status marks and the stamp, one accent, three type sizes, and a double rule under the total exactly where an invoice puts one. Nothing reads arbitrary.",
+    "6": "The beta is labeled and the pilot figure is labeled with its sample size and explicitly not independently verified. The testimonial sits under a heading promising honest labeling yet carries no unverified note itself.",
+    "7": "One sentence, that this page is an invoice, and the line items, the total, the payment terms and the stamp all deliver it. The page demonstrates the product's own document rather than describing it, which is the strongest form this idea can take.",
+    "8": "Mechanics are conventional and the break is the single brand-layer conceit of typesetting the pitch as the product's own paperwork. The stamp is a second small flourish but stays inside the brand layer.",
+    "9": "Lines about January no longer being a surprise and walking away owing nothing are specific and unhyped. Slightly less idiomatic than the strongest voice here, but still not liftable unchanged by a competitor.",
+    "10": "Line items scan fast, the total is where a reader expects it, and there is no device between the reader and the decision. The stamp is the one moment of performance in an otherwise economical page."
+  },
+  "inputTranscriptSha256": "b877622898a5c1670028700d2db2ab524df665a3bb1436cf279cfac56eb1ba04",
+  "shuffleSeed": 202607716
+}

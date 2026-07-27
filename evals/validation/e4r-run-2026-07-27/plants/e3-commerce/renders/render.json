@@ -1,0 +1,131 @@
+{
+  "generated": "2026-07-27T15:59:29.994Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 8
+  },
+  "shots": [
+    {
+      "file": "glass-house-catalog__desktop__light.png",
+      "item": "glass-house-catalog",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-catalog__mobile__light.png",
+      "item": "glass-house-catalog",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-catalog__desktop__dark.png",
+      "item": "glass-house-catalog",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-catalog__mobile__dark.png",
+      "item": "glass-house-catalog",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-product__desktop__light.png",
+      "item": "glass-house-product",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-product__mobile__light.png",
+      "item": "glass-house-product",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-product__desktop__dark.png",
+      "item": "glass-house-product",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "glass-house-product__mobile__dark.png",
+      "item": "glass-house-product",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

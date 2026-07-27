@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 6,
+    "3": 9,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 9,
+    "8": 6,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Window groups, a jump rail and a twelve-cell month band per entry make the season read almost instant, with price and stock on a fixed line; the band carries no month labels, so it leans on the sow line beneath it.",
+    "2": "Stock language and the buy panel itself are conventional, but the product page places the almanac table above price and Add to basket, which pushes the primary commerce action below editorial content.",
+    "3": "The clearest honesty surface here: the germination estimate is flagged in the meta line and again in a margin note, the unpriced packet says Price pending — ask us, out of stock is marked, and UK-only shipping sits in the header.",
+    "4": "Main body type is comparable to the others, but the italic margin notes run small on a short measure and the desktop layout is the densest of the three.",
+    "5": "The almanac language holds across both surfaces, though the near-empty left rail and wide right gutter leave the desktop catalog lopsided and the rule styles differ between the two pages.",
+    "6": "The month band, year table, difficulty line, margin note and companions together give the fullest decision picture, with the difficulty and germination line landing below the buy panel.",
+    "7": "Find your month first, then your packet is one sentence that the content, the month band, the window rail and the product page all reinforce, and it is true of growers who keep their own list.",
+    "8": "The band and marginalia are brand-layer breaks, but reordering the product page so the almanac precedes price and Add to basket puts a break adjacent to the money path the sheet asks to leave conventional.",
+    "9": "The margin asides, such as the widest window in the almanac and the whole plant earns its bed, are the most unrepeatable writing in the set.",
+    "10": "Window groups, the jump rail, the month filter and the band together let a returning shopper find what is sowable now in seconds, and the band ties the two surfaces into one shop."
+  },
+  "inputTranscriptSha256": "b222a990cf28937ce6f16e18f982894a74e3c24773a6926d40ea653da5dd2712",
+  "shuffleSeed": 202607722
+}

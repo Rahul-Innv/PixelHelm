@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 7,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The bold standfirst delivers the whole finding in plain numbers, each plate carries a prose lead stating what it shows, and the full year-by-year table repeats every value as text, so nothing requires decoding a chart or scrolling.",
+    "2": "Each plate is titled by its finding, the missing years are drawn as open shaded bands with no line reaching across, and the heaviest-day plate is explicitly drawn from zero; the season-total plate starts at 550 rather than zero, but says so in its own caption.",
+    "3": "Gaps, the instrument seam, the hollow 2019 marker, and the no-attribution scope note appear on every plate and again in the record table; the table's notes column is cut off at mobile width, where the null rows read as bare dashes without their reasons.",
+    "4": "Patient local-paper register throughout, with lines like the weir keeping the valley's time for a generation, and the two logged quotes sit as breathers rather than ornament.",
+    "5": "Handsome serif setting with consistent plate framing and comfortable measure in both modes and both viewports; the identical four-note key repeated verbatim under all three plates reads as bulk, and the record table clips horizontally on mobile.",
+    "6": "The page is a static read with no scroll-driven dependency and no pacing device imposed on the reader, so the base text stands on its own.",
+    "7": "The stated idea, reporter's notes written on the record itself, is real and consistently executed through the lettered keys; three separate plates still chart the drift more than they make it felt, so the form trails the journalism.",
+    "8": "Reading mechanics are entirely conventional and the only departure is the modest plate-and-key framing, well inside a one-break budget.",
+    "9": "Unsensational and specific to this valley, with concrete local detail such as the autumn fair and the lane that floods, rather than weather-story boilerplate.",
+    "10": "Every device traces to something the record actually contains: shaded gaps for missing seasons, a hollow marker for the unverified reading, era rules for the two verified windows."
+  },
+  "inputTranscriptSha256": "1635e99af13ab9a4dc3420d9581a53da52893453aa5147bce445c655c11fe8ee",
+  "shuffleSeed": 202607727
+}

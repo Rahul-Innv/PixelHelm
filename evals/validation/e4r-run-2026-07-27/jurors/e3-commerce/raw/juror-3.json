@@ -1,0 +1,101 @@
+{
+  "juror": "juror-3",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "unscored": true,
+      "failingGate": "verify_focustrap",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 6,
+        "5": 8,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Season is the organizing spine, with items grouped under sowing windows, a month filter, and a per-item year band, and every row carries price and stock together. The band itself carries no month labels, so the first read leans on the written range beneath it.",
+        "2": "Price placement, stock language, quantity field, and add-to-basket all follow ordinary commerce convention on both surfaces, with the brand invention kept clear of the money path.",
+        "3": "Out of stock is visible and coloured distinctly, the null-price packet says only that the price is pending and to ask, the estimated germination is flagged inline, and the shipping limit sits in the header before any purchase intent. A margin note explaining where the estimate comes from goes beyond the minimum honesty ask.",
+        "4": "Targets and the purchase control are generous, and nothing depends on hover, but this is the smallest body and meta type of the set and the twelve-cell band is a very fine graphic for an older reader on a tablet.",
+        "5": "One restrained palette, one rule system, and the same year-band and margin-note components reused across catalog and product page make the two surfaces read as a single object. The wide empty left column on desktop is the one place the grid feels under-used.",
+        "6": "The year band, the sow-plant-flower table, the difficulty and germination line, the grower note, and the companion packets are all on the page and ordered so the decision precedes the basket. A first-time gardener can plan the whole year for this packet without leaving.",
+        "7": "Shelving every variety under the window it wants is one sentence that shows up in the content grouping, the band graphic, the month filter, and the product page heading alike. It reads as a working shop's almanac rather than borrowed boutique gloss.",
+        "8": "The invention is confined to the almanac framing, the band, and the margin notes, with navigation, price, and basket mechanics left entirely conventional.",
+        "9": "Lines like shelved under the window it wants and takes an autumn sowing too, as the band shows, are specific, unhurried, and tied to this shop's own stock. The voice is sustained through the margin notes rather than spent on the header.",
+        "10": "Window groupings plus the month filter answer what can be sown now immediately, and the shared masthead and back link make the two surfaces obviously one shop. Freshness is carried by stock labels rather than any explicit newly-in cue."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "Shelves labelled with their month ranges, plus the month filter, make season fit predictable, and each card puts price and stock state on the same closing line. The small muted meta line is the slowest element to scan.",
+        "2": "Price, stock count, quantity, and add-to-basket sit high on the product page in conventional order, and the catalog cards keep price and stock where a shopper expects them.",
+        "3": "Out of stock is coloured and unmissable, the null-price packet says price on request with the supplier reason in its own copy, the estimate is flagged, and the shipping limit sits in a boxed callout at the top of both surfaces.",
+        "4": "This is the most generous type and the largest touch targets of the set, the select and button are comfortably sized, and no information hides behind hover.",
+        "5": "The packet-card system is consistent and carries cleanly onto the product page, but the price rows sit at four different heights across a single card row and the product page leaves a very large empty left column below the packet art.",
+        "6": "Sowing window, plant-out and flowering table, difficulty, grower notes, and companion cards are all present and clearly sectioned. The absence of any year-at-a-glance view leaves the seasonal picture to the table alone.",
+        "7": "The rack by the shop door, kept by two people who grow what they sell, runs through the shelf headings, the packet-card art, and the enlarged packet on the product page. It is congruent and shop-true rather than imitated.",
+        "8": "The break is entirely art direction in the packet cards and botanical glyphs, with navigation and the purchase path left conventional.",
+        "9": "The rack and potting-shed framing is warm and specific to a two-person grower, though the card bodies themselves fall back to plain description.",
+        "10": "Shelf grouping and the filter serve a repeat visitor checking the season, and the back-to-the-rack link keeps the surfaces coherent, but nothing signals what has newly arrived beyond the stock labels."
+      }
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 5,
+        "3": 7,
+        "4": 6,
+        "5": 6,
+        "6": 7,
+        "7": 6,
+        "8": 4,
+        "9": 7,
+        "10": 5
+      },
+      "rationales": {
+        "1": "Price and stock are legible on every row, but the list has no seasonal grouping at all, so season fit rests entirely on the filter. The running numbers impose an order that carries no meaning for a shopper choosing by month.",
+        "2": "The purchase block is conventionally arranged, yet the numeral shapes render the digit one as an upright stroke that reads as a letter, so the quantity field, the packet counts, and the postage figure all invite a misread in the money path.",
+        "3": "All four honesty items are present and none is fudged, with the pending price stated as pending and the germination estimate flagged. The numeral rendering undermines the reliability of those figures at a glance.",
+        "4": "Body type and leading are generous and nothing depends on hover, but the ambiguous digit forms and the small meta line work against exactly the older reader this shop serves.",
+        "5": "Typographic rhythm and the rule system are handsome and consistent, yet a centred masthead sits over a left-biased content column, leaving a large empty right gutter on desktop that reads as unresolved rather than deliberate.",
+        "6": "Sowing window, plant-out and flowering table, difficulty, grower notes, and companions are all there in a clean reading order. There is no year-at-a-glance element, so the seasonal picture is assembled from the table alone.",
+        "7": "The printed annual list kept by two growers is a coherent conceit, but it stays mostly in the masthead and the ordinals, and the numbering is decorative rather than earned by anything the shop does.",
+        "8": "The typographic break does not stay in the brand layer: the numeral treatment reaches into prices, packet counts, and the quantity input, which is precisely the checkout-adjacent territory the budget is meant to protect.",
+        "9": "Two of us keep this list, read slowly and choose well is a genuinely distinctive opening. The voice then stops, and the entries themselves read as neutral catalog data.",
+        "10": "A returning shopper gets only the filter, with no seasonal structure and no freshness cue, so nothing answers what is newly in stock. The masthead and back link do keep the two surfaces recognisably one shop."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-3",
+    "candidate-4"
+  ]
+}

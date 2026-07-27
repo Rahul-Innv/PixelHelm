@@ -1,0 +1,101 @@
+{
+  "juror": "juror-3",
+  "set": "e3-editorial",
+  "candidates": {
+    "candidate-1": {
+      "unscored": true,
+      "failingGate": "verify_states",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 7,
+        "5": 7,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 7,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The full finding arrives in the opening lede and again in the then-and-now panels, so the conclusion is reachable by reading alone with no interaction required.",
+        "2": "The single chart is named and described by its actual finding, its calendar axis is untruncated, the missing years are drawn as shaded gaps and 2019 is left hollow.",
+        "3": "Every required disclosure is present, but at 375 px the full-record table is clipped so the no-record reasons and the 2019 label survive only in the chart footnotes and the closing notes.",
+        "4": "The two-ink conceit is written with care, though the two human quotes are parked in a section of their own rather than placed where they would serve the data.",
+        "5": "Desktop typography is composed and the measure is comfortable, but the mobile full-record table is cut mid-word at the right edge and loses its last column.",
+        "6": "The base page is fully readable and static in both modes, with nothing pacing the reader against their will.",
+        "7": "Printed in two inks is one sentence that all four layers carry, though the ink makes the instrument change felt more than the seasonal shift itself.",
+        "8": "One deliberate break, provenance rendered as color, is declared in a legend up front and the reading mechanics stay entirely conventional.",
+        "9": "The local register is competent, though several passages read systemic rather than spoken, as in the difference ink to ink.",
+        "10": "Every device, the ink pairing, the shaded bands and the hollow dot, maps to something the record actually carries."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 7,
+        "8": 7,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The opening paragraph delivers the whole finding in prose, and each plate is prefaced by a sentence stating what that plate shows.",
+        "2": "The season-total truncation is declared both in the caption and on the chart itself while the heaviest-day plate is drawn from zero, and the missing years break the line rather than bridge it.",
+        "3": "The seam, the gaps, the era rules and the 2019 flag are restated as footnotes beneath every plate, so the method boundary is disclosed wherever it is crossed.",
+        "4": "The register is patient and place-loving, and each quotation lands directly after the plate it illuminates rather than floating free.",
+        "5": "Plate rhythm and hierarchy read well on desktop, but at 375 px the full-record block is clipped and takes its own introductory sentence out of view along with the notes column.",
+        "6": "The base page is static and fully readable in both modes with no pacing imposed on the reader.",
+        "7": "Three plates drawn plainly organizes the piece well, but it stays closer to a conventional chart sequence than to a form that makes the valley's shift felt.",
+        "8": "Conservatively inside the budget: almost nothing is broken and the reading mechanics are entirely conventional.",
+        "9": "Unsensational and concrete, with lines such as the lane under water in October and the parish answering in its own practical way.",
+        "10": "Every mark traces back to the record, with three plates for the three measured quantities and four footnote markers for the four documented caveats."
+      }
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 6,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The lede carries the finding whole and every rail row prints its actual figures beside the encoding, so a reader who decodes nothing still receives the entire record.",
+        "2": "Charts are named and described and the gaps are drawn as gaps, but the season-total bars run from a 550 mm baseline, so a 587 to 634 mm difference reads as roughly a threefold difference in bar length.",
+        "3": "The instrument change is a structural break in the rail itself, the three null years are full-width no-record bands carrying their reasons, and the 2019 flag rides its own line in every view.",
+        "4": "The keeper's log and the parish minute are set inline at the years they belong to, and the mid-rail aside earns its place by naming what the preceding lines just showed.",
+        "5": "Measure, rhythm and hierarchy hold in both modes, and the rail survives 375 px intact rather than clipping the way a wide table would.",
+        "6": "The base page is static and fully readable, with no motion and no pacing imposed on the reader.",
+        "7": "The almanac rail is the idea: read downward, the onset dot visibly walks rightward across thirty-four lines, so the shift is felt rather than merely asserted.",
+        "8": "One deliberate break, the rail standing in for the conventional chart-plus-table pair, is taught by an inline how-to-read block while the mechanics stay conventional.",
+        "9": "Sustained, plain and local throughout, including the closing line that no average on this page reaches across the missing years as if they were there.",
+        "10": "Nearly every device traces to something the dataset shows, but the bar length overstates what the season totals actually differ by."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-4",
+    "candidate-3",
+    "candidate-2"
+  ]
+}

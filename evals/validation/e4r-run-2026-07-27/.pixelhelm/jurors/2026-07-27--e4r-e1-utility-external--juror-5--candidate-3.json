@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "A bolded one-line answer, three of nine trails open this morning, sits directly under the header with the closure notice right beneath it, so a phone visitor gets the network state and the alert by scrolling alone.",
+    "2": "Outlined chips pair a word with a stable color for each of the four states and appear in the same form and the same column position on every entry, so the states separate without relying on hue.",
+    "3": "Unreported trails read as condition unknown, the missing weather day is printed as not recorded rather than smoothed over, and the snowpack value carries an estimated tag with the sensor-offline reason. Each entry also shows its own last report time.",
+    "4": "The log states its own ordering, open first then caution then closed then unreported, which matches the order a hiker decides in, and the language stays plain with no promotional framing.",
+    "5": "Spacing rhythm, chip column alignment, the dotted leaders to distance, and the restrained accent palette hold consistently across the page, with nothing left arbitrary.",
+    "6": "Long trail names run into the leaders without breaking, the burn cluster and both unreported entries sit comfortably, and both modes are fully resolved at desktop and phone widths.",
+    "7": "The signature, that the page is the ranger's daily log for this morning, is carried by the dated framing, the entry identifiers, the log typography, and the linear reading order, and it is genuinely true of a trail conditions service.",
+    "8": "Mechanics stay entirely conventional, and the single deliberate break, the printed log conceit with its rules and leaders, lives purely in the brand layer.",
+    "9": "Phrases such as morning log, entered open first then caution then closed, and end of log are specific to this voice and could not be lifted onto a competitor's page unchanged, while staying calm and factual.",
+    "10": "A dated morning log with the summary sentence at the top is exactly the shape a daily glance wants, and there is nothing playful or mandatory to bypass on a second visit."
+  },
+  "inputTranscriptSha256": "f735f1eda4e2fcb8a654298a2d94b467e971b1e3460dd0b424fb57d5f4dc16b2",
+  "shuffleSeed": 202607715
+}

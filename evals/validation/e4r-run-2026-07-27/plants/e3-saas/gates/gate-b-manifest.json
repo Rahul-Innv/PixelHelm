@@ -1,0 +1,11 @@
+{
+  "gate": "content-manifest",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\eloquent-elion-536998\\evals\\validation\\e4r-run-2026-07-27\\plants\\e3-saas\\arms\\job-sheet\\index.html",
+  "pass": true,
+  "required": 28,
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "findings": []
+}

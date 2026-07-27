@@ -1,0 +1,42 @@
+{
+  "validator": "output-floor-gate",
+  "generated": "2026-07-27T15:56:52.544Z",
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/arms/job-sheet/index.html",
+      "findings": [
+        {
+          "level": "fail",
+          "id": "landmark-main",
+          "msg": "no <main> landmark (or role=\"main\") — page content has no primary landmark"
+        },
+        {
+          "level": "warn",
+          "id": "landmark-aux",
+          "msg": "no nav landmark(s) — confirm the page genuinely has no banner/navigation/footer content"
+        },
+        {
+          "level": "pass",
+          "id": "h1",
+          "msg": "exactly one <h1>"
+        },
+        {
+          "level": "fail",
+          "id": "heading-order",
+          "msg": "skipped heading level(s): h1 -> h3"
+        },
+        {
+          "level": "fail",
+          "id": "heading-impostor",
+          "msg": "5 styled-div section title(s) that should be heading markup: <div class=\"section-title\">, <div class=\"section-title\">, <div class=\"section-title\">, <div class=\"section-title\">, <div class=\"section-title\">"
+        },
+        {
+          "level": "pass",
+          "id": "meta-description",
+          "msg": "meta description present (203 chars)"
+        }
+      ]
+    }
+  ],
+  "pass": false
+}

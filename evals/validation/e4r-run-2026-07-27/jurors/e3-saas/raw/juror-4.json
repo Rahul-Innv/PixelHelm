@@ -1,0 +1,101 @@
+{
+  "juror": "juror-4",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The eyebrow naming the product and audience, the headline, and the full price block all sit in the first screenful, so what it is and what it costs land before any scroll. The headline itself is a device rather than a value statement, so comprehension leans on the smaller eyebrow line.",
+        "2": "Restraint carries the credibility: price and terms lead, the pilot figure carries its sample size and an explicit not-independently-verified caveat, and no sentence reaches for marketese.",
+        "3": "One unmistakable trial button sits beside the no-card-required line with the exclude-VAT note printed in the same price block, and nothing nags. On mobile the sole call to action is near the top with no repeat at the decision end of a long page.",
+        "4": "Price, then small print, then the case for it is exactly the order a subscription-skeptic reads a quote in, and the language is trade-native throughout. Mobile keeps the same single-column order with nothing dropped.",
+        "5": "Two families, a stable three-size hierarchy, and a single brick accent hold together in both modes. The five small-print cards leave a conspicuous empty grid cell and the desktop hero leaves a large dead area under the intro.",
+        "6": "Beta is labeled twice and the estimate is labeled with its sample and its limits, but the testimonial appears with attribution and no verification label under a heading that calls the section evidence.",
+        "7": "The page is the quote you would write for a customer, and the content order, the quotation block, and the enlarged terms all reinforce that one sentence. It demonstrates the honesty claim more than the speed claim.",
+        "8": "Mechanics stay entirely conventional and the two breaks, price before pitch and small print set large, both live in the brand layer and stay on budget.",
+        "9": "Lines like the one about never taking a job without giving a quote, and the note that there is no asterisk because there is nothing to hide, could not be lifted by a competitor.",
+        "10": "No motion, no device, price readable in seconds, and the page ends quickly. Setting the terms large deliberately costs some scanning speed in the middle of the page."
+      }
+    },
+    "candidate-2": {
+      "unscored": true,
+      "failingGate": "output-floor-gate",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline states the conceit, the subhead explains it, and a for-from-terms block names the audience, the company, and the trial terms in the first screenful. It is the fastest answer to what this is and who it is for in the set.",
+        "2": "The from-line names a real company and its founding year, the pilot figure carries its sample and an explicit not-independently-verified caveat, and the beta line refuses to sell an unfinished thing.",
+        "3": "One call to action in the hero and a second exactly where the total lands, with the exclude-VAT note under the prices and a walk-away-owing-nothing line that answers the skeptic directly. Nothing repeats or nags.",
+        "4": "The invoice is the sole trader's own paperwork, and the copy speaks in merchant car parks and January tax surprises rather than startup idiom. Deferring the total to roughly two thirds down a long mobile page costs the skeptic time.",
+        "5": "Monospace document labels against sans body, a tight ruled table, and the double rules borrowed from real invoice stock read as deliberate rather than decorative. The palette runs to four accent hues once the blue button joins the green and amber status colors.",
+        "6": "Beta is labeled on the row and again beneath it, the estimate is labeled carefully, and the product-behavior claim is separated from the evidence claims. The testimonial still carries no verification label under a heading promising honest labeling.",
+        "7": "One sentence, that this page is an invoice, and the line items, the total, the terms, the monospace labels, and the stamp all reinforce it. You read the product's own output before you buy the product, which demonstrates the promise instead of asserting it.",
+        "8": "Mechanics are conventional throughout and the two breaks, the document conceit and the rubber stamp, sit purely in the brand layer.",
+        "9": "The merchant car park line, the January surprise line, and the walk-away-owing-nothing line are specific to this trade and this product, and read as respect rather than pitch.",
+        "10": "The labeled rows, the included column, and a single total make the page genuinely scannable with nothing performative anywhere. It is the longest layout here and the price arrives late, which slows the decision it is trying to speed."
+      }
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7,
+        "7": 6,
+        "8": 6,
+        "9": 8,
+        "10": 6
+      },
+      "rationales": {
+        "1": "There is no headline value statement: the first screenful opens on step one of a numbered walkthrough, leaving the small eyebrow line to carry what the product is and who it serves. A reader has to infer the offer from a step rather than read it.",
+        "2": "The pilot figure is labeled a signal rather than a certified fact, the step about payment links is marked product behavior rather than a promise, and the footer names the company, its hours, and its year.",
+        "3": "The trial button is repeated at the top and after the price, and the terms are stated honestly with the exclude-VAT note beside the plans. Pricing sits at the very bottom of a long page, so the header button asks for a click before any cost is visible.",
+        "4": "The trade language is excellent, from the still-warm ladder to the merchant car park to the kitchen table evening, and the chronological structure is easy to follow. Ordering a subscription-skeptic's page so that cost arrives last works against the audience the brief names.",
+        "5": "Type hierarchy, spacing rhythm, and the navy and cream palette are consistent across both modes and both widths. The oversized numerals alternate between gold and green with no discernible rule, which reads as arbitrary against a standard asking for nothing arbitrary.",
+        "6": "Beta is labeled, the estimate is labeled with its sample and its status, and the product-behavior note is the clearest single honesty micro-label in the set. The testimonial carries no verification label under a heading that promises honest telling.",
+        "7": "One afternoon in six steps is a legible organizing idea that the numerals and copy do reinforce. It tells the reader the afternoon goes well rather than demonstrating it, and a numbered how-it-works sequence sits close to category convention rather than signature.",
+        "8": "Mechanics stay conventional, but dropping the hero headline altogether changes the page's information mechanics rather than its brand layer, and the comprehension cost shows.",
+        "9": "The ladder still warm, the evening at the kitchen table, and staying the reasonable one without writing a word are lines a competitor could not publish unchanged.",
+        "10": "Each step is short and front-loaded, and nothing on the page is performative. It is the longest page here with the price last, so the form works against a pitch built on the reader's time being valuable."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-4"
+  ]
+}

@@ -1,0 +1,18 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-27T15:57:20.305Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/arms/job-sheet/index.html",
+      "measured": 1,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

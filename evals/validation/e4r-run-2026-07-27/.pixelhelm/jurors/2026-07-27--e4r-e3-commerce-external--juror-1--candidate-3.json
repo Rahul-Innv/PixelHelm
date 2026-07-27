@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Cards on labelled shelves put price and stock state on a consistent baseline in every tile, so season fit and availability are all readable in one pass.",
+    "2": "Price sits bottom-left and stock bottom-right in every card, the shipping constraint is a persistent chip, and the product page keeps quantity plus a single primary button in conventional order.",
+    "3": "Out of stock is called out in a distinct colour, the low-count line is explicit, the estimated germination is flagged, the null price reads 'Price on request', and UK-only shipping is visible on both surfaces.",
+    "4": "Large card targets, generous line height and a full-width mobile stack suit older readers on tablets, with no information hidden behind hover.",
+    "5": "The shelf-and-packet motif, dotted card divider, and one warm palette hold across both surfaces with even spacing and aligned tiles.",
+    "6": "The buy box sits directly under the summary and is followed by the year table, grower notes and companions, so the decision is complete above the fold on desktop.",
+    "7": "The seed rack by the shop door is a true small-shop idea and the packet illustrations carry it into the visual layer without boutique gloss.",
+    "8": "Breaks are limited to the packet-card art direction and shelf naming while price, stock and basket mechanics stay entirely conventional.",
+    "9": "Warm and specific in places like 'Two of us keep it stocked' and 'From our potting shed', though the item copy is more catalogue-plain than the framing promises.",
+    "10": "Shelf headers plus the month filter let a returning shopper see what is sowable now immediately, and the rack vocabulary ties the two surfaces together."
+  },
+  "inputTranscriptSha256": "7932af2fbd88b0033202590d72927f90ec7aab725bc6616428e52f070bca35f8",
+  "shuffleSeed": 202607721
+}

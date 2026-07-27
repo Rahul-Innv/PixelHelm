@@ -1,0 +1,101 @@
+{
+  "juror": "juror-2",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 7,
+        "3": 9,
+        "4": 7,
+        "5": 6,
+        "6": 6,
+        "7": 6,
+        "8": 7,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The count headline, the plain summary sentence, and the closure alert all sit within the first mobile viewport, so the day's answer arrives without interaction.",
+        "2": "Open, caution, closed, and unreported each get a distinct treatment plus a text label, so nothing depends on color alone, but open is left as unstyled text and the dotted underline on no report reads like a link.",
+        "3": "Unreported trails say no report on file and the footer states outright that they are never assumed open or closed; the null day, the estimated snowpack, and per-trail report times are all explicit.",
+        "4": "Order is stated and then followed from open through unreported, and the prose stays plain and calm, but the seven-day weather is presented twice in two different forms.",
+        "5": "Type hierarchy and palette are restrained, yet a large unexplained empty band sits between the hero and the list on desktop and the status labels float far right of the trail names they belong to.",
+        "6": "All the awkward data sits without breakage, but the desktop void, the holed mobile weather grid where the null day has no value row, and a faint duplicated footer band at the top of the dark render leave it less than fully resolved.",
+        "7": "Stating the day's count as a broadsheet lede is a real idea and true of a conditions service, but only the hero carries it and the rest of the page reverts to an ordinary list.",
+        "8": "Mechanics stay conventional and the oversized serif count is a single brand-layer break, though the dotted-underline status creates a false link affordance in the mechanics layer.",
+        "9": "Lines like never assumed open or closed and the Worth Knowing heading are authored and specific while staying factual.",
+        "10": "The day's number is the first thing a returning reader sees and nothing is playful or blocking, but the empty desktop band is scrolled past every visit."
+      }
+    },
+    "candidate-2": {
+      "unscored": true,
+      "failingGate": "verify_responsive",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 6,
+        "8": 8,
+        "9": 5,
+        "10": 8
+      },
+      "rationales": {
+        "1": "A counted status summary with icons, the closure notice, and the legend all clear the fold on mobile, making this the fastest read of the network state in the set.",
+        "2": "Each status carries an icon shape, a text label, and a color, and the legend, the group headers, and the card banners render it identically everywhere.",
+        "3": "The null day is drawn as a hollow broken marker labeled no data, the snowpack carries an estimated chip with its offline explanation, and unreported trails say so on their own cards.",
+        "4": "Counted group headers make the open then caution then closed then unknown decision path explicit, though the wording itself is flat and generic.",
+        "5": "The card grid is consistent, but the color banners outweigh the trail names they label, card interiors end raggedly, and three of four groups leave an empty third column.",
+        "6": "Every row fits and both modes resolve with properly lightened banner colors; the mobile summary line orphans its last count onto a second line.",
+        "7": "The trailhead status board is archetype-true for a conditions service, but the card-and-banner execution sits close to a component-library default rather than an earned signature.",
+        "8": "Mechanics are entirely conventional and the oversized status banner is the one deliberate break, kept in the brand layer.",
+        "9": "The microcopy is correct and calm, but every line would transfer unchanged to any status dashboard.",
+        "10": "The counted summary strip is exactly what a daily glance needs, with no playful gate and only the legend as a repeat cost."
+      }
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The summary sentence and the closure notice both clear the mobile fold, but a masthead sits above them and the quiet chips make scanning which trails slower than the alternatives.",
+        "2": "Labels are stable and fully readable without color across the log and the notice, though all four chips share one outline shape so the statuses read alike at a distance.",
+        "3": "Unreported entries say condition unknown, the null weather day says not recorded, the snowpack carries an estimated chip with its offline note, and both posted and generated times appear.",
+        "4": "The stated order is followed and the language is plain and warm throughout, but there are no group headings to jump between within the log.",
+        "5": "The dotted leaders, the chip rail, the rule system, and the restrained paper palette hold a consistent rhythm with nothing arbitrary in it.",
+        "6": "The closed cluster, both unreported rows, and the long names all sit cleanly in both fully resolved modes; only the inline snowpack chip wraps awkwardly on mobile.",
+        "7": "This is the ranger's daily log published as the page, and the entry numbers, posting stamps, log-continues and end-of-log framing, and typography all reinforce that one sentence.",
+        "8": "Two deliberate breaks, the logbook register and the leader lines, both live in the brand layer while the mechanics stay a plain conventional document.",
+        "9": "Ranger's notice, Log continues below, End of log, and condition unknown form an authored register no competitor could publish unchanged while staying factual.",
+        "10": "The dated lede is the habitual glance and the log register makes it obvious the entry is today's, with no playful gate to bypass."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-4",
+    "candidate-3",
+    "candidate-1"
+  ]
+}

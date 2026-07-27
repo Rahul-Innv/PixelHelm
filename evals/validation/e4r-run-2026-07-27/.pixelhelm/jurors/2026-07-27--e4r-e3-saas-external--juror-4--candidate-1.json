@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The eyebrow naming the product and audience, the headline, and the full price block all sit in the first screenful, so what it is and what it costs land before any scroll. The headline itself is a device rather than a value statement, so comprehension leans on the smaller eyebrow line.",
+    "2": "Restraint carries the credibility: price and terms lead, the pilot figure carries its sample size and an explicit not-independently-verified caveat, and no sentence reaches for marketese.",
+    "3": "One unmistakable trial button sits beside the no-card-required line with the exclude-VAT note printed in the same price block, and nothing nags. On mobile the sole call to action is near the top with no repeat at the decision end of a long page.",
+    "4": "Price, then small print, then the case for it is exactly the order a subscription-skeptic reads a quote in, and the language is trade-native throughout. Mobile keeps the same single-column order with nothing dropped.",
+    "5": "Two families, a stable three-size hierarchy, and a single brick accent hold together in both modes. The five small-print cards leave a conspicuous empty grid cell and the desktop hero leaves a large dead area under the intro.",
+    "6": "Beta is labeled twice and the estimate is labeled with its sample and its limits, but the testimonial appears with attribution and no verification label under a heading that calls the section evidence.",
+    "7": "The page is the quote you would write for a customer, and the content order, the quotation block, and the enlarged terms all reinforce that one sentence. It demonstrates the honesty claim more than the speed claim.",
+    "8": "Mechanics stay entirely conventional and the two breaks, price before pitch and small print set large, both live in the brand layer and stay on budget.",
+    "9": "Lines like the one about never taking a job without giving a quote, and the note that there is no asterisk because there is nothing to hide, could not be lifted by a competitor.",
+    "10": "No motion, no device, price readable in seconds, and the page ends quickly. Setting the terms large deliberately costs some scanning speed in the middle of the page."
+  },
+  "inputTranscriptSha256": "68c5255bf7c7d0bd902ff46ae910f8f7f84f7dad4d9f751dbd78bb5e4c269b5a",
+  "shuffleSeed": 202607719
+}

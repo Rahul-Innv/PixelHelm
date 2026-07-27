@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The eyebrow names the category and the quotation block delivers plan definitions, both prices and the trial terms in the first screenful. The headline itself is a device rather than a plain statement of what the product does.",
+    "2": "Every figure carries its basis on the same line, including the pilot estimate with its sample size and an explicit note that it is not an independently verified figure.",
+    "3": "One unmistakable trial button sits beside the honest no-card line and the VAT note travels with the prices. A long page with no second call to action near the end asks a decided reader to scroll back.",
+    "4": "The framing borrows the reader's own trade, that you would never take a job without giving a quote, and the language stays plain with no startup idiom.",
+    "5": "Rules, bars and a single rust accent hold a tight three-size hierarchy. The five small-print cards in a three-column grid leave an orphaned empty cell that reads as unresolved.",
+    "6": "Beta is stated in prose and repeated as a chip in the integration list, and the estimate is never rounded into a fact. The customer quotation carries a name and trade but no label saying it is unverified.",
+    "7": "The page is the quote it argues you should give, with price and terms first and the case afterwards, so the honesty pitch is demonstrated rather than asserted.",
+    "8": "Only the inverted order, full price and small print before any persuasion, breaks convention, and it lives entirely in the brand layer while the mechanics stay ordinary.",
+    "9": "Lines about there being no asterisk to hide, and support being people rather than a chat widget pretending to be, could not be lifted unchanged by a competitor.",
+    "10": "The decision material is all in the first screenful and nothing on the page performs, so the form matches the claim that the reader's time matters."
+  },
+  "inputTranscriptSha256": "59dbd3010baaee8a540a11a741387ce17d8822cce80ca3261e901824baea9dfc",
+  "shuffleSeed": 202607718
+}

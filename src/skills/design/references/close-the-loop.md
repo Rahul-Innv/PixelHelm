@@ -57,6 +57,15 @@ never a refusal — records that predate the juror-record schema stay valid —
 but a NEW panel without per-juror records is a defective panel
 (`evals/validation/PREREG-E4-CALIBRATION.md`).
 
+Floor integrity (SOFT, same pattern, per the R1 repair): writing a judge
+verdict also WARNS when a SCORED candidate carries no referenced floor
+evidence — no `floorEvidence` entry, or one that names neither a gate-output
+path nor an explicit `UNSCORED` status. Absence is never a refusal (records
+predating the R1 repair stay valid), but a scored candidate with no floor
+evidence is an R1 violation: floor-clean is a precondition for esteem
+scoring, and a candidate that fails or lacks its gates is UNSCORED, never
+scored low (`evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md`).
+
 ## Verdict record — `design-council/verdict@1`
 
 Written by design-council immediately after the chair's synthesis (Phase 2.5),
@@ -67,7 +76,9 @@ to `<project>/.design/council/<date>--<surface>--council.json`:
   "date": "YYYY-MM-DD", "project": "", "surface": "",
   "mode": "redesign-tournament | incremental-polish | review | new-design",
   "pass": "fast | deep",
-  "candidates": { "<id>": { "label": "", "kind": "incumbent | challenger", "render": "<path>" } },
+  "candidates": { "<id>": { "label": "", "kind": "incumbent | challenger", "render": "<path>",
+                            "floorEvidence": { "gateOutputs": ["<gate artifact path>"], "notRun": ["<gate id>"] } } },
+  "unscored": [ { "candidate": "", "gate": "<the failing or missing gate>", "why": "" } ],
   "registerFitPanel": { "jurors": 5, "scores": { "<id>": [0] }, "medians": { "<id>": 0 },
                         "nonOverlapping": true, "modeFairness": "both-modes | same-mode | <note>" },
   "lensScores": { "<lens>": { "<id>": 0 } },
@@ -82,6 +93,23 @@ to `<project>/.design/council/<date>--<surface>--council.json`:
 `ownerVerdict` starts null; the router's Close-the-loop step fills it after
 the owner speaks with
 `{ "decision": "approved" | "rejected" | "approved-with-changes", "ownerWords": "<short verbatim quote>" }`.
+
+`floorEvidence` and `unscored` carry the R1/R2 repair
+(`evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md`). Both are OPTIONAL for
+compatibility — records written before the repair stay valid — and both are
+shape-validated when present:
+
+- **`candidates.<id>.floorEvidence`** — the floor bundle that travelled with
+  this candidate's renders into every juror input set (R2). `gateOutputs` lists
+  the Layer-1 gate ARTIFACT paths (never a prose "Layer-1 passed"); `notRun`
+  names the gates that did not run, because silence would otherwise read as a
+  pass. Appearing in `candidates` MEANS the candidate was scored, so its floor
+  bundle must be non-empty: the writer WARNS when it is missing or empty.
+- **`unscored`** — the candidates R1 excluded: floor-failing, or with no gate
+  outputs to point at. They are NOT listed in `candidates`, carry NO scores, NO
+  rank, and NO juror records; each entry names the failing or missing gate. This
+  is how the panel's silence stays auditable — the record says UNSCORED and the
+  gate, never a comparative adjective and never a low score.
 
 ## Ledger line — `<project>/.design/council/ledger.md`
 
@@ -129,10 +157,12 @@ token usage the harness reports; never estimate main-context tokens into it.
 
 ## Juror record — `pixelhelm/juror-record@1` (per-juror evidence)
 
-ONE record per juror per candidate, written via `records.mjs write juror-record`
-BEFORE the panel's verdict is written (E1 critique finding 1: without a
-per-juror schema the panel's evidence chain stops at the aggregate). Archive
-path: `jurors/<date>--<surface>--<jurorId>--<blindLabel>.json`.
+ONE record per juror per SCORED candidate, written via
+`records.mjs write juror-record` BEFORE the panel's verdict is written (E1
+critique finding 1: without a per-juror schema the panel's evidence chain stops
+at the aggregate). An R1-UNSCORED candidate gets no juror record at all — it is
+named in the verdict's `unscored` array instead. Archive path:
+`jurors/<date>--<surface>--<jurorId>--<blindLabel>.json`.
 
 ```json
 { "schema": "pixelhelm/juror-record@1",
@@ -154,6 +184,14 @@ record to the committed verbatim transcript (never a summary), and
 `shuffleSeed` records the blind presentation order. The transcript itself is
 committed alongside the run (the hash makes tampering visible); the record
 carries only its hash.
+
+**R2: the hashed transcript COVERS the gate outputs.** The juror's verbatim
+input transcript is the renders *and* each scored candidate's Layer-1 gate
+outputs (plus the named not-run gates), so `inputTranscriptSha256` binds the
+record to what the juror actually saw about the measured floor — not to the
+renders alone. A transcript that hashes only renders does not satisfy R2, and a
+panel run that way is the E4 failure mode
+(`evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md`).
 
 ## The Close-the-loop step (router, mandatory after the owner gate)
 

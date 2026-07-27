@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline states the conceit and the FOR line immediately names the audience and the job, so the first screenful resolves what and who without scrolling. The terms line also answers the money question up front.",
+    "2": "Claims are stated as line items with their bases attached and there is no marketese anywhere. The evidence section separates what is measured from what is simply how the product works.",
+    "3": "The trial offer appears in the hero terms and again at the total, the free-trial language is qualified honestly, and the VAT note sits directly under both prices. Nothing pressures the reader.",
+    "4": "Presenting the pitch in the shape of a document this audience reads every week is a genuine mental-model match. Plain trade language throughout.",
+    "5": "The monospaced labels, ruled rows and single accent give a coherent system, and the alignment holds across both widths. The centered narrow column leaves the desktop width underused.",
+    "6": "The beta is badged and explicitly not sold as finished, and the pilot figure carries its sample size and its limits. The customer quote is attributed but not flagged as unverified.",
+    "7": "One sentence, the page is an invoice, and the structure, labels, totals and stamp all enact it rather than assert it. The pitch is delivered on the product's own paper.",
+    "8": "The mechanics are entirely conventional and the single break is the document framing, which lives purely in the brand layer. The stamp is the only other flourish and it earns its place.",
+    "9": "Reading it the way you would read your own paperwork, and walking away owing nothing, are lines with a specific point of view. Slightly less trade-textured than the strongest voice here.",
+    "10": "Terms are answered in the hero and the total sits mid-page, so a decision is available quickly and nothing is performative. The line-item block is a little long before the price arrives."
+  },
+  "inputTranscriptSha256": "73adab87c923256b66bbeadbcb2e8599362e89fa908100d31a10be3642fa8a17",
+  "shuffleSeed": 202607717
+}

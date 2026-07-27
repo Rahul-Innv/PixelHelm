@@ -28,13 +28,30 @@ picks the winner and the grafts.
    verdict for this surface: never re-propose an owner-rejected direction; surface
    open grafts; the recorded winner is the incumbent source (Phase 0 rule 0 in
    SKILL.md).
-1. **Eliminate floor failures first.** For each candidate, confirm `pixelhelm-evaluate`
-   Layer-1 passed (contrast / token-drift / a11y / states). Any candidate that fails
-   the machine floor is OUT before taste judgment — a model cannot argue past a
-   measured failure. (See the gates path below; do not relitigate a Layer-1 pass.)
+1. **Floor-clean is a HARD PRECONDITION for esteem scoring (R1).** For each candidate,
+   read its `pixelhelm-evaluate` Layer-1 artifacts. A candidate may be scored ONLY if
+   (a) every SHIPPED HARD Layer-1 gate for its surface exited 0 and (b) those gate
+   outputs exist as artifacts the panel can point at. A candidate that fails a hard
+   gate, or whose gate outputs do not exist, is **UNSCORED** — recorded by that word,
+   excluded from every ranking and from the winner tally, and **never "scored low"**.
+   The seat has no standing to express an opinion about something the floor already
+   ruled on or never measured. UNSCORED is not a taste verdict and carries no grafts.
+   (See the gates path below; do not relitigate a Layer-1 pass.) *(Why: E4 falsified
+   the render-only panel — a candidate carrying a real 3.12:1 AA contrast failure won
+   its external set and no juror surfaced it; `evals/validation/e4-run-2026-07-26/REPORT.md`,
+   repair `evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md` R1.)*
 2. **Confirm renders exist** for every surviving candidate at every viewport+mode. If
    missing → route to `pixelhelm-render`, then resume.
-3. **Run Phase 1 (Council)** — the **six discipline lenses + the Register-fit gate seat = 7
+3. **Assemble each juror's input set: renders AND that candidate's gate outputs (R2).**
+   Every juror input set carries, per candidate, the rendered PNGs *and* the Layer-1
+   gate output artifacts that cleared it (`static-gates.json`, the token-contract
+   recompute, the two honesty gates, the output floor, and every browser-dependent
+   verifier that ran — plus, explicitly, the name of any gate that did NOT run). The
+   juror record's `inputTranscriptSha256` covers the gate outputs, not just the
+   renders. Rationale: R1 removes defective candidates; R2 removes the seat's
+   ignorance of what was already measured, so praise cannot be spent on properties
+   the machine has ruled on. A panel given renders alone is the E4 failure mode.
+4. **Run Phase 1 (Council)** — the **six discipline lenses + the Register-fit gate seat = 7
    seats**, in parallel, each reads all PNGs (on a REDESIGN the set INCLUDES the incumbent
    render), runs the four exit tests, scores every candidate including the incumbent, picks a
    winner, lists keeps + cuts, applies the false-positive filter. **The Register-fit gate (7th
@@ -42,27 +59,32 @@ picks the winner and the grafts.
    mode-fair renders → the median per candidate (H1; `references/lenses.md` §7). The other six
    lenses stay single-juror. The incumbent is scored honestly on the same scale — it is the bar
    the new directions must clear, not a courtesy entry.
-4. **Run Phase 2 (Synthesize) + apply the incumbent guard** — the chair tallies with
+5. **Run Phase 2 (Synthesize) + apply the incumbent guard** — the chair tallies with
    Register-fit weighted as the gate seat, applies the incumbent guard on a redesign
    (a new direction wins only if it beats the incumbent overall AND scores at least
    the incumbent on register-fit; otherwise "current design wins — no change
    recommended"), names the winning frame + grafts, resolves conflicts
    register-fit-first, writes the unified brief + audit trail.
-5. **Write the per-juror records, then the verdict record** (Phase 2.5, always).
-   First, ONE `pixelhelm/juror-record@1` per juror per candidate (juror id, blind
-   label, per-criterion integer scores keyed to the rubric sheet's numbers, max-2-
-   sentence rationales, the sha256 of that juror's verbatim input transcript, and
-   the shuffle seed) via `records.mjs write juror-record` — the aggregate is only
-   as trustworthy as the per-juror evidence under it. Then the `pixelhelm/judge-verdict@1`
-   JSON + a ledger line — shapes in the `pixelhelm` skill's `references/close-the-loop.md`,
-   written THROUGH the loop skill's writer/validator (validate-then-write, append-only):
+6. **Write the per-juror records, then the verdict record** (Phase 2.5, always).
+   First, ONE `pixelhelm/juror-record@1` per juror per SCORED candidate (juror id,
+   blind label, per-criterion integer scores keyed to the rubric sheet's numbers,
+   max-2-sentence rationales, the sha256 of that juror's verbatim input transcript
+   — which covers the gate outputs, R2 — and the shuffle seed) via
+   `records.mjs write juror-record` — the aggregate is only as trustworthy as the
+   per-juror evidence under it. UNSCORED candidates get no juror record; they are
+   named in the verdict's `constraints` with the failing gate. Then the
+   `pixelhelm/judge-verdict@1` JSON + a ledger line — shapes in the `pixelhelm` skill's
+   `references/close-the-loop.md`, written THROUGH the loop skill's writer/validator
+   (validate-then-write, append-only):
    `node "${CLAUDE_PLUGIN_ROOT}/skills/pixelhelm-loop/scripts/records.mjs" write judge-verdict --project <dir>`
    with the record on stdin. The verdict writer WARNS when no matching juror
    records exist (soft — archives predating the juror-record schema stay valid,
-   but a new panel without them is a defective panel, per the sealed E4 sheet).
+   but a new panel without them is a defective panel, per the sealed E4 sheet)
+   and WARNS when a scored candidate references no floor evidence (soft, same
+   reason — but a scored candidate with no floor evidence is an R1 violation).
    **A panel whose record does not validate did not happen** — report the
    refusal, never report the panel result.
-6. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
+7. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
 
 The distinctiveness defense lives in generate (competing intentional directions);
 the council's job is to pick the most intentional, not to make them safer.
@@ -70,6 +92,10 @@ the council's job is to pick the most intentional, not to make them safer.
 ## Variant B — multi-lens review
 
 A single built or mocked UI (no tournament). Same phases, with N=1:
+- The R1 precondition still binds: a surface whose shipped HARD Layer-1 gates did not
+  all exit 0, or whose gate outputs do not exist, is **UNSCORED** — report the floor
+  failure and route to `pixelhelm-repair`; do not issue a taste critique of a broken surface.
+  The R2 input set still applies: the lens reads the gate outputs with the renders.
 - Each lens critiques the one design and names its strengths + its defects from that
   seat.
 - The chair consolidates into a prioritized critique (not a winner): keeps, cuts, and
@@ -119,7 +145,10 @@ with these, classify each as Mechanical vs Taste, and log the call:
   win every time.
 - **Mechanical vs Taste** — Mechanical calls (which candidate passed Layer-1) are
   settled by evidence; Taste calls are settled by the lenses + register and LOGGED
-  with their reason in the audit trail.
+  with their reason in the audit trail. A Mechanical call is never re-opened by a
+  Taste argument: the chair may not restore an UNSCORED candidate because the lenses
+  liked it, and may not lower a scored candidate for a defect the floor already
+  measured and passed.
 
 ## Rendering & gates — do not reimplement
 
@@ -134,9 +163,21 @@ scripts:
 These scripts live in their OWNING sibling skill's `scripts/`; reference them by
 cross-skill `${CLAUDE_PLUGIN_ROOT}` path, never copy their logic here.
 
+**The floor-evidence bundle (what R1 reads and R2 ships).** Per candidate, the
+gate outputs the council consumes are the artifacts those scripts wrote — one
+directory per candidate, committed with the run. The council does not re-derive
+them and does not accept a prose summary of them: an assertion that "Layer-1
+passed" with no artifact to point at is a MISSING floor bundle, which is
+UNSCORED, not a pass. A gate that did not run is named as not-run; silence is
+never read as a pass (`design/references/gates-and-loop.md` §2).
+
 ## Worked output skeleton
 
 ```
+UNSCORED (floor precondition, R1 — not ranked, not "scored low"):
+  Direction D  — verify_targetsize FAIL (7 controls < 24px), gates/d/verify_targetsize.json
+  Direction E  — no floor bundle committed; nothing to point at
+
 WINNER: Direction B — strongest single thesis (Jobs) that still reads calm (Norman);
         survives Squint and Signature where A goes flat.
 

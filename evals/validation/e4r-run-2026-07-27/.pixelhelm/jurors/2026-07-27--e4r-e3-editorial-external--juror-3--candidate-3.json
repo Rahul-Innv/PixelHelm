@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 7,
+    "8": 7,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The opening paragraph delivers the whole finding in prose, and each plate is prefaced by a sentence stating what that plate shows.",
+    "2": "The season-total truncation is declared both in the caption and on the chart itself while the heaviest-day plate is drawn from zero, and the missing years break the line rather than bridge it.",
+    "3": "The seam, the gaps, the era rules and the 2019 flag are restated as footnotes beneath every plate, so the method boundary is disclosed wherever it is crossed.",
+    "4": "The register is patient and place-loving, and each quotation lands directly after the plate it illuminates rather than floating free.",
+    "5": "Plate rhythm and hierarchy read well on desktop, but at 375 px the full-record block is clipped and takes its own introductory sentence out of view along with the notes column.",
+    "6": "The base page is static and fully readable in both modes with no pacing imposed on the reader.",
+    "7": "Three plates drawn plainly organizes the piece well, but it stays closer to a conventional chart sequence than to a form that makes the valley's shift felt.",
+    "8": "Conservatively inside the budget: almost nothing is broken and the reading mechanics are entirely conventional.",
+    "9": "Unsensational and concrete, with lines such as the lane under water in October and the parish answering in its own practical way.",
+    "10": "Every mark traces back to the record, with three plates for the three measured quantities and four footnote markers for the four documented caveats."
+  },
+  "inputTranscriptSha256": "49dc39616ff2def2bdad43a4dfae7b9678b0d65d112d7e5d7d90ac8c3f117db6",
+  "shuffleSeed": 202607728
+}

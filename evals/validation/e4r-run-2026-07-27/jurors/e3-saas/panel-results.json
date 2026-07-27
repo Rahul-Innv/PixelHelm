@@ -1,0 +1,312 @@
+{
+  "aggregation": "per-criterion median of 5 jurors; overall = median of the criterion medians (registered; unchanged from E1/E3/E4)",
+  "set": "e3-saas",
+  "r1": "floor-clean is a precondition for scoring; UNSCORED candidates are excluded from the medians, the ranking, and every statistic (PREREG-E4R-ADDENDUM.md (d))",
+  "unscored": [
+    {
+      "candidate": "job-sheet",
+      "gate": "output-floor-gate",
+      "why": "committed Layer-1 battery shows a hard gate FAIL; UNSCORED under R1, excluded from every ranking and statistic"
+    }
+  ],
+  "floorEvidence": {
+    "worked-invoice": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-saas/project/gates/worked-invoice",
+      "hardFails": []
+    },
+    "fair-quote": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-saas/project/gates/fair-quote",
+      "hardFails": []
+    },
+    "driveway-to-paid": {
+      "gateDir": "evals/validation/e3/run-2026-07-26-saas/project/gates/driveway-to-paid",
+      "hardFails": []
+    },
+    "job-sheet": {
+      "gateDir": "evals/validation/e4r-run-2026-07-27/plants/e3-saas/gates",
+      "hardFails": [
+        "output-floor-gate"
+      ]
+    }
+  },
+  "candidates": {
+    "worked-invoice": {
+      "criterionScores": {
+        "1": [
+          9,
+          8,
+          9,
+          9,
+          7
+        ],
+        "2": [
+          9,
+          8,
+          9,
+          8,
+          8
+        ],
+        "3": [
+          8,
+          9,
+          8,
+          9,
+          8
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          9,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          9,
+          9,
+          8
+        ],
+        "10": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 8
+    },
+    "fair-quote": {
+      "criterionScores": {
+        "1": [
+          8,
+          7,
+          8,
+          8,
+          7
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          8,
+          9
+        ],
+        "3": [
+          9,
+          8,
+          8,
+          8,
+          9
+        ],
+        "4": [
+          8,
+          9,
+          8,
+          9,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          7,
+          9,
+          8,
+          7,
+          8
+        ],
+        "7": [
+          9,
+          8,
+          9,
+          8,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          8,
+          8,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 8,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8
+    },
+    "driveway-to-paid": {
+      "criterionScores": {
+        "1": [
+          6,
+          6,
+          6,
+          6,
+          6
+        ],
+        "2": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "3": [
+          7,
+          7,
+          8,
+          7,
+          7
+        ],
+        "4": [
+          7,
+          8,
+          8,
+          7,
+          7
+        ],
+        "5": [
+          6,
+          7,
+          7,
+          7,
+          7
+        ],
+        "6": [
+          7,
+          8,
+          8,
+          7,
+          7
+        ],
+        "7": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "8": [
+          7,
+          7,
+          8,
+          6,
+          6
+        ],
+        "9": [
+          8,
+          9,
+          9,
+          8,
+          9
+        ],
+        "10": [
+          6,
+          6,
+          7,
+          6,
+          6
+        ]
+      },
+      "criterionMedians": {
+        "1": 6,
+        "2": 8,
+        "3": 7,
+        "4": 7,
+        "5": 7,
+        "6": 7,
+        "7": 7,
+        "8": 7,
+        "9": 9,
+        "10": 6
+      },
+      "overallMedian": 7,
+      "minCriterionMedian": 6
+    }
+  },
+  "aggregateRanking": [
+    {
+      "candidate": "fair-quote",
+      "overallMedian": 8.5
+    },
+    {
+      "candidate": "worked-invoice",
+      "overallMedian": 8
+    },
+    {
+      "candidate": "driveway-to-paid",
+      "overallMedian": 7
+    }
+  ]
+}

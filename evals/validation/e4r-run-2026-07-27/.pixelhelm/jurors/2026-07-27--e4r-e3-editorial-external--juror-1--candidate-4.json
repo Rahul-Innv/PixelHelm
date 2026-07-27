@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Each plate carries a prose deck stating its finding in words, and the full record table prints every year's values, so the conclusion needs no chart reading. The page is static with nothing to trigger.",
+    "2": "Gaps break the line rather than bridge it, the seam is marked in all three plates, and the heaviest-day plate is drawn from zero. Plate two suppresses the zero and starts at 550, which is disclosed twice and axis-labelled but still lets year-to-year noise read as a jagged rise.",
+    "3": "Nulls, seam and the 2019 flag are repeated as lettered notes under every plate, so the boundary is disclosed at each crossing. The closing section states the limits of the record and claims no cause.",
+    "4": "The bridging sentences from data to consequence are the best writing here, especially the lane under water and the parish answering in its own practical way. The two human fragments are placed after the plates they illuminate rather than collected as decoration.",
+    "5": "The plates are neatly drawn and consistent, but the record table wraps the instrument value while an empty notes column takes width. Mobile clips both the table introduction and the instrument column inside a horizontal scroller.",
+    "6": "Static and fully readable at both widths, with no pacing device or auto-motion observable. Reduced-motion parity cannot be confirmed from still renders.",
+    "7": "Three plates from the ledger is a container more than a claim, and the charts are competent and conventional, so the shift is charted rather than made felt. The reporter's notes drawn onto the plates are the closest thing here to a unifying idea.",
+    "8": "Mechanics are entirely conventional and no novelty is spent beyond the annotated-plate convention, which sits comfortably inside the budget. The one presentational departure, the suppressed zero, is declared where it occurs.",
+    "9": "Warm, plain and local, with a good ear for the practical detail of a parish. The plate framing is slightly generic and could be lifted onto another dataset with less loss than the best writing here.",
+    "10": "Every mark traces to the record: broken lines for absent years, hollow and dashed for the unverified reading, rules for era averages. Nothing is an effect detached from the reporting."
+  },
+  "inputTranscriptSha256": "2d63adcec39c934fbff480d67004135a25cf5498d0a794e059e4433e2b9be3c5",
+  "shuffleSeed": 202607726
+}

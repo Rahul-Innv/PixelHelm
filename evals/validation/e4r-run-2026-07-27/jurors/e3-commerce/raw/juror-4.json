@@ -1,0 +1,103 @@
+I have viewed all listed renders for candidates 1, 2, and 3. Candidate-4's floor outputs show a hard gate failure, so per the floor precondition it is unscored and excluded from the ranking.
+
+{
+  "juror": "juror-4",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 6,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The twelve-month band plus the sowing-window groupings give season fit faster than any other candidate here, and the month filter with jump links is simple and predictable. Price and stock sit at the end of tall rows, so scanning eight packets for price alone takes more scrolling than a grid would.",
+        "2": "Price then stock, plain stock language, and a product-page money path of quantity field, add-to-basket button, and delivery terms all follow convention with no cleverness. Nothing decorative intrudes on the purchase step.",
+        "3": "Out of stock is plainly labelled, the null-price packet reads as a request to ask rather than any invented figure, the estimated germination is flagged in the meta line and again in a margin note, and shipping limits appear in the header and again inside the buy box. This is the most thorough honesty surface of the three.",
+        "4": "Body text and line length are comfortable and nothing is hover-dependent, but the margin annotations and the difficulty and germination line are set noticeably small for older readers at default zoom. Targets on the product page are generous.",
+        "5": "One palette, one type family, and one rule system hold both surfaces together convincingly. The desktop catalogue leaves a large empty left column below the filter, and the catalogue runs much tighter than the airy product page.",
+        "6": "The year table, difficulty, grower notes, and companion packets are laid out in reading order with the buy box placed after the sowing facts, so a first-timer can decide in place. Nothing needed for the decision sits off the page.",
+        "7": "The almanac idea, that every packet is shelved under the window it wants, is carried by the groupings, the month bands, the margin hand, and the month filter together. It reads as a two-person shop that thinks in seasons rather than as borrowed boutique gloss.",
+        "8": "The breaks are the almanac framing, the month band, and the margin annotations, all in the brand layer. The commerce mechanics are left entirely conventional.",
+        "9": "Lines like the one about shelving each variety under the window it wants, and margin asides about the patient gardener and the widest window in the almanac, are specific and unhurried. No competitor could lift this copy unchanged.",
+        "10": "The month filter and the window jump links serve a returning grower asking what can go in now. There is no signal for what is newly back in stock, which is the other half of the repeat visit."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 8,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 7,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The four-across grid under two clearly labelled shelves makes eight packets scannable in one screen, with price and stock on every card. Because card text runs to different lengths, the prices land at different heights across a row, which slows the price comparison the grid was meant to speed up.",
+        "2": "Price, stock, quantity, and add-to-basket all behave conventionally, and the buy box sits high on the product page where shoppers expect it. The solid filled button used for a mere navigation link reads heavier than a navigation control should.",
+        "3": "Out of stock, the low-stock count, the flagged estimate, and the shipping limit are all visible before any purchase intent forms. The null-price packet is priced only as available on request, with the supplier reason stated in the card body.",
+        "4": "Targets are generous, type is comfortable, and nothing depends on hover. The four-across cards force measures of roughly twenty characters per line with centred wrapping titles, which is well under the comfortable reading range.",
+        "5": "The packet frame, dotted divider, shelf header, and palette carry cleanly from catalogue to product page as one system. Ragged internal alignment across each card row and a large empty left column on the desktop product page are the visible lapses.",
+        "6": "Year table, difficulty, potting-shed notes, and two companion cards with their own prices and stock give a first-timer everything needed in one place. Placing the buy box above the sowing facts asks for the decision slightly before it supplies it.",
+        "7": "The rack by the shop door, shelf by shelf, is a congruent idea for a two-person shop and is carried by the packet cards and the shelf edges. It is also the treatment closest to a conventional dressed-up product grid, so the idea sits more on the surface than in the structure.",
+        "8": "The shelf edge, packet framing, and botanical glyphs are confined to the brand layer. The money path is untouched.",
+        "9": "The opening about two people keeping the rack stocked and every packet being grown themselves is warm and specific. Beyond the masthead and the potting-shed heading, the page leans on plain catalogue copy without further annotation.",
+        "10": "Shelves plus the month filter answer what can be sown now at a glance, and the packet card reappearing on the product page makes the two surfaces feel like one shop. Nothing marks what has newly returned to stock."
+      }
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 7,
+        "5": 8,
+        "6": 8,
+        "7": 6,
+        "8": 7,
+        "9": 6,
+        "10": 6
+      },
+      "rationales": {
+        "1": "Price and stock are clean and consistent on every row, but the list is not grouped by season and its ordering follows no logic a shopper can see. Season fit survives only as the smallest microtext on each row, leaving the filter to do all the work.",
+        "2": "Every commerce mechanic is conventional, from price and stock placement to the quantity field and add-to-basket button with delivery terms beneath. The money path carries no invention at all.",
+        "3": "Out of stock, the flagged estimate, the request-to-ask treatment of the null price, and the shipping limit are all present and visible before purchase intent. The shipping line is set small and centred, which is the weakest placement of the three.",
+        "4": "A single comfortable column gives a good measure and generous product-page targets, with no hover-dependent information. The numbering markers and the meta line are set small for older readers at default zoom.",
+        "5": "This is the most disciplined system of the three, with consistent rules, restrained palette, and steady rhythm across both surfaces, and the numbered marker carries through to the product page. Only the very narrow centred column at desktop width leaves the layout feeling under-used.",
+        "6": "The year table, difficulty line, potting-shed notes, and companion listings give a first-time gardener a complete basis for deciding without leaving the page. The arrangement is calm and easy to follow.",
+        "7": "Reading slowly and choosing well is a real gesture, but the numbered annual is the only device carrying it and the numbers mean nothing the shopper can act on. Provenance and service culture are stated in one line rather than built into the structure.",
+        "8": "Nothing checkout-adjacent is broken and the restraint is total. The novelty budget is essentially unspent, so there is little in the brand layer to confine.",
+        "9": "The line about two people keeping the list and growing every variety themselves is genuinely warm and specific. The rest of the page is unannotated catalogue copy, so the voice appears once and then goes quiet.",
+        "10": "The month filter answers what can be sown now, and the two surfaces cohere well through the shared numbering. With no seasonal grouping and no recency signal, a repeat visitor checking what is newly in or in season is served least well here."
+      }
+    },
+    "candidate-4": {
+      "unscored": true,
+      "failingGate": "verify_focustrap",
+      "scores": {},
+      "rationales": {}
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-2",
+    "candidate-3"
+  ]
+}

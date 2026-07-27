@@ -1,0 +1,79 @@
+{
+  "generated": "2026-07-27T15:59:14.545Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 4
+  },
+  "shots": [
+    {
+      "file": "job-sheet__desktop__light.png",
+      "item": "job-sheet",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "job-sheet__mobile__light.png",
+      "item": "job-sheet",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "job-sheet__desktop__dark.png",
+      "item": "job-sheet",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "job-sheet__mobile__dark.png",
+      "item": "job-sheet",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

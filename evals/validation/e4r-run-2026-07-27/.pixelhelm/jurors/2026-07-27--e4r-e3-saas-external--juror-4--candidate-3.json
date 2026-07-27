@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline states the conceit, the subhead explains it, and a for-from-terms block names the audience, the company, and the trial terms in the first screenful. It is the fastest answer to what this is and who it is for in the set.",
+    "2": "The from-line names a real company and its founding year, the pilot figure carries its sample and an explicit not-independently-verified caveat, and the beta line refuses to sell an unfinished thing.",
+    "3": "One call to action in the hero and a second exactly where the total lands, with the exclude-VAT note under the prices and a walk-away-owing-nothing line that answers the skeptic directly. Nothing repeats or nags.",
+    "4": "The invoice is the sole trader's own paperwork, and the copy speaks in merchant car parks and January tax surprises rather than startup idiom. Deferring the total to roughly two thirds down a long mobile page costs the skeptic time.",
+    "5": "Monospace document labels against sans body, a tight ruled table, and the double rules borrowed from real invoice stock read as deliberate rather than decorative. The palette runs to four accent hues once the blue button joins the green and amber status colors.",
+    "6": "Beta is labeled on the row and again beneath it, the estimate is labeled carefully, and the product-behavior claim is separated from the evidence claims. The testimonial still carries no verification label under a heading promising honest labeling.",
+    "7": "One sentence, that this page is an invoice, and the line items, the total, the terms, the monospace labels, and the stamp all reinforce it. You read the product's own output before you buy the product, which demonstrates the promise instead of asserting it.",
+    "8": "Mechanics are conventional throughout and the two breaks, the document conceit and the rubber stamp, sit purely in the brand layer.",
+    "9": "The merchant car park line, the January surprise line, and the walk-away-owing-nothing line are specific to this trade and this product, and read as respect rather than pitch.",
+    "10": "The labeled rows, the included column, and a single total make the page genuinely scannable with nothing performative anywhere. It is the longest layout here and the price arrives late, which slows the decision it is trying to speed."
+  },
+  "inputTranscriptSha256": "68c5255bf7c7d0bd902ff46ae910f8f7f84f7dad4d9f751dbd78bb5e4c269b5a",
+  "shuffleSeed": 202607719
+}

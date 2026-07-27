@@ -1,0 +1,93 @@
+{
+  "validator": "verify_responsive",
+  "generated": "2026-07-27T15:56:36.538Z",
+  "widths": [
+    280,
+    320,
+    414
+  ],
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e1-utility/arms/stone-steps/index.html",
+      "cells": [
+        {
+          "width": 280,
+          "pass": false,
+          "scrollWidth": 336,
+          "clientWidth": 280,
+          "overflowPx": 56,
+          "culprits": [
+            {
+              "selector": "div.post > main > section.record > table",
+              "width": 320,
+              "overshootPx": 56
+            },
+            {
+              "selector": "main > section.record > table > caption",
+              "width": 320,
+              "overshootPx": 56
+            },
+            {
+              "selector": "main > section.record > table > thead",
+              "width": 320,
+              "overshootPx": 56
+            },
+            {
+              "selector": "section.record > table > thead > tr",
+              "width": 320,
+              "overshootPx": 56
+            },
+            {
+              "selector": "main > section.record > table > tbody",
+              "width": 320,
+              "overshootPx": 56
+            }
+          ]
+        },
+        {
+          "width": 320,
+          "pass": false,
+          "scrollWidth": 336,
+          "clientWidth": 320,
+          "overflowPx": 16,
+          "culprits": [
+            {
+              "selector": "div.post > main > section.record > table",
+              "width": 320,
+              "overshootPx": 16
+            },
+            {
+              "selector": "main > section.record > table > caption",
+              "width": 320,
+              "overshootPx": 16
+            },
+            {
+              "selector": "main > section.record > table > thead",
+              "width": 320,
+              "overshootPx": 16
+            },
+            {
+              "selector": "section.record > table > thead > tr",
+              "width": 320,
+              "overshootPx": 16
+            },
+            {
+              "selector": "main > section.record > table > tbody",
+              "width": 320,
+              "overshootPx": 16
+            }
+          ]
+        },
+        {
+          "width": 414,
+          "pass": true,
+          "scrollWidth": 414,
+          "clientWidth": 414,
+          "overflowPx": 0,
+          "culprits": []
+        }
+      ]
+    }
+  ],
+  "pass": false
+}

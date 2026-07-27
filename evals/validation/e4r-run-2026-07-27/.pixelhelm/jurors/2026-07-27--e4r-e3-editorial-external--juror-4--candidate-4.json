@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede carries the whole finding in numbers, each plate opens with a plain-language account of what it shows, and the full record gives every year's onset day, season total and heaviest day as text.",
+    "2": "Gaps break the line and are banded, the unverified year is hollow and excluded from the averages, and the non-zero start is labelled inside the plot area. The instrument seam is only a dashed rule, so era-crossing comparisons depend on the reader carrying that annotation with them.",
+    "3": "Nulls, seam, unverified label and scope note appear across all three plates and in the record, but on mobile the table's Notes column, where the null reasons and the unverified caveat live, sits off screen.",
+    "4": "The strongest single passage in the set, tying a heavier season to the lane under water in October and the parish answering in its own practical way, with the fragments placed where the data turns.",
+    "5": "The plates are cleanly and consistently drawn, but this is much the longest page, the desktop record table carries doubled hairlines and ragged row heights, and the mobile table clips at the viewport edge.",
+    "6": "The renders show a static document with a fully readable base and no scroll-driven pacing; no motion or scroll capture was among my inputs, so this is scored on what the renders show.",
+    "7": "Three plates with the reporter's notes written on the record is coherent and archetype-true, but it stays close to competent data-journalism convention rather than making the valley's shift felt through the form itself.",
+    "8": "Nothing conventional is broken and the reading mechanics are entirely standard, which satisfies the budget without spending any of it.",
+    "9": "Patient, concrete and local, with a restraint that reads as a real town paper rather than as a wire summary.",
+    "10": "Every mark is a field of the record and the three plates exist because the record holds three measures, so no device is detached from the reporting."
+  },
+  "inputTranscriptSha256": "99ddf6a02b67e45efc0850bcd5150145bd650e599395b04f60bf4687519fd26b",
+  "shuffleSeed": 202607729
+}

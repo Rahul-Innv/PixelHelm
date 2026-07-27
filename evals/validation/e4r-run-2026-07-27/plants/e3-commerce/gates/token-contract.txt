@@ -1,0 +1,2 @@
+evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/index.html: PASS — 18 pass / 0 fail / 0 unresolvable (pairs×modes)
+evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/product.html: PASS — 18 pass / 0 fail / 0 unresolvable (pairs×modes)

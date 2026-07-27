@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The headline plus the FOR, FROM and TERMS rows answer what it is, who it is for and on what terms before any scroll. The price is not part of that first answer.",
+    "2": "The pilot figure is given as an internal estimate with its sample size and an explicit refusal to call it verified, and the copy never reaches for superlatives.",
+    "3": "The trial button appears at the top and again directly under the total, with the no-card terms stated as terms and the VAT note on the totals rule. Pricing arrives only after four sections.",
+    "4": "An invoice is the document this audience handles daily, so the structure matches the mental model exactly, though a skeptic on a phone must scroll past the line items to reach cost.",
+    "5": "Monospaced labels, an aligned included column and the double rule above the total are disciplined and consistent. The blue action color sits slightly apart from the cream, green and gold used everywhere else.",
+    "6": "Beta is marked in the integration row and restated in prose, and the estimate keeps its qualifier. The customer quotation is presented without any note on whether it was verified.",
+    "7": "The pitch is typeset as the product's own paperwork, so the page shows the invoice the product would produce instead of describing it.",
+    "8": "The invoice conceit is a single sustained brand-layer break and every mechanic underneath it stays conventional.",
+    "9": "January no longer being a surprise, no mental arithmetic in the merchant's car park, walking away owing nothing: specific and unhyped throughout.",
+    "10": "The page is easy to scan, but the invoice order postpones the number a buyer actually decides on, which costs the reader the time the pitch claims to value."
+  },
+  "inputTranscriptSha256": "59dbd3010baaee8a540a11a741387ce17d8822cce80ca3261e901824baea9dfc",
+  "shuffleSeed": 202607718
+}

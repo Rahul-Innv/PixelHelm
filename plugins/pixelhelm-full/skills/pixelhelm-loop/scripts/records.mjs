@@ -13,6 +13,13 @@
 // in close-the-loop.md, "never edit an archive"). `write` also appends the judge
 // ledger line so the next run's Phase 0 read finds it.
 //
+// Two SOFT integrity checks fire on a judge-verdict write (stderr, and a `warnings`
+// array under --json) — warnings, never refusals, because records predating each rule
+// stay valid: (1) no matching per-juror records (sealed E4 sheet), and (2) a SCORED
+// candidate with no referenced floor evidence (the R1 repair — floor-clean is a
+// precondition for esteem scoring; a floor-failing or gate-less candidate belongs in
+// `unscored`, never "scored low"). See evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md.
+//
 // Store: writes go to <project>/.pixelhelm/ (canonical; legacy stores are read-only
 // compatibility and are never written).
 //
@@ -71,6 +78,32 @@ function validateJudgeVerdict(r) {
     if (!nonEmpty(c.label)) errors.push(`candidates.${id}.label must be non-empty`);
     if (!["incumbent", "challenger"].includes(c.kind)) errors.push(`candidates.${id}.kind must be incumbent | challenger`);
     if (!nonEmpty(c.render)) errors.push(`candidates.${id}.render must carry the render artifact path`);
+    // R1/R2 floor bundle — OPTIONAL for compatibility (records predating the repair stay
+    // valid); shape-checked when present. Absence is caught SOFTLY at write time instead.
+    if (c.floorEvidence !== undefined) {
+      const fe = c.floorEvidence;
+      if (!isObj(fe)) errors.push(`candidates.${id}.floorEvidence must be an object { gateOutputs: [], notRun: [] }`);
+      else {
+        if (!Array.isArray(fe.gateOutputs) || !fe.gateOutputs.every(nonEmpty)) {
+          errors.push(`candidates.${id}.floorEvidence.gateOutputs must be an array of gate ARTIFACT paths (a prose "Layer-1 passed" is not evidence)`);
+        }
+        if (fe.notRun !== undefined && (!Array.isArray(fe.notRun) || !fe.notRun.every(nonEmpty))) {
+          errors.push(`candidates.${id}.floorEvidence.notRun must be an array of gate ids that did not run (silence must never read as a pass)`);
+        }
+      }
+    }
+  }
+  // R1 — candidates the floor excluded. They are NOT in `candidates`, carry no scores and
+  // no rank, and each names the failing or missing gate. Optional for compatibility.
+  if (r.unscored !== undefined) {
+    if (!Array.isArray(r.unscored)) errors.push("unscored must be an array of { candidate, gate, why } — the R1 eliminations");
+    else for (const [i, u] of r.unscored.entries()) {
+      if (!isObj(u) || !nonEmpty(u.candidate) || !nonEmpty(u.gate) || !nonEmpty(u.why)) {
+        errors.push(`unscored[${i}] must be { candidate, gate, why } — name the failing or missing gate, never a comparative adjective`);
+      } else if (candidateIds.includes(u.candidate)) {
+        errors.push(`unscored[${i}].candidate "${u.candidate}" is also a scored candidate — UNSCORED means excluded from scoring, never "scored low"`);
+      }
+    }
   }
   const p = r.registerFitPanel;
   if (!isObj(p)) errors.push("registerFitPanel must be an object");
@@ -241,7 +274,8 @@ const TEMPLATES = {
     schema: SCHEMAS["judge-verdict"],
     date: "", project: "", surface: "",
     mode: "redesign-tournament", pass: "fast",
-    candidates: { incumbent: { label: "", kind: "incumbent", render: "" } },
+    candidates: { incumbent: { label: "", kind: "incumbent", render: "", floorEvidence: { gateOutputs: [], notRun: [] } } },
+    unscored: [],
     registerFitPanel: { jurors: 5, scores: { incumbent: [] }, medians: { incumbent: 0 }, nonOverlapping: true, modeFairness: "both-modes" },
     lensScores: {},
     constraints: [],
@@ -296,6 +330,20 @@ function jurorRecordWarning(record, projectDir) {
   const present = existsSync(jurorsDir) && readdirSync(jurorsDir).some((f) => f.startsWith(prefix) && f.endsWith(".json"));
   if (present) return null;
   return `no pixelhelm/juror-record@1 files found under .pixelhelm/jurors/ matching "${prefix}*" — new panels must write one juror-record per juror per candidate BEFORE the verdict (sealed E4 sheet); only records predating the schema may lack them`;
+}
+
+// Floor integrity (SOFT, same pattern as the juror-record warning above): appearing in
+// `candidates` MEANS the candidate was scored, and R1 makes floor-clean a precondition
+// for esteem scoring — so every scored candidate must reference its floor evidence.
+// Records predating the R1 repair carry no floorEvidence, so absence is a WARNING, never
+// a refusal (evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md).
+function floorEvidenceWarning(record) {
+  const cands = isObj(record.candidates) ? record.candidates : {};
+  const bare = Object.entries(cands)
+    .filter(([, c]) => !isObj(c) || !isObj(c.floorEvidence) || !Array.isArray(c.floorEvidence.gateOutputs) || c.floorEvidence.gateOutputs.length === 0)
+    .map(([id]) => id);
+  if (!bare.length) return null;
+  return `scored candidate(s) with no referenced floor evidence: ${bare.join(", ")} — R1 makes floor-clean a precondition for esteem scoring, so each scored candidate carries candidates.<id>.floorEvidence.gateOutputs (gate ARTIFACT paths). A candidate that fails or lacks its gates belongs in "unscored", never scored low; only records predating the R1 repair may omit this`;
 }
 
 function ledgerLine(r, fileName) {
@@ -386,6 +434,8 @@ if (cmd === "write") {
     written.push(relative(resolve(projectDir), ledger).replace(/\\/g, "/"));
     const warn = jurorRecordWarning(record, resolve(projectDir));
     if (warn) warnings.push(warn);
+    const floorWarn = floorEvidenceWarning(record);
+    if (floorWarn) warnings.push(floorWarn);
   }
   if (asJson) console.log(JSON.stringify({ written, valid: true, errors: [], warnings }, null, 2));
   else {

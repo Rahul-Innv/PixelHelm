@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 7,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 9,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The first screenful carries only a small eyebrow line and then drops straight into step one, so what the product is and who it is for must be inferred rather than read. The opening step does eventually say it, but the value proposition is never stated as a proposition.",
+    "2": "Every claim is stated plainly with no promotional adjectives, and the pilot number arrives with its basis attached. Restraint is consistent from top to bottom.",
+    "3": "The trial offer is honest and the pricing is transparent with the VAT note beside it, and nothing nags. Both modes bury the price at the far end of a long scroll, which costs a skeptic time before the decision.",
+    "4": "The six-step afternoon is structured exactly the way the work happens and reads cleanly in a single phone column. Trade language throughout with no startup idiom.",
+    "5": "Spacing rhythm, rule weights and type hierarchy are consistent and the palette is tight. The step numerals alternate gold and green with no discernible rule, which reads arbitrary against the rest of the discipline.",
+    "6": "The beta integration is badged and explained, the pilot figure is labeled an internal estimate and not a certified fact, and one product claim is marked as behavior rather than promise. The customer quote is attributed but never labeled as unverified.",
+    "7": "The signature is the afternoon told in six ordered steps, and content and layout do reinforce it. The page narrates the promise rather than demonstrating it, so the idea stays descriptive.",
+    "8": "Mechanics stay conventional and there is a single deliberate break, the missing hero. That break is paid for in comprehension rather than in the brand layer alone.",
+    "9": "Leaving the driveway, the warm ladder and the merchant's car park are lines no competitor could lift unchanged. Specific, unhyped and written from inside the trade.",
+    "10": "The product sells reclaimed time, but the page asks for six full sections before it will show a price. Form works against the pitch on the phone in particular."
+  },
+  "inputTranscriptSha256": "73adab87c923256b66bbeadbcb2e8599362e89fa908100d31a10be3642fa8a17",
+  "shuffleSeed": 202607717
+}

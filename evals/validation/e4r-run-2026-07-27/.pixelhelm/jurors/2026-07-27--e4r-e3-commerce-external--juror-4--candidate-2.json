@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 7,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The four-across grid under two clearly labelled shelves makes eight packets scannable in one screen, with price and stock on every card. Because card text runs to different lengths, the prices land at different heights across a row, which slows the price comparison the grid was meant to speed up.",
+    "2": "Price, stock, quantity, and add-to-basket all behave conventionally, and the buy box sits high on the product page where shoppers expect it. The solid filled button used for a mere navigation link reads heavier than a navigation control should.",
+    "3": "Out of stock, the low-stock count, the flagged estimate, and the shipping limit are all visible before any purchase intent forms. The null-price packet is priced only as available on request, with the supplier reason stated in the card body.",
+    "4": "Targets are generous, type is comfortable, and nothing depends on hover. The four-across cards force measures of roughly twenty characters per line with centred wrapping titles, which is well under the comfortable reading range.",
+    "5": "The packet frame, dotted divider, shelf header, and palette carry cleanly from catalogue to product page as one system. Ragged internal alignment across each card row and a large empty left column on the desktop product page are the visible lapses.",
+    "6": "Year table, difficulty, potting-shed notes, and two companion cards with their own prices and stock give a first-timer everything needed in one place. Placing the buy box above the sowing facts asks for the decision slightly before it supplies it.",
+    "7": "The rack by the shop door, shelf by shelf, is a congruent idea for a two-person shop and is carried by the packet cards and the shelf edges. It is also the treatment closest to a conventional dressed-up product grid, so the idea sits more on the surface than in the structure.",
+    "8": "The shelf edge, packet framing, and botanical glyphs are confined to the brand layer. The money path is untouched.",
+    "9": "The opening about two people keeping the rack stocked and every packet being grown themselves is warm and specific. Beyond the masthead and the potting-shed heading, the page leans on plain catalogue copy without further annotation.",
+    "10": "Shelves plus the month filter answer what can be sown now at a glance, and the packet card reappearing on the product page makes the two surfaces feel like one shop. Nothing marks what has newly returned to stock."
+  },
+  "inputTranscriptSha256": "9a152c39d272ed6a07e29f63a2f5be58c54ff508a46a20332c086b546e15bec6",
+  "shuffleSeed": 202607724
+}

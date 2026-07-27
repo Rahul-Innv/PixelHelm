@@ -1,0 +1,57 @@
+{
+  "validator": "verify_states",
+  "generated": "2026-07-27T15:58:16.228Z",
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "thresholds": {
+    "normalText": 4.5,
+    "largeTextOrIcon": 3
+  },
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/index.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 25,
+          "checked": 23,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 25,
+          "checked": 23,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    },
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/product.html",
+      "modes": [
+        {
+          "mode": "light",
+          "controls": 6,
+          "checked": 6,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        },
+        {
+          "mode": "dark",
+          "controls": 6,
+          "checked": 6,
+          "failures": [],
+          "needsReview": [],
+          "exempt": 0
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

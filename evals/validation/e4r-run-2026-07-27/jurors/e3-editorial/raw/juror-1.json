@@ -1,0 +1,101 @@
+{
+  "juror": "juror-1",
+  "set": "e3-editorial",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lead states the full finding in words, every year's season total and heaviest day are printed as text beside the graphic, and the page is a static read with nothing to trigger. Only the onset day is left to the dot alone, so a reader who never decodes it still gets the era averages from prose but not each year's exact date.",
+        "2": "Missing years occupy full hatched rows rather than being dropped, and 2019 carries a hollow dot with an inline unverified note. The season-total bars run on a fixed 550 to 750 scale with no tick marks on the rail itself, disclosed only in the how-to-read block, though the exact figure printed beside each bar keeps the reader from relying on bar length.",
+        "3": "The three null years, the instrument boundary marked as a labelled section break exactly where it falls, and the 2019 unverified flag are all visible in the single view. The closing note states plainly that the page describes the shift and not its cause.",
+        "4": "Patient local-paper register throughout, and the two human fragments sit at their own year inside the record rather than in a quotes box, so they read as part of the ledger. The italic interlude after the 2000s earns its place by naming what the lines already show.",
+        "5": "Comfortable measure, generous leading and a clear three-level hierarchy carry a long read, and the rail's alignment across year, shelf, bar and figures is exact. The mobile restack into two rows per year keeps every element and clips nothing in either mode.",
+        "6": "The page is a fully readable static document with no scrollytelling, pacing device or auto-motion visible at either width. Reduced-motion parity cannot be confirmed from still renders, so this reflects the observable base being complete.",
+        "7": "One line per year, read down the page like the almanac the valley used to keep: the onset dots slide right and the bars lengthen as the reader descends, so the shift is felt as movement rather than reported as a slope. Title, subhead, era rules, quote placement and closing note all reinforce the same sentence.",
+        "8": "The single deliberate break is replacing a conventional chart with a per-year rail, and it is explained in a how-to-read block before the reader meets it. Scrolling, headings and links stay entirely conventional.",
+        "9": "Specific and place-loving without a raised voice, with lines like the bars being a shade longer each wet year than the valley had been used to. The register is a small paper's almanac and would not transfer unchanged to another town.",
+        "10": "Every device is a datum: dot for onset, bar for total, red figure for the heaviest day, hatched row for a missing year, hollow dot for the unverified reading. Nothing decorative is doing work the record does not support."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The deck states the finding in prose, the then-and-now block restates it as six plain figures, and the full record table prints onset day, total, heaviest day and instrument for every year. A reader who never looks at the dot plot loses nothing.",
+        "2": "The one chart is untruncated across the full September to October window, missing years are shaded bands rather than bridged, and 2019 is drawn hollow. Encodings are honest and each is keyed to a lettered note directly beneath the plot.",
+        "3": "The two-ink system makes provenance travel with every figure on the page, so the instrument boundary is disclosed at each crossing rather than once in a footnote. Nulls appear as bands, as table rows and in the closing notes, and the scope note refuses attribution.",
+        "4": "The register is right and the connective prose about the seam is genuinely well written. Pooling both human fragments into a separate quotations section leaves them decorative relative to the record rather than placed where the data needs them.",
+        "5": "Desktop typography is handsome, but the record table wraps the instrument value onto two lines while a wide notes column sits mostly empty. On mobile the table's horizontal scroller also swallows its own introductory paragraph and the instrument column, both clipped at the right edge.",
+        "6": "A static, fully readable document with no scrolljacking or pacing device visible at either width. Reduced-motion parity cannot be confirmed from still renders, so this reflects the observable base.",
+        "7": "Printing the ledger in two inks, one per instrument, is a real one-sentence idea carried by legend, prose links, then-and-now columns, chart and table alike. It makes the caveat felt more than it makes the valley's shift felt, which is this criterion's actual target.",
+        "8": "One declared break, the standing colour-as-instrument system, announced in a legend before its first use. Reading mechanics stay conventional throughout.",
+        "9": "Unsensational and local, and the ink-to-ink summary line is a phrase this page earned. A shade more essayistic than a town paper would run, but still specific to this weir.",
+        "10": "The ornament is the caveat: the colour split exists only because the dataset changes instrument, and the bands and hollow dot trace to real gaps and a real flag. No effect is present that the reporting does not require."
+      }
+    },
+    "candidate-3": {
+      "unscored": true,
+      "failingGate": "verify_states",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Each plate carries a prose deck stating its finding in words, and the full record table prints every year's values, so the conclusion needs no chart reading. The page is static with nothing to trigger.",
+        "2": "Gaps break the line rather than bridge it, the seam is marked in all three plates, and the heaviest-day plate is drawn from zero. Plate two suppresses the zero and starts at 550, which is disclosed twice and axis-labelled but still lets year-to-year noise read as a jagged rise.",
+        "3": "Nulls, seam and the 2019 flag are repeated as lettered notes under every plate, so the boundary is disclosed at each crossing. The closing section states the limits of the record and claims no cause.",
+        "4": "The bridging sentences from data to consequence are the best writing here, especially the lane under water and the parish answering in its own practical way. The two human fragments are placed after the plates they illuminate rather than collected as decoration.",
+        "5": "The plates are neatly drawn and consistent, but the record table wraps the instrument value while an empty notes column takes width. Mobile clips both the table introduction and the instrument column inside a horizontal scroller.",
+        "6": "Static and fully readable at both widths, with no pacing device or auto-motion observable. Reduced-motion parity cannot be confirmed from still renders.",
+        "7": "Three plates from the ledger is a container more than a claim, and the charts are competent and conventional, so the shift is charted rather than made felt. The reporter's notes drawn onto the plates are the closest thing here to a unifying idea.",
+        "8": "Mechanics are entirely conventional and no novelty is spent beyond the annotated-plate convention, which sits comfortably inside the budget. The one presentational departure, the suppressed zero, is declared where it occurs.",
+        "9": "Warm, plain and local, with a good ear for the practical detail of a parish. The plate framing is slightly generic and could be lifted onto another dataset with less loss than the best writing here.",
+        "10": "Every mark traces to the record: broken lines for absent years, hollow and dashed for the unverified reading, rules for era averages. Nothing is an effect detached from the reporting."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-2",
+    "candidate-4"
+  ]
+}

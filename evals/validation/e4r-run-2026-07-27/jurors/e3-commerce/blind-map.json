@@ -1,0 +1,106 @@
+{
+  "candidateOrderBase": [
+    "packet-rack",
+    "sowing-almanac",
+    "seed-annual",
+    "glass-house"
+  ],
+  "plant": "glass-house",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607721,
+      "candidateOrder": [
+        "sowing-almanac",
+        "glass-house",
+        "packet-rack",
+        "seed-annual"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "sowing-almanac",
+        "candidate-2": "glass-house",
+        "candidate-3": "packet-rack",
+        "candidate-4": "seed-annual"
+      },
+      "transcriptSha256": "7932af2fbd88b0033202590d72927f90ec7aab725bc6616428e52f070bca35f8",
+      "floorFailingCandidates": [
+        "glass-house"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607722,
+      "candidateOrder": [
+        "seed-annual",
+        "packet-rack",
+        "glass-house",
+        "sowing-almanac"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "seed-annual",
+        "candidate-2": "packet-rack",
+        "candidate-3": "glass-house",
+        "candidate-4": "sowing-almanac"
+      },
+      "transcriptSha256": "b222a990cf28937ce6f16e18f982894a74e3c24773a6926d40ea653da5dd2712",
+      "floorFailingCandidates": [
+        "glass-house"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607723,
+      "candidateOrder": [
+        "glass-house",
+        "sowing-almanac",
+        "packet-rack",
+        "seed-annual"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "glass-house",
+        "candidate-2": "sowing-almanac",
+        "candidate-3": "packet-rack",
+        "candidate-4": "seed-annual"
+      },
+      "transcriptSha256": "835cc17b5b617c39d67b7bc06b271281312f9dec6e59de6b5d5285312984d539",
+      "floorFailingCandidates": [
+        "glass-house"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607724,
+      "candidateOrder": [
+        "sowing-almanac",
+        "packet-rack",
+        "seed-annual",
+        "glass-house"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "sowing-almanac",
+        "candidate-2": "packet-rack",
+        "candidate-3": "seed-annual",
+        "candidate-4": "glass-house"
+      },
+      "transcriptSha256": "9a152c39d272ed6a07e29f63a2f5be58c54ff508a46a20332c086b546e15bec6",
+      "floorFailingCandidates": [
+        "glass-house"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607725,
+      "candidateOrder": [
+        "packet-rack",
+        "sowing-almanac",
+        "seed-annual",
+        "glass-house"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "packet-rack",
+        "candidate-2": "sowing-almanac",
+        "candidate-3": "seed-annual",
+        "candidate-4": "glass-house"
+      },
+      "transcriptSha256": "43fd6cdf82c2602c93d42942dca7db6627e42ea97321d98cb71e009bed82629c",
+      "floorFailingCandidates": [
+        "glass-house"
+      ]
+    }
+  }
+}

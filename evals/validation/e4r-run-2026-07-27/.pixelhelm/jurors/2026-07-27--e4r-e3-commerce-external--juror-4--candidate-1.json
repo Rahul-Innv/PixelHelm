@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 6,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The twelve-month band plus the sowing-window groupings give season fit faster than any other candidate here, and the month filter with jump links is simple and predictable. Price and stock sit at the end of tall rows, so scanning eight packets for price alone takes more scrolling than a grid would.",
+    "2": "Price then stock, plain stock language, and a product-page money path of quantity field, add-to-basket button, and delivery terms all follow convention with no cleverness. Nothing decorative intrudes on the purchase step.",
+    "3": "Out of stock is plainly labelled, the null-price packet reads as a request to ask rather than any invented figure, the estimated germination is flagged in the meta line and again in a margin note, and shipping limits appear in the header and again inside the buy box. This is the most thorough honesty surface of the three.",
+    "4": "Body text and line length are comfortable and nothing is hover-dependent, but the margin annotations and the difficulty and germination line are set noticeably small for older readers at default zoom. Targets on the product page are generous.",
+    "5": "One palette, one type family, and one rule system hold both surfaces together convincingly. The desktop catalogue leaves a large empty left column below the filter, and the catalogue runs much tighter than the airy product page.",
+    "6": "The year table, difficulty, grower notes, and companion packets are laid out in reading order with the buy box placed after the sowing facts, so a first-timer can decide in place. Nothing needed for the decision sits off the page.",
+    "7": "The almanac idea, that every packet is shelved under the window it wants, is carried by the groupings, the month bands, the margin hand, and the month filter together. It reads as a two-person shop that thinks in seasons rather than as borrowed boutique gloss.",
+    "8": "The breaks are the almanac framing, the month band, and the margin annotations, all in the brand layer. The commerce mechanics are left entirely conventional.",
+    "9": "Lines like the one about shelving each variety under the window it wants, and margin asides about the patient gardener and the widest window in the almanac, are specific and unhurried. No competitor could lift this copy unchanged.",
+    "10": "The month filter and the window jump links serve a returning grower asking what can go in now. There is no signal for what is newly back in stock, which is the other half of the repeat visit."
+  },
+  "inputTranscriptSha256": "9a152c39d272ed6a07e29f63a2f5be58c54ff508a46a20332c086b546e15bec6",
+  "shuffleSeed": 202607724
+}

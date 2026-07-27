@@ -1,0 +1,51 @@
+{
+  "_note": "L-081 page-identity assertions for the E4 plants, taken by explicit file:// URL in fresh contexts before any render or measurement.",
+  "pass": true,
+  "results": [
+    {
+      "set": "e1-utility",
+      "file": "e1-utility/arms/stone-steps/index.html",
+      "expectedDataArm": "stone-steps",
+      "expectedTitleToken": "Kestrel Ridge",
+      "seenTitle": "Kestrel Ridge Open Space trail conditions. The stone steps board.",
+      "seenDataArm": "stone-steps",
+      "pass": true
+    },
+    {
+      "set": "e3-saas",
+      "file": "e3-saas/arms/job-sheet/index.html",
+      "expectedDataArm": "job-sheet",
+      "expectedTitleToken": "Ledgerline",
+      "seenTitle": "Ledgerline. The job sheet becomes the invoice.",
+      "seenDataArm": "job-sheet",
+      "pass": true
+    },
+    {
+      "set": "e3-commerce",
+      "file": "e3-commerce/arms/glass-house/index.html",
+      "expectedDataArm": "glass-house",
+      "expectedTitleToken": "Foxglove",
+      "seenTitle": "Foxglove & Fern seed catalog. The glass house.",
+      "seenDataArm": "glass-house",
+      "pass": true
+    },
+    {
+      "set": "e3-commerce",
+      "file": "e3-commerce/arms/glass-house/product.html",
+      "expectedDataArm": "glass-house",
+      "expectedTitleToken": "Foxglove",
+      "seenTitle": "Cathedral Bells (Cobaea scandens) seed. Foxglove & Fern.",
+      "seenDataArm": "glass-house",
+      "pass": true
+    },
+    {
+      "set": "e3-editorial",
+      "file": "e3-editorial/arms/gauge-house/index.html",
+      "expectedDataArm": "gauge-house",
+      "expectedTitleToken": "Ashcombe",
+      "seenTitle": "The gauge house. Ashcombe Valley Observer.",
+      "seenDataArm": "gauge-house",
+      "pass": true
+    }
+  ]
+}

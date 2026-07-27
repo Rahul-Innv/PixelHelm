@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 editorial external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The opening paragraph states the full finding in plain numbers, and every rail row prints its own season total and heaviest day, so a reader who never decodes the dot still receives the record. The how-to-read block and the what-it-shows paragraph both describe the rail's actual finding.",
+    "2": "Each row is labelled with its true values, missing years stay on the page as hatched gaps, and the onset shelf declares its Sep 1 to Oct 15 span in day numbers. The total bars run on a disclosed 550 to 750 mm scale, which is stated openly but still lengthens a 14 percent rise more than a zero baseline would.",
+    "3": "All three null years sit in the rail as explicit no-record rows with their reasons, the instrument change is a band header placed exactly at the 1996 to 1997 boundary, and 2019 carries a hollow dot plus a red unverified line. The closing note states plainly that the page describes the shift and not its cause.",
+    "4": "Patient local-paper register throughout, and the two human fragments are set at the years they belong to rather than gathered into a decorative block. The mid-rail reflection about the dots edging rightward earns its place by describing what the reader has just read down.",
+    "5": "Editorial serif typography with a comfortable measure, consistent rail alignment and a stable era-band rhythm carry a long read in both modes and on both viewports. The right-hand numeric columns are the tightest part, with the season total and heaviest-day figures crowding each other.",
+    "6": "The base is a fully readable static document with no scroll-driven dependency and nothing pacing the reader. Nothing in either mode requires motion to reach the conclusion.",
+    "7": "One sentence carries it: the year-by-year rail is the almanac the valley used to keep, so reading down the page makes the onset drift visible as migration rather than merely charting it. Content, typography, encoding and the gap treatment all reinforce that single idea.",
+    "8": "The single break is replacing conventional charts with the almanac rail, and the how-to-read block declares the device before it is used. Scrolling, headings and links stay entirely conventional.",
+    "9": "Prose no other paper could run unchanged, from the fair-week meadow line to the bars a shade longer each wet year than the valley had been used to. Unsensational and specific to this weir.",
+    "10": "Every mark traces to a real column: dot position is onset day, bar length is season total, the red figure is the heaviest day, and the hatch is a missing year. No device exists that the dataset does not support."
+  },
+  "inputTranscriptSha256": "6cff6d5f2adc5952ca8c72f4c1b67d3e4d7db0d8f08c84601db6d3b19d76095a",
+  "shuffleSeed": 202607730
+}

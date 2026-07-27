@@ -1,0 +1,101 @@
+{
+  "juror": "juror-1",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The eyebrow names the category and the first screenful carries the headline, both prices, the VAT note and the trial terms without a scroll. The headline itself spends its words on the quote conceit rather than saying what the product does, so the eyebrow has to carry the category.",
+        "2": "Each number arrives with its basis: the pilot figure is called an internal estimate at n=11 and explicitly not an independently verified figure, and the beta integration is named twice as unfinished. Restraint reads as confidence and there is no marketese anywhere.",
+        "3": "Price, VAT note, thirty-days-free no-card terms and the trial button all sit in the opening panel, which is the most respectful possible order for a skeptical buyer. The single CTA never nags, though nothing is offered again after the case has been made.",
+        "4": "Plain trade language throughout, and on the phone the price panel follows immediately after the hero, which is what a subscription-skeptic reads for first. No startup idiom appears anywhere on the page.",
+        "5": "Consistent rule work, a restrained palette with one accent reserved for emphasis and the beta badge, and a tight three-size hierarchy. The empty left column beneath the intro and the hole in the second small-print row leave the desktop layout slightly unresolved.",
+        "6": "The beta is labeled in two separate places and the pilot figure is labeled as an estimate with its sample size. The testimonial is carried with only a name and trade, with no explicit note that it is unverified, which is the one honesty item left open.",
+        "7": "One sentence, that the page is the quotation you would write for your own customer, and the content order, the quotation panel and the small-print-set-large section all reinforce it. The page enacts the trade's own convention rather than asserting a benefit.",
+        "8": "Mechanics stay conventional and the break is a single brand-layer inversion: price and small print before the pitch. Nothing else in the page fights the reader's expectations.",
+        "9": "Lines about there being no asterisk because there is nothing to hide, and support being people rather than a chat widget pretending to be, could not be lifted unchanged by a competitor. The register respects the reader without flattering them.",
+        "10": "The whole decision is available before the first scroll and everything after it is scannable structure with no device between reader and answer. Form enacts the pitch about time more directly than anything else here."
+      }
+    },
+    "candidate-2": {
+      "unscored": true,
+      "failingGate": "output-floor-gate",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-3": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 7,
+        "4": 7,
+        "5": 6,
+        "6": 7,
+        "7": 7,
+        "8": 7,
+        "9": 8,
+        "10": 6
+      },
+      "rationales": {
+        "1": "The first screenful gives only the brand line, a trial button and step one of a narrative, so what the product is must be inferred from the eyebrow. The value proposition depends on scrolling into the sequence.",
+        "2": "The pilot number is labeled an internal estimate at n=11 and called a signal rather than a certified fact, the text-link claim is footnoted as product behavior, and the beta is named. The copy is objective with no promotional inflation.",
+        "3": "The CTA is unmistakable and repeated at top and bottom, and the price carries its VAT note honestly. Pricing sits at the very bottom behind six steps, a long walk for a buyer whose first question is cost.",
+        "4": "The six-step afternoon maps closely onto a sole trader's actual day and the language is trade-plain with no startup idiom. The ordering serves the story more than the reader's question order, especially on a phone where the page runs longest in the set.",
+        "5": "Alignment and spacing are clean and the type hierarchy is disciplined. The step numerals alternate between two accent colors with no evident meaning rule, and the narrow centered column leaves a large unused field at desktop width, so not everything reads as chosen.",
+        "6": "The estimate is labeled with its sample size and explicitly not a certified fact, and the beta line refuses to pretend it is done. The testimonial appears with attribution only and no note that it is unverified.",
+        "7": "The signature is the afternoon that ends with job done, money in and tax sorted, and the numbered structure genuinely reinforces it. The page narrates that sequence rather than demonstrating it, so the idea stays asserted.",
+        "8": "Mechanics remain conventional and the single break is replacing the hero with a numbered sequence. That break lands in the comprehension layer rather than purely in the brand layer, which is what makes it cost something.",
+        "9": "Phrases about the ladder still being warm and no arithmetic in the merchant's car park are specific and unhyped. The voice is clearly this product's own rather than a category template.",
+        "10": "The product sells time, yet this page asks for the most reading before it will answer the price question. The narrative is enjoyable and slow, which works against the pitch it is making."
+      }
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 9,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline, the subhead and a FOR line naming sole traders who invoice from a phone between jobs all sit above the fold alongside the trial button. What it is and who it is for are answered before any scroll.",
+        "2": "The pilot figure is given as an internal estimate from n=11 with its smallness stated, the beta refuses to be sold as finished, and the FROM line gives the real organization and its start year. Nothing is inflated and nothing is asserted without its basis.",
+        "3": "The CTA appears at the top and again beneath the total, prices carry their VAT note on the same rule, and the no-card terms are stated plainly with a fair walk-away line. The price sits mid-page rather than beside the first CTA.",
+        "4": "The invoice document is exactly the mental model of someone who writes them daily, and the FOR line names the reader outright in trade language. On the phone the INCLUDED marker drops below each row where it reads a little like body copy rather than a status.",
+        "5": "The most disciplined craft in the set: one monospaced label register used consistently for the terms block, the status marks and the stamp, one accent, three type sizes, and a double rule under the total exactly where an invoice puts one. Nothing reads arbitrary.",
+        "6": "The beta is labeled and the pilot figure is labeled with its sample size and explicitly not independently verified. The testimonial sits under a heading promising honest labeling yet carries no unverified note itself.",
+        "7": "One sentence, that this page is an invoice, and the line items, the total, the payment terms and the stamp all deliver it. The page demonstrates the product's own document rather than describing it, which is the strongest form this idea can take.",
+        "8": "Mechanics are conventional and the break is the single brand-layer conceit of typesetting the pitch as the product's own paperwork. The stamp is a second small flourish but stays inside the brand layer.",
+        "9": "Lines about January no longer being a surprise and walking away owing nothing are specific and unhyped. Slightly less idiomatic than the strongest voice here, but still not liftable unchanged by a competitor.",
+        "10": "Line items scan fast, the total is where a reader expects it, and there is no device between the reader and the decision. The stamp is the one moment of performance in an otherwise economical page."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-4",
+    "candidate-3"
+  ]
+}

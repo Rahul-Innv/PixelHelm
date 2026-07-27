@@ -1,0 +1,101 @@
+{
+  "juror": "juror-2",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 6
+      },
+      "rationales": {
+        "1": "Price, stock state and sowing window sit on a fixed line per entry so scanning is predictable, but the flat ungrouped list of eight makes season-first browsing depend entirely on the month select.",
+        "2": "Price sits directly under the description, stock uses plain in-stock and out-of-stock language, and the product page puts quantity and Add to basket immediately under the price with nothing clever anywhere.",
+        "3": "Out of stock is set apart in red, the unpriced packet reads Price pending — ask us with no invented figure, the germination estimate is labelled, and UK-only shipping is stated in the header of both surfaces.",
+        "4": "The largest and airiest type of the set, single column at both widths, with no information carried by hover.",
+        "5": "The most disciplined of the three: one rule language, one type scale and one palette carried identically across catalog and product page.",
+        "6": "The year table, difficulty and germination line, potting-shed notes and companion packets are all present and ordered so a first-timer can decide without leaving the page.",
+        "7": "A hand-kept numbered list you are asked to read slowly is a believable two-person conceit, though it stays closer to restraint than to a signature the whole page argues.",
+        "8": "Novelty is limited to the numbered-list conceit and the letterpress voice; the money path is untouched.",
+        "9": "Two of us keep this list and From our potting shed read as the shop rather than as a brand, warm and specific without hurry.",
+        "10": "A returning shopper gets stock flags and a month select but no in-season or newly-stocked grouping, so re-orientation means a full scan of the list."
+      }
+    },
+    "candidate-2": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 8,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Sowing-window shelves group the rack before you read a single card, and every card parks price and stock on the same bottom line, which makes a season sweep fast and predictable.",
+        "2": "Price, stock language and the bordered buy panel with quantity and Add to basket follow convention exactly on both surfaces.",
+        "3": "The shipping limit is a bordered notice above the rack, out of stock is visibly marked, the germination estimate is labelled, and the unpriced packet reads Price on request.",
+        "4": "Card text is legible and targets are generous, though the meta lines under each description run smaller than the surrounding body text.",
+        "5": "One card and shelf system holds both surfaces, but the first shelf row does not share a baseline because the sweet-pea packet block runs taller, and the product page leaves a large empty field under the packet card.",
+        "6": "The buy panel, year table, potting-shed notes and two companion cards give a first-time gardener everything needed without leaving the page.",
+        "7": "The rack by the shop door, shelf by shelf is a genuine small-shop idea, and the packet-card art direction carries it into the visuals without borrowed boutique gloss.",
+        "8": "The shelf headers and packet illustrations are brand-layer only; nothing near the basket is reinvented.",
+        "9": "Two of us keep it stocked, every packet is a variety we grow ourselves is plain and particular enough that a competitor could not lift it unchanged.",
+        "10": "Shelves keyed to sowing windows plus the month filter and per-card stock let a repeat visitor see what is sowable and what is available immediately, and both surfaces read as the same shop."
+      }
+    },
+    "candidate-3": {
+      "unscored": true,
+      "failingGate": "verify_focustrap",
+      "scores": {},
+      "rationales": {}
+    },
+    "candidate-4": {
+      "unscored": false,
+      "failingGate": null,
+      "scores": {
+        "1": 8,
+        "2": 6,
+        "3": 9,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 9,
+        "8": 6,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Window groups, a jump rail and a twelve-cell month band per entry make the season read almost instant, with price and stock on a fixed line; the band carries no month labels, so it leans on the sow line beneath it.",
+        "2": "Stock language and the buy panel itself are conventional, but the product page places the almanac table above price and Add to basket, which pushes the primary commerce action below editorial content.",
+        "3": "The clearest honesty surface here: the germination estimate is flagged in the meta line and again in a margin note, the unpriced packet says Price pending — ask us, out of stock is marked, and UK-only shipping sits in the header.",
+        "4": "Main body type is comparable to the others, but the italic margin notes run small on a short measure and the desktop layout is the densest of the three.",
+        "5": "The almanac language holds across both surfaces, though the near-empty left rail and wide right gutter leave the desktop catalog lopsided and the rule styles differ between the two pages.",
+        "6": "The month band, year table, difficulty line, margin note and companions together give the fullest decision picture, with the difficulty and germination line landing below the buy panel.",
+        "7": "Find your month first, then your packet is one sentence that the content, the month band, the window rail and the product page all reinforce, and it is true of growers who keep their own list.",
+        "8": "The band and marginalia are brand-layer breaks, but reordering the product page so the almanac precedes price and Add to basket puts a break adjacent to the money path the sheet asks to leave conventional.",
+        "9": "The margin asides, such as the widest window in the almanac and the whole plant earns its bed, are the most unrepeatable writing in the set.",
+        "10": "Window groups, the jump rail, the month filter and the band together let a returning shopper find what is sowable now in seconds, and the band ties the two surfaces into one shop."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-4",
+    "candidate-1"
+  ]
+}

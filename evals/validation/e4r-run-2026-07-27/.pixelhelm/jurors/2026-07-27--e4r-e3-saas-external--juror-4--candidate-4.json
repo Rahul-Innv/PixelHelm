@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 7,
+    "4": 7,
+    "5": 7,
+    "6": 7,
+    "7": 6,
+    "8": 6,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "There is no headline value statement: the first screenful opens on step one of a numbered walkthrough, leaving the small eyebrow line to carry what the product is and who it serves. A reader has to infer the offer from a step rather than read it.",
+    "2": "The pilot figure is labeled a signal rather than a certified fact, the step about payment links is marked product behavior rather than a promise, and the footer names the company, its hours, and its year.",
+    "3": "The trial button is repeated at the top and after the price, and the terms are stated honestly with the exclude-VAT note beside the plans. Pricing sits at the very bottom of a long page, so the header button asks for a click before any cost is visible.",
+    "4": "The trade language is excellent, from the still-warm ladder to the merchant car park to the kitchen table evening, and the chronological structure is easy to follow. Ordering a subscription-skeptic's page so that cost arrives last works against the audience the brief names.",
+    "5": "Type hierarchy, spacing rhythm, and the navy and cream palette are consistent across both modes and both widths. The oversized numerals alternate between gold and green with no discernible rule, which reads as arbitrary against a standard asking for nothing arbitrary.",
+    "6": "Beta is labeled, the estimate is labeled with its sample and its status, and the product-behavior note is the clearest single honesty micro-label in the set. The testimonial carries no verification label under a heading that promises honest telling.",
+    "7": "One afternoon in six steps is a legible organizing idea that the numerals and copy do reinforce. It tells the reader the afternoon goes well rather than demonstrating it, and a numbered how-it-works sequence sits close to category convention rather than signature.",
+    "8": "Mechanics stay conventional, but dropping the hero headline altogether changes the page's information mechanics rather than its brand layer, and the comprehension cost shows.",
+    "9": "The ladder still warm, the evening at the kitchen table, and staying the reasonable one without writing a word are lines a competitor could not publish unchanged.",
+    "10": "Each step is short and front-loaded, and nothing on the page is performative. It is the longest page here with the price last, so the form works against a pitch built on the reader's time being valuable."
+  },
+  "inputTranscriptSha256": "68c5255bf7c7d0bd902ff46ae910f8f7f84f7dad4d9f751dbd78bb5e4c269b5a",
+  "shuffleSeed": 202607719
+}

@@ -1,0 +1,79 @@
+{
+  "generated": "2026-07-27T15:59:06.595Z",
+  "viewports": [
+    {
+      "name": "desktop",
+      "width": 1440,
+      "height": 900
+    },
+    {
+      "name": "mobile",
+      "width": 375,
+      "height": 812
+    }
+  ],
+  "modes": [
+    "light",
+    "dark"
+  ],
+  "darkAttr": "data-theme",
+  "axe": {
+    "serious": 0,
+    "critical": 0,
+    "cellsRun": 4
+  },
+  "shots": [
+    {
+      "file": "stone-steps__desktop__light.png",
+      "item": "stone-steps",
+      "viewport": "desktop",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "stone-steps__mobile__light.png",
+      "item": "stone-steps",
+      "viewport": "mobile",
+      "mode": "light",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "stone-steps__desktop__dark.png",
+      "item": "stone-steps",
+      "viewport": "desktop",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    },
+    {
+      "file": "stone-steps__mobile__dark.png",
+      "item": "stone-steps",
+      "viewport": "mobile",
+      "mode": "dark",
+      "modeFidelity": "ok",
+      "extreme": false,
+      "axe": {
+        "serious": 0,
+        "critical": 0,
+        "violations": []
+      }
+    }
+  ]
+}

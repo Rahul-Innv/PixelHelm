@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en" data-arm="job-sheet">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ledgerline. The job sheet becomes the invoice.</title>
+<meta name="description" content="Ledgerline turns a photographed job sheet into a line-itemed invoice you can send from the van by text or email. Solo £9 a month, Crew £19 a month, all prices exclude VAT. 30 days free, no card required.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f8f7f3","ink":"#1d2126","muted":"#575d54","teal":"#145c54","copper":"#8f4517","beta":"#7c5a10","cta-bg":"#145c54","cta-ink":"#f8f7f3","rule":"#878c84"},"dark":{"paper":"#14171a","ink":"#e9e8e2","muted":"#b3b2a6","teal":"#86ccc2","copper":"#e0a37b","beta":"#d8b562","cta-bg":"#86ccc2","cta-ink":"#14171a","rule":"#70766e"},"gatedPairs":[{"fg":"ink","on":["paper"],"kind":"text"},{"fg":"muted","on":["paper"],"kind":"text"},{"fg":"teal","on":["paper"],"kind":"text"},{"fg":"copper","on":["paper"],"kind":"text"},{"fg":"beta","on":["paper"],"kind":"text"},{"fg":"cta-ink","on":["cta-bg"],"kind":"text"},{"fg":"rule","on":["paper"],"kind":"graphic"}]}
+</script>
+<style>
+/* job-sheet: the page is laid out like the carbon-copy docket a trade already
+   fills in. Left column is what you write down, right column is what the
+   customer gets. Quiet paper, one accent, numbers set in a tabular face. */
+
+:root {
+  color-scheme: light;
+  --paper: #f8f7f3;
+  --ink: #1d2126;
+  --muted: #575d54;
+  --teal: #145c54;
+  --copper: #8f4517;
+  --beta: #7c5a10;
+  --cta-bg: #145c54;
+  --cta-ink: #f8f7f3;
+  --rule: #878c84;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #14171a;
+  --ink: #e9e8e2;
+  --muted: #b3b2a6;
+  --teal: #86ccc2;
+  --copper: #e0a37b;
+  --beta: #d8b562;
+  --cta-bg: #86ccc2;
+  --cta-ink: #14171a;
+  --rule: #70766e;
+}
+
+:root {
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --t-xl: clamp(2.05rem, 1.25rem + 3.2vw, 3.25rem);
+  --t-lg: clamp(1.15rem, 1rem + 0.75vw, 1.45rem);
+  --t-md: 1.0625rem;
+  --t-sm: 0.8125rem;
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 1.75rem;
+  --s5: 3.25rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--t-md);
+  line-height: 1.55;
+  padding: var(--s4) var(--s3) var(--s5);
+}
+
+.sheet { max-width: 52rem; margin: 0 auto; }
+
+a { color: var(--teal); text-underline-offset: 3px; }
+a:focus-visible { outline: 3px solid var(--copper); outline-offset: 3px; }
+
+/* docket head */
+.docket {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--s2) var(--s3);
+  border: 1px solid var(--rule);
+  border-radius: 0.25rem;
+  padding: var(--s2) var(--s3);
+}
+.docket .mark { font-weight: 700; font-size: var(--t-lg); letter-spacing: -0.01em; }
+.docket .ref { font-size: var(--t-sm); color: var(--muted); font-variant-numeric: tabular-nums; }
+
+.opening { margin-top: var(--s4); }
+.opening h1 { font-size: var(--t-xl); line-height: 1.06; letter-spacing: -0.02em; max-width: 17ch; }
+.opening .sub { margin-top: var(--s3); max-width: 42ch; font-size: var(--t-lg); line-height: 1.4; }
+.opening .who { margin-top: var(--s2); color: var(--muted); max-width: 50ch; }
+
+.act {
+  display: inline-block;
+  margin-top: var(--s4);
+  min-height: 2.75rem;
+  background: var(--cta-bg);
+  color: var(--cta-ink);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.85rem 1.4rem;
+  border-radius: 0.25rem;
+}
+.act small { display: block; font-weight: 400; font-size: var(--t-sm); margin-top: 0.15rem; }
+
+/* the carbon rule between blocks */
+.band { margin-top: var(--s5); }
+.section-title {
+  font-size: var(--t-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  color: var(--copper);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s2);
+  margin-bottom: var(--s3);
+}
+
+/* left/right docket columns */
+.carbon { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s4); }
+.carbon h3 { font-size: var(--t-md); font-weight: 700; }
+.carbon p { color: var(--muted); font-size: var(--t-sm); line-height: 1.5; margin-top: var(--s1); max-width: 36ch; }
+.carbon .line { border-top: 1px solid var(--rule); padding-top: var(--s2); }
+
+/* evidence */
+.evidence { display: grid; gap: var(--s3); }
+.figure { font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; letter-spacing: -0.01em; }
+.basis { color: var(--muted); font-size: var(--t-sm); max-width: 54ch; }
+blockquote { border-left: 3px solid var(--rule); padding-left: var(--s3); max-width: 46ch; }
+blockquote footer { color: var(--muted); font-size: var(--t-sm); margin-top: var(--s1); }
+
+/* connections */
+.wires { list-style: none; display: grid; gap: var(--s2); max-width: 32rem; }
+.wires li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: var(--s2) var(--s3);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s2);
+}
+.state { font-size: var(--t-sm); font-weight: 700; letter-spacing: 0.08em; }
+.state.on { color: var(--teal); }
+.state.trial { color: var(--beta); }
+.state .note { color: var(--muted); font-size: var(--t-sm); font-weight: 400; letter-spacing: 0; margin-left: var(--s2); }
+
+/* rate lines, set like a price list rather than plan cards */
+.rate-lines { display: grid; gap: var(--s3); max-width: 34rem; }
+.rate {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: baseline;
+  gap: var(--s2) var(--s3);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s3);
+}
+.rate h3 { font-size: var(--t-md); font-weight: 700; }
+.rate .allow { grid-column: 1 / -1; font-size: var(--t-sm); color: var(--muted); }
+.rate .money { font-size: 2rem; font-weight: 700; font-variant-numeric: tabular-nums; color: var(--teal); white-space: nowrap; }
+.rate .per { font-size: var(--t-sm); color: var(--muted); font-weight: 400; }
+.vat { margin-top: var(--s3); font-size: var(--t-sm); color: var(--muted); max-width: 50ch; }
+.first-run { margin-top: var(--s2); font-weight: 700; }
+
+.desk { color: var(--muted); font-size: var(--t-sm); max-width: 54ch; }
+.desk b { color: var(--ink); }
+
+footer.close { margin-top: var(--s5); border-top: 1px solid var(--rule); padding-top: var(--s3); color: var(--muted); font-size: var(--t-sm); }
+
+@media (max-width: 560px) {
+  .carbon { grid-template-columns: 1fr; gap: var(--s3); }
+  .opening h1 { max-width: none; }
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header class="docket">
+  <span class="mark">Ledgerline</span>
+  <span class="ref">Manchester, UK. Human support 8am&ndash;6pm weekdays.</span>
+</header>
+
+<div class="opening">
+  <h1>The job sheet becomes the invoice.</h1>
+  <p class="sub">Photograph what you wrote down. Ledgerline sets it out as a line-itemed invoice and sends it by text or email before you pull off the drive.</p>
+  <p class="who">For sole traders: plumbers, electricians, carpenters. No accounting degree needed, and the whole price list is on this page.</p>
+  <a class="act" href="#rate-lines">See the rate lines<small>30 days free first, no card required</small></a>
+</div>
+
+<div class="band" aria-labelledby="does-h">
+  <div class="section-title" id="does-h">What it does</div>
+  <div class="carbon">
+    <div class="line" data-model="feat-invoice">
+      <h3>60-second invoice</h3>
+      <p>A photo of the job sheet becomes a line-itemed invoice. Send it by text or email.</p>
+    </div>
+    <div class="line" data-model="feat-reminders">
+      <h3>Chase-for-you reminders</h3>
+      <p>Polite reminders go out at 7, 14, and 30 days overdue. The wording is yours to edit.</p>
+    </div>
+    <div class="line" data-model="feat-markup">
+      <h3>Materials markup</h3>
+      <p>Snap the supplier receipt. Your default markup rate is applied to it.</p>
+    </div>
+    <div class="line" data-model="feat-taxpot">
+      <h3>Tax pot</h3>
+      <p>Every paid invoice puts your tax share aside in a running total you can see.</p>
+    </div>
+  </div>
+</div>
+
+<div class="band" aria-labelledby="evidence-h">
+  <div class="section-title" id="evidence-h">What we can show you</div>
+  <div class="evidence">
+    <div data-model="claim-pilot">
+      <h3 class="figure">4 hours per week</h3>
+      <p class="basis">invoiced faster by pilot users. That figure is an internal estimate from n=11 pilot users, so read it as early signal and not as a promise.</p>
+    </div>
+    <p class="basis" data-model="claim-textlink">Customers pay straight from the text message link. No portal, no login, no cheque in the post.</p>
+    <blockquote data-model="quote-okafor">
+      <p>&ldquo;I invoice from the van now. Money in before I&rsquo;m home.&rdquo;</p>
+      <footer>D. Okafor, electrician, Leeds (fictional persona)</footer>
+    </blockquote>
+  </div>
+</div>
+
+<div class="band" aria-labelledby="wires-h">
+  <div class="section-title" id="wires-h">What it connects to</div>
+  <ul class="wires">
+    <li data-model="int-stripe"><span>Stripe payouts</span> <span class="state on">LIVE</span></li>
+    <li data-model="int-openbanking"><span>Open Banking feed</span> <span class="state on">LIVE</span></li>
+    <li data-model="int-quickbooks"><span>QuickBooks export</span> <span class="state trial">BETA <span class="note">still in testing</span></span></li>
+  </ul>
+</div>
+
+<div class="band" id="rate-lines" aria-labelledby="rates-h" data-model="pricing">
+  <div class="section-title" id="rates-h">The rate lines</div>
+  <div class="rate-lines">
+    <div class="rate" data-model="tier-solo">
+      <h3>Solo</h3>
+      <p class="money">&pound;9 <span class="per">a month</span></p>
+      <p class="allow">40 invoices a month, 1 user.</p>
+    </div>
+    <div class="rate" data-model="tier-crew">
+      <h3>Crew</h3>
+      <p class="money">&pound;19 <span class="per">a month</span></p>
+      <p class="allow">Unlimited invoices, 3 users.</p>
+    </div>
+  </div>
+  <p class="vat">All prices exclude VAT. That is the whole price list, and there is no enterprise tier waiting behind a sales call.</p>
+  <p class="first-run" data-model="trial">Start with 30 days free, no card required.</p>
+</div>
+
+<div class="band" aria-labelledby="desk-h">
+  <div class="section-title" id="desk-h">When it goes wrong</div>
+  <p class="desk"><b>Human support, 8am&ndash;6pm weekdays.</b> Someone who knows the product answers, so an evening quote is not left waiting on a chatbot.</p>
+</div>
+
+<footer class="close">
+  <p>Ledgerline is a fictional product and this page is a design study. Founded 2024, Manchester, UK.</p>
+</footer>
+
+</div>
+</body>
+</html>

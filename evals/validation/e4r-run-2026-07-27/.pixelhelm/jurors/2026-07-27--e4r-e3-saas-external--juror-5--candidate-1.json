@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 7,
+    "4": 7,
+    "5": 7,
+    "6": 7,
+    "7": 7,
+    "8": 6,
+    "9": 9,
+    "10": 6
+  },
+  "rationales": {
+    "1": "There is no hero statement; the page opens on step one, so what the product is must be inferred from a small eyebrow line and the first step's body copy.",
+    "2": "Claims are split into estimate and product behavior, the pilot figure carries its n=11 basis and a plain signal-not-a-certified-fact caveat, and there is no marketese.",
+    "3": "The trial CTA is unmistakable in the header and repeated at the close with an honest no-card line, but pricing sits at the very bottom, so a skeptical reader must scroll the whole page to find it.",
+    "4": "The six-step afternoon narrative maps well onto a tradesperson's day and the language is trade-plain, but burying price last works against a subscription-skeptic's first question.",
+    "5": "Rhythm and dividers are consistent and the type hierarchy is restrained, though the desktop column leaves very wide empty margins and the step numerals switch between gold and green without a stated meaning.",
+    "6": "Beta is labeled and the estimate is never rounded into a fact, but the testimonial sits directly under the honesty heading with nothing marking it as unverified.",
+    "7": "The signature is one afternoon told in six steps ending in job done, money in, tax sorted, which is coherent but asserted in prose rather than demonstrated by the page.",
+    "8": "Mechanics stay conventional, but dropping the value-proposition hero reads as a fundamentals omission rather than a deliberate brand-layer break.",
+    "9": "Lines such as the ladder's still warm and no arithmetic in the merchant's car park could not be lifted unchanged by a competitor.",
+    "10": "The steps scan cleanly, yet the page is slow to decide on because price and terms arrive only after six full sections."
+  },
+  "inputTranscriptSha256": "be752ca3249fe75565ca7042f1e315115b5c0cb8be15a04fe3153c18f3e2b825",
+  "shuffleSeed": 202607720
+}

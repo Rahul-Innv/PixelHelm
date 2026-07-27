@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 commerce external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "Price, stock state and sowing window sit on a fixed line per entry so scanning is predictable, but the flat ungrouped list of eight makes season-first browsing depend entirely on the month select.",
+    "2": "Price sits directly under the description, stock uses plain in-stock and out-of-stock language, and the product page puts quantity and Add to basket immediately under the price with nothing clever anywhere.",
+    "3": "Out of stock is set apart in red, the unpriced packet reads Price pending — ask us with no invented figure, the germination estimate is labelled, and UK-only shipping is stated in the header of both surfaces.",
+    "4": "The largest and airiest type of the set, single column at both widths, with no information carried by hover.",
+    "5": "The most disciplined of the three: one rule language, one type scale and one palette carried identically across catalog and product page.",
+    "6": "The year table, difficulty and germination line, potting-shed notes and companion packets are all present and ordered so a first-timer can decide without leaving the page.",
+    "7": "A hand-kept numbered list you are asked to read slowly is a believable two-person conceit, though it stays closer to restraint than to a signature the whole page argues.",
+    "8": "Novelty is limited to the numbered-list conceit and the letterpress voice; the money path is untouched.",
+    "9": "Two of us keep this list and From our potting shed read as the shop rather than as a brand, warm and specific without hurry.",
+    "10": "A returning shopper gets stock flags and a month select but no in-season or newly-stocked grouping, so re-orientation means a full scan of the list."
+  },
+  "inputTranscriptSha256": "b222a990cf28937ce6f16e18f982894a74e3c24773a6926d40ea653da5dd2712",
+  "shuffleSeed": 202607722
+}

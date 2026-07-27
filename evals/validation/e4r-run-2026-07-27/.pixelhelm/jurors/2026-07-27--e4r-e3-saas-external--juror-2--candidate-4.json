@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e3 saas external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 8,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The first screenful delivers price, plan limits, trial terms and a call to action immediately, which answers the commercial question fast. What the product actually does is carried only by the eyebrow line at this point and arrives properly one section later.",
+    "2": "Leading with the caps, the exclusions and the unfinished integration before any benefit is the strongest possible restraint signal, and every claim traces to a stated basis. No promotional language survives anywhere on the page.",
+    "3": "Pricing is the first thing offered, the VAT note appears both beside the prices and again in the small print, and the trial terms are stated without an asterisk. Only one call to action exists on a fairly long page.",
+    "4": "Framing the page as a quote the reader must judge speaks directly to a subscription-skeptic who writes quotes for a living. Language is trade-native throughout with no startup idiom.",
+    "5": "The two-column hero uses the desktop width well, the serif display against sans body gives a clear three-size hierarchy, and the accent is used sparingly. The small-print grid leaves an uneven gap in its second row.",
+    "6": "The beta is named in the terms, badged in the integration list, cross-referenced between the two, and paired with advice not to sign up for it. The pilot figure is labeled an internal estimate and not independently verified, though the customer quote is not flagged as unverified.",
+    "7": "The signature is that the page gives you a quote the way you would give one, and price-first structure, small print and closing case all reinforce it. The conceit is slightly less complete than the strongest one here because the case section reverts to a conventional feature grid.",
+    "8": "Mechanics are conventional and the deliberate breaks are the price-first inversion and the enlarged small print, both confined to the brand layer. Two breaks is at the stated limit but each is purposeful.",
+    "9": "Never taking a job without giving one, no asterisk because there is not one to hide, and not a chat widget pretending to be human are unmistakably this writer. Specific, unhyped and respectful of the reader.",
+    "10": "The page respects the reader's time by putting the decision in the first screenful and the caveats immediately after, with nothing performative anywhere. Form enacts the pitch more directly than any other candidate here."
+  },
+  "inputTranscriptSha256": "73adab87c923256b66bbeadbcb2e8599362e89fa908100d31a10be3642fa8a17",
+  "shuffleSeed": 202607717
+}

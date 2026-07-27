@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The mobile first screen carries the headline count of open trails and the full closure alert without interaction, so the two decisive facts land immediately. The desktop layout leaves a large void between the headline and the trail list, which slows the second question of where.",
+    "2": "Every status carries a word, so open, caution, closed and unreported are separable without color, and each keeps one rendering across the page. Caution and closed share the same rust hue and differ only by outline versus fill, which is the weakest separation among the scored designs.",
+    "3": "Unreported trails are labelled and the footer states they are never assumed open or closed, the null history day reads as no data, and every row carries a last-report time. The estimated snowpack is flagged only by a faint dotted underline on one word, which is easier to miss than the explicit chips used elsewhere.",
+    "4": "Order runs from the day's state to the active closure to the full list to the week's weather, which matches how a hiker decides. Language is plain and objective throughout with no promotional tone.",
+    "5": "Type hierarchy, spacing rhythm and a tight ink and rust palette are disciplined. A large unexplained gap between the hero and the trail list, and a ragged mobile weather grid where the missing day knocks the following cell out of alignment, read as arbitrary.",
+    "6": "Long names, the burn cluster and both unreported rows sit cleanly with no awkward emphasis, and both modes are fully resolved. The mobile seven-day grid loses row alignment around the missing day, and the closed marker shifts hue family between modes.",
+    "7": "The signature is a spoken morning sentence that states the day and lets a quiet ledger follow, reinforced by the display serif, the sentence summary and the calm palette. It is true of a conditions service but sits close to generic editorial minimalism.",
+    "8": "Mechanics are entirely conventional, a plain scrolling document with no interaction tricks. The deliberate breaks stay in the brand layer, being the oversized sentence headline and leaving open unmarked while other statuses take chips.",
+    "9": "Lines such as the one stating that trails without a report are shown as unknown and never assumed open or closed are specific to this service and stay calm and factual. The framing of what is worth knowing is writing a competitor could not lift unchanged.",
+    "10": "A dated headline sentence and per-row report times make the daily delta readable at a glance, with nothing playful or mandatory. The desktop void means a returning user scrolls past dead space to reach the list."
+  },
+  "inputTranscriptSha256": "f9b883d8ad2670e6bdd35bdfa19b991e8c68a8ff8b78f1c8a84988f7fd93769f",
+  "shuffleSeed": 202607714
+}

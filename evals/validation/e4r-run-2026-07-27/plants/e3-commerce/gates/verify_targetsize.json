@@ -1,0 +1,30 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-27T15:58:35.283Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/index.html",
+      "measured": 23,
+      "violations": [],
+      "excepted": [
+        {
+          "selector": "ul.cards > li.card > p.blurb > a",
+          "size": "155.06x17px",
+          "exception": "inline (in a sentence)"
+        }
+      ]
+    },
+    {
+      "target": "evals/validation/e4r-run-2026-07-27/plants/e3-commerce/arms/glass-house/product.html",
+      "measured": 6,
+      "violations": [],
+      "excepted": []
+    }
+  ],
+  "pass": true
+}

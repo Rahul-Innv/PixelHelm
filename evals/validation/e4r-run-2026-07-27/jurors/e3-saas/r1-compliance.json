@@ -1,0 +1,94 @@
+{
+  "set": "e3-saas",
+  "_note": "Whether each juror independently honored the R1 precondition when handed the floor outputs (R2). Recorded evidence about the SEAT; it changes no number, because the exclusion above is mechanical.",
+  "floorUnscored": [
+    "job-sheet"
+  ],
+  "perJuror": [
+    {
+      "juror": "juror-1",
+      "declaredUnscored": [
+        {
+          "label": "candidate-2",
+          "candidate": "job-sheet",
+          "failingGate": "output-floor-gate"
+        }
+      ],
+      "scoredFloorFailing": [],
+      "unscoredCleanCandidate": [],
+      "ranking": [
+        "candidate-1",
+        "candidate-4",
+        "candidate-3"
+      ]
+    },
+    {
+      "juror": "juror-2",
+      "declaredUnscored": [
+        {
+          "label": "candidate-3",
+          "candidate": "job-sheet",
+          "failingGate": "output-floor-gate"
+        }
+      ],
+      "scoredFloorFailing": [],
+      "unscoredCleanCandidate": [],
+      "ranking": [
+        "candidate-4",
+        "candidate-2",
+        "candidate-1"
+      ]
+    },
+    {
+      "juror": "juror-3",
+      "declaredUnscored": [
+        {
+          "label": "candidate-4",
+          "candidate": "job-sheet",
+          "failingGate": "output-floor-gate"
+        }
+      ],
+      "scoredFloorFailing": [],
+      "unscoredCleanCandidate": [],
+      "ranking": [
+        "candidate-1",
+        "candidate-2",
+        "candidate-3"
+      ]
+    },
+    {
+      "juror": "juror-4",
+      "declaredUnscored": [
+        {
+          "label": "candidate-2",
+          "candidate": "job-sheet",
+          "failingGate": "output-floor-gate"
+        }
+      ],
+      "scoredFloorFailing": [],
+      "unscoredCleanCandidate": [],
+      "ranking": [
+        "candidate-3",
+        "candidate-1",
+        "candidate-4"
+      ]
+    },
+    {
+      "juror": "juror-5",
+      "declaredUnscored": [
+        {
+          "label": "candidate-2",
+          "candidate": "job-sheet",
+          "failingGate": "output-floor-gate"
+        }
+      ],
+      "scoredFloorFailing": [],
+      "unscoredCleanCandidate": [],
+      "ranking": [
+        "candidate-3",
+        "candidate-4",
+        "candidate-1"
+      ]
+    }
+  ]
+}

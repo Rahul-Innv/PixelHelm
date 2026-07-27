@@ -74,6 +74,25 @@ the evaluator's output and deciding the next gate:
   dimension <=4 is a [High] finding ("describe the problem, not the px").
 
 **Seam rules the router MUST obey:**
+- **Floor-clean is a HARD PRECONDITION for Layer-2 scoring (R1).** Layer-2 may score
+  a candidate ONLY if every SHIPPED HARD Layer-1 gate for that surface exited 0 AND
+  those gate outputs exist as artifacts. A candidate that fails a hard gate, or whose
+  gate outputs do not exist, is **UNSCORED**: it gets no rubric score, no lens score,
+  no rank, and no place in the winner tally — and it is recorded with that word and
+  the failing (or missing) gate named. UNSCORED is **never** "scored low": a low score
+  is an opinion, and the seat has no standing to hold one about a surface the floor
+  already ruled on or never measured. A prose claim that "Layer-1 passed" with no
+  artifact to point at is a MISSING bundle, hence UNSCORED, not a pass. *(Why: E4
+  falsified the render-only judging seat — a candidate with a real 3.12:1 AA contrast
+  failure won its external set and no juror surfaced it. Decision:
+  `evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md` R1; evidence:
+  `evals/validation/e4-run-2026-07-26/REPORT.md`.)*
+- **Layer-2's inputs carry Layer-1's outputs (R2).** Wherever a candidate IS scored,
+  its gate outputs travel with its renders in every juror/lens input set, and the
+  juror record's `inputTranscriptSha256` covers them. Gates that did not run are named
+  as not-run in that same input set — never omitted, since silence would read as a
+  pass. R1 removes defective candidates; R2 removes the seat's ignorance of what was
+  measured, so esteem cannot be spent on properties the machine already ruled on.
 - **Layer-2 NEVER overrides a Layer-1 FAIL.** If Layer-1 fails, the surface is not
   shippable regardless of any lens praise — route to `design-fix`.
 - **A Layer-1 PASS is NEVER "design approved."** A clean machine pass proves
@@ -147,6 +166,28 @@ candidate that fails contrast / token-drift / a11y is eliminated before taste ju
 (a model cannot argue past a machine FAIL). Only Layer-1-passing candidates advance to
 `design-council` for the taste verdict; the winner enters the iterate loop. Note the
 losing candidates' best ideas in the Decision Audit Trail.
+
+**Elimination is UNSCORED, not a low score (R1).** An eliminated candidate is recorded
+as `UNSCORED` with the failing gate named, and it is excluded from every ranking, every
+median, and the winner tally. Two eliminating conditions, not one:
+
+```
+A candidate is UNSCORED when EITHER holds:
+  1. any SHIPPED HARD Layer-1 gate for its surface exited non-zero;  or
+  2. its gate outputs do not exist as artifacts (nothing to point at,
+     or only a prose claim that they passed).
+An UNSCORED candidate:
+  - receives NO rubric score, NO lens score, NO rank, NO juror record;
+  - may NOT be restored by any lens, chair, or owner-facing argument short
+    of re-running the floor clean on a repaired candidate;
+  - is NOT "the worst candidate" — the panel is silent on its taste, and
+    the report says UNSCORED plus the gate, never a comparative adjective.
+```
+
+The elimination is what makes the panel's silence honest: E4 showed that a
+render-judged panel cannot see a measured defect, so the only safe seam is to keep the
+defective candidate out of the panel entirely rather than trust the panel to mark it
+down. The surviving candidates advance carrying their gate outputs (R2, §2).
 
 ---
 

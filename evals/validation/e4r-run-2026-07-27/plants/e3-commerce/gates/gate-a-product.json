@@ -1,0 +1,8 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\eloquent-elion-536998\\evals\\validation\\e4r-run-2026-07-27\\plants\\e3-commerce\\arms\\glass-house\\product.html",
+  "pass": true,
+  "allowedNumbers": 53,
+  "blocks": 8,
+  "findings": []
+}

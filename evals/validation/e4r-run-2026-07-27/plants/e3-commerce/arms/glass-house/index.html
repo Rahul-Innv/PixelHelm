@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="en" data-arm="glass-house">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxglove &amp; Fern seed catalog. The glass house.</title>
+<meta name="description" content="Heirloom seed from Foxglove &amp; Fern, a two-person shop. Eight lines with tested germination rates, honest stock, and a sowing month against each packet. Ships to UK addresses only.">
+<script type="application/json" id="token-contract">
+{"light":{"ground":"#e9dcc3","packet":"#faf5e9","ink":"#33261a","muted":"#6b5b45","leaf":"#38622f","terra":"#9c4520","rule":"#7f7255","btnbg":"#9c4520","btntext":"#faf5e9"},"dark":{"ground":"#191209","packet":"#241c11","ink":"#f0e6d2","muted":"#baa98d","leaf":"#a9c896","terra":"#e59a72","rule":"#7d6e55","btnbg":"#e59a72","btntext":"#191209"},"gatedPairs":[{"fg":"ink","on":["ground","packet"],"kind":"text"},{"fg":"muted","on":["ground","packet"],"kind":"text"},{"fg":"leaf","on":["packet"],"kind":"text"},{"fg":"terra","on":["packet"],"kind":"text"},{"fg":"btntext","on":["btnbg"],"kind":"text"},{"fg":"rule","on":["ground","packet"],"kind":"graphic"}]}
+</script>
+<style>
+/* glass-house: benches under glass. Each packet sits on its own pale card with
+   the sowing month, the tested germination rate, and the stock word all on the
+   face of it, so nothing about a line has to be guessed from the picture. */
+
+:root {
+  color-scheme: light;
+  --ground: #e9dcc3;
+  --packet: #faf5e9;
+  --ink: #33261a;
+  --muted: #6b5b45;
+  --leaf: #38622f;
+  --terra: #9c4520;
+  --rule: #7f7255;
+  --btnbg: #9c4520;
+  --btntext: #faf5e9;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --ground: #191209;
+  --packet: #241c11;
+  --ink: #f0e6d2;
+  --muted: #baa98d;
+  --leaf: #a9c896;
+  --terra: #e59a72;
+  --rule: #7d6e55;
+  --btnbg: #e59a72;
+  --btntext: #191209;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  --sans: "Inter", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --t-xl: clamp(2rem, 1.3rem + 2.8vw, 3rem);
+  --t-lg: 1.3rem;
+  --t-md: 1.0625rem;
+  --t-sm: 0.8125rem;
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 1.75rem;
+  --s5: 3rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+[hidden] { display: none !important; }
+
+body {
+  background: var(--ground);
+  color: var(--ink);
+  font-family: var(--sans);
+  font-size: var(--t-md);
+  line-height: 1.55;
+  padding: var(--s4) var(--s3) var(--s5);
+}
+
+.house { max-width: 60rem; margin: 0 auto; }
+
+a { color: var(--ink); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--terra); outline-offset: 2px; }
+
+/* masthead */
+.eave { border-bottom: 1px solid var(--rule); padding-bottom: var(--s3); }
+.eave .kicker { font-size: var(--t-sm); letter-spacing: 0.18em; text-transform: uppercase; color: var(--muted); }
+.eave h1 { font-family: var(--serif); font-size: var(--t-xl); line-height: 1.05; margin-top: var(--s1); }
+.eave .hello { margin-top: var(--s3); max-width: 54ch; }
+.eave .ship { margin-top: var(--s2); color: var(--muted); font-size: var(--t-sm); }
+
+/* bench index + the guide control */
+.ledge {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s2) var(--s3);
+  margin-top: var(--s3);
+}
+.ledge ul { list-style: none; display: flex; flex-wrap: wrap; gap: var(--s2) var(--s3); }
+.ledge a {
+  display: inline-block;
+  min-height: 2.75rem;
+  padding: 0.7rem 0;
+  font-size: var(--t-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+.guide-open {
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-size: var(--t-sm);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--btntext);
+  background: var(--btnbg);
+  border: 0;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+/* benches */
+.bench { margin-top: var(--s5); }
+.bench > h2 { font-family: var(--serif); font-size: var(--t-lg); border-bottom: 1px solid var(--rule); padding-bottom: var(--s2); }
+.bench > .lead { margin-top: var(--s2); color: var(--muted); font-size: var(--t-sm); max-width: 56ch; }
+.bench ul.cards {
+  list-style: none;
+  margin-top: var(--s3);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  gap: var(--s3);
+}
+
+.card {
+  background: var(--packet);
+  border: 1px solid var(--rule);
+  border-radius: 0.25rem;
+  padding: var(--s3);
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.card h3 { font-family: var(--serif); font-size: var(--t-lg); line-height: 1.2; }
+.card .latin { color: var(--muted); font-size: var(--t-sm); font-style: italic; }
+.card .facts { color: var(--muted); font-size: var(--t-sm); }
+.card .blurb { font-size: var(--t-sm); }
+.card .blurb a { color: var(--terra); }
+.card .cost { font-family: var(--serif); font-size: 1.5rem; }
+.card .stock { font-size: var(--t-sm); font-weight: 700; letter-spacing: 0.06em; }
+.card .stock.in { color: var(--leaf); }
+.card .stock.out { color: var(--terra); }
+.card .pending { color: var(--muted); font-size: var(--t-sm); }
+.card .tail { margin-top: auto; padding-top: var(--s2); border-top: 1px solid var(--rule); }
+
+/* basket controls: generous targets, spaced apart */
+.controls { display: flex; flex-wrap: wrap; align-items: center; gap: var(--s2); margin-top: var(--s2); }
+.controls button {
+  min-width: 2.75rem;
+  min-height: 2.75rem;
+  font: inherit;
+  font-size: var(--t-md);
+  color: var(--ink);
+  background: var(--packet);
+  border: 1px solid var(--rule);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.controls .qty { min-width: 2rem; text-align: center; font-variant-numeric: tabular-nums; }
+.controls .add {
+  color: var(--btntext);
+  background: var(--btnbg);
+  border-color: var(--btnbg);
+  padding: 0 1.1rem;
+  font-weight: 700;
+}
+
+/* the sowing guide panel */
+.veil {
+  position: fixed;
+  inset: 0;
+  background: rgba(25, 18, 9, 0.62);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--s3);
+}
+.panel {
+  background: var(--packet);
+  color: var(--ink);
+  border: 1px solid var(--rule);
+  border-radius: 0.25rem;
+  padding: var(--s4);
+  max-width: 32rem;
+  width: 100%;
+}
+.panel h2 { font-family: var(--serif); font-size: var(--t-lg); }
+.panel p { margin-top: var(--s2); font-size: var(--t-sm); }
+.panel .depths { display: flex; flex-wrap: wrap; gap: var(--s2); margin-top: var(--s3); }
+.panel .depths button {
+  min-height: 2.75rem;
+  padding: 0.6rem 1rem;
+  font: inherit;
+  font-size: var(--t-sm);
+  color: var(--ink);
+  background: var(--packet);
+  border: 1px solid var(--rule);
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+.panel .dismiss { margin-top: var(--s3); color: var(--muted); font-size: var(--t-sm); }
+
+footer.sill { margin-top: var(--s5); border-top: 1px solid var(--rule); padding-top: var(--s3); color: var(--muted); font-size: var(--t-sm); }
+footer.sill p + p { margin-top: var(--s2); }
+footer.sill p { max-width: 62ch; }
+
+@media (max-width: 430px) {
+  body { padding: var(--s3) var(--s3) var(--s4); }
+}
+</style>
+</head>
+<body>
+<div class="house">
+
+<header class="eave">
+  <p class="kicker">Foxglove &amp; Fern &middot; heirloom seed</p>
+  <h1>The glass house</h1>
+  <p class="hello">Two of us run the shop and we grow or know the grower of every line here. The list is short on purpose: if it is on a bench, we can vouch for it.</p>
+  <p class="ship">Ships to UK addresses only. Flat &pound;1.90 postage, free over &pound;15.</p>
+</header>
+
+<nav class="ledge" aria-label="Jump to a bench">
+  <ul>
+    <li><a href="#cold">Cold bench</a></li>
+    <li><a href="#warm">Warm bench</a></li>
+    <li><a href="#outdoor">Outdoor bed</a></li>
+  </ul>
+  <button type="button" class="guide-open" id="guide-open" aria-haspopup="dialog">Sowing guide</button>
+</nav>
+
+<main>
+
+<section id="cold" class="bench" aria-labelledby="cold-h">
+  <h2 id="cold-h">Cold bench, started under glass</h2>
+  <p class="lead">Sown indoors while the frosts still come, planted out when the garden warms.</p>
+  <ul class="cards">
+    <li class="card" data-model="FF-011">
+      <h3>Cathedral Bells</h3>
+      <p class="latin">Cobaea scandens</p>
+      <p class="facts">Climbing vine &middot; sow Feb&ndash;Apr &middot; moderate &middot; 12 seeds &middot; 72% germination</p>
+      <p class="blurb">Violet bell flowers to 6m by late summer, and it needs a warm start indoors. <a href="product.html">Read the full growing page</a>.</p>
+      <div class="tail">
+        <p class="cost">&pound;3.50</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Cathedral Bells">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Cathedral Bells">+</button>
+          <button type="button" class="add" aria-label="Add Cathedral Bells to basket">Add</button>
+        </div>
+      </div>
+    </li>
+    <li class="card" data-model="FF-008">
+      <h3>Winter Windowsill Chili</h3>
+      <p class="facts">Compact perennial &middot; sow Jan&ndash;Mar &middot; moderate &middot; 10 seeds &middot; 65% germination (estimated from last season's line)</p>
+      <p class="blurb">Fruits indoors through winter on a bright sill.</p>
+      <div class="tail">
+        <p class="cost">&pound;4.10</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Winter Windowsill Chili">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Winter Windowsill Chili">+</button>
+          <button type="button" class="add" aria-label="Add Winter Windowsill Chili to basket">Add</button>
+        </div>
+      </div>
+    </li>
+    <li class="card" data-model="FF-023">
+      <h3>Dragon's Breath Celosia</h3>
+      <p class="facts">Half-hardy annual &middot; sow Feb&ndash;Apr &middot; hard &middot; 30 seeds &middot; 60% germination</p>
+      <p class="blurb">Flame-red plumes, fussy about damp. One for the patient gardener.</p>
+      <div class="tail">
+        <p class="cost">&pound;3.90</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Dragon's Breath Celosia">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Dragon's Breath Celosia">+</button>
+          <button type="button" class="add" aria-label="Add Dragon's Breath Celosia to basket">Add</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="warm" class="bench" aria-labelledby="warm-h">
+  <h2 id="warm-h">Warm bench, straight into spring</h2>
+  <p class="lead">Sown as the soil wakes up. The easiest bench in the house.</p>
+  <ul class="cards">
+    <li class="card" data-model="FF-017">
+      <h3>Black Nebula Carrot</h3>
+      <p class="facts">Root vegetable &middot; sow Mar&ndash;Jul &middot; easy &middot; 300 seeds &middot; 78% germination</p>
+      <p class="blurb">Deep purple heirloom carrot that holds its colour when roasted.</p>
+      <div class="tail">
+        <p class="cost">&pound;3.20</p>
+        <p class="stock out">Out of stock</p>
+        <p class="pending">We will list it again when the new harvest is cleaned and tested.</p>
+      </div>
+    </li>
+    <li class="card" data-model="FF-002">
+      <h3>Moonlight Nasturtium</h3>
+      <p class="facts">Trailing annual &middot; sow Apr&ndash;Jun &middot; easy &middot; 20 seeds &middot; 90% germination</p>
+      <p class="blurb">Pale cream flowers. Leaves and flowers both edible.</p>
+      <div class="tail">
+        <p class="cost">&pound;2.80</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Moonlight Nasturtium">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Moonlight Nasturtium">+</button>
+          <button type="button" class="add" aria-label="Add Moonlight Nasturtium to basket">Add</button>
+        </div>
+      </div>
+    </li>
+    <li class="card" data-model="FF-014">
+      <h3>Tithonia Torch Sunflower</h3>
+      <p class="facts">Tall annual &middot; sow Apr&ndash;May &middot; easy &middot; 25 seeds &middot; 88% germination</p>
+      <p class="blurb">Blazing orange, beloved by butterflies, 1.8m tall.</p>
+      <div class="tail">
+        <p class="cost">&pound;2.60</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Tithonia Torch Sunflower">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Tithonia Torch Sunflower">+</button>
+          <button type="button" class="add" aria-label="Add Tithonia Torch Sunflower to basket">Add</button>
+        </div>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="outdoor" class="bench" aria-labelledby="outdoor-h">
+  <h2 id="outdoor-h">Outdoor bed, autumn or spring</h2>
+  <p class="lead">Hardy lines that take an autumn sowing for earlier flowers, or wait for March.</p>
+  <ul class="cards">
+    <li class="card" data-model="FF-019">
+      <h3>Blue Boy Cornflower</h3>
+      <p class="facts">Hardy annual &middot; sow Mar&ndash;May or Sep &middot; easy &middot; 50 seeds &middot; 92% germination</p>
+      <p class="blurb">True cornflower blue. An autumn sowing gives earlier flowers.</p>
+      <div class="tail">
+        <p class="cost">&pound;2.40</p>
+        <p class="stock in">In stock</p>
+        <div class="controls">
+          <button type="button" aria-label="One fewer packet of Blue Boy Cornflower">&minus;</button>
+          <span class="qty" aria-hidden="true">1</span>
+          <button type="button" aria-label="One more packet of Blue Boy Cornflower">+</button>
+          <button type="button" class="add" aria-label="Add Blue Boy Cornflower to basket">Add</button>
+        </div>
+      </div>
+    </li>
+    <li class="card" data-model="FF-021">
+      <h3>Grandmother's Sweet Pea</h3>
+      <p class="latin">1928 line</p>
+      <p class="facts">Climbing annual &middot; sow Oct&ndash;Nov or Feb&ndash;Mar &middot; easy &middot; 15 seeds &middot; 85% germination</p>
+      <p class="blurb">Kept in one family since 1928, and intensely scented.</p>
+      <div class="tail">
+        <p class="pending">Price pending supplier confirmation. Ask us and we will write when it is set.</p>
+        <p class="stock in">In stock</p>
+      </div>
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="sill">
+  <p>Germination rates come from our own test trays. Where a rate is estimated rather than tested this season, the listing says so. Out-of-stock lines stay visible so you know they exist and can come back for them.</p>
+  <p>Foxglove &amp; Fern is a fictional shop and this page is a design study. Ships to UK addresses only.</p>
+</footer>
+
+</div>
+
+<div class="veil" id="guide-veil" hidden>
+  <div class="panel" role="dialog" aria-modal="true" aria-labelledby="guide-h" id="guide-panel">
+    <h2 id="guide-h">Sowing guide</h2>
+    <p>A rough rule for the benches in this house: cover a seed to about its own depth, and leave the fine ones on the surface where the light can reach them.</p>
+    <div class="depths">
+      <button type="button" id="depth-fine">Fine seed</button>
+      <button type="button" id="depth-large">Large seed</button>
+    </div>
+    <p id="depth-note">Fine seed: press onto damp compost and do not cover.</p>
+    <p class="dismiss">Click anywhere outside this panel to put the guide away.</p>
+  </div>
+</div>
+
+<script>
+(function () {
+  var opener = document.getElementById("guide-open");
+  var veil = document.getElementById("guide-veil");
+  var panel = document.getElementById("guide-panel");
+  var note = document.getElementById("depth-note");
+  var stops = function () { return Array.prototype.slice.call(panel.querySelectorAll("button")); };
+
+  opener.addEventListener("click", function () {
+    veil.hidden = false;
+    stops()[0].focus();
+  });
+
+  document.getElementById("depth-fine").addEventListener("click", function () {
+    note.textContent = "Fine seed: press onto damp compost and do not cover.";
+  });
+  document.getElementById("depth-large").addEventListener("click", function () {
+    note.textContent = "Large seed: sow at about its own depth and firm the compost over it.";
+  });
+
+  document.addEventListener("keydown", function (e) {
+    if (veil.hidden || e.key !== "Tab") return;
+    var f = stops();
+    if (!f.length) return;
+    var i = f.indexOf(document.activeElement);
+    e.preventDefault();
+    var next = e.shiftKey ? (i <= 0 ? f.length - 1 : i - 1) : (i === f.length - 1 ? 0 : i + 1);
+    f[next].focus();
+  });
+
+  veil.addEventListener("click", function (e) {
+    if (e.target === veil) { veil.hidden = true; opener.focus(); }
+  });
+})();
+</script>
+</body>
+</html>

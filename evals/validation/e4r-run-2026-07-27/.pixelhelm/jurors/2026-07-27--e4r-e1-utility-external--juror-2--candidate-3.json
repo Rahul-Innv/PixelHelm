@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e4r",
+  "surface": "E4R e1 utility external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 6,
+    "8": 8,
+    "9": 5,
+    "10": 8
+  },
+  "rationales": {
+    "1": "A counted status summary with icons, the closure notice, and the legend all clear the fold on mobile, making this the fastest read of the network state in the set.",
+    "2": "Each status carries an icon shape, a text label, and a color, and the legend, the group headers, and the card banners render it identically everywhere.",
+    "3": "The null day is drawn as a hollow broken marker labeled no data, the snowpack carries an estimated chip with its offline explanation, and unreported trails say so on their own cards.",
+    "4": "Counted group headers make the open then caution then closed then unknown decision path explicit, though the wording itself is flat and generic.",
+    "5": "The card grid is consistent, but the color banners outweigh the trail names they label, card interiors end raggedly, and three of four groups leave an empty third column.",
+    "6": "Every row fits and both modes resolve with properly lightened banner colors; the mobile summary line orphans its last count onto a second line.",
+    "7": "The trailhead status board is archetype-true for a conditions service, but the card-and-banner execution sits close to a component-library default rather than an earned signature.",
+    "8": "Mechanics are entirely conventional and the oversized status banner is the one deliberate break, kept in the brand layer.",
+    "9": "The microcopy is correct and calm, but every line would transfer unchanged to any status dashboard.",
+    "10": "The counted summary strip is exactly what a daily glance needs, with no playful gate and only the legend as a repeat cost."
+  },
+  "inputTranscriptSha256": "7857e5d970a131d5f2d224f1ae1d58eb3a87f445ecb4eb6bb0443a37c453436e",
+  "shuffleSeed": 202607712
+}

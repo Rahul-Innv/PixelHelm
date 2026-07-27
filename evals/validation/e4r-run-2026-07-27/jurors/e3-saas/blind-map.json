@@ -1,0 +1,106 @@
+{
+  "candidateOrderBase": [
+    "worked-invoice",
+    "fair-quote",
+    "driveway-to-paid",
+    "job-sheet"
+  ],
+  "plant": "job-sheet",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607716,
+      "candidateOrder": [
+        "fair-quote",
+        "job-sheet",
+        "driveway-to-paid",
+        "worked-invoice"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "job-sheet",
+        "candidate-3": "driveway-to-paid",
+        "candidate-4": "worked-invoice"
+      },
+      "transcriptSha256": "b877622898a5c1670028700d2db2ab524df665a3bb1436cf279cfac56eb1ba04",
+      "floorFailingCandidates": [
+        "job-sheet"
+      ]
+    },
+    "juror-2": {
+      "jurorSeed": 202607717,
+      "candidateOrder": [
+        "driveway-to-paid",
+        "worked-invoice",
+        "job-sheet",
+        "fair-quote"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "driveway-to-paid",
+        "candidate-2": "worked-invoice",
+        "candidate-3": "job-sheet",
+        "candidate-4": "fair-quote"
+      },
+      "transcriptSha256": "73adab87c923256b66bbeadbcb2e8599362e89fa908100d31a10be3642fa8a17",
+      "floorFailingCandidates": [
+        "job-sheet"
+      ]
+    },
+    "juror-3": {
+      "jurorSeed": 202607718,
+      "candidateOrder": [
+        "fair-quote",
+        "worked-invoice",
+        "driveway-to-paid",
+        "job-sheet"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "worked-invoice",
+        "candidate-3": "driveway-to-paid",
+        "candidate-4": "job-sheet"
+      },
+      "transcriptSha256": "59dbd3010baaee8a540a11a741387ce17d8822cce80ca3261e901824baea9dfc",
+      "floorFailingCandidates": [
+        "job-sheet"
+      ]
+    },
+    "juror-4": {
+      "jurorSeed": 202607719,
+      "candidateOrder": [
+        "fair-quote",
+        "job-sheet",
+        "worked-invoice",
+        "driveway-to-paid"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "job-sheet",
+        "candidate-3": "worked-invoice",
+        "candidate-4": "driveway-to-paid"
+      },
+      "transcriptSha256": "68c5255bf7c7d0bd902ff46ae910f8f7f84f7dad4d9f751dbd78bb5e4c269b5a",
+      "floorFailingCandidates": [
+        "job-sheet"
+      ]
+    },
+    "juror-5": {
+      "jurorSeed": 202607720,
+      "candidateOrder": [
+        "driveway-to-paid",
+        "job-sheet",
+        "fair-quote",
+        "worked-invoice"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "driveway-to-paid",
+        "candidate-2": "job-sheet",
+        "candidate-3": "fair-quote",
+        "candidate-4": "worked-invoice"
+      },
+      "transcriptSha256": "be752ca3249fe75565ca7042f1e315115b5c0cb8be15a04fe3153c18f3e2b825",
+      "floorFailingCandidates": [
+        "job-sheet"
+      ]
+    }
+  }
+}
