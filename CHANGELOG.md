@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## plugin family 2.1.0 — 2026-07-27
+
+Feature release of the **plugin family** (both editions), cut from the work below.
+The standalone Python distribution is **unchanged and stays at 0.1.2**: nothing in
+`pyproject.toml`, `packaging/`, or the `pixelhelm.storm_engine` package was touched
+in this cycle, so no PyPI release accompanies this one.
+
+Highlights of this release, all detailed in the entries that follow: the four
+browser-arm floor validators and the structural output-floor gate; the
+judge/sign-off/run and per-juror record machinery with its validate-then-write
+contract; the behaviour-level verification tooling (scroll capture, frame time,
+lab CWV, keyboard traversal); the capability ledger and baseline regression
+memory; the intent-elicitation gate; and the validation program's committed
+experiment trail (E0 through E4-R and E6-A) with its adversarial critique.
+
 Capability ledger + baseline regression memory (2026-07-27; backlog P3-1 and P3-2):
 
 - **Capability ledger (P3-1) — `pixelhelm/capability-entry@1` +

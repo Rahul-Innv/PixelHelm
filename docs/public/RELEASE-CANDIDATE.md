@@ -3,11 +3,13 @@
 ## Version decision
 
 The canonical GitLab project is public at
-`https://gitlab.com/krahul02004/PixelHelm`. The plugin family currently declares
-`2.0.0`, while the standalone Python distribution source is prepared at `0.1.2` and
-PyPI still serves `0.1.1`. These are separate version lines. No source tag or GitLab
-Release provenance is claimed for the existing PyPI artifact. A future plugin release
-must choose a version newer than 2.0.0. The reviewed Python 0.1.2 commit must be merged
+`https://gitlab.com/krahul02004/PixelHelm`. The plugin family declares `2.1.0`, cut
+2026-07-27 for the plugin-side feature work of that cycle; the standalone Python
+distribution source is unchanged at `0.1.2` and PyPI still serves `0.1.1`. These are
+separate version lines, and the 2.1.0 cut deliberately carries no Python release
+because no Python-package surface changed. No source tag or GitLab Release provenance
+is claimed for the existing PyPI artifact. A further plugin release must choose a
+version newer than 2.1.0. The reviewed Python 0.1.2 commit must be merged
 and its artifacts independently verified before any tag or publication action.
 
 ## Distribution
