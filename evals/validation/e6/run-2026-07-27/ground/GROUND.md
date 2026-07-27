@@ -1,4 +1,4 @@
-# E6-A GROUND context — Vireo Fold motion-storytelling launch page (2026-07-27)
+# E6-A GROUND context: Vireo Fold motion-storytelling launch page (2026-07-27)
 
 Stage 1 of the admitted pixelhelm-lite loop (admission:
 `../admission/admission.json`, sha256 `b379f85e…6376ef`). Ground resolves the
@@ -7,7 +7,7 @@ contract before any taste or code; it mints no tokens and produces no UI.
 ## Register (literal; the register-fit authority for this task)
 
 From the sealed brief, verbatim: the page is a **marketing launch page** whose
-**"story IS the unfold"** — the motion narrative walks the visitor through
+**"story IS the unfold"**: the motion narrative walks the visitor through
 **bag -> hull -> water in the product's own three steps, so the demonstration
 is the pitch (proof-by-experience, W-02)**. Audience, verbatim from the sealed
 data: **"City commuters and small-flat dwellers who assumed kayaking wasn't
@@ -21,15 +21,15 @@ permitted only where it demonstrates the product, never as decoration.
 source. No fact may appear that is not in it. Honesty traps it carries, which
 the surface must render truthfully:
 
-- `specs.setupTime` — the claim "3 min 40 s median" MUST appear with its basis
+- `specs.setupTime`, the claim "3 min 40 s median" MUST appear with its basis
   visible: **owner-submitted timings, n=14** (`verified: false`). The number
   n=14 must be on the page, not merely implied.
-- `specs.packVolumeL` — `118 L` carries `estimated: true`; must be visibly
+- `specs.packVolumeL`, `118 L` carries `estimated: true`; must be visibly
   flagged as estimated, never printed bare.
-- `specs.loadRatingKg` — `130 kg` carries `certification: "pending"`; may NOT
+- `specs.loadRatingKg`, `130 kg` carries `certification: "pending"`; may NOT
   be presented as certified. The pending state must be visible wherever the
   number is.
-- `pricing` — EUR 1290, what it includes, and the 30-day
+- `pricing`, EUR 1290, what it includes, and the 30-day
   water-it-and-return trial stated plainly, not buried.
 - `company.name` is literally "Vireo Boats (fictional)"; the fictional marker
   is part of the sealed string and is not to be dropped.
@@ -48,7 +48,7 @@ profile records the register and gate config; the winner's contract becomes
 the project contract at promotion (a separate owner-gated leaf, not part of
 E6-A).
 
-## Machine floor (unbreakable — A1 rules of engagement)
+## Machine floor (unbreakable: A1 rules of engagement)
 
 Contrast AA per gated pairs (text 4.5 / graphic 3.0, light AND dark), honesty
 gates A+B, keyboard access + visible focus, structural output floor (one
@@ -57,10 +57,10 @@ description), no horizontal overflow at 280/320/414, target size >= 24px
 (2.5.8), state-aware contrast in default/hover/focus.
 
 **Plus the E6-A motion floor, which is the experiment itself** (sealed brief
-§"Non-negotiable motion floor" — each item is measured, never asserted):
+§"Non-negotiable motion floor", each item is measured, never asserted):
 
 1. Full no-motion story parity under `prefers-reduced-motion`, with JS
-   disabled, and for a keyboard-only visitor — the COMPLETE story and every
+   disabled, and for a keyboard-only visitor, the COMPLETE story and every
    fact, parity of content, not a stub.
 2. Scroll is never hijacked: native scrolling, no wheel capture, no forced
    pacing.
@@ -80,7 +80,7 @@ that the parity floor is *verifiable* rather than merely claimed:
 - **Static-first, JS-rebuilds** (design KB L-084): the complete story ships as
   static HTML; JS *rebuilds* it into the animated form. Consequence: a
   script-disabled render is a faithful no-JS proof. `<noscript>` fallbacks are
-  forbidden in this run — L-084 records that a script-stripped copy cannot
+  forbidden in this run, L-084 records that a script-stripped copy cannot
   verify them, so they would be unverifiable by construction.
 - **Every hidden-until-animated state gated on BOTH** a root `.js` class AND
   `prefers-reduced-motion` (L-084), so no fact is ever invisible to a
@@ -120,15 +120,15 @@ self-assessment, only by a passing E4-R, which does not exist. Therefore **no
 quality claim in this run may rest on panel scores alone.** The repair
 decision's two rules bind this run's panel:
 
-- **R1** — floor-clean is a hard precondition for esteem scoring. An arm whose
+- **R1**: floor-clean is a hard precondition for esteem scoring. An arm whose
   shipped HARD gates did not all exit 0 is `UNSCORED`, never "scored low".
-- **R2** — panels receive the floor outputs with the renders, and the juror
+- **R2**: panels receive the floor outputs with the renders, and the juror
   record's `inputTranscriptSha256` covers them.
 
 ## Anti-cliche fingerprint registry (state at run time)
 
 - Live durable registry (`~/.claude/pixelhelm/fingerprints.md`): **DOES NOT
-  EXIST on this machine** — the active registry is exactly the shipped seed.
+  EXIST on this machine**: the active registry is exactly the shipped seed.
 - Seed: `plugins/pixelhelm-lite/seeds/fingerprints-seed.md` @ the run's base
   commit; sha256 `bc12f90304df4e4c637d529ddfba4435de2d81c652dd664b8b8a5d148397ab34`
   (same seed hash E1 recorded, re-measured here rather than copied).
@@ -157,14 +157,14 @@ in the report.
 
 ## Render + evaluation matrix (registered)
 
-Desktop 1440x900 + mobile 375x812, light + dark — **and, per the sealed
+Desktop 1440x900 + mobile 375x812, light + dark, **and, per the sealed
 evaluator rule, in BOTH motion modes**: a MOTION render set and a NO-MOTION
 parity render set (`--reduced-motion`, separate out dir) for every arm. That
 is 8 cells per arm, 24 cells total. Mode-fidelity asserted per cell; axe run
 on the rendered cells. No extreme-content substitutions: the sealed data IS
 the content and substitutions would inject non-sealed strings.
 
-Gate outputs are written under `project/gates/` per arm, and — per R2 — travel
+Gate outputs are written under `project/gates/` per arm, and, per R2, travel
 with the renders into the juror input set.
 
 ## Scope honesty (carried verbatim from the sealed brief)

@@ -1,4 +1,4 @@
-# E6-A mutant ritual — non-vacuity of the honesty gates (2026-07-27)
+# E6-A mutant ritual: non-vacuity of the honesty gates (2026-07-27)
 
 A gate that has never been seen to FAIL is not evidence. Before any green
 honesty verdict in this run counts for anything, each gate is shown to fire on

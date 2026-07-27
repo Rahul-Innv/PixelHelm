@@ -1,0 +1,105 @@
+{
+  "schema": "pixelhelm/judge-verdict@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "mode": "new-design",
+  "pass": "deep",
+  "candidates": {
+    "crease-line": {
+      "label": "crease-line",
+      "kind": "challenger",
+      "render": "evals/validation/e6/run-2026-07-27/project/renders/motion/crease-line__desktop__light.png (motion set) + renders/no-motion/crease-line__desktop__light.png (parity set); 8 cells per arm"
+    },
+    "under-the-bed": {
+      "label": "under-the-bed",
+      "kind": "challenger",
+      "render": "evals/validation/e6/run-2026-07-27/project/renders/motion/under-the-bed__desktop__light.png (motion set) + renders/no-motion/under-the-bed__desktop__light.png (parity set); 8 cells per arm"
+    },
+    "three-counts": {
+      "label": "three-counts",
+      "kind": "challenger",
+      "render": "evals/validation/e6/run-2026-07-27/project/renders/motion/three-counts__desktop__light.png (motion set) + renders/no-motion/three-counts__desktop__light.png (parity set); 8 cells per arm"
+    }
+  },
+  "registerFitPanel": {
+    "jurors": 5,
+    "scores": {
+      "crease-line": [
+        8,
+        7.5,
+        7,
+        8.5,
+        9
+      ],
+      "under-the-bed": [
+        9,
+        8,
+        8,
+        8,
+        9
+      ],
+      "three-counts": [
+        9,
+        8,
+        7.5,
+        7,
+        8
+      ]
+    },
+    "medians": {
+      "crease-line": 8,
+      "under-the-bed": 8,
+      "three-counts": 8
+    },
+    "nonOverlapping": true,
+    "modeFairness": "both-modes AND both motion modes: every arm judged on 4 light/dark x desktop/mobile MOTION cells and 4 matching NO-MOTION parity cells; criterion 1 scorable only from the parity cells"
+  },
+  "lensScores": {},
+  "constraints": [
+    {
+      "seat": "panel (advisory-only)",
+      "severity": "minor",
+      "finding": "three-counts scores lowest on criterion 7 (the motion IS the argument), median 6, the panel's floor value: four of five jurors read the clock/dial ornament as visualising a time metric rather than the bag-to-hull-to-water transformation the anti-spectacle test asks for."
+    },
+    {
+      "seat": "panel (advisory-only)",
+      "severity": "minor",
+      "finding": "crease-line and three-counts both draw the observation that a conventional spec table coexists with a declared break that said dimensions would run as drawing callouts and not as a spec table; the panel reads this as softening the declared break rather than contradicting it."
+    },
+    {
+      "seat": "run verification (machine)",
+      "severity": "minor",
+      "finding": "FALSE JUROR OBSERVATION, verified against the artifacts: jurors 1 and 5 independently reported a stray strip of nav-sized text near crease-line's footer and both spent it as a criterion-5 penalty. The DOM carries exactly one nav element (pageY 12) and direct crops of all four crease-line desktop captures show no such strip. The defect is not in the artifact."
+    },
+    {
+      "seat": "run verification (machine)",
+      "severity": "minor",
+      "finding": "FALSE JUROR OBSERVATION, verified against the artifacts: jurors 2 and 3 penalised crease-line for empty space beside steps 2 and 3. The drawing stage is position:sticky and was measured in a real viewport as visible beside BOTH steps; the emptiness is an artifact of the full-page screenshot the panel judges, not of the page."
+    },
+    {
+      "seat": "seat scope (standing)",
+      "severity": "major",
+      "finding": "A static capture cannot show choreography (design KB L-085). Criterion 7 turns on motion, and no juror could observe it; every criterion-7 score rests on the declared intent plus the runtime motion measurements supplied in the transcript, never on seen motion. Recorded before the panel ran, in GROUND.md."
+    }
+  ],
+  "aggregation": {
+    "contract": "PREREG-RUBRIC-motion-launch.md (sealed 2026-07-26) + PREREG-BRIEF-motion-launch.md Amendment A2; registered rule: per-criterion median of the 5 jurors, overall = median of the 10 criterion medians, no means and no weights. Applied by jurors/aggregate.mjs.",
+    "weightedScores": {
+      "crease-line": 8,
+      "under-the-bed": 8.5,
+      "three-counts": 8
+    },
+    "guardOutcome": "R1 (E4 repair decision) enforced as a precondition: all three arms are floor-clean, so all three are scorable and none is UNSCORED. R2 enforced: gate outputs travelled with the renders and are covered by each juror record's inputTranscriptSha256. The standing advisory-only demotion is NOT lifted by this run."
+  },
+  "winner": "under-the-bed",
+  "registerSafeGrafts": [
+    "under-the-bed's per-act diagram (a fresh drawing for each of the three steps) into crease-line, whose single sticky drawing leaves the other two steps without their own visual answer in a static reading.",
+    "three-counts' explicit ornament disclaimer (the dial is an ornament and is not timing your visit) as a general pattern wherever an ornament could be mistaken for a live measurement."
+  ],
+  "rejectedGrafts": [
+    "three-counts' jump-bar split into separate Specs and Price links into the other arms: it scored well on criterion 10 but the panel also read the same page as weakest on criterion 7, so the graft would import a navigation habit without the narrative that justified it."
+  ],
+  "rejectedDirections": [],
+  "ownerVerdict": null
+}

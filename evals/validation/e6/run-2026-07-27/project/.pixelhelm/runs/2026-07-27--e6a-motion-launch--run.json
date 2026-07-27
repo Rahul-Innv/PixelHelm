@@ -1,0 +1,41 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-27",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "intent": "E6-A: build the Vireo Fold motion-storytelling launch prototype under the full gate discipline and test whether it clears the sealed motion floor in BOTH motion and no-motion modes within the pre-registered performance budgets.",
+  "edition": "lite",
+  "workerModel": "claude-opus-5 (executing loop); the five blind jurors ran as separate fresh-context subagents on claude-sonnet-5",
+  "skillsFired": [
+    "pixelhelm-choicegate",
+    "pixelhelm-ground",
+    "pixelhelm-generate",
+    "pixelhelm-render",
+    "pixelhelm-evaluate",
+    "pixelhelm-judge"
+  ],
+  "engines": [
+    "node",
+    "python",
+    "playwright (msedge channel; bundled chromium absent by design under PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD=1)",
+    "axe-core"
+  ],
+  "council": {
+    "pass": "deep",
+    "seats": 0,
+    "registerJurors": 5
+  },
+  "iterations": 1,
+  "renders": {
+    "items": 3,
+    "cells": 24
+  },
+  "tokens": {
+    "subagentsMeasured": 651398,
+    "workflowsMeasured": 0,
+    "note": "measured-only: the sum of the five juror subagents' reported token usage; main-context usage is not observable in-session and is NOT estimated here"
+  },
+  "wallClockMinutes": 63,
+  "outcome": "needs-human-review",
+  "notes": "Every shipped HARD gate exited 0 on all three arms; 12 of 12 planted lies fired in the mutant ritual; every pre-registered budget measured and met. signoff@1 deliberately NOT written: the owner has not spoken on this artifact. Panel scores are ADVISORY-ONLY under the standing E4 judging-seat demotion and no claim in this run rests on them. Two juror observations were verified FALSE against the artifacts and are recorded in the verdict constraints rather than repaired."
+}
