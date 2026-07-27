@@ -1,0 +1,141 @@
+{
+  "tied": [
+    "weir-plates",
+    "almanac-rail",
+    "two-inks"
+  ],
+  "hierarchy": "E1 TIEBREAK.md stages (a)-(e), applied to the remaining tied set until one arm stands",
+  "stages": {
+    "a_minCriterionMedian": {
+      "weir-plates": 8,
+      "almanac-rail": 7,
+      "two-inks": 8
+    },
+    "b_criteriaAt9plus": {
+      "weir-plates": 7,
+      "almanac-rail": 6,
+      "two-inks": 6
+    },
+    "c_pairwiseCriterionMedianWins": {
+      "weir-plates": 4,
+      "almanac-rail": 3,
+      "two-inks": 5
+    },
+    "d_sumOfCriterionMedians": {
+      "weir-plates": 87,
+      "almanac-rail": 84,
+      "two-inks": 87
+    },
+    "e_perJurorPreference": {
+      "weir-plates": 4,
+      "almanac-rail": 0,
+      "two-inks": 1
+    },
+    "e_detail": {
+      "juror-1": {
+        "perArm": {
+          "weir-plates": {
+            "median": 9.0,
+            "sum": 91
+          },
+          "almanac-rail": {
+            "median": 9.0,
+            "sum": 90
+          },
+          "two-inks": {
+            "median": 9.0,
+            "sum": 89
+          }
+        },
+        "preference": "weir-plates"
+      },
+      "juror-2": {
+        "perArm": {
+          "almanac-rail": {
+            "median": 9.0,
+            "sum": 84
+          },
+          "weir-plates": {
+            "median": 9.0,
+            "sum": 87
+          },
+          "two-inks": {
+            "median": 8.0,
+            "sum": 85
+          }
+        },
+        "preference": "weir-plates"
+      },
+      "juror-3": {
+        "perArm": {
+          "weir-plates": {
+            "median": 9.0,
+            "sum": 88
+          },
+          "almanac-rail": {
+            "median": 9.0,
+            "sum": 85
+          },
+          "two-inks": {
+            "median": 9.0,
+            "sum": 89
+          }
+        },
+        "preference": "two-inks"
+      },
+      "juror-4": {
+        "perArm": {
+          "almanac-rail": {
+            "median": 9.0,
+            "sum": 84
+          },
+          "weir-plates": {
+            "median": 9.0,
+            "sum": 87
+          },
+          "two-inks": {
+            "median": 8.5,
+            "sum": 85
+          }
+        },
+        "preference": "weir-plates"
+      },
+      "juror-5": {
+        "perArm": {
+          "two-inks": {
+            "median": 9.0,
+            "sum": 87
+          },
+          "weir-plates": {
+            "median": 9.0,
+            "sum": 88
+          },
+          "almanac-rail": {
+            "median": 8.5,
+            "sum": 81
+          }
+        },
+        "preference": "weir-plates"
+      }
+    }
+  },
+  "decisionStage": "b",
+  "winner": "weir-plates",
+  "passBarTieInvariance": {
+    "weir-plates": {
+      "minCriterionMedian": 8,
+      "overallMedian": 9.0,
+      "clears": true
+    },
+    "almanac-rail": {
+      "minCriterionMedian": 7,
+      "overallMedian": 9.0,
+      "clears": true
+    },
+    "two-inks": {
+      "minCriterionMedian": 8,
+      "overallMedian": 9.0,
+      "clears": true
+    }
+  }
+}

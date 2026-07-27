@@ -1,0 +1,137 @@
+{
+  "juror": "juror-3",
+  "candidates": {
+    "candidate-1": {
+      "criteria": {
+        "1": {
+          "score": 9,
+          "rationale": "The standfirst delivers the entire finding in plain figures (day 252 to day 280, 28 days; 606 to 692 mm; 43 to 72 mm) before any chart, and each plate opens with a bold sentence stating its finding in words. A reader who skips every chart still gets the full story from the standfirst, the plate lead-ins, the full-record table, and the About section, with no scroll-driven interaction required."
+        },
+        "2": {
+          "score": 9,
+          "rationale": "All three plates are named and described by their actual findings, gaps are left as open bands no average crosses, and 2019 is drawn hollow and excluded. The one non-zero axis (Plate II starts at 550 mm) is disclosed on the plate itself with the reason, and Plate III is explicitly drawn from zero where amounts demand it."
+        },
+        "3": {
+          "score": 9,
+          "rationale": "The keyed a-d annotations repeat the seam, the three gaps, the era rules, and the 2019 unverified flag on every single plate, and the table carries NO RECORD rows and an UNVERIFIED note. The About section closes with the exact scope discipline ('describes the shift, not its cause') and no attribution claim appears anywhere."
+        },
+        "4": {
+          "score": 9,
+          "rationale": "The prose walks the reader plate to plate in a patient register ('the season that used to open before the autumn fair now waits for the second week of October'), and both human-context fragments sit exactly where they serve: the weir keeper's fair quote after the onset plate, the sandbag quote after the totals plate. Nothing is decorative."
+        },
+        "5": {
+          "score": 9,
+          "rationale": "Broadsheet serif hierarchy, comfortable measure, and consistent rhythm carry the long read in both modes, and the mobile render keeps the Plate I chart and its annotations fully legible at narrow width. The long full-record table stays cleanly set in all four cells."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "The page is a fully readable static base with no scrollytelling, no scrolljack, and no pacing imposed on the reader, so reduced-motion parity is trivially complete. Nothing to fault, though no motion craft is demonstrated beyond compliant absence."
+        },
+        "7": {
+          "score": 8,
+          "rationale": "The signature - the journalism inked directly onto the plates - is coherent and every plate reinforces it, making the caveats part of the graphic itself. The underlying form remains three fairly conventional chart sections, so the shift is clearly shown and explained more than structurally felt."
+        },
+        "8": {
+          "score": 9,
+          "rationale": "Both declared breaks (annotations keyed to the plates; grid suppressed to only story-named reference lines) are visibly executed as declared, and the reading mechanics stay conventional. I found no undeclared convention break in any of the four renders."
+        },
+        "9": {
+          "score": 9,
+          "rationale": "Lines like 'The weir has kept the valley's time for a generation' and the autumn-fair framing are local, specific, and unsensational - prose keyed to this valley's record that another paper could not run unchanged."
+        },
+        "10": {
+          "score": 9,
+          "rationale": "Every device traces to the record: the annotations are the caveats, the only reference lines are the era means and gap markers the reporting names, and no effect exists apart from the data. The suppressed-grid choice is itself justified by the reporting."
+        }
+      }
+    },
+    "candidate-2": {
+      "criteria": {
+        "1": {
+          "score": 9,
+          "rationale": "The standfirst states the whole finding with numbers before the rail, and the 'almanac rail' paragraph is a plain-text description of what the chart shows ('the onset dots drift rightward... 28 days later'), so a chart-averse reader gets the identical story without any scroll interaction. The About section restates every conclusion and caveat in prose."
+        },
+        "2": {
+          "score": 7,
+          "rationale": "The rail is named and described by its finding, gaps are hatched NO RECORD rows in place, and the fixed September-October shelf is an honest calendar encoding; but the season-total bars run on a 550-750 mm scale, and length-encoded bars from a non-zero baseline visually exaggerate the 578-to-715 range even though the reading box discloses the scale. That disclosure keeps it defensible rather than deceptive."
+        },
+        "3": {
+          "score": 9,
+          "rationale": "The seam is a full-width era heading ('THE INSTRUMENT CHANGES HERE'), the three nulls are hatched rows with their reasons at their exact positions, and 2019 gets a hollow dot plus an UNVERIFIED interjection directly beneath its line. The standfirst's read-with-care note and the About section repeat all caveats and hold the no-attribution scope."
+        },
+        "4": {
+          "score": 9,
+          "rationale": "The editorial interjections ('By the end of the 2000s the pattern was already visible to anyone laying the lines side by side') live inside the record at the decade turns exactly as the almanac conceit demands, and both fictional quotes sit at their own years in the rail. The register is patient and place-loving throughout."
+        },
+        "5": {
+          "score": 8,
+          "rationale": "Typography and measure are strong in both modes, and the 34-row rail keeps disciplined rhythm on desktop. On mobile each year splits into a stacked bar row and shelf row, which stays legible but doubles the visual tracks per entry and slightly taxes the small-screen read."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "A static top-to-bottom read with no scrollytelling and no pacing imposed; the base is the whole experience, so reduced-motion parity is complete by construction. Compliant absence rather than demonstrated motion craft."
+        },
+        "7": {
+          "score": 9,
+          "rationale": "The form is the finding: reading down the page is reading forward in time, and the eye literally watches the onset dot walk later along the fixed shelf while the entries grow heavier. Every layer - era subheads, interjections, the shelf, the lengthening bars - reinforces that single sentence."
+        },
+        "8": {
+          "score": 8,
+          "rationale": "Both declared breaks (the year-list as the only chart; interjections interrupting the record) are executed exactly as declared and the mechanics stay conventional. The truncated 550-based bar scale is an undeclared liberty with bar convention - disclosed in the reading box but outside the A1 block, so it counts as a small mistake against the budget."
+        },
+        "9": {
+          "score": 9,
+          "rationale": "'Read line by line, like the almanac the valley used to keep' and the laying-the-lines-side-by-side aside are unsensational, specific, and rooted in this valley's habit of record-keeping - a voice unique to this page."
+        },
+        "10": {
+          "score": 9,
+          "rationale": "Every device traces to the record itself: the interjections mark real features (the seam, the gaps, 2019, the decade turns), and there is no effect detached from the reporting anywhere in the four renders. The rail's whole premise is that the record is the reading matter."
+        }
+      }
+    },
+    "candidate-3": {
+      "criteria": {
+        "1": {
+          "score": 10,
+          "rationale": "The finding leads twice in plain text before any chart appears: the standfirst gives the full story with numbers, then the Then/Now diptych restates it as large labeled figures ('around September 9' vs 'around October 7', 'about 606 mm' vs 'about 692 mm') with the difference line '28 days later, 86 mm more a season, 29 mm more on the worst day'. A reader who never decodes a chart receives the complete story with zero scrolling effort or chart literacy."
+        },
+        "2": {
+          "score": 9,
+          "rationale": "The single drift chart is named, described by its actual finding, and drawn on the natural Sep 1-Oct 15 calendar domain; the three missing years are open shaded bands no average crosses, era-mean rules stay confined to their own spans, and 2019 is hollow and excluded. The diptych figures are honestly hedged as 'about' with their exclusions stated."
+        },
+        "3": {
+          "score": 10,
+          "rationale": "The method change is promoted to the page's entire color system - every mark, figure, and table year is inked by instrument with era names written out, so the disclosure travels with every comparison rather than sitting in a footnote. The gaps, the 2019 unverified flag (hollow dot, 132 mm labeled, excluded from averages), and the 'shift, not its cause' scope are all present in the chart, the table, and the About section."
+        },
+        "4": {
+          "score": 8,
+          "rationale": "The register is unsensational and the 'In the valley's own words' section places one quote per ink era, tying the human fragments to the record's two instruments. The body prose spends slightly more of its patience explaining the ink system's mechanics than dwelling in the place itself, so the craft is strong but a notch less warm than the conceit deserves."
+        },
+        "5": {
+          "score": 8,
+          "rationale": "The diptych, drift chart, and two-ink table are handsomely set in both modes, and the mobile render stacks the Then/Now columns and keeps the chart legible with both inks distinguishable. The long two-ink table runs a little dim in dark mode and the mobile chart is compact, though everything remains readable."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "A static, fully readable base with no scrollytelling and no imposed pacing; reduced-motion parity is complete by construction. Compliant absence of motion rather than demonstrated motion discipline."
+        },
+        "7": {
+          "score": 9,
+          "rationale": "One sentence carries the page - the story is read by watching where the blue marks drift away from the umber ones - and every layer reinforces it: the legend, the ink-colored words in the standfirst, the diptych's two columns, the chart's two dot colors, and the table's inked year numbers. Answering the reader's question first, then laying out 34 years for checking, is the data presentation doing the journalism."
+        },
+        "8": {
+          "score": 9,
+          "rationale": "Both declared breaks (the instrument caveat as the color system; the finding-first diptych before the time series) are executed exactly as declared, with era names written out at every crossing so color never stands alone. Reading mechanics stay conventional and I found no undeclared break in the renders."
+        },
+        "9": {
+          "score": 8,
+          "rationale": "'The town weir's ledger, printed in two inks' and 'the record keeps human time as well as rain' are specific and local, and nothing is sensationalized. Some passages tip toward describing the page's own system rather than the valley, which slightly generalizes the voice."
+        },
+        "10": {
+          "score": 10,
+          "rationale": "The central device is the dataset's own method field made visible - the strongest possible case of a device tracing to what the record actually contains - and the diptych exists precisely because the era comparison needs its caveat carried in view. There is no effect anywhere that is detached from the reporting."
+        }
+      }
+    }
+  }
+}

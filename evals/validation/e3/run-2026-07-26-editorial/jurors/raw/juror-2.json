@@ -1,0 +1,137 @@
+{
+  "juror": "juror-2",
+  "candidates": {
+    "candidate-1": {
+      "criteria": {
+        "1": {
+          "score": 9,
+          "rationale": "The lede delivers the entire finding in plain prose with numbers (four weeks later, 606 to 692 mm, 43 to 72 mm) before any graphic, and the rail's 'what it shows' description restates the drift in words. A reader who never decodes a chart loses nothing."
+        },
+        "2": {
+          "score": 7,
+          "rationale": "The rail is named and described by its actual finding, gaps are hatched, and 2019 is hollow with its label; but the season-total bars run on a disclosed 550-750 mm scale, and length-encoded bars from a non-zero base visually overstate the 14% rise. The onset shelf also carries no visible calendar marks, so position can only be read relatively."
+        },
+        "3": {
+          "score": 9,
+          "rationale": "The three nulls are labeled hatched rows with their reasons inside the only view; the method change is an era header printed into the record plus lede and About; 2019 carries a red UNVERIFIED line and is excluded from the recent-era averages; the page closes with 'the shift, not its cause.' The honesty surface lives inside the record itself, not in footnotes."
+        },
+        "4": {
+          "score": 9,
+          "rationale": "Patient, place-loving register throughout ('the season that used to open before the autumn fair now waits for the second week of October'), with interjections landing exactly at the decade turns and gaps. Both human-context fragments sit where they serve the record, the 1994 log entry directly after the 1994 line."
+        },
+        "5": {
+          "score": 8,
+          "rationale": "Editorial serif hierarchy, comfortable measure, and a steady row rhythm carry a very long read in both modes; the mobile stacking of each year's shelf and bar stays clean at 750px. Precision leans on the right-column figures since the shelf itself is unmarked."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "A fully readable static base with no scrolljack and no scroll-driven interaction; reduced-motion parity is trivially complete. Nothing paces the reader against their will."
+        },
+        "7": {
+          "score": 9,
+          "rationale": "'The record itself is the reading matter' is one sentence, and every layer enforces it: era headers, hatched no-record lines, interjections, and quotes all live inside the rail, so the eye literally watches the season walk down the page. The form is the journalism, not an illustration of it."
+        },
+        "8": {
+          "score": 7,
+          "rationale": "The two declared breaks (rail-as-only-chart, interjections inside the record) are executed exactly as declared and reading mechanics stay conventional, but the truncated bar baseline is an undeclared break of charting convention. Per the panel rule that scores as a mistake, not a signature."
+        },
+        "9": {
+          "score": 9,
+          "rationale": "Unsensational and specific to this valley: the autumn fair, the weir keeper's meadow, the sandbag store. No other paper could run the interjections unchanged."
+        },
+        "10": {
+          "score": 9,
+          "rationale": "There is no effect detached from reporting anywhere; every device (era break, hatching, hollow dot, red figure) traces to a concrete feature of the sealed record. The anti-imitation criterion is essentially the page's thesis."
+        }
+      }
+    },
+    "candidate-2": {
+      "criteria": {
+        "1": {
+          "score": 9,
+          "rationale": "The lede states the complete finding with numbers, each plate opens with a bold sentence giving that plate's finding in words ('the era averages, drawn as short rules, sit 28 days apart'), and the full-record table backs everything in text. The story survives total chart-blindness."
+        },
+        "2": {
+          "score": 9,
+          "rationale": "Every plate is named by its actual finding; Plate II's 550 mm start is disclosed both in prose and on the chart face, Plate III is 'drawn from zero' and says so, and the line breaks at the gaps rather than bridging them. This is honest encoding made self-aware."
+        },
+        "3": {
+          "score": 9,
+          "rationale": "The same four caveats (seam, gaps, era rules, 2019 hollow) are keyed as a-d onto all three plates, repeated in the table's NO RECORD and UNVERIFIED rows and in About, with 2019 excluded from the era averages. Every boundary crossing carries its disclosure at the point of use."
+        },
+        "4": {
+          "score": 9,
+          "rationale": "The connective prose is patient local journalism ('It is the lane under water in October, and the parish answering in its own practical way') and walks the reader plate to plate as the intent promised. Both quotes sit where they earn their place."
+        },
+        "5": {
+          "score": 8,
+          "rationale": "Clean broadsheet typography with a consistent annotation style and a well-ruled 34-row table in both modes; the mobile plates verified legible at native width. Charts shrink noticeably on mobile, which costs a little comfort on Plate III."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "Static, fully readable base with no scroll effects or scrolljack; reduced-motion parity is complete by construction."
+        },
+        "7": {
+          "score": 8,
+          "rationale": "'The journalism is written on the plates' is coherent and the recurring a-d caveat cast is genuinely elegant, turning the caveats into characters that reappear on every plate. It reads as superb conventional practice more than a form that makes the shift felt in the body."
+        },
+        "8": {
+          "score": 9,
+          "rationale": "Exactly the two declared breaks (annotations inked on the plates, grid suppressed except where the story points) and I found no undeclared ones; the disclosed non-zero line baseline is conventional. Reading mechanics are entirely ordinary, which is the point."
+        },
+        "9": {
+          "score": 9,
+          "rationale": "Unsensational, local, and concrete throughout; the plate intros and inter-plate prose are specific to this weir and parish rather than generic climate copy."
+        },
+        "10": {
+          "score": 9,
+          "rationale": "The signature device is literally reporting inked onto the graphic, so every annotation traces to a dataset fact (seam, gaps, era means, the flagged spike). Nothing here is Snow-Fall ornament."
+        }
+      }
+    },
+    "candidate-3": {
+      "criteria": {
+        "1": {
+          "score": 9,
+          "rationale": "The finding-first diptych makes the no-scroll alternative structural: then/now figures and 'The difference, ink to ink: 28 days later, 86 mm more a season, 29 mm more on the worst day' deliver the whole story in text at the top. The chart-averse reader is served first, not as a fallback."
+        },
+        "2": {
+          "score": 8,
+          "rationale": "The one drift chart is honest (full Sep 1-Oct 15 range, shaded gap bands, hollow 2019, era rules, described by its finding), and the diptych figures are sourced and labeled. But the 'lands harder' half of the story is never drawn at all, carried only by aggregate figures and the table."
+        },
+        "3": {
+          "score": 10,
+          "rationale": "The method-change caveat is promoted to the page's design system, with the two inks named in words at every crossing (legend, lede, diptych notes, seam box, annotation, table instrument column, 'Why two inks'), gaps banded and tabled, and 2019 excluded and labeled wherever it appears. The disclosure is not attached to the design; it is the design, which is the distinctive-excellence case for this criterion."
+        },
+        "4": {
+          "score": 8,
+          "rationale": "The register is right and the quote treatment ('a gauge year' / 'a weir year') folds the human fragments into the system, but the connective prose leans structural and explanatory. There is less place texture of its own than the other work here."
+        },
+        "5": {
+          "score": 8,
+          "rationale": "Disciplined typography with a tidy diptych that stacks cleanly on mobile, and the umber/blue inks hold their legibility in dark mode. The long table is well set with era-inked year numerals backed by a words column."
+        },
+        "6": {
+          "score": 8,
+          "rationale": "Static, fully readable base; no scrolljacking or scroll-dependent path anywhere, so reduced-motion parity is complete."
+        },
+        "7": {
+          "score": 8,
+          "rationale": "'Two inks for two instruments' is one sentence and runs through every layer with real coherence, and answering the reader's question first is a genuine editorial move. But the promised 'later, harder read by watching the marks' only materializes for 'later'; 'harder' is figures, not form."
+        },
+        "8": {
+          "score": 9,
+          "rationale": "Both declared breaks (caveat-as-color-system, finding-before-record) appear exactly as declared, never by color alone, and I found no undeclared breaks. Everything else, including the table and chart mechanics, is conventional."
+        },
+        "9": {
+          "score": 8,
+          "rationale": "'What the manual gauge saw, and what the automated weir sees now' is a line only this paper could print, but stretches of the prose read as system explanation rather than valley reporting."
+        },
+        "10": {
+          "score": 9,
+          "rationale": "The signature device is the dataset's own method field made visible, and the diptych claims only the era comparison the record supports with 2019 held out. Every device traces to the reporting; none is imported spectacle."
+        }
+      }
+    }
+  }
+}

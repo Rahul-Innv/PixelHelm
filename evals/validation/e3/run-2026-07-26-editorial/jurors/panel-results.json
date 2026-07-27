@@ -1,0 +1,316 @@
+{
+  "aggregation": "per-criterion median of 5 jurors; overall = median of the 10 criterion medians (registered)",
+  "amendmentC1": "criterion/overall medians of 9+ are recorded as strong-owner-verify, never as achieved distinctive excellence",
+  "arms": {
+    "weir-plates": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "2": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          10,
+          10
+        ],
+        "4": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          9,
+          9
+        ],
+        "6": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "8": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          10
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "overallMedian": 9.0,
+      "minCriterionMedian": 8,
+      "strongOwnerVerifySignals": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "8",
+        "9",
+        "10"
+      ]
+    },
+    "almanac-rail": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "2": [
+          6,
+          7,
+          7,
+          7,
+          8
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          10
+        ],
+        "4": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          6,
+          7,
+          7,
+          8,
+          9
+        ],
+        "9": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          9,
+          10
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 7,
+        "9": 9,
+        "10": 9
+      },
+      "overallMedian": 9.0,
+      "minCriterionMedian": 7,
+      "strongOwnerVerifySignals": [
+        "1",
+        "3",
+        "4",
+        "7",
+        "9",
+        "10"
+      ]
+    },
+    "two-inks": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          10
+        ],
+        "2": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          10,
+          10,
+          10,
+          10
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ],
+        "7": [
+          8,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "10": [
+          9,
+          9,
+          9,
+          10,
+          10
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 10,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 8,
+        "10": 9
+      },
+      "overallMedian": 9.0,
+      "minCriterionMedian": 8,
+      "strongOwnerVerifySignals": [
+        "1",
+        "2",
+        "3",
+        "7",
+        "8",
+        "10"
+      ]
+    }
+  },
+  "ranking": [
+    {
+      "arm": "weir-plates",
+      "overallMedian": 9.0
+    },
+    {
+      "arm": "almanac-rail",
+      "overallMedian": 9.0
+    },
+    {
+      "arm": "two-inks",
+      "overallMedian": 9.0
+    }
+  ],
+  "winner": {
+    "tie": [
+      "weir-plates",
+      "almanac-rail",
+      "two-inks"
+    ]
+  }
+}
