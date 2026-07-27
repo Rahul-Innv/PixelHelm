@@ -1,6 +1,6 @@
 {
   "gate": "content-manifest",
-  "target": "C:\\Users\\krahu\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\lucid-khayyam-0ee868\\evals\\validation\\e3\\run-2026-07-26-saas\\project\\arms\\driveway-to-paid\\index.html",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\lucid-khayyam-0ee868\\evals\\validation\\e3\\run-2026-07-26-saas\\project\\arms\\driveway-to-paid\\index.html",
   "pass": true,
   "required": 28,
   "modes": [

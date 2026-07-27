@@ -16,6 +16,12 @@ formalize.
   neutral labels (seeds recorded).
 - Task per juror: score each candidate on the rubric (same scale) AND produce a
   strict ranking of the candidates in each set.
+- **Evidence requirements (from the E1 critique, findings 1 & 4):** each juror's
+  FULL input transcript is committed verbatim (what the juror actually received,
+  not a summary), each juror's output is written as a schema-valid
+  `pixelhelm/juror-record@1` via the record machinery (building that schema is a
+  precondition for running E4), and every computation script is cited by SHA-256
+  in the run record. A panel failing any of these is not a panel.
 
 ## (b) Pre-registered statistics (fixed now)
 
