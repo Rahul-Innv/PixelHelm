@@ -401,10 +401,15 @@ class FamilyTests(unittest.TestCase):
             },
             metadata["project"]["urls"],
         )
-        self.assertIn(
-            "Ran 30 tests ... OK (skipped=1)",
-            (ROOT / "README.md").read_text(encoding="utf-8"),
-        )
+        # The README's advertised suite size must match what this file actually declares
+        # (docs-equal-code, CONTRIBUTING). Derived, not literal: the old literal had
+        # drifted to 30 while the suite ran 31.
+        # Without the private roots, ChoiceGateBoundaryTests skips as a class (the one
+        # "skipped=1"), so the advertised count is exactly FamilyTests' method count.
+        declared = sum(1 for name in dir(FamilyTests) if name.startswith("test"))
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        self.assertIn(f"Ran {declared} tests ... OK (skipped=1)", readme)
+        self.assertIn(f"a {declared}-test offline suite", readme)
         current_surfaces = "\n".join(
             (ROOT / relative).read_text(encoding="utf-8")
             for relative in ("README.md", "STATUS.md", "docs/public/RELEASE-CANDIDATE.md")
@@ -803,6 +808,117 @@ class FamilyTests(unittest.TestCase):
             without_jurors = command("node", str(records), "write", "judge-verdict", "--project", str(bare_project), input_bytes=verdict_raw)
             self.assertEqual(0, without_jurors.returncode)  # soft: never a refusal (old records predate the schema)
             self.assertIn(b"juror-record", without_jurors.stderr)
+
+    def test_judge_verdict_floor_precondition_is_enforced_softly(self) -> None:
+        """R1/R2 repair: floor evidence WARNS (never refuses) and the new shapes validate.
+
+        Repair decision: evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md. A scored
+        candidate must reference its floor artifacts; a floor-failing or gate-less
+        candidate belongs in `unscored`, never "scored low".
+        """
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            self.assertTrue((ROOT / "plugins" / edition / self.LOOP_SCRIPTS / "records.mjs").is_file())
+        template = json.loads(command("node", str(records), "template", "judge-verdict").stdout)
+        # the template teaches the repaired shape
+        self.assertEqual({"gateOutputs": [], "notRun": []}, template["candidates"]["incumbent"]["floorEvidence"])
+        self.assertEqual([], template["unscored"])
+
+        def verdict(**overrides) -> dict:
+            base = {
+                "schema": "pixelhelm/judge-verdict@1",
+                "date": "2026-07-27", "project": "eval-fixture", "surface": "Floor Seam",
+                "mode": "new-design", "pass": "fast",
+                "candidates": {
+                    "a": {"label": "A", "kind": "challenger", "render": "renders/a.png",
+                          "floorEvidence": {"gateOutputs": ["gates/a/static-gates.json"], "notRun": ["verify_cwv"]}},
+                },
+                "unscored": [{"candidate": "plant", "gate": "verify_targetsize",
+                              "why": "7 controls below the 24px minimum; excluded before scoring"}],
+                "registerFitPanel": {"jurors": 3, "scores": {"a": [7, 8, 8]}, "medians": {"a": 8},
+                                     "nonOverlapping": True, "modeFairness": "both-modes"},
+                "lensScores": {}, "constraints": [],
+                "aggregation": {"contract": "gates-and-loop.md 2026-07-27", "weightedScores": {},
+                                "guardOutcome": "no incumbent"},
+                "winner": "a", "registerSafeGrafts": [], "rejectedGrafts": [], "rejectedDirections": [],
+                "ownerVerdict": None,
+            }
+            base.update(overrides)
+            return base
+
+        def write(record: dict, project: Path) -> subprocess.CompletedProcess[bytes]:
+            return command("node", str(records), "write", "judge-verdict", "--project", str(project),
+                           input_bytes=json.dumps(record).encode("utf-8"), )
+
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+
+            # 1. floor evidence present on every scored candidate -> written, no floor warning
+            clean = write(verdict(), temp / "clean")
+            self.assertEqual(0, clean.returncode, clean.stderr.decode())
+            self.assertNotIn(b"floor evidence", clean.stderr)
+
+            # 2. no floorEvidence at all -> SOFT: still written (exit 0), but warns
+            bare_candidates = {"a": {"label": "A", "kind": "challenger", "render": "renders/a.png"}}
+            warned = write(verdict(candidates=bare_candidates), temp / "bare")
+            self.assertEqual(0, warned.returncode, warned.stderr.decode())
+            self.assertIn(b"no referenced floor evidence: a", warned.stderr)
+            self.assertIn(b'belongs in "unscored", never scored low', warned.stderr)
+
+            # 3. floorEvidence present but empty -> same warning (a prose pass is not evidence)
+            empty = {"a": {"label": "A", "kind": "challenger", "render": "renders/a.png",
+                           "floorEvidence": {"gateOutputs": [], "notRun": []}}}
+            empty_json = command("node", str(records), "write", "judge-verdict", "--project",
+                                 str(temp / "empty"), "--json",
+                                 input_bytes=json.dumps(verdict(candidates=empty)).encode())
+            self.assertEqual(0, empty_json.returncode, empty_json.stderr.decode())
+            payload = json.loads(empty_json.stdout)
+            self.assertTrue(payload["valid"])
+            self.assertEqual(1, len([w for w in payload["warnings"] if "floor evidence" in w]))
+
+            # 4. behavioral rejections of the new shapes (opt-in: absent stays valid)
+            for mutation, expected in [
+                ({"candidates": {"a": {"label": "A", "kind": "challenger", "render": "renders/a.png",
+                                       "floorEvidence": {"gateOutputs": "gates/a"}}}},
+                 b"must be an array of gate ARTIFACT paths"),
+                ({"candidates": {"a": {"label": "A", "kind": "challenger", "render": "renders/a.png",
+                                       "floorEvidence": {"gateOutputs": ["g.json"], "notRun": [""]}}}},
+                 b"notRun must be an array of gate ids that did not run"),
+                ({"unscored": [{"candidate": "plant", "gate": "verify_targetsize"}]},
+                 b"must be { candidate, gate, why }"),
+                ({"unscored": [{"candidate": "a", "gate": "verify_targetsize", "why": "below 24px"}]},
+                 b"is also a scored candidate"),
+            ]:
+                bad = temp / "bad.json"
+                bad.write_text(json.dumps(verdict(**mutation)), encoding="utf-8")
+                invalid = command("node", str(records), "validate", str(bad))
+                self.assertEqual(1, invalid.returncode, invalid.stdout.decode())
+                self.assertIn(expected, invalid.stdout)
+
+            # 5. a pre-repair record (neither field) still validates — old archives stay valid
+            legacy = verdict(candidates=bare_candidates)
+            legacy.pop("unscored")
+            old = temp / "legacy.json"
+            old.write_text(json.dumps(legacy), encoding="utf-8")
+            self.assertEqual(0, command("node", str(records), "validate", str(old)).returncode)
+
+    def test_repair_r1_r2_is_written_into_both_editions(self) -> None:
+        """The precondition ships as text, not just as a decision record."""
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            base = ROOT / "plugins" / edition / "skills"
+            judge = (base / "pixelhelm-judge/SKILL.md").read_text(encoding="utf-8")
+            recipe = (base / "pixelhelm-judge/references/recipe.md").read_text(encoding="utf-8")
+            seam = (base / "pixelhelm-loop/references/gates-and-loop.md").read_text(encoding="utf-8")
+            loop = (base / "pixelhelm-loop/references/close-the-loop.md").read_text(encoding="utf-8")
+            for text, name in ((judge, "judge SKILL.md"), (recipe, "recipe.md"), (seam, "gates-and-loop.md")):
+                self.assertIn("UNSCORED", text, f"{edition}/{name}")
+                self.assertRegex(text, r"(?i)never.{0,24}scored low", f"{edition}/{name}")
+            # R2: gate outputs travel with the renders, and the juror hash covers them
+            self.assertIn("floorEvidence", loop, edition)
+            self.assertIn("unscored", loop, edition)
+            self.assertRegex(loop, r"(?i)covers the gate outputs", edition)
+            self.assertRegex(recipe, r"(?i)gate outputs", edition)
+            self.assertRegex(judge, r"(?i)gate outputs travel with", edition)
 
     def test_no_obvious_secrets_or_network_calls(self) -> None:
         watched = [ROOT / "src/family.json", ROOT / "src/skills.json", ROOT / "src/scripts",

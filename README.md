@@ -172,7 +172,7 @@ Two evidence grades, kept honest on purpose:
   excluded gap's size on the record. Committed failures remain the point: the gates
   block real defects, and a record is only ever cleared by fixing the page or by a
   documented re-registration of the gate itself — never by editing the record.
-- **The engine is checkable offline.** The demo above and a 31-test offline suite
+- **The engine is checkable offline.** The demo above and a 33-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
@@ -215,7 +215,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 30 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 33 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 
