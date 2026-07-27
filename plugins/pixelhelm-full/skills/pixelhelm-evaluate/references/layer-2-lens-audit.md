@@ -29,7 +29,15 @@ perfection. Use the `pixelhelm-render` live backend (Playwright); never pass mod
 (OneRedOak design-review-agent, phases adapted.)
 
 1. **Interaction & user flow** — execute the primary flow; test hover/active/disabled; verify
-   destructive-action confirmations; assess perceived performance.
+   destructive-action confirmations; assess perceived performance. **Take the in-use
+   affordance census on the RENDERED artifact:** name the visitor's actual task, list the
+   affordances that task needs (controls, inputs, filter/sort, comparison, state feedback,
+   entry points, the next step after the primary action), and check each against what is
+   present and reachable in the render. Absent UI is the finding — state the missing
+   affordance and the task it blocks, never "could be easier to use". Copy that describes a
+   capability is not the capability. *(The one weakness the owner named in every run across
+   E1 and E3: "there is a lot of missing UI, how is it easy for the user?" — the counterpart
+   of the Spool lens's in-use clause, `pixelhelm-judge/references/lenses.md` §4.)*
 2. **Responsiveness** — desktop 1440 / tablet 768 / mobile 375 (screenshot each); no overlap.
    (Hard overflow is already a Layer-1 gate; here judge layout ADAPTATION quality.)
 3. **Visual polish** — alignment, spacing rhythm, typographic hierarchy, palette coherence,
@@ -71,8 +79,10 @@ Apply the lenses relevant to the surface; do not force all on a tiny component.
 
 ### Typography (gnurio 02 + Butterick numerics)
 - PASS: ≤ ~6 sizes from a ratio scale; measure ~45–90ch; line-height 1.2 display / 1.5 body;
-  curly quotes + en/em dashes.
-- FAIL: a dozen ad-hoc sizes; lines too long/short; straight quotes.
+  curly quotes; en dashes for ranges.
+- FAIL: a dozen ad-hoc sizes; lines too long/short; straight quotes; em dashes in generated
+  page copy (the registered `ai-em-dash-copy` AI-voice tell — owner rule, 2026-07-26; a
+  table's data-absent glyph and an en-dash range are not the tell).
 
 ### Color / palette (gnurio 03/09 + profile)
 - PASS: coherent role-mapped palette; ~60/30/10 distribution; one saturated role carries the

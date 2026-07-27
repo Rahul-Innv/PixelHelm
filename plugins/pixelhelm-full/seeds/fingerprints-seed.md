@@ -48,3 +48,24 @@ the not-slop guard: `pixelhelm-record-lesson/references/fingerprint-registry.md`
   evidence: recurring across generated admin/dashboard batches for two products (2026-06); the craft-council pass repeatedly traced "generic dashboard" verdicts to this
   note: product-UI surface tell; a deliberate dense uniform ledger (analyst registers) is a DECISION — check the register before flagging
   retires: none
+
+- id: ai-em-dash-copy | added: 2026-07-27 | status: active | scope: global
+  any: ["—", "&mdash;", "&#8212;"]
+  describe: the em dash used as the default connector in body copy, headlines, captions and microcopy — the single loudest AI-voice tell in generated prose, usually several per page and rarely the punctuation a human writer would have reached for
+  evidence: owner observation, PixelHelm E3 editorial sign-off 2026-07-26 — em dashes present in ALL THREE arms, "em dashes present in all arms - not supposed to be there"; recorded as design lesson L-083
+  note: the greppable arm matches the character (and its HTML entities) ANYWHERE in scanned source, so code comments and CSS prose match too — that is why the anti-cliche gate is SOFT and read by a human. The finding is em dashes in PAGE COPY; rewrite with a period, a comma, a colon, or restructure. Legitimate only where a project's own house style explicitly calls for it in prose
+  retires: none
+
+- id: uniform-paragraph-rhythm | added: 2026-07-27 | status: candidate | scope: global
+  any: []
+  describe: copy tell — every paragraph the same two-to-three sentences, every section the same length, every list the same item count; prose with a metronome under it. Human writing varies its rhythm; generated writing evens it out
+  evidence: named in the anti-slop research roster carried by the Full edition's reference leaf ("Layout & content tells") and observed alongside the em-dash tell in the PixelHelm E3 editorial arms, 2026-07-26
+  note: candidate — lens-only and ADVISORY until a second cited instance promotes it. Not greppable; Layer-2 judgment. A deliberately regular register (reference tables, spec sheets, changelog entries) is a DECISION, not the tell
+  retires: none
+
+- id: symmetric-three-card | added: 2026-07-27 | status: candidate | scope: global
+  any: []
+  describe: the three equal cards in a row as the reflexive answer to "several things go here" — three items of equal weight, equal width, equal heading length, equal body length, with no hierarchy among them and no reason the count is three
+  evidence: named in the anti-slop research roster carried by the Full edition's reference leaf ("Three equal cards in a row as the default feature section", there since 2026-06); registered here 2026-07-27 alongside the AI-voice copy tells so one registry carries the family
+  note: candidate — lens-only and ADVISORY until a second cited instance promotes it. Not greppable; Layer-2 judgment. Three cards ARE right when the subject genuinely has three peer things — the tell is symmetry chosen by reflex, not by content. Check the content before flagging
+  retires: none

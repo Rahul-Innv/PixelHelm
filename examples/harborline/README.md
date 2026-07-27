@@ -41,6 +41,32 @@ against `status-page.html` as the incumbent, and the council's verdict must clea
 incumbent guard. ("Current design wins — no change recommended" is a legal outcome;
 this page has survived two blind panels, so expect it to put up a fight.)
 
+## What the anti-cliche grep says about this page
+
+The `ai-em-dash-copy` fingerprint (registered 2026-07-27 from the owner's E3 verdict —
+em dashes in generated page copy are an AI-voice tell) is wired into this profile's
+`bannedClusters`, so the Layer-1 anti-cliche grep fires on it here. Run the static-gates
+command above and it reports **12 matches, none of them a failure** — the anti-cliche
+grep is a SOFT gate: reported, never exit 1. What those 12 actually are is the point of
+keeping them visible:
+
+| Matches | What they are | Verdict |
+|---|---|---|
+| 5 | em dashes inside CSS/HTML **comments** (`/* Token block — verbatim… */`, `tokens.css:1`) | false positives by construction — the needle is a character, and a substring grep cannot see that it is in a comment |
+| 6 | `<td>—</td>` — the **data-absent glyph** in the stations table, the honest "no telemetry" cell | legitimate typography, not the tell. The tell is prose voice; this is a table convention |
+| 1 | `<h2>Ridership — Last 7 Days</h2>` — an em dash in **page copy** | a real finding, and the only one |
+
+That distribution is why this gate is soft and read by a human rather than hard and
+automated: 1 of 12 matches is the thing the owner objected to. The registry entry says
+so in its own `note`.
+
+The one real finding is **left standing, recorded, not quietly rewritten** — the same
+method law the frame-time FAIL was held to (CONTRIBUTING, "Evidence and claim
+discipline"). Editing the heading would desync this tree's committed render matrix from
+its HTML without a browser pass to regenerate it, and a silent copy edit is exactly the
+move that discipline exists to prevent. A future Harborline pass that re-renders clears
+it; until then it is on the record here.
+
 ## One honest footnote
 
 (Both anecdotes below are attested from the author's private experiment runs — their

@@ -732,7 +732,15 @@ class FamilyTests(unittest.TestCase):
 
             run_record = json.loads(command("node", str(records), "template", "run").stdout)
             run_record.update({"date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
-                               "intent": "eval fixture", "workerModel": "offline"})
+                               "intent": "eval fixture", "workerModel": "offline",
+                               # REQUIRED on every new run record — see
+                               # test_intent_elicitation_is_required_on_new_run_records.
+                               "intentElicitation": {
+                                   "asked": True,
+                                   "ownerWords": "quiet, like transit signage; nothing that looks sold to me",
+                                   "capturedInto": "ground-context.md",
+                                   "waived": False, "waiverWords": "",
+                               }})
             self.assertEqual(0, command("node", str(records), "write", "run", "--project", str(project),
                                         input_bytes=json.dumps(run_record).encode()).returncode)
             self.assertTrue((project / ".pixelhelm/runs/2026-07-26--status-page--run.json").is_file())
@@ -901,6 +909,298 @@ class FamilyTests(unittest.TestCase):
             old = temp / "legacy.json"
             old.write_text(json.dumps(legacy), encoding="utf-8")
             self.assertEqual(0, command("node", str(records), "validate", str(old)).returncode)
+
+    def _run_record(self, **overrides) -> dict:
+        base = {
+            "schema": "pixelhelm/run@1",
+            "date": "2026-07-27", "project": "eval-fixture", "surface": "Trail Conditions",
+            "intent": "new design", "edition": "lite", "workerModel": "offline",
+            "skillsFired": ["pixelhelm-loop"], "engines": [],
+            "council": {"pass": "fast", "seats": 7, "registerJurors": 5},
+            "iterations": 0, "renders": {"items": 1, "cells": 4},
+            "tokens": {"subagentsMeasured": 0, "workflowsMeasured": 0,
+                       "note": "measured-only; main-context usage is not observable in-session"},
+            "wallClockMinutes": 0, "outcome": "report-only", "notes": "",
+        }
+        base.update(overrides)
+        return base
+
+    def test_intent_elicitation_is_required_on_new_run_records(self) -> None:
+        """The elicitation gate is ENFORCED, not described.
+
+        Owner, E3 commerce sign-off 2026-07-26: "the loop should ASK the owner what
+        theme and feeling is wanted before generating." A run that never asked cannot
+        close its loop: `write run` REFUSES a record with no `intentElicitation`, and
+        the loop treats a refused write as a blocking finding. `validate` stays
+        permissive so run archives written before the rule remain valid.
+        """
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        template = json.loads(command("node", str(records), "template", "run").stdout)
+        self.assertEqual(
+            {"asked": True, "ownerWords": "", "capturedInto": "", "waived": False, "waiverWords": ""},
+            template["intentElicitation"])
+
+        asked = {"asked": True, "ownerWords": "warm, unfussy, like a field notebook",
+                 "capturedInto": ".pixelhelm/ground-context.md", "waived": False, "waiverWords": ""}
+        waived = {"asked": False, "ownerWords": "", "capturedInto": "",
+                  "waived": True, "waiverWords": "just pick something, I trust you"}
+
+        def write(record: dict, project: Path) -> subprocess.CompletedProcess[bytes]:
+            return command("node", str(records), "write", "run", "--project", str(project),
+                           input_bytes=json.dumps(record).encode("utf-8"))
+
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+
+            # 1. the field is absent -> HARD refusal, nothing written
+            missing = self._run_record()
+            self.assertNotIn("intentElicitation", missing)
+            refused = write(missing, temp / "unasked")
+            self.assertEqual(1, refused.returncode)
+            self.assertIn(b"intentElicitation is REQUIRED", refused.stderr)
+            self.assertIn(b"ASK the owner what theme and feeling is wanted before generating",
+                          refused.stderr)
+            self.assertFalse((temp / "unasked/.pixelhelm/runs").exists())
+
+            # 2. asked-and-answered -> written
+            ok = write(self._run_record(intentElicitation=asked), temp / "asked")
+            self.assertEqual(0, ok.returncode, ok.stderr.decode())
+            self.assertTrue((temp / "asked/.pixelhelm/runs/2026-07-27--trail-conditions--run.json").is_file())
+
+            # 3. an explicit owner waiver, in the owner's words -> also written
+            waived_ok = write(self._run_record(intentElicitation=waived), temp / "waived")
+            self.assertEqual(0, waived_ok.returncode, waived_ok.stderr.decode())
+
+            # 4. behavioral rejections — a half-answered or self-issued elicitation is not one
+            for block, expected in [
+                ({**asked, "ownerWords": ""}, b"VERBATIM answer"),
+                ({**asked, "capturedInto": ""}, b"entered the ground context"),
+                ({**waived, "waiverWords": ""}, b"self-issued waiver is not a waiver"),
+                ({"asked": False, "waived": False, "ownerWords": "", "capturedInto": "", "waiverWords": ""},
+                 b"a run that did neither is a process defect"),
+                ({**asked, "waived": True, "waiverWords": "x"}, b"both asked and waived"),
+                ("not an object", b"intentElicitation must be an object"),
+            ]:
+                bad = temp / "bad.json"
+                bad.write_text(json.dumps(self._run_record(intentElicitation=block)), encoding="utf-8")
+                invalid = command("node", str(records), "validate", str(bad))
+                self.assertEqual(1, invalid.returncode, invalid.stdout.decode())
+                self.assertIn(expected, invalid.stdout)
+
+            # 5. a pre-rule archive (no field at all) still VALIDATES — only `write` refuses
+            legacy = temp / "legacy-run.json"
+            legacy.write_text(json.dumps(self._run_record()), encoding="utf-8")
+            self.assertEqual(0, command("node", str(records), "validate", str(legacy)).returncode)
+
+    def test_house_style_check_is_advisory_and_recorded(self) -> None:
+        """The cross-run felt-variety check: ADVISORY by construction.
+
+        E3 2026-07-26: every in-run divergence metric PASSED (dE00, layout class, motif
+        Jaccard, blind-intent) while the owner saw "a theme, all of them are similar".
+        So a multi-candidate verdict records what it compared the field against across
+        prior runs — a WARNING when it does not, never a refusal, and never a veto over
+        a winner. Cited evidence is required of any tell (the fingerprint ADD/PROMOTE rule).
+        """
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        template = json.loads(command("node", str(records), "template", "judge-verdict").stdout)
+        self.assertEqual({"comparedAgainst": [], "recurringSignatures": [], "verdict": "not-run", "why": ""},
+                         template["houseStyleCheck"])
+
+        def verdict(**overrides) -> dict:
+            base = {
+                "schema": "pixelhelm/judge-verdict@1",
+                "date": "2026-07-27", "project": "eval-fixture", "surface": "Felt Variety",
+                "mode": "new-design", "pass": "fast",
+                "candidates": {
+                    "a": {"label": "A", "kind": "challenger", "render": "renders/a.png",
+                          "floorEvidence": {"gateOutputs": ["gates/a/static-gates.json"], "notRun": []}},
+                    "b": {"label": "B", "kind": "challenger", "render": "renders/b.png",
+                          "floorEvidence": {"gateOutputs": ["gates/b/static-gates.json"], "notRun": []}},
+                },
+                "registerFitPanel": {"jurors": 3, "scores": {"a": [7, 8, 8], "b": [6, 6, 7]},
+                                     "medians": {"a": 8, "b": 6}, "nonOverlapping": True,
+                                     "modeFairness": "both-modes"},
+                "lensScores": {}, "constraints": [],
+                "aggregation": {"contract": "gates-and-loop.md 2026-07-27", "weightedScores": {},
+                                "guardOutcome": "no incumbent"},
+                "winner": "a", "registerSafeGrafts": [], "rejectedGrafts": [], "rejectedDirections": [],
+                "ownerVerdict": None,
+            }
+            base.update(overrides)
+            return base
+
+        cited = {
+            "comparedAgainst": ["council/2026-07-26--catalog--council.json", "baselines/trail-ledger.png"],
+            "recurringSignatures": [{
+                "signature": "hero over a symmetric three-up over a ledger table",
+                "evidence": "same spine in both prior committed winners; see the two records named above",
+                "runs": ["2026-07-26 catalog", "2026-07-26 trail conditions"],
+            }],
+            "verdict": "house-style-tell", "why": "third run on the same spine",
+        }
+
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+
+            # absent on a multi-candidate verdict -> SOFT: written (exit 0) with a warning
+            bare = command("node", str(records), "write", "judge-verdict", "--project", str(temp / "bare"),
+                           input_bytes=json.dumps(verdict()).encode())
+            self.assertEqual(0, bare.returncode, bare.stderr.decode())
+            self.assertIn(b"no houseStyleCheck", bare.stderr)
+            self.assertIn(b"ADVISORY", bare.stderr)
+
+            # present -> written, no felt-variety warning; the tell does NOT unseat the winner
+            with_check = command("node", str(records), "write", "judge-verdict", "--project",
+                                 str(temp / "checked"), "--json",
+                                 input_bytes=json.dumps(verdict(houseStyleCheck=cited)).encode())
+            self.assertEqual(0, with_check.returncode, with_check.stderr.decode())
+            payload = json.loads(with_check.stdout)
+            self.assertTrue(payload["valid"])
+            self.assertEqual([], [w for w in payload["warnings"] if "houseStyleCheck" in w])
+            written = json.loads((temp / "checked/.pixelhelm/council/2026-07-27--felt-variety--council.json")
+                                 .read_text(encoding="utf-8"))
+            self.assertEqual("house-style-tell", written["houseStyleCheck"]["verdict"])
+            self.assertEqual("a", written["winner"])  # advisory: recorded, never a veto
+
+            # behavioral rejections: an uncited tell, a one-run tell, a silent not-run
+            for mutation, expected in [
+                ({**cited, "recurringSignatures": [dict(cited["recurringSignatures"][0], evidence="")]},
+                 b"an uncited tell is not a finding"),
+                ({**cited, "recurringSignatures": [dict(cited["recurringSignatures"][0], runs=["one run"])]},
+                 b"runs: [>= 2 run refs]"),
+                ({**cited, "verdict": "not-run", "why": ""},
+                 b'silence must never read as "checked and clean"'),
+                ({**cited, "verdict": "house-style-tell", "recurringSignatures": []},
+                 b"requires at least one cited recurringSignatures entry"),
+                ({**cited, "comparedAgainst": []},
+                 b"claims a comparison happened"),
+            ]:
+                bad = temp / "bad.json"
+                bad.write_text(json.dumps(verdict(houseStyleCheck=mutation)), encoding="utf-8")
+                invalid = command("node", str(records), "validate", str(bad))
+                self.assertEqual(1, invalid.returncode, invalid.stdout.decode())
+                self.assertIn(expected, invalid.stdout)
+
+            # a pre-rule record (no houseStyleCheck at all) still validates
+            legacy = temp / "legacy.json"
+            legacy.write_text(json.dumps(verdict()), encoding="utf-8")
+            self.assertEqual(0, command("node", str(records), "validate", str(legacy)).returncode)
+
+    def test_em_dash_fingerprint_fires_through_the_anticliche_grep(self) -> None:
+        """The AI-voice copy tell is WIRED, not just described — and it stays SOFT.
+
+        Owner, E3 editorial sign-off 2026-07-26: em dashes were present in all three
+        arms, "not supposed to be there". The `ai-em-dash-copy` fingerprint ships in the
+        seed registry with greppable needles, the shipped example profile carries the
+        cluster, and design-evaluate's existing anti-cliche grep matches it. The gate is
+        SOFT by contract: matches are reported, the exit code stays 0.
+        """
+        seed_entry = None
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            seed = (ROOT / "plugins" / edition / "seeds/fingerprints-seed.md").read_text(encoding="utf-8")
+            self.assertIn("id: ai-em-dash-copy", seed, edition)
+            self.assertIn("id: uniform-paragraph-rhythm", seed, edition)
+            self.assertIn("id: symmetric-three-card", seed, edition)
+            for entry in seed.split("\n- id: "):
+                if entry.startswith("ai-em-dash-copy"):
+                    self.assertIn("status: active", entry.split("\n")[0], edition)
+                    self.assertIn("scope: global", entry.split("\n")[0], edition)
+                    needles = json.loads([l for l in entry.split("\n") if l.strip().startswith("any:")][0]
+                                         .split("any:", 1)[1].strip())
+                    seed_entry = needles if seed_entry is None else seed_entry
+                    self.assertEqual(seed_entry, needles, edition)  # identical in both editions
+        self.assertIsNotNone(seed_entry)
+        self.assertIn("—", seed_entry)  # the em dash itself is the greppable needle
+
+        # the shipped example profile actually carries the cluster (wired, not orphaned)
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            example = json.loads((ROOT / "plugins" / edition / "profiles/examples/example.json")
+                                 .read_text(encoding="utf-8"))
+            cluster = [c for c in example["bannedClusters"] if c["id"] == "ai-em-dash-copy"]
+            self.assertEqual(1, len(cluster), edition)
+            self.assertEqual(seed_entry, cluster[0]["any"], edition)
+
+        gates = ROOT / "plugins/pixelhelm-lite" / self.EVALUATE_SCRIPTS / "static-gates.mjs"
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+            (temp / "clean.html").write_text(
+                "<p>Three trails are open. The ridge route is closed until Friday.</p>", encoding="utf-8")
+            (temp / "tell.html").write_text(
+                "<p>Three trails are open — the ridge route is closed until Friday.</p>\n"
+                "<p>Conditions &mdash; updated hourly.</p>", encoding="utf-8")
+            profile = {
+                "project": "em-dash-fixture", "root": str(temp), "sourceDirs": ["."],
+                "sourceExts": [".html"], "ignore": [], "allowRawColorIn": [], "tokenModule": None,
+                "bannedClusters": [{"id": "ai-em-dash-copy", "any": seed_entry, "note": "AI-voice tell"}],
+            }
+            profile_path = temp / "profile.json"
+            profile_path.write_text(json.dumps(profile), encoding="utf-8")
+
+            run = command("node", str(gates), str(profile_path), "--json")
+            self.assertEqual(0, run.returncode, run.stderr.decode())  # SOFT: a match never exits non-zero
+            report = json.loads(run.stdout)
+            anti = report["gates"]["antiCliche"]
+            self.assertFalse(anti["hard"])  # the contract says soft, in the report itself
+            self.assertTrue(report["hardGatesPassed"])
+            hits = {(f["file"], f["cluster"]) for f in anti["findings"]}
+            self.assertIn(("tell.html", "ai-em-dash-copy"), hits)
+            self.assertNotIn(("clean.html", "ai-em-dash-copy"), hits)
+            self.assertEqual(2, anti["count"])  # the character and its HTML entity both match
+
+            # non-vacuous: drop the cluster and the same file reports clean
+            profile_path.write_text(json.dumps({**profile, "bannedClusters": []}), encoding="utf-8")
+            without = json.loads(command("node", str(gates), str(profile_path), "--json").stdout)
+            self.assertEqual(0, without["gates"]["antiCliche"]["count"])
+
+    def test_owner_findings_are_encoded_into_both_editions(self) -> None:
+        """The five 2026-07-26 owner findings ship as machinery text, in BOTH editions.
+
+        Sources: the four sign-offs under evals/validation/{e1,e3}/*/project/.pixelhelm/
+        signoffs/ and design lessons L-082/L-083. Each finding is asserted where its
+        enforcement level says it lives, and the advisory ones are asserted to SAY
+        advisory (docs equal code: nothing is described as enforced unless it is).
+        """
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            base = ROOT / "plugins" / edition / "skills"
+            seam = (base / "pixelhelm-loop/references/gates-and-loop.md").read_text(encoding="utf-8")
+            loop_records = (base / "pixelhelm-loop/references/close-the-loop.md").read_text(encoding="utf-8")
+            loop_skill = (base / "pixelhelm-loop/SKILL.md").read_text(encoding="utf-8")
+            judge = (base / "pixelhelm-judge/SKILL.md").read_text(encoding="utf-8")
+            lenses = (base / "pixelhelm-judge/references/lenses.md").read_text(encoding="utf-8")
+            council_recipe = (base / "pixelhelm-judge/references/recipe.md").read_text(encoding="utf-8")
+            generate = (base / "pixelhelm-generate/references/anti-homogeneity.md").read_text(encoding="utf-8")
+            prompts = (base / "pixelhelm-generate/references/prompt-stack.md").read_text(encoding="utf-8")
+
+            # 1. elicitation — ENFORCED (a refused run-record write), so it may say so
+            self.assertIn("intentElicitation", loop_records, edition)
+            self.assertRegex(seam, r"(?i)elicitation gate", edition)
+            self.assertRegex(seam, r"(?i)before any direction intent", edition)
+            self.assertRegex(seam, r"(?i)process defect", edition)
+            self.assertRegex(loop_skill, r"(?i)feel like", edition)
+
+            # 2. felt variety — ADVISORY, and it must say the word
+            for text, name in ((seam, "gates-and-loop.md"), (judge, "judge SKILL.md"),
+                               (generate, "anti-homogeneity.md"), (council_recipe, "council recipe.md")):
+                self.assertRegex(text, r"(?i)advisory", f"{edition}/{name}")
+            self.assertIn("houseStyleCheck", loop_records, edition)
+            self.assertRegex(seam, r"(?i)never (blocks?|vetoes?)|does NOT block", edition)
+
+            # 3. in-use usability — the lens item and the rubric-authoring guidance
+            self.assertRegex(lenses, r"(?i)in-use usability", edition)
+            self.assertRegex(lenses, r"(?i)absent UI is the finding", edition)
+            self.assertRegex(council_recipe, r"(?i)rubric authoring", edition)
+            self.assertRegex(council_recipe, r"(?i)future sheets only|NEW sheets only", edition)
+
+            # 4. AI voice tells — registered in the seed both editions ship
+            seed = (ROOT / "plugins" / edition / "seeds/fingerprints-seed.md").read_text(encoding="utf-8")
+            for tell in ("ai-em-dash-copy", "uniform-paragraph-rhythm", "symmetric-three-card"):
+                self.assertIn(f"id: {tell}", seed, f"{edition}/{tell}")
+            self.assertRegex(generate, r"(?i)em dash", edition)
+
+            # 5. lead with the actionable answer — utility + long-form register guidance
+            self.assertRegex(prompts, r"(?i)lead with the (actionable )?answer", edition)
+            self.assertRegex(prompts, r"(?i)recommendation", edition)
+            self.assertRegex(prompts, r"(?i)executive brief", edition)
 
     def test_repair_r1_r2_is_written_into_both_editions(self) -> None:
         """The precondition ships as text, not just as a decision record."""

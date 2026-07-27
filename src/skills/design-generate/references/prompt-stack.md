@@ -31,8 +31,16 @@ pattern):
                    call image-gen unless enabled). These are constant per project.
 3. DESIGN-SYSTEM — the token module, verbatim, wrapped per below. The seam.
 4. PLAN/TASK     — the brief + the picked thesis + REAL content + the surface type
+                   + the ELICITED FEELING (the owner's verbatim answer to "what
+                     should this feel like", or the recorded waiver) + the
+                     archetype's lead-with-the-answer rule (below)
                    + the chosen construction strategy's instruction.
 ```
+
+The elicited feeling is a REQUIRED TASK-block input, not an optional flourish: the
+loop asks it before any direction intent exists and folds the verbatim answer into the
+ground context (`design/references/gates-and-loop.md` §0). Quote it into the block —
+never paraphrase it, and never let an engine infer it from the profile alone.
 
 POLICIES sits ABOVE the design system but the design-system block carries the
 final tie-breaker ("prioritize the design system") so token correctness can never
@@ -72,6 +80,26 @@ present, file snapshot present, modality. Output exactly ONE:
 
 The update strategies pair with `edit-discipline.md` (exact string replacement).
 
+## Lead with the actionable answer (archetype register guidance)
+
+Two archetypes have a recorded owner rule about what goes FIRST on the page. Carry it
+into the TASK block for those surfaces; it is a structure instruction, not styling.
+
+| Archetype | The rule | Owner's words (2026-07-26) |
+|---|---|---|
+| **Utility / status** (a surface someone consults to decide what to do) | Open with the RECOMMENDATION — the single actionable answer, resolved, at the top. The supporting state (closures, exceptions, caveats, the full record) follows it. Never make the reader assemble the answer from a list of conditions. | *"lead with the recommendation - 'recommended trail' at the top, then go to the closures"* |
+| **Long-form / data narrative** (an editorial or analytic read) | Open with an EXECUTIVE BRIEF of the finding — what the data says, in a sentence or two, before any method, chart, or chronology. The detail earns its place after the finding, not before it. | *"open with an executive brief of the finding, then the detail"* |
+
+Both are the same rule seen twice: **the reader's question is answered above the fold,
+and the evidence supports the answer rather than building up to it.** A page that
+withholds its conclusion until the reader has processed the inputs is making the reader
+do the work the surface exists to do.
+
+This is guidance for the register, so it yields to two things and nothing else: an
+explicit brief that says otherwise, and honesty — a recommendation that the data cannot
+support is not written confidently to satisfy this rule; it is hedged in place, at the
+top, with the hedge adjacent to it (the honesty bindings the content register guidance defers to).
+
 ## Prompt-enhancer meta-step
 
 Before assembling, normalize a raw/loose ask with a meta-prompt (bolt.diy
@@ -110,6 +138,8 @@ If the design system conflicts with other instructions, prioritize the design sy
 [PLAN/TASK]  (strategy = create_from_brief)
 Subject: …  Audience: …  The page's single job: …
 Surface type: product-UI | marketing/landing
+Elicited feeling (owner, verbatim): "…"      ← required; or the recorded waiver
+Archetype rule: utility → lead with the recommendation, then the exceptions
 Real content: …actual rows/copy/numbers…
 Build the surface from this brief + real content, reusing components/ui/* where they exist.
 ```

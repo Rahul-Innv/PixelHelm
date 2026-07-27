@@ -66,6 +66,18 @@ evidence is an R1 violation: floor-clean is a precondition for esteem
 scoring, and a candidate that fails or lacks its gates is UNSCORED, never
 scored low (`evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md`).
 
+Felt-variety integrity (SOFT, same pattern): writing a MULTI-CANDIDATE judge
+verdict WARNS when it carries no `houseStyleCheck` — the cross-run comparison
+against prior committed winners. It is a warning by design, and the check
+itself is ADVISORY: a recurring signature is recorded and surfaced, it never
+vetoes a winner.
+
+Elicitation (HARD — the one write-time refusal beyond schema shape):
+`write run` REFUSES a run record with no `intentElicitation` block (exit 1,
+nothing written), so a run that never asked the owner what the design should
+FEEL like cannot close its loop quietly. `validate` stays permissive, so run
+archives written before this rule remain valid.
+
 ## Verdict record — `design-council/verdict@1`
 
 Written by design-council immediately after the chair's synthesis (Phase 2.5),
@@ -79,6 +91,9 @@ to `<project>/.design/council/<date>--<surface>--council.json`:
   "candidates": { "<id>": { "label": "", "kind": "incumbent | challenger", "render": "<path>",
                             "floorEvidence": { "gateOutputs": ["<gate artifact path>"], "notRun": ["<gate id>"] } } },
   "unscored": [ { "candidate": "", "gate": "<the failing or missing gate>", "why": "" } ],
+  "houseStyleCheck": { "comparedAgainst": ["<prior committed winner ref>"],
+                       "recurringSignatures": [ { "signature": "", "evidence": "", "runs": ["", ""] } ],
+                       "verdict": "no-house-style-tell | house-style-tell | not-run", "why": "" },
   "registerFitPanel": { "jurors": 5, "scores": { "<id>": [0] }, "medians": { "<id>": 0 },
                         "nonOverlapping": true, "modeFairness": "both-modes | same-mode | <note>" },
   "lensScores": { "<lens>": { "<id>": 0 } },
@@ -110,6 +125,29 @@ shape-validated when present:
   rank, and NO juror records; each entry names the failing or missing gate. This
   is how the panel's silence stays auditable — the record says UNSCORED and the
   gate, never a comparative adjective and never a low score.
+
+`houseStyleCheck` carries the CROSS-RUN felt-variety check (also OPTIONAL for
+compatibility, shape-validated when present). A tournament judges arms against
+each other WITHIN one run; it structurally cannot see a house style that repeats
+ACROSS runs. On E3 (2026-07-26) every registered in-run divergence metric — dE00,
+layout class, motif Jaccard, blind-intent — PASSED while the owner wrote: *"I see
+a theme - all of them are similar to each other and to the set-1 style I called
+merely easier on the eyes."* Those metrics measure difference; they do not measure
+felt variety.
+
+- **`comparedAgainst`** — references to PRIOR runs' committed winners (ledger
+  lines, verdict records, baseline renders). A remembered impression of past runs
+  is not a comparison; name the artifacts.
+- **`recurringSignatures`** — each `{ signature, evidence, runs }` with at least
+  two run references. The fingerprint registry's ADD/PROMOTE evidence gate applies
+  verbatim here: an uncited tell is not a finding, and the writer refuses a record
+  that carries one.
+- **`verdict`** — `no-house-style-tell` · `house-style-tell` · `not-run`
+  (`not-run` must say why, e.g. no prior committed winner exists for this surface;
+  silence must never read as "checked and clean").
+- **ADVISORY, and recorded.** A `house-style-tell` verdict does NOT block, veto or
+  demote a winner. It is surfaced to the owner with its evidence and it lands in
+  the archive, so the next run starts from a named suspicion instead of a feeling.
 
 ## Ledger line — `<project>/.design/council/ledger.md`
 
@@ -144,6 +182,8 @@ token usage the harness reports; never estimate main-context tokens into it.
 
 ```json
 { "schema": "design/run@1", "date": "", "project": "", "surface": "", "intent": "",
+  "intentElicitation": { "asked": true, "ownerWords": "", "capturedInto": "",
+                         "waived": false, "waiverWords": "" },
   "edition": "full | lite | dev", "workerModel": "",
   "skillsFired": [], "engines": ["internal-E1..E4", "stitch", "claude-design"],
   "council": { "pass": "fast | deep", "seats": 0, "registerJurors": 0 },
@@ -154,6 +194,31 @@ token usage the harness reports; never estimate main-context tokens into it.
   "outcome": "shipped | current-design-wins | needs-human-review | report-only",
   "notes": "" }
 ```
+
+### `intentElicitation` — REQUIRED on every new run record (ENFORCED)
+
+The loop must ASK the owner what the design should FEEL like BEFORE any direction
+intent is written, and the answer becomes part of the ground context the directions
+have to serve. `records.mjs write run` REFUSES a record without this block — and the
+loop treats a refused write as a blocking finding, so a run that skipped the question
+cannot be reported complete. `validate` stays permissive: run archives written before
+this rule remain valid.
+
+| Field | Rule |
+|---|---|
+| `asked` | `true` when the question was put to the owner and answered. |
+| `ownerWords` | the owner's VERBATIM answer — intended feeling, register words, reference points. A paraphrase is not the answer. |
+| `capturedInto` | where the answer entered the ground context (the profile `_register` / a `registerClarifications` entry / the run's brief file). |
+| `waived` | `true` only when the owner explicitly declined the question. |
+| `waiverWords` | the owner's own words declining. A self-issued waiver is not a waiver. |
+
+Exactly one of `asked` / `waived` is true. Neither-true is rejected: a run that
+neither asked nor holds a waiver is a process defect, and the record says so rather
+than staying silent.
+
+*Source: the E3 commerce sign-off, 2026-07-26 — "Stop reusing the same design
+language; the loop should ASK the owner what theme and feeling is wanted before
+generating." Until this landed, nothing in the loop asked.*
 
 ## Juror record — `pixelhelm/juror-record@1` (per-juror evidence)
 
@@ -185,6 +250,26 @@ record to the committed verbatim transcript (never a summary), and
 committed alongside the run (the hash makes tampering visible); the record
 carries only its hash.
 
+### Rubric authoring — the in-use usability criterion (guidance, FUTURE sheets only)
+
+Every NEW rubric sheet a run seals must carry an explicit **in-use usability**
+criterion, worded so it is judged on the RENDERED ARTIFACT rather than on a
+description of it: *does this surface give the visitor the affordances their actual
+task needs — the controls, states, entry points and next steps that task requires —
+and are they present and reachable in the render, not merely implied by the copy?*
+Absent affordances are the finding; "the page explains what you could do" is not the
+same as the page letting you do it.
+
+This governs sheets authored from now on. It does NOT retrofit any sealed sheet: no
+past experiment's rubric is edited, re-scored, or re-interpreted against a criterion
+it never carried. The corresponding judging seat is the Spool lens's in-use clause
+(`design-council/references/lenses.md` §4).
+
+*Source: the owner, twice on separate surfaces — "there is still a lot of improvement
+with how easy it is for the user to use" (E1) and "there is a lot of missing UI, how
+is it easy for the user?" (E1 council review). Recorded across E1 and E3 as the one
+weakness present in every run.*
+
 **R2: the hashed transcript COVERS the gate outputs.** The juror's verbatim
 input transcript is the renders *and* each scored candidate's Layer-1 gate
 outputs (plus the named not-run gates), so `inputTranscriptSha256` binds the
@@ -199,7 +284,9 @@ panel run that way is the E4 failure mode
    `records.mjs write signoff`). Update the matching verdict's `ownerVerdict`
    and its ledger line. Write the `design/run@1` record (above) for the whole
    pass via `records.mjs write run`. A refused write is a blocking finding,
-   not a formality to skip.
+   not a formality to skip — and a run record with no `intentElicitation` is
+   refused outright, so a pass that never asked the owner what the design should
+   FEEL like surfaces here as a blocking process defect.
 2. Route by content:
    - owner CORRECTED or REJECTED something → dispatch `design-learn`
      WRITE-BACK: propose exactly ONE stamped, tagged lesson diff.

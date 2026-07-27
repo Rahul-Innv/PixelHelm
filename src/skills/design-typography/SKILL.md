@@ -101,9 +101,11 @@ treat as value ranges, not vibes:
 - **Leading (line-height) 1.2–1.45 unitless for body.** Display steps (≥ step 2) may
   go tighter (1.0–1.15). FAIL body leading outside [1.2, 1.45].
 - **Body size 15–25px** at the relevant anchor (step-0 ≥ 16px recommended).
-- **Real quotes/dashes.** Curly `’ “ ”`, apostrophe `’` (not `'`); em `—` for
-  breaks, en `–` for ranges; FAIL straight `'` `"` used as quotes and `--`/` - `
-  used as an em dash.
+- **Real quotes/dashes.** Curly `’ “ ”`, apostrophe `’` (not `'`); en `–` for
+  ranges; FAIL straight `'` `"` used as quotes. Dash hygiene fixes a dash that is
+  already there — it never ADDS an em dash to generated copy, where the em dash is a
+  registered AI-voice tell the owner banned (`ai-em-dash-copy`; see
+  `references/numerics.md`, the exception under the punctuation table).
 - **No double spaces** / no runs of whitespace between sentences.
 - **Caps need tracking.** All-caps / small-caps runs carry letter-spacing
   **0.05em–0.12em** and stay under one line.

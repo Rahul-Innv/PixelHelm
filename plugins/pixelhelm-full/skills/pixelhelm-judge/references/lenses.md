@@ -25,7 +25,7 @@ are register-subordinate; lens 7 stays the gate.
 - [1. Jobs — conviction](#1-jobs--conviction)
 - [2. Norman — calm & affordance](#2-norman--calm--affordance)
 - [3. Hall — brand honesty & AA-as-brief](#3-hall--brand-honesty--aa-as-brief)
-- [4. Spool — findability & task success](#4-spool--findability--task-success)
+- [4. Spool — findability, task success & in-use usability](#4-spool--findability--task-success)
 - [5. Compliance-honesty — anti-dark-pattern](#5-compliance-honesty--anti-dark-pattern)
 - [6. Craft — the micro-craft floor](#6-craft--the-micro-craft-floor)
 - [7. Register-fit — the profile `_register`, the gate seat](#7-register-fit--the-profile-_register-the-gate-seat)
@@ -105,6 +105,35 @@ Scannability first: "what is this / what do I do" answered in a single glance.
   populate-threshold (when this section becomes useful). A blank region or a
   lorem placeholder is a findability defect. When the WHOLE surface is a
   first-run/zero-data screen, judge it as the primary task, not an edge case.
+- **IN-USE USABILITY — the affordance census (load-bearing).** Findability asks
+  *can I find it*; this asks *can I DO it here*. Name the visitor's actual task
+  on this surface, list the affordances that task needs — the controls, inputs,
+  filters, sort, comparison, state feedback, entry points, and the next step
+  after the primary action — then check each one against the RENDERED ARTIFACT.
+  Judge only what is present and reachable in the render. A description of a
+  capability, a label implying one, or a plan to add it later is not the
+  affordance; **absent UI is the finding**, and it is stated as the specific
+  missing affordance and the task it blocks ("no way to compare two rows", "the
+  filter has no clear-all", "no path from the alert to the thing it is about"),
+  never as a general "could be easier to use".
+  - **Reads the render asking:** "If I actually had to do this here, what would I
+    reach for that isn't on the screen?"
+  - **Failure tells:** a surface that reads well and does nothing; a primary
+    action with no visible result state; a list with no way to act on an item; a
+    dense table with no sort/filter the task obviously needs; a recommendation
+    with no route to the thing recommended; controls implied by copy but absent
+    from the render.
+  - **The false-positive guard still applies both ways:** a deliberately
+    read-only surface is not missing controls, and scope the census to THIS
+    surface's task — a missing feature that belongs on another screen is not a
+    finding here. But do not let "out of scope" absorb an affordance the stated
+    task cannot complete without.
+  - *Why this is its own clause: across E1 and E3 the owner named in-use ease as
+    the one weakness present in every run — "there is still a lot of improvement
+    with how easy it is for the user to use", and, on a panel-approved field,
+    "there is a lot of missing UI. Like, how is it easy for the user?" The
+    existing scannability reading passed those surfaces; nothing took a census of
+    what the visitor could actually do.*
 
 ## 5. Compliance-honesty — anti-dark-pattern
 

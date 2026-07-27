@@ -1,6 +1,7 @@
 # Gates and the iterate loop
 
 Table of contents:
+0. The elicitation gate (REQUIRED before any direction intent)
 1. Why GROUND -> taste -> code (the gate-order rationale)
 2. The two-layer evaluator seam (Layer-1 hard / Layer-2 advisory)
 3. The honest banner (always relay it)
@@ -8,10 +9,54 @@ Table of contents:
 5. Cost-aware re-render
 6. Candidate elimination in the tournament
 7. The incumbent guard (REDESIGN)
+8. The cross-run felt-variety check (ADVISORY)
 
 The router owns gate ORDER and the loop. The gates themselves live in the
 sub-skills (`design-evaluate` Layer-1 = `static-gates.mjs`; `design-render` =
 `render.mjs`). The router never re-implements them — it sequences them.
+
+---
+
+## 0. The elicitation gate — ASK what it should FEEL like, first
+
+**REQUIRED on every intent that produces a new look** (NEW DESIGN, and REDESIGN by
+either method). It runs at the START of the directions stage, BEFORE any direction
+name, thesis, or intent line is written — not after the field exists, when the
+question has already been answered by the machine.
+
+```
+ELICITATION GATE (before the first direction intent is written):
+  ASK the owner, in one bounded exchange:
+    - what should this surface FEEL like?   (the register, in their words)
+    - what register/tone is wanted, and what is explicitly NOT wanted?
+    - reference points: surfaces they already like, and why
+  THEN:
+    - CAPTURE the answer VERBATIM. A paraphrase is not the answer.
+    - FOLD it into the ground context as a first-class constraint every
+      direction must serve — alongside the profile `_register`, never
+      instead of it.
+    - or, if the owner explicitly declines, record the WAIVER in their
+      own words. A self-issued waiver is not a waiver.
+  A run that did NEITHER is a PROCESS DEFECT — surfaced like any other
+  blocking finding, not noted as a gap in the report's prose.
+```
+
+**How it is enforced.** The pass's `run@1` record carries `intentElicitation`, and
+`records.mjs write run` REFUSES the record without it (exit 1, nothing written). The
+loop already treats a refused record write as a blocking finding, so an unelicited run
+cannot be reported complete. Field shapes and the exact rules:
+`references/close-the-loop.md`.
+
+**What it does not do.** The captured answer does not override the profile
+`_register` and does not become a token, a palette or a layout mandate. It is ground
+context: the directions must SERVE it, and the register-fit seat still binds to the
+literal `_register` string.
+
+*Why: across four archetypes the loop generated a full field, rendered it, judged it,
+and only then asked the owner what they thought. The owner's verdict on the E3
+commerce run, 2026-07-26: "Stop reusing the same design language; the loop should ASK
+the owner what theme and feeling is wanted before generating." The question had no
+place in the loop at all until this gate.*
 
 ---
 
@@ -218,3 +263,48 @@ lowers register-fit vs the incumbent is treated like a Layer-1 regression — bl
 This guard is SHARED by both REDESIGN methods — the tournament (`design-council`) and
 incremental-polish mode — so no REDESIGN path, however small the change, can ship a
 direction that is worse overall or colder/less on-register than the incumbent.
+
+---
+
+## 8. The cross-run felt-variety check (ADVISORY, and recorded)
+
+A tournament compares arms WITHIN one run. It is structurally blind to a house style
+that repeats ACROSS runs — and that blindness has been measured, not supposed. On E3
+(2026-07-26) every registered divergence metric passed on every arm — dE00 distance,
+layout class, motif Jaccard, blind-intent recovery — while the owner's verdict was:
+
+> "I see a theme - all of them are similar to each other and to the set-1 style I
+> called merely easier on the eyes."
+
+Those metrics measure DIFFERENCE. They do not measure felt variety, and a field can be
+pairwise-distinct and still read as one house's work.
+
+So the directions/tournament stage runs one extra comparison, outward in time:
+
+```
+FELT-VARIETY CHECK (at the tournament, alongside the in-run divergence metrics):
+  Compare THIS run's arms against PRIOR runs' COMMITTED WINNERS for this
+  project — the ledger lines, the archived verdict records, the baseline
+  renders. Not remembered impressions: named artifacts.
+  Look for RECURRING STRUCTURAL SIGNATURES, not shared palettes:
+    the same spine (hero -> three-up -> ledger -> footer note),
+    the same hierarchy metaphor reused under a new name,
+    the same signature element re-skinned,
+    the same paragraph/section rhythm,
+    the same "one accent on a quiet neutral" solution to every register.
+  Each candidate tell needs CITED evidence across >= 2 runs. The anti-cliche
+  registry's ADD/PROMOTE evidence gate applies verbatim: an uncited tell is
+  not a finding. Vibes do not move this either.
+  RECORD the outcome in the verdict's `houseStyleCheck`.
+```
+
+**ADVISORY — say so, and mean it.** A recurring signature is a *house-style tell*: it
+is recorded with its evidence and surfaced to the owner. It does NOT block a winner,
+does NOT veto a direction, does NOT cost an iteration, and is NOT a Layer-1 finding.
+The felt-variety judgment is a taste call on rendered artifacts, and this seam does not
+pretend otherwise; what it enforces is that the comparison HAPPENED and that its result
+is on the record. The writer WARNS when a multi-candidate verdict carries no
+`houseStyleCheck` (`references/close-the-loop.md`); a warning is the whole mechanism.
+
+A `not-run` verdict is legitimate — the first run for a surface has nothing to compare
+against — but it must say so. Silence must never read as "checked and clean".

@@ -17,7 +17,17 @@ not a numeric gate — but the bans below are hard.
 - **Outer-glow / neon `box-shadow`** used decoratively.
 
 ## Layout & content tells
-- **Three equal cards in a row** as the default feature section.
+- **Three equal cards in a row** as the default feature section — three items of equal
+  weight, width, heading length and body length, with no hierarchy among them and no
+  reason the count is three (registry: `symmetric-three-card`). Three cards ARE right
+  when the subject genuinely has three peer things; the tell is symmetry by reflex.
+- **Em dashes in body copy** — the loudest AI-voice tell in generated prose, and an
+  owner ban (registry: `ai-em-dash-copy`; owner on the E3 editorial arms, 2026-07-26,
+  where every arm carried them: "not supposed to be there"). An en-dash range and a
+  table's data-absent glyph are not the tell.
+- **Uniform paragraph rhythm** — every paragraph the same two-to-three sentences, every
+  section the same length; prose with a metronome under it (registry:
+  `uniform-paragraph-rhythm`).
 - **Fabricated metric blocks** ("10x faster", "99.9%") with no source.
 - **Emoji used as structural icons** — use an SVG set (Lucide/Heroicons), one consistent family.
 - **Generic per-vertical palette with no real exemplar** — every "SaaS" rendered as the same

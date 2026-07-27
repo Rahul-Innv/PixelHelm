@@ -172,13 +172,14 @@ Two evidence grades, kept honest on purpose:
   excluded gap's size on the record. Committed failures remain the point: the gates
   block real defects, and a record is only ever cleared by fixing the page or by a
   documented re-registration of the gate itself — never by editing the record.
-- **The engine is checkable offline.** The demo above and a 33-test offline suite
+- **The engine is checkable offline.** The demo above and a 37-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
-  output floor and the record writer (judge verdicts and per-juror records)
-  behaviorally; the browser-arm validators at contract level, with their committed
-  Harborline runs carrying the behavioral evidence, since CI has no browser.)
+  output floor, the anti-cliché grep, and the record writer (judge verdicts,
+  per-juror records, and run records) behaviorally; the browser-arm validators at
+  contract level, with their committed Harborline runs carrying the behavioral
+  evidence, since CI has no browser.)
 
 **Attested history (from the author's private development runs; no artifacts are
 committed in this tree, so treat these as narrative until re-run with records):**
@@ -215,7 +216,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 33 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 37 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 

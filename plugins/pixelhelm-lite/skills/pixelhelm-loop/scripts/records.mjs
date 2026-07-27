@@ -13,12 +13,22 @@
 // in close-the-loop.md, "never edit an archive"). `write` also appends the judge
 // ledger line so the next run's Phase 0 read finds it.
 //
-// Two SOFT integrity checks fire on a judge-verdict write (stderr, and a `warnings`
+// Three SOFT integrity checks fire on a judge-verdict write (stderr, and a `warnings`
 // array under --json) — warnings, never refusals, because records predating each rule
-// stay valid: (1) no matching per-juror records (sealed E4 sheet), and (2) a SCORED
+// stay valid: (1) no matching per-juror records (sealed E4 sheet), (2) a SCORED
 // candidate with no referenced floor evidence (the R1 repair — floor-clean is a
 // precondition for esteem scoring; a floor-failing or gate-less candidate belongs in
-// `unscored`, never "scored low"). See evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md.
+// `unscored`, never "scored low"), and (3) a multi-candidate verdict carrying no
+// cross-run `houseStyleCheck` (the felt-variety check — ADVISORY by construction).
+// See evals/validation/E4-JUDGING-SEAT-REPAIR-DECISION.md.
+//
+// ONE HARD write-time precondition, on `run` only: a run record must carry
+// `intentElicitation` — the owner's own words about the intended feeling/register/
+// reference points, captured BEFORE any direction intent was written, or an explicit
+// owner waiver. `write run` REFUSES without it (exit 1, nothing written), and the loop
+// treats a refused write as a blocking finding. `validate` stays permissive so archives
+// written before this rule remain valid. Source: the 2026-07-26 E3 commerce sign-off —
+// "the loop should ASK the owner what theme and feeling is wanted before generating."
 //
 // Store: writes go to <project>/.pixelhelm/ (canonical; legacy stores are read-only
 // compatibility and are never written).
@@ -46,6 +56,7 @@ const CLARIFIES = ["register", "taste", "scope", "none"];
 const FOLLOWUPS = ["lesson-proposed", "profile-taste-proposed", "none"];
 const EDITIONS = ["full", "lite", "dev"];
 const OUTCOMES = ["shipped", "current-design-wins", "needs-human-review", "report-only"];
+const HOUSE_STYLE_VERDICTS = ["no-house-style-tell", "house-style-tell", "not-run"];
 
 // ---------- validators ----------
 const isStr = (v) => typeof v === "string";
@@ -103,6 +114,41 @@ function validateJudgeVerdict(r) {
       } else if (candidateIds.includes(u.candidate)) {
         errors.push(`unscored[${i}].candidate "${u.candidate}" is also a scored candidate — UNSCORED means excluded from scoring, never "scored low"`);
       }
+    }
+  }
+  // Felt variety across RUNS — the cross-run house-style check. ADVISORY by construction:
+  // it is recorded and surfaced, it never blocks a winner. Optional for compatibility;
+  // shape-checked when present, and absence is caught SOFTLY at write time.
+  // (Why: E3 2026-07-26 — every registered divergence metric PASSED while the owner saw
+  // "a theme, all of them are similar"; those metrics measure difference, not felt variety.)
+  if (r.houseStyleCheck !== undefined) {
+    const h = r.houseStyleCheck;
+    if (!isObj(h)) errors.push("houseStyleCheck must be an object { comparedAgainst, recurringSignatures, verdict, why }");
+    else {
+      if (!Array.isArray(h.comparedAgainst) || !h.comparedAgainst.every(nonEmpty)) {
+        errors.push("houseStyleCheck.comparedAgainst must be an array of PRIOR committed winner references (ledger lines, verdict records, or baseline renders) — a memory of past runs is not a comparison");
+      }
+      if (!Array.isArray(h.recurringSignatures)) {
+        errors.push("houseStyleCheck.recurringSignatures must be an array of { signature, evidence, runs }");
+      } else for (const [i, s] of h.recurringSignatures.entries()) {
+        if (!isObj(s) || !nonEmpty(s.signature) || !nonEmpty(s.evidence)
+            || !Array.isArray(s.runs) || s.runs.length < 2 || !s.runs.every(nonEmpty)) {
+          errors.push(`houseStyleCheck.recurringSignatures[${i}] must be { signature, evidence, runs: [>= 2 run refs] } — the fingerprint ADD/PROMOTE evidence rule applies: an uncited tell is not a finding`);
+        }
+      }
+      if (!HOUSE_STYLE_VERDICTS.includes(h.verdict)) {
+        errors.push(`houseStyleCheck.verdict must be one of ${HOUSE_STYLE_VERDICTS.join(" | ")}`);
+      }
+      if (h.verdict === "house-style-tell" && Array.isArray(h.recurringSignatures) && h.recurringSignatures.length === 0) {
+        errors.push('houseStyleCheck.verdict "house-style-tell" requires at least one cited recurringSignatures entry');
+      }
+      if (h.verdict === "not-run" && !nonEmpty(h.why)) {
+        errors.push('houseStyleCheck.verdict "not-run" must say why in `why` (e.g. no prior committed winner for this surface) — silence must never read as "checked and clean"');
+      }
+      if (h.verdict !== "not-run" && Array.isArray(h.comparedAgainst) && h.comparedAgainst.length === 0) {
+        errors.push('houseStyleCheck.comparedAgainst is empty — a verdict other than "not-run" claims a comparison happened, so it must name the prior committed winners it compared against');
+      }
+      if (!isStr(h.why)) errors.push("houseStyleCheck.why must be a string");
     }
   }
   const p = r.registerFitPanel;
@@ -184,10 +230,38 @@ function validateSignoff(r) {
   return errors;
 }
 
+// The elicitation record: what the owner said the design should FEEL like, captured
+// before any direction intent was written — or an explicit owner waiver, in the owner's
+// words. Returns [] when the block is well-formed. Used twice: shape-checked here when
+// the field is present (so old archives stay valid), and REQUIRED at `write run` time
+// (`elicitationWriteErrors`), where its absence refuses the write.
+function intentElicitationErrors(e) {
+  if (!isObj(e)) return ["intentElicitation must be an object { asked, ownerWords, capturedInto, waived, waiverWords }"];
+  const errors = [];
+  if (typeof e.asked !== "boolean") errors.push("intentElicitation.asked must be a boolean");
+  if (typeof e.waived !== "boolean") errors.push("intentElicitation.waived must be a boolean");
+  if (e.asked === true && e.waived === true) errors.push("intentElicitation cannot be both asked and waived — record what actually happened");
+  if (e.asked === false && e.waived === false) errors.push("intentElicitation must record either an asked-and-answered elicitation or an explicit owner waiver — a run that did neither is a process defect, not a valid record");
+  if (e.asked === true) {
+    if (!nonEmpty(e.ownerWords)) errors.push("intentElicitation.ownerWords must carry the owner's VERBATIM answer about the intended feeling / register / reference points — a paraphrase is not the answer");
+    if (!nonEmpty(e.capturedInto)) errors.push("intentElicitation.capturedInto must name where the captured answer entered the ground context the directions had to serve");
+  }
+  if (e.waived === true && !nonEmpty(e.waiverWords)) {
+    errors.push("intentElicitation.waiverWords must carry the owner's own words declining the question — a self-issued waiver is not a waiver");
+  }
+  for (const k of ["ownerWords", "capturedInto", "waiverWords"]) {
+    if (e[k] !== undefined && !isStr(e[k])) errors.push(`intentElicitation.${k} must be a string`);
+  }
+  return errors;
+}
+
 function validateRun(r) {
   const errors = [];
   commonHeader(r, errors, SCHEMAS.run);
   if (!nonEmpty(r.intent)) errors.push("intent must be non-empty");
+  // Optional HERE for compatibility (runs archived before this rule stay valid);
+  // REQUIRED at write time — see elicitationWriteErrors.
+  if (r.intentElicitation !== undefined) errors.push(...intentElicitationErrors(r.intentElicitation));
   if (!EDITIONS.includes(r.edition)) errors.push(`edition must be one of ${EDITIONS.join(" | ")}`);
   if (!isStr(r.workerModel)) errors.push("workerModel must be a string");
   for (const k of ["skillsFired", "engines"]) {
@@ -276,6 +350,7 @@ const TEMPLATES = {
     mode: "redesign-tournament", pass: "fast",
     candidates: { incumbent: { label: "", kind: "incumbent", render: "", floorEvidence: { gateOutputs: [], notRun: [] } } },
     unscored: [],
+    houseStyleCheck: { comparedAgainst: [], recurringSignatures: [], verdict: "not-run", why: "" },
     registerFitPanel: { jurors: 5, scores: { incumbent: [] }, medians: { incumbent: 0 }, nonOverlapping: true, modeFairness: "both-modes" },
     lensScores: {},
     constraints: [],
@@ -292,6 +367,7 @@ const TEMPLATES = {
   run: {
     schema: SCHEMAS.run,
     date: "", project: "", surface: "", intent: "",
+    intentElicitation: { asked: true, ownerWords: "", capturedInto: "", waived: false, waiverWords: "" },
     edition: "lite", workerModel: "",
     skillsFired: [], engines: [],
     council: { pass: "fast", seats: 0, registerJurors: 0 },
@@ -344,6 +420,21 @@ function floorEvidenceWarning(record) {
     .map(([id]) => id);
   if (!bare.length) return null;
   return `scored candidate(s) with no referenced floor evidence: ${bare.join(", ")} — R1 makes floor-clean a precondition for esteem scoring, so each scored candidate carries candidates.<id>.floorEvidence.gateOutputs (gate ARTIFACT paths). A candidate that fails or lacks its gates belongs in "unscored", never scored low; only records predating the R1 repair may omit this`;
+}
+
+// Felt-variety integrity (SOFT, same pattern as the two warnings above). A tournament
+// judged only WITHIN one run cannot see a house style that repeats ACROSS runs — E3
+// 2026-07-26: dE00, layout class, motif Jaccard and blind-intent all PASSED while the
+// owner's verdict was "I see a theme - all of them are similar to each other and to the
+// set-1 style". So a multi-candidate verdict records what it compared the field against.
+// The check is ADVISORY: it never blocks a winner, and its absence never refuses a write
+// (records predating this rule stay valid) — but silence is warned about, not accepted.
+function houseStyleWarning(record) {
+  const cands = isObj(record.candidates) ? record.candidates : {};
+  if (Object.keys(cands).length < 2) return null;
+  const h = record.houseStyleCheck;
+  if (isObj(h) && HOUSE_STYLE_VERDICTS.includes(h.verdict)) return null;
+  return `multi-candidate verdict with no houseStyleCheck — record what this field was compared against across PRIOR runs' committed winners, and cite the evidence for any recurring structural signature. ADVISORY: a house-style tell is recorded, never a veto. In-run divergence metrics measure difference, not felt variety (E3 2026-07-26 owner review)`;
 }
 
 function ledgerLine(r, fileName) {
@@ -413,6 +504,14 @@ if (cmd === "write") {
   catch (e) { console.error(`records: stdin is not valid JSON: ${e.message}`); process.exit(2); }
   const errors = validateRecord(record);
   if (record?.schema !== SCHEMAS[kind]) errors.unshift(`record schema ${JSON.stringify(record?.schema)} does not match write kind "${kind}"`);
+  // HARD write-time precondition (run only): the loop must have ASKED the owner what the
+  // design should feel like before any direction intent was written, or hold an explicit
+  // owner waiver. A run that did neither is a process defect; refusing the write makes it
+  // a blocking finding rather than a missing paragraph. `validate` stays permissive so
+  // archives written before this rule remain valid.
+  if (kind === "run" && isObj(record) && record.intentElicitation === undefined) {
+    errors.push('intentElicitation is REQUIRED on a new run record: capture the owner\'s own words on the intended feeling / register / reference points BEFORE any direction intent, or record an explicit owner waiver. Owner, 2026-07-26: "the loop should ASK the owner what theme and feeling is wanted before generating."');
+  }
   if (errors.length) {
     if (asJson) console.log(JSON.stringify({ written: null, valid: false, errors }, null, 2));
     else { console.error(`records: REFUSED — the record does not validate; nothing was written. A panel/run with no valid record did not happen.`); for (const e of errors) console.error(`  x ${e}`); }
@@ -436,6 +535,8 @@ if (cmd === "write") {
     if (warn) warnings.push(warn);
     const floorWarn = floorEvidenceWarning(record);
     if (floorWarn) warnings.push(floorWarn);
+    const houseWarn = houseStyleWarning(record);
+    if (houseWarn) warnings.push(houseWarn);
   }
   if (asJson) console.log(JSON.stringify({ written, valid: true, errors: [], warnings }, null, 2));
   else {

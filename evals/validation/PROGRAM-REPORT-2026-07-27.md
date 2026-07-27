@@ -73,3 +73,15 @@ on human judgment.
   informative (`E4-JUDGING-SEAT-REPAIR-DECISION.md` and the E4-R report).
 - The owner-taste findings above are being encoded into the system as
   machinery; until that lands they are lessons, not gates.
+  **Update, same day (2026-07-27):** the encoding pass landed and its ledger is
+  `OWNER-FINDINGS-ENCODING-2026-07-27.md`. Read it before repeating the sentence
+  above: exactly ONE of the five is a gate (the elicitation step — a run record
+  with no `intentElicitation` is refused, so a run that never asked cannot close
+  its loop). Two are advisory machinery that records and warns without blocking
+  (the cross-run house-style check; the em-dash fingerprint firing through the
+  SOFT anti-cliche grep). Two remain guidance with no mechanical check behind
+  them (the in-use usability lens item plus rubric-authoring guidance for future
+  sheets; the lead-with-the-answer register rule). Nothing in the "What may NOT
+  be claimed" list above is weakened by this: the owner-vs-panel quality gap and
+  the house-style finding are recorded facts about runs that happened, and no
+  encoding changes them.

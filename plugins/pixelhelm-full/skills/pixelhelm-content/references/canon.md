@@ -147,6 +147,15 @@ three AI-default clusters; this is the verbal one.)
 - Emoji as personality (✨🚀🎉) and exclamation-as-enthusiasm.
 
 **Voice tells**
+- **Em dashes in body copy — the loudest one, and an owner-banned tell.** Registered as
+  the `ai-em-dash-copy` fingerprint (seeds registry, scope global). Owner, on the E3
+  editorial arms where it appeared in ALL THREE, 2026-07-26: *"em dashes present in all
+  arms - not supposed to be there."* Use a period, a comma, a colon, or restructure the
+  sentence. Not the tell: an en dash range (`2020–2024`), or the em dash as a table's
+  data-absent glyph.
+- **Uniform paragraph rhythm** — every paragraph two-to-three sentences, every section
+  the same length, every list the same item count. Human prose varies; the metronome is
+  the tell (`uniform-paragraph-rhythm`, candidate).
 - "We" apologizing ("We're sorry…") — the interface, not a person, is talking.
 - "Please" / "simply" / "just" / "in order to" filler.
 - Title Case On Every Button.

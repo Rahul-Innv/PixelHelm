@@ -113,6 +113,26 @@ Keep these three in lockstep — the registry is the source, the others consume:
 Never edit the profile or evaluate's gate from this skill directly — propose the
 diff; the owner saves it. Never mint a token here (that is `pixelhelm-tokens`).
 
+**What "wired" actually buys you.** The Layer-1 anti-cliche grep is a SOFT gate:
+every `any[]` match is reported and none of them exits non-zero. A fingerprint in a
+profile's `bannedClusters` therefore FIRES; it does not BLOCK. Say "advisory" when
+describing it, never "enforced".
+
+**Character-needle tells (e.g. `ai-em-dash-copy`).** Some real tells are a single
+character rather than a class or a hex. The grep is a case-insensitive substring
+match over whole lines of source, so a character needle matches inside comments,
+inside CSS, and inside legitimate non-prose uses (an em dash as a table's
+data-absent glyph). That false-positive surface is expected and is precisely why the
+gate is soft and human-read: the shipped worked example reports 12 `ai-em-dash-copy`
+matches of which 1 is the actual page-copy tell (`examples/harborline/README.md`).
+Carry the carve-outs in the entry's `note` so the reader can sort the matches, and do
+NOT respond to the noise by hard-gating the needle or by deleting the entry.
+
+**Copy tells belong here too.** The registry is not visual-only — an AI voice in the
+words is the same failure as an AI palette. `ai-em-dash-copy` (greppable, active),
+`uniform-paragraph-rhythm` and `symmetric-three-card` (describe-only, candidate) are
+seeded in `seeds/fingerprints-seed.md`.
+
 ## What is NOT slop (the guard)
 
 Mandatory before flagging anything: a MOTIVATED bold choice is a SUCCESS, never a

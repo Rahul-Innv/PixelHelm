@@ -125,3 +125,14 @@ merge.
   before scoring; 20/20 jurors independently refused to score a floor-failing
   candidate when handed its gate outputs, each naming the correct gate).
 - E5 human protocol: defined in artifact 14; owner-gated (recruitment).
+- `OWNER-FINDINGS-ENCODING-2026-07-27.md` — the five owner taste findings from the
+  E1 + E3 sign-offs, turned into machinery. Records what shipped at which level and
+  says so strictly: **ENFORCED** = the elicitation gate (a run record with no
+  `intentElicitation` is refused, so a run that never asked the owner what the design
+  should feel like cannot close its loop) and the shape rules on the two new record
+  blocks; **ADVISORY** = the cross-run house-style check (recorded and warned about,
+  never a veto) and the `ai-em-dash-copy` fingerprint firing through the SOFT
+  anti-cliche grep; **DOCUMENTED** = the in-use usability lens item + rubric-authoring
+  guidance for future sheets, the two describe-only fingerprints, and the
+  lead-with-the-answer register guidance. It also names what could not be encoded
+  mechanically and why. No sealed sheet or run archive was touched.
