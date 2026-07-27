@@ -1,0 +1,353 @@
+<!doctype html>
+<html lang="en" data-arm="potting-bench">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Foxglove &amp; Fern seed catalog. The potting bench.</title>
+<meta name="description" content="Heirloom seed packets from Foxglove &amp; Fern, a two-person shop: climbing vines, cutting flowers, and kitchen-garden vegetables, grouped by sowing season. Ships to UK addresses only; flat &pound;1.90 postage, free over &pound;15.">
+<script type="application/json" id="token-contract">
+{"light":{"paper":"#f7f6ef","ink":"#26291f","muted":"#5c6152","leaf":"#33612f","stock":"#2f6238","oos":"#8a3a2e","rule":"#84887a"},"dark":{"paper":"#151711","ink":"#e9e8dc","muted":"#b0b2a2","leaf":"#a4cb92","stock":"#95c99e","oos":"#e39a86","rule":"#6c7062"},"gatedPairs":[{"fg":"ink","on":["paper"],"kind":"text"},{"fg":"muted","on":["paper"],"kind":"text"},{"fg":"leaf","on":["paper"],"kind":"text"},{"fg":"stock","on":["paper"],"kind":"text"},{"fg":"oos","on":["paper"],"kind":"text"},{"fg":"rule","on":["paper"],"kind":"graphic"}]}
+</script>
+<style>
+/* potting-bench: the catalog laid out like the bench itself. Seed drawers by
+   season, hand-labeled rows, the basket controls kept small and tidy like
+   pencil marks in a margin. */
+
+:root {
+  color-scheme: light;
+  --paper: #f7f6ef;
+  --ink: #26291f;
+  --muted: #5c6152;
+  --leaf: #33612f;
+  --stock: #2f6238;
+  --oos: #8a3a2e;
+  --rule: #84887a;
+}
+
+html[data-theme="dark"] {
+  color-scheme: dark;
+  --paper: #151711;
+  --ink: #e9e8dc;
+  --muted: #b0b2a2;
+  --leaf: #a4cb92;
+  --stock: #95c99e;
+  --oos: #e39a86;
+  --rule: #6c7062;
+}
+
+:root {
+  --serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --sans: "Avenir Next", "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+  --t-xl: clamp(1.9rem, 1.3rem + 2.4vw, 2.7rem);
+  --t-md: 1.0625rem;
+  --t-sm: 0.8125rem;
+  --s1: 0.25rem;
+  --s2: 0.5rem;
+  --s3: 1rem;
+  --s4: 1.75rem;
+  --s5: 3rem;
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--serif);
+  font-size: var(--t-md);
+  line-height: 1.55;
+  padding: var(--s4) var(--s3) var(--s5);
+}
+
+.bench { max-width: 46rem; margin: 0 auto; }
+
+a { color: var(--leaf); text-underline-offset: 3px; }
+a:focus-visible, button:focus-visible { outline: 3px solid var(--leaf); outline-offset: 2px; }
+
+.mast { border-bottom: 3px double var(--rule); padding-bottom: var(--s3); }
+.mast h1 { font-size: var(--t-xl); line-height: 1.1; }
+.mast .kicker {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--leaf);
+  margin-bottom: var(--s2);
+}
+.mast .greeting { margin-top: var(--s2); max-width: 40rem; }
+.shipnote {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  color: var(--muted);
+  margin-top: var(--s2);
+}
+
+/* season shelf navigation: plain anchor chips, generous targets */
+.seasons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--rule);
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  list-style: none;
+}
+.seasons a {
+  display: inline-block;
+  border: 1px solid var(--rule);
+  border-radius: 1rem;
+  padding: 0.45rem 0.9rem;
+  text-decoration: none;
+  color: var(--ink);
+}
+
+.drawer { margin-top: var(--s4); }
+.drawer > h2 {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  color: var(--leaf);
+  border-bottom: 1px solid var(--rule);
+  padding-bottom: var(--s2);
+}
+.drawer > p.note { font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); margin-top: var(--s2); }
+
+.drawer ul { list-style: none; }
+.packet {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: var(--s1) var(--s3);
+  padding: var(--s3) 0;
+  border-bottom: 1px solid var(--rule);
+}
+.packet h3 { font-size: 1.15rem; line-height: 1.3; }
+.packet .kind { font-style: italic; color: var(--muted); }
+.packet .facts {
+  font-family: var(--sans);
+  font-size: var(--t-sm);
+  color: var(--muted);
+  margin-top: var(--s1);
+}
+.packet .blurb { margin-top: var(--s1); max-width: 34rem; }
+.packet .price {
+  font-family: var(--sans);
+  font-size: 1.2rem;
+  font-weight: 700;
+  font-variant-numeric: tabular-nums;
+  text-align: right;
+}
+.stockline { font-family: var(--sans); font-size: var(--t-sm); font-weight: 700; text-align: right; }
+.instock { color: var(--stock); }
+.oosline { color: var(--oos); }
+.pending { font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); text-align: right; }
+
+/* THE MARGIN CONTROLS: deliberately petite stepper + add, packed tight.
+   Neat as a pencil note; sized like one too. */
+.margin-controls {
+  grid-column: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 4px;
+  margin-top: var(--s1);
+  font-family: var(--sans);
+}
+.margin-controls button {
+  width: 18px;
+  height: 18px;
+  font-size: 11px;
+  line-height: 1;
+  border: 1px solid var(--ink);
+  border-radius: 3px;
+  background: var(--paper);
+  color: var(--ink);
+  cursor: pointer;
+}
+.margin-controls .qty {
+  width: 22px;
+  text-align: center;
+  font-size: 11px;
+  font-variant-numeric: tabular-nums;
+}
+.margin-controls .add {
+  width: auto;
+  padding: 0 6px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+.margin-controls button:hover { background: var(--rule); }
+
+.aboutshop { margin-top: var(--s5); border-top: 3px double var(--rule); padding-top: var(--s3); }
+.aboutshop p { max-width: 40rem; }
+.aboutshop p + p { margin-top: var(--s2); }
+.aboutshop .fine { font-family: var(--sans); font-size: var(--t-sm); color: var(--muted); }
+
+@media (max-width: 520px) {
+  .packet { grid-template-columns: 1fr auto; }
+  .packet .blurb { grid-column: 1 / -1; }
+}
+</style>
+</head>
+<body>
+<div class="bench">
+
+<header class="mast">
+  <p class="kicker">Foxglove &amp; Fern &middot; heirloom seed</p>
+  <h1>The potting bench</h1>
+  <p class="greeting">Every packet here is a line we grow ourselves or know the grower of. Two of us run the shop, so the catalog is short on purpose: if it is listed, we can vouch for it.</p>
+  <p class="shipnote">Ships to UK addresses only. Flat &pound;1.90 postage; free over &pound;15.</p>
+</header>
+
+<nav aria-label="Jump to a sowing drawer">
+  <ul class="seasons">
+    <li><a href="#winter">Winter start</a></li>
+    <li><a href="#spring">Spring sowing</a></li>
+    <li><a href="#autumn">Autumn option</a></li>
+  </ul>
+</nav>
+
+<main>
+
+<section id="winter" class="drawer" aria-labelledby="winter-h">
+  <h2 id="winter-h">Start under cover, late winter</h2>
+  <p class="note">Sown indoors while the frosts still come; planted out when the garden warms.</p>
+  <ul>
+    <li class="packet" data-model="FF-011">
+      <div>
+        <h3>Cathedral Bells <span class="kind">(Cobaea scandens)</span></h3>
+        <p class="facts">Climbing vine &middot; sow Feb&ndash;Apr &middot; moderate &middot; 12 seeds &middot; 72% germination</p>
+        <p class="blurb">Violet bell flowers to 6m by late summer; needs a warm start indoors. <a href="product.html">Read the full growing page</a>.</p>
+      </div>
+      <p class="price">&pound;3.50</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Cathedral Bells">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Cathedral Bells">+</button>
+        <button type="button" class="add" aria-label="Add Cathedral Bells to basket">Add</button>
+      </div>
+    </li>
+    <li class="packet" data-model="FF-008">
+      <div>
+        <h3>Winter Windowsill Chili</h3>
+        <p class="facts">Compact perennial &middot; sow Jan&ndash;Mar &middot; moderate &middot; 10 seeds &middot; 65% germination (estimated from last season's line)</p>
+        <p class="blurb">Fruits indoors through winter on a bright sill.</p>
+      </div>
+      <p class="price">&pound;4.10</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Winter Windowsill Chili">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Winter Windowsill Chili">+</button>
+        <button type="button" class="add" aria-label="Add Winter Windowsill Chili to basket">Add</button>
+      </div>
+    </li>
+    <li class="packet" data-model="FF-023">
+      <div>
+        <h3>Dragon's Breath Celosia</h3>
+        <p class="facts">Half-hardy annual &middot; sow Feb&ndash;Apr &middot; hard &middot; 30 seeds &middot; 60% germination</p>
+        <p class="blurb">Flame-red plumes; fussy about damp. One for the patient gardener.</p>
+      </div>
+      <p class="price">&pound;3.90</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Dragon's Breath Celosia">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Dragon's Breath Celosia">+</button>
+        <button type="button" class="add" aria-label="Add Dragon's Breath Celosia to basket">Add</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="spring" class="drawer" aria-labelledby="spring-h">
+  <h2 id="spring-h">Straight into spring</h2>
+  <p class="note">Sown as the soil wakes up; the easiest drawer on the bench.</p>
+  <ul>
+    <li class="packet" data-model="FF-017">
+      <div>
+        <h3>Black Nebula Carrot</h3>
+        <p class="facts">Root vegetable &middot; sow Mar&ndash;Jul &middot; easy &middot; 300 seeds &middot; 78% germination</p>
+        <p class="blurb">Deep purple heirloom carrot; holds color when roasted.</p>
+      </div>
+      <p class="price">&pound;3.20</p>
+      <p class="stockline oosline">Out of stock</p>
+      <p class="pending">We will list it again when the new harvest is cleaned and tested.</p>
+    </li>
+    <li class="packet" data-model="FF-002">
+      <div>
+        <h3>Moonlight Nasturtium</h3>
+        <p class="facts">Trailing annual &middot; sow Apr&ndash;Jun &middot; easy &middot; 20 seeds &middot; 90% germination</p>
+        <p class="blurb">Pale cream flowers; leaves and flowers edible.</p>
+      </div>
+      <p class="price">&pound;2.80</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Moonlight Nasturtium">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Moonlight Nasturtium">+</button>
+        <button type="button" class="add" aria-label="Add Moonlight Nasturtium to basket">Add</button>
+      </div>
+    </li>
+    <li class="packet" data-model="FF-014">
+      <div>
+        <h3>Tithonia Torch Sunflower</h3>
+        <p class="facts">Tall annual &middot; sow Apr&ndash;May &middot; easy &middot; 25 seeds &middot; 88% germination</p>
+        <p class="blurb">Blazing orange, beloved by butterflies; 1.8m tall.</p>
+      </div>
+      <p class="price">&pound;2.60</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Tithonia Torch Sunflower">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Tithonia Torch Sunflower">+</button>
+        <button type="button" class="add" aria-label="Add Tithonia Torch Sunflower to basket">Add</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<section id="autumn" class="drawer" aria-labelledby="autumn-h">
+  <h2 id="autumn-h">Autumn or spring, your choice</h2>
+  <p class="note">Hardy lines that take an autumn sowing for earlier flowers, or wait for March.</p>
+  <ul>
+    <li class="packet" data-model="FF-019">
+      <div>
+        <h3>Blue Boy Cornflower</h3>
+        <p class="facts">Hardy annual &middot; sow Mar&ndash;May or Sep &middot; easy &middot; 50 seeds &middot; 92% germination</p>
+        <p class="blurb">True cornflower blue; autumn sowing gives earlier flowers.</p>
+      </div>
+      <p class="price">&pound;2.40</p>
+      <p class="stockline instock">In stock</p>
+      <div class="margin-controls">
+        <button type="button" aria-label="One fewer packet of Blue Boy Cornflower">&minus;</button>
+        <span class="qty" aria-hidden="true">1</span>
+        <button type="button" aria-label="One more packet of Blue Boy Cornflower">+</button>
+        <button type="button" class="add" aria-label="Add Blue Boy Cornflower to basket">Add</button>
+      </div>
+    </li>
+    <li class="packet" data-model="FF-021">
+      <div>
+        <h3>Grandmother's Sweet Pea <span class="kind">(1928 line)</span></h3>
+        <p class="facts">Climbing annual &middot; sow Oct&ndash;Nov or Feb&ndash;Mar &middot; easy &middot; 15 seeds &middot; 85% germination</p>
+        <p class="blurb">Kept in one family since 1928; intensely scented.</p>
+      </div>
+      <p class="pending">Price pending supplier confirmation. Ask us and we will write when it is set.</p>
+      <p class="stockline instock">In stock</p>
+    </li>
+  </ul>
+</section>
+
+</main>
+
+<footer class="aboutshop">
+  <p>Germination rates are from our own test trays; where a rate is estimated rather than tested this season, the listing says so. Out-of-stock lines stay visible so you know they exist and can come back for them.</p>
+  <p class="fine">Foxglove &amp; Fern is a fictional shop; this page is a design study. Ships to UK addresses only.</p>
+</footer>
+
+</div>
+</body>
+</html>
