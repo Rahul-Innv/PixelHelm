@@ -1,0 +1,14 @@
+{
+  "schema": "pixelhelm/signoff@1",
+  "date": "2026-07-26",
+  "project": "e3-commerce-foxglove-fern",
+  "surface": "catalog + product page (three arms)",
+  "artifact": "arms/packet-rack (winner), arms/seed-annual, arms/sowing-almanac",
+  "decision": "rejected",
+  "ownerWords": "I see a theme - all of them are similar to each other and to the set-1 style I called merely easier on the eyes. None above 6 for this use case. I don't even immediately know what this IS - a seed shop, I gather. Layout okay in some, but in-use ease for the user is a constant weak theme across runs. Stop reusing the same design language; the loop should ASK the owner what theme and feeling is wanted before generating.",
+  "clarifies": "taste",
+  "followUp": [
+    "lesson-proposed",
+    "profile-taste-proposed"
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "pixelhelm/signoff@1",
+  "date": "2026-07-26",
+  "project": "e3-saas-ledgerline",
+  "surface": "marketing landing page (three arms)",
+  "artifact": "arms/worked-invoice/index.html (panel winner), arms/fair-quote/index.html, arms/driveway-to-paid/index.html",
+  "decision": "rejected",
+  "ownerWords": "None of them are convincing for this use case. The 9.0 arms are a maximum 6; driveway-to-paid is ~6.5 - easier on the eyes, structure okay, but the design is not. Needs a one-line opener saying what this is. Price placement: put the price at the bottom of the terms. Verdict: this is not SaaS design - it doesn't feel like SaaS design.",
+  "clarifies": "register",
+  "followUp": [
+    "lesson-proposed"
+  ]
+}

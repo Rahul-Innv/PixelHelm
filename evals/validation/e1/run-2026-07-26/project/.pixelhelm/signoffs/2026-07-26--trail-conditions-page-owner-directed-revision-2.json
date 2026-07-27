@@ -1,0 +1,13 @@
+{
+  "schema": "pixelhelm/signoff@1",
+  "date": "2026-07-26",
+  "project": "e1-kestrel-ridge-pass2",
+  "surface": "trail-conditions page, owner-directed revision 2",
+  "artifact": "pass2-owner-changes/arm/trail-ledger/index.html",
+  "decision": "approved-with-changes",
+  "ownerWords": "I do like that - 8.5, slightly better. One change: lead with the recommendation - 'recommended trail' at the top, then go to the closures.",
+  "clarifies": "taste",
+  "followUp": [
+    "lesson-proposed"
+  ]
+}
