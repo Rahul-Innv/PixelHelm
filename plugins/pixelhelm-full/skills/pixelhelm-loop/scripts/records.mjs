@@ -1,11 +1,11 @@
 #!/usr/bin/env node
 // records.mjs — writer + validator for the close-the-loop record schemas:
-//   pixelhelm/judge-verdict@1  ·  pixelhelm/signoff@1  ·  pixelhelm/run@1
+//   pixelhelm/judge-verdict@1 · pixelhelm/signoff@1 · pixelhelm/run@1 · pixelhelm/juror-record@1
 //
 // Usage:
-//   node records.mjs template <judge-verdict|signoff|run> [--out <file>]
+//   node records.mjs template <judge-verdict|signoff|run|juror-record> [--out <file>]
 //   node records.mjs validate <file.json> [...] [--json]
-//   node records.mjs write <judge-verdict|signoff|run> --project <dir> [--json]   (record JSON on stdin)
+//   node records.mjs write <judge-verdict|signoff|run|juror-record> --project <dir> [--json]   (record JSON on stdin)
 //
 // The enforcement this script exists for: A PANEL/RUN WITH NO VALIDATED RECORD DID NOT
 // HAPPEN. `write` validates first and refuses invalid records outright; archives are
@@ -19,15 +19,18 @@
 // Dependency-free, network-free. Exit 0 valid/written · 1 invalid or refused · 2 runner error.
 // Schema shapes: the `pixelhelm` skill's references/close-the-loop.md (the single home).
 
-import { readFileSync, writeFileSync, mkdirSync, existsSync, appendFileSync } from "node:fs";
+import { readFileSync, writeFileSync, mkdirSync, existsSync, appendFileSync, readdirSync } from "node:fs";
 import { resolve, join, relative, dirname } from "node:path";
 
 const SCHEMAS = {
   "judge-verdict": "pixelhelm/judge-verdict@1",
   signoff: "pixelhelm/signoff@1",
   run: "pixelhelm/run@1",
+  "juror-record": "pixelhelm/juror-record@1",
 };
 const DATE_RE = /^\d{4}-\d{2}-\d{2}$/;
+const SHA256_RE = /^[0-9a-f]{64}$/;
+const CRITERION_RE = /^[1-9]\d*$/; // rubric-sheet criterion numbers ("1", "2", …)
 const MODES = ["redesign-tournament", "incremental-polish", "review", "new-design"];
 const PASSES = ["fast", "deep"];
 const SEVERITIES = ["blocker", "major", "minor"];
@@ -174,10 +177,55 @@ function validateRun(r) {
   return errors;
 }
 
+// Sentence count for juror rationales: terminator-count heuristic (runs of . ! ?
+// followed by whitespace or end of text; an unterminated trailing chunk counts as
+// one sentence). Deliberately strict — terse rationales are the point.
+function sentenceCount(text) {
+  const t = String(text).trim();
+  if (!t) return 0;
+  const terminated = (t.match(/[.!?]+(?=\s|$)/g) || []).length;
+  return /[.!?]$/.test(t) ? terminated : terminated + 1;
+}
+
+// pixelhelm/juror-record@1 — ONE record per juror per candidate (E1 critique finding 1:
+// a per-juror schema the panel machinery can enforce; required for all new panels per
+// the sealed E4 sheet, evals/validation/PREREG-E4-CALIBRATION.md).
+function validateJurorRecord(r) {
+  const errors = [];
+  commonHeader(r, errors, SCHEMAS["juror-record"]);
+  if (!nonEmpty(r.jurorId)) errors.push("jurorId must be a non-empty string");
+  if (!nonEmpty(r.blindLabel)) errors.push("blindLabel must carry the neutral label this candidate was presented under");
+  if (!nonEmpty(r.rubric)) errors.push("rubric must name the sealed rubric sheet the criterion numbers key to");
+  if (!isObj(r.scores) || Object.keys(r.scores).length === 0) {
+    errors.push("scores must be a non-empty object keyed by rubric criterion number");
+  } else for (const [k, v] of Object.entries(r.scores)) {
+    if (!CRITERION_RE.test(k)) errors.push(`scores key "${k}" is not a rubric criterion number (positive integer, as printed on the sheet)`);
+    if (!isInt(v) || v < 0 || v > 10) errors.push(`scores.${k} must be an integer 0..10 (the rubric scale)`);
+  }
+  if (!isObj(r.rationales)) errors.push("rationales must be an object keyed by rubric criterion number");
+  else if (isObj(r.scores)) {
+    for (const k of Object.keys(r.scores)) if (!(k in r.rationales)) errors.push(`rationales is missing criterion "${k}" — every scored criterion carries its rationale`);
+    for (const [k, v] of Object.entries(r.rationales)) {
+      if (!(k in r.scores)) { errors.push(`rationales has criterion "${k}" with no matching score`); continue; }
+      if (!nonEmpty(v)) { errors.push(`rationales.${k} must be non-empty`); continue; }
+      const n = sentenceCount(v);
+      if (n > 2) errors.push(`rationales.${k} has ${n} sentences — max 2 per criterion (terminator-count heuristic)`);
+    }
+  }
+  if (!isStr(r.inputTranscriptSha256) || !SHA256_RE.test(r.inputTranscriptSha256)) {
+    errors.push("inputTranscriptSha256 must be the sha256 (64 lowercase hex chars) of this juror's verbatim input transcript");
+  }
+  if (!(isInt(r.shuffleSeed) || nonEmpty(r.shuffleSeed))) {
+    errors.push("shuffleSeed must record this juror's candidate-presentation-order seed (integer or non-empty string)");
+  }
+  return errors;
+}
+
 const VALIDATORS = {
   [SCHEMAS["judge-verdict"]]: validateJudgeVerdict,
   [SCHEMAS.signoff]: validateSignoff,
   [SCHEMAS.run]: validateRun,
+  [SCHEMAS["juror-record"]]: validateJurorRecord,
 };
 
 function validateRecord(r) {
@@ -217,6 +265,13 @@ const TEMPLATES = {
     tokens: { subagentsMeasured: 0, workflowsMeasured: 0, note: "measured-only; main-context usage is not observable in-session" },
     wallClockMinutes: 0, outcome: "report-only", notes: "",
   },
+  "juror-record": {
+    schema: SCHEMAS["juror-record"],
+    date: "", project: "", surface: "",
+    jurorId: "", blindLabel: "", rubric: "",
+    scores: {}, rationales: {},
+    inputTranscriptSha256: "", shuffleSeed: "",
+  },
 };
 
 // ---------- archive paths (canonical store; append-only) ----------
@@ -226,7 +281,21 @@ function archivePath(kind, r, projectDir) {
   const name = `${r.date}--${slug(r.surface)}`;
   if (kind === "judge-verdict") return join(store, "council", `${name}--council.json`);
   if (kind === "signoff") return join(store, "signoffs", `${name}.json`);
+  if (kind === "juror-record") return join(store, "jurors", `${name}--${slug(r.jurorId)}--${slug(r.blindLabel)}.json`);
   return join(store, "runs", `${name}--run.json`);
+}
+
+// Integrity check (SOFT on purpose): a judge-verdict written for a panel SHOULD have
+// one pixelhelm/juror-record@1 per juror per candidate alongside it. Old records
+// predate the schema (E1 critique finding 1), so absence is a WARNING, never a
+// refusal — but new panels must have them per the sealed E4 sheet
+// (evals/validation/PREREG-E4-CALIBRATION.md).
+function jurorRecordWarning(record, projectDir) {
+  const jurorsDir = join(projectDir, ".pixelhelm", "jurors");
+  const prefix = `${record.date}--${slug(record.surface)}--`;
+  const present = existsSync(jurorsDir) && readdirSync(jurorsDir).some((f) => f.startsWith(prefix) && f.endsWith(".json"));
+  if (present) return null;
+  return `no pixelhelm/juror-record@1 files found under .pixelhelm/jurors/ matching "${prefix}*" — new panels must write one juror-record per juror per candidate BEFORE the verdict (sealed E4 sheet); only records predating the schema may lack them`;
 }
 
 function ledgerLine(r, fileName) {
@@ -243,9 +312,9 @@ const cmd = argv[0];
 const asJson = argv.includes("--json");
 const usage = () => {
   console.error(`usage:
-  node records.mjs template <judge-verdict|signoff|run> [--out <file>]
+  node records.mjs template <judge-verdict|signoff|run|juror-record> [--out <file>]
   node records.mjs validate <file.json> [...] [--json]
-  node records.mjs write <judge-verdict|signoff|run> --project <dir> [--json]   (record JSON on stdin)`);
+  node records.mjs write <judge-verdict|signoff|run|juror-record> --project <dir> [--json]   (record JSON on stdin)`);
   process.exit(2);
 };
 const flagValue = (name) => {
@@ -309,14 +378,20 @@ if (cmd === "write") {
   mkdirSync(dirname(dest), { recursive: true });
   writeFileSync(dest, JSON.stringify(record, null, 2) + "\n");
   const written = [relative(resolve(projectDir), dest).replace(/\\/g, "/")];
+  const warnings = [];
   if (kind === "judge-verdict") {
     const ledger = join(dirname(dest), "ledger.md");
     if (!existsSync(ledger)) writeFileSync(ledger, "# Council ledger — one line per run (drill-down: the verdict JSONs)\n\n");
     appendFileSync(ledger, ledgerLine(record, dest.split(/[\\/]/).pop()) + "\n");
     written.push(relative(resolve(projectDir), ledger).replace(/\\/g, "/"));
+    const warn = jurorRecordWarning(record, resolve(projectDir));
+    if (warn) warnings.push(warn);
   }
-  if (asJson) console.log(JSON.stringify({ written, valid: true, errors: [] }, null, 2));
-  else console.log(`records: written ${written.join(" + ")}`);
+  if (asJson) console.log(JSON.stringify({ written, valid: true, errors: [], warnings }, null, 2));
+  else {
+    console.log(`records: written ${written.join(" + ")}`);
+    for (const w of warnings) console.error(`records: WARNING — ${w}`);
+  }
   process.exit(0);
 }
 

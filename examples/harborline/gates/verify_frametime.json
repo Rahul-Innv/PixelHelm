@@ -1,6 +1,6 @@
 {
   "validator": "verify_frametime",
-  "generated": "2026-07-27T00:33:51.731Z",
+  "generated": "2026-07-27T02:14:36.840Z",
   "profile": {
     "name": "desktop",
     "viewport": {
@@ -27,16 +27,16 @@
         "layoutSettled": true,
         "settleFrames": 4,
         "documentGeometry": "1280x1400",
-        "waitedMs": 44
+        "waitedMs": 52
       },
       "scrollable": true,
       "scrolledPx": 600,
-      "samples": 16,
+      "samples": 15,
       "vsyncBaseMs": 16.7,
       "frameMs": {
-        "p50": 16.6,
-        "p95": 17,
-        "max": 17
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 16.8
       },
       "droppedFramePct": 0,
       "pass": true

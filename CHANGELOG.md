@@ -2,6 +2,36 @@
 
 ## [Unreleased]
 
+Record machinery + frame-time gate re-registration (2026-07-26, owner-approved):
+
+- Shipped `pixelhelm/juror-record@1`, the fourth record schema in `records.mjs`
+  (E1 Codex critique finding 1 — the sealed rubrics required per-juror records the
+  machinery could not write; precondition for E4 per the sealed calibration sheet).
+  One record per juror per candidate: juror id, blind label, the sealed rubric
+  sheet, per-criterion integer scores keyed to the sheet's criterion numbers
+  (0–10), a max-2-sentence rationale per criterion, the sha256 of the juror's
+  verbatim input transcript, and the shuffle seed. Validate-then-write,
+  append-only, same exit contract; archives under `.pixelhelm/jurors/`. Writing a
+  judge verdict now WARNS (soft — never a refusal) when no matching juror records
+  exist, so old records stay valid while new panels cannot silently skip them.
+  Schema home (`close-the-loop.md`) and the judge recipe updated; the offline
+  suite exercises the validator behaviorally (scale, criterion keys, rationale
+  length, hash shape, append-only, and the soft verdict warning).
+- Re-registered the emulated-mobile frame-time profile (gate-design change, owner
+  approved 2026-07-26): per scripted wheel step, `verify_frametime.mjs` now
+  excludes the single largest frame gap from the sample set before percentile
+  math — mobile profile only, a documented source constant (never a flag),
+  budgets unchanged (16.7 ms desktop / 33 ms mobile p95). Basis: the repair
+  pass's pre-registered diagnosis (`examples/harborline/repairs/2026-07-26/REPAIR.md`)
+  that the mobile profile failed ANY page via a headless frame-scheduling stall —
+  one multi-vsync gap per wheel step, throttle-invariant, present on a plain-text
+  control, all traced processes idle. The JSON report records the wheel-step
+  count and every excluded gap's size (plus the pre-exclusion sample count), so
+  nothing is silently dropped. Both Harborline frame-time records regenerated
+  as-produced: desktop p95 16.8 ms PASS; emulated-mobile p95 33.3 ms PASS against
+  the unchanged budget (2 gaps excluded: 16.7 / 83.3 ms), replacing the honest
+  FAIL that the diagnosis had kept on record.
+
 Harborline repair pass (2026-07-26):
 
 - Cleared two of the worked example's three honestly-committed gate FAILs through

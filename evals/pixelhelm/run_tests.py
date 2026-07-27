@@ -544,17 +544,29 @@ class FamilyTests(unittest.TestCase):
         self.assertEqual({"p95Ms": 16.7, "jitterAllowanceMs": 1}, desktop["budget"])
         self.assertEqual("desktop", desktop["profile"]["name"])
         self.assertTrue(desktop["pass"])
+        # The scheduling-stall exclusion is mobile-profile-only: the desktop record
+        # must not carry it (re-registration 2026-07-26, layer-1-gates.md).
+        self.assertNotIn("schedulingStallExclusion", desktop["targets"][0])
         mobile = self._committed_gate_artifact("verify_frametime.mobile.json")
+        # Budgets are UNCHANGED by the re-registration — only the diagnosed harness
+        # stall (one gap per scripted wheel step) is excluded before percentile math.
         self.assertEqual({"p95Ms": 33, "jitterAllowanceMs": 1}, mobile["budget"])
         self.assertEqual("emulated-mobile", mobile["profile"]["name"])
         self.assertEqual(4, mobile["profile"]["cpuThrottleRate"])
         self.assertEqual({"width": 375, "height": 812}, mobile["profile"]["viewport"])
-        self.assertFalse(mobile["pass"])  # honest committed FAIL: p95 over the 33 ms budget under 4x throttle
-        frame = mobile["targets"][0]["frameMs"]
-        self.assertGreater(frame["p95"], 33 + 1)
+        entry = mobile["targets"][0]
+        # Nothing silently dropped: the record carries the wheel-step count, every
+        # excluded gap's size, and the pre-exclusion sample count.
+        exclusion = entry["schedulingStallExclusion"]
+        self.assertEqual(exclusion["excludedCount"], len(exclusion["excludedGapsMs"]))
+        self.assertLessEqual(exclusion["excludedCount"], exclusion["wheelSteps"])
+        self.assertEqual(entry["samplesBeforeExclusion"], entry["samples"] + exclusion["excludedCount"])
+        self.assertTrue(mobile["pass"])  # post-re-registration run: p95 within the unchanged 33 + 1 ms budget
+        frame = entry["frameMs"]
+        self.assertLessEqual(frame["p95"], 33 + 1)
         self.assertLessEqual(frame["p50"], frame["p95"])
         self.assertLessEqual(frame["p95"], frame["max"])
-        self.assertGreater(mobile["targets"][0]["samples"], 0)
+        self.assertGreater(entry["samples"], 0)
 
     def test_verify_cwv_validator_contract(self) -> None:
         self._floor_validator_common("verify_cwv.mjs", "usage: node verify_cwv.mjs")
@@ -719,6 +731,78 @@ class FamilyTests(unittest.TestCase):
             self.assertEqual(0, command("node", str(records), "write", "run", "--project", str(project),
                                         input_bytes=json.dumps(run_record).encode()).returncode)
             self.assertTrue((project / ".pixelhelm/runs/2026-07-26--status-page--run.json").is_file())
+
+    def test_juror_record_writer_validates_and_archives(self) -> None:
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        template = command("node", str(records), "template", "juror-record")
+        self.assertEqual(0, template.returncode)
+        self.assertEqual("pixelhelm/juror-record@1", json.loads(template.stdout)["schema"])
+
+        juror = {
+            "schema": "pixelhelm/juror-record@1",
+            "date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
+            "jurorId": "juror-1", "blindLabel": "candidate-A",
+            "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+            "scores": {"1": 7, "2": 8},
+            "rationales": {"1": "Scannable at a glance. The alert is visible on mobile.",
+                           "2": "Statuses stay distinct without color."},
+            "inputTranscriptSha256": "a" * 64,
+            "shuffleSeed": "seed-1734",
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            project = Path(temporary) / "proj"
+            raw = json.dumps(juror).encode("utf-8")
+            written = command("node", str(records), "write", "juror-record", "--project", str(project), input_bytes=raw)
+            self.assertEqual(0, written.returncode, written.stderr.decode())
+            archive = project / ".pixelhelm/jurors/2026-07-26--status-page--juror-1--candidate-a.json"
+            self.assertTrue(archive.is_file())
+            self.assertEqual(0, command("node", str(records), "validate", str(archive)).returncode)
+            # append-only: the same juror scoring the same blind label is refused
+            self.assertEqual(1, command("node", str(records), "write", "juror-record", "--project", str(project), input_bytes=raw).returncode)
+            # a second candidate from the same juror is its own archive (one record per juror per candidate)
+            second = dict(juror, blindLabel="candidate-B")
+            self.assertEqual(0, command("node", str(records), "write", "juror-record", "--project", str(project),
+                                        input_bytes=json.dumps(second).encode()).returncode)
+            self.assertTrue((project / ".pixelhelm/jurors/2026-07-26--status-page--juror-1--candidate-b.json").is_file())
+
+            # behavioral rejections: non-integer/out-of-scale scores, bad criterion keys,
+            # over-long rationales, missing rationales, malformed transcript hash
+            for mutation, expected in [
+                (dict(juror, scores={"1": 7.5, "2": 8}), b"must be an integer 0..10"),
+                (dict(juror, scores={"0": 7, "2": 8}), b"not a rubric criterion number"),
+                (dict(juror, rationales={"1": "One. Two. Three sentences is too many.",
+                                         "2": juror["rationales"]["2"]}), b"max 2 per criterion"),
+                (dict(juror, rationales={"1": juror["rationales"]["1"]}), b'missing criterion "2"'),
+                (dict(juror, inputTranscriptSha256="beef"), b"64 lowercase hex chars"),
+            ]:
+                bad = Path(temporary) / "bad.json"
+                bad.write_text(json.dumps(mutation), encoding="utf-8")
+                invalid = command("node", str(records), "validate", str(bad))
+                self.assertEqual(1, invalid.returncode, invalid.stdout.decode())
+                self.assertIn(expected, invalid.stdout)
+
+            # panel integrity is SOFT: a judge-verdict with no matching juror records
+            # writes (exit 0) but WARNS; with them present it stays silent.
+            verdict = {
+                "schema": "pixelhelm/judge-verdict@1",
+                "date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
+                "mode": "review", "pass": "fast",
+                "candidates": {"incumbent": {"label": "current", "kind": "incumbent", "render": "renders/a.png"}},
+                "registerFitPanel": {"jurors": 3, "scores": {"incumbent": [7, 8, 8]},
+                                     "medians": {"incumbent": 8}, "nonOverlapping": True, "modeFairness": "both-modes"},
+                "lensScores": {}, "constraints": [],
+                "aggregation": {"contract": "gates-and-loop.md 2026-07-26", "weightedScores": {}, "guardOutcome": "incumbent holds"},
+                "winner": "incumbent", "registerSafeGrafts": [], "rejectedGrafts": [], "rejectedDirections": [],
+                "ownerVerdict": None,
+            }
+            verdict_raw = json.dumps(verdict).encode("utf-8")
+            with_jurors = command("node", str(records), "write", "judge-verdict", "--project", str(project), input_bytes=verdict_raw)
+            self.assertEqual(0, with_jurors.returncode)
+            self.assertNotIn(b"juror-record", with_jurors.stderr)
+            bare_project = Path(temporary) / "bare"
+            without_jurors = command("node", str(records), "write", "judge-verdict", "--project", str(bare_project), input_bytes=verdict_raw)
+            self.assertEqual(0, without_jurors.returncode)  # soft: never a refusal (old records predate the schema)
+            self.assertIn(b"juror-record", without_jurors.stderr)
 
     def test_no_obvious_secrets_or_network_calls(self) -> None:
         watched = [ROOT / "src/family.json", ROOT / "src/skills.json", ROOT / "src/scripts",
