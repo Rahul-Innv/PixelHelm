@@ -22,8 +22,10 @@
   ],
   "bannedClusters": [
     { "id": "ai-cyan", "any": ["#16d5e6", "#00d4ff", "#0ff "], "note": "generative-AI cyan/neon-teal fingerprint" },
-    { "id": "ai-purple-grad", "any": ["from-purple-500 to-pink-500", "from-violet-600 to-fuchsia"], "note": "default AI purple->pink gradient" }
+    { "id": "ai-purple-grad", "any": ["from-purple-500 to-pink-500", "from-violet-600 to-fuchsia"], "note": "default AI purple->pink gradient" },
+    { "id": "ai-em-dash-copy", "any": ["—", "&mdash;", "&#8212;"], "note": "AI-voice tell in page copy (owner, 2026-07-26: em dashes 'not supposed to be there'). The grep matches the character anywhere in scanned source, so comments and CSS prose match too — the anti-cliche gate is SOFT and read by a human; the finding is em dashes in PAGE COPY. Drop this cluster only if the project's house style genuinely uses em dashes in prose." }
   ],
+  "_bannedClustersNote": "the `any[]` needles feed design-evaluate Layer-1's anti-cliche grep, which is SOFT — every match is reported, none exits non-zero. `describe`-only fingerprints (uniform-paragraph-rhythm, symmetric-three-card, centered-hero-blob) carry no needles and are judged by Layer-2; they belong in the registry, not here. Library + entry schema: seeds/fingerprints-seed.md.",
   "ownerInvolvement": "autonomous",
   "_ownerInvolvementNote": "\"hands-on\" | \"autonomous\". hands-on = the router adds CHEAP early owner checkpoints BEFORE the expensive stages (confirm register+references after grounding; pick a direction on throwaway mockups before any production tournament; a does-ANY-of-these-reach-your-bar check after the council verdict, before the fix loop). autonomous = the classic loop with exactly ONE final approval gate (the unchanged default). Unset -> the router asks ONE question at run start and offers to record the answer here.",
   "surfaceType": "app",

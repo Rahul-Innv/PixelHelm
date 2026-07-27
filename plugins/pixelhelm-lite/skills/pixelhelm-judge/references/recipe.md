@@ -12,6 +12,7 @@ Audit Trail, stop at one approval gate). Consolidation source: gnurio
 ## Table of contents
 - [Variant A — tournament judge (default)](#variant-a--tournament-judge-default)
 - [Variant B — multi-lens review](#variant-b--multi-lens-review)
+- [Rubric authoring — the in-use usability criterion](#rubric-authoring--the-in-use-usability-criterion-new-sheets-only)
 - [The consolidation algorithm](#the-consolidation-algorithm)
 - [Auto-decision principles (the chair)](#auto-decision-principles-the-chair)
 - [Rendering & gates — do not reimplement](#rendering--gates--do-not-reimplement)
@@ -59,13 +60,27 @@ picks the winner and the grafts.
    mode-fair renders → the median per candidate (H1; `references/lenses.md` §7). The other six
    lenses stay single-juror. The incumbent is scored honestly on the same scale — it is the bar
    the new directions must clear, not a courtesy entry.
-5. **Run Phase 2 (Synthesize) + apply the incumbent guard** — the chair tallies with
+5. **Run the cross-run felt-variety check (ADVISORY)** — before synthesizing, compare
+   this field against PRIOR runs' COMMITTED WINNERS for this project: the ledger
+   lines, the archived verdict records, the baseline renders. Named artifacts, never a
+   remembered impression. Look for recurring STRUCTURAL signatures (same spine, same
+   hierarchy metaphor renamed, same signature element re-skinned, same section rhythm,
+   same one-accent-on-neutral answer to every register), and cite evidence across at
+   least two runs — the fingerprint registry's ADD/PROMOTE evidence gate applies
+   verbatim, so an uncited tell is not a finding. Record the outcome in the verdict's
+   `houseStyleCheck`; `not-run` is legitimate on a first run for a surface but must say
+   why. **This never touches the winner** — a house-style tell is surfaced with its
+   evidence and archived, it is not a veto, not a score, not an iteration. *(Why: E3
+   2026-07-26 — dE00, layout class, motif Jaccard and blind-intent recovery ALL passed
+   while the owner's verdict was "I see a theme - all of them are similar to each other
+   and to the set-1 style". In-run metrics measure difference, not felt variety.)*
+6. **Run Phase 2 (Synthesize) + apply the incumbent guard** — the chair tallies with
    Register-fit weighted as the gate seat, applies the incumbent guard on a redesign
    (a new direction wins only if it beats the incumbent overall AND scores at least
    the incumbent on register-fit; otherwise "current design wins — no change
    recommended"), names the winning frame + grafts, resolves conflicts
    register-fit-first, writes the unified brief + audit trail.
-6. **Write the per-juror records, then the verdict record** (Phase 2.5, always).
+7. **Write the per-juror records, then the verdict record** (Phase 2.5, always).
    First, ONE `pixelhelm/juror-record@1` per juror per SCORED candidate (juror id,
    blind label, per-criterion integer scores keyed to the rubric sheet's numbers,
    max-2-sentence rationales, the sha256 of that juror's verbatim input transcript
@@ -81,10 +96,12 @@ picks the winner and the grafts.
    records exist (soft — archives predating the juror-record schema stay valid,
    but a new panel without them is a defective panel, per the sealed E4 sheet)
    and WARNS when a scored candidate references no floor evidence (soft, same
-   reason — but a scored candidate with no floor evidence is an R1 violation).
+   reason — but a scored candidate with no floor evidence is an R1 violation),
+   and WARNS when a multi-candidate verdict carries no `houseStyleCheck` (soft —
+   the felt-variety check is advisory, but its absence is not silence).
    **A panel whose record does not validate did not happen** — report the
    refusal, never report the panel result.
-7. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
+8. **Stop at the verdict** unless the user asked to build (then Phase 3 → 4).
 
 The distinctiveness defense lives in generate (competing intentional directions);
 the council's job is to pick the most intentional, not to make them safer.
@@ -104,6 +121,32 @@ A single built or mocked UI (no tournament). Same phases, with N=1:
 - This is the Layer-2 advisory pass that `pixelhelm-evaluate` defers to. It never
   blocks — Layer-1 blocks; the council advises.
 
+
+## Rubric authoring — the in-use usability criterion (NEW sheets only)
+
+When a run seals a rubric sheet for its jurors, the sheet must carry an explicit
+**in-use usability** criterion, worded to be judged on the RENDERED artifact rather
+than on a description of it:
+
+> *Does this surface give the visitor the affordances their actual task needs — the
+> controls, states, entry points and next steps that task requires — present and
+> reachable in the render? Name any affordance the task needs and the render does not
+> provide.*
+
+Score it on what the render shows. Copy that describes a capability is not the
+capability, and "the page explains what you could do" is not the page letting you do
+it. The judging-seat counterpart is the Spool lens's in-use clause
+(`references/lenses.md` §4); the two must stay worded the same way.
+
+**Scope: future sheets only.** No sealed rubric from a past experiment is edited,
+re-scored, or reinterpreted against a criterion it never carried — those sheets are
+the evidence of what was actually asked, and rewriting them would destroy the thing
+they exist to prove.
+
+*Source: the owner named in-use ease as the standing weak spot on two separate
+surfaces — "there is still a lot of improvement with how easy it is for the user to
+use" and "there is a lot of missing UI. Like, how is it easy for the user?" Both
+verdicts landed on fields that had already passed their panels.*
 
 ## The consolidation algorithm
 

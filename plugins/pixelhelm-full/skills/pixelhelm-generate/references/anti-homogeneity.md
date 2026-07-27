@@ -54,6 +54,59 @@ product UI.
 - Numbered markers (01/02/03) that aren't a real sequence.
 - Decorative numbering/eyebrows/dividers that encode nothing true about content.
 
+## The house style ACROSS runs (the axis in-run metrics cannot see)
+
+Everything above fights homogeneity WITHIN a field. It does not touch the failure the
+owner actually reported: a field that is internally distinct and still reads as the
+same studio's work every time.
+
+Measured, not supposed. On E3 (2026-07-26) every registered divergence metric passed on
+every arm — dE00 distance, layout class, motif Jaccard, blind-intent recovery — and the
+owner's verdict was *"I see a theme - all of them are similar to each other and to the
+set-1 style I called merely easier on the eyes"*, across three arms AND across
+archetypes. Pairwise difference is not felt variety.
+
+So before the tournament is judged, compare THIS field against PRIOR runs' COMMITTED
+WINNERS — the ledger lines, the archived verdicts, the baseline renders. Named
+artifacts, never a remembered impression. Recurring STRUCTURAL signatures are the tell,
+not shared palettes:
+
+- the same spine every time (hero → three-up → ledger → quiet footer note);
+- the same hierarchy metaphor reused under a new direction name;
+- the same signature element re-skinned (the rail, the plate, the ledger row);
+- the same section/paragraph rhythm, whatever the subject;
+- one accent on a quiet neutral as the answer to every register.
+
+Evidence rules are the anti-cliche registry's ADD/PROMOTE rules verbatim: a tell needs
+a cited example across at least two runs. An uncited tell is not a finding.
+
+**This check is ADVISORY.** A recurring signature is recorded with its evidence and
+surfaced to the owner in the verdict's `houseStyleCheck`
+(the loop leaf's `close-the-loop.md`). It does not block a winner, veto a direction,
+or cost an iteration. What is enforced is only that the comparison happened and that
+its result — including an honest `not-run` with a reason — is on the record.
+
+The generation-side response, when a tell IS cited: give one arm an explicit mandate to
+break the recurring signature, the same way `divergence axes` are assigned within a
+run. Do not correct it by making every arm avoid the signature — that trades one house
+style for another.
+
+## Copy tells (words carry the fingerprint too)
+
+The floor is not only visual. The same defaults show up in generated prose and the
+owner reads them instantly:
+
+- **Em dashes in body copy.** Owner, on the E3 editorial arms where they appeared in
+  ALL THREE: *"em dashes present in all arms - not supposed to be there."* Use a
+  period, a comma, a colon, or restructure the sentence. This is registered as the
+  `ai-em-dash-copy` fingerprint and the Layer-1 anti-cliche grep can match it directly
+  (SOFT — reported, never a hard fail).
+- **Uniform paragraph rhythm** — every paragraph the same two-to-three sentences, every
+  section the same length. Real writing varies; the metronome is the tell.
+- **The symmetric three-card row** as the default answer to "several things go here"
+  (already a named layout tell, above) — its copy twin is three headings of the same
+  length with three bodies of the same length.
+
 ## The motivated-boldness exception (do not over-correct)
 
 The deslop pass must NEVER flatten a *motivated* bold choice. A saturated palette

@@ -21,6 +21,20 @@ named skill from disk.
 | refresh stale local guidance | `pixelhelm-refresh-guidance` |
 | curate an evidenced recurring pattern | `pixelhelm-curate-fingerprints` |
 
+## Elicitation gate (REQUIRED before any direction intent)
+
+Any route that produces a NEW look — a bounded design pass, or candidate creation
+that is not already inside an owner-mandated direction — asks the owner what the
+surface should FEEL like BEFORE the first direction intent is written: the wanted
+register in their own words, what is explicitly not wanted, and the reference points
+they already like. Capture the answer VERBATIM into the ground context every direction
+must serve, or record an explicit owner waiver in the owner's own words.
+
+A run that did neither is a process defect, surfaced like any other blocking finding.
+It is enforced, not advised: the pass's run record carries `intentElicitation` and
+`records.mjs write run` refuses the record without it, so the pass cannot close.
+Full rule: `pixelhelm-loop` references, gates-and-loop.md section 0.
+
 Near misses: backend work, general product strategy, brand strategy without UI,
 unadmitted tasks, and a named Full-only specialist outcome do not route to a second
 Lite leaf. A Full-only request returns to ChoiceGate; it never activates Full beside

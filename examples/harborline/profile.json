@@ -127,6 +127,15 @@
         "from-violet-600 to-fuchsia"
       ],
       "note": "default AI purple->pink gradient"
+    },
+    {
+      "id": "ai-em-dash-copy",
+      "any": [
+        "—",
+        "&mdash;",
+        "&#8212;"
+      ],
+      "note": "AI-voice tell in page copy (owner, 2026-07-26). SOFT gate: this page predates the tell and trips it — see README, 'What the anti-cliche grep says about this page'."
     }
   ],
   "_register": "civic-utility calm: a municipal service status board. Trustworthy and legible at a glance, like good transit signage — quiet, high-contrast, zero marketing gloss. Color is spent ONLY on status semantics (ok / warn / unknown) and one teal accent; everything else is ink on paper. Data gaps are stated plainly (unknown is unknown, never zero, never hidden). System-adjacent type (Inter or the system stack), tabular numerals on counts, hairline structure over shadows. Works equally in light and dark; dark is a night-service mode, not a brand statement.",

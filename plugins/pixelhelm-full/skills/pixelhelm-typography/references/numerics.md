@@ -56,6 +56,18 @@ Enforce on prose text (JSX/MD/visible copy), with an ignore mechanism for code:
 Regex-detectable; emit a fix suggestion, not a silent rewrite. The Typewolf
 characters cheatsheet corroborates these.
 
+**Exception — the em dash in generated page copy (owner rule, 2026-07-26).** The rows
+above are typesetting hygiene for copy a human wrote: if a break-in-thought dash is
+already there, it should be a real `—`, not `--`. They are NOT a licence to introduce
+em dashes into copy this system generated. In generated UI, marketing and editorial
+copy the em dash is a registered AI-voice tell (`ai-em-dash-copy`, seeds registry) —
+owner, on the E3 editorial arms where it appeared in all three: *"em dashes present in
+all arms - not supposed to be there."* Prefer a period, a comma, a colon, or a
+restructured sentence, and never "upgrade" a hyphen to an em dash in generated prose.
+The en dash for ranges (`2020–2024`) is unaffected; so is the em dash as a table's
+data-absent glyph. Where a project's own house style genuinely calls for em dashes in
+prose, its profile drops the cluster and this row applies unchanged.
+
 ## Tabular vs proportional figures
 Distinct from prose: **any column or aligned run of numbers** — tables, prices,
 metrics, countdowns, scoreboards, financial/analyst UIs — MUST use

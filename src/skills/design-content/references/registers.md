@@ -72,6 +72,30 @@ sourcing and credibility, not warmth.
   shaped to THAT user, who controls tickers and feeds, not to a layperson.)
 - **Avoid:** warmth, encouragement, exclamation, color-coded alarm in copy (red is errors only).
 
+## Two archetypes have a rule about ORDER, not tone
+
+Register is usually about temperature. For these two it is also about what the copy
+puts FIRST — a structure rule, recorded from owner verdicts on 2026-07-26.
+
+**Utility / status surfaces — lead with the recommendation.** A surface someone
+consults to decide what to do opens with the resolved answer, then its qualifications.
+Owner, on the utility winner: *"lead with the recommendation - 'recommended trail' at
+the top, then go to the closures."* Write the answer as a sentence a person could act
+on, not as a label over a table. The closures, exceptions and full record follow it and
+support it; they never precede it as inputs the reader must combine themselves.
+
+**Long-form / data-narrative surfaces — open with the executive brief.** An editorial
+or analytic read opens with what the data SAYS, in a sentence or two, before method,
+chart or chronology. Owner, on the editorial winner: *"open with an executive brief of
+the finding, then the detail."* A narrative that builds to its finding is making the
+reader pay for the author's process.
+
+Both yield to the honesty bindings below and to nothing else. When the data cannot
+support a confident recommendation, the hedge goes at the top WITH the recommendation
+("no trail is clearly best today — here is why"), never further down where the reader
+has already acted. Leading with the answer is a duty to the reader, not a licence to
+manufacture one.
+
 ## The rule
 
 A warm, encouraging error is a SUCCESS for the warm consumer register and a FAILURE for the trust register — same craft,

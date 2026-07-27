@@ -34,3 +34,20 @@ floor already measured, and do not relitigate a gate the floor already passed.
 Every panel ends by writing its verdict record through the pixelhelm-loop records
 script (validate-then-write, append-only). A panel whose record does not validate did
 not happen; never report an unrecorded panel result.
+
+## In-use usability is judged on the artifact
+
+Findability asks whether the visitor can find the thing; the in-use clause asks whether
+they can DO the task here. Name the task, list the affordances it needs, and check each
+against the rendered artifact. Absent UI is the finding, stated as the missing
+affordance and the task it blocks. Never treat copy describing a capability as the
+capability, and never report in-use ease as a general adjective.
+
+## Felt variety across runs (ADVISORY)
+
+A multi-candidate verdict records what the field was compared against across prior
+runs' committed winners and cites evidence for any recurring structural signature.
+In-run divergence metrics measure difference, not felt variety. A house-style tell is
+recorded and surfaced with its evidence; it never vetoes a winner, scores a candidate,
+or costs an iteration. Do not report the check as clean when it did not run; record it
+as not-run with the reason.

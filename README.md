@@ -183,14 +183,15 @@ Two evidence grades, kept honest on purpose:
   than reconstructed, and the summary counts those unknowns so the gaps stay visible.
   This is a record of repetition, not yet evidence of consistent excellence — nine
   runs over two days, with model panel scores that remain advisory-only.
-- **The engine is checkable offline.** The demo above and a 39-test offline suite
+- **The engine is checkable offline.** The demo above and a 43-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
-  output floor, the record writer (judge verdicts and per-juror records), the
-  capability ledger, and the baseline regression memory
-  behaviorally; the browser-arm validators at contract level, with their committed
-  Harborline runs carrying the behavioral evidence, since CI has no browser.)
+  output floor, the anti-cliché grep, the record writer (judge verdicts, per-juror
+  records, and run records), the capability ledger, and the baseline regression
+  memory behaviorally; the browser-arm validators at contract level, with their
+  committed Harborline runs carrying the behavioral evidence, since CI has no
+  browser.)
 
 **Attested history (from the author's private development runs; no artifacts are
 committed in this tree, so treat these as narrative until re-run with records):**
@@ -227,7 +228,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 39 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 43 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 

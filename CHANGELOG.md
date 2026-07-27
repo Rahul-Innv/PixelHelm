@@ -57,6 +57,63 @@ Capability ledger + baseline regression memory (2026-07-27; backlog P3-1 and P3-
   pieces behaviorally (append-only refusal, the recompute rules, `check`, the seed's
   validity and artifact citations, every regression class, and the
   refuse-then-propose re-baselining rule).
+Owner taste findings encoded as machinery (2026-07-27) — ledger and honest
+enforcement levels in `evals/validation/OWNER-FINDINGS-ENCODING-2026-07-27.md`:
+
+- **ENFORCED — the elicitation gate.** `pixelhelm/run@1` gains a required
+  `intentElicitation` block (the owner's verbatim words on the intended
+  feeling/register/reference points, captured BEFORE any direction intent and
+  folded into the ground context, or an explicit owner waiver in the owner's own
+  words). `records.mjs write run` REFUSES a record without it, and the loop
+  already treats a refused record write as a blocking finding — so a run that
+  never asked cannot be reported complete. `validate` stays permissive, so run
+  archives written before this rule remain valid. Neither-asked-nor-waived is
+  rejected as a process defect; a self-issued waiver is refused. Gate text ships
+  in `gates-and-loop.md` §0, both editions' routing, the directions recipe step 0,
+  the loop/directions SKILLs, and the generate prompt stack's TASK block. Source:
+  the E3 commerce sign-off — "the loop should ASK the owner what theme and feeling
+  is wanted before generating."
+- **ADVISORY — the cross-run felt-variety check.** `pixelhelm/judge-verdict@1`
+  gains `houseStyleCheck` (what the field was compared against across prior runs'
+  committed winners, recurring structural signatures with evidence cited across
+  ≥ 2 runs, verdict `no-house-style-tell` / `house-style-tell` / `not-run`).
+  A multi-candidate verdict without it WARNS, never refuses; a recorded tell never
+  vetoes a winner, scores a candidate, or costs an iteration. The block's SHAPE is
+  validated when present — an uncited or single-run signature is rejected (the
+  fingerprint ADD/PROMOTE evidence gate), as is a silent `not-run`. Source: E3
+  2026-07-26, where dE00, layout class, motif Jaccard and blind-intent all PASSED
+  while the owner saw "a theme, all of them are similar".
+- **ADVISORY — AI-voice copy fingerprints.** Seeded `ai-em-dash-copy` (active,
+  global, greppable `—` / `&mdash;` / `&#8212;`) plus describe-only
+  `uniform-paragraph-rhythm` and `symmetric-three-card` (candidate) in
+  `seeds/fingerprints-seed.md`; wired the greppable one into the shipped example
+  profile's `bannedClusters` so the existing Layer-1 anti-cliche grep fires on it.
+  That gate is SOFT by contract — reported, exit code unchanged. Resolved the
+  standing contradiction where `design-typography` told the loop to convert `--`
+  into `—`: dash hygiene now fixes a dash already present and never introduces one,
+  and the Layer-2 typography criterion no longer lists em dashes as a PASS signal.
+  The worked example reports 12 matches (5 comments, 6 data-absent table glyphs,
+  1 real page-copy tell) — documented in `examples/harborline/README.md` as the
+  reason the gate stays soft and human-read, with the real finding left standing
+  rather than silently edited.
+- **DOCUMENTED — in-use usability.** An in-use affordance census on the Spool seat
+  (`lenses.md` §4, mirrored in the judge SKILL and the Layer-2 lens audit): name the
+  visitor's task, list the affordances it needs, check each against the RENDERED
+  artifact, state absent UI as the specific missing affordance and the task it
+  blocks. Plus rubric-authoring guidance requiring the criterion on FUTURE sealed
+  sheets only — no past sheet is edited, re-scored, or reinterpreted. Not a gate:
+  no shipped validator can decide from a render whether a missing control blocks a
+  task.
+- **DOCUMENTED — lead with the actionable answer.** Utility/status surfaces open
+  with the resolved recommendation, then the exceptions; long-form data narratives
+  open with an executive brief of the finding, then the detail. In the generate
+  prompt stack (both editions) and the content registers reference (Full), with the
+  honesty carve-out that an unsupportable recommendation is hedged in place at the
+  top rather than manufactured.
+- Offline suite 33 → 37 tests, all behavioral where the change is mechanical:
+  the elicitation refusal, the house-style shape rules and advisory warning, the
+  em-dash fingerprint firing through the real grep (and going silent when the
+  cluster is dropped), and a both-editions presence check for the encoded text.
 
 Record machinery + frame-time gate re-registration (2026-07-26, owner-approved):
 

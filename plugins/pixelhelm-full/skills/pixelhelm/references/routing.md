@@ -80,6 +80,11 @@ autonomous default the sequence reads without the `{...}` lines — unchanged.
 ```
 pixelhelm-ground
   {HANDS-ON: ground-confirm — register + referenceSources + constraints; 1 question}
+  -> ELICITATION GATE (REQUIRED, both involvement modes — gates-and-loop.md §0)
+     ask what the surface should FEEL like / the wanted register / reference
+     points; capture the answer VERBATIM into the ground context BEFORE any
+     direction intent is written, or record an explicit owner waiver.
+     A run that did neither is a process defect: the run record is refused.
   -> [pixelhelm-reference]            (north-stars + brief, if not already briefed)
   -> [pixelhelm-directions]            (if no look is mandated -> owner picks a thesis)
                                    {HANDS-ON: MANDATORY unless a look is mandated —
@@ -100,6 +105,8 @@ pixelhelm-ground
 pixelhelm-ground
   {HANDS-ON: ground-confirm — register + referenceSources + constraints; 1 question}
   -> pixelhelm-render(current) + pixelhelm-evaluate(current)   (honest baseline + diagnosis)
+  -> ELICITATION GATE (REQUIRED — gates-and-loop.md §0; same rule as NEW DESIGN,
+     asked BEFORE the delta thesis, not after the field exists)
   -> [pixelhelm-directions]            (delta thesis, if the look is open)
                                    {HANDS-ON: MANDATORY for the tournament method —
                                     owner picks the delta thesis on throwaway mockups}

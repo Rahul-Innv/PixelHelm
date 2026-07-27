@@ -6,6 +6,7 @@
 > Anthropic's frontend-design skill (two-pass plan->critique-vs-generic).
 
 ## Contents
+- [0. Elicit the intended feeling (REQUIRED, before any thesis)](#0-elicit-the-intended-feeling-required-before-any-thesis)
 - [1. Distill named directions](#1-distill-named-directions)
 - [2. Compact token system per direction (two passes)](#2-compact-token-system-per-direction-two-passes)
 - [3. Build throwaway mockups](#3-build-throwaway-mockups)
@@ -13,6 +14,45 @@
 - [5. Owner picks + the revision round](#5-owner-picks--the-revision-round)
 - [Screenshot review checklist](#screenshot-review-checklist)
 - [Worked examples](#worked-examples)
+
+## 0. Elicit the intended feeling (REQUIRED, before any thesis)
+
+This step runs FIRST — before a direction name, a thesis, a palette, or a wireframe
+exists. It is not the hands-on "ground-confirm" checkpoint (that confirms what the
+loop RESOLVED); this asks what the owner WANTS, which the profile may never have been
+told.
+
+Ask, in ONE bounded exchange (three questions, not an interview):
+
+1. **Feeling** — "what should this surface feel like when someone lands on it?" Take
+   the answer in their words: *quiet · expensive · friendly · serious · alive ·
+   old-fashioned · technical*. Adjectives are the data here.
+2. **Register, and its negative space** — what tone is wanted, and what is explicitly
+   NOT wanted. The banned half is usually the more useful half.
+3. **Reference points** — surfaces they already like, and the specific thing they like
+   about each. "Like Stripe" is not usable; "like Stripe's numbers" is.
+
+Then:
+
+- **Capture it VERBATIM.** A paraphrase is a second design decision wearing the
+  owner's voice. Quote them.
+- **Fold it into the ground context** as a constraint every direction must serve, and
+  say which direction serves which part when you present the field.
+- It **adds to** the profile `_register`; it never replaces it. The register-fit seat
+  still binds to the literal `_register` string. If the answer genuinely contradicts
+  `_register`, that is a register clarification for the owner to save
+  (`design/references/close-the-loop.md`, `_taste.registerClarifications`) — not
+  something this step overwrites.
+- If the owner explicitly declines, **record the waiver in their own words** and
+  proceed. A waiver you wrote yourself is not a waiver.
+
+A run that neither asked nor holds a waiver is a **process defect**, surfaced like any
+other blocking finding — and its `run@1` record is refused by the writer, so the pass
+cannot be reported complete (`design/references/gates-and-loop.md` §0).
+
+*Why this step exists: the loop ran to completion on four archetypes without ever
+asking. Owner, E3 commerce, 2026-07-26: "Stop reusing the same design language; the
+loop should ASK the owner what theme and feeling is wanted before generating."*
 
 ## 1. Distill named directions
 
