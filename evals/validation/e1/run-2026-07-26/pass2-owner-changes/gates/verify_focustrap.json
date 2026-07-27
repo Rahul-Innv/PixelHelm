@@ -1,0 +1,14 @@
+{
+  "validator": "verify_focustrap",
+  "generated": "2026-07-27T00:10:32.709Z",
+  "target": "evals/validation/e1/run-2026-07-26/pass2-owner-changes/arm/trail-ledger/index.html",
+  "findings": [
+    {
+      "level": "info",
+      "id": "applicability",
+      "msg": "no dialog / [role=dialog] / [aria-modal] element on this page — nothing to verify"
+    }
+  ],
+  "pass": true,
+  "applicable": false
+}

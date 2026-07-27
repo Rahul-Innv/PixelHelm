@@ -1,0 +1,8 @@
+{
+  "gate": "derived-claims",
+  "target": "%USERPROFILE%\\Documents\\Workbench\\Projects\\PixelHelm\\.claude\\worktrees\\quizzical-borg-aba355\\evals\\validation\\e1\\run-2026-07-26\\pass2-owner-changes\\arm\\trail-ledger\\index.html",
+  "pass": true,
+  "allowedNumbers": 36,
+  "blocks": 9,
+  "findings": []
+}

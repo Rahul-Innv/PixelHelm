@@ -1,0 +1,33 @@
+{
+  "schema": "pixelhelm/run@1",
+  "date": "2026-07-26",
+  "project": "e1-kestrel-ridge",
+  "surface": "trail-conditions-pass2",
+  "intent": "Owner-directed approved-with-changes repair of the E1 winner trail-ledger: graft status-board's explicit status structure/color association + add in-use usability affordances; resolve recorded morning-framing advisory",
+  "edition": "lite",
+  "workerModel": "claude-fable-5",
+  "skillsFired": [
+    "pixelhelm-repair",
+    "pixelhelm-render",
+    "pixelhelm-evaluate"
+  ],
+  "engines": [],
+  "council": {
+    "pass": "fast",
+    "seats": 0,
+    "registerJurors": 0
+  },
+  "iterations": 1,
+  "renders": {
+    "items": 1,
+    "cells": 4
+  },
+  "tokens": {
+    "subagentsMeasured": 0,
+    "workflowsMeasured": 0,
+    "note": "measured-only; main-context usage is not observable in-session"
+  },
+  "wallClockMinutes": 51,
+  "outcome": "needs-human-review",
+  "notes": "Pass 2 on the E1 winner per owner verdict (signoffs/2026-07-26--trail-conditions.json): status-group headers + stamped jump strip, notice->entry anchors, back-to-top, daily-log reframe. ALL shipped HARD gates re-run and green (token-contract 14/14, static contrast, output floor, responsive 280/320/414, states light+dark 8 controls, targetsize 8 targets, focustrap n/a-pass, Gate A 0 violations, Gate B 27/27, axe 0/0 x4 cells, mode fidelity ok). No panel re-judge; no self-graded scores (E1 calibration lesson). Evidence: evals/validation/e1/run-2026-07-26/pass2-owner-changes/. Owner sign-off deferred."
+}

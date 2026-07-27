@@ -1,0 +1,29 @@
+{
+  "validator": "verify_targetsize",
+  "generated": "2026-07-27T00:10:28.634Z",
+  "viewport": {
+    "width": 375,
+    "height": 812
+  },
+  "minPx": 24,
+  "targets": [
+    {
+      "target": "evals/validation/e1/run-2026-07-26/pass2-owner-changes/arm/trail-ledger/index.html",
+      "measured": 8,
+      "violations": [],
+      "excepted": [
+        {
+          "selector": "main#log > section > p > a.notice-link",
+          "size": "93.41x22px",
+          "exception": "inline (in a sentence)"
+        },
+        {
+          "selector": "main#log > section > p > a.notice-link",
+          "size": "88.64x22px",
+          "exception": "inline (in a sentence)"
+        }
+      ]
+    }
+  ],
+  "pass": true
+}
