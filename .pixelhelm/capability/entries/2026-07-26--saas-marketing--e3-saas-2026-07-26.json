@@ -1,0 +1,46 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e3-saas-2026-07-26",
+  "archetype": "saas-marketing",
+  "kind": "design-run",
+  "project": "e3-ledgerline",
+  "surface": "saas-marketing",
+  "runRecord": "evals/validation/e3/run-2026-07-26-saas/project/.pixelhelm/runs/2026-07-26--saas-marketing--run.json",
+  "artifacts": [
+    "evals/validation/e3/run-2026-07-26-saas/REPORT.md",
+    "evals/validation/e3/run-2026-07-26-saas/project/.pixelhelm/council/2026-07-26--saas-marketing--council.json",
+    "evals/validation/e3/run-2026-07-26-saas/project/.pixelhelm/signoffs/2026-07-26--marketing-landing-page-three-arms.json"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e3/run-2026-07-26-saas/project/gates/worked-invoice/",
+      "evals/validation/e3/run-2026-07-26-saas/project/honesty/mutant-ritual/RITUAL.md"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": 5,
+    "medians": {
+      "worked-invoice": 9,
+      "fair-quote": 9,
+      "driveway-to-paid": 8
+    },
+    "winner": "worked-invoice",
+    "winnerMedian": 9
+  },
+  "owner": {
+    "decision": "rejected",
+    "band": 6,
+    "bandBasis": "upper-bound",
+    "ownerWords": "The 9.0 arms are a maximum 6 ... this is not SaaS design.",
+    "record": "evals/validation/e3/run-2026-07-26-saas/project/.pixelhelm/signoffs/2026-07-26--marketing-landing-page-three-arms.json"
+  },
+  "ownerVsPanel": -3,
+  "plants": "unknown",
+  "notes": "First unfamiliar archetype. Loop transferred with a complete artifact trail; every shipped HARD gate green on all three arms, 4/4 mutant ritual on this project's own configs. The owner band is an UPPER BOUND, not a point score: the owner said the 9.0 arms are a maximum 6, and the winner is a 9.0 arm. The recorded owner finding is a register miss - the output did not read as its archetype. The judge-verdict archive's ownerVerdict is still null: the sign-off was written as its own record and the council record was never edited (archives are append-only)."
+}

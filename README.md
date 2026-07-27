@@ -172,11 +172,23 @@ Two evidence grades, kept honest on purpose:
   excluded gap's size on the record. Committed failures remain the point: the gates
   block real defects, and a record is only ever cleared by fixing the page or by a
   documented re-registration of the gate itself — never by editing the record.
-- **The engine is checkable offline.** The demo above and a 33-test offline suite
+- **The history is on the record, gaps included.** `.pixelhelm/capability/` holds this
+  repository's own capability ledger — nine recorded runs across six archetype groups
+  and six escapes, each line written through the shipped writer from the committed
+  trail it cites (`node src/skills/pixelhelm-loop/scripts/capability-ledger.mjs summary
+  --project .`). What it shows: the floor passed at close on every recorded run and
+  caught 8 of 8 deliberately planted defects; and on every run where both sides were
+  measured, the OWNER scored the panel's winner below the panel — -1, -2, -3, -3
+  against panel medians of 9.0. Fields no run recorded are written `unknown` rather
+  than reconstructed, and the summary counts those unknowns so the gaps stay visible.
+  This is a record of repetition, not yet evidence of consistent excellence — nine
+  runs over two days, with model panel scores that remain advisory-only.
+- **The engine is checkable offline.** The demo above and a 39-test offline suite
   (`python -B evals/pixelhelm/run_tests.py`) run with no network and are executed by
   CI on every push. (Scope honesty: the suite validates packaging, routing-contract,
   and state hygiene, and it now exercises the offline design-gate scripts — the
-  output floor and the record writer (judge verdicts and per-juror records)
+  output floor, the record writer (judge verdicts and per-juror records), the
+  capability ledger, and the baseline regression memory
   behaviorally; the browser-arm validators at contract level, with their committed
   Harborline runs carrying the behavioral evidence, since CI has no browser.)
 
@@ -215,7 +227,7 @@ node build/build.mjs --check
 python -B evals/pixelhelm/run_tests.py
 ```
 
-The suite prints `Ran 33 tests ... OK (skipped=1)`; the one skip is the boundary
+The suite prints `Ran 39 tests ... OK (skipped=1)`; the one skip is the boundary
 replay that needs private roots, explained in
 [docs/authority-boundary.md](docs/authority-boundary.md).
 

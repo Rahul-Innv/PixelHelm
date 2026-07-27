@@ -1,0 +1,41 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "harborline-worked-example",
+  "archetype": "utility",
+  "kind": "design-run",
+  "project": "harborline",
+  "surface": "status-page",
+  "runRecord": "unknown",
+  "artifacts": [
+    "examples/harborline/README.md",
+    "examples/harborline/gates/README.md",
+    "examples/harborline/repairs/2026-07-26/REPAIR.md"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "examples/harborline/gates/"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": "unknown",
+    "medians": "unknown",
+    "winner": "unknown",
+    "winnerMedian": "unknown"
+  },
+  "owner": {
+    "decision": "unknown",
+    "band": "unknown",
+    "bandBasis": "unknown",
+    "ownerWords": "unknown",
+    "record": "unknown"
+  },
+  "ownerVsPanel": "unknown",
+  "plants": "unknown",
+  "notes": "The worked example, dated by its repair pass rather than by its authoring run: it predates the record machinery, so it has no run@1 archive, no committed juror scores, no verdict record and no losing candidates. The blind-panel history in its README is ATTESTED, not committed evidence, so every panel field is unknown here and no median may be read off it. floor.outcome is the state AFTER the 2026-07-26 repair pass, whose regenerated gate records are the cited evidence; the four defects the floor caught on this page are separate escape records against this runId. firedInLoop is empty because those catches were not in-loop - they are the escapes. Also on the record and NOT a page defect: the emulated-mobile frame-time FAIL was diagnosed as a headless frame-scheduling stall of the harness and resolved by an owner-approved gate re-registration, not by editing the page (examples/harborline/gates/README.md)."
+}

@@ -462,6 +462,7 @@ class FamilyTests(unittest.TestCase):
 
     EVALUATE_SCRIPTS = "skills/pixelhelm-evaluate/scripts"
     LOOP_SCRIPTS = "skills/pixelhelm-loop/scripts"
+    BASELINE_SCRIPTS = "skills/pixelhelm-baseline/scripts"
 
     def _floor_validator_common(self, script: str, usage_token: str) -> Path:
         """Presence in both editions + syntax + loud usage exit 2; returns the lite copy."""
@@ -919,6 +920,375 @@ class FamilyTests(unittest.TestCase):
             self.assertRegex(loop, r"(?i)covers the gate outputs", edition)
             self.assertRegex(recipe, r"(?i)gate outputs", edition)
             self.assertRegex(judge, r"(?i)gate outputs travel with", edition)
+
+    # ---- P3-1 capability ledger -------------------------------------------------
+
+    def _ledger(self) -> Path:
+        script = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "capability-ledger.mjs"
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            self.assertTrue((ROOT / "plugins" / edition / self.LOOP_SCRIPTS / "capability-ledger.mjs").is_file(), edition)
+        return script
+
+    @staticmethod
+    def _entry(**overrides) -> dict:
+        base = {
+            "schema": "pixelhelm/capability-entry@1",
+            "date": "2026-07-26", "runId": "fixture-run", "archetype": "utility",
+            "kind": "design-run", "project": "eval-fixture", "surface": "Status Page",
+            "runRecord": "unknown",
+            "artifacts": ["evals/validation/README.md"],
+            "floor": {"outcome": "pass", "firedInLoop": [], "failedAtClose": [], "notRun": [],
+                      "evidence": ["examples/harborline/gates/output-floor-gate.json"]},
+            "panel": {"standing": "advisory-only", "jurors": 5,
+                      "medians": {"a": 9, "b": 8}, "winner": "a", "winnerMedian": 9},
+            "owner": {"decision": "rejected", "band": 6, "bandBasis": "upper-bound",
+                      "ownerWords": "the 9.0 arms are a maximum 6", "record": "signoffs/x.json"},
+            "ownerVsPanel": -3, "plants": "unknown", "notes": "",
+        }
+        base.update(overrides)
+        return base
+
+    def test_capability_ledger_writer_validates_and_archives(self) -> None:
+        """P3-1: a run with no valid ledger record is not evidence of repetition."""
+        ledger = self._ledger()
+        self.assertEqual(2, command("node", str(ledger)).returncode)
+        for kind, schema in (("entry", "pixelhelm/capability-entry@1"), ("escape", "pixelhelm/capability-escape@1")):
+            template = command("node", str(ledger), "template", kind)
+            self.assertEqual(0, template.returncode)
+            self.assertEqual(schema, json.loads(template.stdout)["schema"])
+
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+            project = temp / "proj"
+            raw = json.dumps(self._entry()).encode("utf-8")
+            written = command("node", str(ledger), "write", "entry", "--project", str(project), input_bytes=raw)
+            self.assertEqual(0, written.returncode, written.stderr.decode())
+            archive = project / ".pixelhelm/capability/entries/2026-07-26--utility--fixture-run.json"
+            self.assertTrue(archive.is_file())
+            self.assertEqual(0, command("node", str(ledger), "validate", str(archive)).returncode)
+            roll_up = (project / ".pixelhelm/capability/LEDGER.md").read_text(encoding="utf-8")
+            self.assertIn("| 2026-07-26 | utility | design-run | run: fixture-run |", roll_up)
+            self.assertIn("owner: rejected 6 (upper-bound) | delta: -3 |", roll_up)
+            # append-only: the ledger records history, it never rewrites it
+            again = command("node", str(ledger), "write", "entry", "--project", str(project), input_bytes=raw)
+            self.assertEqual(1, again.returncode)
+            self.assertIn(b"never rewrites it", again.stderr)
+
+            # an escape found LATER attaches to the run and leaves its entry untouched
+            before = archive.read_bytes()
+            escape = {
+                "schema": "pixelhelm/capability-escape@1",
+                "date": "2026-07-27", "runId": "fixture-run", "archetype": "utility",
+                "defect": "no main landmark", "defectClass": "structure",
+                "escapedPast": "shipped-artifact", "caughtBy": "output-floor-gate", "whenFound": "post-hoc",
+                "cleared": {"date": "open", "how": "", "artifact": ""},
+                "artifacts": ["examples/harborline/gates/README.md"], "notes": "",
+            }
+            escaped = command("node", str(ledger), "write", "escape", "--project", str(project),
+                              input_bytes=json.dumps(escape).encode())
+            self.assertEqual(0, escaped.returncode, escaped.stderr.decode())
+            self.assertEqual(before, archive.read_bytes())  # the run's own line is never edited
+            self.assertIn("escape on run: fixture-run", (project / ".pixelhelm/capability/LEDGER.md").read_text(encoding="utf-8"))
+            # an escape pointing at an unknown run WARNS (soft) but still writes
+            orphan = dict(escape, runId="no-such-run", defect="orphan")
+            warned = command("node", str(ledger), "write", "escape", "--project", str(project),
+                             input_bytes=json.dumps(orphan).encode())
+            self.assertEqual(0, warned.returncode)
+            self.assertIn(b"no capability-entry with runId", warned.stderr)
+
+            # behavioral rejections: the anti-fabrication rules, not shape box-ticking
+            for mutation, expected in [
+                ({"artifacts": []}, b"every ledger record cites the artifact"),
+                ({"ownerVsPanel": 3}, b"ownerVsPanel must equal owner.band - panel.winnerMedian"),
+                ({"owner": {"decision": "pending", "band": "unknown", "bandBasis": "unknown",
+                            "ownerWords": "unknown", "record": "unknown"}},
+                 b'ownerVsPanel must be "unknown" unless BOTH'),
+                ({"panel": {"standing": "unknown", "jurors": 5, "medians": {"a": 9, "b": 8},
+                            "winner": "a", "winnerMedian": 8}}, b"does not equal panel.medians.a"),
+                ({"owner": {"decision": "rejected", "band": 6, "bandBasis": "unknown",
+                            "ownerWords": "six", "record": "unknown"}}, b"owner.bandBasis"),
+                ({"owner": {"decision": "rejected", "band": 6, "bandBasis": "stated",
+                            "ownerWords": "unknown", "record": "unknown"}}, b"is a reconstruction"),
+                ({"floor": {"outcome": "pass", "firedInLoop": [], "failedAtClose": ["verify_states"],
+                            "notRun": [], "evidence": ["g.json"]}}, b"is a contradiction"),
+                ({"floor": {"outcome": "fail", "firedInLoop": [], "failedAtClose": [],
+                            "notRun": [], "evidence": ["g.json"]}}, b"must name its gate"),
+                ({"plants": {"planted": 4, "caught": 5}}, b"cannot exceed plants.planted"),
+            ]:
+                bad = temp / "bad.json"
+                bad.write_text(json.dumps(self._entry(**mutation)), encoding="utf-8")
+                invalid = command("node", str(ledger), "validate", str(bad))
+                self.assertEqual(1, invalid.returncode, invalid.stdout.decode())
+                self.assertIn(expected, invalid.stdout)
+                # a refused record writes NOTHING
+                refused = command("node", str(ledger), "write", "entry", "--project", str(temp / "clean"),
+                                  input_bytes=json.dumps(self._entry(**mutation)).encode())
+                self.assertEqual(1, refused.returncode)
+                self.assertFalse((temp / "clean/.pixelhelm/capability").exists())
+
+            summary = json.loads(command("node", str(ledger), "summary", "--project", str(project), "--json").stdout)
+            utility = next(a for a in summary["archetypes"] if a["archetype"] == "utility")
+            self.assertEqual(1, utility["runs"])
+            self.assertEqual([9], utility["panelWinnerMedians"])
+            self.assertEqual(-3, utility["meanOwnerVsPanel"])
+            self.assertEqual(2, utility["escapes"]["total"])
+            self.assertEqual(2, utility["escapes"]["open"])
+            self.assertGreater(utility["unknownFields"], 0)  # gaps stay visible, never averaged away
+
+    def test_capability_ledger_check_catches_a_loop_closed_without_a_line(self) -> None:
+        """The mechanical half of 'closing a loop appends its ledger line'."""
+        ledger = self._ledger()
+        records = ROOT / "plugins/pixelhelm-lite" / self.LOOP_SCRIPTS / "records.mjs"
+        with tempfile.TemporaryDirectory() as temporary:
+            project = Path(temporary) / "proj"
+            run_record = json.loads(command("node", str(records), "template", "run").stdout)
+            run_record.update({"date": "2026-07-26", "project": "eval-fixture", "surface": "Status Page",
+                               "intent": "eval fixture", "workerModel": "offline"})
+            self.assertEqual(0, command("node", str(records), "write", "run", "--project", str(project),
+                                        input_bytes=json.dumps(run_record).encode()).returncode)
+            missing = command("node", str(ledger), "check", "--project", str(project), "--json")
+            self.assertEqual(1, missing.returncode)
+            payload = json.loads(missing.stdout)
+            self.assertFalse(payload["clean"])
+            self.assertEqual([".pixelhelm/runs/2026-07-26--status-page--run.json"], payload["missing"])
+
+            entry = self._entry(runId="covering-run",
+                                runRecord=".pixelhelm/runs/2026-07-26--status-page--run.json")
+            covered = command("node", str(ledger), "write", "entry", "--project", str(project),
+                              input_bytes=json.dumps(entry).encode())
+            self.assertEqual(0, covered.returncode, covered.stderr.decode())
+            self.assertNotIn(b"runRecord", covered.stderr)  # the citation resolves, so no warning
+            clean = command("node", str(ledger), "check", "--project", str(project), "--json")
+            self.assertEqual(0, clean.returncode)
+            self.assertTrue(json.loads(clean.stdout)["clean"])
+
+    def test_committed_capability_ledger_seed_is_valid_and_cites_real_artifacts(self) -> None:
+        """The seed is history, read from the committed trail — not reconstructed."""
+        ledger = self._ledger()
+        store = ROOT / ".pixelhelm/capability"
+        entries = sorted((store / "entries").glob("*.json"))
+        escapes = sorted((store / "escapes").glob("*.json"))
+        self.assertGreaterEqual(len(entries), 9)
+        self.assertGreaterEqual(len(escapes), 6)
+        valid = command("node", str(ledger), "validate", *[str(p) for p in entries + escapes])
+        self.assertEqual(0, valid.returncode, valid.stdout.decode())
+
+        roll_up = (store / "LEDGER.md").read_text(encoding="utf-8")
+        self.assertEqual(len(entries) + len(escapes), sum(1 for line in roll_up.splitlines() if line.startswith("| ")))
+        for path in entries + escapes:
+            record = json.loads(path.read_text(encoding="utf-8"))
+            self.assertTrue(record["artifacts"], path.name)
+            for cited in record["artifacts"] + record.get("floor", {}).get("evidence", []):
+                self.assertTrue((ROOT / cited).exists(), f"{path.name} cites a missing artifact: {cited}")
+            self.assertIn(record["runId"], roll_up)
+
+        summary = json.loads(command("node", str(ledger), "summary", "--project", str(ROOT), "--json").stdout)
+        groups = {a["archetype"]: a for a in summary["archetypes"]}
+        self.assertLessEqual({"utility", "saas-marketing", "commerce", "editorial", "launch-page",
+                              "cross-archetype"}, set(groups))
+        # the floor is the evidenced part: 8 of 8 planted defects caught across E4 + E4-R
+        self.assertEqual({"planted": 8, "caught": 8, "recordedOn": 2}, groups["cross-archetype"]["plants"])
+        # and every measurable owner-vs-panel delta is NEGATIVE - the owner scored below the panel
+        deltas = [d for a in groups.values() for d in a["ownerVsPanel"]]
+        self.assertEqual(4, len(deltas))
+        self.assertTrue(all(d < 0 for d in deltas), deltas)
+        # unknowns are recorded as unknown rather than reconstructed, and stay countable
+        self.assertGreater(sum(a["unknownFields"] for a in groups.values()), 0)
+
+    # ---- P3-2 baseline regression memory ----------------------------------------
+
+    def _baseline(self) -> Path:
+        script = ROOT / "plugins/pixelhelm-lite" / self.BASELINE_SCRIPTS / "baseline.mjs"
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            self.assertTrue((ROOT / "plugins" / edition / self.BASELINE_SCRIPTS / "baseline.mjs").is_file(), edition)
+        return script
+
+    HARBORLINE_GATES = ("output-floor-gate", "verify_responsive", "verify_focustrap")
+
+    def _incumbent_args(self) -> list[str]:
+        args: list[str] = []
+        for gate in self.HARBORLINE_GATES:
+            args += ["--gate-artifact", f"examples/harborline/gates/{gate}.json"]
+        return args + ["--measure", "frametime.p95=16.8:lower:1"]
+
+    def test_baseline_capture_and_compare_classify_regressions(self) -> None:
+        """P3-2: a redesign proves it did not regress, or it does not get to claim it."""
+        script = self._baseline()
+        self.assertEqual(2, command("node", str(script)).returncode)
+        with tempfile.TemporaryDirectory() as temporary:
+            project = Path(temporary) / "proj"
+            base = ["node", str(script), "capture", "--project", str(project), "--key", "abc123",
+                    "--screen", "status-page", "--date", "2026-07-26"]
+            captured = command(*base, *self._incumbent_args(),
+                               "--finding", "raw-color|nit|inline token block")
+            self.assertEqual(0, captured.returncode, captured.stderr.decode())
+            stored = json.loads((project / ".pixelhelm/baseline.json").read_text(encoding="utf-8"))
+            self.assertEqual("pixelhelm/baseline@1", stored["schema"])
+            screen = stored["screens"]["status-page"]
+            # the focus-trap record is applicable:false -> n/a, never a silent pass
+            self.assertEqual({"output-floor-gate": "pass", "verify_responsive": "pass",
+                              "verify_focustrap": "n/a"}, screen["layer1"])
+            self.assertEqual({"value": 16.8, "better": "lower", "tolerance": 1}, screen["measurements"]["frametime.p95"])
+
+            def compare(*extra: str) -> tuple[int, dict]:
+                result = command("node", str(script), "compare", "--project", str(project),
+                                 "--key", "abc123", "--screen", "status-page", "--json", *extra)
+                return result.returncode, json.loads(result.stdout)
+
+            # 1. same measurements, drift inside tolerance -> clean AND proven
+            code, clean = compare(*self._incumbent_args()[:-1], "frametime.p95=16.9:lower:1",
+                                  "--finding", "raw-color|nit|inline token block")
+            self.assertEqual(0, code)
+            self.assertTrue(clean["provenNoRegression"])
+            self.assertEqual([], clean["blockers"])
+            self.assertEqual(["raw-color"], [f["rule"] for f in clean["findings"]["persistent"]])
+
+            # 2. a gate that passed at baseline now fails -> Blocker, exit 1
+            code, regressed = compare("--gate", "output-floor-gate=fail", "--gate", "verify_responsive=pass",
+                                      "--gate", "verify_focustrap=n/a", "--measure", "frametime.p95=16.8:lower:1")
+            self.assertEqual(1, code)
+            self.assertFalse(regressed["provenNoRegression"])
+            self.assertEqual([{"gate": "output-floor-gate", "before": "pass", "after": "fail"}], regressed["regressed"])
+            self.assertIn("REGRESSED gate output-floor-gate: pass -> fail", regressed["blockers"])
+
+            # 3. a gate that passed at baseline is declared not-run -> lost evidence, still a Blocker
+            code, lost = compare("--gate", "output-floor-gate=pass", "--gate", "verify_responsive=not-run",
+                                 "--gate", "verify_focustrap=n/a", "--measure", "frametime.p95=16.8:lower:1")
+            self.assertEqual(1, code)
+            self.assertEqual([{"gate": "verify_responsive", "before": "pass"}], lost["lostEvidence"])
+            self.assertEqual([], lost["regressed"])  # reported under its own name, never as "Regressed"
+
+            # 4. a measurement that moved the wrong way past tolerance -> Blocker
+            code, drifted = compare(*self._incumbent_args()[:-1], "frametime.p95=24:lower:1")
+            self.assertEqual(1, code)
+            self.assertEqual("regressed", next(m for m in drifted["measurements"] if m["metric"] == "frametime.p95")["verdict"])
+            # ... and the same movement in the BETTER direction is not a regression
+            code, improved = compare(*self._incumbent_args()[:-1], "frametime.p95=9:lower:1")
+            self.assertEqual(0, code)
+            self.assertEqual("improved", next(m for m in improved["measurements"] if m["metric"] == "frametime.p95")["verdict"])
+
+            # 5. silence is never a pass: an un-supplied gate is named, and costs the proof
+            code, partial = compare("--gate-artifact", "examples/harborline/gates/output-floor-gate.json")
+            self.assertEqual(0, code)  # not a regression...
+            self.assertFalse(partial["provenNoRegression"])  # ...but nothing is proven either
+            self.assertEqual(["verify_responsive", "verify_focustrap"], partial["notCompared"]["gates"])
+            self.assertEqual(["frametime.p95"], partial["notCompared"]["measurements"])
+
+            # 6. flipping which direction is better is a re-registration, not a comparison
+            flipped = command("node", str(script), "compare", "--project", str(project), "--key", "abc123",
+                              "--screen", "status-page", "--measure", "frametime.p95=16.8:higher:1")
+            self.assertEqual(1, flipped.returncode)
+            self.assertIn(b"changed direction", flipped.stderr)
+
+            # 7. the wrong branch point answers a different question -> refused
+            wrong_key = command("node", str(script), "compare", "--project", str(project), "--key", "zzz",
+                                "--screen", "status-page", "--gate", "output-floor-gate=pass")
+            self.assertEqual(1, wrong_key.returncode)
+            self.assertIn(b"wrong branch point", wrong_key.stderr)
+
+            # 8. no baseline for a screen == cannot prove no regression (and says so)
+            missing = command("node", str(script), "compare", "--project", str(project), "--key", "abc123",
+                              "--screen", "checkout", "--json", "--gate", "output-floor-gate=pass")
+            self.assertEqual(0, missing.returncode)  # a screen with no memory has not regressed...
+            unproven = json.loads(missing.stdout)
+            self.assertFalse(unproven["provenNoRegression"])  # ...and has proven nothing either
+            self.assertIn("cannot prove it did not regress", unproven["why"])
+
+    def test_baseline_never_silently_absorbs_a_change(self) -> None:
+        """Re-baselining an INTENDED change stays a human's reviewable call."""
+        script = self._baseline()
+        with tempfile.TemporaryDirectory() as temporary:
+            temp = Path(temporary)
+            project = temp / "proj"
+            store = project / ".pixelhelm/baseline.json"
+            capture = ["node", str(script), "capture", "--project", str(project), "--key", "abc123",
+                       "--date", "2026-07-26"]
+            self.assertEqual(0, command(*capture, "--screen", "status-page", *self._incumbent_args()).returncode)
+            original = store.read_bytes()
+
+            # identical re-capture is a no-op, not a rewrite
+            same = command(*capture, "--screen", "status-page", *self._incumbent_args())
+            self.assertEqual(0, same.returncode)
+            self.assertEqual(original, store.read_bytes())
+
+            # a DIFFERENT capture of a captured screen is REFUSED, with the diff shown
+            refused = command(*capture, "--screen", "status-page", "--gate", "output-floor-gate=fail")
+            self.assertEqual(1, refused.returncode)
+            self.assertIn(b"never silently absorbs", refused.stderr)
+            self.assertIn(b"gate output-floor-gate: pass -> fail", refused.stderr)
+            self.assertEqual(original, store.read_bytes())
+            self.assertFalse((project / ".pixelhelm/baseline.proposed.json").exists())
+
+            # --rebaseline PROPOSES; the memory itself is untouched
+            proposed = command(*capture, "--screen", "status-page", "--gate", "output-floor-gate=fail",
+                               "--rebaseline", "--json")
+            self.assertEqual(0, proposed.returncode)
+            payload = json.loads(proposed.stdout)
+            self.assertEqual(".pixelhelm/baseline.proposed.json", payload["proposed"])
+            self.assertIsNone(payload["written"])
+            self.assertEqual(original, store.read_bytes())
+            self.assertTrue((project / ".pixelhelm/baseline.proposed.json").is_file())
+
+            # re-keying is refused too: it would drop every screen at the old branch point
+            rekey = command("node", str(script), "capture", "--project", str(project), "--key", "def456",
+                            "--date", "2026-07-26", "--screen", "status-page", "--gate", "output-floor-gate=pass")
+            self.assertEqual(1, rekey.returncode)
+            self.assertIn(b"re-keying drops every screen", rekey.stderr)
+            self.assertEqual(original, store.read_bytes())
+
+            # a NEW screen under the same key is additive - it overwrites no memory
+            added = command(*capture, "--screen", "product-page", "--gate", "output-floor-gate=pass")
+            self.assertEqual(0, added.returncode, added.stderr.decode())
+            grown = json.loads(store.read_text(encoding="utf-8"))
+            self.assertEqual({"status-page", "product-page"}, set(grown["screens"]))
+            self.assertEqual(json.loads(original)["screens"]["status-page"], grown["screens"]["status-page"])
+
+            # a finding whose identity hash was hand-edited does not validate
+            tampered = json.loads(store.read_text(encoding="utf-8"))
+            tampered["screens"]["status-page"]["findings"] = [
+                {"rule": "raw-color", "severity": "nit", "location": "token block", "hash": "0" * 16}
+            ]
+            bad = temp / "tampered.json"
+            bad.write_text(json.dumps(tampered), encoding="utf-8")
+            invalid = command("node", str(script), "validate", str(bad))
+            self.assertEqual(1, invalid.returncode)
+            self.assertIn(b"identity is rule + location", invalid.stdout)
+
+    def test_ledger_and_baseline_wiring_ships_in_both_editions(self) -> None:
+        """Docs equal code: nothing above is described as wired unless the edition carries it."""
+        for edition in ("pixelhelm-full", "pixelhelm-lite"):
+            base = ROOT / "plugins" / edition
+            self.assertTrue((base / self.LOOP_SCRIPTS / "capability-ledger.mjs").is_file(), edition)
+            self.assertTrue((base / self.BASELINE_SCRIPTS / "baseline.mjs").is_file(), edition)
+
+            loop = (base / "skills/pixelhelm-loop/references/close-the-loop.md").read_text(encoding="utf-8")
+            for required in ("pixelhelm/capability-entry@1", "pixelhelm/capability-escape@1",
+                             "capability-ledger.mjs", "ownerVsPanel", "capability-ledger.mjs check"):
+                self.assertIn(required, loop, f"{edition}/close-the-loop.md")
+            # the ledger's law, in the shipped text and not only in the code
+            self.assertRegex(loop, r"(?i)records history[^.]*never rewrites it", edition)
+            self.assertRegex(loop, r'(?i)unmeasured is the literal string', edition)
+
+            seam = (base / "skills/pixelhelm-loop/references/gates-and-loop.md").read_text(encoding="utf-8")
+            self.assertIn("pixelhelm-baseline/scripts/baseline.mjs", seam, edition)
+            for required in ("Lost evidence", "not-compared", "Regressed measurement"):
+                self.assertIn(required, seam, f"{edition}/gates-and-loop.md")
+
+            protocol = (base / "skills/pixelhelm-evaluate/references/baseline.md").read_text(encoding="utf-8")
+            self.assertIn("baseline.mjs", protocol, edition)
+            self.assertIn(".pixelhelm/baseline.json", protocol, edition)
+            # the honest not-wired statement must survive into both editions
+            self.assertRegex(protocol, r"(?i)\*\*not wired:\*\*.{0,80}pixel diff", edition)
+            self.assertRegex(protocol, r"(?i)never a finding and never a blocker", edition)
+
+            for skill, needles in (
+                ("pixelhelm-baseline", ("scripts/baseline.mjs", "not-compared")),
+                ("pixelhelm-loop", ("scripts/capability-ledger.mjs", "scripts/baseline.mjs")),
+                ("pixelhelm-evaluate", ("scripts/baseline.mjs",)),
+            ):
+                text = (base / "skills" / skill / "SKILL.md").read_text(encoding="utf-8")
+                for needle in needles:
+                    self.assertIn(needle, text, f"{edition}/{skill}/SKILL.md")
 
     def test_no_obvious_secrets_or_network_calls(self) -> None:
         watched = [ROOT / "src/family.json", ROOT / "src/skills.json", ROOT / "src/scripts",

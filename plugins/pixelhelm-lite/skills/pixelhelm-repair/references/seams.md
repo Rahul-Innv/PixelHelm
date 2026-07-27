@@ -54,10 +54,17 @@ regressed.
 ## The baseline regression check
 
 `.pixelhelm/baseline.json` (merge-base keyed) classifies every finding
-**New / Persistent / Fixed / Regressed**. After a fix:
+**New / Persistent / Fixed / Regressed**, and the classification is EXECUTED by
+`pixelhelm-baseline/scripts/baseline.mjs compare` — same `--gate-artifact` /
+`--measure` / `--finding` inputs the incumbent was captured with, exit 1 on any
+regression. After a fix:
 - The targeted finding should move to **Fixed**.
 - **No finding may appear as New or Regressed** because of the edit (Regressed =
   auto-top-severity).
+- **Re-measure what the baseline measured.** A gate the fix stopped running is
+  reported `lost-evidence` and blocks; a gate simply left out of the inputs is
+  reported `not-compared` and costs the run its no-regression proof. Neither
+  reads as a pass.
 - If the edit introduced a New/Regressed finding, **REVERT it** (recipe.md
   revert-on-regression) — a fix that trades one finding for another is net zero
   and FAILS (P2 / F6).
@@ -91,7 +98,7 @@ findings (from evaluate/council, problems-described)
   → Edit tool: exact string replacement   [guards.md Guard 3]
   → render.mjs  (pixelhelm-render)           [re-render touched surface]
   → static-gates.mjs (pixelhelm-evaluate)    [targeted assertion PASS?]
-  → diff .pixelhelm/baseline.json            [zero New/Regressed?]
+  → baseline.mjs compare                  [zero New/Regressed? exit 1 = regressed]
   → PASS → record Fixed | FAIL → revert + re-classify
   → next finding (blockers first)
 ```

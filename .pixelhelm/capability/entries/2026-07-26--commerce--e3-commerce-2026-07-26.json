@@ -1,0 +1,46 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-26",
+  "runId": "e3-commerce-2026-07-26",
+  "archetype": "commerce",
+  "kind": "design-run",
+  "project": "e3-foxglove-fern",
+  "surface": "heirloom-seed-shop",
+  "runRecord": "evals/validation/e3/run-2026-07-26/project/.pixelhelm/runs/2026-07-26--heirloom-seed-shop--run.json",
+  "artifacts": [
+    "evals/validation/e3/run-2026-07-26/REPORT.md",
+    "evals/validation/e3/run-2026-07-26/project/.pixelhelm/council/2026-07-26--heirloom-seed-shop--council.json",
+    "evals/validation/e3/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--catalog-product-page-three-arms.json"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e3/run-2026-07-26/project/gates/packet-rack/",
+      "evals/validation/e3/run-2026-07-26/project/honesty/mutant-ritual/RITUAL.md"
+    ]
+  },
+  "panel": {
+    "standing": "unknown",
+    "jurors": 5,
+    "medians": {
+      "packet-rack": 9,
+      "seed-annual": 9,
+      "sowing-almanac": 9
+    },
+    "winner": "packet-rack",
+    "winnerMedian": 9
+  },
+  "owner": {
+    "decision": "rejected",
+    "band": 6,
+    "bandBasis": "upper-bound",
+    "ownerWords": "None above 6 for this use case. ... Stop reusing the same design language.",
+    "record": "evals/validation/e3/run-2026-07-26/project/.pixelhelm/signoffs/2026-07-26--catalog-product-page-three-arms.json"
+  },
+  "ownerVsPanel": -3,
+  "plants": "unknown",
+  "notes": "Two linked surfaces per arm (catalog + product), judged as one system: 24 render cells, zero floor failures across 3 arms x 2 surfaces. A genuine three-way 9.0 tie, broken by the mechanical hierarchy committed for E1. The owner band is an UPPER BOUND (none above 6). The load-bearing owner finding is cross-run, not per-run: the same design language repeating across arms AND archetypes while the divergence metrics passed."
+}

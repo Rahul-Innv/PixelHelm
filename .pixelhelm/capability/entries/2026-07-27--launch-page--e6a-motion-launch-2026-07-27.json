@@ -1,0 +1,49 @@
+{
+  "schema": "pixelhelm/capability-entry@1",
+  "date": "2026-07-27",
+  "runId": "e6a-motion-launch-2026-07-27",
+  "archetype": "launch-page",
+  "kind": "design-run",
+  "project": "pixelhelm-validation-e6a",
+  "surface": "e6a-motion-launch",
+  "runRecord": "evals/validation/e6/run-2026-07-27/project/.pixelhelm/runs/2026-07-27--e6a-motion-launch--run.json",
+  "artifacts": [
+    "evals/validation/e6/run-2026-07-27/REPORT.md",
+    "evals/validation/e6/run-2026-07-27/project/.pixelhelm/council/2026-07-27--e6a-motion-launch--council.json",
+    "evals/validation/e6/run-2026-07-27/project/gates/motion-floor.json"
+  ],
+  "floor": {
+    "outcome": "pass",
+    "firedInLoop": [
+      "content-manifest-gate (Gate B): the second-visit control was display:none in the motion state on all three arms"
+    ],
+    "failedAtClose": [],
+    "notRun": [],
+    "evidence": [
+      "evals/validation/e6/run-2026-07-27/project/gates/under-the-bed/",
+      "evals/validation/e6/run-2026-07-27/project/gates/motion-floor.json",
+      "evals/validation/e6/run-2026-07-27/project/gates/payload-budgets.json"
+    ]
+  },
+  "panel": {
+    "standing": "advisory-only",
+    "jurors": 5,
+    "medians": {
+      "under-the-bed": 8.5,
+      "crease-line": 8,
+      "three-counts": 8
+    },
+    "winner": "under-the-bed",
+    "winnerMedian": 8.5
+  },
+  "owner": {
+    "decision": "pending",
+    "band": "unknown",
+    "bandBasis": "unknown",
+    "ownerWords": "unknown",
+    "record": "unknown"
+  },
+  "ownerVsPanel": "unknown",
+  "plants": "unknown",
+  "notes": "NOT FALSIFIED on every measured limb: sealed motion floor 14/14 items on 3/3 arms, every pre-registered budget measured and met, 12/12 mutant ritual. Carried without reframing: desktop frame-time p95 measured 16.8/16.9/17.1 ms against the registered 16.7 ms budget and passes only via verify_frametime's fixed +1.0 ms jitter allowance. The comprehension clause of the sealed success condition is UNTESTED, not satisfied (owner-gated, n=6, not run, no model proxy substituted). signoff@1 deliberately unwritten, so every owner field is unknown. Panel scores are advisory-only under the standing E4 demotion and no claim rests on them; two juror observations were verified FALSE against the artifacts (a nav strip absent from the DOM and the captures, and an empty-space penalty that is a full-page-screenshot artifact of position:sticky). A second instrument defect (the run's own motion-floor probe signature) was found and recorded rather than quietly corrected."
+}

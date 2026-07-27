@@ -1,0 +1,21 @@
+{
+  "schema": "pixelhelm/capability-escape@1",
+  "date": "2026-07-26",
+  "runId": "harborline-worked-example",
+  "archetype": "utility",
+  "defect": "two styled-div section-title heading impostors",
+  "defectClass": "structure",
+  "escapedPast": "shipped-artifact",
+  "caughtBy": "output-floor-gate",
+  "whenFound": "post-hoc",
+  "cleared": {
+    "date": "2026-07-26",
+    "how": "both .section-title divs became real h2 elements, class styling preserved so the rendered pixels are identical",
+    "artifact": "examples/harborline/gates/output-floor-gate.json"
+  },
+  "artifacts": [
+    "examples/harborline/gates/README.md",
+    "examples/harborline/repairs/2026-07-26/REPAIR.md"
+  ],
+  "notes": "Second of the three structural gaps in the same committed FAIL."
+}

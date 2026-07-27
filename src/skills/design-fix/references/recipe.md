@@ -106,8 +106,9 @@ For each finding, in severity order:
    viewports + light/dark where relevant; the reduced-motion variant if motion
    changed.
 6. **Re-evaluate** via `design-evaluate`'s gate (`seams.md`): confirm the targeted
-   finding now PASSES, and diff against `.design-baseline.json` to confirm zero
-   New/Regressed. The gate is the oracle — do not self-certify.
+   finding now PASSES, then run `pixelhelm-baseline/scripts/baseline.mjs compare`
+   against the captured baseline to confirm zero New/Regressed (its exit 1 IS the
+   regression verdict). The gate is the oracle — do not self-certify.
 7. **Record** `finding → edit → cleared | escalated | reverted` and proceed.
 
 ## Revert-on-regression

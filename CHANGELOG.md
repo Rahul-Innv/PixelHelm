@@ -2,6 +2,62 @@
 
 ## [Unreleased]
 
+Capability ledger + baseline regression memory (2026-07-27; backlog P3-1 and P3-2):
+
+- **Capability ledger (P3-1) — `pixelhelm/capability-entry@1` +
+  `pixelhelm/capability-escape@1`.** New writer/validator
+  `pixelhelm-loop/scripts/capability-ledger.mjs`, same shape and exit contract as
+  `records.mjs` (validate-then-write, append-only, dependency-free, network-free).
+  Per archetype it records run count and dates, which floor gates fired mid-loop and
+  which failed at close, panel medians and the seat's standing, the OWNER verdict,
+  and the owner-vs-panel delta; escapes are separate records naming the run they
+  attach to, so a defect found later appends and never edits the closed run's line.
+  `summary` derives the per-archetype view on every invocation (never stored as
+  truth) and reports how many fields are `unknown` — the ledger's own honesty count.
+  `check` exits 1 when a `pixelhelm/run@1` archive has no ledger entry: that is the
+  mechanical half of "closing a loop appends its ledger line", and the Close-the-loop
+  step now runs it. Validation is anti-fabrication, not shape box-ticking: every
+  record must cite an artifact, `ownerVsPanel` is recomputed from
+  `owner.band - panel.winnerMedian` and must be `unknown` when either side is,
+  `panel.winnerMedian` must equal the winner's recorded median, and a numeric owner
+  band must carry its basis (`stated` / `approximate` / `upper-bound`) plus the
+  owner's words, so "maximum 6" never hardens into "scored 6".
+- **The ledger is seeded from the committed history**, written through the shipped
+  writer, in `.pixelhelm/capability/` (9 entries, 6 escapes, README): E1 utility and
+  its owner-directed pass 2, the three E3 archetypes, E6-A, the Harborline worked
+  example, and the E4/E4-R calibration runs. Nothing was reconstructed to fill a gap:
+  every unrecorded field is `unknown` — notably the judging seat's standing on E1 and
+  E3 (their reports state none, and the demotion post-dates them) and almost all of
+  Harborline (it predates the record machinery, and its blind-panel history is
+  attested rather than committed).
+- **Baseline regression memory (P3-2) — implemented, not just specified.** The
+  `.pixelhelm/baseline.json` protocol was schema-only; `pixelhelm-baseline/scripts/baseline.mjs`
+  now captures an incumbent's gate results, key measurements, findings and screenshot
+  hash, and compares a candidate against them. A gate that was clean at baseline and
+  fails now is **Regressed** — a Blocker per `gates-and-loop.md` section 4, outranking
+  the candidate's own clean machine pass. Two honesty classes come with it: a gate
+  that passed and is now declared `not-run` is **lost evidence** (blocks under its own
+  name — an unprovable regression is not a proven one), and a baseline gate absent
+  from a run's inputs is **not-compared**, listed by name, costing the run its
+  `provenNoRegression` verdict. Measurements carry their own better-direction and
+  tolerance, so numeric drift inside a still-green budget is caught and a flipped
+  direction is refused as a re-registration. `capture` never absorbs a change:
+  it refuses to overwrite a captured screen or re-key a baseline, and `--rebaseline`
+  writes a separate reviewable proposal for a human to accept.
+- **Stated plainly rather than implied:** antialias-tolerant pixel diffing is NOT
+  wired. `--screenshot` records a file hash and comparison reports
+  identical/changed/not-compared only — a pointer for a human, never a finding and
+  never a blocker. `references/baseline.md` says so where it used to describe
+  tolerance-based diffing as if it shipped.
+- Docs updated to match the code: `close-the-loop.md` (store map, the ledger schemas
+  and their enforcement, the Close-the-loop step), `gates-and-loop.md` section 4 (the
+  executed regression rule), `pixelhelm-evaluate` SKILL + `references/baseline.md`,
+  `pixelhelm-baseline` SKILL, `pixelhelm-loop` SKILL, and the `pixelhelm-repair`
+  recipe/seams. The offline suite grew from 33 to 38 tests, exercising both new
+  pieces behaviorally (append-only refusal, the recompute rules, `check`, the seed's
+  validity and artifact citations, every regression class, and the
+  refuse-then-propose re-baselining rule).
+
 Record machinery + frame-time gate re-registration (2026-07-26, owner-approved):
 
 - Shipped `pixelhelm/juror-record@1`, the fourth record schema in `records.mjs`
