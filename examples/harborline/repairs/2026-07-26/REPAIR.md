@@ -26,6 +26,14 @@ Residual `[warn] landmark-aux: no nav landmark` — confirmed legitimate: the co
 model (`../../content-model.md`) defines a single status board with no navigation
 content; the warn asks exactly for this confirmation.
 
+Considered and deliberately not done (recorded follow-up, not a defect): making the
+new `.table-scroll` container explicitly keyboard-focusable
+(`tabindex="0" role="region" aria-label`). No shipped gate requires it, recent
+Chromium makes overflowing scroll containers keyboard-focusable by default, and
+adding it would flip the keyboard/states explicit zero-measure records — a scope
+expansion beyond the named finding. If a future pass adds interactive controls to
+this page, revisit the container's focusability and accessible name then.
+
 Non-changes (guard 1, intent protection): the inline token block's raw hex
 (soft token-conformance findings in `static-gates`) mirrors `tokens.css` verbatim and
 predates this pass — persistent, not in scope. No data markup was touched: the
