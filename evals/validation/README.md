@@ -67,4 +67,12 @@ merge.
 - `e6/` — E6-A: the motion-storytelling launch page (Lane-A, original work —
   owner-directed 2026-07-26). Blocked on E1 review + P1-5 measurement tooling;
   human comprehension check owner-gated.
-- E4–E5 human protocols: defined in artifact 14; owner-gated (recruitment).
+- `e4-run-2026-07-26/` — E4: **RUN 2026-07-26/27 — FALSIFIED per its sealed
+  criteria** (tau-b 0.632 PASS, inflation +0.625 PASS, plant criterion FAIL:
+  a planted real contrast failure won its external set unnoticed by all five
+  jurors; the floor battery caught 4/4 plants deterministically). Standing
+  consequence, in force: **the model judging seat is advisory-only until
+  repaired; no Tier-3 claim may rest on internal scores alone; the machine
+  floor's authority is strengthened.** Repair direction is an open owner
+  decision (REPORT.md lists candidates).
+- E5 human protocol: defined in artifact 14; owner-gated (recruitment).
