@@ -1,0 +1,992 @@
+{
+  "validator": "verify_cwv",
+  "generated": "2026-07-27T15:53:43.028Z",
+  "budgets": {
+    "lcpMs": 2500,
+    "cls": 0.1,
+    "inpProxyMs": 200
+  },
+  "note": "LAB, single machine, one cold load per profile, no network throttling — directional, never RUM. INP-proxy is a scripted-interaction lab proxy, not field INP.",
+  "profiles": [
+    {
+      "name": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 800
+      },
+      "deviceScaleFactor": 1,
+      "cpuThrottleRate": 1,
+      "targets": [
+        {
+          "target": "arms/under-the-bed/index.html",
+          "readiness": {
+            "animations": "running",
+            "samples": 3,
+            "timeoutMs": 5000,
+            "readyState": "complete",
+            "fontsLoaded": true,
+            "layoutSettled": true,
+            "settleFrames": 4,
+            "documentGeometry": "1280x3635",
+            "waitedMs": 58
+          },
+          "metrics": {
+            "lcpMs": 384,
+            "cls": 0,
+            "inpProxy": {
+              "interactiveElements": 5,
+              "clicks": 5,
+              "tabPresses": 3,
+              "worstMs": 48,
+              "firstInputDelayMs": 3,
+              "entriesOver16Ms": [
+                {
+                  "type": "pointerover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 16,
+                  "inputDelayMs": 3
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 16,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 16,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 16,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "click",
+                  "durationMs": 16,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "click",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "click",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "click",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 16,
+                  "inputDelayMs": 0
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "click",
+                  "durationMs": 48,
+                  "inputDelayMs": 1
+                }
+              ]
+            }
+          },
+          "checks": [
+            {
+              "id": "LCP",
+              "val": "384 ms",
+              "budget": "<= 2500 ms",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "CLS",
+              "val": "0",
+              "budget": "<= 0.1",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "INP-proxy",
+              "val": "48 ms",
+              "budget": "<= 200 ms",
+              "na": false,
+              "ok": true
+            }
+          ],
+          "pass": true
+        }
+      ]
+    },
+    {
+      "name": "emulated-mobile",
+      "viewport": {
+        "width": 375,
+        "height": 812
+      },
+      "deviceScaleFactor": 2,
+      "cpuThrottleRate": 4,
+      "targets": [
+        {
+          "target": "arms/under-the-bed/index.html",
+          "readiness": {
+            "animations": "running",
+            "samples": 3,
+            "timeoutMs": 5000,
+            "readyState": "complete",
+            "fontsLoaded": true,
+            "layoutSettled": true,
+            "settleFrames": 4,
+            "documentGeometry": "375x4391",
+            "waitedMs": 46
+          },
+          "metrics": {
+            "lcpMs": 700,
+            "cls": 0,
+            "inpProxy": {
+              "interactiveElements": 5,
+              "clicks": 5,
+              "tabPresses": 3,
+              "worstMs": 64,
+              "firstInputDelayMs": 18,
+              "entriesOver16Ms": [
+                {
+                  "type": "pointerover",
+                  "durationMs": 64,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 64,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 64,
+                  "inputDelayMs": 18
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 64,
+                  "inputDelayMs": 24
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 64,
+                  "inputDelayMs": 28
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 64,
+                  "inputDelayMs": 30
+                },
+                {
+                  "type": "click",
+                  "durationMs": 64,
+                  "inputDelayMs": 31
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 56,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 56,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 56,
+                  "inputDelayMs": 11
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 56,
+                  "inputDelayMs": 17
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 56,
+                  "inputDelayMs": 22
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 56,
+                  "inputDelayMs": 25
+                },
+                {
+                  "type": "click",
+                  "durationMs": 56,
+                  "inputDelayMs": 31
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 48,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 48,
+                  "inputDelayMs": 9
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 48,
+                  "inputDelayMs": 14
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 48,
+                  "inputDelayMs": 14
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 48,
+                  "inputDelayMs": 15
+                },
+                {
+                  "type": "click",
+                  "durationMs": 48,
+                  "inputDelayMs": 15
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 24,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 24,
+                  "inputDelayMs": 6
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 24,
+                  "inputDelayMs": 6
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 24,
+                  "inputDelayMs": 6
+                },
+                {
+                  "type": "click",
+                  "durationMs": 24,
+                  "inputDelayMs": 6
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 24,
+                  "inputDelayMs": 6
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 24,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 24,
+                  "inputDelayMs": 8
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "pointerdown",
+                  "durationMs": 24,
+                  "inputDelayMs": 3
+                },
+                {
+                  "type": "mousedown",
+                  "durationMs": 24,
+                  "inputDelayMs": 4
+                },
+                {
+                  "type": "pointerup",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "mouseup",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "click",
+                  "durationMs": 24,
+                  "inputDelayMs": 7
+                },
+                {
+                  "type": "keydown",
+                  "durationMs": 24,
+                  "inputDelayMs": 2
+                },
+                {
+                  "type": "keydown",
+                  "durationMs": 40,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "keyup",
+                  "durationMs": 24,
+                  "inputDelayMs": 0
+                },
+                {
+                  "type": "pointerout",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerleave",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "pointerenter",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseout",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "mouseover",
+                  "durationMs": 16,
+                  "inputDelayMs": 1
+                },
+                {
+                  "type": "keydown",
+                  "durationMs": 24,
+                  "inputDelayMs": 1
+                }
+              ]
+            }
+          },
+          "checks": [
+            {
+              "id": "LCP",
+              "val": "700 ms",
+              "budget": "<= 2500 ms",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "CLS",
+              "val": "0",
+              "budget": "<= 0.1",
+              "na": false,
+              "ok": true
+            },
+            {
+              "id": "INP-proxy",
+              "val": "64 ms",
+              "budget": "<= 200 ms",
+              "na": false,
+              "ok": true
+            }
+          ],
+          "pass": true
+        }
+      ]
+    }
+  ],
+  "pass": true
+}

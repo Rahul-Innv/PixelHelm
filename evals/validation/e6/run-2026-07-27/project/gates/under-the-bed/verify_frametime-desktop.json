@@ -1,0 +1,46 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:53:05.545Z",
+  "profile": {
+    "name": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "cpuThrottleRate": 1
+  },
+  "budget": {
+    "p95Ms": 16.7,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/under-the-bed/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x3635",
+        "waitedMs": 52
+      },
+      "scrollable": true,
+      "scrolledPx": 2835,
+      "samples": 33,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.7,
+        "p95": 16.9,
+        "max": 17.2
+      },
+      "droppedFramePct": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,46 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:52:54.530Z",
+  "profile": {
+    "name": "desktop",
+    "viewport": {
+      "width": 1280,
+      "height": 800
+    },
+    "deviceScaleFactor": 1,
+    "cpuThrottleRate": 1
+  },
+  "budget": {
+    "p95Ms": 16.7,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/crease-line/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x2223",
+        "waitedMs": 65
+      },
+      "scrollable": true,
+      "scrolledPx": 1423,
+      "samples": 22,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.6,
+        "p95": 16.8,
+        "max": 16.9
+      },
+      "droppedFramePct": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

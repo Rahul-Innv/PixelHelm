@@ -1,0 +1,81 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:52:59.993Z",
+  "profile": {
+    "name": "emulated-mobile",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "deviceScaleFactor": 2,
+    "cpuThrottleRate": 4
+  },
+  "budget": {
+    "p95Ms": 33,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/crease-line/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "375x3131",
+        "waitedMs": 56
+      },
+      "scrollable": true,
+      "schedulingStallExclusion": {
+        "rule": "emulated-mobile only: the 1 largest frame gap(s) per scripted wheel step excluded before percentile math (source constant; diagnosed headless scheduling stall — budgets unchanged)",
+        "wheelSteps": 5,
+        "excludedCount": 5,
+        "excludedGapsMs": [
+          33.3,
+          33.4,
+          49.9,
+          16.8,
+          16.8
+        ],
+        "excludedPerStep": [
+          {
+            "wheelStep": 1,
+            "gapMs": 33.3
+          },
+          {
+            "wheelStep": 2,
+            "gapMs": 33.4
+          },
+          {
+            "wheelStep": 3,
+            "gapMs": 49.9
+          },
+          {
+            "wheelStep": 4,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 5,
+            "gapMs": 16.8
+          }
+        ]
+      },
+      "scrolledPx": 2319,
+      "samples": 27,
+      "samplesBeforeExclusion": 32,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.7,
+        "p95": 16.9,
+        "max": 16.9
+      },
+      "droppedFramePct": 0,
+      "pass": true
+    }
+  ],
+  "pass": true
+}

@@ -1,0 +1,8 @@
+{
+  "gate": "derived-claims",
+  "target": "evals\\validation\\e6\\run-2026-07-27\\project\\arms\\three-counts\\index.html",
+  "pass": true,
+  "allowedNumbers": 16,
+  "blocks": 7,
+  "findings": []
+}

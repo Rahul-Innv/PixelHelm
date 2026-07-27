@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vireo Fold in three counts: bag, unfold, water</title>
+<meta name="description" content="Three counts and a clock. A 9.8 kg folding touring kayak, 84 x 56 x 24 cm packed, 4.1 m on the water, with a median owner-timed setup of 3 min 40 s from 14 owner-submitted timings.">
+<script type="application/json" id="token-contract">
+{
+  "light": { "paper": "#EFEDE4", "ink": "#131313", "muted": "#4F4F4C", "rule": "#868680", "accent": "#4A5A0B" },
+  "dark":  { "paper": "#0E0F0C", "ink": "#EFEFE7", "muted": "#A8A89E", "rule": "#60615A", "accent": "#C6E24A" },
+  "gatedPairs": [
+    { "fg": "ink", "on": ["paper"], "kind": "text" },
+    { "fg": "muted", "on": ["paper"], "kind": "text" },
+    { "fg": "accent", "on": ["paper"], "kind": "text" },
+    { "fg": "rule", "on": ["paper"], "kind": "graphic" }
+  ]
+}
+</script>
+<style>
+:root{ --paper:#EFEDE4; --ink:#131313; --muted:#4F4F4C; --rule:#868680; --accent:#4A5A0B; }
+html[data-theme="dark"]{ --paper:#0E0F0C; --ink:#EFEFE7; --muted:#A8A89E; --rule:#60615A; --accent:#C6E24A; }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.6 ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* fixed jump bar: the returning visitor's route past the narrative */
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:14px;min-height:58px;flex-wrap:wrap}
+.brand{font-weight:800;letter-spacing:.16em;text-transform:uppercase;font-size:13px}
+.brand span{display:block;font-weight:400;letter-spacing:.03em;text-transform:none;color:var(--muted);font-size:12px}
+.controls{display:flex;gap:12px;align-items:center;flex-wrap:wrap}
+.jump{display:inline-flex;align-items:center;min-height:36px;padding:6px 10px;color:var(--ink);font-size:14px;
+  text-decoration:underline;text-underline-offset:3px}
+.jump:hover{color:var(--accent)}
+.ctrl{display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;border:1px solid var(--rule);
+  color:var(--ink);text-decoration:none;font-size:14px}
+.ctrl:hover{border-color:var(--accent);color:var(--accent)}
+/* Motion switch: BOTH options are always rendered and always focusable, so the
+   skip control and the second-visit affordance are verifiable by gate in every
+   state, and a no-JS visitor gets two real links rather than a hidden control.
+   aria-current is set by JS only, so no state is claimed when JS is off. */
+.motion-toggle{display:inline-flex;align-items:center}
+.motion-toggle .ctrl[aria-current="true"]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.motion-toggle .ctrl[aria-current="true"]:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+.hero{padding:54px 0 40px;border-bottom:1px solid var(--rule)}
+h1{font-size:clamp(32px,6vw,66px);line-height:1.03;margin:0 0 18px;letter-spacing:-.03em;max-width:14ch}
+.lede{font-size:clamp(16px,1.7vw,19px);color:var(--muted);max-width:50ch;margin:0 0 26px}
+.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.buy{display:inline-flex;align-items:center;min-height:48px;padding:13px 24px;background:var(--accent);
+  color:var(--paper);text-decoration:none;font-weight:700;letter-spacing:.01em}
+.buy:hover{background:var(--ink)}
+.trial{color:var(--muted);font-size:14px}
+
+/* beat-strip: three numbered acts, each a single held statement */
+.beat{border-bottom:1px solid var(--rule);padding:56px 0;min-height:78vh;display:flex;align-items:center}
+.beat .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:28px;width:100%}
+@media (min-width:900px){ .beat .wrap{grid-template-columns:88px minmax(0,1fr) minmax(0,300px);gap:36px;align-items:center} }
+.count{font-size:clamp(48px,9vw,104px);line-height:.85;font-weight:800;letter-spacing:-.05em;color:var(--accent)}
+.beat h2{font-size:clamp(26px,4vw,44px);line-height:1.06;letter-spacing:-.025em;margin:0 0 16px}
+.beat p{margin:0;color:var(--muted);max-width:46ch}
+.beat p.fact{color:var(--ink);font-size:clamp(16px,1.8vw,19px)}
+
+/* the clock: the page's ornament. The numeral is the sealed median and never
+   advances; what advances is the sweep. See the note in the caption. */
+.clock{display:block;width:100%;max-width:260px;height:auto;margin:0 auto}
+.clock .track{stroke:var(--rule);stroke-width:6;fill:none}
+.clock .sweep{stroke:var(--accent);stroke-width:6;fill:none;stroke-linecap:butt}
+.clock-read{text-align:center;margin:12px 0 0}
+.clock-read .big{font-size:26px;font-weight:800;letter-spacing:-.02em;display:block}
+.clock-read .basis{font-size:13px;color:var(--muted);line-height:1.5;display:block;margin-top:5px}
+
+.specs{padding:52px 0;border-bottom:1px solid var(--rule)}
+h2.sec{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 22px;font-weight:800}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0}
+.cell{border-top:1px solid var(--rule);padding:16px 20px 20px 0}
+.cell dt{font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.cell dd{margin:0;font-size:clamp(19px,2.2vw,25px);letter-spacing:-.015em}
+.cell .qual{display:block;font-size:13px;line-height:1.5;color:var(--muted);letter-spacing:0;margin-top:7px;max-width:34ch}
+.cell .qual strong{color:var(--ink);font-weight:700}
+
+.price{padding:52px 0}
+.price .amount{font-size:clamp(36px,6vw,66px);letter-spacing:-.03em;margin:0;font-weight:800}
+.price p{color:var(--muted);max-width:50ch}
+footer{border-top:1px solid var(--rule);padding:26px 0 46px;color:var(--muted);font-size:14px}
+
+/* =====================================================================
+   MOTION. Gated on html.js AND :not(.still) AND no-preference.
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference){
+  html.js:not(.still) .rv{opacity:0;transform:translateY(20px)}
+  html.js:not(.still) .rv.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+  html.js:not(.still) .count{transform:translateY(8px);transition:transform .55s ease}
+  html.js:not(.still) .rv.in .count{transform:none}
+}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  var d=document.documentElement, still=false;
+  try{
+    var q=new URLSearchParams(location.search);
+    if(q.get('still')==='0'){ try{localStorage.removeItem('vf-still');localStorage.removeItem('vf-seen');}catch(e){} }
+    else if(q.has('still')){ still=true; try{localStorage.setItem('vf-still','1');}catch(e){} }
+    else { try{ still = localStorage.getItem('vf-still')==='1' || localStorage.getItem('vf-seen')==='1'; }catch(e){} }
+  }catch(e){}
+  d.classList.add('js');
+  if(still) d.classList.add('still');
+})();
+</script>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand">Vireo Fold<span>Vireo Boats (fictional), Rotterdam</span></div>
+    <nav class="controls" aria-label="Page">
+      <a class="jump" href="#specs">Specs</a>
+      <a class="jump" href="#price">Price</a>
+      <span class="motion-toggle" role="group" aria-label="Motion">
+        <a class="ctrl" href="?still=0" id="play-ctrl">Play the unfold</a>
+        <a class="ctrl" href="?still=1" id="skip-ctrl">Skip the unfold</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>Three counts: bag, unfold, water.</h1>
+      <p class="lede">A touring kayak that lives under your bed. Built for city commuters and small-flat dwellers who assumed kayaking wasn't for them. The whole page is three beats, and the clock runs beside them.</p>
+      <div class="hero-actions">
+        <a class="buy" href="#price">Order, 1290 EUR</a>
+        <span class="trial">Ships EU-wide. 30-day water-it-and-return trial.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat rv" aria-labelledby="b1">
+    <div class="wrap">
+      <div class="count" aria-hidden="true">1</div>
+      <div>
+        <h2 id="b1">The bag</h2>
+        <p class="fact" data-model="step-1">Folded: 84 x 56 x 24 cm. Airline carry-on envelope. 9.8 kg with paddle.</p>
+      </div>
+      <div>
+        <svg class="clock" viewBox="0 0 200 200" role="img" aria-label="A dial marking the first of the three counts.">
+          <circle class="track" cx="100" cy="100" r="78"/>
+          <path class="sweep" data-sweep="0.33" d="M100 22 A78 78 0 0 1 100 178 A78 78 0 0 1 100 22" pathLength="1"/>
+        </svg>
+        <p class="clock-read"><span class="big">Count one</span><span class="basis">The bag, before anything is unfolded.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat rv" aria-labelledby="b2">
+    <div class="wrap">
+      <div class="count" aria-hidden="true">2</div>
+      <div>
+        <h2 id="b2">The unfold</h2>
+        <p class="fact" data-model="step-2">Six creases, one tension lever. Median owner-timed setup: 3 min 40 s (n=14, owner-submitted timings).</p>
+      </div>
+      <div data-model="setupTime">
+        <svg class="clock" viewBox="0 0 200 200" role="img" aria-label="A dial standing for the median setup time. The dial is an ornament, not a live measurement.">
+          <circle class="track" cx="100" cy="100" r="78"/>
+          <path class="sweep" data-sweep="0.66" d="M100 22 A78 78 0 0 1 100 178 A78 78 0 0 1 100 22" pathLength="1"/>
+        </svg>
+        <p class="clock-read">
+          <span class="big">3 min 40 s</span>
+          <span class="basis"><strong>Median, not a guarantee.</strong> Basis: owner-submitted timings, n=14. Not independently verified. The dial is an ornament and is not timing your visit.</span>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="beat rv" aria-labelledby="b3">
+    <div class="wrap">
+      <div class="count" aria-hidden="true">3</div>
+      <div>
+        <h2 id="b3">The water</h2>
+        <p class="fact" data-model="step-3">4.1 m waterline, tracks like a rigid tourer. Self-rescue tested in chop.</p>
+      </div>
+      <div>
+        <svg class="clock" viewBox="0 0 200 200" role="img" aria-label="A dial marking the third and last of the three counts.">
+          <circle class="track" cx="100" cy="100" r="78"/>
+          <path class="sweep" data-sweep="1" d="M100 22 A78 78 0 0 1 100 178 A78 78 0 0 1 100 22" pathLength="1"/>
+        </svg>
+        <p class="clock-read"><span class="big">Count three</span><span class="basis">On the water, 4.1 m of waterline.</span></p>
+      </div>
+    </div>
+  </section>
+
+  <section class="specs" id="specs" aria-labelledby="specs-h">
+    <div class="wrap">
+      <h2 class="sec" id="specs-h">Specs</h2>
+      <dl class="grid">
+        <div class="cell"><dt>Weight</dt><dd>9.8 kg<span class="qual">With the four-part paddle.</span></dd></div>
+        <div class="cell"><dt>Folded</dt><dd>84 x 56 x 24 cm</dd></div>
+        <div class="cell"><dt>Length</dt><dd>4.1 m<span class="qual">Waterline.</span></dd></div>
+        <div class="cell" data-model="packVolumeL"><dt>Pack volume</dt><dd>118 L<span class="qual"><strong>Estimated</strong> from CAD. The production bag has not yet been measured.</span></dd></div>
+        <div class="cell" data-model="loadRatingKg"><dt>Load rating</dt><dd>130 kg<span class="qual"><strong>Certification pending.</strong> Independent certification is in progress, so this figure is not certified and must not be read as certified.</span></dd></div>
+        <div class="cell"><dt>Material</dt><dd style="font-size:18px">Double-wall woven polypropylene, UV-stabilized</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="price" id="price" aria-labelledby="price-h">
+    <div class="wrap" data-model="pricing">
+      <h2 class="sec" id="price-h">Price</h2>
+      <p class="amount">1290 EUR</p>
+      <p>Includes: Hull, four-part paddle, pack bag, fin. Ships EU-wide; 30-day water-it-and-return trial.</p>
+      <p><a class="buy" href="#price">Order the Vireo Fold</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Vireo Boats (fictional). Rotterdam, founded 2023.</div></footer>
+
+<script>
+/* Motion layer. Native scroll only: no wheel or touch listener, no
+   preventDefault, no scroll-snap, no programmatic scrolling. */
+(function(){
+  var d=document.documentElement;
+  if(!d.classList.contains('js')) return;
+  try{ localStorage.setItem('vf-seen','1'); }catch(e){}
+
+  var skip=document.getElementById('skip-ctrl'), play=document.getElementById('play-ctrl');
+  if(skip) skip.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.add('still'); syncToggle();
+    try{ localStorage.setItem('vf-still','1'); }catch(e){}
+    rest(); if(play) play.focus();
+  });
+  if(play) play.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.remove('still'); syncToggle();
+    try{ localStorage.removeItem('vf-still'); localStorage.removeItem('vf-seen'); }catch(e){}
+    onScroll(); if(skip) skip.focus();
+  });
+
+  function syncToggle(){
+    var isStill=d.classList.contains('still');
+    if(play) play.setAttribute('aria-current', isStill?'false':'true');
+    if(skip) skip.setAttribute('aria-current', isStill?'true':'false');
+  }
+  syncToggle();
+
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  function motionOff(){ return d.classList.contains('still') || reduced.matches; }
+
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -14% 0px'});
+    rv.forEach(function(el){ io.observe(el); });
+  } else { rv.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* the sweep. pathLength=1 means the dash values ARE the fraction, so the
+     numeral never changes and no number is ever invented on screen. */
+  var sweeps=[].slice.call(document.querySelectorAll('.sweep'));
+  sweeps.forEach(function(s){ s.style.strokeDasharray='1'; });
+  function rest(){ sweeps.forEach(function(s){ s.style.strokeDashoffset=String(1-Number(s.dataset.sweep||1)); }); }
+
+  var dirty=false, last=[];
+  function tick(){
+    dirty=false;
+    if(motionOff()){ rest(); return; }
+    var vh=window.innerHeight||1;
+    for(var i=0;i<sweeps.length;i++){
+      var s=sweeps[i], host=s.closest('.beat'); if(!host) continue;
+      var r=host.getBoundingClientRect();
+      if(r.bottom<0||r.top>vh) continue;
+      var p=(vh-r.top)/(vh+r.height); p=p<0?0:p>1?1:p;
+      if(last[i]!=null && Math.abs(p-last[i])<0.004) continue;
+      last[i]=p;
+      var target=Number(s.dataset.sweep||1);
+      s.style.strokeDashoffset=(1-target*Math.min(1,p*1.5)).toFixed(4);
+    }
+  }
+  function onScroll(){ if(!dirty){ dirty=true; requestAnimationFrame(tick); } }
+
+  if(motionOff()){ rest(); } else { requestAnimationFrame(tick); }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll,{passive:true});
+  reduced.addEventListener('change',function(){ if(motionOff()) rest(); else onScroll(); });
+})();
+</script>
+</body>
+</html>

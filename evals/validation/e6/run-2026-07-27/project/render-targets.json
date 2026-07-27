@@ -1,0 +1,17 @@
+{
+  "_note": "MOTION render set: prefers-reduced-motion left at no-preference, so the animated form is what is captured.",
+  "browserChannel": "msedge",
+  "outDir": "renders/motion",
+  "viewports": [
+    { "name": "desktop", "width": 1440, "height": 900 },
+    { "name": "mobile", "width": 375, "height": 812 }
+  ],
+  "modes": ["light", "dark"],
+  "darkAttr": "data-theme",
+  "items": [
+    { "name": "crease-line", "file": "arms/crease-line/index.html" },
+    { "name": "under-the-bed", "file": "arms/under-the-bed/index.html" },
+    { "name": "three-counts", "file": "arms/three-counts/index.html" }
+  ],
+  "axe": true
+}

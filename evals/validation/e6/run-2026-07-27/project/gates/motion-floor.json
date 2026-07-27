@@ -1,0 +1,236 @@
+{
+  "tool": "verify-motion-floor",
+  "generated": "2026-07-27T15:56:53.167Z",
+  "note": "LAB, single machine. Each item is a runtime measurement; L-085 forbids inferring choreography from a capture.",
+  "arms": [
+    {
+      "arm": "crease-line",
+      "checks": [
+        {
+          "id": "first-visit-plays",
+          "ok": true,
+          "detail": "html.js=true, html.still=false (a first visit must play)"
+        },
+        {
+          "id": "motion-is-real",
+          "ok": true,
+          "detail": "scroll-linked style delta between top and mid-page with motion on (L-085: a capture cannot show this)"
+        },
+        {
+          "id": "no-wheel-capture",
+          "ok": true,
+          "detail": "wheel defaultPrevented=false"
+        },
+        {
+          "id": "no-scroll-snap",
+          "ok": true,
+          "detail": "scroll-snap-type html=\"none\" body=\"none\""
+        },
+        {
+          "id": "native-scroll-offset",
+          "ok": true,
+          "detail": "requested +300px, moved 300px"
+        },
+        {
+          "id": "no-scroll-rewrite",
+          "ok": true,
+          "detail": "offset stable after 300ms: scrollY=1300 (no script pulled it back to 0)"
+        },
+        {
+          "id": "skip-control-visible",
+          "ok": true,
+          "detail": "\"Skip the unfold\" href=\"?still=1\" 124x36 css px"
+        },
+        {
+          "id": "skip-control-works",
+          "ok": true,
+          "detail": "after clicking skip: html.still=true, claim blocks below full opacity=0"
+        },
+        {
+          "id": "second-visit-bypass",
+          "ok": true,
+          "detail": "returning visit: html.still=true, claim blocks below full opacity=0, price block fully visible=true"
+        },
+        {
+          "id": "reduced-motion-nothing-hidden",
+          "ok": true,
+          "detail": "elements hidden or below full opacity at load under prefers-reduced-motion: 0"
+        },
+        {
+          "id": "reduced-motion-is-static",
+          "ok": true,
+          "detail": "no scroll-linked style delta under prefers-reduced-motion (the same probe that proved motion is real)"
+        },
+        {
+          "id": "reduced-motion-blocks-laid-out",
+          "ok": true,
+          "detail": "7 claim blocks, all with non-zero box and text; degenerate: 0"
+        },
+        {
+          "id": "no-js-every-fact-present",
+          "ok": true,
+          "detail": "with scripting disabled in the ENGINE: 9/9 sealed strings present"
+        },
+        {
+          "id": "no-js-no-motion-gate",
+          "ok": true,
+          "detail": "html class=\"\" (without the js class every hidden-until-animated state is inert)"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "arm": "under-the-bed",
+      "checks": [
+        {
+          "id": "first-visit-plays",
+          "ok": true,
+          "detail": "html.js=true, html.still=false (a first visit must play)"
+        },
+        {
+          "id": "motion-is-real",
+          "ok": true,
+          "detail": "scroll-linked style delta between top and mid-page with motion on (L-085: a capture cannot show this)"
+        },
+        {
+          "id": "no-wheel-capture",
+          "ok": true,
+          "detail": "wheel defaultPrevented=false"
+        },
+        {
+          "id": "no-scroll-snap",
+          "ok": true,
+          "detail": "scroll-snap-type html=\"none\" body=\"none\""
+        },
+        {
+          "id": "native-scroll-offset",
+          "ok": true,
+          "detail": "requested +300px, moved 300px"
+        },
+        {
+          "id": "no-scroll-rewrite",
+          "ok": true,
+          "detail": "offset stable after 300ms: scrollY=1936 (no script pulled it back to 0)"
+        },
+        {
+          "id": "skip-control-visible",
+          "ok": true,
+          "detail": "\"Skip the unfold\" href=\"?still=1\" 126x37 css px"
+        },
+        {
+          "id": "skip-control-works",
+          "ok": true,
+          "detail": "after clicking skip: html.still=true, claim blocks below full opacity=0"
+        },
+        {
+          "id": "second-visit-bypass",
+          "ok": true,
+          "detail": "returning visit: html.still=true, claim blocks below full opacity=0, price block fully visible=true"
+        },
+        {
+          "id": "reduced-motion-nothing-hidden",
+          "ok": true,
+          "detail": "elements hidden or below full opacity at load under prefers-reduced-motion: 0"
+        },
+        {
+          "id": "reduced-motion-is-static",
+          "ok": true,
+          "detail": "no scroll-linked style delta under prefers-reduced-motion (the same probe that proved motion is real)"
+        },
+        {
+          "id": "reduced-motion-blocks-laid-out",
+          "ok": true,
+          "detail": "7 claim blocks, all with non-zero box and text; degenerate: 0"
+        },
+        {
+          "id": "no-js-every-fact-present",
+          "ok": true,
+          "detail": "with scripting disabled in the ENGINE: 9/9 sealed strings present"
+        },
+        {
+          "id": "no-js-no-motion-gate",
+          "ok": true,
+          "detail": "html class=\"\" (without the js class every hidden-until-animated state is inert)"
+        }
+      ],
+      "pass": true
+    },
+    {
+      "arm": "three-counts",
+      "checks": [
+        {
+          "id": "first-visit-plays",
+          "ok": true,
+          "detail": "html.js=true, html.still=false (a first visit must play)"
+        },
+        {
+          "id": "motion-is-real",
+          "ok": true,
+          "detail": "scroll-linked style delta between top and mid-page with motion on (L-085: a capture cannot show this)"
+        },
+        {
+          "id": "no-wheel-capture",
+          "ok": true,
+          "detail": "wheel defaultPrevented=false"
+        },
+        {
+          "id": "no-scroll-snap",
+          "ok": true,
+          "detail": "scroll-snap-type html=\"none\" body=\"none\""
+        },
+        {
+          "id": "native-scroll-offset",
+          "ok": true,
+          "detail": "requested +300px, moved 300px"
+        },
+        {
+          "id": "no-scroll-rewrite",
+          "ok": true,
+          "detail": "offset stable after 300ms: scrollY=1952 (no script pulled it back to 0)"
+        },
+        {
+          "id": "skip-control-visible",
+          "ok": true,
+          "detail": "\"Skip the unfold\" href=\"?still=1\" 124x36 css px"
+        },
+        {
+          "id": "skip-control-works",
+          "ok": true,
+          "detail": "after clicking skip: html.still=true, claim blocks below full opacity=0"
+        },
+        {
+          "id": "second-visit-bypass",
+          "ok": true,
+          "detail": "returning visit: html.still=true, claim blocks below full opacity=0, price block fully visible=true"
+        },
+        {
+          "id": "reduced-motion-nothing-hidden",
+          "ok": true,
+          "detail": "elements hidden or below full opacity at load under prefers-reduced-motion: 0"
+        },
+        {
+          "id": "reduced-motion-is-static",
+          "ok": true,
+          "detail": "no scroll-linked style delta under prefers-reduced-motion (the same probe that proved motion is real)"
+        },
+        {
+          "id": "reduced-motion-blocks-laid-out",
+          "ok": true,
+          "detail": "7 claim blocks, all with non-zero box and text; degenerate: 0"
+        },
+        {
+          "id": "no-js-every-fact-present",
+          "ok": true,
+          "detail": "with scripting disabled in the ENGINE: 9/9 sealed strings present"
+        },
+        {
+          "id": "no-js-no-motion-gate",
+          "ok": true,
+          "detail": "html class=\"\" (without the js class every hidden-until-animated state is inert)"
+        }
+      ],
+      "pass": true
+    }
+  ],
+  "pass": true
+}

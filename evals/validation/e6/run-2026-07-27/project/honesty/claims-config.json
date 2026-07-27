@@ -1,0 +1,41 @@
+{
+  "_note": "Gate A (derived-claims) config for the E6-A Vireo Fold arms. root is the project dir; dataFiles points straight at the SEALED file (no copy, so the gate binds the sealed artifact itself). --target selects the arm HTML. No derivedFile: this brief needs no arithmetic, so every number on every page is a literal transcription and the allowed set is exactly the sealed file's numbers.",
+  "root": "..",
+  "dataFiles": ["../../data/vireo-fold.json"],
+  "extractNumbersFromStrings": true,
+  "globalAllow": [],
+  "modelBlockAttr": "data-model",
+  "perBlockMoneyScopes": {
+    "modelsPath": "specs",
+    "moneyFields": [],
+    "moneyArrayFields": []
+  },
+  "_associationNote": "The shipped gate's money regex is $-only and the sealed price is EUR, so check (b) ASSOCIATION is an explicit ZERO-MEASURE on this content, never an implied conformance. Recorded in the mutant ritual and the report.",
+  "verdict": {
+    "word": "certified",
+    "negationWindow": 30,
+    "negators": ["never", "not", "no"],
+    "statusField": "certification",
+    "positiveStatus": "certified",
+    "provisional": {
+      "status": "pending",
+      "markerPattern": "certification pending|pending certification|certification is in progress|not yet certified",
+      "negationPattern": "not certified|not yet certified|never certified"
+    }
+  },
+  "numericContexts": { "money": true, "percent": true, "count": true, "days": true },
+  "extraNumericContexts": [
+    { "kind": "euro", "pattern": "(\\d[\\d,]*(?:\\.\\d+)?)\\s?EUR", "group": 1 },
+    { "kind": "kilograms", "pattern": "(\\d+(?:\\.\\d+)?)\\s?kg", "group": 1 },
+    { "kind": "centimetres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?cm", "group": 1 },
+    { "kind": "metres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?m\\b", "group": 1 },
+    { "kind": "litres", "pattern": "(\\d+(?:\\.\\d+)?)\\s?L\\b", "group": 1 },
+    { "kind": "minutes", "pattern": "(\\d+)\\s?min\\b", "group": 1 },
+    { "kind": "seconds", "pattern": "(\\d+)\\s?s\\b", "group": 1 },
+    { "kind": "sampleSize", "pattern": "n\\s?=\\s?(\\d+)", "group": 1 },
+    { "kind": "year", "pattern": "\\b(20\\d{2})\\b", "group": 1 },
+    { "kind": "dimensionChain", "pattern": "(\\d+)\\s?x\\s?(\\d+)\\s?x\\s?(\\d+)", "group": 1 }
+  ],
+  "darkAttr": "data-theme",
+  "modes": ["light", "dark"]
+}

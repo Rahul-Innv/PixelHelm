@@ -1,0 +1,356 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vireo Fold plan sheet: a touring kayak that lives under your bed</title>
+<meta name="description" content="The Vireo Fold is a 9.8 kg folding touring kayak that packs to 84 x 56 x 24 cm. Read the fold as a plan sheet: six creases, one tension lever, a 4.1 m waterline.">
+<script type="application/json" id="token-contract">
+{
+  "light": { "paper": "#F2EFE6", "ink": "#1B1D20", "muted": "#56595E", "rule": "#85898F", "accent": "#A03C14" },
+  "dark":  { "paper": "#121417", "ink": "#E8E4D9", "muted": "#A6ABB2", "rule": "#60646B", "accent": "#F08A57" },
+  "gatedPairs": [
+    { "fg": "ink", "on": ["paper"], "kind": "text" },
+    { "fg": "muted", "on": ["paper"], "kind": "text" },
+    { "fg": "accent", "on": ["paper"], "kind": "text" },
+    { "fg": "rule", "on": ["paper"], "kind": "graphic" }
+  ]
+}
+</script>
+<style>
+:root{
+  --paper:#F2EFE6; --ink:#1B1D20; --muted:#56595E; --rule:#85898F; --accent:#A03C14;
+  /* the sheet is the paper itself: every gated pair is measured against the
+     background it is actually drawn on, so no tint can quietly weaken a ratio */
+  --sheet: var(--paper);
+}
+html[data-theme="dark"]{
+  --paper:#121417; --ink:#E8E4D9; --muted:#A6ABB2; --rule:#60646B; --accent:#F08A57;
+  --sheet: var(--paper);
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0; background:var(--paper); color:var(--ink);
+  font:16px/1.6 ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+
+/* ---- top bar: brand + the motion control (the visible skip control) ---- */
+.bar{border-bottom:1px solid var(--rule);position:relative;z-index:5;background:var(--paper)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:60px;flex-wrap:wrap}
+.brand{font-weight:700;letter-spacing:.14em;text-transform:uppercase;font-size:13px}
+.brand span{display:block;font-weight:400;letter-spacing:.04em;text-transform:none;color:var(--muted);font-size:12px}
+.controls{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.ctrl{
+  display:inline-flex;align-items:center;min-height:36px;padding:6px 14px;
+  border:1px solid var(--rule);color:var(--ink);text-decoration:none;font-size:14px;background:transparent;
+}
+.ctrl:hover{border-color:var(--accent);color:var(--accent)}
+.jump{color:var(--ink);text-decoration:underline;text-underline-offset:3px;font-size:14px;
+  display:inline-flex;align-items:center;min-height:36px;padding:6px 4px}
+.jump:hover{color:var(--accent)}
+/* Motion switch: BOTH options are always rendered and always focusable, so the
+   skip control and the second-visit affordance are verifiable by gate in every
+   state, and a no-JS visitor gets two real links rather than a hidden control.
+   aria-current is set by JS only, so no state is claimed when JS is off. */
+.motion-toggle{display:inline-flex;align-items:center}
+.motion-toggle .ctrl[aria-current="true"]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.motion-toggle .ctrl[aria-current="true"]:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+/* ---- hero: visible at first paint, never opacity-gated (LCP + L-084) ---- */
+.hero{padding:56px 0 40px;border-bottom:1px solid var(--rule)}
+h1{font-size:clamp(30px,5.2vw,58px);line-height:1.08;margin:0 0 18px;letter-spacing:-.02em;max-width:16ch}
+.lede{font-size:clamp(16px,1.7vw,19px);color:var(--muted);max-width:52ch;margin:0 0 26px}
+.hero-actions{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+.buy{
+  display:inline-flex;align-items:center;min-height:48px;padding:12px 22px;background:var(--accent);
+  color:var(--paper);text-decoration:none;font-weight:600;letter-spacing:.01em;
+}
+.buy:hover{background:var(--ink)}
+.trial{color:var(--muted);font-size:14px}
+
+/* ---- the plan-sheet stage ---- */
+.sheet{background:var(--sheet);border:1px solid var(--rule);padding:18px}
+.stage{position:sticky;top:24px}
+svg.plan{display:block;width:100%;height:auto}
+.plan .paper-line{stroke:var(--rule);stroke-width:1;fill:none}
+.plan .bag{stroke:var(--ink);stroke-width:2.5;fill:none}
+.plan .hull{stroke:var(--accent);stroke-width:2.5;fill:none}
+.plan .crease{stroke:var(--ink);stroke-width:1.5;fill:none}
+.plan .cockpit{stroke:var(--ink);stroke-width:2;fill:none}
+.plan text{fill:var(--muted);font-size:11px;font-family:inherit;letter-spacing:.06em}
+.plan .leader{stroke:var(--rule);stroke-width:1;fill:none}
+.stage-caption{color:var(--muted);font-size:13px;margin:12px 2px 0;letter-spacing:.04em;text-transform:uppercase}
+
+/* ---- story: drawing-spine layout ---- */
+.story{padding:44px 0}
+.spine{display:grid;grid-template-columns:minmax(0,1fr);gap:34px}
+@media (min-width:900px){ .spine{grid-template-columns:minmax(0,42%) minmax(0,1fr);gap:52px;align-items:start} }
+.steps{display:flex;flex-direction:column;gap:64px}
+.step{border-top:1px solid var(--rule);padding-top:18px}
+.step .n{font-size:12px;letter-spacing:.22em;color:var(--accent);text-transform:uppercase;font-weight:700}
+.step h3{font-size:clamp(22px,2.7vw,30px);margin:10px 0 10px;letter-spacing:-.01em}
+.step p{margin:0;color:var(--muted);max-width:46ch}
+.step .fact{color:var(--ink)}
+
+/* ---- specs as drawing callouts ---- */
+.specs{padding:44px 0;border-top:1px solid var(--rule)}
+h2.sec{font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--muted);margin:0 0 22px;font-weight:700}
+.callouts{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:0}
+.callout{border-top:1px solid var(--rule);padding:16px 18px 20px 0}
+.callout dt{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.callout dd{margin:0;font-size:clamp(19px,2.3vw,25px);letter-spacing:-.01em}
+.callout .qual{display:block;font-size:13px;line-height:1.5;color:var(--muted);letter-spacing:0;margin-top:7px;max-width:34ch}
+.callout .qual strong{color:var(--ink);font-weight:600}
+
+/* ---- price ---- */
+.price{padding:44px 0;border-top:1px solid var(--rule)}
+.price .amount{font-size:clamp(34px,5vw,56px);letter-spacing:-.02em;margin:0}
+.price p{color:var(--muted);max-width:50ch}
+footer{border-top:1px solid var(--rule);padding:26px 0 44px;color:var(--muted);font-size:14px}
+
+/* =====================================================================
+   MOTION. Every hidden-until-animated state is gated on ALL THREE of:
+   html.js (JS is running), :not(.still) (the visitor has not skipped and
+   is not a returning visitor), and prefers-reduced-motion: no-preference.
+   Remove any one of them and the full static page is what renders.
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference){
+  html.js:not(.still) .rv{opacity:0;transform:translateY(16px)}
+  html.js:not(.still) .rv.in{opacity:1;transform:none;transition:opacity .55s ease,transform .55s ease}
+  html.js:not(.still) .hero-settle{transform:translateY(10px);transition:transform .7s ease}
+  html.js:not(.still) .hero-settle.in{transform:none}
+}
+</style>
+</head>
+<body>
+<script>
+/* Runs before paint. Adds html.js and resolves the still state, so no gated
+   element is ever briefly hidden for a visitor whose motion is off. */
+(function(){
+  var d=document.documentElement, still=false;
+  try{
+    var q=new URLSearchParams(location.search);
+    if(q.get('still')==='0'){ try{localStorage.removeItem('vf-still');localStorage.removeItem('vf-seen');}catch(e){} }
+    else if(q.has('still')){ still=true; try{localStorage.setItem('vf-still','1');}catch(e){} }
+    else {
+      try{ still = localStorage.getItem('vf-still')==='1' || localStorage.getItem('vf-seen')==='1'; }catch(e){}
+    }
+  }catch(e){}
+  d.classList.add('js');
+  if(still) d.classList.add('still');
+})();
+</script>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand">Vireo Fold<span>Vireo Boats (fictional), Rotterdam</span></div>
+    <nav class="controls" aria-label="Page">
+      <a class="jump" href="#specs">Specs and price</a>
+      <span class="motion-toggle" role="group" aria-label="Motion">
+        <a class="ctrl" href="?still=0" id="play-ctrl">Play the unfold</a>
+        <a class="ctrl" href="?still=1" id="skip-ctrl">Skip the unfold</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-settle">
+      <h1>A touring kayak that lives under your bed.</h1>
+      <p class="lede">For city commuters and small-flat dwellers who assumed kayaking wasn't for them. Folded it is 84 x 56 x 24 cm and 9.8 kg with paddle. Unfolded it is a 4.1 m waterline.</p>
+      <div class="hero-actions">
+        <a class="buy" href="#price">Order, 1290 EUR</a>
+        <span class="trial">Ships EU-wide. 30-day water-it-and-return trial.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="story" aria-labelledby="story-h">
+    <div class="wrap">
+      <h2 class="sec" id="story-h">The fold, drawn in three steps</h2>
+      <div class="spine">
+
+        <div class="steps">
+          <article class="step rv" data-model="step-1">
+            <div class="n">Step 1</div>
+            <h3>The bag</h3>
+            <p class="fact">Folded: 84 x 56 x 24 cm. Airline carry-on envelope. 9.8 kg with paddle.</p>
+          </article>
+
+          <article class="step rv" data-model="step-2">
+            <div class="n">Step 2</div>
+            <h3>The unfold</h3>
+            <p class="fact">Six creases, one tension lever. Median owner-timed setup: 3 min 40 s (n=14, owner-submitted timings).</p>
+          </article>
+
+          <article class="step rv" data-model="step-3">
+            <div class="n">Step 3</div>
+            <h3>The water</h3>
+            <p class="fact">4.1 m waterline, tracks like a rigid tourer. Self-rescue tested in chop.</p>
+          </article>
+        </div>
+
+        <div class="stage-col">
+          <div class="stage">
+            <div class="sheet">
+              <svg class="plan" viewBox="0 0 420 300" role="img" aria-label="Plan-sheet drawing: the folded 84 by 56 by 24 cm bag opens along six creases into a 4.1 m hull outline.">
+                <!-- sheet grid -->
+                <path class="paper-line" d="M0 40 H420 M0 260 H420"/>
+                <!-- the folded bag, drawn to the 84 x 56 proportion -->
+                <g id="bag-g">
+                  <rect class="bag" x="168" y="118" width="84" height="56"/>
+                  <path class="leader" d="M168 110 H252"/>
+                  <text x="210" y="104" text-anchor="middle">84 CM</text>
+                  <path class="leader" d="M260 118 V174"/>
+                  <text x="266" y="150">56 CM</text>
+                </g>
+                <!-- the hull the bag becomes -->
+                <g id="hull-g">
+                  <path class="hull" id="hull" d="M22 150 C110 96, 310 96, 398 150 C310 204, 110 204, 22 150 Z"/>
+                  <ellipse class="cockpit" id="cockpit" cx="210" cy="150" rx="34" ry="19"/>
+                  <path class="crease" d="M96 118 V182"/>
+                  <path class="crease" d="M134 110 V190"/>
+                  <path class="crease" d="M172 106 V194"/>
+                  <path class="crease" d="M248 106 V194"/>
+                  <path class="crease" d="M286 110 V190"/>
+                  <path class="crease" d="M324 118 V182"/>
+                  <path class="leader" d="M22 226 H398"/>
+                  <text x="210" y="242" text-anchor="middle">4.1 M WATERLINE</text>
+                </g>
+              </svg>
+            </div>
+            <p class="stage-caption">Plan sheet. Six creases, one tension lever.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section class="specs" id="specs" aria-labelledby="specs-h">
+    <div class="wrap">
+      <h2 class="sec" id="specs-h">Dimensions and materials</h2>
+      <dl class="callouts">
+        <div class="callout"><dt>Weight</dt><dd>9.8 kg<span class="qual">With the four-part paddle.</span></dd></div>
+        <div class="callout"><dt>Folded</dt><dd>84 x 56 x 24 cm<span class="qual">Airline carry-on envelope.</span></dd></div>
+        <div class="callout"><dt>Length</dt><dd>4.1 m<span class="qual">Waterline. Tracks like a rigid tourer.</span></dd></div>
+
+        <div class="callout" data-model="setupTime"><dt>Setup time</dt><dd>3 min 40 s<span class="qual"><strong>Median, not a guarantee.</strong> Basis: owner-submitted timings, n=14. Not independently verified.</span></dd></div>
+
+        <div class="callout" data-model="packVolumeL"><dt>Pack volume</dt><dd>118 L<span class="qual"><strong>Estimated</strong> from CAD. The production bag has not yet been measured.</span></dd></div>
+
+        <div class="callout" data-model="loadRatingKg"><dt>Load rating</dt><dd>130 kg<span class="qual"><strong>Certification pending.</strong> Independent certification is in progress, so this figure is not certified and must not be read as certified.</span></dd></div>
+
+        <div class="callout"><dt>Material</dt><dd style="font-size:19px">Double-wall woven polypropylene, UV-stabilized</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="price" id="price" aria-labelledby="price-h">
+    <div class="wrap" data-model="pricing">
+      <h2 class="sec" id="price-h">Price</h2>
+      <p class="amount">1290 EUR</p>
+      <p>Includes: Hull, four-part paddle, pack bag, fin. Ships EU-wide; 30-day water-it-and-return trial.</p>
+      <p><a class="buy" href="#price">Order the Vireo Fold</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">Vireo Boats (fictional). Rotterdam, founded 2023.</div>
+</footer>
+
+<script>
+/* Motion layer. Native scroll only: no wheel or touch listener, no
+   preventDefault, no scroll-snap, no programmatic scrolling. The page is
+   already complete before this runs; this only reveals and inks. */
+(function(){
+  var d=document.documentElement;
+  if(!d.classList.contains('js')) return;
+
+  /* remember the visit so the SECOND visit lands on the static form */
+  try{ localStorage.setItem('vf-seen','1'); }catch(e){}
+
+  /* the skip control also persists the preference and applies without a reload */
+  var skip=document.getElementById('skip-ctrl'), play=document.getElementById('play-ctrl');
+  if(skip) skip.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.add('still'); syncToggle();
+    try{ localStorage.setItem('vf-still','1'); }catch(e){}
+    if(play) play.focus();
+  });
+  if(play) play.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.remove('still'); syncToggle();
+    try{ localStorage.removeItem('vf-still'); localStorage.removeItem('vf-seen'); }catch(e){}
+    if(skip) skip.focus();
+  });
+
+  function syncToggle(){
+    var isStill=d.classList.contains('still');
+    if(play) play.setAttribute('aria-current', isStill?'false':'true');
+    if(skip) skip.setAttribute('aria-current', isStill?'true':'false');
+  }
+  syncToggle();
+
+  var reduced = window.matchMedia('(prefers-reduced-motion: reduce)');
+  function motionOff(){ return d.classList.contains('still') || reduced.matches; }
+
+  /* reveals: cheap, compositor-only, and idempotent */
+  var rv=[].slice.call(document.querySelectorAll('.rv,.hero-settle'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -12% 0px'});
+    rv.forEach(function(el){ io.observe(el); });
+  } else { rv.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* scroll-linked inking of the plan sheet */
+  var stage=document.querySelector('.stage'), hull=document.getElementById('hull'),
+      cockpit=document.getElementById('cockpit'), bag=document.getElementById('bag-g'),
+      creases=[].slice.call(document.querySelectorAll('.crease'));
+  if(!stage||!hull) return;
+
+  var strokes=[hull,cockpit].concat(creases).filter(Boolean);
+  var lens=strokes.map(function(p){ var l=p.getTotalLength(); p.style.strokeDasharray=l; return l; });
+
+  function paint(p){
+    for(var i=0;i<strokes.length;i++){
+      /* each stroke inks over its own slice of the pass, in drawing order */
+      var start=i/(strokes.length+1), local=(p-start)/(1/(strokes.length+1)*2);
+      local = local<0?0:local>1?1:local;
+      strokes[i].style.strokeDashoffset = (lens[i]*(1-local)).toFixed(1);
+    }
+    if(bag) bag.style.opacity = (1 - Math.min(1, p*1.6)).toFixed(3);
+  }
+  function rest(){
+    strokes.forEach(function(p){ p.style.strokeDashoffset='0'; });
+    if(bag) bag.style.opacity='1';
+  }
+
+  var dirty=false, last=-1;
+  function tick(){
+    dirty=false;
+    if(motionOff()){ rest(); return; }
+    var r=stage.getBoundingClientRect(), vh=window.innerHeight||1;
+    var p=(vh - r.top)/(vh + r.height);
+    p = p<0?0:p>1?1:p;
+    if(Math.abs(p-last) > 0.002){ last=p; paint(p); }
+  }
+  function onScroll(){ if(!dirty){ dirty=true; requestAnimationFrame(tick); } }
+
+  if(motionOff()){ rest(); }
+  else { requestAnimationFrame(tick); }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll,{passive:true});
+  reduced.addEventListener('change',function(){ if(motionOff()) rest(); else onScroll(); });
+})();
+</script>
+</body>
+</html>

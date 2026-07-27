@@ -1,0 +1,333 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vireo Fold: it fits in the flat first, and the river second</title>
+<meta name="description" content="A 9.8 kg folding touring kayak that packs to 84 x 56 x 24 cm, shown at the scale of a hallway and a bed before it ever reaches water. 4.1 m unfolded, 1290 EUR.">
+<script type="application/json" id="token-contract">
+{
+  "light": { "paper": "#F0E9E1", "ink": "#241E1A", "muted": "#5E5348", "rule": "#8E8377", "accent": "#1F4D47" },
+  "dark":  { "paper": "#17130F", "ink": "#EDE4D9", "muted": "#B0A395", "rule": "#6B6158", "accent": "#6FB3A6" },
+  "gatedPairs": [
+    { "fg": "ink", "on": ["paper"], "kind": "text" },
+    { "fg": "muted", "on": ["paper"], "kind": "text" },
+    { "fg": "accent", "on": ["paper"], "kind": "text" },
+    { "fg": "rule", "on": ["paper"], "kind": "graphic" }
+  ]
+}
+</script>
+<style>
+:root{ --paper:#F0E9E1; --ink:#241E1A; --muted:#5E5348; --rule:#8E8377; --accent:#1F4D47; }
+html[data-theme="dark"]{ --paper:#17130F; --ink:#EDE4D9; --muted:#B0A395; --rule:#6B6158; --accent:#6FB3A6; }
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font:16px/1.65 ui-serif,Georgia,"Times New Roman",serif;
+  font-variant-numeric:tabular-nums;
+}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+a{color:var(--accent)}
+a:focus-visible,button:focus-visible{outline:3px solid var(--accent);outline-offset:3px;border-radius:2px}
+h1,h2,h3{font-family:ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;letter-spacing:-.015em}
+
+.bar{position:relative;z-index:5;background:var(--paper);border-bottom:1px solid var(--rule)}
+.bar .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:62px;flex-wrap:wrap}
+.brand{font-family:ui-sans-serif,system-ui,sans-serif;font-weight:700;font-size:13px;letter-spacing:.16em;text-transform:uppercase}
+.brand span{display:block;font-weight:400;font-size:12px;letter-spacing:.03em;text-transform:none;color:var(--muted)}
+.controls{display:flex;gap:14px;align-items:center;flex-wrap:wrap;font-family:ui-sans-serif,system-ui,sans-serif}
+.ctrl{display:inline-flex;align-items:center;min-height:36px;padding:6px 15px;border:1px solid var(--rule);
+  color:var(--ink);text-decoration:none;font-size:14px;border-radius:999px}
+.ctrl:hover{border-color:var(--accent);color:var(--accent)}
+.jump{display:inline-flex;align-items:center;min-height:36px;padding:6px 4px;color:var(--ink);font-size:14px;
+  text-decoration:underline;text-underline-offset:3px}
+.jump:hover{color:var(--accent)}
+/* Motion switch: BOTH options are always rendered and always focusable, so the
+   skip control and the second-visit affordance are verifiable by gate in every
+   state, and a no-JS visitor gets two real links rather than a hidden control.
+   aria-current is set by JS only, so no state is claimed when JS is off. */
+.motion-toggle{display:inline-flex;align-items:center}
+.motion-toggle .ctrl[aria-current="true"]{background:var(--accent);color:var(--paper);border-color:var(--accent)}
+.motion-toggle .ctrl[aria-current="true"]:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+/* hero: no water, a room */
+.hero{padding:60px 0 44px}
+h1{font-size:clamp(30px,5.4vw,58px);line-height:1.07;margin:0 0 20px;max-width:15ch}
+.lede{font-size:clamp(16px,1.7vw,19px);color:var(--muted);max-width:50ch;margin:0 0 26px}
+.hero-actions{display:flex;gap:16px;align-items:center;flex-wrap:wrap;font-family:ui-sans-serif,system-ui,sans-serif}
+.buy{display:inline-flex;align-items:center;min-height:48px;padding:13px 24px;background:var(--accent);color:var(--paper);
+  text-decoration:none;font-weight:600;border-radius:999px}
+.buy:hover{background:var(--ink)}
+.trial{color:var(--muted);font-size:14px}
+
+/* scene-stack: full-bleed scenes with a persistent fact rail */
+.scene{border-top:1px solid var(--rule);padding:52px 0}
+.scene .wrap{display:grid;grid-template-columns:minmax(0,1fr);gap:30px}
+@media (min-width:920px){ .scene .wrap{grid-template-columns:minmax(0,1fr) minmax(0,340px);gap:56px;align-items:start} }
+.act{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--accent);font-weight:700;margin:0 0 10px}
+.scene h2{font-size:clamp(24px,3.2vw,36px);margin:0 0 14px}
+.scene p{margin:0 0 14px;color:var(--muted);max-width:48ch}
+.scene p.fact{color:var(--ink)}
+.room{width:100%;height:auto;display:block;border:1px solid var(--rule);background:var(--paper)}
+.room .edge{stroke:var(--rule);stroke-width:1.5;fill:none}
+.room .solid{stroke:var(--ink);stroke-width:2;fill:none}
+.room .bagfill{fill:var(--accent)}
+.room .water{stroke:var(--accent);stroke-width:2;fill:none}
+.room text{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.08em;fill:var(--muted)}
+.rail{font-family:ui-sans-serif,system-ui,sans-serif}
+.rail dl{margin:0;border-top:1px solid var(--rule)}
+.rail dt{font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:14px 0 4px}
+.rail dd{margin:0 0 14px;font-size:20px}
+.rail .qual{display:block;font-size:13px;line-height:1.5;color:var(--muted);letter-spacing:0;margin-top:6px}
+.rail .qual strong{color:var(--ink);font-weight:600}
+
+.specs{border-top:1px solid var(--rule);padding:52px 0}
+h2.sec{font-family:ui-sans-serif,system-ui,sans-serif;font-size:12px;letter-spacing:.22em;text-transform:uppercase;
+  color:var(--muted);margin:0 0 22px;font-weight:700}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:0}
+.cell{border-top:1px solid var(--rule);padding:16px 20px 20px 0}
+.cell dt{font-family:ui-sans-serif,system-ui,sans-serif;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);margin:0 0 6px}
+.cell dd{margin:0;font-size:clamp(19px,2.2vw,24px)}
+.cell .qual{display:block;font-size:13px;line-height:1.5;color:var(--muted);margin-top:7px;max-width:34ch}
+.cell .qual strong{color:var(--ink);font-weight:600}
+
+.price{border-top:1px solid var(--rule);padding:52px 0}
+.price .amount{font-size:clamp(34px,5vw,54px);margin:0;font-family:ui-sans-serif,system-ui,sans-serif}
+.price p{color:var(--muted);max-width:50ch}
+footer{border-top:1px solid var(--rule);padding:26px 0 46px;color:var(--muted);font-size:14px}
+
+/* =====================================================================
+   MOTION. Gated on html.js AND :not(.still) AND no-preference. Any one of
+   the three missing leaves the complete static page.
+   ===================================================================== */
+@media (prefers-reduced-motion: no-preference){
+  html.js:not(.still) .rv{opacity:0;transform:translateY(18px)}
+  html.js:not(.still) .rv.in{opacity:1;transform:none;transition:opacity .6s ease,transform .6s ease}
+  html.js:not(.still) .scaler{transform-origin:50% 62%}
+}
+</style>
+</head>
+<body>
+<script>
+(function(){
+  var d=document.documentElement, still=false;
+  try{
+    var q=new URLSearchParams(location.search);
+    if(q.get('still')==='0'){ try{localStorage.removeItem('vf-still');localStorage.removeItem('vf-seen');}catch(e){} }
+    else if(q.has('still')){ still=true; try{localStorage.setItem('vf-still','1');}catch(e){} }
+    else { try{ still = localStorage.getItem('vf-still')==='1' || localStorage.getItem('vf-seen')==='1'; }catch(e){} }
+  }catch(e){}
+  d.classList.add('js');
+  if(still) d.classList.add('still');
+})();
+</script>
+
+<header class="bar">
+  <div class="wrap">
+    <div class="brand">Vireo Fold<span>Vireo Boats (fictional), Rotterdam</span></div>
+    <nav class="controls" aria-label="Page">
+      <a class="jump" href="#specs">Specs and price</a>
+      <span class="motion-toggle" role="group" aria-label="Motion">
+        <a class="ctrl" href="?still=0" id="play-ctrl">Play the unfold</a>
+        <a class="ctrl" href="?still=1" id="skip-ctrl">Skip the unfold</a>
+      </span>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap">
+      <h1>A touring kayak that lives under your bed.</h1>
+      <p class="lede">This page starts in the flat, not on the water. If you are a city commuter or a small-flat dweller who assumed kayaking wasn't for them, the boat was never the problem. Where to put it was.</p>
+      <div class="hero-actions">
+        <a class="buy" href="#price">Order, 1290 EUR</a>
+        <span class="trial">Ships EU-wide. 30-day water-it-and-return trial.</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="scene" aria-labelledby="a1">
+    <div class="wrap">
+      <div class="rv">
+        <p class="act">Act one, the hallway</p>
+        <h2 id="a1">It goes under the bed, or beside the coats</h2>
+        <p class="fact" data-model="step-1">Folded: 84 x 56 x 24 cm. Airline carry-on envelope. 9.8 kg with paddle.</p>
+        <p>Held against a standard door frame, that is a bag you can carry down a stairwell in one hand. The drawing keeps a door and a bed on screen so every number below is read against something domestic, not against open water.</p>
+        <svg class="room scaler" data-scene="1" viewBox="0 0 560 300" role="img" aria-label="A hallway drawn to scale: a door frame and a bed, with the folded 84 by 56 by 24 cm bag standing beside them.">
+          <path class="edge" d="M30 262 H530"/>
+          <path class="solid" d="M60 262 V70 H170 V262"/>
+          <path class="edge" d="M60 70 H170"/>
+          <text x="70" y="60">DOOR, 2.0 M TALL</text>
+          <path class="solid" d="M250 262 V196 H470 V262"/>
+          <path class="edge" d="M250 196 H470"/>
+          <text x="258" y="188">BED</text>
+          <g id="bagref">
+            <rect class="bagfill" x="196" y="178" width="34" height="84" rx="3"/>
+            <path class="edge" d="M188 178 V262"/>
+            <text x="150" y="224">84 CM</text>
+          </g>
+        </svg>
+      </div>
+      <aside class="rail rv" aria-label="Key figures">
+        <dl>
+          <dt>Folded</dt><dd>84 x 56 x 24 cm</dd>
+          <dt>Weight</dt><dd>9.8 kg<span class="qual">With the four-part paddle.</span></dd>
+          <div data-model="packVolumeL">
+            <dt>Pack volume</dt>
+            <dd>118 L<span class="qual"><strong>Estimated</strong> from CAD. The production bag has not yet been measured.</span></dd>
+          </div>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="scene" aria-labelledby="a2">
+    <div class="wrap">
+      <div class="rv">
+        <p class="act">Act two, the floor</p>
+        <h2 id="a2">Six creases, one lever, on the floor you already have</h2>
+        <p class="fact" data-model="step-2">Six creases, one tension lever. Median owner-timed setup: 3 min 40 s (n=14, owner-submitted timings).</p>
+        <p>The room has not changed. The bag has opened along its creases into a 4.1 m hull, on the floor of the same flat it was stored in, which is the whole trick and also the whole objection you are about to raise.</p>
+        <svg class="room scaler" data-scene="2" viewBox="0 0 560 300" role="img" aria-label="The same room, with the bag opened along six creases into a hull longer than the bed.">
+          <path class="edge" d="M30 262 H530"/>
+          <path class="solid" d="M60 262 V70 H170 V262"/>
+          <path class="edge" d="M60 70 H170"/>
+          <path class="edge" d="M250 262 V196 H470 V262 M250 196 H470"/>
+          <path class="solid" d="M52 214 C170 174, 400 174, 512 214 C400 250, 170 250, 52 214 Z"/>
+          <path class="edge" d="M120 190 V240 M180 184 V246 M240 180 V248 M300 180 V248 M360 184 V246 M420 190 V240"/>
+          <text x="240" y="278">SIX CREASES</text>
+        </svg>
+      </div>
+      <aside class="rail rv" aria-label="Setup figures">
+        <dl>
+          <dt>Setup time</dt>
+          <dd data-model="setupTime">3 min 40 s<span class="qual"><strong>Median, not a guarantee.</strong> Basis: owner-submitted timings, n=14. Not independently verified.</span></dd>
+          <dt>Material</dt><dd style="font-size:16px">Double-wall woven polypropylene, UV-stabilized</dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="scene" aria-labelledby="a3">
+    <div class="wrap">
+      <div class="rv">
+        <p class="act">Act three, and only now, the water</p>
+        <h2 id="a3">4.1 m of waterline, out of a carry-on bag</h2>
+        <p class="fact" data-model="step-3">4.1 m waterline, tracks like a rigid tourer. Self-rescue tested in chop.</p>
+        <p>The door frame is still on the left of this drawing, at the same scale it has been the whole way down. That is the argument. Nothing about the boat got smaller; the storage problem did.</p>
+        <svg class="room scaler" data-scene="3" viewBox="0 0 560 300" role="img" aria-label="The hull on water, with the same door frame still drawn at scale for comparison.">
+          <path class="solid" d="M60 262 V70 H170 V262"/>
+          <path class="edge" d="M60 70 H170"/>
+          <path class="water" d="M30 246 H530 M30 262 H530"/>
+          <path class="solid" d="M210 226 C300 190, 430 190, 520 226 C430 258, 300 258, 210 226 Z"/>
+          <ellipse class="edge" cx="360" cy="226" rx="30" ry="15"/>
+          <path class="edge" d="M210 276 H520"/>
+          <text x="300" y="292">4.1 M WATERLINE</text>
+        </svg>
+      </div>
+      <aside class="rail rv" aria-label="On-water figures">
+        <dl>
+          <dt>Length</dt><dd>4.1 m<span class="qual">Waterline. Tracks like a rigid tourer.</span></dd>
+          <dt>Load rating</dt>
+          <dd data-model="loadRatingKg">130 kg<span class="qual"><strong>Certification pending.</strong> Independent certification is in progress, so this figure is not certified and must not be read as certified.</span></dd>
+        </dl>
+      </aside>
+    </div>
+  </section>
+
+  <section class="specs" id="specs" aria-labelledby="specs-h">
+    <div class="wrap" style="display:block">
+      <h2 class="sec" id="specs-h">Every figure in one place</h2>
+      <dl class="grid">
+        <div class="cell"><dt>Weight</dt><dd>9.8 kg</dd></div>
+        <div class="cell"><dt>Folded</dt><dd>84 x 56 x 24 cm</dd></div>
+        <div class="cell"><dt>Length</dt><dd>4.1 m</dd></div>
+        <div class="cell"><dt>Material</dt><dd style="font-size:17px">Double-wall woven polypropylene, UV-stabilized</dd></div>
+      </dl>
+    </div>
+  </section>
+
+  <section class="price" id="price" aria-labelledby="price-h">
+    <div class="wrap" data-model="pricing" style="display:block">
+      <h2 class="sec" id="price-h">Price</h2>
+      <p class="amount">1290 EUR</p>
+      <p>Includes: Hull, four-part paddle, pack bag, fin. Ships EU-wide; 30-day water-it-and-return trial.</p>
+      <p><a class="buy" href="#price">Order the Vireo Fold</a></p>
+    </div>
+  </section>
+
+</main>
+
+<footer><div class="wrap">Vireo Boats (fictional). Rotterdam, founded 2023.</div></footer>
+
+<script>
+/* Motion layer. Native scroll only: no wheel or touch listener, no
+   preventDefault, no scroll-snap, no programmatic scrolling. */
+(function(){
+  var d=document.documentElement;
+  if(!d.classList.contains('js')) return;
+  try{ localStorage.setItem('vf-seen','1'); }catch(e){}
+
+  var skip=document.getElementById('skip-ctrl'), play=document.getElementById('play-ctrl');
+  if(skip) skip.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.add('still'); syncToggle();
+    try{ localStorage.setItem('vf-still','1'); }catch(e){}
+    reset(); if(play) play.focus();
+  });
+  if(play) play.addEventListener('click',function(ev){
+    ev.preventDefault(); d.classList.remove('still'); syncToggle();
+    try{ localStorage.removeItem('vf-still'); localStorage.removeItem('vf-seen'); }catch(e){}
+    onScroll(); if(skip) skip.focus();
+  });
+
+  function syncToggle(){
+    var isStill=d.classList.contains('still');
+    if(play) play.setAttribute('aria-current', isStill?'false':'true');
+    if(skip) skip.setAttribute('aria-current', isStill?'true':'false');
+  }
+  syncToggle();
+
+  var reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  function motionOff(){ return d.classList.contains('still') || reduced.matches; }
+
+  var rv=[].slice.call(document.querySelectorAll('.rv'));
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(es){
+      es.forEach(function(e){ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+    },{rootMargin:'0px 0px -12% 0px'});
+    rv.forEach(function(el){ io.observe(el); });
+  } else { rv.forEach(function(el){ el.classList.add('in'); }); }
+
+  /* the scale shift: the room changes scale around a bag that holds still */
+  var scalers=[].slice.call(document.querySelectorAll('.scaler'));
+  function reset(){ scalers.forEach(function(el){ el.style.transform=''; }); }
+
+  var dirty=false, last=[];
+  function tick(){
+    dirty=false;
+    if(motionOff()){ reset(); return; }
+    var vh=window.innerHeight||1;
+    for(var i=0;i<scalers.length;i++){
+      var el=scalers[i], r=el.getBoundingClientRect();
+      if(r.bottom<0||r.top>vh){ continue; }
+      var p=(vh-r.top)/(vh+r.height); p=p<0?0:p>1?1:p;
+      if(last[i]!=null && Math.abs(p-last[i])<0.003) continue;
+      last[i]=p;
+      /* 0.965 -> 1.0 across the pass: transform only, no layout, no paint */
+      el.style.transform='scale('+(0.965+0.035*p).toFixed(4)+')';
+    }
+  }
+  function onScroll(){ if(!dirty){ dirty=true; requestAnimationFrame(tick); } }
+
+  if(motionOff()){ reset(); } else { requestAnimationFrame(tick); }
+  window.addEventListener('scroll',onScroll,{passive:true});
+  window.addEventListener('resize',onScroll,{passive:true});
+  reduced.addEventListener('change',function(){ if(motionOff()) reset(); else onScroll(); });
+})();
+</script>
+</body>
+</html>

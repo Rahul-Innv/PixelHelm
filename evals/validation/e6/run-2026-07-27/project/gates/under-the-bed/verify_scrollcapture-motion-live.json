@@ -1,0 +1,143 @@
+{
+  "validator": "verify_scrollcapture",
+  "generated": "2026-07-27T15:52:37.601Z",
+  "viewport": {
+    "width": 1280,
+    "height": 800
+  },
+  "deviceScaleFactor": 1,
+  "contract": {
+    "positions": [
+      "0",
+      "25",
+      "50",
+      "75",
+      "100"
+    ],
+    "passes": 2,
+    "animations": "running",
+    "note": "screenshot hashes attest same-machine/same-session reproduction only; they are not comparable across machines or browser builds"
+  },
+  "targets": [
+    {
+      "target": "arms/under-the-bed/index.html",
+      "captures": [
+        {
+          "position": "0",
+          "requestedPx": 0,
+          "passes": [
+            {
+              "achievedPx": 0,
+              "stable": true
+            },
+            {
+              "achievedPx": 0,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 0,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "25",
+          "requestedPx": 708.75,
+          "passes": [
+            {
+              "achievedPx": 709,
+              "stable": true
+            },
+            {
+              "achievedPx": 709,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 709,
+          "deltaPx": 0.25,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "50",
+          "requestedPx": 1417.5,
+          "passes": [
+            {
+              "achievedPx": 1418,
+              "stable": true
+            },
+            {
+              "achievedPx": 1418,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 1418,
+          "deltaPx": 0.5,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "75",
+          "requestedPx": 2126.25,
+          "passes": [
+            {
+              "achievedPx": 2126,
+              "stable": true
+            },
+            {
+              "achievedPx": 2126,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 2126,
+          "deltaPx": 0.25,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        },
+        {
+          "position": "100",
+          "requestedPx": 2835,
+          "passes": [
+            {
+              "achievedPx": 2835,
+              "stable": true
+            },
+            {
+              "achievedPx": 2835,
+              "stable": true
+            }
+          ],
+          "screenshots": [],
+          "achievedPx": 2835,
+          "deltaPx": 0,
+          "reproduced": true,
+          "stable": true,
+          "pixelReproduced": null
+        }
+      ],
+      "violations": [],
+      "pass": true,
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "1280x3635",
+        "waitedMs": 62
+      },
+      "maxScrollPx": 2835
+    }
+  ],
+  "pass": true
+}

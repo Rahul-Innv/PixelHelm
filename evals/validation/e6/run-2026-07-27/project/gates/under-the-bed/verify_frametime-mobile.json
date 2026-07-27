@@ -1,0 +1,96 @@
+{
+  "validator": "verify_frametime",
+  "generated": "2026-07-27T15:53:10.553Z",
+  "profile": {
+    "name": "emulated-mobile",
+    "viewport": {
+      "width": 375,
+      "height": 812
+    },
+    "deviceScaleFactor": 2,
+    "cpuThrottleRate": 4
+  },
+  "budget": {
+    "p95Ms": 33,
+    "jitterAllowanceMs": 1
+  },
+  "note": "LAB, single machine, single scripted pass — the verdict binds this run; directional across machines, never RUM.",
+  "targets": [
+    {
+      "target": "arms/under-the-bed/index.html",
+      "readiness": {
+        "animations": "running",
+        "samples": 3,
+        "timeoutMs": 5000,
+        "readyState": "complete",
+        "fontsLoaded": true,
+        "layoutSettled": true,
+        "settleFrames": 4,
+        "documentGeometry": "375x4391",
+        "waitedMs": 34
+      },
+      "scrollable": true,
+      "schedulingStallExclusion": {
+        "rule": "emulated-mobile only: the 1 largest frame gap(s) per scripted wheel step excluded before percentile math (source constant; diagnosed headless scheduling stall — budgets unchanged)",
+        "wheelSteps": 8,
+        "excludedCount": 8,
+        "excludedGapsMs": [
+          33.3,
+          16.8,
+          33.3,
+          16.8,
+          33.2,
+          16.8,
+          16.8,
+          16.8
+        ],
+        "excludedPerStep": [
+          {
+            "wheelStep": 1,
+            "gapMs": 33.3
+          },
+          {
+            "wheelStep": 2,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 3,
+            "gapMs": 33.3
+          },
+          {
+            "wheelStep": 4,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 5,
+            "gapMs": 33.2
+          },
+          {
+            "wheelStep": 6,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 7,
+            "gapMs": 16.8
+          },
+          {
+            "wheelStep": 8,
+            "gapMs": 16.8
+          }
+        ]
+      },
+      "scrolledPx": 3579,
+      "samples": 33,
+      "samplesBeforeExclusion": 41,
+      "vsyncBaseMs": 16.7,
+      "frameMs": {
+        "p50": 16.7,
+        "p95": 16.8,
+        "max": 49.9
+      },
+      "droppedFramePct": 3,
+      "pass": true
+    }
+  ],
+  "pass": true
+}
