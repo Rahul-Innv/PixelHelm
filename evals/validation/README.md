@@ -101,9 +101,13 @@ merge.
   almost nothing left to measure. That score compression is itself the
   finding — a seat that rates everything 9 is not discriminating — and it
   matches the owner-calibration result (panel runs 2 to 3 points hot on
-  unfamiliar archetypes). **Any further re-validation must first seal an
-  instrument fix** (e.g. forced strict rankings with no ties on both sides);
-  changing a sealed statistic is an owner decision, never a run-time one.
+  unfamiliar archetypes). **Further re-validation is PERMANENTLY DEFERRED** by
+  owner decision, 2026-07-27 (`E4-R2-PERMANENT-DEFERRAL.md`): there is no
+  ground truth to validate a panel against, the only available instrument fix
+  (forced no-tie rankings) could manufacture a pass on noise, and the standard
+  is owner-relative rather than universal. The advisory-only status is
+  therefore permanent unless real-audience evidence arrives; per-owner
+  calibration accrues instead in the capability ledger.
   Repair effectiveness is separately evidenced: 4/4 fresh plants in new defect
   classes were eliminated mechanically before any esteem score existed, and
   20/20 jurors marked the floor-failing candidate UNSCORED and named the

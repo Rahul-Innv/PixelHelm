@@ -74,8 +74,13 @@ on human judgment.
 ## Open work (not claims)
 
 - E5, the only remaining experiment, requires recruited participants.
-- E4-R2 requires an owner-sealed instrument fix before any re-run can be
-  informative (`E4-JUDGING-SEAT-REPAIR-DECISION.md` and the E4-R report).
+- E4-R2 is **permanently deferred** by owner decision, 2026-07-27
+  (`E4-R2-PERMANENT-DEFERRAL.md`): there is no ground truth to validate a panel
+  against, the available fix could manufacture a pass on noise, and the standard
+  is owner-relative rather than universal. The advisory-only status of the model
+  judging seat is therefore permanent unless real-audience evidence arrives.
+  Per-owner calibration accrues instead, automatically, in the capability
+  ledger.
 - The owner-taste findings above are being encoded into the system as
   machinery; until that lands they are lessons, not gates.
   **Update, same day (2026-07-27):** the encoding pass landed and its ledger is
