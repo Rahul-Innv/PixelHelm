@@ -1,0 +1,415 @@
+{
+  "_note": "sha256 binding of every neutral-named blind render file to its committed source; blind copies live untracked at repo root jurors-blind/ and are byte-identical duplicates.",
+  "jurors": {
+    "juror-1": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__dark.png",
+        "sha256": "23e1b6a95d396c25dce4ba1e30522454ac2fed1893a3a94beba402d94c26d13b"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__light.png",
+        "sha256": "13d75d090473da3fd7ed168fe6922921acf842cb924bc3e0a3c67d7e1679765e"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__dark.png",
+        "sha256": "d9a871bb62f0a013cebaa0b54083d3d6689636d3ba7e32b9506c9ea00670fa75"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__light.png",
+        "sha256": "76d4209a030fc813a618257c1ffa79658f26d490576432d6972437f1cd6196b9"
+      }
+    ],
+    "juror-2": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__dark.png",
+        "sha256": "23e1b6a95d396c25dce4ba1e30522454ac2fed1893a3a94beba402d94c26d13b"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__light.png",
+        "sha256": "13d75d090473da3fd7ed168fe6922921acf842cb924bc3e0a3c67d7e1679765e"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__dark.png",
+        "sha256": "d9a871bb62f0a013cebaa0b54083d3d6689636d3ba7e32b9506c9ea00670fa75"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__light.png",
+        "sha256": "76d4209a030fc813a618257c1ffa79658f26d490576432d6972437f1cd6196b9"
+      }
+    ],
+    "juror-3": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__dark.png",
+        "sha256": "23e1b6a95d396c25dce4ba1e30522454ac2fed1893a3a94beba402d94c26d13b"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__light.png",
+        "sha256": "13d75d090473da3fd7ed168fe6922921acf842cb924bc3e0a3c67d7e1679765e"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__dark.png",
+        "sha256": "d9a871bb62f0a013cebaa0b54083d3d6689636d3ba7e32b9506c9ea00670fa75"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__light.png",
+        "sha256": "76d4209a030fc813a618257c1ffa79658f26d490576432d6972437f1cd6196b9"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      }
+    ],
+    "juror-4": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__dark.png",
+        "sha256": "23e1b6a95d396c25dce4ba1e30522454ac2fed1893a3a94beba402d94c26d13b"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__light.png",
+        "sha256": "13d75d090473da3fd7ed168fe6922921acf842cb924bc3e0a3c67d7e1679765e"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__dark.png",
+        "sha256": "d9a871bb62f0a013cebaa0b54083d3d6689636d3ba7e32b9506c9ea00670fa75"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__light.png",
+        "sha256": "76d4209a030fc813a618257c1ffa79658f26d490576432d6972437f1cd6196b9"
+      }
+    ],
+    "juror-5": [
+      {
+        "neutral": "candidate-1__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__dark.png",
+        "sha256": "e3801e47a5c770275abb9a5a80d83395de50933ce8d25d8788e2312dc625c00b"
+      },
+      {
+        "neutral": "candidate-1__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__desktop__light.png",
+        "sha256": "94ae96569f133a9ea958ebb8b0476f4a16475518e8396c7b8099ab774c72400b"
+      },
+      {
+        "neutral": "candidate-1__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__dark.png",
+        "sha256": "2dde4fbb2c33f01cfc7fcc9cf73f535fb1b65c82b2f1e81b379d2c8e1a365dbb"
+      },
+      {
+        "neutral": "candidate-1__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/two-inks__mobile__light.png",
+        "sha256": "9a343ed484cb62ce3fbab1bf57e1638c71091ff6e8c591edecda55370c3c4eab"
+      },
+      {
+        "neutral": "candidate-2__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__dark.png",
+        "sha256": "f91bb1b8a84b11f91163f7af6a06862940a78805642afb9f197c96c171b42ec9"
+      },
+      {
+        "neutral": "candidate-2__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__desktop__light.png",
+        "sha256": "e1060f7415a790c3ebb3b36bb52c86fb7b272a7501cdd82e3eb5dc0932279ca6"
+      },
+      {
+        "neutral": "candidate-2__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__dark.png",
+        "sha256": "ecfeb1bae2a80bdcca83c3ffb33a4eb4e055eda00dce16f038659efbaf42e5a3"
+      },
+      {
+        "neutral": "candidate-2__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/almanac-rail__mobile__light.png",
+        "sha256": "874643081db4756f4f9f65d8ae5422904b40e0b04abc0260f77e82a2949e5343"
+      },
+      {
+        "neutral": "candidate-3__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__dark.png",
+        "sha256": "23e1b6a95d396c25dce4ba1e30522454ac2fed1893a3a94beba402d94c26d13b"
+      },
+      {
+        "neutral": "candidate-3__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__desktop__light.png",
+        "sha256": "13d75d090473da3fd7ed168fe6922921acf842cb924bc3e0a3c67d7e1679765e"
+      },
+      {
+        "neutral": "candidate-3__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__dark.png",
+        "sha256": "d9a871bb62f0a013cebaa0b54083d3d6689636d3ba7e32b9506c9ea00670fa75"
+      },
+      {
+        "neutral": "candidate-3__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e4-run-2026-07-26/plants/e3-editorial/renders/high-water__mobile__light.png",
+        "sha256": "76d4209a030fc813a618257c1ffa79658f26d490576432d6972437f1cd6196b9"
+      },
+      {
+        "neutral": "candidate-4__desktop__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__dark.png",
+        "sha256": "147e96a9a79819ef83d942f0f4c2a259b8874ee5c4a2b8a965e51c03e0820158"
+      },
+      {
+        "neutral": "candidate-4__desktop__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__desktop__light.png",
+        "sha256": "f239a7a2864883b4c47b7fb9e53377748564576ffa5de77935fbe2a3b9c073ba"
+      },
+      {
+        "neutral": "candidate-4__mobile__dark.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__dark.png",
+        "sha256": "fb9d66b829829ae15a01dbf7cb2a619baec5c7042e2717d214404fa0afc77535"
+      },
+      {
+        "neutral": "candidate-4__mobile__light.png",
+        "sourceRepoPath": "evals/validation/e3/run-2026-07-26-editorial/project/renders/weir-plates__mobile__light.png",
+        "sha256": "decf816b8325ecb108808d2d98d2785ddd718558f42a15cad245b3c57c524f80"
+      }
+    ]
+  }
+}

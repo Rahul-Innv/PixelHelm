@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede carries the complete finding, the bold rail preamble restates it in words, and every year's row prints its actual numbers, so a reader who never decodes a mark still receives everything by reading down.",
+    "2": "The rail is named and described by its finding, its how-to-read box declares the fixed onset shelf and the 550 to 750 total scale, and the missing years sit as hatched no-record lines inside the only view.",
+    "3": "Era subheadings put the instrument change exactly where the boundary is crossed, the three gaps are hatched in place, 2019 carries an inline unverified caption, and the About section states the shift-not-cause scope.",
+    "4": "This is the most lived-in narrative — quotes interleaved at the years they belong to and a mid-rail aside about laying the lines side by side — with the human fragments serving the data's chronology.",
+    "5": "The letterspaced era headings and serif measure carry the long read well in both modes, though the red heaviest-day figures run modest contrast on the dark ground and the rail rows demand steady attention on mobile.",
+    "6": "The reading mechanic is ordinary document scroll over a fully readable base, with no pacing imposed and no motion-dependent content visible.",
+    "7": "Reading the valley's years line by line like its own almanac makes the drift physically visible as the dots walk down the page — the form is the journalism, and every layer reinforces it.",
+    "8": "One deliberate break — the rail replacing separate charts and table — declared in the standfirst and the how-to-read box while mechanics stay conventional.",
+    "9": "The voice is quiet, local, and specific, and lines like the almanac the valley used to keep could not run unchanged elsewhere.",
+    "10": "Hatching, hollow dot, era headings, and fixed shelves each answer to something the record actually contains, with no unearned effect."
+  },
+  "inputTranscriptSha256": "57b27a2e525b07a45c1490b869269f0bb897d9234603355a5aededc518cdd40b",
+  "shuffleSeed": 202607644
+}

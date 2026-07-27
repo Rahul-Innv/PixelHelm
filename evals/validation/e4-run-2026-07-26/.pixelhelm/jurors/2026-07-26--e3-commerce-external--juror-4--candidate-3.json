@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 7,
+    "3": 9,
+    "4": 5,
+    "5": 6,
+    "6": 9,
+    "7": 8,
+    "8": 7,
+    "9": 9,
+    "10": 7
+  },
+  "rationales": {
+    "1": "Desktop rows with right-aligned prices and seasonal drawers scan beautifully, but on mobile the carrot and sweet pea entries collapse into a one-word-per-line column that destroys glanceability.",
+    "2": "Mechanics are recognizable, yet the inline quantity steppers on catalog rows add mild cleverness to the money path and the controls are unusually small for commerce.",
+    "3": "This is the most honest surface of the four: the out-of-stock line explains the new harvest is being cleaned and tested, the pending price promises a note when it is set, and the footer discloses the germination method.",
+    "4": "The tiny minus, plus, and Add targets fall below comfortable tablet sizes for older readers, and the broken narrow-column wrap on mobile compounds the problem.",
+    "5": "Desktop rhythm and the restrained green palette are handsome, but the mobile column collapse and the floating price-pending note breaking the row grid mean the two surfaces do not hold as one system.",
+    "6": "The product page is the best of the panel, with an at-a-glance stat trio in plain language, a reassuring growing note, and companion links that give reasons.",
+    "7": "The potting bench with seasonal drawers is congruent with two growers who vouch for every packet, and the copy keeps the metaphor honest.",
+    "8": "Voice and drawer metaphor stay in the brand layer, but the stepper-in-catalog choice edges novelty toward checkout-adjacent mechanics.",
+    "9": "The easiest drawer on the bench and do not be discouraged by the quiet first month are the most ownable sentences on the panel.",
+    "10": "Seasonal drawers, filter chips, and restock promises serve a repeat visitor well on desktop, but the mobile rendering failure undercuts the return trip."
+  },
+  "inputTranscriptSha256": "1326f55a5156fe7637d252908f4c34eeb21515b3b60fcf3501f4d0867d41853c",
+  "shuffleSeed": 202607634
+}

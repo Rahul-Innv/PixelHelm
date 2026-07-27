@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 7,
+    "3": 9,
+    "4": 5,
+    "5": 5,
+    "6": 8,
+    "7": 8,
+    "8": 7,
+    "9": 8,
+    "10": 7
+  },
+  "rationales": {
+    "1": "Right-aligned prices, seasonal drawers, and filter chips make the desktop list fast to scan, but on mobile two entries collapse into one-word-per-line columns that badly slow reading.",
+    "2": "Inline steppers and Add buttons follow ordinary commerce convention, yet the controls are very small and the price-pending note collides with the price column on the sweet pea row, which slightly muddies the money path.",
+    "3": "This is the most explicit honesty in the set: out-of-stock lines stay listed with a restock explanation, germination sources are declared in a footer, the null price says ask us and we will write when it is set, and UK-only shipping leads both pages.",
+    "4": "The tiny minus, plus, and Add targets on both surfaces and the squeezed mobile text columns are exactly wrong for older readers on tablets, despite otherwise legible body type.",
+    "5": "The mobile catalog's broken one-word columns and the awkward sweet pea and carrot column widths on desktop are visible craft failures inside an otherwise disciplined system.",
+    "6": "The at-a-glance stat row, sowing table, and companions with planting reasons give strong decision support, and the growing notes anticipate the beginner's doubt about the quiet first month.",
+    "7": "The potting bench with seasonal drawers is a true two-person signature that reaches all the way into product copy, where the packet sits in the winter drawer of the bench.",
+    "8": "The metaphor stays in the brand layer and mechanics remain conventional, though the design-study disclaimer in the footer is an odd frame break a real shop would never print.",
+    "9": "Phrases like the easiest drawer on the bench and if it is listed, we can vouch for it are unmistakably this shop's voice, warm and specific throughout.",
+    "10": "Season sections and chips answer the what-can-I-sow-now visit well and both surfaces share the bench frame, but the mobile layout defects tax exactly the quick repeat check this criterion rewards."
+  },
+  "inputTranscriptSha256": "3085bffcb96d3c31373530f7cf10e56a1b8d54d4145cd2cbc95b5700f327e9f2",
+  "shuffleSeed": 202607632
+}

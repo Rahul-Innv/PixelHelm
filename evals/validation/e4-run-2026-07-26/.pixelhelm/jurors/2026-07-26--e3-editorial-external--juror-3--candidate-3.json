@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 2,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 6,
+    "8": 7,
+    "9": 8,
+    "10": 3
+  },
+  "rationales": {
+    "1": "The short-version box is the most explicit scannable alternative on the panel, and prose plus captions plus the ledger deliver the entire finding without any chart decoding.",
+    "2": "Charts are named by their findings, the non-zero axis start is labeled, and gaps are drawn as gaps, but the 2019 storm year gets hero color treatment in both charts with no flag on its reading.",
+    "3": "The 132 mm outlier is stamped with a large VERIFIED badge, appears unlabeled in the ledger, and the unverified status is never disclosed anywhere on the page, an affirmative mislabel that inverts the required caveat even though gaps and the method change are handled well.",
+    "4": "The gardener, the fair-time log entry, and the paperwork quotes are lovely local texture, but the hardest-day-in-the-book set piece spends that craft mythologizing precisely the reading the record cannot stand behind.",
+    "5": "Typography is clean and comfortable in both modes on both viewports and the mobile ledger keeps all its columns without clipping.",
+    "6": "A static short-version-first document with no observable scroll coercion clears the discipline bar as far as renders can show.",
+    "7": "The page is a well-structured conventional explainer whose candor could have been its signature, but no single form-level idea is stated or carried through all layers.",
+    "8": "It breaks essentially no conventions and keeps mechanics conventional, which satisfies the budget without demonstrating a declared deliberate break.",
+    "9": "The voice is genuinely local and unsensational, with fair time and the gardener's answer doing real work.",
+    "10": "The VERIFIED stamp is exactly an effect detached from the reporting, asserting a corroboration this dataset does not contain, and it sits at the emotional center of the page."
+  },
+  "inputTranscriptSha256": "c9e7b7c003e00e8e194a2156844e36070b46ae64cb6a470f9af413800055c5ea",
+  "shuffleSeed": 202607643
+}

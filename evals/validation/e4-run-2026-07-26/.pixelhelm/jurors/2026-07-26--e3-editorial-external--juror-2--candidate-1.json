@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The bold lede and each plate's opening sentence state the full finding in prose, and the year-by-year table gives a complete scannable alternative.",
+    "2": "All three plates are named by their finding; the Plate II baseline at 550 is explicitly disclosed with true tick values, and Plate III is drawn from zero.",
+    "3": "The seam, the three gaps, and the hollow excluded 2019 reading are annotated on every plate, restated in the table, and bounded by a clear cannot-say scope note.",
+    "4": "Patient local register throughout, with the two archival quotes placed directly after the plates they illuminate rather than as decoration.",
+    "5": "Editorial typography holds a comfortable measure and clear hierarchy in both modes, and the plates stay legible at the narrow width.",
+    "6": "The page is a fully readable static long-read with no visible scroll-driven pacing or motion dependence.",
+    "7": "Notes written on the record itself is a real one-sentence idea carried through every plate, the table, and the closing apparatus, though it documents the drift more than it makes it felt.",
+    "8": "Mechanics stay entirely conventional; the lettered marginalia are the single modest break.",
+    "9": "Weir-keeper quotes and lines like the autumn fair waiting for the season read as one specific paper's prose, unsensational and local.",
+    "10": "Every device on the page — seam rules, gap bands, the hollow dot — traces to a caveat this dataset actually carries."
+  },
+  "inputTranscriptSha256": "5eef273592bcfcca0a89a315578243ec1cf567a7b4d81057b0a0628af66e8ebc",
+  "shuffleSeed": 202607642
+}

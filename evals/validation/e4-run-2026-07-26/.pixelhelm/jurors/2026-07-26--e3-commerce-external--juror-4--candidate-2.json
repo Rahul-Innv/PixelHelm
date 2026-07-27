@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 7,
+    "3": 8,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The single-file numbered list is legible but slow: prices sit inline rather than in a scannable column, and season fit hides in small meta lines with no seasonal grouping.",
+    "2": "The product page commerce box is fully conventional, but the catalog offers no visible route into most packets and asks the shopper to read rather than act.",
+    "3": "Estimated germination is flagged, the sweet pea says price pending rather than inventing a number, and out of stock is plain, though the UK-only line is a small centered footnote.",
+    "4": "Type is generous and nothing depends on hover, but the delicate serif meta text and centered layout give older tablet readers more work than the grid rivals.",
+    "5": "The hairline rules, numbered entries, and restrained typography are genuinely refined and carry identically into dark mode and mobile.",
+    "6": "The product page covers sowing table, growing note, difficulty, and companions cleanly, so a first-timer can decide without leaving.",
+    "7": "The kept ledger idea suits two growers who vouch for every line, though it leans literary-editorial more than service culture.",
+    "8": "All novelty lives in the numbered-list voice and typography while every commerce mechanic stays conventional.",
+    "9": "Read slowly, choose well is a sentence no competitor would publish, and the tone holds across both surfaces.",
+    "10": "A returning shopper must walk the whole flat list to find what is in season or back in stock, which is exactly the visit this design serves worst."
+  },
+  "inputTranscriptSha256": "1326f55a5156fe7637d252908f4c34eeb21515b3b60fcf3501f4d0867d41853c",
+  "shuffleSeed": 202607634
+}

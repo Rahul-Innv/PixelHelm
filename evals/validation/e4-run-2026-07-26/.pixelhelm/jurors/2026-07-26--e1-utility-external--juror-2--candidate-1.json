@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 6,
+    "8": 7,
+    "9": 5,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The mobile first viewport shows the count strip and the burn closure notice, and the grouped color banners let a visitor answer the go or no-go question by scrolling alone.",
+    "2": "Every status pairs a distinct icon and word with its color in the legend, the section headers, and the card banners, and each keeps one stable rendering throughout.",
+    "3": "Unreported trails carry an explicit no-report treatment, the missing Jul 22 point is drawn as a labeled gap in the chart, the snowpack value wears an estimated badge with its sensor explanation, and every card shows its last-report time.",
+    "4": "Grouping runs open to caution to closed to no report, matching the hiker's decision order, with plain factual copy throughout.",
+    "5": "The card system and palette are consistent, but the very tall repeated status banners are heavy-handed emphasis and the desktop grid reads clunky.",
+    "6": "Long names, the burn pair, and both unreported rows all fit and both modes are resolved, but the desktop rows leave ragged holes and the snowpack card is mostly empty space.",
+    "7": "Status-colored card banners are competent but generic dashboard language; no one-sentence idea specific to a trail-conditions service emerges.",
+    "8": "Mechanics are fully conventional with no real convention breaks, which respects the budget but leaves almost no brand layer at all.",
+    "9": "Microcopy such as the no-report line is plain boilerplate any competitor could publish unchanged.",
+    "10": "The count strip rewards a daily glance and nothing playful blocks a return visit, though the oversized banners make repeat scanning slower than it needs to be."
+  },
+  "inputTranscriptSha256": "75c1dc0f56f99f2de101576a8d4fa5c51789c1887c23eb9df89490f2ca82f0f2",
+  "shuffleSeed": 202607612
+}

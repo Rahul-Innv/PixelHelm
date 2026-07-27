@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 7,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The invoice conceit is announced and immediately decoded by the subhead and the FOR line naming sole traders who invoice from a phone.",
+    "2": "The evidence section labels the estimate with its sample size and non-verified status, and the text-link claim is stated as simply how the product works.",
+    "3": "Trial CTAs appear at the hero and after the total, the terms line and stamp state no card required, and the VAT note sits directly under the prices.",
+    "4": "An invoice is the one document this audience reads daily, so the line-items-then-total structure maps exactly onto the reader's mental model in plain language.",
+    "5": "Monospace stamps, aligned tabular rules, and the double-rule dividers all serve the conceit, with nothing arbitrary across both modes and widths.",
+    "6": "The beta is labeled as not sold as finished and the estimate is fully labeled, but the customer quote is attributed without a verification label.",
+    "7": "The page being an invoice is the strongest signature here because the page demonstrates the product's own artifact rather than describing it.",
+    "8": "The single conceit is the only break, confined to the brand layer, while scrolling, buttons, and reading order remain entirely conventional.",
+    "9": "Copy such as January stops being a surprise and walk away owing nothing is specific, dry, and unmistakably this product's voice.",
+    "10": "Line items, a total, and terms are the fastest possible scan structure, so the form itself enacts the your-time-is-valuable pitch."
+  },
+  "inputTranscriptSha256": "078b1ec923925746c8d3da2d5466428a6d1cadef1a815532e10c9d3436134cc3",
+  "shuffleSeed": 202607623
+}

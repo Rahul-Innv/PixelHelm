@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede states the full finding in numbers, each plate opens with a bold prose sentence carrying its conclusion, and the complete year-by-year table gives a scannable alternative.",
+    "2": "All three plates are named by what they show, the truncated 550 mm scale in Plate II is explicitly disclosed with true tick values, and missing years are left as open breaks.",
+    "3": "The three null years, the 1996 to 1997 seam, and the hollow dashed unverified 2019 mark are annotated on every plate, and the closing scope note refuses attribution.",
+    "4": "The register is patient and place-loving, and the two archival quotes sit beside the plates whose data they illuminate rather than decorating.",
+    "5": "Editorial typography holds a comfortable measure and steady rhythm in both modes; mobile keeps full parity though the plates compress noticeably.",
+    "6": "The page is a fully readable static document with no scroll-driven pacing or motion devices visible in any render.",
+    "7": "The signature, the reporter's notes written on the record itself, is carried by the circled annotations on every plate, though it dramatizes the record's honesty slightly more than it makes the drift felt.",
+    "8": "One deliberate device, marginalia-style plate annotation, sits on top of entirely conventional reading mechanics.",
+    "9": "Phrases like the parish answering in its own practical way are local and unsensational, and no competitor could run the plate notes unchanged.",
+    "10": "Every visual device, the hollow dots, the seam rules, and the open gaps, traces to a disclosed fact of this record."
+  },
+  "inputTranscriptSha256": "c3c28808871784675bf031bd46c0b306c86c205bc8539bf84288f3ea64a265f6",
+  "shuffleSeed": 202607641
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 5,
+    "8": 6,
+    "9": 5,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The count line and closure notice sit in the mobile first viewport, but the oversized status banners bloat each card so learning which trails are open takes far more scrolling than the content requires.",
+    "2": "Each status gets a distinct icon shape, a word, a stable color, and a persistent legend, so meaning survives without color alone and never drifts.",
+    "3": "No-report cards read as unknown, the chart marks July 22 with a dashed marker plus a not-recorded footnote, snowpack is badged estimated with the sensor explanation, and cards carry timestamps; what is missing is any stated policy that unknown is never assumed open.",
+    "4": "Grouping follows the open, caution, closed, no-report decision order in plain language, though the T-01 style entry codes are operations jargon a hiker does not need.",
+    "5": "Execution is tidy and consistent, but the status word is printed twice per trail in header and banner, and the component styling is stock dashboard rather than considered craft.",
+    "6": "The data fits without breakage and both modes resolve, but two-card rows leave a conspicuous empty third column on desktop and the banner-first cards give every trail equal drama regardless of importance.",
+    "7": "There is no articulable signature idea; this is a generic admin-dashboard pattern transplanted onto trail data, exactly the polished genericness the tier definitions warn about.",
+    "8": "Mechanics are entirely conventional, which respects the budget, but no deliberate brand-layer move is attempted at all, so the criterion is met only by abstention.",
+    "9": "Microcopy such as no report received from this trail is interchangeable boilerplate any competitor could publish unchanged.",
+    "10": "Counts at the top help a returning glance and nothing playful blocks the visit, but the banner-heavy scroll length taxes the daily check."
+  },
+  "inputTranscriptSha256": "9a11ba434b1fc1c871053017b91f6e7d971426097fe38e3ac45e589e18a5ad81",
+  "shuffleSeed": 202607613
+}

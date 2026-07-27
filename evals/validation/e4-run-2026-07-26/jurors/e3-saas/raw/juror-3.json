@@ -1,0 +1,116 @@
+{
+  "juror": "juror-3",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 7,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The first screenful names the category, the audience, both prices, and the trial terms, though what the product actually does is deferred to sections below the fold.",
+        "2": "The pilot figure is labeled as an internal estimate with its sample size, the text-link claim is labeled as product behavior, and there is no marketese anywhere.",
+        "3": "The trial CTA sits beside the pricing panel with the no-card line, and the VAT note appears both at the prices and again in the small print.",
+        "4": "Price and small print first is exactly the order a subscription-skeptic tradesperson wants, in plain trade language, and the mobile layout keeps full parity.",
+        "5": "Editorial serif headline, uppercase kickers, rule lines, and accent-bar callouts form a disciplined system, with only minor unevenness in the small-print grid.",
+        "6": "The beta is labeled twice and the estimate is scrupulously labeled, but the customer quote is presented with a bare attribution and no verification label.",
+        "7": "The page as the quote you would give a customer is a clear one-sentence idea that the quotation panel, the small print set large, and the copy all reinforce.",
+        "8": "Mechanics are wholly conventional; the single deliberate break is the price-first quotation structure in the brand layer.",
+        "9": "Lines about the small print having no asterisk to hide and support being people in Manchester rather than a chat widget could not be published by a generic competitor.",
+        "10": "Full price, terms, and small print land before any persuasion, so the page is as fast to decide on as the product promises to be."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 6,
+        "2": 9,
+        "3": 8,
+        "4": 7,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 7
+      },
+      "rationales": {
+        "1": "The first screenful opens a numbered story with only a small kicker naming the category, so the value proposition depends on scrolling through the sequence.",
+        "2": "The pilot estimate is labeled with its sample size and called a signal rather than a certified fact, and the payment claim is labeled as product behavior.",
+        "3": "Trial CTAs bracket the page with the no-card line and the VAT note sits at the prices, though the pricing itself is held until the very end.",
+        "4": "The language is plain and genuinely of the trade, but making a subscription-skeptic scroll past six narrative steps to reach the price fits the audience imperfectly.",
+        "5": "The oversized numerals, consistent rules, and the semantic green reserved for the money steps show a coherent system on a restrained palette.",
+        "6": "The beta is honestly labeled as unfinished and the estimate is labeled, but the customer quote carries no verification label.",
+        "7": "The afternoon told as six numbered steps is a real signature that content and layout reinforce, though it narrates the promise rather than demonstrating it.",
+        "8": "One deliberate break, the story-sequence structure, sits in the brand layer while every mechanic stays conventional.",
+        "9": "Phrases about the ladder still being warm and staying the reasonable one without writing a word are specific, unhyped, and unpublishable by a competitor.",
+        "10": "The big-type steps scan quickly, but a product selling speed makes the reader walk the whole story before the price, which is mildly performative pacing."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 7,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The invoice conceit is announced and immediately decoded by the subhead and the FOR line naming sole traders who invoice from a phone.",
+        "2": "The evidence section labels the estimate with its sample size and non-verified status, and the text-link claim is stated as simply how the product works.",
+        "3": "Trial CTAs appear at the hero and after the total, the terms line and stamp state no card required, and the VAT note sits directly under the prices.",
+        "4": "An invoice is the one document this audience reads daily, so the line-items-then-total structure maps exactly onto the reader's mental model in plain language.",
+        "5": "Monospace stamps, aligned tabular rules, and the double-rule dividers all serve the conceit, with nothing arbitrary across both modes and widths.",
+        "6": "The beta is labeled as not sold as finished and the estimate is fully labeled, but the customer quote is attributed without a verification label.",
+        "7": "The page being an invoice is the strongest signature here because the page demonstrates the product's own artifact rather than describing it.",
+        "8": "The single conceit is the only break, confined to the brand layer, while scrolling, buttons, and reading order remain entirely conventional.",
+        "9": "Copy such as January stops being a surprise and walk away owing nothing is specific, dry, and unmistakably this product's voice.",
+        "10": "Line items, a total, and terms are the fastest possible scan structure, so the form itself enacts the your-time-is-valuable pitch."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 6,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 6,
+        "8": 8,
+        "9": 7,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The headline names the category and pricing posture while the subhead states exactly what happens in the van, giving the fastest comprehension of the set.",
+        "2": "Most claims are carefully labeled, but the prominent 98 percent statistic carries no stated basis while sitting beside a labeled estimate, which muddies an otherwise honest surface.",
+        "3": "The only button is see-the-rate-card and the trial itself is offered only as a bold text line, so the trial CTA is honest but not unmistakable.",
+        "4": "Named trades, day-rate framing, and the promise that the full price is two paragraphs down fit the skeptical sole trader well.",
+        "5": "The layout is clean and consistent but reads as competent default SaaS structure, with less distinctive rhythm than the strongest candidates.",
+        "6": "The beta is labeled still in testing, the estimate is labeled, and the testimonial is explicitly labeled a fictional persona, the only candidate to label it.",
+        "7": "Honest pricing is a stance rather than a signature; no single idea is visibly reinforced by the visual and interaction layers, leaving a well-made but generic page.",
+        "8": "Mechanics and brand layer are both fully conventional with no visible deliberate break, which stays safely inside the budget.",
+        "9": "Lines about no subscription games and the evening quote not waiting on a chatbot are good, but the register is close to standard indie-software honesty a competitor could adopt.",
+        "10": "The conventional structure scans fast and the price arrives where promised, though the missing direct trial action adds one avoidable step to deciding."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-2",
+    "candidate-4"
+  ]
+}

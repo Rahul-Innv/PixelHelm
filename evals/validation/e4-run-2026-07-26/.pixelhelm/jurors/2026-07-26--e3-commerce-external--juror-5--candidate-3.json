@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 7,
+    "3": 9,
+    "4": 4,
+    "5": 5,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The dense bench list with right-aligned prices, inline stock, season drawers, and filter chips scans fast on desktop, but two rows collapse into narrow broken columns that slow exactly this task.",
+    "2": "The buy path is conventional in shape, yet the compressed stepper-and-add controls are small enough to feel fiddly and sit unusually inside the catalog rows.",
+    "3": "This is the most honest surface of the four, with a restock explanation on the out-of-stock line, a written price-pending promise, and a footer disclosing how germination rates were measured.",
+    "4": "The tiny stepper targets fail the generous-target test for older readers, and the mobile catalog breaks into one-word-per-line text on two entries, which is below professional for this audience.",
+    "5": "Palette and hierarchy are disciplined and the product page is clean, but the misaligned narrow columns on desktop and the severe mobile wrapping fault break the system on half the renders.",
+    "6": "The at-a-glance stats with plain-language explanations, the reassuring growing notes, and companions with reasons make this the most confidence-building product page here.",
+    "7": "The catalog is short on purpose because we vouch for every line is a true service-culture signature for a two-person shop, though the visual layer expresses it less than the words do.",
+    "8": "Novelty is almost entirely in voice and drawer language while mechanics stay conventional, keeping the breaks inside the brand layer.",
+    "9": "Lines like the easiest drawer on the bench and do not be discouraged by the quiet first month are exactly the knowledgeable neighbor, unhurried and uncopyable.",
+    "10": "Keeping out-of-stock lines visible so shoppers can come back for them, with a stated relisting promise, directly serves the returning visitor and both surfaces speak with one voice."
+  },
+  "inputTranscriptSha256": "d5cc66dc63ed6458827100c917891fba3a968ec648a6a1d7a315cbac7034c637",
+  "shuffleSeed": 202607635
+}

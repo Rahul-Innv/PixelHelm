@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline 3 of 9 trails open is itself the answer and it shares the first mobile viewport with the deck and the closure alert.",
+    "2": "Statuses are text-labeled and each keeps one rendering, but caution and closed share the same orange hue family separated only by outline versus fill, and the dotted underline on no report reads like a link.",
+    "3": "No-report trails are labeled and backed by the footer rule that they are never assumed open, the snowpack estimate and the July 22 no-data day are flagged, and each trail carries its report time; the claim of open this morning beside a 6:00 PM stamp is a small tension.",
+    "4": "Summary, alert, context, then a single list sorted open to caution to closed to no report matches the decision flow in plain language.",
+    "5": "Type and list rhythm are competent, but the desktop leaves a large empty band between the hero and the trail list and the right-aligned status tags sit far from their trail names.",
+    "6": "The flat list absorbs the data without breakage in both modes, but the unresolved dead space at 1440 pixels suggests the desktop layout is not fully worked out.",
+    "7": "A spoken newspaper-style headline as the interface is a real one-sentence signature that suits a daily conditions service and is carried by the editorial type and deck.",
+    "8": "Mechanics stay conventional and the single brand-layer break is the headline-first front page.",
+    "9": "The headline and the worth-knowing sidebar have a distinct calm editorial voice, though the per-trail microcopy underneath is ordinary.",
+    "10": "The headline gives a returning user the answer in one second with no bypass friction, though the morning phrasing will read stale at other hours."
+  },
+  "inputTranscriptSha256": "82a61c871272f873fdad70047e0b872e9e242b3ebbfe595091b490776f558c06",
+  "shuffleSeed": 202607611
+}

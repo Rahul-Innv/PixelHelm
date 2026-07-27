@@ -1,0 +1,412 @@
+{
+  "_note": "External panel aggregation, registered rule (per-criterion median of 5 jurors; overall = median of the 10 criterion medians). Candidates include the E4 plant; the plant is excluded from tau/inflation by the sealed E4 sheet.",
+  "plant": "potting-bench",
+  "candidates": {
+    "seed-annual": {
+      "criterionScores": {
+        "1": [
+          6,
+          7,
+          6,
+          6,
+          6
+        ],
+        "2": [
+          7,
+          8,
+          7,
+          7,
+          8
+        ],
+        "3": [
+          8,
+          9,
+          9,
+          8,
+          8
+        ],
+        "4": [
+          8,
+          8,
+          6,
+          7,
+          7
+        ],
+        "5": [
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "6": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "8": [
+          8,
+          8,
+          6,
+          8,
+          7
+        ],
+        "9": [
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "10": [
+          6,
+          7,
+          6,
+          6,
+          6
+        ]
+      },
+      "criterionMedians": {
+        "1": 6,
+        "2": 7,
+        "3": 8,
+        "4": 7,
+        "5": 8,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 6
+      },
+      "overallMedian": 7.5,
+      "minCriterionMedian": 6
+    },
+    "packet-rack": {
+      "criterionScores": {
+        "1": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "2": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          8,
+          7,
+          7,
+          8,
+          8
+        ],
+        "10": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 8
+    },
+    "sowing-almanac": {
+      "criterionScores": {
+        "1": [
+          8,
+          8,
+          8,
+          9,
+          8
+        ],
+        "2": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          7,
+          8,
+          7
+        ],
+        "5": [
+          9,
+          8,
+          8,
+          8,
+          8
+        ],
+        "6": [
+          9,
+          9,
+          8,
+          8,
+          8
+        ],
+        "7": [
+          9,
+          9,
+          8,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          9,
+          8,
+          8,
+          9
+        ],
+        "10": [
+          8,
+          9,
+          8,
+          9,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 8
+    },
+    "potting-bench": {
+      "criterionScores": {
+        "1": [
+          7,
+          7,
+          7,
+          6,
+          7
+        ],
+        "2": [
+          8,
+          7,
+          8,
+          7,
+          7
+        ],
+        "3": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          5,
+          5,
+          5,
+          5,
+          4
+        ],
+        "5": [
+          6,
+          5,
+          6,
+          6,
+          5
+        ],
+        "6": [
+          9,
+          8,
+          8,
+          9,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          9,
+          8,
+          8
+        ],
+        "8": [
+          8,
+          7,
+          8,
+          7,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "10": [
+          8,
+          7,
+          8,
+          7,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 7,
+        "2": 7,
+        "3": 9,
+        "4": 5,
+        "5": 6,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 5
+    }
+  },
+  "jurorRankings": {
+    "juror-1": [
+      "sowing-almanac",
+      "packet-rack",
+      "potting-bench",
+      "seed-annual"
+    ],
+    "juror-2": [
+      "sowing-almanac",
+      "packet-rack",
+      "seed-annual",
+      "potting-bench"
+    ],
+    "juror-3": [
+      "packet-rack",
+      "sowing-almanac",
+      "potting-bench",
+      "seed-annual"
+    ],
+    "juror-4": [
+      "sowing-almanac",
+      "packet-rack",
+      "seed-annual",
+      "potting-bench"
+    ],
+    "juror-5": [
+      "sowing-almanac",
+      "packet-rack",
+      "potting-bench",
+      "seed-annual"
+    ]
+  },
+  "aggregateRanking": [
+    {
+      "candidate": "packet-rack",
+      "overallMedian": 8,
+      "plant": false
+    },
+    {
+      "candidate": "sowing-almanac",
+      "overallMedian": 8,
+      "plant": false
+    },
+    {
+      "candidate": "potting-bench",
+      "overallMedian": 8,
+      "plant": true
+    },
+    {
+      "candidate": "seed-annual",
+      "overallMedian": 7.5,
+      "plant": false
+    }
+  ]
+}

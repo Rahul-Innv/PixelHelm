@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 7,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 7,
+    "9": 7,
+    "10": 6
+  },
+  "rationales": {
+    "1": "Price and stock are legible per entry, but the flat numbered list has no seasonal grouping, so season fit means reading each sow line or relying solely on the month dropdown.",
+    "2": "The list-to-page model and the product buy box follow convention exactly, with nothing clever anywhere near the money path.",
+    "3": "Out of stock, the price-pending line, the estimated germination flag, and the UK-only note are all present, just stated more quietly than the strongest candidates.",
+    "4": "Type is generous, nothing hides behind hover, and mobile reads cleanly, though the small-caps meta lines run small for older readers.",
+    "5": "The centered masthead, numbered entries, and hairline rules are consistent across both surfaces, but the flat list reads more restrained than composed.",
+    "6": "The year table, difficulty line, potting-shed note, and companion listings with price and stock cover the first-time gardener's decision on the page.",
+    "7": "Two of us keep this list plus the numbered annual conceit is a real but modest signature, and the flat structure does not let the other layers reinforce it strongly.",
+    "8": "Breaks stay in the brand layer, though the numbered-list conceit trades away seasonal navigation structure, spending its budget on presentation rather than service.",
+    "9": "Read slowly choose well is a lovely line, but beyond it the copy is largely the shared catalog prose without much added personality.",
+    "10": "A repeat visitor must scan the whole numbered list or use the month filter to find what is in season, and there is no newly-in-stock or seasonal signal to serve them immediately."
+  },
+  "inputTranscriptSha256": "d5cc66dc63ed6458827100c917891fba3a968ec648a6a1d7a315cbac7034c637",
+  "shuffleSeed": 202607635
+}

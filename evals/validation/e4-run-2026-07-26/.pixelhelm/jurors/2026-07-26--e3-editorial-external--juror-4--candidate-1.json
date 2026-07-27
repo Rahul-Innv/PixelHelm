@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede states the full finding with every number, each plate opens with a bold prose sentence carrying its conclusion, and the complete table plus the About section make the story readable with no chart decoding or interaction.",
+    "2": "All three plates are named by their findings, the totals plate declares its 550 mm baseline in its own subtitle, the heaviest-day plate is drawn from zero, and the missing years appear as shaded bands in every plate.",
+    "3": "The seam, the three gaps, and the hollow unverified 2019 dot are annotated under every plate, repeated in the table notes, and the About section closes with an explicit shift-not-cause scope statement.",
+    "4": "The register is patient and local, with the weir-keeper and parish quotes placed directly after the plates they speak to rather than used as decoration.",
+    "5": "Serif editorial typography with a comfortable measure and consistent plate labeling holds up in both modes at both widths, though the long mobile table and the small annotation notes ask some patience.",
+    "6": "The page is a fully readable flat document with the conclusion at the top and no visible scroll-driven or motion-dependent structure.",
+    "7": "The signature — the reporter's notes written on the record itself — is coherent and carried through plates, notes, table, and colophon, though it reads as very disciplined annotation more than a form that makes the shift felt.",
+    "8": "Reading mechanics are entirely conventional and the single annotated-plate device is announced plainly in the standfirst.",
+    "9": "The prose is unsensational and place-loving, with lines like the season that used to open before the autumn fair now waiting for the second week of October.",
+    "10": "Every graphical device — seam, bands, era rules, hollow dot — corresponds to a real feature of the record, with nothing decorative left over."
+  },
+  "inputTranscriptSha256": "57b27a2e525b07a45c1490b869269f0bb897d9234603355a5aededc518cdd40b",
+  "shuffleSeed": 202607644
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 7,
+    "3": 9,
+    "4": 6,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 6,
+    "9": 7,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The numbered ledger runs in catalog order rather than season order, so season fit requires reading each sow line or using the filter. Prices are clear in position but the typeface renders the numeral one as a capital I, slowing price reading.",
+    "2": "The flow itself is conventional, but the numeral rendering reaches into the money path, where flat one pound ninety and free over fifteen read as letter-I figures and the quantity input shows what looks like a letter.",
+    "3": "Out of stock is plainly marked, the sweet pea shows price pending with an invitation to ask, the estimated germination is flagged, and UK-only shipping is stated in the header of both surfaces.",
+    "4": "The centered measure and generous product-page type are comfortable, but the numeral-as-letter figures are a real legibility hazard for older readers checking prices, which is this shop's core audience.",
+    "5": "Hairline rules, a calm palette, and consistent structure across surfaces show discipline, but the recurring numeral quirk and the sparser list rhythm leave it a step below the most polished arms.",
+    "6": "The year table, difficulty line, potting shed note, and companions with price and stock are all present and cleanly arranged for a first purchase decision.",
+    "7": "The annual numbered list, read slowly and choose well, is a genuine and fitting idea carried to the product page as number one in the annual, but it is thinner than the almanac, bench, and rack signatures.",
+    "8": "The numbering is a brand-layer break, but the stylistic figure choice leaks into prices and the quantity field, which spends novelty budget inside checkout-adjacent territory.",
+    "9": "Two of us keep this list, read slowly, choose well, is a lovely register, though beyond the masthead the copy is largely shared functional description.",
+    "10": "Without season grouping a repeat visitor must filter or read entry by entry to find what is sowable now, though stock states scan reasonably and the surfaces cohere."
+  },
+  "inputTranscriptSha256": "b1456c6f177733d9871acff5b040fa391a5e24876b96fd4db6f57a2702d2d29c",
+  "shuffleSeed": 202607633
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 6,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The opening screen shows a step headline and only a small eyebrow, so grasping what the product is and its value takes reading into the numbered sequence rather than one glance.",
+    "2": "The pilot estimate is labeled a signal rather than a certified fact and the payment claim carries a product-behavior caption, with no marketese anywhere.",
+    "3": "Trial buttons appear top and bottom with an honest no-card line and the VAT note sits with the prices, though pricing itself waits until the end of the page.",
+    "4": "The workday narrative and phrases from the trade fit the audience well, but a subscription-skeptic must scroll the full page before seeing a price.",
+    "5": "The hanging numerals, steady rules, and restrained accents are disciplined, and the green numerals consistently mark the money outcomes.",
+    "6": "The beta is labeled with a refusal to pretend it is done and the estimate keeps its label, but the customer quote has no unverified or fictional label.",
+    "7": "The page as six moments of the workday is a real signature carried by structure and copy, though it narrates the promise more than it demonstrates it.",
+    "8": "Replacing the hero with a numbered narrative is a single brand-layer break while the mechanics stay conventional.",
+    "9": "Phrases like the ladder still being warm and staying the reasonable one without writing a word are specific, unhyped, and unpublishable by a competitor.",
+    "10": "The sequence scans quickly, but the decision materials sit at the bottom so the page is slower to act on than to read."
+  },
+  "inputTranscriptSha256": "ef687d75ba2aa6c2096d86ab555e5c05249919b4867ce210c2f204ea98f2162a",
+  "shuffleSeed": 202607625
+}

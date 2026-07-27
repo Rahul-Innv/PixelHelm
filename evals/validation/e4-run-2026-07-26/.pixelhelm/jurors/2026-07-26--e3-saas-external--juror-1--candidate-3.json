@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 6,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "The first screenful shows only the small kicker and step one, so what the product is and who it serves must be inferred rather than read. The six-step narrative is a scroll-dependent device that spends the ten-second window on storytelling.",
+    "2": "The what-we-can-honestly-tell-you section labels the pilot figure as a signal rather than a certified fact and keeps the product-behavior claim separate. The self-congratulatory we-label-it-as-one phrasing slightly performs the honesty it practices.",
+    "3": "A header trial button and a closing CTA are both clear and honest, and the VAT note sits with the only prices shown. Price arriving at the very bottom asks patience of a skeptical buyer but the path itself is clean.",
+    "4": "The job-timeline structure mirrors a tradesperson's actual afternoon and the ladder-still-warm language is genuinely of the trade. Leading with process rather than price is the one mismatch with a subscription-skeptic's first question.",
+    "5": "The numbered rhythm and rules are consistent and confident, but six equal-weight display headings flatten the hierarchy. The gold-and-green number coloring reads as possibly meaningful and possibly arbitrary, which is the wrong ambiguity.",
+    "6": "The beta is labeled with a plainspoken we-will-not-pretend line and the estimate is properly hedged. The testimonial appears with no label, missing the sheet's explicit requirement.",
+    "7": "The whole-afternoon narrative is a real signature idea reinforced by the numbered structure. It tells the product's story rather than demonstrating the product, so it stops short of the ideal form.",
+    "8": "Replacing the hero with a numbered story is one deliberate brand-layer break while navigation, buttons and pricing stay conventional. The budget is respected.",
+    "9": "You stay the reasonable one without writing a word and try the whole afternoon on us are distinctive, specific and unhyped. The voice is consistent across all six steps.",
+    "10": "A product selling your-time-is-valuable delivers a page that requires reading a six-chapter story before the price appears, which is mild self-contradiction. Each step scans well but the whole is the slowest decision path of the four."
+  },
+  "inputTranscriptSha256": "2af9e44ea2007a82a781c5fd42380b5504b637c682f9a11d1b49d67ab1dbee9a",
+  "shuffleSeed": 202607621
+}

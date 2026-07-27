@@ -1,0 +1,116 @@
+{
+  "juror": "juror-1",
+  "set": "e3-saas",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 6,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The kicker plus the FOR, FROM and TERMS rows answer what it is, who it serves and the trial terms inside the first screenful. The self-referential subhead about typesetting the pitch is slightly inward-looking for a tradesperson skimming fast.",
+        "2": "The evidence section labels the four-hours figure as a small internal pilot estimate and separates it from the plain product-behavior claim, with zero marketese anywhere. The unlabeled testimonial is the one soft spot in an otherwise exemplary surface.",
+        "3": "Two honest Start-the-free-trial buttons bracket the page, the thirty-days stamp restates no card required, and the VAT note sits directly under the only place prices appear. Nothing nags and nothing is hidden.",
+        "4": "The invoice frame is the audience's own document genre, phone-width stacking holds up cleanly, and lines like January stops being a surprise speak plain trade language with no startup idiom.",
+        "5": "The ruled invoice grid, monospace labels and consistent hierarchy are disciplined and nothing feels arbitrary. The blue trial button sits slightly outside the otherwise olive-and-green accent system.",
+        "6": "The beta integration is labeled and explicitly not sold as finished, and the estimate is kept an estimate in so many words. The Okafor testimonial appears with no verification label, which this surface otherwise earns the right to avoid.",
+        "7": "This page is an invoice is a one-sentence signature the entire artifact enacts through line items, a total, terms and a stamp, so the page demonstrates the product rather than asserting it. Content, visuals and copy all reinforce the same idea.",
+        "8": "The page-as-invoice conceit is a single deliberate brand-layer break while buttons, lists and reading order stay fully conventional. The budget is respected rather than strained.",
+        "9": "Walk away owing nothing and we will not sell it to you as finished could not be published unchanged by a competitor. The voice is specific, unhyped and consistently respectful of the reader's judgment.",
+        "10": "An invoice is the fastest-scanning document this audience knows, and the page inherits that speed with dense, decision-ready rows and no performative devices. The total and terms are exactly where a tradesperson would look for them."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 6,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "Invoicing for trades, priced like a day rate plus the photo-the-job-sheet subhead states what it is, who it is for and how it works before any scrolling. It is the most immediately legible hero of the four.",
+        "2": "The four-hours figure is carefully downgraded to an early signal from a small pilot, and the whole-price-list line reads as confident restraint. The large ninety-eight percent statistic is presented flat with no basis shown, a small wobble next to its labeled neighbor.",
+        "3": "Pricing is transparent with the VAT note and the no-enterprise-tier line, but the only button on the page says See the rate card and no start-trial control exists anywhere. The trial is offered only as bold text, so the conversion path fails the unmistakable-CTA test.",
+        "4": "Built for sole traders, no accounting degree, no subscription games addresses the skeptical buyer in their own terms, and the single column reads cleanly at phone width. The structure answers questions in the order this audience would ask them.",
+        "5": "Spacing, the two-column feature grid and a restrained palette are handled with quiet competence. The rate-card cards are plainer than the rest of the page but nothing is arbitrary.",
+        "6": "The beta is labeled still in testing, the estimate stays an estimate, and this is the only candidate that explicitly labels the testimonial as a fictional persona. The footer even discloses the design-study status, the most complete honesty surface on the panel.",
+        "7": "The signature idea of pricing honesty is stated and partly enacted by putting the full price two paragraphs down as promised. It is asserted more than demonstrated, and visuals and interaction do little extra reinforcing.",
+        "8": "Mechanics are entirely conventional and the brand layer takes at most one quiet liberty with the rate-card framing. The novelty budget is comfortably respected.",
+        "9": "Your evening quote does not wait on a chatbot and no enterprise tier hiding behind a sales call are specific and unhyped. A competitor could imitate the plainness but not these particular sentences.",
+        "10": "The page is short, front-loaded and scannable, and it keeps its own stated promise about where the price sits. Nothing performative slows the decision."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 6,
+        "2": 8,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 6,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 6
+      },
+      "rationales": {
+        "1": "The first screenful shows only the small kicker and step one, so what the product is and who it serves must be inferred rather than read. The six-step narrative is a scroll-dependent device that spends the ten-second window on storytelling.",
+        "2": "The what-we-can-honestly-tell-you section labels the pilot figure as a signal rather than a certified fact and keeps the product-behavior claim separate. The self-congratulatory we-label-it-as-one phrasing slightly performs the honesty it practices.",
+        "3": "A header trial button and a closing CTA are both clear and honest, and the VAT note sits with the only prices shown. Price arriving at the very bottom asks patience of a skeptical buyer but the path itself is clean.",
+        "4": "The job-timeline structure mirrors a tradesperson's actual afternoon and the ladder-still-warm language is genuinely of the trade. Leading with process rather than price is the one mismatch with a subscription-skeptic's first question.",
+        "5": "The numbered rhythm and rules are consistent and confident, but six equal-weight display headings flatten the hierarchy. The gold-and-green number coloring reads as possibly meaningful and possibly arbitrary, which is the wrong ambiguity.",
+        "6": "The beta is labeled with a plainspoken we-will-not-pretend line and the estimate is properly hedged. The testimonial appears with no label, missing the sheet's explicit requirement.",
+        "7": "The whole-afternoon narrative is a real signature idea reinforced by the numbered structure. It tells the product's story rather than demonstrating the product, so it stops short of the ideal form.",
+        "8": "Replacing the hero with a numbered story is one deliberate brand-layer break while navigation, buttons and pricing stay conventional. The budget is respected.",
+        "9": "You stay the reasonable one without writing a word and try the whole afternoon on us are distinctive, specific and unhyped. The voice is consistent across all six steps.",
+        "10": "A product selling your-time-is-valuable delivers a page that requires reading a six-chapter story before the price appears, which is mild self-contradiction. Each step scans well but the whole is the slowest decision path of the four."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 9,
+        "3": 8,
+        "4": 9,
+        "5": 9,
+        "6": 6,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The quotation card puts both prices, the VAT note and the trial terms in the very first screenful, and the kicker names the category. Who it is for arrives implicitly through the you-would-never-take-a-job framing rather than a direct statement.",
+        "2": "Setting the small print large is credibility engineering made structural, and the evidence section labels the pilot estimate and the product-behavior claim exactly as the honest reading requires. Restraint reads as confidence throughout.",
+        "3": "The trial button sits beside the prices with no card required stated plainly, and every caveat a buyer could want is promoted, not buried. The only deduction is that a reader who finishes the page finds no closing CTA and must scroll back.",
+        "4": "A quotation is the document this audience writes daily, and price-and-small-print-first answers the subscription-skeptic's first question before anything else. The mobile stack keeps the quote card on top where it belongs.",
+        "5": "The serif display, rust accent bars and ruled tables form an elegant, coherent system with a disciplined hierarchy and nothing arbitrary. Both modes hold the same character.",
+        "6": "The beta is named in the terms, cross-referenced again at the integration row, and the estimate is labeled and not rounded into fact. The italic testimonial carries no label, the single honest-surface miss.",
+        "7": "Here is the quote is a one-sentence signature the page proves by conduct, giving the buyer exactly the transparency the product promises its users' customers. The small-print inversion makes the thesis visible rather than claimed.",
+        "8": "Price-first ordering and enlarged small print are two deliberate breaks confined to the brand layer while every mechanic stays conventional. That is precisely the permitted budget, spent well.",
+        "9": "You would never take a job without giving one and there is not an asterisk to hide are lines only this product could publish. The voice trusts the reader's professionalism without flattery.",
+        "10": "The full price, terms and caveats are decidable within seconds of arrival, which is the product's promise enacted as form. Nothing on the page performs; everything informs."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-4",
+    "candidate-1",
+    "candidate-2",
+    "candidate-3"
+  ]
+}

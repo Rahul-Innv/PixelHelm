@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede delivers the complete finding in dated, quantified prose, each plate opens with a bold sentence stating what it shows, and the full-record table plus the closing notes give a reader the whole story without decoding a single chart.",
+    "2": "All three plates are named by their finding, the truncated 550 mm start of Plate II is explicitly disclosed with the reason, Plate III is declared drawn from zero, and the missing years appear as labeled bands rather than bridged lines.",
+    "3": "Gaps, the 1996 to 1997 seam, and the hollow excluded 2019 reading are marked directly on every plate and repeated in the table and closing notes, though the mobile table clips its notes column so the row-level disclosures survive there only in prose.",
+    "4": "The register is patient and place-bound, with the autumn fair, the flooded lane, and two ledger quotes placed immediately after the plates they illuminate rather than as ornament.",
+    "5": "Desktop typography in both modes carries the long read comfortably, but the mobile table loses its notes column to the viewport edge and leaves conspicuous blank space, a visible responsive flaw.",
+    "6": "The page is a fully readable static document with no scroll-dependent device in evidence, so the base meets the discipline bar as far as renders can show.",
+    "7": "The one-sentence idea, reporter's notes written on the record itself, is genuinely carried through the lettered marginal annotations, the table notes, and the closing method text, though it explains the shift more than it makes the shift felt.",
+    "8": "Reading mechanics stay entirely conventional and the single device, annotation markers on the plates, is declared in the deck sentence.",
+    "9": "Lines like the season that used to open before the autumn fair now waits for the second week of October are unsensational, local, and specific to this valley.",
+    "10": "Every visual device, seam markers, shaded gaps, hollow dot, traces to a real feature of the dataset with nothing decorative bolted on."
+  },
+  "inputTranscriptSha256": "c9e7b7c003e00e8e194a2156844e36070b46ae64cb6a470f9af413800055c5ea",
+  "shuffleSeed": 202607643
+}

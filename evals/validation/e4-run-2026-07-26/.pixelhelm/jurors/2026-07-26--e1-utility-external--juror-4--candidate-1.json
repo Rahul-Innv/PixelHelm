@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The bold three-of-nine summary and the closure notice both sit in the first mobile viewport, and the full answer needs only scrolling. The ceremonial masthead does spend vertical space before the answer appears.",
+    "2": "Every status is a labeled stamp in a stable color, readable without color alone, and rendered identically in both modes and at both widths.",
+    "3": "Unreported trails carry an explicit condition-unknown stamp, the missing July 22 day is written out as not recorded, the snowpack shows an estimated stamp with the offline-sensor reason, and every entry is timestamped.",
+    "4": "Entries run open, then caution, then closed, then unreported, with that ordering stated in plain words and the ranger notice placed ahead of the log; the language stays calm and jargon-free.",
+    "5": "Spacing rhythm, dotted leaders, stamp geometry, and a tight warm palette are executed with almost nothing arbitrary, and the letterpress system is applied consistently end to end.",
+    "6": "Long names, the closed burn pair, and both unreported rows sit naturally in the ruled-log layout, and the dark mode is a fully resolved warm-on-black rendering rather than an inversion.",
+    "7": "The one-sentence idea, the ranger's daily printed log, is reinforced by the stamps, the entry numbers, and the posted and end-of-log lines, and it is genuinely true of a trail-conditions service.",
+    "8": "Mechanics are a plain scrolling document; the single deliberate break, the letterpress log conceit, lives entirely in the brand layer.",
+    "9": "Lines like the morning log masthead, the ranger's notice, and the end-of-log closure could not be pasted onto a competitor's page unchanged, yet they stay factual and calm.",
+    "10": "The dense ruled log rewards a daily glance and nothing playful or mandatory stands in a returning user's way, though the tall masthead adds a little repeat scrolling."
+  },
+  "inputTranscriptSha256": "aae5be5c3c79ec7e16f7a2d0002fa5d446c989866ff78dd6022d6b0c3d130918",
+  "shuffleSeed": 202607614
+}

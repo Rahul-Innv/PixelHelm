@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Title, colored counts, and the closure alert all fit the first mobile viewport, so network state and the active alert are readable before scrolling.",
+    "2": "Statuses pair a colored word label with worded group headers and left rails so color never carries meaning alone, though the doubled vocabulary of go versus open adds slight redundancy.",
+    "3": "The unknown rows state that unknown is not the same as fine, the weather gap is shown as the gap it is, the estimated snowpack is chipped and explained, and every row is timestamped.",
+    "4": "Go, go with care, do not go, and unknown speak the hiker's actual question in plain language and in decision order.",
+    "5": "Rows and rails are executed consistently, but a rule appears to strike through a small label above the footer in both desktop modes, and the visual system is plainer than the writing it carries.",
+    "6": "Long names, the burn pair, and both unknown rows sit cleanly in the rail layout across both modes, apart from that overlapped element near the footer.",
+    "7": "The honesty-first decision board is a real idea true of a conditions service, but the visual layer expresses it far more faintly than the copy does.",
+    "8": "Mechanics are conventional and the only break, decision-verb section names, stays in the brand and content layer within budget.",
+    "9": "Unknown is not the same as fine is genuinely ownable microcopy, though the closing admission that the page is a design study breaks the service's own voice.",
+    "10": "The count strip and fixed section order suit a daily glance with no friction a returning user would need to bypass."
+  },
+  "inputTranscriptSha256": "917ce935cc0a9e8fc3898714d7e0550a03e7373e4ba547cfd9de7fef076ba322",
+  "shuffleSeed": 202607615
+}

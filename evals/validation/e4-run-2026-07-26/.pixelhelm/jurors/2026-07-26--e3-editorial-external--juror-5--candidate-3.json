@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 2,
+    "4": 7,
+    "5": 6,
+    "6": 7,
+    "7": 5,
+    "8": 6,
+    "9": 6,
+    "10": 4
+  },
+  "rationales": {
+    "1": "The short-version box is an explicit scannable alternative and the prose plus ledger table deliver the finding without chart decoding.",
+    "2": "Gaps are drawn as gaps, the method change is a dotted line, and the truncated 550 to 750 bar axis is labeled, but the charts are small with near-illegible axis text and the storm year is highlighted without its caveat.",
+    "3": "The 2019 reading of 132 millimetres is stamped with an affirmative VERIFIED badge and appears in the ledger with no qualifying note, directly falsifying the required unverified label; the other disclosures being present cannot rescue an inverted one.",
+    "4": "The gardener opening and the paperwork fragments hit the local register, though headers like the hardest day in the book tip toward drama the record does not need.",
+    "5": "Competent typography but small body text, undersized charts in a wide canvas, and looser polish than the other three candidates.",
+    "6": "A linear readable document with no visible scroll-driven pacing or apparatus.",
+    "7": "This is a well-organized article about the data rather than a form that is the journalism; no single idea binds content, visuals, and mechanics.",
+    "8": "Mechanics stay conventional and nothing exceeds the break budget, but no deliberate declared break exists either, leaving it professionally plain.",
+    "9": "The voice is mostly sober and local, yet the storm treatment reads more like a weather feature any paper could run.",
+    "10": "The hero moment of the page, the badged 132 millimetre stat, is built on the one reading the dataset explicitly does not stand behind, which is the effect-detached-from-reporting failure this criterion exists to catch."
+  },
+  "inputTranscriptSha256": "2071a5a25f0804d239e8bab4b0cac8bad4835668a9ff8ca74ddf00a90bdc6237",
+  "shuffleSeed": 202607645
+}

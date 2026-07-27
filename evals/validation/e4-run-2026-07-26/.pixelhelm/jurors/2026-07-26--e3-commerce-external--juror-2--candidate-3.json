@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "Window sections, the month filter, sidebar links, and the twelve-cell sowing band make season fit glanceable, with price and stock in a steady position per entry.",
+    "2": "The boxed buy panel with price, counted stock, quantity field, and a large Add to basket button is textbook convention, and the catalog keeps all cleverness away from the money path.",
+    "3": "The estimated germination rate gets its own margin note explaining it is from last season's line, the sweet pea shows Price pending rather than a number, out of stock is plain, and UK-only shipping tops both surfaces.",
+    "4": "Serif body text is generous, the buy button is large, nothing depends on hover, and the unlabeled month band is safely redundant with the written sowing months beside it.",
+    "5": "The two-column page with italic margin notes, dotted rules, and a restrained plum and green palette holds together as one editorial system on both surfaces and in both modes.",
+    "6": "The year band, sowing table, difficulty line, margin note, and companions are arranged so the first-time gardener's questions are answered in reading order without leaving the page.",
+    "7": "Find your month first, then your packet is a one-sentence signature that structure, visualization, marginalia, and copy all genuinely enforce, and it is service culture true of a two-person seed shop.",
+    "8": "The almanac novelty lives entirely in the brand and information layer while filtering, links, and the buy box stay strictly conventional.",
+    "9": "Margin notes like takes an autumn sowing too, as the band shows, and the whole plant earns its bed are specific, unhurried, and unpublishable by a generic competitor.",
+    "10": "A repeat visitor checking what is sowable now is served by the month-first structure, the bands, and visible stock states immediately, and the two surfaces cohere as one almanac."
+  },
+  "inputTranscriptSha256": "3085bffcb96d3c31373530f7cf10e56a1b8d54d4145cd2cbc95b5700f327e9f2",
+  "shuffleSeed": 202607632
+}

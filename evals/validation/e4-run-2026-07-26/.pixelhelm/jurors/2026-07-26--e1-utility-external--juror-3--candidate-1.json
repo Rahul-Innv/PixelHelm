@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 10,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The mobile first viewport carries the title, the 3-2-2-2 count strip, and the closure alert, so overall state and the active alert are readable before any interaction. Finding which trails are open takes only one short scroll into the GO section.",
+    "2": "Every status pairs a text label with a colored edge rail and keeps one rendering everywhere, so nothing depends on color alone. The doubled vocabulary of section names (GO, DO NOT GO) over chip labels (OPEN, CLOSED) is consistent but adds one extra mapping to learn.",
+    "3": "This is the strongest honesty surface in the set: unreported trails get their own UNKNOWN section with the explicit warning that unknown is not the same as fine, the July 22 row states no data recorded, snowpack wears an ESTIMATED badge with the sensor story, every report carries its own timestamp, and the footer states the never-assumed-open policy outright.",
+    "4": "Sections run in exact hiker decision order, from go to go-with-care to do-not-go to unknown, then history and snowpack, in plain instructional language with zero marketese.",
+    "5": "Spacing rhythm, rail alignment, and the three-level type hierarchy are disciplined; small blemishes remain, such as the slightly muddled rule treatment above the footer and the verbatim repetition of the unknown-trail paragraph on both rows.",
+    "6": "Long names, the burn cluster with its alert cross-reference, and both unreported rows all sit cleanly in the single-column list, and light and dark modes are both fully resolved.",
+    "7": "The signature reads as report only what rangers actually said, and the count strip, the unknown section, the gap row, and the footer policy all restate it; it is native to a conditions service rather than a borrowed trend.",
+    "8": "Mechanics are a conventional scrolling list and table; the directive section naming is the single deliberate brand-layer break, comfortably inside budget.",
+    "9": "Lines like unknown is not the same as fine, and the gap is shown as the gap it is, are calm, factual, and not publishable unchanged by a competitor.",
+    "10": "The top count strip and stable ordering serve the habitual daily glance with nothing mandatory or playful, though the long educational paragraphs add some scroll weight on repeat visits."
+  },
+  "inputTranscriptSha256": "9a11ba434b1fc1c871053017b91f6e7d971426097fe38e3ac45e589e18a5ad81",
+  "shuffleSeed": 202607613
+}

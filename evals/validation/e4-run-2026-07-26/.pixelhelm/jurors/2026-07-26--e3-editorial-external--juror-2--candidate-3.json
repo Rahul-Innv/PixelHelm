@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede and the then-and-now panel give the whole finding in large plain figures, with the full table as a numeric fallback.",
+    "2": "The single drift chart is named by its finding, keeps an honest calendar shelf, and draws the gaps and hollow 2019 dot correctly, though the totals and worst-day threads never get a chart of their own.",
+    "3": "Printing every element in era ink makes the method seam impossible to miss, the gaps are shaded and tabled, and the 2019 exclusion is footnoted in the panel itself.",
+    "4": "The register is patient and the one-entry-from-each-ink quote framing is elegant, but the narrative body is thinner than the apparatus around it.",
+    "5": "The two-ink palette stays disciplined across modes and the stacked mobile layout holds, with clean tabular rhythm.",
+    "6": "A static readable page with no observable scroll-driven pacing or motion dependence.",
+    "7": "Two inks for two instruments is a crisp one-sentence idea reinforced in the legend, panel, chart, quotes, and table, though it foregrounds the caveat slightly more than the shift itself.",
+    "8": "One deliberate break, the era-ink system, with reading mechanics left fully conventional.",
+    "9": "Lines like the record keeping human time as well as rain are specific, quiet, and unsensational.",
+    "10": "The ink device is the dataset's own instrument history made visible, so nothing is effect detached from reporting."
+  },
+  "inputTranscriptSha256": "5eef273592bcfcca0a89a315578243ec1cf567a7b4d81057b0a0628af66e8ebc",
+  "shuffleSeed": 202607642
+}

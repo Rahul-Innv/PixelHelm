@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The colored count strip (3 open, 2 caution, 2 closed, 2 no report) and the closure alert both sit in the first mobile viewport, so the go or no-go answer needs nothing but a glance and a scroll for the trail names.",
+    "2": "Every status pairs a text label with a colored edge bar, and each of the four statuses keeps one hue and one rendering from the summary strip through every section.",
+    "3": "Unreported trails get their own UNKNOWN section with the line that unknown is not the same as fine, the July 22 gap is an explicit italic row, snowpack carries a visible ESTIMATED badge with the sensor story, and every trail shows its own report time.",
+    "4": "GO, GO WITH CARE, DO NOT GO, UNKNOWN is exactly the hiker's decision order in plain imperative language, with weather history and snowpack correctly demoted below the decision content.",
+    "5": "Spacing rhythm, aligned label column, restrained palette and roughly three type sizes are held with discipline; only a faint stray rule artifact above the footer keeps this from the top band.",
+    "6": "Long names, the burn cluster, and both unreported rows sit naturally in the row layout, and the dark mode is fully designed rather than inverted.",
+    "7": "The signature reads as a board that reports only what it knows, and the honesty copy, the gap row, and the unknown section all reinforce it in a way that is true of a conditions service.",
+    "8": "Mechanics are entirely conventional; the single deliberate break is the imperative section naming, which lives in the brand layer.",
+    "9": "Lines like unknown is not the same as fine, and showing the gap as the gap it is, are calm, factual, and could not be published unchanged by a competitor.",
+    "10": "The count strip rewards the habitual daily glance instantly, and nothing playful or mandatory stands between a returning user and the answer."
+  },
+  "inputTranscriptSha256": "82a61c871272f873fdad70047e0b872e9e242b3ebbfe595091b490776f558c06",
+  "shuffleSeed": 202607611
+}

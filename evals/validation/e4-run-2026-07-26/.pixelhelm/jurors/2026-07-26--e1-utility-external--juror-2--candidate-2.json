@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The summary sentence stating 3 of 9 trails open sits with the ranger's notice inside the mobile first viewport, and the ordered log answers where by scrolling alone.",
+    "2": "Stamp-style labeled chips give each status a worded, consistently colored rendering that repeats identically down the log.",
+    "3": "No-report entries say condition unknown, Jul 22 is written as not recorded in the seven-day table, the snowpack carries an estimated stamp, and each entry lists its last-report time; only the morning-log framing beside the 6:00 PM posted time slightly blurs data age.",
+    "4": "The log runs open, caution, closed, then no report, states that order up front, and keeps calm plain language throughout.",
+    "5": "The letterpress system with dot leaders, aligned distances, and a disciplined serif hierarchy is consistent and nothing feels arbitrary.",
+    "6": "Long names, the burn pair, and both unreported entries sit cleanly in the ruled rows, and the parchment and dark-brown modes are both fully resolved.",
+    "7": "The one-sentence idea of the page as a ranger's daily log is reinforced by the stamps, the entry numbers, the ledger typography, and the end-of-log closing, and it is true of how a trail service actually works.",
+    "8": "Mechanics stay a conventional single-column list while the letterpress log styling is the one deliberate brand-layer break.",
+    "9": "Phrases like the ranger's notice, the entry numbers, and end of log give copy no competitor could publish unchanged while staying factual.",
+    "10": "A dated daily log invites the habitual glance, the opening summary delivers it in one line, and nothing mandatory or playful stands in the way."
+  },
+  "inputTranscriptSha256": "75c1dc0f56f99f2de101576a8d4fa5c51789c1887c23eb9df89490f2ca82f0f2",
+  "shuffleSeed": 202607612
+}

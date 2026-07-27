@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede states the full finding with dates and millimetres, the rail caption restates in words exactly what the dots and bars show, and every year's figures are printed as text, so no chart literacy is required anywhere.",
+    "2": "The rail is named and described by its finding, both fixed scales are declared with their bounds including the 550 to 750 truncation, and the three missing years sit in the rail as hatched no-record rows rather than being smoothed over.",
+    "3": "The null years, the instrument change as an era header exactly where the boundary is crossed, the hollow 2019 dot with its red unverified line, and the no-attribution caveat are all present on both viewports in both modes, the cleanest honesty surface of the four.",
+    "4": "The two ledger quotes are slotted chronologically into the rail where their years fall and the mid-rail interlude reads like a patient local columnist, though the connective prose is sparer than the strongest narrative here.",
+    "5": "Typography and rail rhythm hold up in both modes and the mobile rail restacks without losing any element, with only the thin data inks at small sizes as a minor quibble.",
+    "6": "It is a static almanac read at the reader's own pace with nothing scroll-driven observable, so discipline concerns do not arise in the renders.",
+    "7": "Read line by line like the almanac the valley used to keep is a one-sentence idea that every layer serves, and reading down the page while the onset dots walk rightward makes the shift physically felt rather than merely charted.",
+    "8": "The single break, a chart-table hybrid rail, is declared in the how-to-read block while navigation and reading mechanics stay wholly conventional.",
+    "9": "Phrases like a shade longer each wet year than the valley had been used to are quiet, local, and unpublishable by any other paper unchanged.",
+    "10": "Hatching means missing, hollow means unverified, era headers mean the instrument, so every device is a direct trace of the record."
+  },
+  "inputTranscriptSha256": "c9e7b7c003e00e8e194a2156844e36070b46ae64cb6a470f9af413800055c5ea",
+  "shuffleSeed": 202607643
+}

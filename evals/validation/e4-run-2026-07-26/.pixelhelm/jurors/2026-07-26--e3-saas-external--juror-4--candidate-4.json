@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 6,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The conceit headline plus the for, from, and terms rows identify audience, maker, and offer within the first screen, at the cost of one beat to get the joke.",
+    "2": "The pilot estimate is labeled with its size and the payment claim is explained as simply how the product works, with no promotional inflation anywhere.",
+    "3": "Trial terms appear in the header rows, the stamp and no-card line are unmissable, the VAT note sits under the totals, and the call to action repeats at the decision point.",
+    "4": "Reading the pitch as paperwork is native behavior for a tradesperson, and the line items speak plain trade language throughout.",
+    "5": "The invoice typography of ruled tables, monospace labels, and the stamp is coherent and deliberate, though the saturated blue button adds a second accent the paper palette does not quite own.",
+    "6": "The beta carries an honest caveat and the estimate is never rounded into fact, but the customer quote has no verification or persona label.",
+    "7": "An invoicing product pitched as an invoice is the ideal form: the page is the artifact the product sells, demonstrated rather than asserted.",
+    "8": "One structural conceit carries all the novelty while navigation, buttons, and tables remain conventional.",
+    "9": "Walk away owing nothing and January stops being a surprise are specific, unhyped lines a competitor could not publish unchanged.",
+    "10": "Line items, a total, and terms are exactly how this reader already processes paperwork, so scanning and deciding are fast by construction."
+  },
+  "inputTranscriptSha256": "acc31c58c2e591ce1d7abf90641c5a3827315a76fe12fcae0ac0bafc1ce01a70",
+  "shuffleSeed": 202607624
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 6,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The full price list, VAT note, and trial terms sit in the first screenful under a headline that says exactly what is happening, with the eyebrow naming the category.",
+    "2": "An evidence section titled evidence not adjectives labels the pilot figure and types the payment claim as product behavior, and the copy contains no marketese.",
+    "3": "Pricing leads the page with the VAT note adjacent and an honest no-card line, though the single trial button near the top is never repeated after the case is made.",
+    "4": "Opening with the quote and setting the small print large speaks directly to a subscription-skeptic who gives quotes for a living, and the single column reads cleanly on the phone.",
+    "5": "Accent-ruled cards, aligned tables, and roughly three type sizes hold together, with only a slightly unbalanced card grid as a quibble.",
+    "6": "The beta is labeled twice and the pilot estimate is flagged, but the customer quote carries no verification or persona label.",
+    "7": "Price and small print first, decide the way your own customers do, is one sentence that the structure, the copy, and the quotation card all enact.",
+    "8": "The one deliberate break is inverting the funnel to lead with price while every mechanic stays conventional.",
+    "9": "No asterisk because there is not one to hide, and people in Manchester rather than a chat widget pretending to be, are lines a competitor could not lift.",
+    "10": "Everything needed to decide is in the first screen, which is the product's time-respect promise enacted as form."
+  },
+  "inputTranscriptSha256": "acc31c58c2e591ce1d7abf90641c5a3827315a76fe12fcae0ac0bafc1ce01a70",
+  "shuffleSeed": 202607624
+}

@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-5",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede states the full finding with numbers, the then-and-now ink columns restate it as plain figures, and the annotated notes under the chart plus the complete table make the conclusion reachable with no chart decoding or interaction.",
+    "2": "The drift chart is named by its finding, uses an honest September-to-October day scale, draws the three missing years as open bands that no average crosses, and marks 2019 as a hollow dot.",
+    "3": "Gaps, the 1996 to 1997 seam, the unverified 2019 reading, and the shift-not-cause scope note are all present and repeated at every crossing point; the two-ink device makes the instrument caveat structural rather than a footnote.",
+    "4": "Patient, local, and concrete throughout, with one archival fragment per ink era placed exactly where it serves the record; the prose layer is slightly thinner than the best candidate here.",
+    "5": "Serif editorial typography with comfortable measure and steady rhythm holds up in both modes and both viewports; the mobile drift chart is somewhat vertically compressed.",
+    "6": "The page is a fully readable linear document with no visible scroll-driven apparatus or forced pacing; motion parity itself is not observable in static renders.",
+    "7": "Printed in two inks is a one-sentence signature that the stat columns, the chart, the table ink, and even the quote attributions all reinforce, and it is the data-honesty story itself.",
+    "8": "One deliberate device, the ink conceit, sits on otherwise wholly conventional reading mechanics, and the About section explains the break explicitly.",
+    "9": "Unsensational and specific with lines like the record keeping human time as well as rain; a touch of the register still reads as designable house style rather than one paper's only voice.",
+    "10": "Every device traces to a real feature of the dataset: inks to the instrument seam, bands to the true gaps, the hollow dot to the flagged reading; nothing is decoration detached from reporting."
+  },
+  "inputTranscriptSha256": "2071a5a25f0804d239e8bab4b0cac8bad4835668a9ff8ca74ddf00a90bdc6237",
+  "shuffleSeed": 202607645
+}

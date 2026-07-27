@@ -1,0 +1,91 @@
+{
+  "candidateOrderBase": [
+    "worked-invoice",
+    "driveway-to-paid",
+    "fair-quote",
+    "day-rate"
+  ],
+  "plant": "day-rate",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607621,
+      "candidateOrder": [
+        "worked-invoice",
+        "day-rate",
+        "driveway-to-paid",
+        "fair-quote"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "worked-invoice",
+        "candidate-2": "day-rate",
+        "candidate-3": "driveway-to-paid",
+        "candidate-4": "fair-quote"
+      },
+      "transcriptSha256": "2af9e44ea2007a82a781c5fd42380b5504b637c682f9a11d1b49d67ab1dbee9a"
+    },
+    "juror-2": {
+      "jurorSeed": 202607622,
+      "candidateOrder": [
+        "fair-quote",
+        "day-rate",
+        "worked-invoice",
+        "driveway-to-paid"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "day-rate",
+        "candidate-3": "worked-invoice",
+        "candidate-4": "driveway-to-paid"
+      },
+      "transcriptSha256": "8ec7c9c5ec22f50fcbfeb7520655783bc51c4073a17aef352371d03ae44351bb"
+    },
+    "juror-3": {
+      "jurorSeed": 202607623,
+      "candidateOrder": [
+        "fair-quote",
+        "driveway-to-paid",
+        "worked-invoice",
+        "day-rate"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "driveway-to-paid",
+        "candidate-3": "worked-invoice",
+        "candidate-4": "day-rate"
+      },
+      "transcriptSha256": "078b1ec923925746c8d3da2d5466428a6d1cadef1a815532e10c9d3436134cc3"
+    },
+    "juror-4": {
+      "jurorSeed": 202607624,
+      "candidateOrder": [
+        "driveway-to-paid",
+        "fair-quote",
+        "day-rate",
+        "worked-invoice"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "driveway-to-paid",
+        "candidate-2": "fair-quote",
+        "candidate-3": "day-rate",
+        "candidate-4": "worked-invoice"
+      },
+      "transcriptSha256": "acc31c58c2e591ce1d7abf90641c5a3827315a76fe12fcae0ac0bafc1ce01a70"
+    },
+    "juror-5": {
+      "jurorSeed": 202607625,
+      "candidateOrder": [
+        "fair-quote",
+        "driveway-to-paid",
+        "day-rate",
+        "worked-invoice"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "fair-quote",
+        "candidate-2": "driveway-to-paid",
+        "candidate-3": "day-rate",
+        "candidate-4": "worked-invoice"
+      },
+      "transcriptSha256": "ef687d75ba2aa6c2096d86ab555e5c05249919b4867ce210c2f204ea98f2162a"
+    }
+  }
+}

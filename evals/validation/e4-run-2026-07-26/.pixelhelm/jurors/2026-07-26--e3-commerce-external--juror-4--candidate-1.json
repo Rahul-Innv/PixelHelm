@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Seasonal shelf sections, a month filter, and bold price plus color-coded stock in fixed card positions make every packet legible at a glance on both widths.",
+    "2": "Price bottom-left, stock bottom-right, a plain Add to basket with quantity on the product page, and conventional stock wording keep the money path entirely unclever; the only quibble is that just one card shows an explicit view link.",
+    "3": "Out of stock is red and plain, the null-price sweet pea says Price on request with no invented figure, the estimated germination is labeled, and the UK-only banner sits above the fold on both surfaces.",
+    "4": "Large serif headings, roomy cards, generous buttons, and no hover-dependent information hold up at mobile width with full content parity.",
+    "5": "The cream, brick, and green palette, packet-frame illustration motif, and consistent card rhythm read as one system across catalog, product page, and both color modes.",
+    "6": "The sowing table, potting-shed note, difficulty line, and companion cards with price and stock let a first-timer decide on the page.",
+    "7": "The rack by the shop door is a one-sentence idea a two-person shop would truly own, and shelves, packet-shaped cards, and copy all reinforce it.",
+    "8": "Novelty stays in the shelf metaphor and botanical icons while navigation, filtering, and purchase mechanics remain fully conventional.",
+    "9": "Lines like two of us keep it stocked and for the patient gardener are warm and specific, though a shade less individual than the strongest rival.",
+    "10": "A repeat visitor scans shelf headers, green and red stock states, and the only-nine-left flag immediately, and the two surfaces cohere as one shop."
+  },
+  "inputTranscriptSha256": "1326f55a5156fe7637d252908f4c34eeb21515b3b60fcf3501f4d0867d41853c",
+  "shuffleSeed": 202607634
+}

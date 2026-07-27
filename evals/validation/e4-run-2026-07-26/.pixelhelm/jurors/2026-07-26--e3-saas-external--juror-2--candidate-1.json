@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 6,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The first screenful delivers the offer, both prices, the VAT note, and the trial terms, but what the product actually does is carried only by the small eyebrow line and deferred to sections far below the fold.",
+    "2": "The pilot figure is labeled as an internal estimate from eleven users under a section literally titled evidence-not-adjectives, and the copy is free of marketese throughout.",
+    "3": "Prices with the VAT note sit in the very first screenful beside a single honest no-card trial button that never repeats or nags.",
+    "4": "The quotation framing is the sole trader's own mental model, the copy speaks plain trade language, and the mobile layout puts price before everything else a skeptic would ask.",
+    "5": "Serif display over a disciplined rule-and-border system holds together in both modes, though the small-print grid leaves an unbalanced empty third column and the type scale runs slightly past three sizes.",
+    "6": "The beta is labeled three times and the estimate is never rounded into a fact, but the Okafor testimonial appears unlabeled while another candidate's render shows the same quote marked as a fictional persona.",
+    "7": "Here-is-the-quote is a one-sentence signature the whole page enacts: price first, small print set large, then the case, exactly as the trade would quote a customer.",
+    "8": "Mechanics stay fully conventional and the single deliberate break, inverting price to the top, lives in the brand and structure layer.",
+    "9": "Lines like the small print set large and no asterisk because there is not one to hide could not be published unchanged by a competitor.",
+    "10": "A product selling time respect opens with the decision-critical facts and can be fully scanned in under a minute with nothing performative in the way."
+  },
+  "inputTranscriptSha256": "8ec7c9c5ec22f50fcbfeb7520655783bc51c4073a17aef352371d03ae44351bb",
+  "shuffleSeed": 202607622
+}

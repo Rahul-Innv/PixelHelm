@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 8,
+    "4": 8,
+    "5": 6,
+    "6": 8,
+    "7": 9,
+    "8": 9,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede carries the whole finding, the then-and-now panel restates it as plain labeled figures, and the table plus closing notes make the conclusion fully reachable without reading a chart.",
+    "2": "The drift chart is named and described, its lettered legend explains seam, gaps, era rules, and the hollow 2019 dot, and no encoding manufactures drama the record does not support.",
+    "3": "The seam is the page's entire visual system, gaps and the unverified 2019 reading are flagged in chart, table, and prose on desktop, but the mobile table clips the notes column so its row-level no-record and unverified labels vanish into blank space there.",
+    "4": "One entry from each ink is a quietly excellent use of the human fragments, and the register stays patient and concrete throughout.",
+    "5": "Desktop craft in both modes is strong and distinctive, but the mobile table clips mid-word at the viewport edge and leaves large blank gaps, the most visible responsive defect on the panel.",
+    "6": "A static, fully readable document with no observable scroll-driven device meets the discipline bar as far as renders can show.",
+    "7": "Printed in two inks is a one-sentence idea that every layer genuinely reinforces, from the legend to the quote attributions to the ink-colored year numbers, making the then-versus-now shift felt as a constant visual fact.",
+    "8": "Exactly one deliberate break, the pervasive two-ink system, is declared up front and again in the why-two-inks block while reading mechanics stay conventional.",
+    "9": "The record keeps human time as well as rain, and the gauge-year and weir-year vocabulary, give the page a voice no other paper could run unchanged.",
+    "10": "Both inks, the bands, and the hollow dot each trace to a column of the record itself, so nothing on the page is effect detached from the reporting."
+  },
+  "inputTranscriptSha256": "c9e7b7c003e00e8e194a2156844e36070b46ae64cb6a470f9af413800055c5ea",
+  "shuffleSeed": 202607643
+}

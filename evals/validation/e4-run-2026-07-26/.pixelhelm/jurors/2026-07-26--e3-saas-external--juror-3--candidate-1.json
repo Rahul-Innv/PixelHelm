@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 7,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The first screenful names the category, the audience, both prices, and the trial terms, though what the product actually does is deferred to sections below the fold.",
+    "2": "The pilot figure is labeled as an internal estimate with its sample size, the text-link claim is labeled as product behavior, and there is no marketese anywhere.",
+    "3": "The trial CTA sits beside the pricing panel with the no-card line, and the VAT note appears both at the prices and again in the small print.",
+    "4": "Price and small print first is exactly the order a subscription-skeptic tradesperson wants, in plain trade language, and the mobile layout keeps full parity.",
+    "5": "Editorial serif headline, uppercase kickers, rule lines, and accent-bar callouts form a disciplined system, with only minor unevenness in the small-print grid.",
+    "6": "The beta is labeled twice and the estimate is scrupulously labeled, but the customer quote is presented with a bare attribution and no verification label.",
+    "7": "The page as the quote you would give a customer is a clear one-sentence idea that the quotation panel, the small print set large, and the copy all reinforce.",
+    "8": "Mechanics are wholly conventional; the single deliberate break is the price-first quotation structure in the brand layer.",
+    "9": "Lines about the small print having no asterisk to hide and support being people in Manchester rather than a chat widget could not be published by a generic competitor.",
+    "10": "Full price, terms, and small print land before any persuasion, so the page is as fast to decide on as the product promises to be."
+  },
+  "inputTranscriptSha256": "078b1ec923925746c8d3da2d5466428a6d1cadef1a815532e10c9d3436134cc3",
+  "shuffleSeed": 202607623
+}

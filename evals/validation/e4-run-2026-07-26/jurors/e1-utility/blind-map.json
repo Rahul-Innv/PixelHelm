@@ -1,0 +1,91 @@
+{
+  "candidateOrderBase": [
+    "trail-ledger",
+    "status-board",
+    "first-light",
+    "switchback"
+  ],
+  "plant": "switchback",
+  "jurors": {
+    "juror-1": {
+      "jurorSeed": 202607611,
+      "candidateOrder": [
+        "switchback",
+        "first-light",
+        "trail-ledger",
+        "status-board"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "switchback",
+        "candidate-2": "first-light",
+        "candidate-3": "trail-ledger",
+        "candidate-4": "status-board"
+      },
+      "transcriptSha256": "82a61c871272f873fdad70047e0b872e9e242b3ebbfe595091b490776f558c06"
+    },
+    "juror-2": {
+      "jurorSeed": 202607612,
+      "candidateOrder": [
+        "status-board",
+        "trail-ledger",
+        "switchback",
+        "first-light"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "status-board",
+        "candidate-2": "trail-ledger",
+        "candidate-3": "switchback",
+        "candidate-4": "first-light"
+      },
+      "transcriptSha256": "75c1dc0f56f99f2de101576a8d4fa5c51789c1887c23eb9df89490f2ca82f0f2"
+    },
+    "juror-3": {
+      "jurorSeed": 202607613,
+      "candidateOrder": [
+        "switchback",
+        "status-board",
+        "trail-ledger",
+        "first-light"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "switchback",
+        "candidate-2": "status-board",
+        "candidate-3": "trail-ledger",
+        "candidate-4": "first-light"
+      },
+      "transcriptSha256": "9a11ba434b1fc1c871053017b91f6e7d971426097fe38e3ac45e589e18a5ad81"
+    },
+    "juror-4": {
+      "jurorSeed": 202607614,
+      "candidateOrder": [
+        "trail-ledger",
+        "first-light",
+        "switchback",
+        "status-board"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "trail-ledger",
+        "candidate-2": "first-light",
+        "candidate-3": "switchback",
+        "candidate-4": "status-board"
+      },
+      "transcriptSha256": "aae5be5c3c79ec7e16f7a2d0002fa5d446c989866ff78dd6022d6b0c3d130918"
+    },
+    "juror-5": {
+      "jurorSeed": 202607615,
+      "candidateOrder": [
+        "trail-ledger",
+        "switchback",
+        "first-light",
+        "status-board"
+      ],
+      "labelToCandidate": {
+        "candidate-1": "trail-ledger",
+        "candidate-2": "switchback",
+        "candidate-3": "first-light",
+        "candidate-4": "status-board"
+      },
+      "transcriptSha256": "917ce935cc0a9e8fc3898714d7e0550a03e7373e4ba547cfd9de7fef076ba322"
+    }
+  }
+}

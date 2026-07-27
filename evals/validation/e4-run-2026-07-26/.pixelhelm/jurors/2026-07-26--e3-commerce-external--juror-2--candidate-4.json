@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-2",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The four-up packet grid with shelf headers puts price and stock in the same bottom position on every card, making cross-item comparison the fastest in the set on desktop.",
+    "2": "Price placement, stock language, and the product page's boxed quantity plus Add to basket flow are all conventional, with the only oddity being a lone View this packet button on a single card.",
+    "3": "Estimated germination is flagged, the sweet pea card explains the pending price and shows Price on request instead of a number, out of stock is plainly marked, and the UK-only notice sits in a box before any browsing.",
+    "4": "Body text and buttons are comfortably sized, the botanical icons are decorative rather than information-bearing, and nothing requires hover, though the small-caps card metadata runs small.",
+    "5": "The packet cards with dashed perforation rules, matching illustration frames, and a warm consistent palette are carried cleanly into the product page and both color modes.",
+    "6": "The sowing table, difficulty strip, potting-shed note, and companion cards support a confident first purchase, with the packet illustration adding recognition rather than new decision data.",
+    "7": "The seed rack by the shop door, shelf by shelf, is an archetype-true physical signature for a two-person shop, expressed through shelves, packet frames, and hand-drawn botanical marks.",
+    "8": "Illustration and the rack metaphor stay in the brand layer per the botanical art direction allowance, while every commerce mechanic remains conventional.",
+    "9": "The rack framing and shelf labels are warm, but beyond the introduction the copy leans on the shared base text with fewer lines only this shop could have written.",
+    "10": "Shelves ordered by sowing start plus the month filter and the fastest stock scan in the set serve the repeat visitor well, and the packet motif ties the two surfaces into one shop."
+  },
+  "inputTranscriptSha256": "3085bffcb96d3c31373530f7cf10e56a1b8d54d4145cd2cbc95b5700f327e9f2",
+  "shuffleSeed": 202607632
+}

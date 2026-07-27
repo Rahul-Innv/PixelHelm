@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 6,
+    "4": 9,
+    "5": 8,
+    "6": 9,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "Invoicing for trades, priced like a day rate plus the photo-the-job-sheet subhead states what it is, who it is for and how it works before any scrolling. It is the most immediately legible hero of the four.",
+    "2": "The four-hours figure is carefully downgraded to an early signal from a small pilot, and the whole-price-list line reads as confident restraint. The large ninety-eight percent statistic is presented flat with no basis shown, a small wobble next to its labeled neighbor.",
+    "3": "Pricing is transparent with the VAT note and the no-enterprise-tier line, but the only button on the page says See the rate card and no start-trial control exists anywhere. The trial is offered only as bold text, so the conversion path fails the unmistakable-CTA test.",
+    "4": "Built for sole traders, no accounting degree, no subscription games addresses the skeptical buyer in their own terms, and the single column reads cleanly at phone width. The structure answers questions in the order this audience would ask them.",
+    "5": "Spacing, the two-column feature grid and a restrained palette are handled with quiet competence. The rate-card cards are plainer than the rest of the page but nothing is arbitrary.",
+    "6": "The beta is labeled still in testing, the estimate stays an estimate, and this is the only candidate that explicitly labels the testimonial as a fictional persona. The footer even discloses the design-study status, the most complete honesty surface on the panel.",
+    "7": "The signature idea of pricing honesty is stated and partly enacted by putting the full price two paragraphs down as promised. It is asserted more than demonstrated, and visuals and interaction do little extra reinforcing.",
+    "8": "Mechanics are entirely conventional and the brand layer takes at most one quiet liberty with the rate-card framing. The novelty budget is comfortably respected.",
+    "9": "Your evening quote does not wait on a chatbot and no enterprise tier hiding behind a sales call are specific and unhyped. A competitor could imitate the plainness but not these particular sentences.",
+    "10": "The page is short, front-loaded and scannable, and it keeps its own stated promise about where the price sits. Nothing performative slows the decision."
+  },
+  "inputTranscriptSha256": "2af9e44ea2007a82a781c5fd42380b5504b637c682f9a11d1b49d67ab1dbee9a",
+  "shuffleSeed": 202607621
+}

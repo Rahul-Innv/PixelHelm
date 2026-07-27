@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 9,
+    "6": 9,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Grouping the catalog by sowing window with a month filter and a twelve-segment sow band makes season fit instantly legible, and stock reads plainly on every row. Price sits small at the bottom left of each entry, so price scanning is a step slower than a right-aligned column.",
+    "2": "Purchase happens on a fully conventional product page with price, counted stock, quantity field, and a clear add-to-basket button, with shipping terms restated beside it. The catalog itself offers no direct add control, a deliberate but slightly slower path.",
+    "3": "The estimated germination figure is flagged twice, the sweet pea shows an honest price-pending line instead of an invented price, out-of-stock is visible without hiding the item, and UK-only shipping leads both pages.",
+    "4": "Serif body text is generous, nothing depends on hover, and mobile keeps full parity with marginal notes converted to inset boxes. The sow-band squares are small, but the same information is duplicated in plain text beneath them.",
+    "5": "The margin-note column, rules, restrained cream-green-plum palette, and consistent type scale hold as one system across both surfaces and both modes with almost nothing arbitrary.",
+    "6": "Sow indoors, plant out, and flowering rows, difficulty, germination, a grower note from the margin, and companions with price and stock let a first-timer decide entirely on the page.",
+    "7": "A sowing almanac where every packet is shelved under the window it wants is one sentence that content structure, margin annotations, the month filter, and the band visual all genuinely execute, and it is true of a two-person heirloom shop.",
+    "8": "The almanac framing and marginal voice are brand-layer breaks while price, stock language, and basket mechanics stay strictly conventional; the only stretch is keeping purchase off the catalog entirely.",
+    "9": "Lines like find your month first, then your packet, and the band-note on the sweet pea read as a knowledgeable neighbor and could not be republished by a generic seed retailer unchanged.",
+    "10": "A returning shopper checking what can be sown now is served immediately by the window groupings and month filter, and the two surfaces cohere; newly-restocked items get no special surfacing."
+  },
+  "inputTranscriptSha256": "49cbf07abd405334f1987306716c892ec26466139bf44acdcf6f0d79b689388c",
+  "shuffleSeed": 202607631
+}

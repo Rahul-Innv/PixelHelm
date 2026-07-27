@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 8,
+    "2": 8,
+    "3": 9,
+    "4": 9,
+    "5": 8,
+    "6": 6,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The kicker plus the FOR, FROM and TERMS rows answer what it is, who it serves and the trial terms inside the first screenful. The self-referential subhead about typesetting the pitch is slightly inward-looking for a tradesperson skimming fast.",
+    "2": "The evidence section labels the four-hours figure as a small internal pilot estimate and separates it from the plain product-behavior claim, with zero marketese anywhere. The unlabeled testimonial is the one soft spot in an otherwise exemplary surface.",
+    "3": "Two honest Start-the-free-trial buttons bracket the page, the thirty-days stamp restates no card required, and the VAT note sits directly under the only place prices appear. Nothing nags and nothing is hidden.",
+    "4": "The invoice frame is the audience's own document genre, phone-width stacking holds up cleanly, and lines like January stops being a surprise speak plain trade language with no startup idiom.",
+    "5": "The ruled invoice grid, monospace labels and consistent hierarchy are disciplined and nothing feels arbitrary. The blue trial button sits slightly outside the otherwise olive-and-green accent system.",
+    "6": "The beta integration is labeled and explicitly not sold as finished, and the estimate is kept an estimate in so many words. The Okafor testimonial appears with no verification label, which this surface otherwise earns the right to avoid.",
+    "7": "This page is an invoice is a one-sentence signature the entire artifact enacts through line items, a total, terms and a stamp, so the page demonstrates the product rather than asserting it. Content, visuals and copy all reinforce the same idea.",
+    "8": "The page-as-invoice conceit is a single deliberate brand-layer break while buttons, lists and reading order stay fully conventional. The budget is respected rather than strained.",
+    "9": "Walk away owing nothing and we will not sell it to you as finished could not be published unchanged by a competitor. The voice is specific, unhyped and consistently respectful of the reader's judgment.",
+    "10": "An invoice is the fastest-scanning document this audience knows, and the page inherits that speed with dense, decision-ready rows and no performative devices. The total and terms are exactly where a tradesperson would look for them."
+  },
+  "inputTranscriptSha256": "2af9e44ea2007a82a781c5fd42380b5504b637c682f9a11d1b49d67ab1dbee9a",
+  "shuffleSeed": 202607621
+}

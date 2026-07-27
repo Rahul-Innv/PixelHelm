@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-1",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 8,
+    "2": 7,
+    "3": 9,
+    "4": 7,
+    "5": 8,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Season grouping, a month filter, and the twelve-segment sowing band make season fit and stock readable per entry at a glance. Prices sit at the bottom left of each block, which costs a little scan speed compared with a right-aligned price column.",
+    "2": "Prices, stock wording, and the product-page quantity plus basket flow are fully conventional with no cleverness in the money path. Only one catalog entry shows a visible link into its packet page, leaving the other entries without an evident affordance.",
+    "3": "Out of stock is stated in plain red beside the price, the sweet pea shows a price-pending note instead of an invented figure, the estimated germination is flagged twice, and UK-only shipping sits in the header before any intent forms.",
+    "4": "Body text is legible and the mobile reflow is clean with no hover-dependent information. The sowing-band segments and the small italic margin notes run small for older readers, though the text always repeats the information.",
+    "5": "One serif system, a restrained cream, green, and plum palette, and hairline rules hold across catalog, product page, and both modes. The marginalia column is aligned and rhythmic rather than decorative clutter.",
+    "6": "The year band, sow and plant-out table, difficulty, the grower note from the margin, and companions with price and stock let a first-timer decide on the page. Companion entries even carry their own stock states.",
+    "7": "The sowing almanac is a genuine one-sentence idea, shelving every packet under the window it wants, and it is carried through structure, the year band, and the margin notes on both surfaces.",
+    "8": "The almanac framing and marginalia stay in the brand layer while price, stock, and basket mechanics remain strictly conventional.",
+    "9": "Lines like every variety we keep, shelved under the window it wants, and takes an autumn sowing too, as the band shows, are warm and specific in a way a competitor could not lift unchanged.",
+    "10": "A returning shopper can filter by month or scan the season sections and stock labels immediately, and the two surfaces cohere as one almanac. Newly-in-stock is not called out explicitly."
+  },
+  "inputTranscriptSha256": "b1456c6f177733d9871acff5b040fa391a5e24876b96fd4db6f57a2702d2d29c",
+  "shuffleSeed": 202607633
+}

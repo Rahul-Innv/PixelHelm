@@ -1,0 +1,116 @@
+{
+  "juror": "juror-1",
+  "set": "e3-commerce",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Grouping the catalog by sowing window with a month filter and a twelve-segment sow band makes season fit instantly legible, and stock reads plainly on every row. Price sits small at the bottom left of each entry, so price scanning is a step slower than a right-aligned column.",
+        "2": "Purchase happens on a fully conventional product page with price, counted stock, quantity field, and a clear add-to-basket button, with shipping terms restated beside it. The catalog itself offers no direct add control, a deliberate but slightly slower path.",
+        "3": "The estimated germination figure is flagged twice, the sweet pea shows an honest price-pending line instead of an invented price, out-of-stock is visible without hiding the item, and UK-only shipping leads both pages.",
+        "4": "Serif body text is generous, nothing depends on hover, and mobile keeps full parity with marginal notes converted to inset boxes. The sow-band squares are small, but the same information is duplicated in plain text beneath them.",
+        "5": "The margin-note column, rules, restrained cream-green-plum palette, and consistent type scale hold as one system across both surfaces and both modes with almost nothing arbitrary.",
+        "6": "Sow indoors, plant out, and flowering rows, difficulty, germination, a grower note from the margin, and companions with price and stock let a first-timer decide entirely on the page.",
+        "7": "A sowing almanac where every packet is shelved under the window it wants is one sentence that content structure, margin annotations, the month filter, and the band visual all genuinely execute, and it is true of a two-person heirloom shop.",
+        "8": "The almanac framing and marginal voice are brand-layer breaks while price, stock language, and basket mechanics stay strictly conventional; the only stretch is keeping purchase off the catalog entirely.",
+        "9": "Lines like find your month first, then your packet, and the band-note on the sweet pea read as a knowledgeable neighbor and could not be republished by a generic seed retailer unchanged.",
+        "10": "A returning shopper checking what can be sown now is served immediately by the window groupings and month filter, and the two surfaces cohere; newly-restocked items get no special surfacing."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 7,
+        "2": 8,
+        "3": 9,
+        "4": 5,
+        "5": 6,
+        "6": 9,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "On desktop this is the fastest catalog of the four, with right-aligned prices, inline stock, season sections, and filter chips. On mobile two rows collapse into one-word-per-line columns, which destroys at-a-glance reading for those products.",
+        "2": "Quantity steppers with an add button on every row plus a conventional product page keep the money path exactly as convention dictates, with prices where shoppers look for them.",
+        "3": "This arm is the most honest of the set: the estimated rate is flagged, out-of-stock carries a restock promise, the price-pending line invites a note instead of showing a number, and the footer explains the test-tray provenance of every figure.",
+        "4": "The one-word-per-line wrapping of the carrot and sweet pea entries at phone width is a real failure for older readers, and the minus and plus stepper targets are small; elsewhere type is legible and hover-free.",
+        "5": "Type hierarchy and section rhythm are handsome, but the narrow-column wraps visible even on desktop for two rows, and the broken mobile columns, are exactly the arbitrary misalignments craft discipline forbids.",
+        "6": "The product page is the strongest for deciding: year table, an at-a-glance strip for difficulty, germination, and height, unhurried growing notes, and companions with reasons and links.",
+        "7": "The potting bench with seasonal drawers and a vouch-for-everything promise is a coherent signature true of a two-person shop, though it shapes the page less totally than the almanac arm.",
+        "8": "Novelty lives in the bench metaphor and the voice while every commerce mechanic stays textbook-conventional, matching a brand-layer-only break budget.",
+        "9": "If it is listed, we can vouch for it, and the easiest drawer on the bench are the best sentences on any arm; the visible design-study disclaimer in the footer is the one line a real shop would never print.",
+        "10": "Filter chips, inline stock, and add controls on the list make a repeat purchase the fastest here, and the restock promise serves the shopper who came back for the carrot."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 6,
+        "2": 7,
+        "3": 8,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 7,
+        "8": 8,
+        "9": 8,
+        "10": 6
+      },
+      "rationales": {
+        "1": "Each entry is legible on its own, but the numbered order ignores season, prices sit small at the bottom of each entry, and only the dropdown filter connects the list to the sowing year, so glance-level scanning is the slowest of the four.",
+        "2": "The product page is conventional with counted stock, quantity field, and add button, but the catalog offers no purchase affordance and price placement inside entries is quieter than convention.",
+        "3": "Estimated germination is flagged, the sweet pea shows price pending with an invitation to ask, out-of-stock stays visible, and UK-only shipping is stated in the header before any intent forms.",
+        "4": "Generous serif sizes, wide spacing, no hover-dependent information, and clean stacking at phone width suit older readers well.",
+        "5": "The letterspaced small-caps, hairline rules, and centered masthead are executed with quiet consistency across both surfaces and modes.",
+        "6": "Year table, difficulty strip, potting-shed note, and companion listings give enough to decide, though companions are not visibly linked onward.",
+        "7": "A numbered annual list read slowly is genuinely provenance-flavored and could belong to this shop, but the numbering serves the shop's self-image more than the shopper's task, so the signature is felt less than earned.",
+        "8": "All novelty is typographic and editorial; every mechanic underneath is conventional, comfortably inside a brand-layer break budget.",
+        "9": "Two of us keep this list, read slowly, choose well is a voice no volume retailer would print, though the register thins out beyond the masthead.",
+        "10": "A repeat visitor checking season or stock must scan the whole numbered list since nothing groups by window or surfaces change, leaving only the month filter to help."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "rationales": {
+        "1": "Seasonal shelves, a month filter, and cards that keep sow window, difficulty, price, and stock in fixed corners make per-product reading quick and predictable.",
+        "2": "Price and stock occupy consistent card positions, stock language is plain, and the product page runs a fully conventional quantity-plus-basket path; the catalog itself stops at view-this-packet.",
+        "3": "The estimated rate is flagged, out-of-stock is shown without hiding the card, the sweet pea says price on request rather than inventing a number, and the UK-only rule sits in a bordered notice at the top of both surfaces.",
+        "4": "Single-column cards at phone width, large buttons, and no hover-dependent content serve tablet readers well, though card metadata runs a size smaller than the almanac arm's body text.",
+        "5": "The packet-card system with its botanical icons, dashed inner rules, and shelf headers is consistent across surfaces and modes, with only minor internal card-height variance.",
+        "6": "The year table, difficulty line, potting-shed note, and companion cards support a confident decision, and the packet illustration adds identity without displacing information.",
+        "7": "The rack by the shop door, restocked shelf by shelf by the two owners, is a physical, archetype-true signature that the shelf sections, packet cards, and icon art direction all reinforce.",
+        "8": "The rack metaphor and icon illustrations are brand-layer novelty while every checkout-adjacent mechanic stays conventional, exactly inside budget.",
+        "9": "Shelf by shelf, two of us keep it stocked carries the neighborly register, though the voice is concentrated in the masthead rather than pervading the entries.",
+        "10": "A returning shopper reads season shelves and card-corner stock states at a glance and both surfaces feel like one shop, with no dedicated newly-in surface."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-1",
+    "candidate-4",
+    "candidate-2",
+    "candidate-3"
+  ]
+}

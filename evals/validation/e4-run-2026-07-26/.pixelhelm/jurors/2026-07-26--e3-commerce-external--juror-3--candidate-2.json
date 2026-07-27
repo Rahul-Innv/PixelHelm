@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 7,
+    "2": 8,
+    "3": 9,
+    "4": 5,
+    "5": 6,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "Right-aligned bold prices, season sections, and filter chips make the desktop list very fast to scan. On mobile the carrot and sweet pea entries collapse into a one-word-per-line column that destroys glanceability for those items.",
+    "2": "This is the only catalog with a full in-list stepper and add control, and every mechanic including price placement and stock wording follows convention exactly.",
+    "3": "The out-of-stock line explains the harvest will be listed again once cleaned and tested, the pending price invites the shopper to write, the estimated rate is flagged, and a footer states the germination methodology honestly.",
+    "4": "The minus, plus, and add controls are small targets, and the squeezed mobile columns force awkward single-word reading for exactly the older tablet audience this shop serves. Base type size is otherwise comfortable.",
+    "5": "The system is coherent in type and palette, but the narrow-column text wrap on the carrot and sweet pea rows appears on both widths, which is a visible breakdown of spacing discipline on the primary surface.",
+    "6": "The at-a-glance stat row, year table, two-paragraph growing note, and companion links with planting reasons support a confident first purchase. Companions omit their prices on the product page.",
+    "7": "The potting bench is the strongest signature here, with drawers named in the section headers and the product page saying the packet sits in the winter drawer of the bench, all earned by the two-person vouching framing.",
+    "8": "The bench conceit lives entirely in voice and structure while the stepper, price, and stock mechanics stay conventional, matching a brand-layer-only break budget.",
+    "9": "Sown as the soil wakes up, the easiest drawer on the bench, and do not be discouraged by the quiet first month are unmistakably one shop speaking; no competitor could publish them unchanged.",
+    "10": "Chips, season sections, and visible out-of-stock promises serve the repeat seasonal check well, and both surfaces speak the same bench language."
+  },
+  "inputTranscriptSha256": "b1456c6f177733d9871acff5b040fa391a5e24876b96fd4db6f57a2702d2d29c",
+  "shuffleSeed": 202607633
+}

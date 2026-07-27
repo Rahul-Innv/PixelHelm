@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 8,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The then-and-now panel delivers the whole finding as labeled plain figures, and the one-line ink-to-ink difference summary makes the story scannable without any chart.",
+    "2": "The drift chart is named by its finding, with gaps as shaded bands and the 2019 dot hollow; season totals and worst days are left to figures and the table, which is honest but visually thin.",
+    "3": "The two-ink system carries the instrument seam through every element, the gaps and the unverified 2019 reading are labeled in chart, notes, and table, and the scope note is present.",
+    "4": "The line that the record keeps human time as well as rain strikes the right register, and pairing one quote from each ink serves the idea, though the connective prose runs thinner than the strongest pages.",
+    "5": "Desktop typography is disciplined in both inks and both modes, but the mobile chart shrinks until its annotation markers are close to illegible.",
+    "6": "A static page throughout, with no scrolljacking or motion devices visible in any render.",
+    "7": "Printing the ledger in two inks makes the record's central caveat the design system itself, a one-sentence idea every layer repeats; it expresses the seam more vividly than the season's movement.",
+    "8": "The single ink break is disciplined, declared in the legend, and the reading mechanics stay conventional.",
+    "9": "The voice is local and restrained, though it leans on fewer distinctive sentences than the two strongest candidates.",
+    "10": "The ink assignment is the dataset's own instrument boundary, so the signature device is the record rather than an effect laid over it."
+  },
+  "inputTranscriptSha256": "c3c28808871784675bf031bd46c0b306c86c205bc8539bf84288f3ea64a265f6",
+  "shuffleSeed": 202607641
+}

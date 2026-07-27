@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e1-utility-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e1/PREREG-RUBRIC-utility.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 9,
+    "4": 9,
+    "5": 9,
+    "6": 9,
+    "7": 9,
+    "8": 9,
+    "9": 9,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The bolded summary sentence, 3 of 9 trails open this morning with the breakdown, plus the ranger closure notice both land inside the mobile first viewport, answering the go or no-go question before any interaction.",
+    "2": "The stamp device gives every status a worded, outlined mark in a stable color and identical rendering in the log and the weather table, fully independent of color perception.",
+    "3": "Unknown entries state no report received, condition unknown, July 22 is an explicit not-recorded line, snowpack carries an ESTIMATED stamp with the offline-sensor note, and every entry logs its report time; the only wrinkle is the morning-log framing over a 6:00 PM posting stamp.",
+    "4": "The log runs open, then caution, then closed, then unreported, states that ordering out loud, and keeps ranger-plain language throughout with no promotional residue.",
+    "5": "Stamps, dotted leaders, rules, and the single serif system are executed with nothing arbitrary; hierarchy and rhythm hold at both widths and the piece feels finished.",
+    "6": "Long names ride the dotted leaders cleanly, the burn pair reads as a coherent cluster tied to the notice, unreported rows sit naturally as final entries, and the cream and dark-brown modes are both fully resolved.",
+    "7": "The one-sentence signature, the daily ranger log you check like a trailhead board, is reinforced by content, stamp visuals, and entry structure, and it is earned by a conditions service rather than transplanted.",
+    "8": "Mechanics stay a conventional scrolling document while the stamps and leader lines form the one or two deliberate brand-layer breaks, exactly on budget.",
+    "9": "Phrases like entered open first, then caution, then closed, then trails without a report, and end of log, are a voice no competitor page could publish unchanged while staying calm and factual.",
+    "10": "A dated log naturally rewards the habitual daily glance and nothing mandatory or playful intrudes, though the summary sentence is slightly slower to parse at a glance than a count strip."
+  },
+  "inputTranscriptSha256": "9a11ba434b1fc1c871053017b91f6e7d971426097fe38e3ac45e589e18a5ad81",
+  "shuffleSeed": 202607613
+}

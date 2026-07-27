@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 9,
+    "2": 7,
+    "3": 8,
+    "4": 8,
+    "5": 7,
+    "6": 8,
+    "7": 6,
+    "8": 7,
+    "9": 7,
+    "10": 8
+  },
+  "rationales": {
+    "1": "The headline names the category and pricing stance and the subhead explains the mechanism, so comprehension lands within seconds on every viewport.",
+    "2": "The four-hour figure is carefully labeled as an early signal, but the ninety-eight percent statistic is presented flat with no stated basis beside it.",
+    "3": "The rate card is transparent with the VAT note and a no-enterprise-tier line, though the only button is the top call to action and the closing trial offer is plain text.",
+    "4": "Priced like a day rate is the audience's own idiom, and the plain sections match how a skeptical sole trader would interrogate the product.",
+    "5": "Execution is clean and consistently professional, but the layout is a stock pattern and nothing in the craft rises above baseline.",
+    "6": "The testimonial is explicitly labeled a fictional persona and the beta is marked still in testing, leaving only the unlabeled ninety-eight percent as a wobble.",
+    "7": "The day-rate line is a positioning sentence the page asserts rather than a signature the layout and interaction demonstrably enact.",
+    "8": "There are effectively zero convention breaks, which respects the budget but spends none of it on distinction.",
+    "9": "A few lines, like the evening quote not waiting on a chatbot, are distinctive, but much of the copy could survive unchanged on a competitor's site.",
+    "10": "The conventional structure scans and decides quickly, though the page proves its speed claim by assertion more than by form."
+  },
+  "inputTranscriptSha256": "acc31c58c2e591ce1d7abf90641c5a3827315a76fe12fcae0ac0bafc1ce01a70",
+  "shuffleSeed": 202607624
+}

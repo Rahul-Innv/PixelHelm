@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-4",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 9,
+    "2": 8,
+    "3": 9,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 8,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The twelve-segment month bar under every packet shows season fit instantly, with aligned price and stock lines and a sidebar month filter backed by section links.",
+    "2": "Purchase mechanics are entirely conventional on the product page, and the bars stay informational rather than touching the money path.",
+    "3": "The estimated germination gets both a label and a margin note explaining it, the null price stays honest as price pending, scarcity is stated plainly, and UK-only shipping leads both pages.",
+    "4": "Type is generous, margin notes are always visible rather than hover-revealed, and the bars are redundantly backed by bold sow-month text, though the unlabeled segments ask a little inference.",
+    "5": "The almanac structure, marginalia column, and disciplined green-and-plum palette carry consistently across surfaces, widths, and modes.",
+    "6": "The year bar plus table, difficulty line, margin quote, and companion entries give a first-timer everything needed to commit on the page.",
+    "7": "Find your month first, then your packet is a one-sentence idea expressed in structure, visualization, copy, and filtering alike, and it is true of a shop organized around sowing windows.",
+    "8": "The month-bar and marginalia novelty lives entirely in the brand and information layer while navigation and purchase stay conventional.",
+    "9": "Shelved under the window it wants and the margin asides are specific and unhurried, just short of the strongest voice on the panel.",
+    "10": "A repeat visitor asking what can I sow now is served faster here than anywhere else, and the bar motif ties catalog and product page into one shop."
+  },
+  "inputTranscriptSha256": "1326f55a5156fe7637d252908f4c34eeb21515b3b60fcf3501f4d0867d41853c",
+  "shuffleSeed": 202607634
+}

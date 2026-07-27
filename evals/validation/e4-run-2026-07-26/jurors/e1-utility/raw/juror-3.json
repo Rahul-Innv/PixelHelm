@@ -1,0 +1,116 @@
+{
+  "juror": "juror-3",
+  "set": "e1-utility",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 10,
+        "4": 9,
+        "5": 8,
+        "6": 9,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The mobile first viewport carries the title, the 3-2-2-2 count strip, and the closure alert, so overall state and the active alert are readable before any interaction. Finding which trails are open takes only one short scroll into the GO section.",
+        "2": "Every status pairs a text label with a colored edge rail and keeps one rendering everywhere, so nothing depends on color alone. The doubled vocabulary of section names (GO, DO NOT GO) over chip labels (OPEN, CLOSED) is consistent but adds one extra mapping to learn.",
+        "3": "This is the strongest honesty surface in the set: unreported trails get their own UNKNOWN section with the explicit warning that unknown is not the same as fine, the July 22 row states no data recorded, snowpack wears an ESTIMATED badge with the sensor story, every report carries its own timestamp, and the footer states the never-assumed-open policy outright.",
+        "4": "Sections run in exact hiker decision order, from go to go-with-care to do-not-go to unknown, then history and snowpack, in plain instructional language with zero marketese.",
+        "5": "Spacing rhythm, rail alignment, and the three-level type hierarchy are disciplined; small blemishes remain, such as the slightly muddled rule treatment above the footer and the verbatim repetition of the unknown-trail paragraph on both rows.",
+        "6": "Long names, the burn cluster with its alert cross-reference, and both unreported rows all sit cleanly in the single-column list, and light and dark modes are both fully resolved.",
+        "7": "The signature reads as report only what rangers actually said, and the count strip, the unknown section, the gap row, and the footer policy all restate it; it is native to a conditions service rather than a borrowed trend.",
+        "8": "Mechanics are a conventional scrolling list and table; the directive section naming is the single deliberate brand-layer break, comfortably inside budget.",
+        "9": "Lines like unknown is not the same as fine, and the gap is shown as the gap it is, are calm, factual, and not publishable unchanged by a competitor.",
+        "10": "The top count strip and stable ordering serve the habitual daily glance with nothing mandatory or playful, though the long educational paragraphs add some scroll weight on repeat visits."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 7,
+        "2": 9,
+        "3": 8,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 5,
+        "8": 6,
+        "9": 5,
+        "10": 6
+      },
+      "rationales": {
+        "1": "The count line and closure notice sit in the mobile first viewport, but the oversized status banners bloat each card so learning which trails are open takes far more scrolling than the content requires.",
+        "2": "Each status gets a distinct icon shape, a word, a stable color, and a persistent legend, so meaning survives without color alone and never drifts.",
+        "3": "No-report cards read as unknown, the chart marks July 22 with a dashed marker plus a not-recorded footnote, snowpack is badged estimated with the sensor explanation, and cards carry timestamps; what is missing is any stated policy that unknown is never assumed open.",
+        "4": "Grouping follows the open, caution, closed, no-report decision order in plain language, though the T-01 style entry codes are operations jargon a hiker does not need.",
+        "5": "Execution is tidy and consistent, but the status word is printed twice per trail in header and banner, and the component styling is stock dashboard rather than considered craft.",
+        "6": "The data fits without breakage and both modes resolve, but two-card rows leave a conspicuous empty third column on desktop and the banner-first cards give every trail equal drama regardless of importance.",
+        "7": "There is no articulable signature idea; this is a generic admin-dashboard pattern transplanted onto trail data, exactly the polished genericness the tier definitions warn about.",
+        "8": "Mechanics are entirely conventional, which respects the budget, but no deliberate brand-layer move is attempted at all, so the criterion is met only by abstention.",
+        "9": "Microcopy such as no report received from this trail is interchangeable boilerplate any competitor could publish unchanged.",
+        "10": "Counts at the top help a returning glance and nothing playful blocks the visit, but the banner-heavy scroll length taxes the daily check."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 9,
+        "6": 9,
+        "7": 9,
+        "8": 9,
+        "9": 9,
+        "10": 8
+      },
+      "rationales": {
+        "1": "The bolded summary sentence, 3 of 9 trails open this morning with the breakdown, plus the ranger closure notice both land inside the mobile first viewport, answering the go or no-go question before any interaction.",
+        "2": "The stamp device gives every status a worded, outlined mark in a stable color and identical rendering in the log and the weather table, fully independent of color perception.",
+        "3": "Unknown entries state no report received, condition unknown, July 22 is an explicit not-recorded line, snowpack carries an ESTIMATED stamp with the offline-sensor note, and every entry logs its report time; the only wrinkle is the morning-log framing over a 6:00 PM posting stamp.",
+        "4": "The log runs open, then caution, then closed, then unreported, states that ordering out loud, and keeps ranger-plain language throughout with no promotional residue.",
+        "5": "Stamps, dotted leaders, rules, and the single serif system are executed with nothing arbitrary; hierarchy and rhythm hold at both widths and the piece feels finished.",
+        "6": "Long names ride the dotted leaders cleanly, the burn pair reads as a coherent cluster tied to the notice, unreported rows sit naturally as final entries, and the cream and dark-brown modes are both fully resolved.",
+        "7": "The one-sentence signature, the daily ranger log you check like a trailhead board, is reinforced by content, stamp visuals, and entry structure, and it is earned by a conditions service rather than transplanted.",
+        "8": "Mechanics stay a conventional scrolling document while the stamps and leader lines form the one or two deliberate brand-layer breaks, exactly on budget.",
+        "9": "Phrases like entered open first, then caution, then closed, then trails without a report, and end of log, are a voice no competitor page could publish unchanged while staying calm and factual.",
+        "10": "A dated log naturally rewards the habitual daily glance and nothing mandatory or playful intrudes, though the summary sentence is slightly slower to parse at a glance than a count strip."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The headline literally is the answer, 3 of 9 trails open this morning, with the closure alert beside it on desktop and directly beneath it on mobile, all inside the first viewport.",
+        "2": "Statuses are worded and each keeps a stable rendering, but caution and closed share the same orange hue distinguished only by outline versus fill, and open is bare text with no mark, which thins the system under quick or impaired viewing.",
+        "3": "Estimated snowpack is flagged inline with its sensor story, July 22 reads no data, every trail shows its last report time, and the footer states trails without a report are never assumed open or closed; the morning framing over a 6:00 PM stamp is the one small tension.",
+        "4": "Answer first, alert, worth-knowing context, then all nine trails in decision order is a sound hiker-shaped architecture in plain calm language, with the history table placed last where it belongs.",
+        "5": "The editorial typography, restrained two-hue palette, and consistent chip and meta styling show real discipline, though the single accent doing both warning and closure duty reads as economy over clarity.",
+        "6": "The trail list absorbs the data cleanly in both modes, but desktop leaves a large dead band of empty space between the hero and the list, and the mobile two-column history grid orders the days awkwardly.",
+        "7": "The signature, a daily bulletin whose headline is the condition, is true of a utility service and reinforced by copy and typography, though it rests almost entirely on the hero rather than on every layer.",
+        "8": "Mechanics remain a conventional list and table while the oversized editorial headline is the single deliberate brand-layer break, within budget.",
+        "9": "The headline sentence and the worth-knowing section carry a distinct calm editorial voice a competitor would not publish unchanged, though below the fold the microcopy goes generic.",
+        "10": "For a returning daily visitor the instant headline answer is the best second-visit payoff in the set, with nothing mandatory to bypass."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-1",
+    "candidate-4",
+    "candidate-2"
+  ]
+}

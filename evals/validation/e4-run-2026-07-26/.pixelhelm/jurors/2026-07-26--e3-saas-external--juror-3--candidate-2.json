@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-saas-external",
+  "jurorId": "juror-3",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-saas-marketing.md",
+  "scores": {
+    "1": 6,
+    "2": 9,
+    "3": 8,
+    "4": 7,
+    "5": 8,
+    "6": 7,
+    "7": 8,
+    "8": 8,
+    "9": 9,
+    "10": 7
+  },
+  "rationales": {
+    "1": "The first screenful opens a numbered story with only a small kicker naming the category, so the value proposition depends on scrolling through the sequence.",
+    "2": "The pilot estimate is labeled with its sample size and called a signal rather than a certified fact, and the payment claim is labeled as product behavior.",
+    "3": "Trial CTAs bracket the page with the no-card line and the VAT note sits at the prices, though the pricing itself is held until the very end.",
+    "4": "The language is plain and genuinely of the trade, but making a subscription-skeptic scroll past six narrative steps to reach the price fits the audience imperfectly.",
+    "5": "The oversized numerals, consistent rules, and the semantic green reserved for the money steps show a coherent system on a restrained palette.",
+    "6": "The beta is honestly labeled as unfinished and the estimate is labeled, but the customer quote carries no verification label.",
+    "7": "The afternoon told as six numbered steps is a real signature that content and layout reinforce, though it narrates the promise rather than demonstrating it.",
+    "8": "One deliberate break, the story-sequence structure, sits in the brand layer while every mechanic stays conventional.",
+    "9": "Phrases about the ladder still being warm and staying the reasonable one without writing a word are specific, unhyped, and unpublishable by a competitor.",
+    "10": "The big-type steps scan quickly, but a product selling speed makes the reader walk the whole story before the price, which is mildly performative pacing."
+  },
+  "inputTranscriptSha256": "078b1ec923925746c8d3da2d5466428a6d1cadef1a815532e10c9d3436134cc3",
+  "shuffleSeed": 202607623
+}

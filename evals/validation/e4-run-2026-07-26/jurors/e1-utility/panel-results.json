@@ -1,0 +1,412 @@
+{
+  "_note": "External panel aggregation, registered rule (per-criterion median of 5 jurors; overall = median of the 10 criterion medians). Candidates include the E4 plant; the plant is excluded from tau/inflation by the sealed E4 sheet.",
+  "plant": "switchback",
+  "candidates": {
+    "trail-ledger": {
+      "criterionScores": {
+        "1": [
+          9,
+          8,
+          9,
+          8,
+          8
+        ],
+        "2": [
+          9,
+          8,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          8,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          9,
+          9,
+          8
+        ],
+        "5": [
+          9,
+          8,
+          9,
+          9,
+          9
+        ],
+        "6": [
+          9,
+          8,
+          9,
+          8,
+          8
+        ],
+        "7": [
+          9,
+          9,
+          9,
+          9,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          9,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          8,
+          9,
+          9,
+          8
+        ],
+        "10": [
+          8,
+          8,
+          8,
+          8,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 9,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 8.5,
+      "minCriterionMedian": 8
+    },
+    "status-board": {
+      "criterionScores": {
+        "1": [
+          8,
+          8,
+          7,
+          8,
+          8
+        ],
+        "2": [
+          9,
+          8,
+          9,
+          9,
+          9
+        ],
+        "3": [
+          9,
+          9,
+          8,
+          9,
+          8
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "5": [
+          7,
+          7,
+          7,
+          7,
+          7
+        ],
+        "6": [
+          7,
+          7,
+          7,
+          7,
+          8
+        ],
+        "7": [
+          5,
+          6,
+          5,
+          5,
+          5
+        ],
+        "8": [
+          7,
+          7,
+          6,
+          7,
+          7
+        ],
+        "9": [
+          5,
+          5,
+          5,
+          5,
+          5
+        ],
+        "10": [
+          7,
+          7,
+          6,
+          7,
+          7
+        ]
+      },
+      "criterionMedians": {
+        "1": 8,
+        "2": 9,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 7,
+        "7": 5,
+        "8": 7,
+        "9": 5,
+        "10": 7
+      },
+      "overallMedian": 7,
+      "minCriterionMedian": 5
+    },
+    "first-light": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          8,
+          9
+        ],
+        "2": [
+          7,
+          6,
+          7,
+          7,
+          7
+        ],
+        "3": [
+          8,
+          8,
+          9,
+          9,
+          9
+        ],
+        "4": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "5": [
+          7,
+          8,
+          8,
+          7,
+          8
+        ],
+        "6": [
+          7,
+          7,
+          7,
+          7,
+          8
+        ],
+        "7": [
+          8,
+          8,
+          8,
+          7,
+          9
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          8,
+          8,
+          8,
+          7,
+          8
+        ],
+        "10": [
+          8,
+          8,
+          9,
+          8,
+          9
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 7,
+        "3": 9,
+        "4": 8,
+        "5": 8,
+        "6": 7,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 8
+      },
+      "overallMedian": 8,
+      "minCriterionMedian": 7
+    },
+    "switchback": {
+      "criterionScores": {
+        "1": [
+          9,
+          9,
+          9,
+          9,
+          8
+        ],
+        "2": [
+          9,
+          8,
+          9,
+          9,
+          8
+        ],
+        "3": [
+          9,
+          10,
+          10,
+          9,
+          9
+        ],
+        "4": [
+          9,
+          9,
+          9,
+          9,
+          8
+        ],
+        "5": [
+          8,
+          8,
+          8,
+          8,
+          7
+        ],
+        "6": [
+          9,
+          8,
+          9,
+          8,
+          8
+        ],
+        "7": [
+          8,
+          9,
+          9,
+          9,
+          7
+        ],
+        "8": [
+          8,
+          8,
+          8,
+          8,
+          8
+        ],
+        "9": [
+          9,
+          9,
+          9,
+          9,
+          8
+        ],
+        "10": [
+          9,
+          8,
+          8,
+          9,
+          8
+        ]
+      },
+      "criterionMedians": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 8
+      },
+      "overallMedian": 9,
+      "minCriterionMedian": 8
+    }
+  },
+  "jurorRankings": {
+    "juror-1": [
+      "switchback",
+      "trail-ledger",
+      "first-light",
+      "status-board"
+    ],
+    "juror-2": [
+      "switchback",
+      "trail-ledger",
+      "first-light",
+      "status-board"
+    ],
+    "juror-3": [
+      "trail-ledger",
+      "switchback",
+      "first-light",
+      "status-board"
+    ],
+    "juror-4": [
+      "switchback",
+      "trail-ledger",
+      "first-light",
+      "status-board"
+    ],
+    "juror-5": [
+      "trail-ledger",
+      "first-light",
+      "switchback",
+      "status-board"
+    ]
+  },
+  "aggregateRanking": [
+    {
+      "candidate": "switchback",
+      "overallMedian": 9,
+      "plant": true
+    },
+    {
+      "candidate": "trail-ledger",
+      "overallMedian": 8.5,
+      "plant": false
+    },
+    {
+      "candidate": "first-light",
+      "overallMedian": 8,
+      "plant": false
+    },
+    {
+      "candidate": "status-board",
+      "overallMedian": 7,
+      "plant": false
+    }
+  ]
+}

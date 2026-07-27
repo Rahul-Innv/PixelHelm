@@ -1,0 +1,116 @@
+{
+  "juror": "juror-1",
+  "set": "e3-editorial",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lede states the full finding in numbers, each plate opens with a bold prose sentence carrying its conclusion, and the complete year-by-year table gives a scannable alternative.",
+        "2": "All three plates are named by what they show, the truncated 550 mm scale in Plate II is explicitly disclosed with true tick values, and missing years are left as open breaks.",
+        "3": "The three null years, the 1996 to 1997 seam, and the hollow dashed unverified 2019 mark are annotated on every plate, and the closing scope note refuses attribution.",
+        "4": "The register is patient and place-loving, and the two archival quotes sit beside the plates whose data they illuminate rather than decorating.",
+        "5": "Editorial typography holds a comfortable measure and steady rhythm in both modes; mobile keeps full parity though the plates compress noticeably.",
+        "6": "The page is a fully readable static document with no scroll-driven pacing or motion devices visible in any render.",
+        "7": "The signature, the reporter's notes written on the record itself, is carried by the circled annotations on every plate, though it dramatizes the record's honesty slightly more than it makes the drift felt.",
+        "8": "One deliberate device, marginalia-style plate annotation, sits on top of entirely conventional reading mechanics.",
+        "9": "Phrases like the parish answering in its own practical way are local and unsensational, and no competitor could run the plate notes unchanged.",
+        "10": "Every visual device, the hollow dots, the seam rules, and the open gaps, traces to a disclosed fact of this record."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lede carries every number, a prose paragraph states what the rail shows before it begins, and each year row prints its figures in plain text.",
+        "2": "The rail is named by its actual finding, both fixed scales including the 550 mm bar start are disclosed in the how-to-read box, and missing years appear as hatched no-record rows.",
+        "3": "The instrument change is headlined as its own era divider, the three null years are hatched in place with their reasons, and 2019 sits hollow with its unverified note directly beneath the row.",
+        "4": "Interstitial commentary and the two quotes are placed chronologically inside the rail at the moments they belong to, in a patient local register.",
+        "5": "The typographic system is coherent across both modes and the rail survives the mobile width row by row; the red figures on the dark ground are the only slight legibility worry.",
+        "6": "A static rail read by ordinary scrolling, with no pacing imposed on the reader in any render.",
+        "7": "Reading line by line like the almanac the valley kept is a one-sentence idea the form itself enacts, and the drift is felt as the dots creep rightward down the page.",
+        "8": "One break, the chart-as-almanac rail, replaces conventional plates while every reading mechanic stays ordinary.",
+        "9": "Lines such as the bars a shade longer each wet year than the valley had been used to could run in no other paper.",
+        "10": "Every device, the fixed shelf, the hatched rows, and the hollow 2019 dot, exists because the record contains exactly that fact."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 8,
+        "3": 9,
+        "4": 8,
+        "5": 7,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The then-and-now panel delivers the whole finding as labeled plain figures, and the one-line ink-to-ink difference summary makes the story scannable without any chart.",
+        "2": "The drift chart is named by its finding, with gaps as shaded bands and the 2019 dot hollow; season totals and worst days are left to figures and the table, which is honest but visually thin.",
+        "3": "The two-ink system carries the instrument seam through every element, the gaps and the unverified 2019 reading are labeled in chart, notes, and table, and the scope note is present.",
+        "4": "The line that the record keeps human time as well as rain strikes the right register, and pairing one quote from each ink serves the idea, though the connective prose runs thinner than the strongest pages.",
+        "5": "Desktop typography is disciplined in both inks and both modes, but the mobile chart shrinks until its annotation markers are close to illegible.",
+        "6": "A static page throughout, with no scrolljacking or motion devices visible in any render.",
+        "7": "Printing the ledger in two inks makes the record's central caveat the design system itself, a one-sentence idea every layer repeats; it expresses the seam more vividly than the season's movement.",
+        "8": "The single ink break is disciplined, declared in the legend, and the reading mechanics stay conventional.",
+        "9": "The voice is local and restrained, though it leans on fewer distinctive sentences than the two strongest candidates.",
+        "10": "The ink assignment is the dataset's own instrument boundary, so the signature device is the record rather than an effect laid over it."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 6,
+        "3": 1,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 6,
+        "8": 7,
+        "9": 8,
+        "10": 3
+      },
+      "rationales": {
+        "1": "The short-version box, the stat trio, and the full ledger make the finding reachable without decoding a single mark.",
+        "2": "The two charts disclose their scales, draw the missing seasons as baseline strokes, and mark the method change, but the highlighted storm-year bar and callout dress an uncorroborated spike as the record's climax.",
+        "3": "The page stamps the 2019 reading VERIFIED and calls it the largest fall in the record, inverting the unverified status the record assigns it, and the 2019 table row carries no flag either.",
+        "4": "The gardener opening is warm, concrete, and local, but the hardest-day section plays an unconfirmed spike for drama, which betrays the patient register.",
+        "5": "Type and layout are competent in both modes, while the chart captions run very small on desktop and the onset chart is nearly illegible at the mobile width.",
+        "6": "A static page with no scroll-driven pacing or motion devices visible in any render.",
+        "7": "Telling the whole story up front and letting the rest of the page merely repeat it is a modest and honest idea, but the VERIFIED stamp positioned as the signature moment is not earned by the data.",
+        "8": "Restraint is genuine, with conventional mechanics and a single callout device, so the budget is respected even where the callout misfires.",
+        "9": "Asking an Ashcombe gardener when the rain comes is a voice no wire service would produce.",
+        "10": "The marquee device is a verification stamp for a reading the dataset holds as unverified, an effect detached from what the reporting can support, which is precisely the failure mode this criterion excludes."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-2",
+    "candidate-1",
+    "candidate-3",
+    "candidate-4"
+  ]
+}

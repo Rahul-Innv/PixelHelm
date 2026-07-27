@@ -1,0 +1,116 @@
+{
+  "juror": "juror-4",
+  "set": "e3-editorial",
+  "candidates": {
+    "candidate-1": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 8,
+        "8": 8,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lede states the full finding with every number, each plate opens with a bold prose sentence carrying its conclusion, and the complete table plus the About section make the story readable with no chart decoding or interaction.",
+        "2": "All three plates are named by their findings, the totals plate declares its 550 mm baseline in its own subtitle, the heaviest-day plate is drawn from zero, and the missing years appear as shaded bands in every plate.",
+        "3": "The seam, the three gaps, and the hollow unverified 2019 dot are annotated under every plate, repeated in the table notes, and the About section closes with an explicit shift-not-cause scope statement.",
+        "4": "The register is patient and local, with the weir-keeper and parish quotes placed directly after the plates they speak to rather than used as decoration.",
+        "5": "Serif editorial typography with a comfortable measure and consistent plate labeling holds up in both modes at both widths, though the long mobile table and the small annotation notes ask some patience.",
+        "6": "The page is a fully readable flat document with the conclusion at the top and no visible scroll-driven or motion-dependent structure.",
+        "7": "The signature — the reporter's notes written on the record itself — is coherent and carried through plates, notes, table, and colophon, though it reads as very disciplined annotation more than a form that makes the shift felt.",
+        "8": "Reading mechanics are entirely conventional and the single annotated-plate device is announced plainly in the standfirst.",
+        "9": "The prose is unsensational and place-loving, with lines like the season that used to open before the autumn fair now waiting for the second week of October.",
+        "10": "Every graphical device — seam, bands, era rules, hollow dot — corresponds to a real feature of the record, with nothing decorative left over."
+      }
+    },
+    "candidate-2": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 10,
+        "4": 8,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 9,
+        "9": 8,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lede, the then-and-now panel, and the ink-to-ink difference line deliver the whole finding as scannable text before the single chart appears, and the full table completes it without any interaction.",
+        "2": "The one chart is named by its finding, keeps an honest date axis, draws the missing years as bands, and hollows the unverified 2019 dot with a plain-language note block.",
+        "3": "Printing every figure in its instrument's ink makes the 1996 to 1997 method change travel with each number, the gaps and the 2019 exclusion are stated in the panel, the chart, the table, and the About block, and the scope note is explicit — the honesty surface is the page's organizing idea.",
+        "4": "The register is calm and local and the two quotes are tagged to their ink eras, though the page's affection tilts slightly toward its device rather than the valley.",
+        "5": "Clean serif hierarchy, a two-column panel that stacks well on mobile, and a legible inked table hold both modes together comfortably.",
+        "6": "A static long-read with its conclusion first; nothing observable depends on scroll pacing or motion.",
+        "7": "Two inks for two instruments is a one-sentence idea that every layer — legend, lede spans, columns, chart, quotes, table, About — visibly reinforces, making the record's epistemology the journalism.",
+        "8": "Exactly one declared break, announced in the opening legend and explained again under Why two inks, with reading mechanics left fully conventional.",
+        "9": "The prose is specific and unsensational, with the record keeping human time as well as rain, though a shade less place-rich than the best here.",
+        "10": "Every device traces to a real property of the dataset — instrument, gaps, unverified reading — and none is imported effect."
+      }
+    },
+    "candidate-3": {
+      "scores": {
+        "1": 9,
+        "2": 9,
+        "3": 9,
+        "4": 9,
+        "5": 8,
+        "6": 8,
+        "7": 9,
+        "8": 8,
+        "9": 9,
+        "10": 9
+      },
+      "rationales": {
+        "1": "The lede carries the complete finding, the bold rail preamble restates it in words, and every year's row prints its actual numbers, so a reader who never decodes a mark still receives everything by reading down.",
+        "2": "The rail is named and described by its finding, its how-to-read box declares the fixed onset shelf and the 550 to 750 total scale, and the missing years sit as hatched no-record lines inside the only view.",
+        "3": "Era subheadings put the instrument change exactly where the boundary is crossed, the three gaps are hatched in place, 2019 carries an inline unverified caption, and the About section states the shift-not-cause scope.",
+        "4": "This is the most lived-in narrative — quotes interleaved at the years they belong to and a mid-rail aside about laying the lines side by side — with the human fragments serving the data's chronology.",
+        "5": "The letterspaced era headings and serif measure carry the long read well in both modes, though the red heaviest-day figures run modest contrast on the dark ground and the rail rows demand steady attention on mobile.",
+        "6": "The reading mechanic is ordinary document scroll over a fully readable base, with no pacing imposed and no motion-dependent content visible.",
+        "7": "Reading the valley's years line by line like its own almanac makes the drift physically visible as the dots walk down the page — the form is the journalism, and every layer reinforces it.",
+        "8": "One deliberate break — the rail replacing separate charts and table — declared in the standfirst and the how-to-read box while mechanics stay conventional.",
+        "9": "The voice is quiet, local, and specific, and lines like the almanac the valley used to keep could not run unchanged elsewhere.",
+        "10": "Hatching, hollow dot, era headings, and fixed shelves each answer to something the record actually contains, with no unearned effect."
+      }
+    },
+    "candidate-4": {
+      "scores": {
+        "1": 8,
+        "2": 7,
+        "3": 2,
+        "4": 7,
+        "5": 7,
+        "6": 8,
+        "7": 6,
+        "8": 7,
+        "9": 7,
+        "10": 3
+      },
+      "rationales": {
+        "1": "The short-version box states the entire finding before any chart and the stat trio plus ledger repeat it, so comprehension without chart literacy is solid.",
+        "2": "The charts are labeled with declared axes and gaps drawn as gaps, but the distinct-colored 2019 bar and the storm framing lean on a reading the charts never qualify.",
+        "3": "The record's flagged outlier is presented under a prominent boxed VERIFIED badge with no unverified note in the ledger row or captions, asserting the opposite of the label the record requires — a direct break in the honesty surface the rest of the page otherwise maintains.",
+        "4": "The gardener and fair-time openings are genuinely local, but the hardest-day-in-the-book section shifts into record-book drama built on the unqualified reading.",
+        "5": "The display typography and short-version box are handsome, though the charts sit small in the measure with faint gray captions and the ledger runs without a notes column.",
+        "6": "A flat, top-loaded document with no observable scrolljacking or motion dependence.",
+        "7": "The modest thesis — the charts and table only show you the same record — is likable but under-realized, and the page's most memorable moment is the badge that contradicts it.",
+        "8": "Reading mechanics are conventional and the novelty budget is respected in form.",
+        "9": "The voice is pleasant and local in stretches but tips sensational exactly where the record calls for its most careful sentence.",
+        "10": "The centerpiece verified-record callout is an effect detached from what the record supports — the named imitator failure mode — even though the remaining devices trace honestly."
+      }
+    }
+  },
+  "ranking": [
+    "candidate-3",
+    "candidate-2",
+    "candidate-1",
+    "candidate-4"
+  ]
+}

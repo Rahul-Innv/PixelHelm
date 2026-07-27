@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-editorial-external",
+  "jurorId": "juror-4",
+  "blindLabel": "candidate-2",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-editorial.md",
+  "scores": {
+    "1": 9,
+    "2": 9,
+    "3": 10,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 9,
+    "8": 9,
+    "9": 8,
+    "10": 9
+  },
+  "rationales": {
+    "1": "The lede, the then-and-now panel, and the ink-to-ink difference line deliver the whole finding as scannable text before the single chart appears, and the full table completes it without any interaction.",
+    "2": "The one chart is named by its finding, keeps an honest date axis, draws the missing years as bands, and hollows the unverified 2019 dot with a plain-language note block.",
+    "3": "Printing every figure in its instrument's ink makes the 1996 to 1997 method change travel with each number, the gaps and the 2019 exclusion are stated in the panel, the chart, the table, and the About block, and the scope note is explicit — the honesty surface is the page's organizing idea.",
+    "4": "The register is calm and local and the two quotes are tagged to their ink eras, though the page's affection tilts slightly toward its device rather than the valley.",
+    "5": "Clean serif hierarchy, a two-column panel that stacks well on mobile, and a legible inked table hold both modes together comfortably.",
+    "6": "A static long-read with its conclusion first; nothing observable depends on scroll pacing or motion.",
+    "7": "Two inks for two instruments is a one-sentence idea that every layer — legend, lede spans, columns, chart, quotes, table, About — visibly reinforces, making the record's epistemology the journalism.",
+    "8": "Exactly one declared break, announced in the opening legend and explained again under Why two inks, with reading mechanics left fully conventional.",
+    "9": "The prose is specific and unsensational, with the record keeping human time as well as rain, though a shade less place-rich than the best here.",
+    "10": "Every device traces to a real property of the dataset — instrument, gaps, unverified reading — and none is imported effect."
+  },
+  "inputTranscriptSha256": "57b27a2e525b07a45c1490b869269f0bb897d9234603355a5aededc518cdd40b",
+  "shuffleSeed": 202607644
+}

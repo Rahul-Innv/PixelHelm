@@ -1,0 +1,35 @@
+{
+  "schema": "pixelhelm/juror-record@1",
+  "date": "2026-07-26",
+  "project": "pixelhelm-validation-e4",
+  "surface": "e3-commerce-external",
+  "jurorId": "juror-1",
+  "blindLabel": "candidate-3",
+  "rubric": "evals/validation/e3/PREREG-RUBRIC-commerce.md",
+  "scores": {
+    "1": 6,
+    "2": 7,
+    "3": 8,
+    "4": 8,
+    "5": 8,
+    "6": 8,
+    "7": 7,
+    "8": 8,
+    "9": 8,
+    "10": 6
+  },
+  "rationales": {
+    "1": "Each entry is legible on its own, but the numbered order ignores season, prices sit small at the bottom of each entry, and only the dropdown filter connects the list to the sowing year, so glance-level scanning is the slowest of the four.",
+    "2": "The product page is conventional with counted stock, quantity field, and add button, but the catalog offers no purchase affordance and price placement inside entries is quieter than convention.",
+    "3": "Estimated germination is flagged, the sweet pea shows price pending with an invitation to ask, out-of-stock stays visible, and UK-only shipping is stated in the header before any intent forms.",
+    "4": "Generous serif sizes, wide spacing, no hover-dependent information, and clean stacking at phone width suit older readers well.",
+    "5": "The letterspaced small-caps, hairline rules, and centered masthead are executed with quiet consistency across both surfaces and modes.",
+    "6": "Year table, difficulty strip, potting-shed note, and companion listings give enough to decide, though companions are not visibly linked onward.",
+    "7": "A numbered annual list read slowly is genuinely provenance-flavored and could belong to this shop, but the numbering serves the shop's self-image more than the shopper's task, so the signature is felt less than earned.",
+    "8": "All novelty is typographic and editorial; every mechanic underneath is conventional, comfortably inside a brand-layer break budget.",
+    "9": "Two of us keep this list, read slowly, choose well is a voice no volume retailer would print, though the register thins out beyond the masthead.",
+    "10": "A repeat visitor checking season or stock must scan the whole numbered list since nothing groups by window or surfaces change, leaving only the month filter to help."
+  },
+  "inputTranscriptSha256": "49cbf07abd405334f1987306716c892ec26466139bf44acdcf6f0d79b689388c",
+  "shuffleSeed": 202607631
+}
