@@ -239,6 +239,35 @@ const REQUIRED_LITE = [
   { file: "skills/pixelhelm-judge/SKILL.md", pattern: /ABSTAIN-BLOCK/ },
 ];
 
+// Git conflict markers must never ship. --check compares src/ to plugins/, so it
+// reproduces a botched merge faithfully and stays green: merge 53824fa shipped literal
+// markers inside two pixelhelm-loop docs through a tagged release that way. Markers are
+// assembled from parts so this file's own source never contains one (the repo hygiene
+// grep scans this file). A conflict must OPEN to count: a bare "=======" is a setext
+// heading underline and ">>>>>>>" is seven nested blockquotes, both legal in markdown.
+const CM = { open: "<".repeat(7), base: "|".repeat(7), mid: "=".repeat(7), end: ">".repeat(7) };
+const conflictMarkers = (text) => {
+  const hits = [];
+  let open = false;
+  const lines = text.split("\n");
+  for (let i = 0; i < lines.length; i++) {
+    const line = lines[i];
+    const at = (m) => line === m || line.startsWith(m + " ");
+    if (at(CM.open)) { open = true; hits.push([i + 1, line]); }
+    else if (open && (line === CM.mid || at(CM.base))) hits.push([i + 1, line]);
+    else if (open && at(CM.end)) { open = false; hits.push([i + 1, line]); }
+  }
+  return hits;
+};
+const reportMarkers = (label, rel, text) => {
+  let n = 0;
+  for (const [ln, line] of conflictMarkers(text)) {
+    console.error(`LINT [${label}] ${rel}:${ln}: git conflict marker -> ${line.trim().slice(0, 60)}`);
+    n++;
+  }
+  return n;
+};
+
 let lintFails = 0;
 for (const [name, ed] of editions) {
   const dst = path.join(outRoot, name);
@@ -248,6 +277,7 @@ for (const [name, ed] of editions) {
     const rel = path.relative(dst, f).replace(/\\/g, "/");
     const t = fs.readFileSync(f, "utf8");
     for (const b of BANNED_ALL) if (b.test(t)) { console.error(`LINT [${name}] ${rel}: banned pattern ${b}`); lintFails++; }
+    lintFails += reportMarkers(name, rel, t);
     if (ed.stripFullOnly && rel.startsWith("skills/")) {
       for (const b of BANNED_LITE) {
         if (!b.test(t)) continue;
@@ -276,6 +306,13 @@ for (const [name, ed] of editions) {
     }
   }
 }
+// The dev copy is the source of truth, and not all of it ships: a marker in a src file
+// no edition currently includes is still a real conflict, and reaches the editions the
+// moment that file is included. Scan it directly rather than only the built output.
+for (const f of walk(cfg.devCopy).filter((f) => isText(f))) {
+  lintFails += reportMarkers("src", path.relative(cfg.devCopy, f).replace(/\\/g, "/"), fs.readFileSync(f, "utf8"));
+}
+
 if (lintFails) fail(`${lintFails} lint finding(s)`);
 
 if (!CHECK) {
