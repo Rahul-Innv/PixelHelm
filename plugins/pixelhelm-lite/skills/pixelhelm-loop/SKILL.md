@@ -10,14 +10,13 @@ code. Capture the incumbent. Render before evaluation. Machine failures and bloc
 may trigger one targeted repair and recheck; advisory scores alone may not. Cap the
 repair loop at three rounds. Promotion remains a separate owner-gated leaf.
 
-<<<<<<< HEAD
 Capture the incumbent's gate results and key measurements through
 pixelhelm-baseline's scripts/baseline.mjs, and compare every candidate against that
 baseline before judging it. A gate that passed at the baseline and fails now is a
 Blocker regardless of the candidate's own machine pass; a gate that stopped being
 measured is never a pass. Never absorb a change into the baseline — an intended
 change is proposed for the owner, never written in place.
-=======
+
 ## Ask what it should feel like, first (REQUIRED)
 
 Before any direction intent is written, ask the owner what the surface should FEEL
@@ -31,7 +30,6 @@ A pass that did neither is a process defect, surfaced like any other blocking fi
 the run record carries `intentElicitation` and the writer refuses the record without
 it. Rule and record shape: `references/gates-and-loop.md` section 0 and
 `references/close-the-loop.md`.
->>>>>>> claude/exciting-driscoll-8d0b56
 
 Close every pass by writing the sign-off and run records through scripts/records.mjs
 (validate-then-write, append-only), then append the pass's capability-ledger entry

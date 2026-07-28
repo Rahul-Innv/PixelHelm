@@ -368,8 +368,9 @@ declared and groups by it.
    `records.mjs write signoff`). Update the matching verdict's `ownerVerdict`
    and its ledger line. Write the `design/run@1` record (above) for the whole
    pass via `records.mjs write run`. A refused write is a blocking finding,
-<<<<<<< HEAD
-   not a formality to skip.
+   not a formality to skip — and a run record with no `intentElicitation` is
+   refused outright, so a pass that never asked the owner what the design should
+   FEEL like surfaces here as a blocking process defect.
 2. Append the pass's capability-ledger entry via
    `capability-ledger.mjs write entry --project <dir>`, citing the run record
    just written, then run `capability-ledger.mjs check --project <dir>`. A
@@ -377,12 +378,6 @@ declared and groups by it.
    finding, not a formality. Fields the pass did not measure are written
    `"unknown"` — never reconstructed to make the line look complete.
 3. Route by content:
-=======
-   not a formality to skip — and a run record with no `intentElicitation` is
-   refused outright, so a pass that never asked the owner what the design should
-   FEEL like surfaces here as a blocking process defect.
-2. Route by content:
->>>>>>> claude/exciting-driscoll-8d0b56
    - owner CORRECTED or REJECTED something → dispatch `design-learn`
      WRITE-BACK: propose exactly ONE stamped, tagged lesson diff.
    - the verdict CLARIFIES taste or the register → propose a profile `_taste`
