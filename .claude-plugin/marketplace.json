@@ -13,7 +13,7 @@
       "source": "./plugins/pixelhelm-full",
       "displayName": "PixelHelm Full",
       "description": "The full PixelHelm honesty and register floor for AI-generated UI: bounded grounding, generation, rendering, evaluation, judgment, repair, promotion, learning, evidence briefs, and the specialized craft leaves.",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "license": "MIT",
       "category": "design"
     },
@@ -22,7 +22,7 @@
       "source": "./plugins/pixelhelm-lite",
       "displayName": "PixelHelm Lite",
       "description": "The default PixelHelm edition: the complete core honesty and register floor with bounded routing, grounding, baseline, generation, rendering, evaluation, judgment, repair, promotion, and learning outcomes.",
-      "version": "2.1.0",
+      "version": "2.1.1",
       "license": "MIT",
       "category": "design"
     }

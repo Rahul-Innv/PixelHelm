@@ -1,7 +1,7 @@
 {
   "devCopy": "src",
   "_devCopyNote": "src/ is the source of truth. Canonical pixelhelm-* SKILL.md files are overlaid on the qualified legacy resource trees named by skillSources; plugins/ is generated.",
-  "version": "2.1.0",
+  "version": "2.1.1",
   "marketplace": {
     "name": "pixelhelm",
     "owner": "Rahul Krishna",

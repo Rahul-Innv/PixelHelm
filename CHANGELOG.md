@@ -2,6 +2,41 @@
 
 ## [Unreleased]
 
+## plugin family 2.1.1 — 2026-07-28
+
+Corrective patch release of the **plugin family** (both editions). The standalone
+Python distribution is **unchanged and stays at 0.1.2**: nothing in
+`pyproject.toml`, `packaging/`, or the `pixelhelm.storm_engine` package was
+touched in this cycle, so no PyPI release accompanies this one.
+
+2.1.0 shipped literal git conflict markers inside two `pixelhelm-loop` documents,
+in both editions. These files are instructions the model reads and follows, so a
+garbled region at the exact point where the loop defines its baseline discipline
+and its elicitation gate is a behavioural defect, not a cosmetic one.
+
+- **Conflict markers removed from `pixelhelm-loop`** (`SKILL.md` and
+  `references/close-the-loop.md`). Merge 53824fa — "Merge owner-taste encoding,
+  reconciled with the capability ledger" — resolved two hunks by committing the
+  markers verbatim. Both merge parents were clean, so the markers existed only in
+  the merge commit, which is why `git log -S` never surfaced them: the pickaxe
+  skips merge diffs unless asked for them (`--diff-merges=first-parent` finds it).
+  Both halves are kept with their wording unchanged, because they cover different
+  stages of the same pass — the baseline-capture discipline (compare every
+  candidate against the incumbent's captured gate results; never absorb a change
+  into the baseline) and the intent-elicitation gate (ask what the surface should
+  FEEL like before any direction intent is written). In `close-the-loop.md` the
+  two halves also disagreed on step numbering; keeping both restores 1-2-3-4,
+  which the untouched tail already expected.
+- **The build now fails on git conflict markers**, in `src/` and in both built
+  editions. Nothing in the pipeline looked at content sanity: `--check` only
+  proves `plugins/` matches a fresh build of `src/`, so garbage in `src/`
+  reproduced faithfully into both editions and the check stayed green — through
+  the v2.1.0 tag. `src/` is scanned directly as well as the output, because not
+  all of it ships and a marker in a currently-unshipped file reaches the editions
+  the moment that file is included. A conflict must OPEN to count, so a bare
+  `=======` (a setext heading underline) and `>>>>>>>` (seven nested blockquotes)
+  remain legal markdown.
+
 ## plugin family 2.1.0 — 2026-07-27
 
 Feature release of the **plugin family** (both editions), cut from the work below.
