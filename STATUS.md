@@ -1,6 +1,7 @@
 # STATUS
 
-PixelHelm plugin family `2.1.0` (cut 2026-07-27); standalone Python source unchanged at
+PixelHelm plugin family `2.1.1` (cut 2026-07-28; 2.1.0 was withdrawn in practice, it
+shipped git conflict markers in the loop skill); standalone Python source unchanged at
 `0.1.2`, and PyPI still serves `0.1.1`.
 This file is the authoritative statement of what is and is not claimed; the README
 carries only the one-line summary.

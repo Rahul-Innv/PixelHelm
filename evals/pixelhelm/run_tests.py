@@ -365,7 +365,7 @@ class FamilyTests(unittest.TestCase):
 
     def test_private_readiness_identity_and_version_are_consistent(self) -> None:
         config = json.loads((ROOT / "build/build.config.json").read_text(encoding="utf-8"))
-        self.assertEqual("2.1.0", config["version"])
+        self.assertEqual("2.1.1", config["version"])
         self.assertEqual("Rahul Krishna", config["marketplace"]["owner"])
         canonical = "https://gitlab.com/krahul02004/PixelHelm"
         self.assertEqual(canonical, config["marketplace"]["repoUrl"])
@@ -373,12 +373,12 @@ class FamilyTests(unittest.TestCase):
         self.assertEqual("confirmed-public", FAMILY["repository_url_status"])
         marketplace = json.loads((ROOT / ".claude-plugin/marketplace.json").read_text(encoding="utf-8"))
         self.assertEqual(config["marketplace"]["description"], marketplace["description"])
-        self.assertEqual({"2.1.0"}, {item["version"] for item in marketplace["plugins"]})
+        self.assertEqual({"2.1.1"}, {item["version"] for item in marketplace["plugins"]})
         for edition in ("pixelhelm-lite", "pixelhelm-full"):
             manifest = json.loads(
                 (ROOT / "plugins" / edition / ".claude-plugin/plugin.json").read_text(encoding="utf-8")
             )
-            self.assertEqual("2.1.0", manifest["version"])
+            self.assertEqual("2.1.1", manifest["version"])
             self.assertEqual("Rahul Krishna", manifest["author"]["name"])
             self.assertEqual(canonical, manifest["homepage"])
 
