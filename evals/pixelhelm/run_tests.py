@@ -416,8 +416,9 @@ class FamilyTests(unittest.TestCase):
         )
         self.assertNotIn("17-check", current_surfaces)
         self.assertNotIn("17-test", current_surfaces)
-        self.assertIn("prepared `pixelhelm` Python distribution source (`0.1.2`)", current_surfaces)
-        self.assertIn("current Python slice on PyPI still `pixelhelm` `0.1.1`", current_surfaces)
+        self.assertIn("Python `0.1.2` published on", readme)
+        self.assertIn("[`pixelhelm` 0.1.2]", (ROOT / "STATUS.md").read_text(encoding="utf-8"))
+        self.assertNotIn("PyPI still serves `0.1.1`", current_surfaces)
         self.assertNotIn("No PyPI upload is performed or claimed", current_surfaces)
 
     def test_private_readiness_surfaces_are_complete_and_owner_gated(self) -> None:

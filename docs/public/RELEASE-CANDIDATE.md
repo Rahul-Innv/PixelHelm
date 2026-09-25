@@ -1,29 +1,18 @@
-# PixelHelm current public source and next-release boundary
+# PixelHelm release state
 
-## Version decision
+Verified against the public GitLab project and PyPI on 2026-09-25:
 
-The canonical GitLab project is public at
-`https://gitlab.com/krahul02004/PixelHelm`. The plugin family declares `2.1.1`, cut
-2026-07-28 to correct git conflict markers that 2.1.0 shipped in the loop skill for the plugin-side feature work of that cycle; the standalone Python
-distribution source is unchanged at `0.1.2` and PyPI still serves `0.1.1`. These are
-separate version lines, and the 2.1.x cuts deliberately carry no Python release
-because no Python-package surface changed. No source tag or GitLab Release provenance
-is claimed for the existing PyPI artifact. A further plugin release must choose a
-version newer than 2.1.1. The reviewed Python 0.1.2 commit must be merged
-and its artifacts independently verified before any tag or publication action.
+- The plugin family declares `2.1.1`. GitLab has the `v2.1.1` tag and Release.
+  Version `2.1.0` was withdrawn in practice after conflict markers shipped in a
+  plugin loop skill.
+- The standalone Python distribution declares `0.1.2`. PyPI publishes
+  [`pixelhelm` 0.1.2](https://pypi.org/project/pixelhelm/), and GitLab has the
+  `v0.1.2` tag and Release.
+- These are separate version lines. The 2.1.x plugin cuts did not change the
+  Python package. The plugin editions load from this repository's self-hosted
+  marketplace; no external marketplace activation is claimed.
 
-## Distribution
-
-The repository contains two directory-loaded Claude Code plugins and the
-prepared `pixelhelm` Python distribution source (`0.1.2`), which packages the standalone
-evidence-brief engine and design adapter from the generated Full edition. It is not an
-npm, Cargo, or gem publication candidate. Deterministic generation, exact file
-inventory, plugin validation, `python -m build`, `twine check`, and Git-free replay
-are the applicable offline package dry run. The existing PyPI publication is recorded
-as public state; no new upload is authorized by this source candidate.
-
-## Deliberately not performed
-
-This preparation creates no tag, GitLab Release, settings change, marketplace action,
-live installation, or new publication. The 0.1.2 tag, Release, and package publication,
-plus all plugin activation and settings changes, remain separate owner gates.
+The tags identify release source commits. Matching version numbers do not by
+themselves prove byte-for-byte provenance of a published Python artifact.
+Further tags, publication, or marketplace activation require a separate owner
+decision and qualification of the exact source.
