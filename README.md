@@ -295,10 +295,15 @@ top-level package, with the engine and adapter namespaced as
 
 ## Status
 
-**Status:** plugin family `2.0.0`; Python `0.1.2` prepared locally: public at
-[gitlab.com/krahul02004/PixelHelm](https://gitlab.com/krahul02004/PixelHelm), the
-current Python slice on PyPI still `pixelhelm` `0.1.1`,
-and the plugin editions loading from this repository only, with no marketplace
-activation; full detail in [STATUS.md](STATUS.md).
+**Status:** plugin family `2.1.1`; Python `0.1.2` published on
+[PyPI](https://pypi.org/project/pixelhelm/). Both plugin editions load from this
+repository's self-hosted marketplace, with no external marketplace activation;
+full detail in [STATUS.md](STATUS.md).
 
-MIT licensed. Built by Rahul Krishna.
+MIT licensed.
+
+## Contributors
+
+- [Rahul Krishna](https://github.com/Rahul-Innv) - creator and contributor.
+- Claude Code - AI development assistance.
+- Codex - AI development assistance.

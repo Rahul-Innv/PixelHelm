@@ -1,8 +1,8 @@
 # STATUS
 
 PixelHelm plugin family `2.1.1` (cut 2026-07-28; 2.1.0 was withdrawn in practice, it
-shipped git conflict markers in the loop skill); standalone Python source unchanged at
-`0.1.2`, and PyPI still serves `0.1.1`.
+shipped git conflict markers in the loop skill); standalone Python source and PyPI package
+are at `0.1.2`.
 This file is the authoritative statement of what is and is not claimed; the README
 carries only the one-line summary.
 
@@ -12,11 +12,10 @@ carries only the one-line summary.
   CI runs the deterministic offline checks (the build check plus the 43-test suite)
   on every push.
 - PyPI: the standalone Python slice is published as
-  [`pixelhelm` 0.1.1](https://pypi.org/project/pixelhelm/): the verified
+  [`pixelhelm` 0.1.2](https://pypi.org/project/pixelhelm/): the verified
   evidence-brief engine plus the design adapter, standard library only,
   offline-capable.
-- The reviewed source prepares Python patch 0.1.2 locally. It is not yet tagged,
-  represented by a GitLab Release, or published to PyPI.
+- The Python `0.1.2` git tag and GitLab Release are present.
 - The `0.1.0` packaging issue (installation placed three top-level packages:
   `pixelhelm`, `storm_engine`, and `design_adapter`, the latter two generic
   names that could shadow or collide with other distributions in the same
